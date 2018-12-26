@@ -6,7 +6,16 @@ Curso C# Parte 1: Primeiros Passos
 		04 - Quais aplicações?
 		05 - Sobre o .NET Framework
 		06 - O que aprendemos?
-	Nosso primeiro programa e o Visual Studio
+	02 - Nosso primeiro programa e o Visual Studio
+		01 - Nosso primeiro programa CSharp
+		02 - Sobre a compilação e execução
+		03 - Instalando o Visual Studio
+		04 - Mão na massa: instalae a IDE Visual Studio
+		05 - Ola mundo no Visual Studio
+		06 - Sobre IDEs e editores
+		07 - Estrutura de diretorios do Visual Studio
+		08 - Entrada da aplicação
+		09 - Compilar e executar
 	Variáveis numéricas
 	Variáveis de texto
 	Controle de fluxo com IF
