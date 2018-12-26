@@ -1,0 +1,13 @@
+Curso C# Parte 1: Primeiros Passos
+	01 - História e ecossistema da linguagem
+		01 - Introdução
+		02 - História e escossistema .NET
+		03 - Benefícios da CLR
+		04 - Quais aplicações?
+		05 - Sobre o .NET Framework
+		06 - O que aprendemos?
+	Nosso primeiro programa e o Visual Studio
+	Variáveis numéricas
+	Variáveis de texto
+	Controle de fluxo com IF
+	Controle de fluxo com laços de repetição
