@@ -29,6 +29,14 @@ Curso C# Parte 1: Primeiros Passos
 		10 - Imprimindo texto e números
 		11 - Para saber mais: Type Casting
 		12 - O que aprendemos?
-	Variáveis de texto
+	04 - Variáveis de texto
+		01 - Projeto da aula anterior
+		02 - Caracteres e textos
+		03 - Mão na massa: Praticando char e String
+		04 - Declarando string e char
+		05 - Concatenação de String e inteiros
+		06 - Variáveis guardam valores
+		07 - Qual será o resultado?
+		08 - O que aprendemos?
 	Controle de fluxo com IF
 	Controle de fluxo com laços de repetição

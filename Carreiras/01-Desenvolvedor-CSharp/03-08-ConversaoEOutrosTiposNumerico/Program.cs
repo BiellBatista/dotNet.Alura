@@ -22,6 +22,7 @@ namespace _03_08_ConversaoEOutrosTiposNumerico
             Console.WriteLine($"Salário em Double {salario}");
             Console.WriteLine($"Salário em Inteiro {salarioEmInteiro}");
             Console.WriteLine($"Salário em String {salarioS}");
+            Console.WriteLine($"Salário em Float {salarioF}");
             Console.Read();
         }
     }
