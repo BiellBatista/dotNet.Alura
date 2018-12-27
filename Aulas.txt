@@ -71,3 +71,18 @@ Curso C# Parte 1: Primeiros Passos
 		15 - Desafio Opcional: Fatorial
 		16 - O que aprendemos?
 		17 - Conclusão
+Curso C# Parte 2: Introdução à Orientação a Objetos
+	01 - Nossa primeira classe
+		01 - Introdução
+		02 - Nossa primeira classe
+		03 - Classes e objetos
+		04 - Benefícios da POO
+		05 - Arquivos de código
+		06 - Criando objetos
+		07 - O que aprendemos?
+		08 - Mão na massa: Criando a primeira classe
+	02 - Tipos
+		01 - Projeto da aula anterior
+		02 - Usando nossa classe
+		03 - Obtendo campos
+		04 - Inicialização de variáveis
