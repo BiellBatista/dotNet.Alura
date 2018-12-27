@@ -38,5 +38,36 @@ Curso C# Parte 1: Primeiros Passos
 		06 - Variáveis guardam valores
 		07 - Qual será o resultado?
 		08 - O que aprendemos?
-	Controle de fluxo com IF
-	Controle de fluxo com laços de repetição
+	05 - Controle de fluxo com IF
+		01 - Projeto da aula anterior
+		02 - Trabalhando com IF
+		03 - Mão na massa: A condivional if
+		04 - Trabalhando com if
+		05 - Variável booleana
+		06 - Tipo bool
+		07 - Operador lógico
+		08 - Escopo
+		09 - Mão na massa: Um pouco mais de if
+		10 - Declaração da variável
+		11 - Mão na massa: Escopo de variáveis
+		12 - Opcional: Alíquota com ifs
+		13 - Para saber mais: o comando switch
+		14 - O que aprendemos?
+	06 - Controle de fluxo com laços de repetição
+		01 - Projeto da aula anterior
+		02 - Laço de repetição While
+		03 - Enquanto isso, o while...
+		04 - Fixando o laço while
+		05 - Laço de repetição For
+		06 - Encadeando laços For
+		07 - Transformando while em for
+		08 - A palabra chave break
+		09 - Fixando o comando break
+		10 - Mão na massa: Laços
+		11 - Um erro de compilação...
+		12 - Exercitando laços aninhados e break
+		13 - Mão na massa: Aprofundando laços
+		14 - Desafio Opcional: Múltiplos de 3
+		15 - Desafio Opcional: Fatorial
+		16 - O que aprendemos?
+		17 - Conclusão

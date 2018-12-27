@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-05-OlaMundoNoVisualStudio", "05-OlaMundoNoVisualStudio\02-05-OlaMundoNoVisualStudio.csproj", "{67C7DD86-641E-44D9-913A-BE985B789EBE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-02-05-OlaMundoNoVisualStudio", "05-OlaMundoNoVisualStudio\01-02-05-OlaMundoNoVisualStudio.csproj", "{67C7DD86-641E-44D9-913A-BE985B789EBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-08-ConversaoEOutrosTiposNumerico", "03-08-ConversaoEOutrosTiposNumerico\03-08-ConversaoEOutrosTiposNumerico.csproj", "{C023C39E-5C61-4E23-97FA-85B58CACBEE8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-03-08-ConversaoEOutrosTiposNumerico", "03-08-ConversaoEOutrosTiposNumerico\01-03-08-ConversaoEOutrosTiposNumerico.csproj", "{C023C39E-5C61-4E23-97FA-85B58CACBEE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-02-CaracteresETextos", "04-02-CaracteresETextos\04-02-CaracteresETextos.csproj", "{1F3CFD0A-37DA-4050-8DD3-949F54E88E8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-04-02-CaracteresETextos", "04-02-CaracteresETextos\01-04-02-CaracteresETextos.csproj", "{1F3CFD0A-37DA-4050-8DD3-949F54E88E8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

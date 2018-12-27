@@ -7,7 +7,7 @@
     <ProjectGuid>{67C7DD86-641E-44D9-913A-BE985B789EBE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_05_OlaMundoNoVisualStudio</RootNamespace>
-    <AssemblyName>02-05-OlaMundoNoVisualStudio</AssemblyName>
+    <AssemblyName>01-02-05-OlaMundoNoVisualStudio</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
