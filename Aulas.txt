@@ -116,3 +116,24 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		09 - Solucionando o problema no código
 		10 - Mão na massa: Referências
 		11 - O que aprendemos?
+	05 - Propriedades
+		01 - Projeto da aula anterior
+		02 - ObterSaldo e DefinirSaldo
+		03 - Propriedades Get e Set
+		04 - Produtividade com Get e Set
+		05 - Getters e Setters
+		06 - Públic x Privado
+		07 - Vantagens de campos privados
+		08 - O que aprendemos?
+		09 - Mão na massa: Criando Getters e Setters
+	06 - Construtores e membros estáticos
+		01 - Projeto da aula anterior
+		02 - Construtores
+		03 - Membros estáticos
+		04 - Conclusão
+		05 - Projeto final do curso
+		06 - Utilizando Construtores
+		07 - Onde está o erro?
+		08 - Por que não soma?
+		09 - Mãos na massa: Criando construtores e membros estáticos
+		10 - O que aprendemos?
