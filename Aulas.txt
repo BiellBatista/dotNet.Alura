@@ -137,3 +137,15 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		08 - Por que não soma?
 		09 - Mãos na massa: Criando construtores e membros estáticos
 		10 - O que aprendemos?
+03 - Entendendo Herança e Interface
+	01 - Conhecendo o problema do cliente
+		01 - Introdução
+		02 - Atalhos no VisualStudio e classe Funcionario
+		03 - Relembrando Namespaces
+		04 - Classe Diretor e Sobrecargas
+		05 - Métodos com o mesmo nome?
+		06 - Para saber mais: Sobrecargas
+		07 - Para saber mais: Mais usos de sobrecargas
+		08 - Mão na massa
+		09 - O que aprendemos?
+	02 - Herança
