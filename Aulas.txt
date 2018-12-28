@@ -89,3 +89,30 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		05 - Definindo valor de atributos
 		06 - Valores padrões
 		07 - Tipos de referência e tipos de valor
+		08 - Inicialização de booleanos
+		09 - Referências de objetos
+		10 - Mão na massa: Criando a primeira classe
+		11 - O que aprendemos?
+	03 - Comportamentos de classes
+		01 - Projeto da aula anterior
+		02 - Nossa primeira funcao
+		03 - Como chamar um método?
+		04 - Metodo sem retorno
+		05 - Metodos com varios argumentos
+		06 - Sobre métodos
+		07 - Métodos válidos
+		08 - Onde usar o this?
+		09 - Mão na massa: Criando métodos
+		10 - O que aprendemos?
+	04 - Namespace e composição e null
+		01 - Projeto da aula anterior
+		02 - Entendendo namespaces
+		03 - Importância dos namespaces
+		04 - Diretivas using
+		05 - Composicao de classes
+		06 - Referências nulas
+		07 - Problema não esperado
+		08 - Extraindo o que é comum
+		09 - Solucionando o problema no código
+		10 - Mão na massa: Referências
+		11 - O que aprendemos?
