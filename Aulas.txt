@@ -86,3 +86,6 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		02 - Usando nossa classe
 		03 - Obtendo campos
 		04 - Inicialização de variáveis
+		05 - Definindo valor de atributos
+		06 - Valores padrões
+		07 - Tipos de referência e tipos de valor
