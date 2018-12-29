@@ -161,3 +161,16 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		10 - Mão na massa
 		11 - O que aprendemos?
 	03 - Construtores e protected
+		01 - Projeto da aula anterior
+		02 - Construtor na classe base
+		03 - Ordem de chamada dos construtores?
+		04 - Modificador de visibilidade protected
+		05 - Visibilidade
+		06 - Criando classes abstratas
+		07 - Criando métodos abstratos
+		08 - Chamando o construtor da classe base
+		09 - Para saber mais: sobrecarga em construtores
+		10 - Mão na massa
+		11 - O que aprendemos?
+	04 - Mais herança e herança múltipla
+		01 - Projeto da aula anterior
