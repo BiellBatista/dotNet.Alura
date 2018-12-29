@@ -180,3 +180,15 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		05 - Classe autenticável
 		06 - Mão na massa
 		07 - O que aprendemos?
+	05 - Interfaces
+		01 - Problema da herança múltipla
+		02 - Herdando de várias classes
+		03 - Usando interfaces
+		04 - Conceitos de Interfaces
+		05 - Classes abstratas e interfaces
+		06 - Mão na massa
+		07 - Projeto final do curso
+		08 - Conclusão
+04 - Entendendo exceções
+	01 - Primeiros passos com exceções
+		01 - Introdução

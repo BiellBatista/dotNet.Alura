@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _03_01_XX_ConhecendoOProblemaDoCliente.Funcionarios
 {
-    class Diretor : Funcionario
+    class Diretor : FuncionarioAutenticavel
     {
         //recebendo um cpf ao construir o Diretor e passando o argumento para o contrutor da classe base (Funcionario)
         public Diretor(string cpf) : base(5000, cpf)

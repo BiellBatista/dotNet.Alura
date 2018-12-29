@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _03_01_XX_ConhecendoOProblemaDoCliente.Funcionarios
 {
-    class GerenteDeConta : Funcionario
+    class GerenteDeConta : FuncionarioAutenticavel
     {
         public GerenteDeConta(string cpf) : base(4000, cpf)
         {
