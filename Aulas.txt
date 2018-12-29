@@ -192,3 +192,14 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 04 - Entendendo exceções
 	01 - Primeiros passos com exceções
 		01 - Introdução
+		02 - Pré-requisitos
+		03 - Conhecendo exceções
+		04 - Exceção de divisão por 0
+		05 - Lidando com erros
+		06 - Pilha de chamadas
+		07 - Blocos Try Catch
+		08 - Capturando exceções
+		09 - Propagando exceções
+		10 - Mãos na massa
+		11 - O que aprendemos?
+	02 - 

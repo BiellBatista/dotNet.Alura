@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D9F7542C-61A3-4521-9678-13C8ADBF989B}</ProjectGuid>
+    <ProjectGuid>{AE0CCF11-62C7-475F-AB40-6529824A2DA7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_03_01_XX_ConhecendoOProblemaDoCliente</RootNamespace>
-    <AssemblyName>03-01-XX-ConhecendoOProblemaDoCliente</AssemblyName>
+    <RootNamespace>_04_XX_XX_EntendendoExcecoes</RootNamespace>
+    <AssemblyName>04-XX-XX-EntendendoExcecoes</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="ContaCorrente.cs" />
     <Compile Include="Funcionarios\Auxiliar.cs" />
     <Compile Include="Funcionarios\Designer.cs" />
     <Compile Include="Funcionarios\Diretor.cs" />
