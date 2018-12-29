@@ -16,11 +16,6 @@ namespace _03_01_XX_ConhecendoOProblemaDoCliente
             _totalBonificacao += funcionario.GetBonificacao();
         }
 
-        public void Registrar(Diretor funcionario)
-        {
-            _totalBonificacao += funcionario.GetBonificacao();
-        }
-
         public double GetTotalBonificacao()
         {
             return _totalBonificacao;
