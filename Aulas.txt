@@ -174,3 +174,9 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		11 - O que aprendemos?
 	04 - Mais herança e herança múltipla
 		01 - Projeto da aula anterior
+		02 - O sistema interno do ByteBank
+		03 - Sobre Classes Abstratas
+		04 - Sobre métodos abstratos
+		05 - Classe autenticável
+		06 - Mão na massa
+		07 - O que aprendemos?

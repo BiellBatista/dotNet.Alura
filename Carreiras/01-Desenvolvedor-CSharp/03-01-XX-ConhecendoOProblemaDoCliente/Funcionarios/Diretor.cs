@@ -14,7 +14,7 @@ namespace _03_01_XX_ConhecendoOProblemaDoCliente.Funcionarios
             Console.WriteLine("Criando DIRETOR");
         }
 
-        // override faz com que o método sobrescreva o método virtual da base
+        // override faz com que o método sobrescreva o método virtual ou abstract da base
         public override double GetBonificacao()
         {
             // a palavra base serve para invocar algum método ou membro base
