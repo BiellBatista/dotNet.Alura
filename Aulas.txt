@@ -227,4 +227,17 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		06 - O que aprendemos?
 	05 - StackTrace e InnerException
 		01 - Projeto da aula anterior
-		02 - 
+		02 - Quando o StackTrace é preenchido
+		03 - Usando inner exceptions
+		04 - throw; vs. throw ex;
+		05 - Mãos na massa
+		06 - O que aprendemos?
+	06 - Finally e using
+		01 - Projeto da aula anterior
+		02 - Bloco finally
+		03 - Liberando recursos
+		04 - Conclusão
+		05 - Projeto final do curso
+		06 - Açúcar sintático using
+		07 - Mão na massa
+		08 - O que aprendemos?

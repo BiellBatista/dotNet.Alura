@@ -6,6 +6,8 @@ namespace _04_XX_XX_EntendendoExcecoes
     {
         public static double TaxaOperacao { get; private set; }
         public Cliente Titular { get; set; }
+        public int ContadorSaquesNaoPermitidos { get; private set; }
+        public int ContadorTransferenciaNaoPermitidos { get; private set; }
         public static int TotalDeContasCriadas { get; private set; }
         // o _ serve para destacar que o atributo é privado
         //private int _agencia;
@@ -51,7 +53,10 @@ namespace _04_XX_XX_EntendendoExcecoes
             if (valor < 0)
                 throw new ArgumentException("Valor inválido para o saque", nameof(valor));
             if (_saldo < valor)
+            {
+                ContadorSaquesNaoPermitidos++;
                 throw new SaldoInsuficienteException(Saldo, valor);
+            }
             _saldo -= valor;
         }
 
@@ -65,7 +70,17 @@ namespace _04_XX_XX_EntendendoExcecoes
         {
             if (valor < 0)
                 throw new ArgumentException("Valor inválido para a transferência", nameof(valor));
-            Sacar(valor);
+
+            try
+            {
+                Sacar(valor);
+            }
+            catch (SaldoInsuficienteException ex)
+            {
+                ContadorTransferenciaNaoPermitidos++;
+                //throw; //só psso colocar um throw; vázio em um catch e ele lança a exceção recebida
+                throw new OperacaoFinanceiraException("Operação não realizada!", ex);
+            }
             contaDestino.Depositar(valor);
         }
     }

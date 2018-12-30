@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _04_XX_XX_EntendendoExcecoes
 {
-    public class SaldoInsuficienteException : Exception
+    public class SaldoInsuficienteException : OperacaoFinanceiraException
     {
         public double Saldo { get; }
         public double ValorSaque { get; }
@@ -18,5 +18,6 @@ namespace _04_XX_XX_EntendendoExcecoes
             Saldo = saldo;
             ValorSaque = valorSaque;
         }
+        public SaldoInsuficienteException(string mensagem, Exception excecaoInterna) : base(mensagem, excecaoInterna) { }
     }
 }
