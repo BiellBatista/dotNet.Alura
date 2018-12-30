@@ -202,4 +202,14 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		09 - Propagando exceções
 		10 - Mãos na massa
 		11 - O que aprendemos?
-	02 - 
+	02 - Tratamento de exceções
+		01 - Projeto da aula anterior
+		02 - Tratando várias exceções
+		03 - Palavra reservada throw
+		04 - Capturando exceções
+		05 - Relançando exceções
+		06 - Mãos na massa
+		07 - O que aprendemos?
+	03 - ArgumentException ParamName e nameof
+		01 - Projeto da aula anterior
+		02 - Propriedades somente leitura
