@@ -10,20 +10,31 @@ namespace _04_XX_XX_EntendendoExcecoes
     {
         static void Main(string[] args)
         {
+            //try
+            //{
+            //    Metodo();
+
+            //}
+            //catch (DivideByZeroException)
+            //{
+            //    Console.WriteLine("Não é possível divisão por zero.");
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.Message);
+            //    Console.WriteLine(e.StackTrace);
+            //    Console.WriteLine("Aconteceu um erro!");
+            //}
+
             try
             {
-                Metodo();
-
+                ContaCorrente conta = new ContaCorrente(0, 0);
             }
-            catch (DivideByZeroException)
+            catch (ArgumentException ex)
             {
-                Console.WriteLine("Não é possível divisão por zero.");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                Console.WriteLine(e.StackTrace);
-                Console.WriteLine("Aconteceu um erro!");
+                Console.WriteLine("Argumento com problema: " + ex.ParamName);
+                Console.WriteLine("Ocorreu uma exceção do tipo ArgumentException.");
+                Console.WriteLine(ex.Message);
             }
 
             Console.ReadLine();

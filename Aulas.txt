@@ -213,3 +213,11 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 	03 - ArgumentException ParamName e nameof
 		01 - Projeto da aula anterior
 		02 - Propriedades somente leitura
+		03 - Lançando nossa exceção de argumento
+		04 - ParamName no ArgumentException e operador nameof
+		05 - Propriedade Somente-Leitura
+		06 - Mãos na massa
+		07 - O que aprendemos?
+	04 - Criando exceções ricas
+		01 - Projeto da aula anterior
+		02 - 
