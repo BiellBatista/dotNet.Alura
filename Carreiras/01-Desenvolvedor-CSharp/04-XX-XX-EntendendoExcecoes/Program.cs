@@ -28,12 +28,29 @@ namespace _04_XX_XX_EntendendoExcecoes
 
             try
             {
-                ContaCorrente conta = new ContaCorrente(0, 0);
+                ContaCorrente conta = new ContaCorrente(573, 57341);
+                ContaCorrente conta2 = new ContaCorrente(485, 57864);
+
+                conta2.Transferir(-10, conta);
+
+                conta.Depositar(150);
+                Console.WriteLine(conta.Saldo);
+                conta.Sacar(500);
+                Console.WriteLine(conta.Saldo);
             }
             catch (ArgumentException ex)
             {
                 Console.WriteLine("Argumento com problema: " + ex.ParamName);
                 Console.WriteLine("Ocorreu uma exceção do tipo ArgumentException.");
+                Console.WriteLine(ex.Message);
+            }
+            catch (SaldoInsuficienteException ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Ocorreu uma exceção do tipo SaldoInsuficienteException.");
+            }
+            catch (Exception ex)
+            {
                 Console.WriteLine(ex.Message);
             }
 

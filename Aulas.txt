@@ -220,4 +220,11 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		07 - O que aprendemos?
 	04 - Criando exceções ricas
 		01 - Projeto da aula anterior
+		02 - Criando nossa própria exceção
+		03 - Tornando as exceções mais ricas
+		04 - Criando tipos de exceção
+		05 - Mãos na massa
+		06 - O que aprendemos?
+	05 - StackTrace e InnerException
+		01 - Projeto da aula anterior
 		02 - 

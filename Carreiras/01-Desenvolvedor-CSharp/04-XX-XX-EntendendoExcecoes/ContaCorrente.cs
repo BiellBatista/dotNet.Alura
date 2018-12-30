@@ -38,21 +38,21 @@ namespace _04_XX_XX_EntendendoExcecoes
             //throw new Exception("A agência e o número devem ser maiores que 0");
             if (numero <= 0)
                 throw new ArgumentException("O argumento agencia deve ser maior do que 0.", nameof(numero)); //passando o argumento que deu problema
-            //throw new ArgumentException("O argumento numero deve ser maior do que 0."); //falando tem uma execação de argumento
-                                                                                             //throw new Exception("A agência e o número devem ser maiores que 0");
+                                                                                                             //throw new ArgumentException("O argumento numero deve ser maior do que 0."); //falando tem uma execação de argumento
+                                                                                                             //throw new Exception("A agência e o número devem ser maiores que 0");
             Agencia = agencia;
             Numero = numero;
-            TaxaOperacao = 30 / TotalDeContasCriadas;
-
             TotalDeContasCriadas++;
+            TaxaOperacao = 30 / TotalDeContasCriadas;
         }
 
-        public bool Sacar(double valor)
+        public void Sacar(double valor)
         {
+            if (valor < 0)
+                throw new ArgumentException("Valor inválido para o saque", nameof(valor));
             if (_saldo < valor)
-                return false;
+                throw new SaldoInsuficienteException(Saldo, valor);
             _saldo -= valor;
-            return true;
         }
 
         public void Depositar(double valor)
@@ -61,13 +61,12 @@ namespace _04_XX_XX_EntendendoExcecoes
         }
 
 
-        public bool Transferir(double valor, ContaCorrente contaDestino)
+        public void Transferir(double valor, ContaCorrente contaDestino)
         {
-            if (_saldo < valor)
-                return false;
-            _saldo -= valor;
+            if (valor < 0)
+                throw new ArgumentException("Valor inválido para a transferência", nameof(valor));
+            Sacar(valor);
             contaDestino.Depositar(valor);
-            return true;
         }
     }
 }

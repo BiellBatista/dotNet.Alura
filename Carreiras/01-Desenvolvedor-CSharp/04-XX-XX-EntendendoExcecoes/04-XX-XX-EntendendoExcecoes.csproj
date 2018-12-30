@@ -55,6 +55,7 @@
     <Compile Include="ParceiroComercial.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaldoInsuficienteException.cs" />
     <Compile Include="Sistemas\IAutenticavel.cs" />
     <Compile Include="Sistemas\SistemaInterno.cs" />
   </ItemGroup>
