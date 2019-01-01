@@ -241,3 +241,7 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		06 - Açúcar sintático using
 		07 - Mão na massa
 		08 - O que aprendemos?
+05 - Bibliotecas DLLs, documentação e usando o NuGet
+	01 - Projeto de biblioteca
+		01 - Introdução
+		02 - Biblioteca de classes
