@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 namespace _05_XX_XX_BibliotecasDLLs.Modelos
 {
     //Helper significa que a classe ajuda outras
-    public class AutenticacaoHelper
+    internal class AutenticacaoHelper
     {
+        public bool CompararSenhas(string senhaVerdadeira, string senhaTentativa)
+        {
+            return senhaVerdadeira == senhaTentativa;
+        }
     }
 }

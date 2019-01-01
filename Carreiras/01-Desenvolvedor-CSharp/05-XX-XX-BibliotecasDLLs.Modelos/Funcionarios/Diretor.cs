@@ -15,7 +15,7 @@ namespace _05_XX_XX_BibliotecasDLLs.Modelos.Funcionarios
         }
 
         // override faz com que o método sobrescreva o método virtual ou abstract da base
-        public override double GetBonificacao()
+        internal protected override double GetBonificacao()
         {
             // a palavra base serve para invocar algum método ou membro base
             return Salario * 0.5;

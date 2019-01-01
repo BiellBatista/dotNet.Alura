@@ -30,7 +30,7 @@ namespace _05_XX_XX_BibliotecasDLLs.Modelos.Funcionarios
         {
             return Salario * 0.10;
         }*/
-        public abstract double GetBonificacao();
+        internal protected abstract double GetBonificacao();
 
         // virtual permite que o método seja sobrescrito
         /*public virtual void AumentarSalario()

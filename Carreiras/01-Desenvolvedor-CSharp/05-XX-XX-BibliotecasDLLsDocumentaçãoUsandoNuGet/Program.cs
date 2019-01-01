@@ -1,4 +1,5 @@
 ﻿using _05_XX_XX_BibliotecasDLLs.Modelos;
+using _05_XX_XX_BibliotecasDLLs.Modelos.Funcionarios;
 using System;
 using System.Collections.Generic;
 using System.Linq;

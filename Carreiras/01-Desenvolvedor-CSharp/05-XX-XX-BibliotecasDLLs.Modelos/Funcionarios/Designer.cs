@@ -18,7 +18,7 @@ namespace _05_XX_XX_BibliotecasDLLs.Modelos.Funcionarios
             Salario *= 1.11;
         }
 
-        public override double GetBonificacao()
+        internal protected override double GetBonificacao()
         {
             return Salario * 0.17;
         }

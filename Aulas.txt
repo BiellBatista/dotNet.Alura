@@ -245,3 +245,17 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 	01 - Projeto de biblioteca
 		01 - Introdução
 		02 - Biblioteca de classes
+		03 - Referencias de projetos
+		04 - Qual tipo de projeto?
+		05 - Mãos na massa
+		06 - O que aprendemos?
+	02 - Modificadores de acesso em bibliotecas
+		01 - Projeto da aula anterior
+		02 - Modificador de acesso internal
+		03 - Revisão de modificadores e protected internal
+		04 - Acessibilidade public/internal
+		05 - Mãos na massa
+		06 - O que aprendemos?
+	03 - Referencia de DLL
+		01 - Projeto da aula anterior
+		02 - Referencias de DLL

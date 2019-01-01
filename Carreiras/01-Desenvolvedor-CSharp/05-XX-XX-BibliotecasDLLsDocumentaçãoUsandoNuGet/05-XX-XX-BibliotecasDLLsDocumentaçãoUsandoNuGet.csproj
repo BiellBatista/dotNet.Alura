@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\05-XX-XX-BibliotecasDLLs.Modelos\05-XX-XX-BibliotecasDLLs.Modelos.csproj">
+      <Project>{575fd746-4704-4448-be0f-c69f24e3724e}</Project>
+      <Name>05-XX-XX-BibliotecasDLLs.Modelos</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
