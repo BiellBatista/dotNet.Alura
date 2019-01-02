@@ -300,4 +300,12 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 	03 - Mais métodos de manipulação
 		01 - Projeto da aula anterior
 		02 - Usando o método Remove
+		03 - Usando ToLower e ToUpper
+		04 - StartsWith EndsWith e Contains
+		05 - Métodos de String
+		06 - Mãos na massa
+		07 - O que aprendemos?
+	04 - Expressões regulares
+		01 - Projeto da aula anterior
+		02 - Conhecendo expressões regulares
 		03 - 
