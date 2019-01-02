@@ -274,3 +274,11 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 	05 - NuGet
 		01 - Projeto da aula anterior
 		02 - Lidando com datas
+		03 - Usando o Humanizer
+		04 - Usando o NuGet
+		05 - Conclusão
+		06 - O comando Install-Package
+		07 - Para saber mais: e minhas bibliotecas?
+		08 - Mãos na massa
+		09 - Projeto final do curso
+		10 - O que aprendemos?
