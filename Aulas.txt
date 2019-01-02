@@ -308,4 +308,6 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 	04 - Expressões regulares
 		01 - Projeto da aula anterior
 		02 - Conhecendo expressões regulares
-		03 - 
+		03 - Quantificadores
+		04 - Quantificadores com intervalos
+		05 - 

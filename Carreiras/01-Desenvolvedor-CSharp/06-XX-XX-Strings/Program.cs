@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace _06_XX_XX_Strings
@@ -10,14 +11,24 @@ namespace _06_XX_XX_Strings
     {
         static void Main(string[] args)
         {
-            string urlTeste = "https://www.bytebank.com/cambio";
-            int indiceByteBank = urlTeste.IndexOf("https://www.bytebank.com");
+            string padrao = "[0123456789][0123456789][0123456789][0123456789][-][0123456789][0123456789][0123456789][0123456789]";
+            string padraoComQuantificadores = "[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][0-9]"; //é a mesma coisa de cima
+            string padraoComQuantificadoresEMuntiplicadores = "[0-9]{4}[-][0-9]{4}"; //é a mesma coisa de cima (o {X} serve para mostrar que um padrão dentro de uma [] repete X vezes
+            string textoDeTeste = "Meu nome é Guilherme, me ligue em 4784-4546";
 
-            Console.WriteLine(urlTeste.StartsWith("https://www.bytebank.com")); //verifica se uma string começa com uma string
-            Console.WriteLine(urlTeste.EndsWith("cambio")); //verifica se uma string termina com uma string
-            Console.WriteLine(urlTeste.Contains("cambio")); //verifica se uma string contem outra string
-            Console.WriteLine(indiceByteBank >= 0);
+            Match resultado = Regex.Match(textoDeTeste, padrao); //retorna a cadeia de caracteres dentro do padrão (no caso, 4784-4546)
+
+            Regex.IsMatch(textoDeTeste, padrao); //verifica se o input possui o padrão (true)
             Console.ReadLine();
+
+            //Expressão Regulares acima
+            //string urlTeste = "https://www.bytebank.com/cambio";
+            //int indiceByteBank = urlTeste.IndexOf("https://www.bytebank.com");
+
+            //Console.WriteLine(urlTeste.StartsWith("https://www.bytebank.com")); //verifica se uma string começa com uma string
+            //Console.WriteLine(urlTeste.EndsWith("cambio")); //verifica se uma string termina com uma string
+            //Console.WriteLine(urlTeste.Contains("cambio")); //verifica se uma string contem outra string
+            //Console.WriteLine(indiceByteBank >= 0);
 
 
             //string urlParametros = "http://www.bytebank.com/cambio?moedaOrigem=real&moedaDestino=dolar";
