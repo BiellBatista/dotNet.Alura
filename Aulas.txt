@@ -266,4 +266,11 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 	04 - Documentando
 		01 - Projeto da aula anterior
 		02 - Documentando nossa biblioteca
-		03 - 
+		03 - Gerando documentação
+		04 - Gerando documentação
+		05 - Documentando exceções e warnings
+		06 - Mãos na massa
+		07 - O que aprendemos?
+	05 - NuGet
+		01 - Projeto da aula anterior
+		02 - Lidando com datas
