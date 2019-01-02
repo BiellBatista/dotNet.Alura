@@ -83,5 +83,13 @@ namespace _04_XX_XX_EntendendoExcecoes
             }
             contaDestino.Depositar(valor);
         }
+
+        //toda vez que eu executar o objeto sem método, irá invocar o ToString();
+        public override string ToString()
+        {
+            // posso colocar operações de QUALQUER TIPO dentro do {}, como {1 + 2 - 3}
+            return $"Número {Numero}, Agência {Agencia}, Saldo {Saldo}";
+            //return "Número " + Numero + ", Agência " + Agencia + ", Saldo " + Saldo;
+        }
     }
 }
