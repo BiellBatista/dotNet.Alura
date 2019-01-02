@@ -23,5 +23,21 @@ namespace _04_XX_XX_EntendendoExcecoes
             }
         }
         public string Profissao { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            Cliente outroCliente = (Cliente)obj; //converte (expkicitamente) o objeto para Cliente
+            outroCliente = obj as Cliente; //converte o objeto para Cliente, caso seja Cliente. Caso contrário, será null
+
+            if (outroCliente == null)
+                return false;
+
+            return Nome == outroCliente.Nome && CPF == outroCliente.CPF && Profissao == outroCliente.Profissao;
+
+
+            /*
+             * Ele irá verificar se os objetos são iguais (pelo atributo) e sobreescreve o método Equals da classe Object
+             * /
+        }
     }
 }
