@@ -2,6 +2,9 @@
 
 namespace _05_XX_XX_BibliotecasDLLs.Modelos
 {
+    /// <summary>
+    /// Define uma Conta Corrente do Banco.
+    /// </summary>
     public class ContaCorrente
     {
         public static double TaxaOperacao { get; private set; }
@@ -32,6 +35,11 @@ namespace _05_XX_XX_BibliotecasDLLs.Modelos
             }
         }
 
+        /// <summary>
+        /// Este construtor cria uma instância de ContaCorrente com os argumentos utilizados.
+        /// </summary>
+        /// <param name="agencia">Representa o valor da propriedade <see cref="Agencia"/> e deve possuir um valor maior que zero.</param>
+        /// <param name="numero">Representa o valor da propriedade <see cref="Numero"/> e deve possuir um valor maior que zero.</param>
         public ContaCorrente(int agencia, int numero)
         {
             if (agencia <= 0)//nameof() {operador que espera o nome de uma classe/argumento/método/propriedade/atributos..} pega o nome do parametro e passa para string

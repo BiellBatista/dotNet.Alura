@@ -259,3 +259,11 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 	03 - Referencia de DLL
 		01 - Projeto da aula anterior
 		02 - Referencias de DLL
+		03 - Para saber mais: GAC
+		04 - Referenciar projetos e DLLs
+		05 - Mãos na massa
+		06 - O que aprendemos?
+	04 - Documentando
+		01 - Projeto da aula anterior
+		02 - Documentando nossa biblioteca
+		03 - 
