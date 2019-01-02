@@ -282,3 +282,22 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		08 - Mãos na massa
 		09 - Projeto final do curso
 		10 - O que aprendemos?
+06 - Strings, expressões regulares e a classe Object
+	01 - Mais sobre a String
+		01 - Introdução
+		02 - Argumentos em paginas da internet
+		03 - Imutabilidade e Substring
+		04 - Método Substring
+		05 - Mãos na massa
+		06 - O que aprendemos?
+	02 - Métodos e propriedades
+		01 - Projeto da aula anterior
+		02 - IsNullOrEmpty e palavra chave string
+		03 - Propriedade Length e sobrecargas de IndexOf
+		04 - Trabalhando com Strings
+		05 - Mãos na massa
+		06 - O que aprendemos?
+	03 - Mais métodos de manipulação
+		01 - Projeto da aula anterior
+		02 - Usando o método Remove
+		03 - 
