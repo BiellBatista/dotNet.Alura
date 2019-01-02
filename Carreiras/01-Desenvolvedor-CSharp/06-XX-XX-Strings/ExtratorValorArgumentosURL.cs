@@ -27,8 +27,12 @@ namespace _06_XX_XX_Strings
         {
             string termo = nomeParametro + "=";
             int indiceTermo = _argumentos.IndexOf(termo);
+            string resultado = _argumentos.Substring(indiceTermo + termo.Length); ;
+            int indiceEComercial = resultado.IndexOf('&');
 
-            return _argumentos.Substring(indiceTermo + termo.Length);
+            if(indiceEComercial != -1)
+                return resultado.Remove(indiceEComercial);
+            return resultado;
         }
     }
 }
