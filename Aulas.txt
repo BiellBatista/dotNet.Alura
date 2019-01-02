@@ -310,4 +310,8 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		02 - Conhecendo expressões regulares
 		03 - Quantificadores
 		04 - Quantificadores com intervalos
-		05 - 
+		05 - Testando Regex
+		06 - Mãos na massa
+		07 - O que aprendemos?
+	05 - Classe Object
+		01 - Classe object

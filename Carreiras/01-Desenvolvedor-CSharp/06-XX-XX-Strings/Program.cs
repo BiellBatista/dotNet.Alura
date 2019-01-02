@@ -14,6 +14,8 @@ namespace _06_XX_XX_Strings
             string padrao = "[0123456789][0123456789][0123456789][0123456789][-][0123456789][0123456789][0123456789][0123456789]";
             string padraoComQuantificadores = "[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][0-9]"; //é a mesma coisa de cima
             string padraoComQuantificadoresEMuntiplicadores = "[0-9]{4}[-][0-9]{4}"; //é a mesma coisa de cima (o {X} serve para mostrar que um padrão dentro de uma [] repete X vezes
+            string padraoComQuantificadoresEMuntiplicadoresEIntervalo = "[0-9]{4,5}-{0,1}[0-9]{4}"; //é a mesma coisa de cima (o {X, Y} serve para mostrar que um padrão dentro de uma [] repete X vezes até Y vezes. No caso de um caracter, não preciso colocar o [], como no caso do -
+            string padraoComQuantificadoresEMuntiplicadoresEIntervaloCom? = "[0-9]{4,5}-?[0-9]{4}"; //é a mesma coisa de cima (o {X, Y} serve para mostrar que um padrão dentro de uma [] repete X vezes até Y vezes. No caso de um caracter, não preciso colocar o [], como no caso do -. O ? serve para mostrar que o caracter repete 0 ou 1 vez (tipo o {0, 1})
             string textoDeTeste = "Meu nome é Guilherme, me ligue em 4784-4546";
 
             Match resultado = Regex.Match(textoDeTeste, padrao); //retorna a cadeia de caracteres dentro do padrão (no caso, 4784-4546)
