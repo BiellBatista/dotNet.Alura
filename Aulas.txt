@@ -328,3 +328,5 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		02 - Introdução
 		03 - Conhecendo array
 		04 - Valores padrões em arrays
+		05 - Iterando arrays e Length
+		06 - 
