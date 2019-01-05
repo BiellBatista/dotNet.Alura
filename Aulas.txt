@@ -335,5 +335,6 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		09 - Mãos na massa
 		10 - O que aprendemos?
 	02 - Criando nossa Lista
-		01 - Criando nossa Lista
+		01 - Projeto da aula anterior
 		02 - Criando nossa lista
+		03 - 

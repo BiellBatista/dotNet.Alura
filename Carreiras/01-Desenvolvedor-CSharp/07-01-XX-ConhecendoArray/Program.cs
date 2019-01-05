@@ -11,6 +11,17 @@ namespace _07_01_XX_ConhecendoArray
     {
         static void Main(string[] args)
         {
+            ListaDeContaCorrente list = new ListaDeContaCorrente();
+
+            list.Adicionar(new ContaCorrente(874, 5679787));
+            list.Adicionar(new ContaCorrente(874, 4456668));
+            list.Adicionar(new ContaCorrente(874, 7781438));
+
+            Console.ReadLine();
+        }
+
+        static void TestaArraydeContaCorrente()
+        {
             //ContaCorrente[] contas = new ContaCorrente[3];
             //contas[0] = new ContaCorrente(874, 5679787);
             //contas[1] = new ContaCorrente(874, 4456668);
@@ -28,8 +39,6 @@ namespace _07_01_XX_ConhecendoArray
                 ContaCorrente contaAtual = contas[indice];
                 Console.WriteLine($"Conta {indice} {contaAtual.Numero}");
             }
-
-            Console.ReadLine();
         }
 
         static void TestaArrayInt()
