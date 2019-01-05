@@ -329,4 +329,11 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		03 - Conhecendo array
 		04 - Valores padrões em arrays
 		05 - Iterando arrays e Length
-		06 - 
+		06 - Inicializador de array
+		07 - Sintaxe de criação
+		08 - Posições não inicializadas
+		09 - Mãos na massa
+		10 - O que aprendemos?
+	02 - Criando nossa Lista
+		01 - Criando nossa Lista
+		02 - Criando nossa lista
