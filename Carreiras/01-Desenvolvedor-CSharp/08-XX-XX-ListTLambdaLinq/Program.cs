@@ -1,4 +1,5 @@
 ﻿using _05_XX_XX_BibliotecasDLLs.Modelos;
+using _08_XX_XX_ListTLambdaLinq.Comparadores;
 using _08_XX_XX_ListTLambdaLinq.Extensoes;
 using System;
 using System.Collections.Generic;
@@ -17,7 +18,7 @@ namespace _08_XX_XX_ListTLambdaLinq
                 new ContaCorrente(290, 18950)
             };
 
-            contas.Sort();
+            contas.Sort(new ComparadorContaCorrentePorAgencia());
 
             foreach (var conta in contas)
                 Console.WriteLine($"Conta número {conta.Numero}, ag. {conta.Agencia}");

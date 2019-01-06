@@ -393,6 +393,9 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		01 - Projeto da aula anterior
 		02 - Interface IComparable
 		03 - Interface IComparer
-		04 -
-		05 -
-		06 -
+		04 - Ordenando uma lista
+		05 - Mãos na massa
+		06 - O que aprendemos?
+	05 - OrderBy e expressões Lambda
+		01 - Projeto da aula anterior
+		02 - Usando o OrderBy
