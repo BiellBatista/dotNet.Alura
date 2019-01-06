@@ -4,17 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _08_XX_XX_ListTLambdaLinq
+namespace _08_XX_XX_ListTLambdaLinq.Extensoes
 {
-    public static class ListExtensoes
+    //uma classe genérica para que o método de extensão seja genérico
+    public static class ListExtensoes<T>
     {
         /**
          * Método de extensão serve para criar um novo método estátio em uma classe já definida, é necessário colocar this no parametro que irá receber a classe.
          * Ele só serve para uma lista de inteiro
          **/
-        public static void AdicionarVarios(this List<int> listaDeInteiros, params int[] itens)
+        public static void AdicionarVarios(this List<T> listaDeInteiros, params T[] itens)
         {
-            foreach (int item in itens)
+            foreach (T item in itens)
                 listaDeInteiros.Add(item);
         }
     }
