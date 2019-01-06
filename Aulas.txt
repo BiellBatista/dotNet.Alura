@@ -379,7 +379,11 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 	02 - Método de extensão genérico
 		01 - Projeto da aula anterior
 		02 - Método de extensão em classe genérica
+		03 - Métodos de extensão genéricos
+		04 - Verifica se é nulo
+		05 - Mãos na massa
+		06 - O que aprendemos?
+	03 - Usando VAR e método Sort
+		01 - Projeto da aula anterior
+		02 - Usando var
 		03 - 
-		04 - 
-		05 - 
-		06 - 
