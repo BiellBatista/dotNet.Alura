@@ -392,7 +392,7 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 	04 - IComparable e IComparer
 		01 - Projeto da aula anterior
 		02 - Interface IComparable
-		03 - 
+		03 - Interface IComparer
 		04 -
 		05 -
 		06 -

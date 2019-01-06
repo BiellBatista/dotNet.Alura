@@ -5,7 +5,7 @@ namespace _05_XX_XX_BibliotecasDLLs.Modelos
     /// <summary>
     /// Define uma Conta Corrente do Banco.
     /// </summary>
-    public class ContaCorrente
+    public class ContaCorrente : IComparable
     {
         public static double TaxaOperacao { get; private set; }
         public Cliente Titular { get; set; }
@@ -104,6 +104,24 @@ namespace _05_XX_XX_BibliotecasDLLs.Modelos
             if (outraConta == null)
                 return false;
             return Numero == outraConta.Numero && Agencia == outraConta.Agencia;
+        }
+
+        public int CompareTo(object obj)
+        {
+            // Retornar negativo quando a instância prece o obj
+            // Retornar zero quando a instância e o obj são equivalentes
+            // Retornar positivo diferente de zero quando a precedencia for de obj
+
+            var outraConta = obj as ContaCorrente;
+
+            if (outraConta == null)
+                return -1;
+            else if (Numero < outraConta.Numero)
+                return -1;
+            else if (Numero == outraConta.Numero)
+                return 0;
+            else
+                return 1;
         }
     }
 }
