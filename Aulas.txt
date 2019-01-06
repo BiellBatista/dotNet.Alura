@@ -360,3 +360,4 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 	05 - Começando com genéricos
 		01 - Projeto da aula anterior
 		02 - Uma lista quase genérica
+		03 - Conhecendo tipos genéricos
