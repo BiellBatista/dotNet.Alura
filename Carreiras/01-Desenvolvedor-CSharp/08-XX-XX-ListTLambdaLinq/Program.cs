@@ -9,29 +9,63 @@ namespace _08_XX_XX_ListTLambdaLinq
     {
         static void Main(string[] args)
         {
-            var conta = new ContaCorrente(344, 56456456);
-            var gerenciador = new GerenciadorBonificacao();
-            var gerenciadores = new List<GerenciadorBonificacao>();
+            var contas = new List<ContaCorrente>()
+            {
+                new ContaCorrente(341, 87480),
+                new ContaCorrente(342, 45678),
+                new ContaCorrente(340, 48950),
+                new ContaCorrente(290, 18950)
+            };
 
-            //List<int> idades = new List<int>();
+            contas.Sort();
 
-            //idades.Add(1);
-            //idades.Add(5);
-            //idades.Add(14);
-            //idades.Add(25);
-            //idades.Add(38);
-            //idades.Add(61);
+            foreach (var conta in contas)
+                Console.WriteLine($"Conta número {conta.Numero}, ag. {conta.Agencia}");
 
-            ////Aqui estou usando o método de extensão, posso usar ele invocando a classe que ele foi definido
+            Console.ReadLine();
+        }
+
+        static void TestaSorte()
+        {
+            //var conta = new ContaCorrente(344, 56456456);
+            //var gerenciador = new GerenciadorBonificacao();
+            //var gerenciadores = new List<GerenciadorBonificacao>();
+
+            var nomes = new List<string>()
+            {
+                "Guilherme",
+                "Luana",
+                "Wellington",
+                "Ana"
+            };
+
+            nomes.Sort();
+
+            foreach (var nome in nomes)
+                Console.WriteLine(nome);
+
+
+            List<int> idades = new List<int>();
+
+            idades.Add(1);
+            idades.Add(5);
+            idades.Add(14);
+            idades.Add(25);
+            idades.Add(38);
+            idades.Add(61);
+
+            //Aqui estou usando o método de extensão, posso usar ele invocando a classe que ele foi definido
             //ListExtensoes.AdicionarVarios(idades, 1, 5687, 1987, 1567, 987);
-            ////ou posso usar ele colocando o objeto (o primeiro parametro com this)
-            ////o ícone de um método de extensão é o cubo com uma seta pra baixo
-            //idades.AdicionarVarios(1, 5687, 1987, 1567, 987);
-            ////idades.Remove(5);
+            //ou posso usar ele colocando o objeto (o primeiro parametro com this)
+            //o ícone de um método de extensão é o cubo com uma seta pra baixo
+            idades.AdicionarVarios(1, 5687, 1987, 1567, 987);
+            //idades.Remove(5);
+            idades.AdicionarVarios(99, -1);
 
-            //for (int i = 0; i < idades.Count; i++)
-            //    Console.WriteLine(idades[i]);
-            //Console.ReadLine();
+            idades.Sort();
+
+            for (int i = 0; i < idades.Count; i++)
+                Console.WriteLine(idades[i]);
         }
     }
 }
