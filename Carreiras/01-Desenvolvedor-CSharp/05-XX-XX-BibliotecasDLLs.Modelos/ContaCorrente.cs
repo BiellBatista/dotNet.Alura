@@ -79,7 +79,6 @@ namespace _05_XX_XX_BibliotecasDLLs.Modelos
             _saldo += valor;
         }
 
-
         public void Transferir(double valor, ContaCorrente contaDestino)
         {
             if (valor < 0)
@@ -96,6 +95,15 @@ namespace _05_XX_XX_BibliotecasDLLs.Modelos
                 throw new OperacaoFinanceiraException("Operação não realizada!", ex);
             }
             contaDestino.Depositar(valor);
+        }
+
+        public override bool Equals(object obj)
+        {
+            ContaCorrente outraConta = obj as ContaCorrente; //convertendo o obj para contacorrente, caso o obj for uma generalização da ContaCorrente
+
+            if (outraConta == null)
+                return false;
+            return Numero == outraConta.Numero && Agencia == outraConta.Agencia;
         }
     }
 }
