@@ -8,6 +8,13 @@ namespace _07_01_XX_ConhecendoArray
         private ContaCorrente[] _itens;
         private int _proximaPosicao;
 
+        public int Tamanho {
+            get
+            {
+                return _proximaPosicao;
+            }
+        }
+
         public ListaDeContaCorrente(int capacidadeInicial = 5)
         {
             _itens = new ContaCorrente[capacidadeInicial];
@@ -58,6 +65,13 @@ namespace _07_01_XX_ConhecendoArray
             }
         }
 
+        public ContaCorrente GetContaCorrente(int indice)
+        {
+            if (indice < 0)
+                throw new ArgumentOutOfRangeException(nameof(indice));
+            return _itens[indice];
+        }
+
         private void VerificarCapacidade(int tamanhoNecessario)
         {
             if (_itens.Length >= tamanhoNecessario)
@@ -80,6 +94,15 @@ namespace _07_01_XX_ConhecendoArray
             {
                 novoArray[indice] = _itens[indice];
                 Console.WriteLine(".");
+            }
+        }
+
+        // isso se chama indexador
+        public ContaCorrente this[int indice]
+        {
+            get
+            {
+                return GetContaCorrente(indice);
             }
         }
     }

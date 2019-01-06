@@ -34,10 +34,7 @@ namespace _04_XX_XX_EntendendoExcecoes
 
             return Nome == outroCliente.Nome && CPF == outroCliente.CPF && Profissao == outroCliente.Profissao;
 
-
-            /*
-             * Ele irá verificar se os objetos são iguais (pelo atributo) e sobreescreve o método Equals da classe Object
-             * /
+             //Ele irá verificar se os objetos são iguais (pelo atributo) e sobreescreve o método Equals da classe Object
         }
     }
 }

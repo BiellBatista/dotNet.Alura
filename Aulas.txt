@@ -352,4 +352,5 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		06 - O que aprendemos?
 	04 - Indexadores e argumentos params
 		01 - Projeto da aula anterior
-		02 - 
+		02 - Criando indexadores
+		03 - Argumentos params
