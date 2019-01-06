@@ -1,4 +1,5 @@
-﻿using _08_XX_XX_ListTLambdaLinq.Extensoes;
+﻿using _05_XX_XX_BibliotecasDLLs.Modelos;
+using _08_XX_XX_ListTLambdaLinq.Extensoes;
 using System;
 using System.Collections.Generic;
 
@@ -8,25 +9,29 @@ namespace _08_XX_XX_ListTLambdaLinq
     {
         static void Main(string[] args)
         {
-            List<int> idades = new List<int>();
+            var conta = new ContaCorrente(344, 56456456);
+            var gerenciador = new GerenciadorBonificacao();
+            var gerenciadores = new List<GerenciadorBonificacao>();
 
-            idades.Add(1);
-            idades.Add(5);
-            idades.Add(14);
-            idades.Add(25);
-            idades.Add(38);
-            idades.Add(61);
+            //List<int> idades = new List<int>();
 
-            //Aqui estou usando o método de extensão, posso usar ele invocando a classe que ele foi definido
-            ListExtensoes.AdicionarVarios(idades, 1, 5687, 1987, 1567, 987);
-            //ou posso usar ele colocando o objeto (o primeiro parametro com this)
-            //o ícone de um método de extensão é o cubo com uma seta pra baixo
-            idades.AdicionarVarios(1, 5687, 1987, 1567, 987);
-            //idades.Remove(5);
+            //idades.Add(1);
+            //idades.Add(5);
+            //idades.Add(14);
+            //idades.Add(25);
+            //idades.Add(38);
+            //idades.Add(61);
 
-            for (int i = 0; i < idades.Count; i++)
-                Console.WriteLine(idades[i]);
-            Console.ReadLine();
+            ////Aqui estou usando o método de extensão, posso usar ele invocando a classe que ele foi definido
+            //ListExtensoes.AdicionarVarios(idades, 1, 5687, 1987, 1567, 987);
+            ////ou posso usar ele colocando o objeto (o primeiro parametro com this)
+            ////o ícone de um método de extensão é o cubo com uma seta pra baixo
+            //idades.AdicionarVarios(1, 5687, 1987, 1567, 987);
+            ////idades.Remove(5);
+
+            //for (int i = 0; i < idades.Count; i++)
+            //    Console.WriteLine(idades[i]);
+            //Console.ReadLine();
         }
     }
 }

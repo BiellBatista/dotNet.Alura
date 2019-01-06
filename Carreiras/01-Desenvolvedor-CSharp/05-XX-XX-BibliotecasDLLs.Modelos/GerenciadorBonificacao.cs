@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _05_XX_XX_BibliotecasDLLs.Modelos
 {
-    class GerenciadorBonificacao
+    public class GerenciadorBonificacao
     {
         private double _totalBonificacao;
 
