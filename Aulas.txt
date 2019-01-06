@@ -354,3 +354,9 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		01 - Projeto da aula anterior
 		02 - Criando indexadores
 		03 - Argumentos params
+		04 - Explorando indexadores
+		05 - Mãos na massa
+		06 - O que aprendemos?
+	05 - Começando com genéricos
+		01 - Projeto da aula anterior
+		02 - Uma lista quase genérica

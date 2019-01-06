@@ -97,6 +97,19 @@ namespace _07_01_XX_ConhecendoArray
             }
         }
 
+        //a palavra params serve para determinar a entrada de N argumentos e serve para qualquer tipo
+        public void AdicionarVarios(params ContaCorrente[] itens)
+        {
+            foreach (ContaCorrente i in itens)
+                Adicionar(i);
+        }
+
+        //public void AdicionarVarios(ContaCorrente[] itens)
+        //{
+        //    foreach (ContaCorrente i in itens)
+        //        Adicionar(i);
+        //}
+
         // isso se chama indexador
         public ContaCorrente this[int indice]
         {
