@@ -11,18 +11,20 @@ namespace _07_01_XX_ConhecendoArray
     {
         static void Main(string[] args)
         {
-            ListaDeObject listaDeIdades = new ListaDeObject();
+            Lista<int> idades = new Lista<int>();
 
-            listaDeIdades.Adicionar(10);
-            listaDeIdades.Adicionar(5);
-            listaDeIdades.Adicionar(4);
-            listaDeIdades.AdicionarVarios(16, 23, 60);
+            //ListaDeObject listaDeIdades = new ListaDeObject();
 
-            for(int i = 0; i < listaDeIdades.Tamanho; i++)
-            {
-                int idade = (int) listaDeIdades[i];
-                Console.WriteLine($"Idade no índice {i}: {idade}");
-            }
+            //listaDeIdades.Adicionar(10);
+            //listaDeIdades.Adicionar(5);
+            //listaDeIdades.Adicionar(4);
+            //listaDeIdades.AdicionarVarios(16, 23, 60);
+
+            //for(int i = 0; i < listaDeIdades.Tamanho; i++)
+            //{
+            //    int idade = (int) listaDeIdades[i];
+            //    Console.WriteLine($"Idade no índice {i}: {idade}");
+            //}
 
             //ListaDeContaCorrente lista = new ListaDeContaCorrente();
             //ContaCorrente contaDoGui = new ContaCorrente(11111, 1111111);
