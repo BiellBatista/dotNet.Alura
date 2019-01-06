@@ -16,7 +16,8 @@ namespace _07_01_XX_ConhecendoArray
             list.Adicionar(new ContaCorrente(874, 5679787));
             list.Adicionar(new ContaCorrente(874, 4456668));
             list.Adicionar(new ContaCorrente(874, 7781438));
-
+            //argumento: valor (tipo no python)
+            list.ArgumentosNomeados(numero: 6);
             Console.ReadLine();
         }
 

@@ -337,4 +337,12 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 	02 - Criando nossa Lista
 		01 - Projeto da aula anterior
 		02 - Criando nossa lista
-		03 - 
+		03 - Argumentos opcionais e nomeados
+		04 - Argumentos opcionais
+		05 - Array de object
+		06 - Para saber mais: Array.Copy
+		07 - Mãos na massa
+		08 - O que aprendemos?
+	03 - Criando o método Remover
+		01 - Projeto da aula anterior
+		02 - Método remover

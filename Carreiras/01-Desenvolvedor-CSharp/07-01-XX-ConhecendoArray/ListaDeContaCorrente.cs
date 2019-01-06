@@ -1,9 +1,5 @@
 ﻿using _05_XX_XX_BibliotecasDLLs.Modelos;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _07_01_XX_ConhecendoArray
 {
@@ -12,9 +8,9 @@ namespace _07_01_XX_ConhecendoArray
         private ContaCorrente[] _itens;
         private int _proximaPosicao;
 
-        public ListaDeContaCorrente()
+        public ListaDeContaCorrente(int capacidadeInicial = 5)
         {
-            _itens = new ContaCorrente[5];
+            _itens = new ContaCorrente[capacidadeInicial];
             _proximaPosicao = 0;
         }
 
@@ -28,6 +24,11 @@ namespace _07_01_XX_ConhecendoArray
             _proximaPosicao++;
         }
 
+        public void ArgumentosNomeados(string texto = "sdhuahusadhusda", int numero = 6)
+        {
+
+        }
+
         private void VerificarCapacidade(int tamanhoNecessario)
         {
             if (_itens.Length >= tamanhoNecessario)
@@ -35,13 +36,21 @@ namespace _07_01_XX_ConhecendoArray
                 return;
             }
 
-            ContaCorrente[] novoArray = new ContaCorrente[tamanhoNecessario];
+            int novoTamanho = _itens.Length * 2;
+
+            if(novoTamanho < tamanhoNecessario)
+            {
+                novoTamanho = tamanhoNecessario;
+            }
 
             Console.WriteLine("Aumentando capacidade da lista!");
+
+            ContaCorrente[] novoArray = new ContaCorrente[novoTamanho];
 
             for (int indice = 0; indice < _itens.Length; indice++)
             {
                 novoArray[indice] = _itens[indice];
+                Console.WriteLine(".");
             }
         }
     }
