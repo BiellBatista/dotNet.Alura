@@ -362,3 +362,13 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		02 - Uma lista quase genérica
 		03 - Conhecendo tipos genéricos
 		04 - Null em classes genéricas
+		05 - Conclusão
+		06 - Projeto final do curso
+		07 - Membros de tipos genéricos
+		08 - Static em classe genérica
+		09 - Mãos na massa
+		10 - O que aprendemos?
+08 - List<T>, lambda, linq
+	01 - ListT e métodos de extensão
+		01 - Introdução
+		02 - Classe List do dotNet

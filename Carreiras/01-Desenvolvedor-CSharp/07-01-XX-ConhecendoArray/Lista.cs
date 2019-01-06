@@ -59,6 +59,7 @@ namespace _07_01_XX_ConhecendoArray
             for (int i = indiceItem; i < _proximaPosicao; i++)
                 _itens[i] = _itens[i + 1];
             _proximaPosicao--;
+            //não tem como colocar null, porque null não é um valor e sim uma referência
             //_itens[_proximaPosicao] = null;
         }
 
