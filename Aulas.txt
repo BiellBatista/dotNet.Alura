@@ -346,3 +346,10 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 	03 - Criando o método Remover
 		01 - Projeto da aula anterior
 		02 - Método remover
+		03 - Deslocando itens no array
+		04 - Somando pares
+		05 - Mãos na massa
+		06 - O que aprendemos?
+	04 - Indexadores e argumentos params
+		01 - Projeto da aula anterior
+		02 - 

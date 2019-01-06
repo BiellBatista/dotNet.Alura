@@ -11,13 +11,30 @@ namespace _07_01_XX_ConhecendoArray
     {
         static void Main(string[] args)
         {
-            ListaDeContaCorrente list = new ListaDeContaCorrente();
-
-            list.Adicionar(new ContaCorrente(874, 5679787));
-            list.Adicionar(new ContaCorrente(874, 4456668));
-            list.Adicionar(new ContaCorrente(874, 7781438));
+            ListaDeContaCorrente lista = new ListaDeContaCorrente();
+            ContaCorrente contaDoGui = new ContaCorrente(11111, 1111111);
+            lista.Adicionar(contaDoGui);
+            lista.Adicionar(new ContaCorrente(874, 5679787));
+            lista.Adicionar(new ContaCorrente(874, 4456668));
+            lista.Adicionar(new ContaCorrente(874, 7781438));
+            lista.Adicionar(new ContaCorrente(874, 5679787));
+            lista.Adicionar(new ContaCorrente(874, 5679754));
+            lista.Adicionar(new ContaCorrente(874, 5679445));
+            lista.Adicionar(new ContaCorrente(874, 5679445));
+            lista.Adicionar(new ContaCorrente(874, 5679445));
+            lista.Adicionar(new ContaCorrente(874, 5679445));
+            lista.Adicionar(new ContaCorrente(874, 5679445));
+            lista.Adicionar(new ContaCorrente(874, 5679445));
             //argumento: valor (tipo no python)
-            list.ArgumentosNomeados(numero: 6);
+            //lista.ArgumentosNomeados(numero: 6);
+
+            lista.EscreverListaNaTela();
+            lista.Remover(contaDoGui);
+
+            Console.WriteLine("Após remover o item");
+
+            lista.EscreverListaNaTela();
+
             Console.ReadLine();
         }
 
