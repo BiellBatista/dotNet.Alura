@@ -8,7 +8,11 @@ namespace _08_XX_XX_ListTLambdaLinq
 {
     public static class ListExtensoes
     {
-        public static void AdicionarVarios(List<int> listaDeInteiros, params int[] itens)
+        /**
+         * Método de extensão serve para criar um novo método estátio em uma classe já definida, é necessário colocar this no parametro que irá receber a classe.
+         * Ele só serve para uma lista de inteiro
+         **/
+        public static void AdicionarVarios(this List<int> listaDeInteiros, params int[] itens)
         {
             foreach (int item in itens)
                 listaDeInteiros.Add(item);
