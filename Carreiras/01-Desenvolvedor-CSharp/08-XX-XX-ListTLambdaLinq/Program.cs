@@ -33,9 +33,12 @@ namespace _08_XX_XX_ListTLambdaLinq
             //posso escrever código no parâmetro do lambda
             // int.MaxValue; retorna o maior valor de um inteiro de 32 bits
 
-            var contasNaoNulas = contas.Where(conta => conta != null);
+            IEnumerable<ContaCorrente> contasNaoNulas = contas.Where(conta => conta != null);
 
-            IOrderedEnumerable<ContaCorrente> contasOrdenadas = contasNaoNulas.OrderBy(conta => conta.Numero);
+            //IOrderedEnumerable<ContaCorrente> contasOrdenadas = contasNaoNulas.OrderBy(conta => conta.Numero);
+            var contasOrdenadas = contas
+                .Where(conta => conta != null)
+                .OrderBy(conta => conta.Numero);
 
             foreach (var conta in contasOrdenadas)
             {

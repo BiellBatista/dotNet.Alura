@@ -406,4 +406,14 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 	06 - Linq e operador Where
 		01 - Projeto da aula anterior
 		02 - Usando o Where
+		03 - O linq e IEnumerable
+		04 - Conclusão
+		05 - Projeto final do curso
+		06 - Filtrando coleções
+		07 - Mãos na massa
+		08 - O que aprendemos?
+09 - Entrada e saída (I/O) com streams
+	01 - Lendo arquivos de texto
+		01 - Projeto inicial
+		02 - Introdução
 		03 - 
