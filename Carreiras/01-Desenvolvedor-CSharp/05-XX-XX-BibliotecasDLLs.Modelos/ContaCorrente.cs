@@ -106,6 +106,8 @@ namespace _05_XX_XX_BibliotecasDLLs.Modelos
             return Numero == outraConta.Numero && Agencia == outraConta.Agencia;
         }
 
+        //com este método eu posso usar o método Sort() {método de uma lista} nos objetos do tipo ConcaCorrete (posso implementar em qualquer um)
+        //configuro a implementação padrão do método Sort()
         public int CompareTo(object obj)
         {
             // Retornar negativo quando a instância prece o obj

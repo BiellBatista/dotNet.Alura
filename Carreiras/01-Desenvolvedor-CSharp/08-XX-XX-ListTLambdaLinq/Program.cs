@@ -3,12 +3,36 @@ using _08_XX_XX_ListTLambdaLinq.Comparadores;
 using _08_XX_XX_ListTLambdaLinq.Extensoes;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace _08_XX_XX_ListTLambdaLinq
 {
     public class Program
     {
         static void Main(string[] args)
+        {
+            var contas = new List<ContaCorrente>()
+            {
+                new ContaCorrente(341, 6),
+                new ContaCorrente(342, 5),
+                new ContaCorrente(340, 4),
+                new ContaCorrente(290, 3),
+                new ContaCorrente(290, 2),
+                new ContaCorrente(290, 1)
+            };
+            /**
+             * ordene a lista de contas pelo número.
+             * devo colocar no argumento o objeto, o operador lambda (=>) serve para varear o objeto que tem o IComparaber
+             * */
+            IOrderedEnumerable<ContaCorrente> contasOrdenadas = contas.OrderBy(conta => conta.Numero);
+
+            foreach (var conta in contasOrdenadas)
+                Console.WriteLine($"Conta número {conta.Numero}, ag. {conta.Agencia}");
+
+            Console.ReadLine();
+        }
+
+        static void TestaSorteComIComparer()
         {
             var contas = new List<ContaCorrente>()
             {
