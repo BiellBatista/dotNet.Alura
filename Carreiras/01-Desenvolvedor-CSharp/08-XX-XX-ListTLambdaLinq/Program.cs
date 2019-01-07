@@ -14,8 +14,11 @@ namespace _08_XX_XX_ListTLambdaLinq
             var contas = new List<ContaCorrente>()
             {
                 new ContaCorrente(341, 6),
+                null,
                 new ContaCorrente(342, 5),
                 new ContaCorrente(340, 4),
+                null,
+                null,
                 new ContaCorrente(290, 3),
                 new ContaCorrente(290, 2),
                 new ContaCorrente(290, 1)
@@ -24,10 +27,29 @@ namespace _08_XX_XX_ListTLambdaLinq
              * ordene a lista de contas pelo número.
              * devo colocar no argumento o objeto, o operador lambda (=>) serve para varear o objeto que tem o IComparaber
              * */
-            IOrderedEnumerable<ContaCorrente> contasOrdenadas = contas.OrderBy(conta => conta.Numero);
+            //IOrderedEnumerable<ContaCorrente> contasOrdenadas = contas.OrderBy(conta => conta.Numero);
+            //o OrderBy() não detectar null
+
+            //posso escrever código no parâmetro do lambda
+            // int.MaxValue; retorna o maior valor de um inteiro de 32 bits
+
+            IOrderedEnumerable<ContaCorrente> contasOrdenadas =
+                contas.OrderBy(conta =>
+                {
+                    if (conta == null)
+                        return int.MaxValue;
+
+                    return conta.Numero;
+                });
 
             foreach (var conta in contasOrdenadas)
-                Console.WriteLine($"Conta número {conta.Numero}, ag. {conta.Agencia}");
+            {
+                if (conta == null)
+                    Console.WriteLine("Conta nula");
+                else
+                    Console.WriteLine($"Conta número {conta.Numero}, ag. {conta.Agencia}");
+
+            }
 
             Console.ReadLine();
         }
