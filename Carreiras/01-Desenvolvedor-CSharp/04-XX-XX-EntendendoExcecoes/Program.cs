@@ -11,7 +11,8 @@ namespace _04_XX_XX_EntendendoExcecoes
     {
         static void Main(string[] args)
         {
-            CarregarContas2();
+            //CarregarContas2();
+            TestaInnerException();
             Console.ReadLine();
         }
         private static void CarregarContas2()
@@ -65,7 +66,7 @@ namespace _04_XX_XX_EntendendoExcecoes
                 ContaCorrente conta = new ContaCorrente(573, 57341);
                 ContaCorrente conta2 = new ContaCorrente(485, 57864);
 
-                conta2.Transferir(1000000, conta);
+                conta2.Transferir(10, conta);
 
                 conta.Depositar(150);
                 Console.WriteLine(conta.Saldo);
