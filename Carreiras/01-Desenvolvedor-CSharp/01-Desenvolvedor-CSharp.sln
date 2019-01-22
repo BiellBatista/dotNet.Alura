@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-01-XX-ConhecendoArray", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-XX-XX-ListTLambdaLinq", "08-XX-XX-ListTLambdaLinq\08-XX-XX-ListTLambdaLinq.csproj", "{92EC242A-0DDE-4C58-8682-AA3C0668B4C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-XX-XX-EntradaSaídaStreams", "09-XX-XX-EntradaSaídaStreams\09-XX-XX-EntradaSaídaStreams.csproj", "{40F7D0E5-4B70-402D-A81C-7D3FDF4F3CA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{92EC242A-0DDE-4C58-8682-AA3C0668B4C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92EC242A-0DDE-4C58-8682-AA3C0668B4C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92EC242A-0DDE-4C58-8682-AA3C0668B4C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40F7D0E5-4B70-402D-A81C-7D3FDF4F3CA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40F7D0E5-4B70-402D-A81C-7D3FDF4F3CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40F7D0E5-4B70-402D-A81C-7D3FDF4F3CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40F7D0E5-4B70-402D-A81C-7D3FDF4F3CA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
