@@ -11,7 +11,9 @@ namespace _09_XX_XX_EntradaSaídaStreams
     {
         static void Main(string[] args)
         {
-            var conta = new ContaCorrente(456, 46546);
+            var enderecoDoArquivo = "";
+
+            Console.ReadLine();
         }
     }
 }
