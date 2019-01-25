@@ -418,3 +418,11 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		02 - Introdução
 		03 - Entendendo fluxo de dados
 		04 - Criando um FileStream
+		05 - Enumeradores
+		06 - Usando encoding
+		07 - Lendo documento
+		08 - Mãos na massa
+		09 - O que aprendemos?
+	02 - Mais FileStream e leitor StreamReader
+		01 - Projeto da aula anterior
+		02 - Metodo Close e using
