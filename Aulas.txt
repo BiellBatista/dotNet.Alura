@@ -426,3 +426,5 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 	02 - Mais FileStream e leitor StreamReader
 		01 - Projeto da aula anterior
 		02 - Metodo Close e using
+		03 - Trabalhando com buffers
+		04 - Usando o StreamReader
