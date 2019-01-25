@@ -8,44 +8,33 @@ using System.Threading.Tasks;
 
 namespace _09_XX_XX_EntradaSaídaStreams
 {
-    class Program
+    /**
+     * Esta classe faz parte da class Program, com o modificado partial é possível dividir uma classe em dois arquivos
+     */
+    partial class Program
     {
         static void Main(string[] args)
         {
+            //LidandoComFileStreamDiretamente(); //Este método está em outro arquivo, mas ambos são a classe Program
+
             var enderecoDoArquivo = "contas.txt";
-            //var fluxoDoArquivo = new FileStream(enderecoDoArquivo, FileMode.Open); //indicando o abrindo e falando o modo de operação
-            //var buffer = new byte[1024]; //1Kb
-            //var numeroDeBytesLidos = -1;
 
-            using (var fluxoDoArquivo = new FileStream(enderecoDoArquivo, FileMode.Open))
+            using (var fluxoDeArquivo = new FileStream(enderecoDoArquivo, FileMode.Open))
             {
-                var buffer = new byte[1024]; //1Kb
-                var numeroDeBytesLidos = -1;
+                using (var leitor = new StreamReader(fluxoDeArquivo))
+                { //leitor do arquivo, devo passar o fluxo que será analisado
+                  //var linha = leitor.ReadToEnd(); //leia até o fim
+                  //var linha = leitor.Read(); //leia o primeiro byte
 
-                while (numeroDeBytesLidos != 0)
-                {
-                    numeroDeBytesLidos = fluxoDoArquivo.Read(buffer, 0, 1024);
-                    EscreverBuffer(buffer, numeroDeBytesLidos);
+                    while (!leitor.EndOfStream)
+                    {
+                        var linha = leitor.ReadLine(); //leia linha por linha
+                        Console.WriteLine(linha);
+                    }
                 }
             }
 
             Console.ReadLine();
-        }
-
-        static void EscreverBuffer(byte[] buffer, int bytesLidos)
-        {
-            var utf8 = new UTF8Encoding(); //criando o tranformador de byte
-
-            //var texto = utf8.GetString(buffer);
-            var texto = utf8.GetString(buffer, 0, bytesLidos); //Encoding irá processar os poucos bytes lidos. Tente aplicar isso no chatbot
-
-            Console.Write(texto);
-
-            foreach (var meuByte in buffer)
-            {
-                Console.Write(meuByte);
-                Console.Write(" ");
-            }
         }
     }
 }
