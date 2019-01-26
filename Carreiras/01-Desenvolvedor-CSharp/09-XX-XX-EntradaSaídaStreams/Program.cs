@@ -15,7 +15,28 @@ namespace _09_XX_XX_EntradaSaídaStreams
     {
         static void Main(string[] args)
         {
-            UsarStreamDeEntrada();
+            /**
+             * A classe File é static e ajuda nas operações de arquivos
+             */
+
+            File.WriteAllText("escrevendoComAClasseFile.txt", "Testando File.WriteAllText");
+
+            var bytesArquivo = File.ReadAllBytes("contas.txt");
+            Console.WriteLine(bytesArquivo.Length);
+
+            var linhas = File.ReadAllLines("contas.txt");
+            Console.WriteLine(linhas.Length);
+
+            foreach(var linha in linhas)
+            {
+                Console.WriteLine(linha);
+            }
+
+            //Console.WriteLine("Digite o teu nome: ");
+            //var nome = Console.ReadLine();
+            //Console.WriteLine(nome);
+
+            //UsarStreamDeEntrada();
             //LeituraBinaria();
             //EscritaBinaria();
             //using (var fs = new FileStream("testaTipos.txt", FileMode.Create))

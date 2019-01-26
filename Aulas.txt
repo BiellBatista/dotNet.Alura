@@ -452,3 +452,12 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		01 - Projeto da aula anterior
 		02 - Usando o stream de entrada da Console
 		03 - Auxiliares na classe File
+		04 - Classe File
+		05 - Conclusão
+		06 - Projeto final do curso
+		07 - Mãos na massa
+		08 - O que aprendemos?
+C# Collections parte 1 - Listas, arrays, listas ligadas, dicionários e conjuntos
+	01 - Começando com Arrays
+		01 - Preparando o ambiente
+		02 - 
