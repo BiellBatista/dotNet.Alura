@@ -31,7 +31,7 @@ namespace _09_XX_XX_EntradaSaídaStreams
                         var linha = leitor.ReadLine(); //leia linha por linha
                         var contaCorrente = ConverterStringParaContaCorrente(linha);
 
-                        Console.WriteLine($"Conta número {contaCorrente.Numero}, ag. {contaCorrente.Agencia}. Saldo: {contaCorrente.Saldo}");
+                        Console.WriteLine($"{contaCorrente.Titular.Nome} : Conta número {contaCorrente.Numero}, ag. {contaCorrente.Agencia}. Saldo: {contaCorrente.Saldo}");
                         //Console.WriteLine(linha);
                     }
                 }
@@ -42,7 +42,7 @@ namespace _09_XX_XX_EntradaSaídaStreams
 
         static ContaCorrente ConverterStringParaContaCorrente(string linha)
         {
-            string[] campos = linha.Split(' '); //quebrando uma string a partir de um caracter
+            string[] campos = linha.Split(','); //quebrando uma string a partir de um caracter
             /*
              * Gabriel de Almeida Batista
              * campo1  2  campo3  campo4
