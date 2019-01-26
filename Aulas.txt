@@ -1,463 +1,464 @@
-Curso C# Parte 1: Primeiros Passos
-	01 - História e ecossistema da linguagem
-		01 - Introdução
-		02 - História e escossistema .NET
-		03 - Benefícios da CLR
-		04 - Quais aplicações?
-		05 - Sobre o .NET Framework
-		06 - O que aprendemos?
-	02 - Nosso primeiro programa e o Visual Studio
-		01 - Nosso primeiro programa CSharp
-		02 - Sobre a compilação e execução
-		03 - Instalando o Visual Studio
-		04 - Mão na massa: instalae a IDE Visual Studio
-		05 - Ola mundo no Visual Studio
-		06 - Sobre IDEs e editores
-		07 - Estrutura de diretorios do Visual Studio
-		08 - Entrada da aplicação
-		09 - Compilar e executar
-	03 - Variáveis numéricas
-		01 - Projeto da aula anterior
-		02 - Criando variáveis
-		03 - Criando uma variável numérica
-		04 - Mão na massa: utilizando o tipo int
-		05 - Criando variáveis double
-		06 - Mão na massa: utilizando o tipo double
-		07 - Operações entre números
-		08 - Conversao e outros tipos numerico
-		09 - Mão na massa: algumas conversões em C#
-		10 - Imprimindo texto e números
-		11 - Para saber mais: Type Casting
-		12 - O que aprendemos?
-	04 - Variáveis de texto
-		01 - Projeto da aula anterior
-		02 - Caracteres e textos
-		03 - Mão na massa: Praticando char e String
-		04 - Declarando string e char
-		05 - Concatenação de String e inteiros
-		06 - Variáveis guardam valores
-		07 - Qual será o resultado?
-		08 - O que aprendemos?
-	05 - Controle de fluxo com IF
-		01 - Projeto da aula anterior
-		02 - Trabalhando com IF
-		03 - Mão na massa: A condivional if
-		04 - Trabalhando com if
-		05 - Variável booleana
-		06 - Tipo bool
-		07 - Operador lógico
-		08 - Escopo
-		09 - Mão na massa: Um pouco mais de if
-		10 - Declaração da variável
-		11 - Mão na massa: Escopo de variáveis
-		12 - Opcional: Alíquota com ifs
-		13 - Para saber mais: o comando switch
-		14 - O que aprendemos?
-	06 - Controle de fluxo com laços de repetição
-		01 - Projeto da aula anterior
-		02 - Laço de repetição While
-		03 - Enquanto isso, o while...
-		04 - Fixando o laço while
-		05 - Laço de repetição For
-		06 - Encadeando laços For
-		07 - Transformando while em for
-		08 - A palabra chave break
-		09 - Fixando o comando break
-		10 - Mão na massa: Laços
-		11 - Um erro de compilação...
-		12 - Exercitando laços aninhados e break
-		13 - Mão na massa: Aprofundando laços
-		14 - Desafio Opcional: Múltiplos de 3
-		15 - Desafio Opcional: Fatorial
-		16 - O que aprendemos?
-		17 - Conclusão
-Curso C# Parte 2: Introdução à Orientação a Objetos
-	01 - Nossa primeira classe
-		01 - Introdução
-		02 - Nossa primeira classe
-		03 - Classes e objetos
-		04 - Benefícios da POO
-		05 - Arquivos de código
-		06 - Criando objetos
-		07 - O que aprendemos?
-		08 - Mão na massa: Criando a primeira classe
-	02 - Tipos
-		01 - Projeto da aula anterior
-		02 - Usando nossa classe
-		03 - Obtendo campos
-		04 - Inicialização de variáveis
-		05 - Definindo valor de atributos
-		06 - Valores padrões
-		07 - Tipos de referência e tipos de valor
-		08 - Inicialização de booleanos
-		09 - Referências de objetos
-		10 - Mão na massa: Criando a primeira classe
-		11 - O que aprendemos?
-	03 - Comportamentos de classes
-		01 - Projeto da aula anterior
-		02 - Nossa primeira funcao
-		03 - Como chamar um método?
-		04 - Metodo sem retorno
-		05 - Metodos com varios argumentos
-		06 - Sobre métodos
-		07 - Métodos válidos
-		08 - Onde usar o this?
-		09 - Mão na massa: Criando métodos
-		10 - O que aprendemos?
-	04 - Namespace e composição e null
-		01 - Projeto da aula anterior
-		02 - Entendendo namespaces
-		03 - Importância dos namespaces
-		04 - Diretivas using
-		05 - Composicao de classes
-		06 - Referências nulas
-		07 - Problema não esperado
-		08 - Extraindo o que é comum
-		09 - Solucionando o problema no código
-		10 - Mão na massa: Referências
-		11 - O que aprendemos?
-	05 - Propriedades
-		01 - Projeto da aula anterior
-		02 - ObterSaldo e DefinirSaldo
-		03 - Propriedades Get e Set
-		04 - Produtividade com Get e Set
-		05 - Getters e Setters
-		06 - Públic x Privado
-		07 - Vantagens de campos privados
-		08 - O que aprendemos?
-		09 - Mão na massa: Criando Getters e Setters
-	06 - Construtores e membros estáticos
-		01 - Projeto da aula anterior
-		02 - Construtores
-		03 - Membros estáticos
-		04 - Conclusão
-		05 - Projeto final do curso
-		06 - Utilizando Construtores
-		07 - Onde está o erro?
-		08 - Por que não soma?
-		09 - Mãos na massa: Criando construtores e membros estáticos
-		10 - O que aprendemos?
-03 - Entendendo Herança e Interface
-	01 - Conhecendo o problema do cliente
-		01 - Introdução
-		02 - Atalhos no VisualStudio e classe Funcionario
-		03 - Relembrando Namespaces
-		04 - Classe Diretor e Sobrecargas
-		05 - Métodos com o mesmo nome?
-		06 - Para saber mais: Sobrecargas
-		07 - Para saber mais: Mais usos de sobrecargas
-		08 - Mão na massa
-		09 - O que aprendemos?
-	02 - Herança
-		01 - Projeto da aula anterior
-		02 - Nossa primeira herança
-		03 - Sintaxe de herança
-		04 - Sobrepondo comportamentos com override e virtual
-		05 - Propriedades podem ser virtuais?
-		06 - A palavra reservada base
-		07 - Herança no C#
-		08 - Repetição de membros
-		09 - Métodos virtuais?
-		10 - Mão na massa
-		11 - O que aprendemos?
-	03 - Construtores e protected
-		01 - Projeto da aula anterior
-		02 - Construtor na classe base
-		03 - Ordem de chamada dos construtores?
-		04 - Modificador de visibilidade protected
-		05 - Visibilidade
-		06 - Criando classes abstratas
-		07 - Criando métodos abstratos
-		08 - Chamando o construtor da classe base
-		09 - Para saber mais: sobrecarga em construtores
-		10 - Mão na massa
-		11 - O que aprendemos?
-	04 - Mais herança e herança múltipla
-		01 - Projeto da aula anterior
-		02 - O sistema interno do ByteBank
-		03 - Sobre Classes Abstratas
-		04 - Sobre métodos abstratos
-		05 - Classe autenticável
-		06 - Mão na massa
-		07 - O que aprendemos?
-	05 - Interfaces
-		01 - Problema da herança múltipla
-		02 - Herdando de várias classes
-		03 - Usando interfaces
-		04 - Conceitos de Interfaces
-		05 - Classes abstratas e interfaces
-		06 - Mão na massa
-		07 - Projeto final do curso
-		08 - Conclusão
-04 - Entendendo exceções
-	01 - Primeiros passos com exceções
-		01 - Introdução
-		02 - Pré-requisitos
-		03 - Conhecendo exceções
-		04 - Exceção de divisão por 0
-		05 - Lidando com erros
-		06 - Pilha de chamadas
-		07 - Blocos Try Catch
-		08 - Capturando exceções
-		09 - Propagando exceções
-		10 - Mãos na massa
-		11 - O que aprendemos?
-	02 - Tratamento de exceções
-		01 - Projeto da aula anterior
-		02 - Tratando várias exceções
-		03 - Palavra reservada throw
-		04 - Capturando exceções
-		05 - Relançando exceções
-		06 - Mãos na massa
-		07 - O que aprendemos?
-	03 - ArgumentException ParamName e nameof
-		01 - Projeto da aula anterior
-		02 - Propriedades somente leitura
-		03 - Lançando nossa exceção de argumento
-		04 - ParamName no ArgumentException e operador nameof
-		05 - Propriedade Somente-Leitura
-		06 - Mãos na massa
-		07 - O que aprendemos?
-	04 - Criando exceções ricas
-		01 - Projeto da aula anterior
-		02 - Criando nossa própria exceção
-		03 - Tornando as exceções mais ricas
-		04 - Criando tipos de exceção
-		05 - Mãos na massa
-		06 - O que aprendemos?
-	05 - StackTrace e InnerException
-		01 - Projeto da aula anterior
-		02 - Quando o StackTrace é preenchido
-		03 - Usando inner exceptions
-		04 - throw; vs. throw ex;
-		05 - Mãos na massa
-		06 - O que aprendemos?
-	06 - Finally e using
-		01 - Projeto da aula anterior
-		02 - Bloco finally
-		03 - Liberando recursos
-		04 - Conclusão
-		05 - Projeto final do curso
-		06 - Açúcar sintático using
-		07 - Mão na massa
-		08 - O que aprendemos?
-05 - Bibliotecas DLLs, documentação e usando o NuGet
-	01 - Projeto de biblioteca
-		01 - Introdução
-		02 - Biblioteca de classes
-		03 - Referencias de projetos
-		04 - Qual tipo de projeto?
-		05 - Mãos na massa
-		06 - O que aprendemos?
-	02 - Modificadores de acesso em bibliotecas
-		01 - Projeto da aula anterior
-		02 - Modificador de acesso internal
-		03 - Revisão de modificadores e protected internal
-		04 - Acessibilidade public/internal
-		05 - Mãos na massa
-		06 - O que aprendemos?
-	03 - Referencia de DLL
-		01 - Projeto da aula anterior
-		02 - Referencias de DLL
-		03 - Para saber mais: GAC
-		04 - Referenciar projetos e DLLs
-		05 - Mãos na massa
-		06 - O que aprendemos?
-	04 - Documentando
-		01 - Projeto da aula anterior
-		02 - Documentando nossa biblioteca
-		03 - Gerando documentação
-		04 - Gerando documentação
-		05 - Documentando exceções e warnings
-		06 - Mãos na massa
-		07 - O que aprendemos?
-	05 - NuGet
-		01 - Projeto da aula anterior
-		02 - Lidando com datas
-		03 - Usando o Humanizer
-		04 - Usando o NuGet
-		05 - Conclusão
-		06 - O comando Install-Package
-		07 - Para saber mais: e minhas bibliotecas?
-		08 - Mãos na massa
-		09 - Projeto final do curso
-		10 - O que aprendemos?
-06 - Strings, expressões regulares e a classe Object
-	01 - Mais sobre a String
-		01 - Introdução
-		02 - Argumentos em paginas da internet
-		03 - Imutabilidade e Substring
-		04 - Método Substring
-		05 - Mãos na massa
-		06 - O que aprendemos?
-	02 - Métodos e propriedades
-		01 - Projeto da aula anterior
-		02 - IsNullOrEmpty e palavra chave string
-		03 - Propriedade Length e sobrecargas de IndexOf
-		04 - Trabalhando com Strings
-		05 - Mãos na massa
-		06 - O que aprendemos?
-	03 - Mais métodos de manipulação
-		01 - Projeto da aula anterior
-		02 - Usando o método Remove
-		03 - Usando ToLower e ToUpper
-		04 - StartsWith EndsWith e Contains
-		05 - Métodos de String
-		06 - Mãos na massa
-		07 - O que aprendemos?
-	04 - Expressões regulares
-		01 - Projeto da aula anterior
-		02 - Conhecendo expressões regulares
-		03 - Quantificadores
-		04 - Quantificadores com intervalos
-		05 - Testando Regex
-		06 - Mãos na massa
-		07 - O que aprendemos?
-	05 - Classe Object
-		01 - Classe object
-		02 - Método ToString
-		03 - Método Equals
-		04 - Projeto final do curso
-		05 - Referências de Object
-		06 - Mãos na massa
-		07 - O que aprendemos?
-		08 - Conclusão
-07 - Array e tipos genéricos
-	01 - Conhecendo Array
-		01 - Projeto inicial
-		02 - Introdução
-		03 - Conhecendo array
-		04 - Valores padrões em arrays
-		05 - Iterando arrays e Length
-		06 - Inicializador de array
-		07 - Sintaxe de criação
-		08 - Posições não inicializadas
-		09 - Mãos na massa
-		10 - O que aprendemos?
-	02 - Criando nossa Lista
-		01 - Projeto da aula anterior
-		02 - Criando nossa lista
-		03 - Argumentos opcionais e nomeados
-		04 - Argumentos opcionais
-		05 - Array de object
-		06 - Para saber mais: Array.Copy
-		07 - Mãos na massa
-		08 - O que aprendemos?
-	03 - Criando o método Remover
-		01 - Projeto da aula anterior
-		02 - Método remover
-		03 - Deslocando itens no array
-		04 - Somando pares
-		05 - Mãos na massa
-		06 - O que aprendemos?
-	04 - Indexadores e argumentos params
-		01 - Projeto da aula anterior
-		02 - Criando indexadores
-		03 - Argumentos params
-		04 - Explorando indexadores
-		05 - Mãos na massa
-		06 - O que aprendemos?
-	05 - Começando com genéricos
-		01 - Projeto da aula anterior
-		02 - Uma lista quase genérica
-		03 - Conhecendo tipos genéricos
-		04 - Null em classes genéricas
-		05 - Conclusão
-		06 - Projeto final do curso
-		07 - Membros de tipos genéricos
-		08 - Static em classe genérica
-		09 - Mãos na massa
-		10 - O que aprendemos?
-08 - List<T>, lambda, linq
-	01 - ListT e métodos de extensão
-		01 - Introdução
-		02 - Classe List do dotNet
-		03 - Criando métodos de extensão
-		04 - Métodos de extensão
-		05 - Mãos na massa
-		06 - O que aprendemos?
-	02 - Método de extensão genérico
-		01 - Projeto da aula anterior
-		02 - Método de extensão em classe genérica
-		03 - Métodos de extensão genéricos
-		04 - Verifica se é nulo
-		05 - Mãos na massa
-		06 - O que aprendemos?
-	03 - Usando VAR e método Sort
-		01 - Projeto da aula anterior
-		02 - Usando var
-		03 - Ordenando listas
-		04 - Mãos na massa
-		05 - O que aprendemos?
-	04 - IComparable e IComparer
-		01 - Projeto da aula anterior
-		02 - Interface IComparable
-		03 - Interface IComparer
-		04 - Ordenando uma lista
-		05 - Mãos na massa
-		06 - O que aprendemos?
-	05 - OrderBy e expressões Lambda
-		01 - Projeto da aula anterior
-		02 - Usando o OrderBy
-		03 - Mais expressões lambda
-		04 - Ordenando com OrderBy
-		05 - Mãos na massa
-		06 - O que aprendemos?
-	06 - Linq e operador Where
-		01 - Projeto da aula anterior
-		02 - Usando o Where
-		03 - O linq e IEnumerable
-		04 - Conclusão
-		05 - Projeto final do curso
-		06 - Filtrando coleções
-		07 - Mãos na massa
-		08 - O que aprendemos?
-09 - Entrada e saída (I/O) com streams
-	01 - Lendo arquivos de texto
-		01 - Projeto inicial
-		02 - Introdução
-		03 - Entendendo fluxo de dados
-		04 - Criando um FileStream
-		05 - Enumeradores
-		06 - Usando encoding
-		07 - Lendo documento
-		08 - Mãos na massa
-		09 - O que aprendemos?
-	02 - Mais FileStream e leitor StreamReader
-		01 - Projeto da aula anterior
-		02 - Metodo Close e using
-		03 - Trabalhando com buffers
-		04 - Usando o StreamReader
-		05 - Quando usar partial?
-		06 - Mãos na massa
-		07 - O que aprendemos?
-		08 - Erro ao ler arquivo
-	03 - Fazendo parse e StreamWriter
-		01 - Projeto da aula anterior
-		02 - Convertendo o texto para contacorrente
-		03 - Lendo arquivo CSV
-		04 - Criando arquivos CSV
-		05 - Usando StreamWriter e CreateNew
-		06 - Copiando arquivos
-		07 - Mãos na massa
-		08 - O que aprendemos?
-	04 - O Flush e arquivos binarios
-		01 - Projeto da aula anterior
-		02 - Método Flush
-		03 - Escrita binaria
-		04 - BinaryWriter vs StreamWriter
-		05 - Mãos na massa
-		06 - O que aprendemos?
-	05 - Streams da Console
-		01 - Projeto da aula anterior
-		02 - Usando o stream de entrada da Console
-		03 - Auxiliares na classe File
-		04 - Classe File
-		05 - Conclusão
-		06 - Projeto final do curso
-		07 - Mãos na massa
-		08 - O que aprendemos?
-C# Collections parte 1 - Listas, arrays, listas ligadas, dicionários e conjuntos
-	01 - Começando com Arrays
-		01 - Preparando o ambiente
-		02 - 
+Carreira "Desenvolvedor C#"
+	Curso C# Parte 1: Primeiros Passos
+		01 - História e ecossistema da linguagem
+			01 - Introdução
+			02 - História e escossistema .NET
+			03 - Benefícios da CLR
+			04 - Quais aplicações?
+			05 - Sobre o .NET Framework
+			06 - O que aprendemos?
+		02 - Nosso primeiro programa e o Visual Studio
+			01 - Nosso primeiro programa CSharp
+			02 - Sobre a compilação e execução
+			03 - Instalando o Visual Studio
+			04 - Mão na massa: instalae a IDE Visual Studio
+			05 - Ola mundo no Visual Studio
+			06 - Sobre IDEs e editores
+			07 - Estrutura de diretorios do Visual Studio
+			08 - Entrada da aplicação
+			09 - Compilar e executar
+		03 - Variáveis numéricas
+			01 - Projeto da aula anterior
+			02 - Criando variáveis
+			03 - Criando uma variável numérica
+			04 - Mão na massa: utilizando o tipo int
+			05 - Criando variáveis double
+			06 - Mão na massa: utilizando o tipo double
+			07 - Operações entre números
+			08 - Conversao e outros tipos numerico
+			09 - Mão na massa: algumas conversões em C#
+			10 - Imprimindo texto e números
+			11 - Para saber mais: Type Casting
+			12 - O que aprendemos?
+		04 - Variáveis de texto
+			01 - Projeto da aula anterior
+			02 - Caracteres e textos
+			03 - Mão na massa: Praticando char e String
+			04 - Declarando string e char
+			05 - Concatenação de String e inteiros
+			06 - Variáveis guardam valores
+			07 - Qual será o resultado?
+			08 - O que aprendemos?
+		05 - Controle de fluxo com IF
+			01 - Projeto da aula anterior
+			02 - Trabalhando com IF
+			03 - Mão na massa: A condivional if
+			04 - Trabalhando com if
+			05 - Variável booleana
+			06 - Tipo bool
+			07 - Operador lógico
+			08 - Escopo
+			09 - Mão na massa: Um pouco mais de if
+			10 - Declaração da variável
+			11 - Mão na massa: Escopo de variáveis
+			12 - Opcional: Alíquota com ifs
+			13 - Para saber mais: o comando switch
+			14 - O que aprendemos?
+		06 - Controle de fluxo com laços de repetição
+			01 - Projeto da aula anterior
+			02 - Laço de repetição While
+			03 - Enquanto isso, o while...
+			04 - Fixando o laço while
+			05 - Laço de repetição For
+			06 - Encadeando laços For
+			07 - Transformando while em for
+			08 - A palabra chave break
+			09 - Fixando o comando break
+			10 - Mão na massa: Laços
+			11 - Um erro de compilação...
+			12 - Exercitando laços aninhados e break
+			13 - Mão na massa: Aprofundando laços
+			14 - Desafio Opcional: Múltiplos de 3
+			15 - Desafio Opcional: Fatorial
+			16 - O que aprendemos?
+			17 - Conclusão
+	Curso C# Parte 2: Introdução à Orientação a Objetos
+		01 - Nossa primeira classe
+			01 - Introdução
+			02 - Nossa primeira classe
+			03 - Classes e objetos
+			04 - Benefícios da POO
+			05 - Arquivos de código
+			06 - Criando objetos
+			07 - O que aprendemos?
+			08 - Mão na massa: Criando a primeira classe
+		02 - Tipos
+			01 - Projeto da aula anterior
+			02 - Usando nossa classe
+			03 - Obtendo campos
+			04 - Inicialização de variáveis
+			05 - Definindo valor de atributos
+			06 - Valores padrões
+			07 - Tipos de referência e tipos de valor
+			08 - Inicialização de booleanos
+			09 - Referências de objetos
+			10 - Mão na massa: Criando a primeira classe
+			11 - O que aprendemos?
+		03 - Comportamentos de classes
+			01 - Projeto da aula anterior
+			02 - Nossa primeira funcao
+			03 - Como chamar um método?
+			04 - Metodo sem retorno
+			05 - Metodos com varios argumentos
+			06 - Sobre métodos
+			07 - Métodos válidos
+			08 - Onde usar o this?
+			09 - Mão na massa: Criando métodos
+			10 - O que aprendemos?
+		04 - Namespace e composição e null
+			01 - Projeto da aula anterior
+			02 - Entendendo namespaces
+			03 - Importância dos namespaces
+			04 - Diretivas using
+			05 - Composicao de classes
+			06 - Referências nulas
+			07 - Problema não esperado
+			08 - Extraindo o que é comum
+			09 - Solucionando o problema no código
+			10 - Mão na massa: Referências
+			11 - O que aprendemos?
+		05 - Propriedades
+			01 - Projeto da aula anterior
+			02 - ObterSaldo e DefinirSaldo
+			03 - Propriedades Get e Set
+			04 - Produtividade com Get e Set
+			05 - Getters e Setters
+			06 - Públic x Privado
+			07 - Vantagens de campos privados
+			08 - O que aprendemos?
+			09 - Mão na massa: Criando Getters e Setters
+		06 - Construtores e membros estáticos
+			01 - Projeto da aula anterior
+			02 - Construtores
+			03 - Membros estáticos
+			04 - Conclusão
+			05 - Projeto final do curso
+			06 - Utilizando Construtores
+			07 - Onde está o erro?
+			08 - Por que não soma?
+			09 - Mãos na massa: Criando construtores e membros estáticos
+			10 - O que aprendemos?
+	Curso C# Parte 3 - Entendendo Herança e Interface
+		01 - Conhecendo o problema do cliente
+			01 - Introdução
+			02 - Atalhos no VisualStudio e classe Funcionario
+			03 - Relembrando Namespaces
+			04 - Classe Diretor e Sobrecargas
+			05 - Métodos com o mesmo nome?
+			06 - Para saber mais: Sobrecargas
+			07 - Para saber mais: Mais usos de sobrecargas
+			08 - Mão na massa
+			09 - O que aprendemos?
+		02 - Herança
+			01 - Projeto da aula anterior
+			02 - Nossa primeira herança
+			03 - Sintaxe de herança
+			04 - Sobrepondo comportamentos com override e virtual
+			05 - Propriedades podem ser virtuais?
+			06 - A palavra reservada base
+			07 - Herança no C#
+			08 - Repetição de membros
+			09 - Métodos virtuais?
+			10 - Mão na massa
+			11 - O que aprendemos?
+		03 - Construtores e protected
+			01 - Projeto da aula anterior
+			02 - Construtor na classe base
+			03 - Ordem de chamada dos construtores?
+			04 - Modificador de visibilidade protected
+			05 - Visibilidade
+			06 - Criando classes abstratas
+			07 - Criando métodos abstratos
+			08 - Chamando o construtor da classe base
+			09 - Para saber mais: sobrecarga em construtores
+			10 - Mão na massa
+			11 - O que aprendemos?
+		04 - Mais herança e herança múltipla
+			01 - Projeto da aula anterior
+			02 - O sistema interno do ByteBank
+			03 - Sobre Classes Abstratas
+			04 - Sobre métodos abstratos
+			05 - Classe autenticável
+			06 - Mão na massa
+			07 - O que aprendemos?
+		05 - Interfaces
+			01 - Problema da herança múltipla
+			02 - Herdando de várias classes
+			03 - Usando interfaces
+			04 - Conceitos de Interfaces
+			05 - Classes abstratas e interfaces
+			06 - Mão na massa
+			07 - Projeto final do curso
+			08 - Conclusão
+	Curso C# Parte 4 - Entendendo exceções
+		01 - Primeiros passos com exceções
+			01 - Introdução
+			02 - Pré-requisitos
+			03 - Conhecendo exceções
+			04 - Exceção de divisão por 0
+			05 - Lidando com erros
+			06 - Pilha de chamadas
+			07 - Blocos Try Catch
+			08 - Capturando exceções
+			09 - Propagando exceções
+			10 - Mãos na massa
+			11 - O que aprendemos?
+		02 - Tratamento de exceções
+			01 - Projeto da aula anterior
+			02 - Tratando várias exceções
+			03 - Palavra reservada throw
+			04 - Capturando exceções
+			05 - Relançando exceções
+			06 - Mãos na massa
+			07 - O que aprendemos?
+		03 - ArgumentException ParamName e nameof
+			01 - Projeto da aula anterior
+			02 - Propriedades somente leitura
+			03 - Lançando nossa exceção de argumento
+			04 - ParamName no ArgumentException e operador nameof
+			05 - Propriedade Somente-Leitura
+			06 - Mãos na massa
+			07 - O que aprendemos?
+		04 - Criando exceções ricas
+			01 - Projeto da aula anterior
+			02 - Criando nossa própria exceção
+			03 - Tornando as exceções mais ricas
+			04 - Criando tipos de exceção
+			05 - Mãos na massa
+			06 - O que aprendemos?
+		05 - StackTrace e InnerException
+			01 - Projeto da aula anterior
+			02 - Quando o StackTrace é preenchido
+			03 - Usando inner exceptions
+			04 - throw; vs. throw ex;
+			05 - Mãos na massa
+			06 - O que aprendemos?
+		06 - Finally e using
+			01 - Projeto da aula anterior
+			02 - Bloco finally
+			03 - Liberando recursos
+			04 - Conclusão
+			05 - Projeto final do curso
+			06 - Açúcar sintático using
+			07 - Mão na massa
+			08 - O que aprendemos?
+	Curso C# Parte 5 - Bibliotecas DLLs, documentação e usando o NuGet
+		01 - Projeto de biblioteca
+			01 - Introdução
+			02 - Biblioteca de classes
+			03 - Referencias de projetos
+			04 - Qual tipo de projeto?
+			05 - Mãos na massa
+			06 - O que aprendemos?
+		02 - Modificadores de acesso em bibliotecas
+			01 - Projeto da aula anterior
+			02 - Modificador de acesso internal
+			03 - Revisão de modificadores e protected internal
+			04 - Acessibilidade public/internal
+			05 - Mãos na massa
+			06 - O que aprendemos?
+		03 - Referencia de DLL
+			01 - Projeto da aula anterior
+			02 - Referencias de DLL
+			03 - Para saber mais: GAC
+			04 - Referenciar projetos e DLLs
+			05 - Mãos na massa
+			06 - O que aprendemos?
+		04 - Documentando
+			01 - Projeto da aula anterior
+			02 - Documentando nossa biblioteca
+			03 - Gerando documentação
+			04 - Gerando documentação
+			05 - Documentando exceções e warnings
+			06 - Mãos na massa
+			07 - O que aprendemos?
+		05 - NuGet
+			01 - Projeto da aula anterior
+			02 - Lidando com datas
+			03 - Usando o Humanizer
+			04 - Usando o NuGet
+			05 - Conclusão
+			06 - O comando Install-Package
+			07 - Para saber mais: e minhas bibliotecas?
+			08 - Mãos na massa
+			09 - Projeto final do curso
+			10 - O que aprendemos?
+	Curso C# Parte 6 - Strings, expressões regulares e a classe Object
+		01 - Mais sobre a String
+			01 - Introdução
+			02 - Argumentos em paginas da internet
+			03 - Imutabilidade e Substring
+			04 - Método Substring
+			05 - Mãos na massa
+			06 - O que aprendemos?
+		02 - Métodos e propriedades
+			01 - Projeto da aula anterior
+			02 - IsNullOrEmpty e palavra chave string
+			03 - Propriedade Length e sobrecargas de IndexOf
+			04 - Trabalhando com Strings
+			05 - Mãos na massa
+			06 - O que aprendemos?
+		03 - Mais métodos de manipulação
+			01 - Projeto da aula anterior
+			02 - Usando o método Remove
+			03 - Usando ToLower e ToUpper
+			04 - StartsWith EndsWith e Contains
+			05 - Métodos de String
+			06 - Mãos na massa
+			07 - O que aprendemos?
+		04 - Expressões regulares
+			01 - Projeto da aula anterior
+			02 - Conhecendo expressões regulares
+			03 - Quantificadores
+			04 - Quantificadores com intervalos
+			05 - Testando Regex
+			06 - Mãos na massa
+			07 - O que aprendemos?
+		05 - Classe Object
+			01 - Classe object
+			02 - Método ToString
+			03 - Método Equals
+			04 - Projeto final do curso
+			05 - Referências de Object
+			06 - Mãos na massa
+			07 - O que aprendemos?
+			08 - Conclusão
+	Curso C# Parte 7 - Array e tipos genéricos
+		01 - Conhecendo Array
+			01 - Projeto inicial
+			02 - Introdução
+			03 - Conhecendo array
+			04 - Valores padrões em arrays
+			05 - Iterando arrays e Length
+			06 - Inicializador de array
+			07 - Sintaxe de criação
+			08 - Posições não inicializadas
+			09 - Mãos na massa
+			10 - O que aprendemos?
+		02 - Criando nossa Lista
+			01 - Projeto da aula anterior
+			02 - Criando nossa lista
+			03 - Argumentos opcionais e nomeados
+			04 - Argumentos opcionais
+			05 - Array de object
+			06 - Para saber mais: Array.Copy
+			07 - Mãos na massa
+			08 - O que aprendemos?
+		03 - Criando o método Remover
+			01 - Projeto da aula anterior
+			02 - Método remover
+			03 - Deslocando itens no array
+			04 - Somando pares
+			05 - Mãos na massa
+			06 - O que aprendemos?
+		04 - Indexadores e argumentos params
+			01 - Projeto da aula anterior
+			02 - Criando indexadores
+			03 - Argumentos params
+			04 - Explorando indexadores
+			05 - Mãos na massa
+			06 - O que aprendemos?
+		05 - Começando com genéricos
+			01 - Projeto da aula anterior
+			02 - Uma lista quase genérica
+			03 - Conhecendo tipos genéricos
+			04 - Null em classes genéricas
+			05 - Conclusão
+			06 - Projeto final do curso
+			07 - Membros de tipos genéricos
+			08 - Static em classe genérica
+			09 - Mãos na massa
+			10 - O que aprendemos?
+	Curso C# Parte 8 - List<T>, lambda, linq
+		01 - ListT e métodos de extensão
+			01 - Introdução
+			02 - Classe List do dotNet
+			03 - Criando métodos de extensão
+			04 - Métodos de extensão
+			05 - Mãos na massa
+			06 - O que aprendemos?
+		02 - Método de extensão genérico
+			01 - Projeto da aula anterior
+			02 - Método de extensão em classe genérica
+			03 - Métodos de extensão genéricos
+			04 - Verifica se é nulo
+			05 - Mãos na massa
+			06 - O que aprendemos?
+		03 - Usando VAR e método Sort
+			01 - Projeto da aula anterior
+			02 - Usando var
+			03 - Ordenando listas
+			04 - Mãos na massa
+			05 - O que aprendemos?
+		04 - IComparable e IComparer
+			01 - Projeto da aula anterior
+			02 - Interface IComparable
+			03 - Interface IComparer
+			04 - Ordenando uma lista
+			05 - Mãos na massa
+			06 - O que aprendemos?
+		05 - OrderBy e expressões Lambda
+			01 - Projeto da aula anterior
+			02 - Usando o OrderBy
+			03 - Mais expressões lambda
+			04 - Ordenando com OrderBy
+			05 - Mãos na massa
+			06 - O que aprendemos?
+		06 - Linq e operador Where
+			01 - Projeto da aula anterior
+			02 - Usando o Where
+			03 - O linq e IEnumerable
+			04 - Conclusão
+			05 - Projeto final do curso
+			06 - Filtrando coleções
+			07 - Mãos na massa
+			08 - O que aprendemos?
+	Curso C# Parte 9 - Entrada e saída (I/O) com streams
+		01 - Lendo arquivos de texto
+			01 - Projeto inicial
+			02 - Introdução
+			03 - Entendendo fluxo de dados
+			04 - Criando um FileStream
+			05 - Enumeradores
+			06 - Usando encoding
+			07 - Lendo documento
+			08 - Mãos na massa
+			09 - O que aprendemos?
+		02 - Mais FileStream e leitor StreamReader
+			01 - Projeto da aula anterior
+			02 - Metodo Close e using
+			03 - Trabalhando com buffers
+			04 - Usando o StreamReader
+			05 - Quando usar partial?
+			06 - Mãos na massa
+			07 - O que aprendemos?
+			08 - Erro ao ler arquivo
+		03 - Fazendo parse e StreamWriter
+			01 - Projeto da aula anterior
+			02 - Convertendo o texto para contacorrente
+			03 - Lendo arquivo CSV
+			04 - Criando arquivos CSV
+			05 - Usando StreamWriter e CreateNew
+			06 - Copiando arquivos
+			07 - Mãos na massa
+			08 - O que aprendemos?
+		04 - O Flush e arquivos binarios
+			01 - Projeto da aula anterior
+			02 - Método Flush
+			03 - Escrita binaria
+			04 - BinaryWriter vs StreamWriter
+			05 - Mãos na massa
+			06 - O que aprendemos?
+		05 - Streams da Console
+			01 - Projeto da aula anterior
+			02 - Usando o stream de entrada da Console
+			03 - Auxiliares na classe File
+			04 - Classe File
+			05 - Conclusão
+			06 - Projeto final do curso
+			07 - Mãos na massa
+			08 - O que aprendemos?
+	C# Collections parte 1 - Listas, arrays, listas ligadas, dicionários e conjuntos
+		01 - Começando com Arrays
+			01 - Preparando o ambiente
+			02 - 
