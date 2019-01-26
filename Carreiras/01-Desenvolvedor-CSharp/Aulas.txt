@@ -460,4 +460,6 @@ Curso C# Parte 9 - Entrada e saída (I/O) com streams
 C# Collections parte 1 - Listas, arrays, listas ligadas, dicionários e conjuntos
 	01 - Começando com Arrays
 		01 - Preparando o ambiente
-		02 - 
+		02 - Introdução
+		03 - Declarando e Populando Arrays
+		04 - 
