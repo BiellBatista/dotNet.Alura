@@ -36,5 +36,24 @@ namespace _09_XX_XX_EntradaSaídaStreams
                 escritor.Write(contaComoString);
             }
         }
+
+        static void TestaEscrita()
+        {
+            var caminhoArquivo = "teste.txt";
+
+            using (var fluxoDeArquivo = new FileStream(caminhoArquivo, FileMode.Create))
+            using (var escritor = new StreamWriter(fluxoDeArquivo))
+            {
+                for(int i = 0; i < 100000000; i ++)
+                {
+                    escritor.WriteLine($"Linha {i}");
+                    escritor.Flush(); //Depeja o buffer para o Stream! Ou seja, ele escreve direto no arquivo (HD) e não no buffer do Stream
+                    //que posteriomente será escritor no arquivo
+
+                    Console.WriteLine($"Linha {i} foi escrita no arquivo. Tecle enter para adicionar mais uma!");
+                    Console.ReadLine();
+                }
+            }
+        }
     }
 }

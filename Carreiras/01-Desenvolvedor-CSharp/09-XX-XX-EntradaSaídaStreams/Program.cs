@@ -17,7 +17,8 @@ namespace _09_XX_XX_EntradaSaídaStreams
         {
             //LidandoComFileStreamDiretamente(); //Este método está em outro arquivo, mas ambos são a classe Program
             //CriarArquivo(); //Este método está em outro arquivo, mas ambos são a classe Program
-            CiarArquivoComWriter(); //Este método está em outro arquivo, mas ambos são a classe Program
+            //CiarArquivoComWriter(); //Este método está em outro arquivo, mas ambos são a classe Program
+            TestaEscrita();
 
             Console.ReadLine();
         }
