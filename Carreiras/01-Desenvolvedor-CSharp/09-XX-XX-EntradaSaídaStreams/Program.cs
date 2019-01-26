@@ -15,10 +15,20 @@ namespace _09_XX_XX_EntradaSaídaStreams
     {
         static void Main(string[] args)
         {
+            LeituraBinaria();
+            //EscritaBinaria();
+            //using (var fs = new FileStream("testaTipos.txt", FileMode.Create))
+            //using (var escritor = new StreamWriter(fs))
+            //{
+            //    escritor.WriteLine(true);
+            //    escritor.WriteLine(false);
+            //    escritor.WriteLine(45649845120);
+            //}
+
             //LidandoComFileStreamDiretamente(); //Este método está em outro arquivo, mas ambos são a classe Program
             //CriarArquivo(); //Este método está em outro arquivo, mas ambos são a classe Program
             //CiarArquivoComWriter(); //Este método está em outro arquivo, mas ambos são a classe Program
-            TestaEscrita();
+            //TestaEscrita();
 
             Console.ReadLine();
         }

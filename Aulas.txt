@@ -445,3 +445,9 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		01 - Projeto da aula anterior
 		02 - Método Flush
 		03 - Escrita binaria
+		04 - BinaryWriter vs StreamWriter
+		05 - Mãos na massa
+		06 - O que aprendemos?
+	05 - Streams da Console
+		01 - Projeto da aula anterior
+		02 - Usando o stream de entrada da Console
