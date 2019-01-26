@@ -15,7 +15,8 @@ namespace _09_XX_XX_EntradaSaídaStreams
     {
         static void Main(string[] args)
         {
-            LeituraBinaria();
+            UsarStreamDeEntrada();
+            //LeituraBinaria();
             //EscritaBinaria();
             //using (var fs = new FileStream("testaTipos.txt", FileMode.Create))
             //using (var escritor = new StreamWriter(fs))

@@ -451,3 +451,4 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 	05 - Streams da Console
 		01 - Projeto da aula anterior
 		02 - Usando o stream de entrada da Console
+		03 - Auxiliares na classe File
