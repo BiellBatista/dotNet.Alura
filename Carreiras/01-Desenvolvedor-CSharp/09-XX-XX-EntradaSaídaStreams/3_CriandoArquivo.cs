@@ -22,5 +22,19 @@ namespace _09_XX_XX_EntradaSaídaStreams
                 fluxoDeArquivo.Write(bytes, 0, bytes.Length);
             }
         }
+
+        static void CiarArquivoComWriter()
+        {
+            var caminhoNovoArquivo = "contasExportadas.csv";
+
+            //using (var fluxoDeArquivo = new FileStream(caminhoNovoArquivo, FileMode.Create))
+            using (var fluxoDeArquivo = new FileStream(caminhoNovoArquivo, FileMode.CreateNew)) //Se o arquivo existir, retorna uma exceção
+            using (var escritor = new StreamWriter(fluxoDeArquivo, Encoding.UTF8))
+            {
+                var contaComoString = "456,78945,4785.50,Gustavo Santos";
+
+                escritor.Write(contaComoString);
+            }
+        }
     }
 }

@@ -438,3 +438,9 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 		03 - Lendo arquivo CSV
 		04 - Criando arquivos CSV
 		05 - Usando StreamWriter e CreateNew
+		06 - Copiando arquivos
+		07 - Mãos na massa
+		08 - O que aprendemos?
+	04 - O Flush e arquivos binarios
+		01 - Projeto da aula anterior
+		02 - Método Flush
