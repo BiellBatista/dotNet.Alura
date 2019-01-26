@@ -435,3 +435,4 @@ Curso C# Parte 2: Introdução à Orientação a Objetos
 	03 - Fazendo parse e StreamWriter
 		01 - Projeto da aula anterior
 		02 - Convertendo o texto para contacorrente
+		03 - Lendo arquivo CSV
