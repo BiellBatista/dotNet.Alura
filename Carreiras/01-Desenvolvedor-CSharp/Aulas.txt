@@ -472,4 +472,5 @@ C# Collections parte 1 - Listas, arrays, listas ligadas, dicionários e conjuntos
 		11 - Consolidando seu conhecimento
 	02 - Lista, a Coleção Flexível
 		01 - Introdução às Listas
-		02 - 
+		02 - Operações com Listas
+		03 - Listas de Objetos

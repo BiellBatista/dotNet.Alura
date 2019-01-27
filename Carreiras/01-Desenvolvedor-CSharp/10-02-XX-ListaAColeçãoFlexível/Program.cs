@@ -27,10 +27,27 @@ namespace _10_02_XX_ListaAColeçãoFlexível
             aulas.Add(aulaSet);
 
             Imprimir(aulas);
+
             Console.WriteLine("A primeira aula é " + aulas[0]);
             Console.WriteLine("A primeira aula é " + aulas.First()); //pegando o primeiro elemento
             Console.WriteLine("A primeira aula é " + aulas.Last()); //pegando o último elemento
             Console.WriteLine("A última aula é " + aulas[aulas.Count - 1]);
+
+            aulas[0] = "Trabalhando com Listas";
+
+            Imprimir(aulas);
+
+            Console.WriteLine($"A primeira aula 'Trabalhando' é: {aulas.First(aula => aula.Contains("Trabalhando"))}"); //usando lambda para busca
+            Console.WriteLine($"A última aula 'Trabalhando' é: {aulas.Last(aula => aula.Contains("Trabalhando"))}");
+            aulas.Reverse(); //invertendo a lista
+            aulas.RemoveAt(aulas.Count - 1); //removendo o último índice
+
+            //pegando um intervalo de elementos da lista (inicío, fim)
+            List<string> copia = aulas.GetRange(aulas.Count - 2, aulas.Count - 1);
+            List<string> clone = new List<string>(aulas);
+
+            //removendo um intervalo de elementos da lista (inicío, fim)
+            clone.RemoveRange(clone.Count - 2, clone.Count - 1);
 
             Console.ReadLine();
         }
