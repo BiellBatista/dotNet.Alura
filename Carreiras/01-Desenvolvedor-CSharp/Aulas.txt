@@ -463,3 +463,13 @@ C# Collections parte 1 - Listas, arrays, listas ligadas, dicionários e conjuntos
 		02 - Introdução
 		03 - Declarando e Populando Arrays
 		04 - Atribuindo Valores A Um Array
+		05 - Modificando um valor de um elemento de um array
+		06 - Operações com Arrays
+		07 - Copiando dados de um array
+		08 - Mão na Massa: Começando com Arrays
+		09 - Para saber mais
+		10 - O que aprendemos?
+		11 - Consolidando seu conhecimento
+	02 - Lista, a Coleção Flexível
+		01 - Introdução às Listas
+		02 - 

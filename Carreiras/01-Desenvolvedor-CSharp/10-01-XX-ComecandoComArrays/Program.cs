@@ -21,6 +21,7 @@ namespace _10_01_XX_ComecandoComArrays
             //    aulaSet
             //};
 
+            ///---Módulo 03
             string[] aulas = new string[3];
             aulas[0] = aulaIntro;
             aulas[1] = aulaModelando;
@@ -36,6 +37,28 @@ namespace _10_01_XX_ComecandoComArrays
 
             aulas[0] = "Trabalhando com Arrays";
             Imprimir(aulas);
+            //-----
+
+            //----Módulo 06
+            Console.WriteLine($"Aula modelando está no índice {Array.IndexOf(aulas, aulaModelando)}"); //pegando a primeira ocorreção
+            Console.WriteLine($"Aula modelando está no índice {Array.LastIndexOf(aulas, aulaModelando)}"); //pegando a última ocorreção 
+            Array.Reverse(aulas); //invertendo a ordem
+            Console.WriteLine($"{aulas}");
+
+            Array.Resize(ref aulas, 2); //redimencionando o array de 3 para 2
+            Array.Resize(ref aulas, 3); //redimencionando o array de 2 para 3. As novas possições vem com o valor nulo
+
+            Array.Sort(aulas); //Ordenando o array em ordem alfabética. Não Consigo voltar ao estado inicial.
+            //Qualquer operação realizada no meu array (referência) não poderá ser desfeita
+
+            string[] outroArray = new string[2];
+            Array.Copy(aulas, 0, outroArray, 0, 2);
+            //Copiando dois conteúdo da posíção 0 do array aulas, para o array outros iniciando no 0
+
+            string[] clone = aulas.Clone() as string[]; //copiando os valores do array aulas para o novo array clone
+            //a apalavra as serve para fazer um casting
+
+            Array.Clear(clone, 1, 2); //limpando dois dados do a partir do 1
             Console.ReadLine();
         }
 
