@@ -474,3 +474,5 @@ C# Collections parte 1 - Listas, arrays, listas ligadas, dicionários e conjuntos
 		01 - Introdução às Listas
 		02 - Operações com Listas
 		03 - Listas de Objetos
+		04 - Ordenando uma lista
+		05 - Lista Somente Leitura
