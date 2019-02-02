@@ -486,3 +486,5 @@ C# Collections parte 1 - Listas, arrays, listas ligadas, dicionários e conjuntos
 		13 - Projeto da Aula Atual
 	03 - O Poder dos Sets
 		01 - O Poder dos Sets
+		02 - HashSet e elementos duplicados
+		03 - Usando Set Dentro do Modelo

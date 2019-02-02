@@ -7,7 +7,7 @@
     <ProjectGuid>{0888328A-3290-4A0B-B815-E95240433AC7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_10_03_XX_OPoderSets</RootNamespace>
-    <AssemblyName>_10_03_XX_OPoderSets</AssemblyName>
+    <AssemblyName>10-03-XX-OPoderSets</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

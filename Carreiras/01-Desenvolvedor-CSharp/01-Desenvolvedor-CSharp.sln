@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-01-XX-ComecandoComArrays
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-02-XX-ListaAColecaoFlexivel", "10-02-XX-ListaAColeçãoFlexível\10-02-XX-ListaAColecaoFlexivel.csproj", "{044F168B-087E-41DE-AC3F-697967CEF2DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-03-XX-OPoderSets", "10-03-XX-OPoderSets\10-03-XX-OPoderSets.csproj", "{0888328A-3290-4A0B-B815-E95240433AC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{044F168B-087E-41DE-AC3F-697967CEF2DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{044F168B-087E-41DE-AC3F-697967CEF2DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{044F168B-087E-41DE-AC3F-697967CEF2DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0888328A-3290-4A0B-B815-E95240433AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0888328A-3290-4A0B-B815-E95240433AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0888328A-3290-4A0B-B815-E95240433AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0888328A-3290-4A0B-B815-E95240433AC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

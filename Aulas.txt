@@ -60,3 +60,4 @@ Carreira "Desenvolvedor C#"
 	C# Collections parte 1 - Listas, arrays, listas ligadas, dicionários e conjuntos
 		01 - Começando com Arrays
 		02 - Lista, a Coleção Flexível
+		03 - O Poder dos Sets
