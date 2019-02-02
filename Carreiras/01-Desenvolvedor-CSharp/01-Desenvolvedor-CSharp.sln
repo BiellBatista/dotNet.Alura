@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-02-XX-ListaAColecaoFlexi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-03-XX-OPoderSets", "10-03-XX-OPoderSets\10-03-XX-OPoderSets.csproj", "{0888328A-3290-4A0B-B815-E95240433AC7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-04-XX-Dicionarios", "10-04-XX-Dicionarios\10-04-XX-Dicionarios.csproj", "{D307BB72-FEC0-4172-A5C0-CAF0DEED5922}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{0888328A-3290-4A0B-B815-E95240433AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0888328A-3290-4A0B-B815-E95240433AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0888328A-3290-4A0B-B815-E95240433AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D307BB72-FEC0-4172-A5C0-CAF0DEED5922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D307BB72-FEC0-4172-A5C0-CAF0DEED5922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D307BB72-FEC0-4172-A5C0-CAF0DEED5922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D307BB72-FEC0-4172-A5C0-CAF0DEED5922}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
