@@ -36,6 +36,11 @@ namespace _10_04_XX_Dicionarios
             }
         }
 
+        internal void SubstituiAluno(Aluno aluno)
+        {
+            _dicionarioAlunos.[aluno.NumeroMatricula] = aluno;
+        }
+
         internal Aluno BuscaMatricula(int numeroMatricula)
         {
             Aluno aluno = null;

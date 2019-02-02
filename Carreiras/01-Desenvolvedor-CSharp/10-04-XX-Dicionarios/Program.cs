@@ -22,6 +22,10 @@ namespace _10_04_XX_Dicionarios
             Aluno aluno5617 = csharpColecoes.BuscaMatricula(5617);
 
             Console.WriteLine("aluno5617" + aluno5617);
+
+            Aluno fabio = new Aluno("Fabio Gushiken", 5617);
+            csharpColecoes.SubstituiAluno(fabio);
+
             Console.ReadLine();
         }
     }

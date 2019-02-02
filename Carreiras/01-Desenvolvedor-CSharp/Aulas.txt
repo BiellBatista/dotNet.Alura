@@ -498,3 +498,14 @@ C# Collections parte 1 - Listas, arrays, listas ligadas, dicionários e conjuntos
 		11 - Projeto da Aula Atual
 	04 - Dicionários, Trabalhando com Chave e Valor
 		01 - Introdução a dicionários
+		02 - Declarando um dicionário
+		03 - Adicionando/substituindo elementos
+		04 - Funcionamento de um dicionário
+		05 - Dicionários e hashing
+		06 - Mão na Massa:Dicionários
+		07 - O que aprendemos?
+		08 - Consolidando seu conhecimento
+		09 - Para saber mais
+		10 - Projeto da Aula Atual
+	05 - Lista Ligada, Pilha e Fila
+		01 - LinkedList
