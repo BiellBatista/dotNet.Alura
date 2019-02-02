@@ -488,3 +488,4 @@ C# Collections parte 1 - Listas, arrays, listas ligadas, dicionários e conjuntos
 		01 - O Poder dos Sets
 		02 - HashSet e elementos duplicados
 		03 - Usando Set Dentro do Modelo
+		04 - Equals e HashCode
