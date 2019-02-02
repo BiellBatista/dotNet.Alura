@@ -10,22 +10,11 @@ namespace _10_02_XX_ListaAColeçãoFlexível
     {
         static void Main(string[] args)
         {
-            var aulaIntro = new Aula("Introdução às Coleções", 20);
-            var aulaModelando = new Aula("Modelando a Classe Aula", 18);
-            var aulaSet = new Aula("Trabalhando com Conjuntos", 16);
+            Curso csharpColecoes = new Curso("C# Collections", "Marcelo Oliveira");
+            csharpColecoes.Adiciona(new Aula("Trabalhando com Listas", 21));
 
-            List<Aula> aulas = new List<Aula>();
-            aulas.Add(aulaIntro);
-            aulas.Add(aulaModelando);
-            aulas.Add(aulaSet);
-            //aulas.Add("Conclusão");
+            Imprimir(csharpColecoes.Aulas);
 
-            Imprimir(aulas);
-
-            aulas.Sort(); //ordena a lista
-            Imprimir(aulas);
-            aulas.Sort((este, outro) => este.Tempo.CompareTo(outro.Tempo)); //ordenando pelo tempo
-            Imprimir(aulas);
             Console.ReadLine();
         }
 
@@ -34,7 +23,7 @@ namespace _10_02_XX_ListaAColeçãoFlexível
             Console.Clear();
 
             foreach (var aula in aulas)
-                Console.WriteLine(aula.Titulo);
+                Console.WriteLine($"{aula.Titulo} com duração de {aula.Tempo}");
         }
 
         private static void Imprimir(List<string> aulas)
@@ -94,28 +83,32 @@ namespace _10_02_XX_ListaAColeçãoFlexível
             clone.RemoveRange(clone.Count - 2, clone.Count - 1);
         }
 
-        class Aula : IComparable
+        private static void ListasDeObjetos()
         {
-            public string Titulo { get; set; }
-            public int Tempo { get; set; }
+            var aulaIntro = new Aula("Introdução às Coleções", 20);
+            var aulaModelando = new Aula("Modelando a Classe Aula", 18);
+            var aulaSet = new Aula("Trabalhando com Conjuntos", 16);
 
-            public Aula(string titulo, int tempo)
-            {
-                Titulo = titulo;
-                Tempo = tempo;
-            }
+            List<Aula> aulas = new List<Aula>();
+            aulas.Add(aulaIntro);
+            aulas.Add(aulaModelando);
+            aulas.Add(aulaSet);
+            //aulas.Add("Conclusão");
 
-            public override string ToString()
-            {
-                return $"O título da aula é {Titulo} e possui a duração de {Tempo}";
-            }
+            Imprimir(aulas);
 
-            public int CompareTo(object obj)
-            {
-                var tmp = obj as Aula;
+            aulas.Sort(); //ordena a lista
+            Imprimir(aulas);
+            aulas.Sort((este, outro) => este.Tempo.CompareTo(outro.Tempo)); //ordenando pelo tempo
+            Imprimir(aulas);
+        }
 
-                return this.Titulo.CompareTo(tmp.Titulo);
-            }
+        private static void Imprimir(IList<Aula> aulas)
+        {
+            Console.Clear();
+
+            foreach (var aula in aulas)
+                Console.WriteLine($"{aula.Titulo} com duração de {aula.Tempo}");
         }
     }
 }
