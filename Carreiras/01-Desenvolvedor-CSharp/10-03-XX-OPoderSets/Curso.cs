@@ -53,6 +53,11 @@ namespace _10_03_XX_OPoderSets
             _aulas.Add(aula);
         }
 
+        public bool EstaMatriculado(Aluno aluno)
+        {
+            return _alunos.Contains(aluno);
+        }
+
         public override string ToString()
         {
             return $"Curso: {Nome}, Tempo: {TempoTotal}, Aulas: {string.Join(",", _aulas)}";

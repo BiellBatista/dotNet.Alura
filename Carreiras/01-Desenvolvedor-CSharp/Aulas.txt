@@ -489,3 +489,12 @@ C# Collections parte 1 - Listas, arrays, listas ligadas, dicionários e conjuntos
 		02 - HashSet e elementos duplicados
 		03 - Usando Set Dentro do Modelo
 		04 - Equals e HashCode
+		05 - Verificando se um elemento existe no conjunto
+		06 - Equals() e GetHashCode() - novamente
+		07 - Mão na Massa: O Poder dos Sets
+		08 - O que aprendemos?
+		09 - Consolidando seu conhecimento
+		10 - Para saber mais
+		11 - Projeto da Aula Atual
+	04 - Dicionários, Trabalhando com Chave e Valor
+		01 - Introdução a dicionários

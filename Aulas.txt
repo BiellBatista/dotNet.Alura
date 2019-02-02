@@ -61,3 +61,4 @@ Carreira "Desenvolvedor C#"
 		01 - Começando com Arrays
 		02 - Lista, a Coleção Flexível
 		03 - O Poder dos Sets
+		04 - Dicionários, Trabalhando com Chave e Valor
