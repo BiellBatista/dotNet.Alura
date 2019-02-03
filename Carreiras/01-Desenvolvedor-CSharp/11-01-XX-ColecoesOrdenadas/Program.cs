@@ -10,7 +10,9 @@ namespace _11_01_XX_ColecoesOrdenadas
     {
         static void Main(string[] args)
         {
-
+            SortedList();
+            SortedDictionary();
+            SortedSet();
 
             Console.ReadLine();
         }
@@ -87,7 +89,47 @@ namespace _11_01_XX_ColecoesOrdenadas
 
         internal static void SortedSet()
         {
+            //criando um conjunto ordenado
+            ISet<string> alunos = new SortedSet<string>(new ComparadorMinusculo())
+            {
+                "Vanessa Tonini",
+                "Ana Losnak",
+                "Rafael Nercessian",
+                "Priscila Stuani"
+            };
 
+            //adicionar: Rafael Rollo
+            alunos.Add("Rafael Rollo");
+            //adicionar: Fabio Gushiken
+            alunos.Add("Fabio Gushiken");
+            //adicionar: FABIO GUSHIKEN
+            alunos.Add("FABIO GUSHIKEN");//é difenre de letra minuscula
+
+            foreach (var aluno in alunos)
+                Console.WriteLine(aluno);
+
+            ISet<string> outroConjunto = new HashSet<string>();
+            //este conjunto é subconjunto do outro? IsSubsetOf
+            alunos.IsSubsetOf(outroConjunto);
+
+            //este conjunto é superconjunto do outro? IsSupersetof
+            //o outro conjunto está contido no meu conjunto de alunos?
+            alunos.IsSupersetOf(outroConjunto);
+
+            //os conjuntos contêm os mesmos elementos? SetEquals
+            alunos.SetEquals(outroConjunto);
+
+            //subtrai os elementos da outro coleção que também estão no conjunto alunos
+            alunos.ExceptWith(outroConjunto);
+
+            //intersecção dos conjuntos - IntersectWith
+            alunos.IntersectWith(outroConjunto);
+
+            //somente um ou outro conjunto - SymmetricExceptWith
+            alunos.SymmetricExceptWith(outroConjunto);
+
+            //união de conjutos - UnionWith
+            alunos.UnionWith(outroConjunto);
         }
     }
 }

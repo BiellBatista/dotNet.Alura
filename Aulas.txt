@@ -66,3 +66,4 @@ Carreira "Desenvolvedor C#"
 		06 - Qual Coleção Usar
 	C# Collections parte 2 - Coleções ordenadas, arrays multidimensionais e LINQ
 		01 - Coleções Ordenadas
+		02 - Arrays Multidimensionais

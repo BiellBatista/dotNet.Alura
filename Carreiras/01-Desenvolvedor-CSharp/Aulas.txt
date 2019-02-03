@@ -541,3 +541,10 @@ C# Collections parte 2 - Coleções ordenadas, arrays multidimensionais e LINQ
 		06 - SortedDictionary
 		07 - SortedList e SortedDictionary
 		08 - SortedSet
+		09 - Trabalhando com SortedSet
+		10 - O que aprendemos?
+		11 - Consolidando o Conhecimento
+		12 - Complexidade de Tempo
+		13 - Projeto da Aula Atual
+	02 - Arrays Multidimensionais
+		01 - Array Multidimensional
