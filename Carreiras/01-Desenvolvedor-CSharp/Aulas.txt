@@ -558,3 +558,4 @@ C# Collections parte 2 - Coleções ordenadas, arrays multidimensionais e LINQ
 		09 - Projeto da Aula Atual
 	03 - Consultando com LINQ
 		01 - Consultando Collections
+		02 - Consultas com LINQ
