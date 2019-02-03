@@ -550,3 +550,11 @@ C# Collections parte 2 - Coleções ordenadas, arrays multidimensionais e LINQ
 		01 - Array Multidimensional
 		02 - Array Multidimensional
 		03 - Jagged Arrays
+		04 - Array Denteado
+		05 - Jagged Arrays
+		06 - O que aprendemos?
+		07 - Consolidando o Conhecimento
+		08 - Para saber mais
+		09 - Projeto da Aula Atual
+	03 - Consultando com LINQ
+		01 - Consultando Collections

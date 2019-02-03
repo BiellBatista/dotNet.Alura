@@ -10,7 +10,8 @@ namespace _11_02_XX_ArraysMultidimensionais
     {
         static void Main(string[] args)
         {
-            
+            ArrayMultidimensional();
+            JaggedArrays();
 
             Console.ReadLine();
         }
@@ -46,6 +47,10 @@ namespace _11_02_XX_ArraysMultidimensionais
             //    Console.WriteLine(selecao);
             //}
             //com o método GetUpperBound, consigo pegar o tamanho de uma certa dimensão. Aqui pego o da segunda
+            /*
+             * Obtendo limite inferior da dimensão com GetLowerBound()
+             * Obtendo limite superior da dimensão com GetUpperBound()
+             */
             for (int copa = 0; copa <= resultados.GetUpperBound(1); copa++)
             {
                 int ano = 2014 - copa * 4;
@@ -63,6 +68,34 @@ namespace _11_02_XX_ArraysMultidimensionais
                     Console.Write(resultados[posicao, copa].PadRight(12));
                 Console.WriteLine();
             }
+        }
+
+        internal static void JaggedArrays()
+        {
+            //família 1: Família Flinstones
+            //família 2: Família Simpsons
+            //família 3: Família Dona Florinda
+
+            //JAGGED ARRAY = ARRAY DENTEADO = ARRAY SERRILHADO
+            string[][] familias = new string[3][];
+            //{
+            //    { "Fred", "Wilma", "Pedrita" },
+            //    { "Home", "Marge", "Lisa", "Bard", "Maggie" },
+            //    { "Florinda", "Kiko" }
+            //};
+
+            familias[0] = new string[] { "Fred", "Wilma", "Pedrita" };
+            familias[1] = new string[] { "Home", "Marge", "Lisa", "Bard", "Maggie" };
+            familias[2] = new string[] { "Florinda", "Kiko" };
+
+            foreach (var familia in familias)
+                Console.WriteLine(string.Join(",", familia));
+            /*
+             * Imprimiu:
+             * Fred,Wilma,Pedrita
+             * Home,Marge,Lisa,Bard,Maggie
+             * Florinda,Kiko
+             */
         }
     }
 }

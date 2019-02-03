@@ -67,3 +67,4 @@ Carreira "Desenvolvedor C#"
 	C# Collections parte 2 - Coleções ordenadas, arrays multidimensionais e LINQ
 		01 - Coleções Ordenadas
 		02 - Arrays Multidimensionais
+		03 - Consultando com LINQ
