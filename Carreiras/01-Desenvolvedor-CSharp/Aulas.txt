@@ -512,3 +512,4 @@ C# Collections parte 1 - Listas, arrays, listas ligadas, dicionários e conjuntos
 		02 - Ordem de uma lista ligada
 		03 - Incluindo elementos num `LinkedList`
 		04 - Stack
+		05 - Queue

@@ -11,7 +11,6 @@ namespace _10_05_XX_ListaLigadaPilhaFila
         static void Main(string[] args)
         {
             
-
             Console.ReadLine();
         }
 
@@ -79,6 +78,26 @@ namespace _10_05_XX_ListaLigadaPilhaFila
             //referência do LinkedListNode
             dias.Remove("qurta"); //removendo com base no valor
             dias.Remove(d5); //removendo com base na referência
+        }
+
+        private static void Stack()
+        {
+            var navegador = new Navegador();
+
+            navegador.NavegarPara("google.com");
+            navegador.NavegarPara("caelum.com.br");
+            navegador.NavegarPara("alura.com.br");
+
+            navegador.Anterior();
+            navegador.Anterior();
+            navegador.Anterior();
+
+            navegador.Proximo();
+        }
+
+        private static void Queue()
+        {
+
         }
     }
 }
