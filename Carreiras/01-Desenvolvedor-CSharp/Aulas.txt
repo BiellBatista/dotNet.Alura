@@ -539,3 +539,5 @@ C# Collections parte 2 - Coleções ordenadas, arrays multidimensionais e LINQ
 		04 - SortedList
 		05 - SortedList
 		06 - SortedDictionary
+		07 - SortedList e SortedDictionary
+		08 - SortedSet
