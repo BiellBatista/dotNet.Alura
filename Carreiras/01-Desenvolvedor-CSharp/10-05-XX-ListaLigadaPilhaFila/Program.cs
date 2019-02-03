@@ -8,9 +8,35 @@ namespace _10_05_XX_ListaLigadaPilhaFila
 {
     class Program
     {
+        static Queue<string> pedagio = new Queue<string>();
+
         static void Main(string[] args)
         {
-            
+            //entrou: van
+            Enfileirar("van");
+
+            //entrou: kombi
+            Enfileirar("kombi");
+
+            //entrou: guincho
+            Enfileirar("guincho");
+
+            //entrou: pickup
+            Enfileirar("pickup");
+
+            //carro liberado
+            Desenfileirar();
+
+            //carro liberado
+            Desenfileirar();
+
+            //carro liberado
+            Desenfileirar();
+
+            Desenfileirar();
+
+            Desenfileirar();
+
             Console.ReadLine();
         }
 
@@ -95,9 +121,32 @@ namespace _10_05_XX_ListaLigadaPilhaFila
             navegador.Proximo();
         }
 
-        private static void Queue()
+        private static void Desenfileirar()
         {
+            if (pedagio.Any())
+            {
+                if (pedagio.Peek() == "guincho") //verificando se o próximo elemento é o guincho
+                    Console.WriteLine("guincho está fazendo o pagamento");
 
+                string veiculo = pedagio.Dequeue(); //removendo o primeiro carro
+                Console.WriteLine($"Saiu da fila: {veiculo}");
+                ImprimirFila();
+            }
+        }
+
+        private static void Enfileirar(string veiculo)
+        {
+            Console.WriteLine($"Entrou na fila: {veiculo}");
+            pedagio.Enqueue(veiculo); //adicionando um valor na fila
+            ImprimirFila();
+        }
+
+        private static void ImprimirFila()
+        {
+            Console.WriteLine("FILA: ");
+
+            foreach (var v in pedagio)
+                Console.WriteLine(v);
         }
     }
 }

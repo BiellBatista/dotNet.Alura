@@ -63,3 +63,4 @@ Carreira "Desenvolvedor C#"
 		03 - O Poder dos Sets
 		04 - Dicionários, Trabalhando com Chave e Valor
 		05 - Lista Ligada, Pilha e Fila
+		06 - Qual Coleção Usar
