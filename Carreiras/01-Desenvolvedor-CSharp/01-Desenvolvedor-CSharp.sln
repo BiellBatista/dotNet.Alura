@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-05-XX-ListaLigadaPilhaFi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-01-XX-ColecoesOrdenadas", "11-01-XX-ColecoesOrdenadas\11-01-XX-ColecoesOrdenadas.csproj", "{6CC856CD-E809-4675-89BE-14A83B720C46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-02-XX-ArraysMultidimensionais", "11-02-XX-ArraysMultidimensionais\11-02-XX-ArraysMultidimensionais.csproj", "{94EA7F7D-6563-45DB-A4A5-E0A1C28C02A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{6CC856CD-E809-4675-89BE-14A83B720C46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CC856CD-E809-4675-89BE-14A83B720C46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CC856CD-E809-4675-89BE-14A83B720C46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94EA7F7D-6563-45DB-A4A5-E0A1C28C02A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94EA7F7D-6563-45DB-A4A5-E0A1C28C02A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94EA7F7D-6563-45DB-A4A5-E0A1C28C02A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94EA7F7D-6563-45DB-A4A5-E0A1C28C02A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
