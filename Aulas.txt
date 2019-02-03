@@ -68,3 +68,4 @@ Carreira "Desenvolvedor C#"
 		01 - Coleções Ordenadas
 		02 - Arrays Multidimensionais
 		03 - Consultando com LINQ
+		04 - Mais Operadores LINQ
