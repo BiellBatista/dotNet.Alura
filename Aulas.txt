@@ -64,3 +64,5 @@ Carreira "Desenvolvedor C#"
 		04 - Dicionários, Trabalhando com Chave e Valor
 		05 - Lista Ligada, Pilha e Fila
 		06 - Qual Coleção Usar
+	C# Collections parte 2 - Coleções ordenadas, arrays multidimensionais e LINQ
+		01 - Coleções Ordenadas

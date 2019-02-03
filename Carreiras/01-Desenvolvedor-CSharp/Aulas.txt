@@ -522,3 +522,18 @@ C# Collections parte 1 - Listas, arrays, listas ligadas, dicionários e conjuntos
 		12 - Projeto da Aula Atual
 	06 - Qual Coleção Usar
 		01 - Qual collection usar?
+		02 - Começando deste ponto?
+		03 - IList vs ISet
+		04 - Declarando coleções
+		05 - Qual coleção?
+		06 - Trabalhando com Pilhas
+		07 - Mão na Massa: Manipulando Streams Com Array de Bytes
+		08 - Mão na Massa: Listas de Pixels e Outras Loucuras com Listas
+		09 - O que aprendemos?
+		10 - Conclusão
+C# Collections parte 2 - Coleções ordenadas, arrays multidimensionais e LINQ
+	01 - Coleções Ordenadas
+		01 - Preparando o ambiente
+		02 - Introdução
+		03 - Para saber mais - Material da Apresentação do Curso
+		04 - SortedList
