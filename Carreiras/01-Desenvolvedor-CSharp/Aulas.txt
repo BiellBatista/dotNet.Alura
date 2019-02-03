@@ -568,3 +568,4 @@ C# Collections parte 2 - Coleções ordenadas, arrays multidimensionais e LINQ
 		09 - Projeto da Aula Atual
 	04 - Mais Operadores LINQ
 		01 - Consultando sequências de elementos
+		02 - Operadores de conjuntos LINQ

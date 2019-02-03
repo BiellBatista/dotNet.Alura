@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-02-XX-ArraysMultidimensi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-03-XX-ConsultandoLINQ", "11-03-XX-ConsultandoLINQ\11-03-XX-ConsultandoLINQ.csproj", "{64A29012-4EAB-4947-AA85-33D8188E6F60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-04-XX-MaisOperadoresLINQ", "11-04-XX-MaisOperadoresLINQ\11-04-XX-MaisOperadoresLINQ.csproj", "{C927691F-C4D9-49DA-9D54-0FD7E19A668D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{64A29012-4EAB-4947-AA85-33D8188E6F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64A29012-4EAB-4947-AA85-33D8188E6F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64A29012-4EAB-4947-AA85-33D8188E6F60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C927691F-C4D9-49DA-9D54-0FD7E19A668D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C927691F-C4D9-49DA-9D54-0FD7E19A668D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C927691F-C4D9-49DA-9D54-0FD7E19A668D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C927691F-C4D9-49DA-9D54-0FD7E19A668D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
