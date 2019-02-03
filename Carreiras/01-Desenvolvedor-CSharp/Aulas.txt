@@ -537,3 +537,5 @@ C# Collections parte 2 - Coleções ordenadas, arrays multidimensionais e LINQ
 		02 - Introdução
 		03 - Para saber mais - Material da Apresentação do Curso
 		04 - SortedList
+		05 - SortedList
+		06 - SortedDictionary
