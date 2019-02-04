@@ -10,7 +10,8 @@ namespace _11_05_XX_ConvertendoEnumerandoColecoes
     {
         static void Main(string[] args)
         {
-
+            CovarianciaIEnumerable();
+            OLacoForeach();
 
             Console.ReadLine();
         }
@@ -69,6 +70,32 @@ namespace _11_05_XX_ConvertendoEnumerandoColecoes
             Console.WriteLine();
             //A interface IEnumerable<> não possui um indexador, pois recebe um tipo genérico out, e com isso não posso alterar seu valor
 
+        }
+
+        internal static void OLacoForeach()
+        {
+            var meses = new List<string>
+            {
+                "Janeiro", "Fevereiro", "Março",
+                "Abril", "Maio", "Junho",
+                "Julho", "Agosto", "Setembro",
+                "Outubro", "Novembro", "Dezembro"
+            };
+            //não é possível modificar a variável de interação. Neste caso, a variável é "mes"
+            //exemplo: mes = mes.ToUpper();
+            //não é possível modificar a lista que está sendo enumerada
+            //exemplo: meses[0] = meses[0].ToUpper();
+            foreach (var mes in meses)
+            {
+                //meses[0] = meses[0].ToUpper();erro
+                Console.WriteLine(mes);
+            }
+            /*
+             * quan inicio o foreach, ele memoriza a numeração de versão atual da lista. Caso eu altere ela, ele irá descobrir,
+             * pois os indexadores alteram a numeração de versão.
+             * 
+             * eu posso alterar o elemento de um array, mas não de uma lista
+             */
         }
     }
 }
