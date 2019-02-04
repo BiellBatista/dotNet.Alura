@@ -579,3 +579,7 @@ C# Collections parte 2 - Coleções ordenadas, arrays multidimensionais e LINQ
 		10 - Projeto da Aula Atual
 	05 - Convertendo e Enumerando Coleções
 		01 - Covariância de IEnumerable
+		02 - Convertendo Coleções
+		03 - Conversão de Arrays
+		04 - O Laço Foreach
+		05 - 
