@@ -569,3 +569,13 @@ C# Collections parte 2 - Coleções ordenadas, arrays multidimensionais e LINQ
 	04 - Mais Operadores LINQ
 		01 - Consultando sequências de elementos
 		02 - Operadores de conjuntos LINQ
+		03 - Faixas de valores de uma sequência
+		04 - Faixa contínua de valores de uma sequência
+		05 - Operadores de Conjunto
+		06 - O que aprendemos?
+		07 - Mão na Massa - LINQ: Outros Operadores
+		08 - Consolidando seu conhecimento
+		09 - Para saber mais
+		10 - Projeto da Aula Atual
+	05 - Convertendo e Enumerando Coleções
+		01 - Covariância de IEnumerable

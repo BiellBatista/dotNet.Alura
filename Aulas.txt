@@ -69,3 +69,4 @@ Carreira "Desenvolvedor C#"
 		02 - Arrays Multidimensionais
 		03 - Consultando com LINQ
 		04 - Mais Operadores LINQ
+		05 - Convertendo e Enumerando Coleções

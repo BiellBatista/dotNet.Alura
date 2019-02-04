@@ -10,8 +10,18 @@ namespace _11_04_XX_MaisOperadoresLINQ
     {
         static void Main(string[] args)
         {
-            string[] seq1 = { "janeiro", "fevereiro", "março" };
-            string[] seq2 = { "fevereiro", "MARÇO", "abril" };
+            ConsultandoSequenciasElementos();
+            OperadoresConjuntosLINQ();
+
+            var dias = new[] {
+                new { nome = "segunda", faturamento = 1000 },
+                new { nome = "terça", faturamento = 2000 },
+                new { nome = "quarta", faturamento = 12500 },
+                new { nome = "quinta", faturamento = 11000 },
+                new { nome = "sexta", faturamento = 22000 },
+                new { nome = "sábado", faturamento = 9000 },
+                new { nome = "domingo", faturamento = 18000 }
+            };
 
             Console.ReadLine();
         }
@@ -72,7 +82,38 @@ namespace _11_04_XX_MaisOperadoresLINQ
 
         internal static void OperadoresConjuntosLINQ()
         {
+            string[] seq1 = { "janeiro", "fevereiro", "março" };
+            string[] seq2 = { "fevereiro", "MARÇO", "abril" };
 
+            Console.WriteLine("Concatenando duas sequências");
+            var consulta = seq1.Concat(seq2);
+            foreach (var item in consulta)
+                Console.WriteLine(item);
+            Console.WriteLine();
+
+            Console.WriteLine("Unindo duas sequências. Porém, não será mostrado os elementos repetidos. Neste caso, o fervereiro");
+            var consulta2 = seq1.Union(seq2);
+            foreach (var item in consulta2)
+                Console.WriteLine(item);
+            Console.WriteLine();
+
+            Console.WriteLine("Unindo duas sequências com comparador. Assim não repito março");
+            var consulta3 = seq1.Union(seq2, StringComparer.InvariantCultureIgnoreCase);
+            foreach (var item in consulta3)
+                Console.WriteLine(item);
+            Console.WriteLine();
+
+            Console.WriteLine("Intersecção de duas sequências.");
+            var consulta4 = seq1.Intersect(seq2);
+            foreach (var item in consulta4)
+                Console.WriteLine(item);
+            Console.WriteLine();
+
+            Console.WriteLine("Intersecção de duas sequências. Exceto elementos da seq1");
+            var consulta5 = seq1.Except(seq2);
+            foreach (var item in consulta5)
+                Console.WriteLine(item);
+            Console.WriteLine();
         }
     }
 }
