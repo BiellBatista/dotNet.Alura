@@ -1,4 +1,4 @@
-Carreira "Desenvolvedor C#"
+Carreira Desenvolvedor C#
 	Curso C# Parte 1: Primeiros Passos
 		01 - História e ecossistema da linguagem
 		02 - Nosso primeiro programa e o Visual Studio
@@ -70,3 +70,7 @@ Carreira "Desenvolvedor C#"
 		03 - Consultando com LINQ
 		04 - Mais Operadores LINQ
 		05 - Convertendo e Enumerando Coleções
+Carreira Desenvolvedor .Net com Entity Framework
+	SQL Server: Introdução ao SQL com Microsoft SQL Server 2017
+		01 - Instalando e configurando o SQL Server
+		02 - 
