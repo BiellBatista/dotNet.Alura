@@ -47,7 +47,27 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="06-PRODUTOS.xlsx" />
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="01-Criando+Banco+de+Dados+-+Exemplo+1.sql" />
+    <Content Include="02-Criando+Banco+de+Dados+-+Exemplo+2.sql" />
+    <Content Include="03-Apagando+Banco+de+Dados+-+Exemplo+1.sql" />
+    <Content Include="04-Criando+Primeira+Tabela.sql" />
+    <Content Include="05-Apagando+a+tabela.sql" />
+    <Content Include="06-Incluindo+o+primeiro+registro.sql" />
+    <Content Include="07-Incluindo+mais+de+um+registro.sql" />
+    <Content Include="08-Alterando+registros.sql" />
+    <Content Include="08-Incluindo+registros+errados.sql" />
+    <Content Include="09-Excluindo+registros.sql" />
+    <Content Include="10-Chave+primaria+-+Primeira+tentativa.sql" />
+    <Content Include="11-Modificando+e+incluindo+dados+na+tab+de+clientes.sql" />
+    <Content Include="12-Incluindo+dados+tabela+produtos+e+clientes.sql" />
+    <Content Include="12-Visualizando+todos+os+dados+da+tabela.sql" />
+    <Content Include="13-Filtrando+valores+da+tabela.sql" />
+    <Content Include="14-Filtrando+usando+maior,+menor,+diferente.sql" />
+    <Content Include="15-Filtrando+por+datas.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

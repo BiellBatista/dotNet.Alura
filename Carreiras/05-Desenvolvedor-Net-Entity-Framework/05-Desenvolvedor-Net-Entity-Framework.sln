@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-XX-XX-IntroSQL", "01-XX-XX-IntroSQL\01-XX-XX-IntroSQL.csproj", "{BEECB30F-C567-42EE-A2FC-AF47D4ED21E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-01-05-InstalandoPacotesEntity", "02-01-05-InstalandoPacotesEntity\02-01-05-InstalandoPacotesEntity.csproj", "{D4649C4E-E265-43D8-8562-1E5DED03180F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{FDF4393F-ADD9-4935-8C23-59A38E25E772}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{BEECB30F-C567-42EE-A2FC-AF47D4ED21E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEECB30F-C567-42EE-A2FC-AF47D4ED21E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEECB30F-C567-42EE-A2FC-AF47D4ED21E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4649C4E-E265-43D8-8562-1E5DED03180F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4649C4E-E265-43D8-8562-1E5DED03180F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4649C4E-E265-43D8-8562-1E5DED03180F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4649C4E-E265-43D8-8562-1E5DED03180F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDF4393F-ADD9-4935-8C23-59A38E25E772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF4393F-ADD9-4935-8C23-59A38E25E772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF4393F-ADD9-4935-8C23-59A38E25E772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF4393F-ADD9-4935-8C23-59A38E25E772}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

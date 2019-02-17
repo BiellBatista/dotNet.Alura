@@ -71,3 +71,6 @@ Entity Framework Core: Banco de dados de forma eficiente
 		03 - Preparando o ambiente (Obrigatório)
 		04 - As vantagens do ORM
 		05 - Instalando os pacotes necessários para o Entity
+		06 - Instale o EntityFrameworkCore usando o provider SQL Server
+		07 - Para saber mais: outros providers de bancos para o Entity
+		08 - Primeiro uso da ferramenta
