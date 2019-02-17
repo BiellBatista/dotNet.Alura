@@ -73,4 +73,9 @@ Carreira Desenvolvedor C#
 Carreira Desenvolvedor .Net com Entity Framework
 	SQL Server: Introdução ao SQL com Microsoft SQL Server 2017
 		01 - Instalando e configurando o SQL Server
-		02 - 
+		02 - Manipulando o banco de dados
+		03 - Gerenciando as tabelas do banco de dados
+		04 - Manutenção dos dados nas tabelas
+		05 - Consultando os dados
+	Entity Framework Core: Banco de dados de forma eficiente
+		01 - Introdução ao Entity Framework Core

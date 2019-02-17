@@ -1,4 +1,69 @@
 SQL Server: Introdução ao SQL com Microsoft SQL Server 2017
 	01 - Instalando e configurando o SQL Server
 		01 - Introdução
-		02 - 
+		02 - Instalando o SQL Server
+		03 - Instalando o SQL Server Management Studio
+		04 - Preparando o ambiente
+		05 - O que aprendemos?
+	02 - Manipulando o banco de dados
+		01 - Definições
+		02 - Localização da tabela
+		03 - Componentes de tabelas
+		04 - Agrupando tabelas
+		05 - Conhecendo o Management Studio
+		06 - Criando banco de dados
+		07 - Comando para criação de banco de dados
+		08 - Criando banco através de assistente
+		09 - Como criamos banco de dados
+		10 - Apagando banco de dados
+		11 - Comando para apagar banco de dados
+		12 - Mãos na massa: Manipulando o banco de dados
+		13 - O que aprendemos?
+	03 - Gerenciando as tabelas do banco de dados
+		01 - Tipos de dados
+		02 - Diferença entre tipo de dados
+		03 - Tipo data
+		04 - Dados numéricos
+		05 - Criando primeira tabela
+		06 - Criando tabela de vendedores
+		07 - Criando tabela através de assistente
+		08 - Recriando tabela de vendedores
+		09 - Apagando tabela
+		10 - Apagando a tabela de vendedores
+		11 - Mãos na massa: Gerenciando as tabelas do banco de dados
+		12 - O que aprendemos?
+	04 - Manutenção dos dados nas tabelas
+		01 - Incluindo dados na tabela
+		02 - Incluindo o primeiro vendedor
+		03 - Incluindo os registros ao mesmo tempo
+		04 - Incluindo mais dois vendedores
+		05 - Incluindo registro direto na tabela
+		06 - Incluindo vendedores usando assistente
+		07 - Alterando registros
+		08 - Alterando informações sobre os vendedores
+		09 - Excluindo registros
+		10 - Excluindo vendedor
+		11 - Chave primária
+		12 - Comando para criação da chave primária
+		13 - Resolvendo o problema da chave primária
+		14 - Cuidado ao executar o comando de chave primária
+		15 - Criando chave primária para a tabela de vendedores
+		16 - Manipulando datas e campos lógicos
+		17 - Modificando a tabela de vendedores
+		18 - Mãos na massa: Manutenção dos dados nas tabelas
+		19 - O que aprendemos?
+	05 - Consultando os dados
+		01 - Listando dados de uma tabela
+		02 - Selecionando todos os vendedores
+		03 - Filtrando registros
+		04 - Selecionando um vendedor
+		05 - Filtrando usando maior, menor, diferente
+		06 - Selecionando vendedor pelo valor da comissão
+		07 - Filtrando por datas
+		08 - Selecionando vendedor pela data
+		09 - Mãos na massa: Consultando os dados
+		10 - O que aprendemos?
+		11 - Conclusão
+Entity Framework Core: Banco de dados de forma eficiente
+	01 - Introdução ao Entity Framework Core
+		01 - Visão geral do curso
