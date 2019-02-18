@@ -88,3 +88,7 @@ Entity Framework Core: Banco de dados de forma eficiente
 		05 - Alterando objetos com o Entity
 		06 - A tarifa mudou!
 		07 - Organizando o código de acesso em um DAO
+		08 - Consolidando seu conhecimento
+	03 - Como o Entity monta o SQL?
+		01 - O ChangeTracker e os estados Unchanged e Modified
+		02 - 
