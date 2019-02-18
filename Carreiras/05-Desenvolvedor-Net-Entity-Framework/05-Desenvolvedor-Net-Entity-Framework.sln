@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-01-05-InstalandoPacotesE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-01-RecuperandoObjetosEntity", "02-02-01-RecuperandoObjetosEntity\02-02-01-RecuperandoObjetosEntity.csproj", "{5148CE91-6413-4D36-9479-FFBBE4BC730D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-XX-ManipulandoObjetos", "02-02-XX-ManipulandoObjetos\02-02-XX-ManipulandoObjetos.csproj", "{D194539C-58F6-4E1D-A507-B66BC6E602DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5148CE91-6413-4D36-9479-FFBBE4BC730D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5148CE91-6413-4D36-9479-FFBBE4BC730D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5148CE91-6413-4D36-9479-FFBBE4BC730D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D194539C-58F6-4E1D-A507-B66BC6E602DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D194539C-58F6-4E1D-A507-B66BC6E602DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D194539C-58F6-4E1D-A507-B66BC6E602DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D194539C-58F6-4E1D-A507-B66BC6E602DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
