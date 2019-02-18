@@ -86,3 +86,5 @@ Entity Framework Core: Banco de dados de forma eficiente
 		03 - Deletando objetos com o Entity
 		04 - O que está faltando para excluir?
 		05 - Alterando objetos com o Entity
+		06 - A tarifa mudou!
+		07 - Organizando o código de acesso em um DAO
