@@ -82,4 +82,5 @@ Entity Framework Core: Banco de dados de forma eficiente
 		14 - Consolidando seu conhecimento
 	02 - Manipulando objetos
 		01 - Recuperando objetos com o Entity
-		02 - 
+		02 - Listando contas bancárias
+		03 - Deletando objetos com o Entity

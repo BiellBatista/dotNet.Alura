@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-XX-XX-IntroSQL", "01-XX-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-01-05-InstalandoPacotesEntity", "02-01-05-InstalandoPacotesEntity\02-01-05-InstalandoPacotesEntity.csproj", "{D4649C4E-E265-43D8-8562-1E5DED03180F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-01-RecuperandoObjetosEntity", "02-02-01-RecuperandoObjetosEntity\02-02-01-RecuperandoObjetosEntity.csproj", "{5148CE91-6413-4D36-9479-FFBBE4BC730D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D4649C4E-E265-43D8-8562-1E5DED03180F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4649C4E-E265-43D8-8562-1E5DED03180F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4649C4E-E265-43D8-8562-1E5DED03180F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5148CE91-6413-4D36-9479-FFBBE4BC730D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5148CE91-6413-4D36-9479-FFBBE4BC730D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5148CE91-6413-4D36-9479-FFBBE4BC730D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5148CE91-6413-4D36-9479-FFBBE4BC730D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
