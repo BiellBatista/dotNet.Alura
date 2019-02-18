@@ -74,3 +74,12 @@ Entity Framework Core: Banco de dados de forma eficiente
 		06 - Instale o EntityFrameworkCore usando o provider SQL Server
 		07 - Para saber mais: outros providers de bancos para o Entity
 		08 - Primeiro uso da ferramenta
+		09 - Usando o Entity
+		10 - Adivinhe o nome...
+		11 - Para saber mais: Entity suporta transações
+		12 - Para saber mais: permitindo o uso de LojaContext com outros providers
+		13 - Para saber mais: outro método de inclusão, AddRange
+		14 - Consolidando seu conhecimento
+	02 - Manipulando objetos
+		01 - Recuperando objetos com o Entity
+		02 - 
