@@ -94,4 +94,13 @@ Entity Framework Core: Banco de dados de forma eficiente
 		02 - Para saber mais: como o ChangeTracker funciona
 		03 - Logando o SQL no console
 		04 - O estado Added
-		05 - 
+		05 - Qual estado do objeto?
+		06 - Deleted e Detached
+		07 - Mudança de estados
+		08 - Visão geral do relacionamento entre os estados
+		09 - A mudança dos estados
+		10 - Os estados dos objetos
+		11 - Para saber mais: resumo dos estados EntityState
+		12 - Consolidando seu conhecimento
+	04 - Sincronizando o banco de dados com o modelo de classes
+		01 - 
