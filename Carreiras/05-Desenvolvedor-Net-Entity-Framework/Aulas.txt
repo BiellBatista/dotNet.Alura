@@ -93,3 +93,5 @@ Entity Framework Core: Banco de dados de forma eficiente
 		01 - O ChangeTracker e os estados Unchanged e Modified
 		02 - Para saber mais: como o ChangeTracker funciona
 		03 - Logando o SQL no console
+		04 - O estado Added
+		05 - 

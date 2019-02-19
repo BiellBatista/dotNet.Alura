@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-XX-ManipulandoObjetos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-03-01-ChangeTrackeUnchangedModified", "02-03-01-ChangeTrackeUnchangedModified\02-03-01-ChangeTrackeUnchangedModified.csproj", "{E5A919AE-5FD4-48E1-A3AF-8187981675F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-03-03-LogandoSQLConsole", "02-03-03-LogandoSQLConsole\02-03-03-LogandoSQLConsole.csproj", "{2B48EA82-81F4-4D0F-8779-668DF12A8EE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{E5A919AE-5FD4-48E1-A3AF-8187981675F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5A919AE-5FD4-48E1-A3AF-8187981675F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5A919AE-5FD4-48E1-A3AF-8187981675F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B48EA82-81F4-4D0F-8779-668DF12A8EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B48EA82-81F4-4D0F-8779-668DF12A8EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B48EA82-81F4-4D0F-8779-668DF12A8EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B48EA82-81F4-4D0F-8779-668DF12A8EE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
