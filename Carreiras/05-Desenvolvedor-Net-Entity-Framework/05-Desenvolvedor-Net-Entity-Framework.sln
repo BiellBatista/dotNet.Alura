@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-03-03-LogandoSQLConsole"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-03-XX-ComoEntityMontaSQL", "02-03-XX-ComoEntityMontaSQL\02-03-XX-ComoEntityMontaSQL.csproj", "{384F3E40-DBC3-4206-93E1-DBA460744293}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-04-XX-SincronizandoBDModeloClasses", "02-04-XX-SincronizandoBDModeloClasses\02-04-XX-SincronizandoBDModeloClasses.csproj", "{B52B39CF-C804-4979-8D15-36FCC5D5A23C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{384F3E40-DBC3-4206-93E1-DBA460744293}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{384F3E40-DBC3-4206-93E1-DBA460744293}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{384F3E40-DBC3-4206-93E1-DBA460744293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B52B39CF-C804-4979-8D15-36FCC5D5A23C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B52B39CF-C804-4979-8D15-36FCC5D5A23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B52B39CF-C804-4979-8D15-36FCC5D5A23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B52B39CF-C804-4979-8D15-36FCC5D5A23C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

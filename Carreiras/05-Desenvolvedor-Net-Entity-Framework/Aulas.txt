@@ -103,4 +103,7 @@ Entity Framework Core: Banco de dados de forma eficiente
 		11 - Para saber mais: resumo dos estados EntityState
 		12 - Consolidando seu conhecimento
 	04 - Sincronizando o banco de dados com o modelo de classes
-		01 - 
+		01 - Como sincronizar o modelo de classes com a estrutura de dados?
+		02 - Trabalho sujo 2, a sincronização
+		03 - O processo de migração
+		04 - 
