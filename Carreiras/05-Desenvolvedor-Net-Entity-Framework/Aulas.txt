@@ -106,4 +106,6 @@ Entity Framework Core: Banco de dados de forma eficiente
 		01 - Como sincronizar o modelo de classes com a estrutura de dados?
 		02 - Trabalho sujo 2, a sincronização
 		03 - O processo de migração
-		04 - 
+		04 - Comandos do EntityFramework
+		05 - Procedimento de Migração
+		06 - Corrigindo problemas e aplicando as migrações no banco

@@ -247,8 +247,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IProdutoDao.cs" />
     <Compile Include="LojaContext.cs" />
+    <Compile Include="Migrations\20190219073257_Unidade.cs" />
+    <Compile Include="Migrations\20190219073257_Unidade.Designer.cs">
+      <DependentUpon>20190219073257_Unidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\LojaContextModelSnapshot.cs" />
     <Compile Include="Produto.cs" />
+    <Compile Include="ProdutoDAOEntity.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlLoggerProvider.cs" />
@@ -257,5 +264,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
