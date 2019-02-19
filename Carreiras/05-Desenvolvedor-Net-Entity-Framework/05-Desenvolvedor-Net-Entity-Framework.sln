@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-01-RecuperandoObjetos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-XX-ManipulandoObjetos", "02-02-XX-ManipulandoObjetos\02-02-XX-ManipulandoObjetos.csproj", "{D194539C-58F6-4E1D-A507-B66BC6E602DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-03-01-ChangeTrackeUnchangedModified", "02-03-01-ChangeTrackeUnchangedModified\02-03-01-ChangeTrackeUnchangedModified.csproj", "{E5A919AE-5FD4-48E1-A3AF-8187981675F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D194539C-58F6-4E1D-A507-B66BC6E602DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D194539C-58F6-4E1D-A507-B66BC6E602DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D194539C-58F6-4E1D-A507-B66BC6E602DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5A919AE-5FD4-48E1-A3AF-8187981675F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5A919AE-5FD4-48E1-A3AF-8187981675F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5A919AE-5FD4-48E1-A3AF-8187981675F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5A919AE-5FD4-48E1-A3AF-8187981675F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

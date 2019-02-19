@@ -91,4 +91,5 @@ Entity Framework Core: Banco de dados de forma eficiente
 		08 - Consolidando seu conhecimento
 	03 - Como o Entity monta o SQL?
 		01 - O ChangeTracker e os estados Unchanged e Modified
-		02 - 
+		02 - Para saber mais: como o ChangeTracker funciona
+		03 - Logando o SQL no console
