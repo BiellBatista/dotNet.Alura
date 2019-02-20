@@ -17,7 +17,7 @@ namespace Alura.Loja.Testes.ConsoleApp
 /*
  * Add-Migration Registrar uma versão (migration, nos termos do Entity).
     Remove-Migration Esse comando é utilizado para remover a última migração não aplicada no banco de dados apontado pelo contexto.
-    Update-Database
+    Update-Database Atualiza o banco de dados com base na tabela de histórico de migração
     Script-Migration Gera um script DDL para que seja executado no banco de dados
     Drop-Database Esse comando é utilizado para dropar o banco de dados apontado pelo contexto.
     Scaffold-DbContext Esse comando é utilizado para criar uma classe que estende de DbContext, além de classes que representam as tabelas do banco.

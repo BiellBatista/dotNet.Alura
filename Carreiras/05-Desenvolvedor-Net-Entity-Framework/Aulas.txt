@@ -109,3 +109,7 @@ Entity Framework Core: Banco de dados de forma eficiente
 		04 - Comandos do EntityFramework
 		05 - Procedimento de Migração
 		06 - Corrigindo problemas e aplicando as migrações no banco
+		07 - Para saber mais: sincronizando o banco com sua própria aplicação
+		08 - Consolidando seu conhecimento
+	05 - Relacionamentos Um para Muitos no Entity
+		01 - 

@@ -8,7 +8,7 @@ using Alura.Loja.Testes.ConsoleApp;
 namespace _02_04_XX_SincronizandoBDModeloClasses.Migrations
 {
     [DbContext(typeof(LojaContext))]
-    [Migration("20190219073257_Unidade")]
+    [Migration("20190220231008_Unidade")]
     partial class Unidade
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
