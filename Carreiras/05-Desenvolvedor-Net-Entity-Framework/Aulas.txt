@@ -112,4 +112,6 @@ Entity Framework Core: Banco de dados de forma eficiente
 		07 - Para saber mais: sincronizando o banco com sua própria aplicação
 		08 - Consolidando seu conhecimento
 	05 - Relacionamentos Um para Muitos no Entity
-		01 - 
+		01 - Relacionamento um para muitos
+		02 - Corrigindo a migração para refletir o relacionamento
+		03 - 
