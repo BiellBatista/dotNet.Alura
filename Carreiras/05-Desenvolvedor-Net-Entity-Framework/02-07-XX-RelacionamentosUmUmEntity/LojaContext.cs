@@ -19,11 +19,17 @@ namespace Alura.Loja.Testes.ConsoleApp
         // este método é executado no evento de criação do modelo
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // montando uma chave composta para a abela de join
+            // montando uma chave composta para a tabela de join
             modelBuilder
                 .Entity<PromocaoProduto>()
                 .HasKey(pp => new { pp.PromocaoId, pp.ProdutoId });
             // O nome desse conceito para o Entity é Shadow Property, ou seja, uma propriedade que está escondida, ficando apenas no banco de dados.
+
+            // noemando a tabela para Enderecos
+            modelBuilder
+                .Entity<Endereco>()
+                .ToTable("Enderecos");
+
             modelBuilder
                 .Entity<Endereco>()
                 .Property<int>("ClienteId");
@@ -31,6 +37,7 @@ namespace Alura.Loja.Testes.ConsoleApp
             modelBuilder
                 .Entity<Endereco>()
                 .HasKey("ClienteId");
+
 
             base.OnModelCreating(modelBuilder);
         }

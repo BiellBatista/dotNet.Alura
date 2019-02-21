@@ -133,3 +133,8 @@ Entity Framework Core: Banco de dados de forma eficiente
 		03 - Um erro não esperado
 		04 - Direto das Sombras!
 		05 - Mudando o nome da tabela
+		06 - O DBA não aprovou o nome da sua tabela
+		07 - Consolidando seu conhecimento
+	08 - Recuperando objetos relacionados
+		01 - Aplicando condições nas consultas
+		02 - 
