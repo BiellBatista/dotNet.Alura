@@ -23,6 +23,15 @@ namespace Alura.Loja.Testes.ConsoleApp
             modelBuilder
                 .Entity<PromocaoProduto>()
                 .HasKey(pp => new { pp.PromocaoId, pp.ProdutoId });
+            // O nome desse conceito para o Entity é Shadow Property, ou seja, uma propriedade que está escondida, ficando apenas no banco de dados.
+            modelBuilder
+                .Entity<Endereco>()
+                .Property<int>("ClienteId");
+
+            modelBuilder
+                .Entity<Endereco>()
+                .HasKey("ClienteId");
+
             base.OnModelCreating(modelBuilder);
         }
 

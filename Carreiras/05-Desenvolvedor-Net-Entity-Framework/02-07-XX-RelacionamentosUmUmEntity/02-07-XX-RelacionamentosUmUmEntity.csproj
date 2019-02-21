@@ -246,7 +246,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cliente.cs" />
     <Compile Include="Compra.cs" />
+    <Compile Include="Endereco.cs" />
     <Compile Include="IProdutoDao.cs" />
     <Compile Include="LojaContext.cs" />
     <Compile Include="Migrations\20190220230825_Inicial.cs" />

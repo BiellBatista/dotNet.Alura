@@ -130,3 +130,6 @@ Entity Framework Core: Banco de dados de forma eficiente
 	07 - Relacionamentos Um para Um no Entity
 		01 - Relacionamento um para um
 		02 - Escondendo informações específicas do banco
+		03 - Um erro não esperado
+		04 - Direto das Sombras!
+		05 - Mudando o nome da tabela
