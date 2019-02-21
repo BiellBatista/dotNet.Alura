@@ -18,6 +18,9 @@ namespace Alura.Loja.Testes.ConsoleApp
             paoFrances.Categoria = "Padaria";
 
             var compra = new Compra();
+            compra.Quantidade = 6;
+            compra.Produto = paoFrances;
+            compra.Preco = paoFrances.PrecoUnitario * compra.Quantidade;
         }
     }
 }

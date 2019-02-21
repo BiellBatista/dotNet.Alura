@@ -114,4 +114,7 @@ Entity Framework Core: Banco de dados de forma eficiente
 	05 - Relacionamentos Um para Muitos no Entity
 		01 - Relacionamento um para muitos
 		02 - Corrigindo a migração para refletir o relacionamento
-		03 - 
+		03 - Sobre o relacionamento um-para-muitos
+		04 - Mapeando a chave estrangeira do relacionamento
+		05 - Inserindo objetos relacionados
+		06 - 

@@ -7,6 +7,7 @@ namespace Alura.Loja.Testes.ConsoleApp
     {
         // falando para o Entity manipular a tabela Produtos que está representada pela classe produto
         public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Compra> Compras { get; set; }
 
         public LojaContext()
         { }
