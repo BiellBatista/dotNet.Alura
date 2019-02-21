@@ -9,6 +9,6 @@ namespace Alura.Loja.Testes.ConsoleApp
         public string Descricao { get; internal set; }
         public DateTime Inicio { get; internal set; }
         public DateTime Termino { get; internal set; }
-        public IList<Produto> Produtos { get; internal set; } // devo colocar uma lista para indicar N:M. Neste caso é Promocao : Produto
+        public IList<PromocaoProduto> Produtos { get; internal set; } // devo colocar uma lista para indicar N:M. No caso, a tabela intermediaria
     }
 }

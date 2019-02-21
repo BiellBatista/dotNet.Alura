@@ -262,11 +262,16 @@
     <Compile Include="Migrations\20190221000625_Compra.Designer.cs">
       <DependentUpon>20190221000625_Compra.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20190221005646_Promocao.cs" />
+    <Compile Include="Migrations\20190221005646_Promocao.Designer.cs">
+      <DependentUpon>20190221005646_Promocao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\LojaContextModelSnapshot.cs" />
     <Compile Include="Produto.cs" />
     <Compile Include="ProdutoDAOEntity.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Promocao.cs" />
+    <Compile Include="PromocaoProduto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlLoggerProvider.cs" />
   </ItemGroup>

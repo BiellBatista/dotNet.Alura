@@ -16,6 +16,16 @@ namespace Alura.Loja.Testes.ConsoleApp
         public LojaContext(DbContextOptions<LojaContext> options) : base(options)
         { }
 
+        // este método é executado no evento de criação do modelo
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // montando uma chave composta para a abela de join
+            modelBuilder
+                .Entity<PromocaoProduto>()
+                .HasKey(pp => new { pp.PromocaoId, pp.ProdutoId });
+            base.OnModelCreating(modelBuilder);
+        }
+
         // falando qual o banco de dados que sera usado
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

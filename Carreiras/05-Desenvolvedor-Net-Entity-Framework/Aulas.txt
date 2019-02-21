@@ -122,4 +122,6 @@ Entity Framework Core: Banco de dados de forma eficiente
 	06 - Relacionamentos Muitos para Muitos no Entity
 		01 - Relacionamento muitos para muitos e a classe de join
 		02 - Mapeando chaves primárias compostas
-		03 - 
+		03 - Relacionando contas a clientes
+		04 - Reservando um quarto de hotel...
+		05 - Manipulando promoções e produtos
