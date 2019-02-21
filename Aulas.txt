@@ -79,3 +79,10 @@ Carreira Desenvolvedor .Net com Entity Framework
 		05 - Consultando os dados
 	Entity Framework Core: Banco de dados de forma eficiente
 		01 - Introdução ao Entity Framework Core
+		02 - Manipulando objetos
+		03 - Como o Entity monta o SQL?
+		04 - Sincronizando o banco de dados com o modelo de classes
+		05 - Relacionamentos Um para Muitos no Entity
+		06 - Relacionamentos Muitos para Muitos no Entity
+		07 - Relacionamentos Um para Um no Entity
+		08 - Recuperando objetos relacionados
