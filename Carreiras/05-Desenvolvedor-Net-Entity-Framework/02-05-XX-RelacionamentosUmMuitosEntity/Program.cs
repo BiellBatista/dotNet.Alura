@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,6 +25,28 @@ namespace Alura.Loja.Testes.ConsoleApp
             compra.Quantidade = 6;
             compra.Produto = paoFrances;
             compra.Preco = paoFrances.PrecoUnitario * compra.Quantidade;
+
+            using(var contexto = new LojaContext())
+            {
+                var serviceProvider = contexto.GetInfrastructure<IServiceProvider>();
+                var loggerFactory = serviceProvider.GetService<ILoggerFactory>();
+                loggerFactory.AddProvider(SqlLoggerProvider.Create());
+
+                contexto.Compras.Add(compra); // estado Added (equivalente ao insert)
+                ExbieEntries(contexto.ChangeTracker.Entries());
+                contexto.SaveChanges();
+                ExbieEntries(contexto.ChangeTracker.Entries());
+            }
+        }
+
+        private static void ExbieEntries(IEnumerable<EntityEntry> entries)
+        {
+            Console.WriteLine("=================");
+            foreach (var e in entries)
+            {
+                // mostrando o estado do objeto
+                Console.WriteLine(e.Entity.ToString() + e.State);
+            }
         }
     }
 }
@@ -39,3 +65,20 @@ Já o segundo passo pode ser feitas de duas maneiras diferentes, sendo a primeir
 
 A outra maneira é usarmos o comando Update-Database, onde o Entity pega a nova versão que foi registrada e executa diretamente no banco de dados. Vamos utilizar essa segunda forma.
  */
+
+/*
+* Added
+O objeto é novo, foi adicionado ao contexto, e o método SaveChanges ainda não foi executado. Depois que as mudanças são feitas, o estado do objeto muda para Unchanged. Objetos no estado Added não têm seus valores rastreados em sua instância de EntityEntry.
+
+Deleted
+O objeto foi excluído do contexto. Depois que as mudanças foram salvas, seu estado muda para Detached.
+
+Detached
+O objeto existe, mas não está sendo monitorado. Uma entidade fica nesse estado imediatamente após ter sido criada e antes de ser adicionada ao contexto. Ela também fica nesse estado depois que foi removida do contexto através do método Detach ou se é carregada por um método com opção NoTracking. Não existem instâncias de EntityEntry associadas a objetos com esse estado.
+
+Modified
+Uma das propriedades escalares do objeto foi modificada e o método SaveChanges ainda não foi executado. Quando o monitoramento automático de mudanças está desligado, o estado é alterado para Modified apenas quando o método DetectChanges é chamado. Quando as mudanças são salvas, o estado do objeto muda para Unchanged.
+
+Unchanged
+O objeto não foi modificado desde que foi anexado ao contexto ou desde a última vez que o método SaveChanges foi chamado.
+*/
