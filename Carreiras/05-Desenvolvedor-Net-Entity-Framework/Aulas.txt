@@ -125,3 +125,8 @@ Entity Framework Core: Banco de dados de forma eficiente
 		03 - Relacionando contas a clientes
 		04 - Reservando um quarto de hotel...
 		05 - Manipulando promoções e produtos
+		06 - Onde foram parar os registros da tabela de join?
+		07 - Consolidando seu conhecimento
+	07 - Relacionamentos Um para Um no Entity
+		01 - Relacionamento um para um
+		02 - 
