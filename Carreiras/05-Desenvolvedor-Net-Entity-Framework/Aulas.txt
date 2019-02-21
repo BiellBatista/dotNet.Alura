@@ -129,4 +129,4 @@ Entity Framework Core: Banco de dados de forma eficiente
 		07 - Consolidando seu conhecimento
 	07 - Relacionamentos Um para Um no Entity
 		01 - Relacionamento um para um
-		02 - 
+		02 - Escondendo informações específicas do banco
