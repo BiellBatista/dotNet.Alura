@@ -147,3 +147,8 @@ Entity Framework Core: Banco de dados de forma eficiente
 		09 - Consolidando seu conhecimento
 		10 - Encerramento - o que aprendemos
 		11 - Projeto final do curso
+Entity LinQ parte 1: Crie queries poderosas em C#
+	01 - Linq to Objects
+		01 - Introdução ao curso
+		02 - Introdução ao Linq com select from e where
+		03 - Linq com joins
