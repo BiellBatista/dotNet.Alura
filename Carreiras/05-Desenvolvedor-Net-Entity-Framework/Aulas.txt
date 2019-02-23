@@ -159,4 +159,13 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 		08 - Consulta com Join
 		09 - Filtrando Consultas com Join
 		10 - Projeto da aula atual
-	02 - 
+	02 - Linq to XML
+		01 - Linq to Xml
+		02 - Escolhendo a Modalidade Linq Mais Adequada
+		03 - Consulta Simples Com XML
+		04 - Debugando Uma Consulta Linq To XML - 1
+		05 - Debugando Uma Consulta Linq To XML - 2
+		06 - Consulta com Join com Linq To XML
+		07 - Projeto da aula atual
+	03 - Linq to Entities
+		01 - Linq to entities contexto join take log sql

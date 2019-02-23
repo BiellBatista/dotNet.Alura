@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-08-XX-RecuperandoObjetos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-01-XX-LinqToObjects", "03-01-XX-LinqToObjects\03-01-XX-LinqToObjects.csproj", "{65D42B7D-4639-42F2-A840-F543FCD8972E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-02-XX-LinqToXML", "03-02-XX-LinqXML\03-02-XX-LinqToXML.csproj", "{49EAC44E-4CC6-4EFD-9B1F-50D04A0235E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{65D42B7D-4639-42F2-A840-F543FCD8972E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65D42B7D-4639-42F2-A840-F543FCD8972E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65D42B7D-4639-42F2-A840-F543FCD8972E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49EAC44E-4CC6-4EFD-9B1F-50D04A0235E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49EAC44E-4CC6-4EFD-9B1F-50D04A0235E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49EAC44E-4CC6-4EFD-9B1F-50D04A0235E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49EAC44E-4CC6-4EFD-9B1F-50D04A0235E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
