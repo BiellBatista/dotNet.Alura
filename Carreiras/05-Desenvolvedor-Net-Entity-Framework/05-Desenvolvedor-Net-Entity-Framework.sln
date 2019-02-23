@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-01-XX-LinqToObjects", "0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-02-XX-LinqToXML", "03-02-XX-LinqXML\03-02-XX-LinqToXML.csproj", "{49EAC44E-4CC6-4EFD-9B1F-50D04A0235E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-03-XX-LinqToEntities", "03-03-XX-LinqToEntities\03-03-XX-LinqToEntities.csproj", "{A5B55A1C-6CDF-4A58-83E8-FE6DA08896C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{49EAC44E-4CC6-4EFD-9B1F-50D04A0235E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49EAC44E-4CC6-4EFD-9B1F-50D04A0235E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49EAC44E-4CC6-4EFD-9B1F-50D04A0235E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5B55A1C-6CDF-4A58-83E8-FE6DA08896C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5B55A1C-6CDF-4A58-83E8-FE6DA08896C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5B55A1C-6CDF-4A58-83E8-FE6DA08896C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B55A1C-6CDF-4A58-83E8-FE6DA08896C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

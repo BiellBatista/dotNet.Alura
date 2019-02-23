@@ -169,3 +169,4 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 		07 - Projeto da aula atual
 	03 - Linq to Entities
 		01 - Linq to entities contexto join take log sql
+		02 - Linq to entities where
