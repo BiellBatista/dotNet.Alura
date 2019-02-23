@@ -152,3 +152,11 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 		01 - Introdução ao curso
 		02 - Introdução ao Linq com select from e where
 		03 - Linq com joins
+		04 - Sintaxe de Consulta Linq
+		05 - Filtrando com Linq
+		06 - Consulta com Filtro (Com Método Contains)
+		07 - Consulta com Filtro (Com Operador de Igualdade)
+		08 - Consulta com Join
+		09 - Filtrando Consultas com Join
+		10 - Projeto da aula atual
+	02 - 
