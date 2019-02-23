@@ -11,15 +11,31 @@ namespace _03_03_XX_LinqToEntities
     {
         static void Main(string[] args)
         {
+            ConsultandoComJoin();
+            ConsultaComWhere();
+        }
+
+        private static void ConsultaComWhere()
+        {
             using (var contexto = new AluraTunesEntities())
             {
                 // filtro com linqToEntities
+                // sintaxe de consulta. Uso quando o sql foi muito grande (mais complexto)
                 var textoBusca = "Led";
                 var query = from a in contexto.Artistas
                             where a.Nome.Contains(textoBusca)
                             select a;
 
                 foreach (var artista in query)
+                {
+                    Console.WriteLine("{0}\t{1}", artista.ArtistaId, artista.Nome);
+                }
+
+                Console.WriteLine("================Consulta com outra forma de Where");
+                // sintaxe de método. Uso quando o sql for pequeno (mais simples)
+                var query2 = contexto.Artistas.Where(a => a.Nome.Contains(textoBusca));
+
+                foreach (var artista in query2)
                 {
                     Console.WriteLine("{0}\t{1}", artista.ArtistaId, artista.Nome);
                 }

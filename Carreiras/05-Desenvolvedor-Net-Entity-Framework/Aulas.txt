@@ -171,3 +171,11 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 		01 - Linq to entities contexto join take log sql
 		02 - Linq to entities where
 		03 - Linq to entities sintaxe de método
+		04 - Escrevendo Uma Consulta Linq to Entities
+		05 - Limitando o número de resultados numa consulta
+		06 - Escolhendo entre Sintaxe de Método e Sintaxe de Consulta
+		07 - Reescrevendo Queries Como Sintaxe de Método
+		08 - Reescrevendo Queries Como Sintaxe de Consulta
+		09 - Projeto da aula atual
+	04 - Associando e Filtrando Entidades do Modelo
+		01 - Linq to entities join
