@@ -14,7 +14,19 @@ namespace Alura.Loja.Testes.ConsoleApp
     {
         static void Main(string[] args)
         {
-            using(var contexto = new LojaContext())
+            using (var contexto2 = new LojaContext())
+            {
+                // o comportamento padrão dos ORM é não realizar JOINS quando for realizado um select, pois isso traria diversos objetos e prejudicaria a peformance
+                var promocao = contexto2.Promocoes.FirstOrDefault();
+                Console.WriteLine("\nMostrando os produtos da promoção...");
+                foreach (var item in promocao.Produtos)
+                    Console.WriteLine(item.Produto);
+            }
+        }
+
+        private static void IncluirPromocao()
+        {
+            using (var contexto = new LojaContext())
             {
                 //Logando o SQL
                 var serviceProvider = contexto.GetInfrastructure<IServiceProvider>();
@@ -38,16 +50,6 @@ namespace Alura.Loja.Testes.ConsoleApp
                 ExbieEntries(contexto.ChangeTracker.Entries());
                 contexto.SaveChanges(); //fechando contexto
                 // quando fecha um contexto, os objetos do ChangeTracker deixa de ser gerenciados
-            }
-
-            using(var contexto2 = new LojaContext())
-            {
-                var promocao = contexto2.Promocoes.FirstOrDefault();
-                Console.WriteLine("\nMostrando os produtos da promoção...");
-                foreach (var item in promocao.Produtos)
-                {
-                    Console.WriteLine(item.Produto);
-                }
             }
         }
 
