@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -13,11 +14,47 @@ namespace Alura.Loja.Testes.ConsoleApp
     class Program
     {
         static void Main(string[] args)
+        {// include == JOIN
+            using (var contexto = new LojaContext())
+            {
+                var serviceProvider = contexto.GetInfrastructure<IServiceProvider>();
+                var loggerFactory = serviceProvider.GetService<ILoggerFactory>();
+                loggerFactory.AddProvider(SqlLoggerProvider.Create());
+
+                // fazendo um select com relação 1:1. Com LEFT JOIN (lado Cliente)  
+                var cliente = contexto
+                    .Clientes
+                    .Include(c => c.EnderecoEntrega)
+                    .FirstOrDefault();
+
+                Console.WriteLine($"Endereço de entrega: {cliente.EnderecoEntrega.Logradouro}");
+
+                // fazendo um select com 1:N
+                var produtos = contexto
+                    .Produtos
+                    .Include(p => p.Compras)
+                    .Where(p => p.Id == 3002)
+                    .FirstOrDefault();
+
+                Console.WriteLine($"Mostrando as Compras do Produto {produtos.Nome}");
+                foreach(var item in produtos.Compras)
+                    Console.WriteLine(item);
+            }
+        }
+
+        private static void SelecaoNPraMComJoin()
         {
             using (var contexto2 = new LojaContext())
             {
                 // o comportamento padrão dos ORM é não realizar JOINS quando for realizado um select, pois isso traria diversos objetos e prejudicaria a peformance
-                var promocao = contexto2.Promocoes.FirstOrDefault();
+                // var promocao = contexto2.Promocoes.FirstOrDefault(); // realizando um select
+
+                var promocao = contexto2
+                    .Promocoes
+                    .Include(p => p.Produtos) // incluindo uma nova tabela no JOIN
+                    .ThenInclude(pp => pp.Produto) // adicionado uma clausula INNER JOIN
+                    .FirstOrDefault();
+
                 Console.WriteLine("\nMostrando os produtos da promoção...");
                 foreach (var item in promocao.Produtos)
                     Console.WriteLine(item.Produto);
@@ -176,4 +213,20 @@ Uma das propriedades escalares do objeto foi modificada e o método SaveChanges 
 
 Unchanged
 O objeto não foi modificado desde que foi anexado ao contexto ou desde a última vez que o método SaveChanges foi chamado.
+
+    ================================================
+
+    var cliente = contexto.Clientes
+  .Include(c => c.Contas)
+  .FirstOrDefault();
+ 
+Quase lá! Você incluiu apenas o relacionamento com a classe de join. Falta colocar mais um método, chamado ThenInclude, com argumento de entrada uma expressão lambda que retorne a propriedade Conta presente na classe ContaCliente.
+=================================
+
+
+
+O método Include possui uma segunda sobrecarga, que permite informarmos como argumento de entrada uma string com o nome da propriedade de navegação a ser incluída no join. A vantagem dessa abordagem é que não precisamos usar outros métodos ThenInclude para continuar a navegação em outras entidades. Por exemplo, para o exemplo Cliente x Conta, poderíamos fazer:
+
+var lista = contexto.Clientes.Include("Contas.Conta");
+A desvantagem é que se o nome da propriedade mudar, teremos que lembrar todos os lugares onde fizemos isso, porque não teremos ajuda do compilador.
 */

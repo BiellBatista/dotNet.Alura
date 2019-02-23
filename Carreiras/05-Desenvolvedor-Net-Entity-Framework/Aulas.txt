@@ -139,4 +139,8 @@ Entity Framework Core: Banco de dados de forma eficiente
 		01 - Aplicando condições nas consultas
 		02 - Cidades do Rio de Janeiro
 		03 - Como realizar joins entre entidades relacionadas
-		04 - 
+		04 - O cliente possui que contas?
+		05 - Para saber mais: sobrecarga de Include
+		06 - Corrigindo o modelo para recuperar objetos relacionados
+		07 - LEFT JOIN?
+		08 - Populando coleções após a carga da entidade principal
