@@ -13,6 +13,23 @@ namespace _03_03_XX_LinqToEntities
         {
             using (var contexto = new AluraTunesEntities())
             {
+                // filtro com linqToEntities
+                var textoBusca = "Led";
+                var query = from a in contexto.Artistas
+                            where a.Nome.Contains(textoBusca)
+                            select a;
+
+                foreach (var artista in query)
+                {
+                    Console.WriteLine("{0}\t{1}", artista.ArtistaId, artista.Nome);
+                }
+            }
+        }
+
+        private static void ConsultandoComJoin()
+        {
+            using (var contexto = new AluraTunesEntities())
+            {
                 contexto.Database.Log = Console.WriteLine; // o console recebe o log do contexto
 
                 // definição de consulta
@@ -28,8 +45,8 @@ namespace _03_03_XX_LinqToEntities
 
                 //realizando um JOIN entre a FAIXA e o GENERO
                 var faixaGenero = from g in contexto.Generos
-                             join f in contexto.Faixas on g.GeneroId equals f.GeneroId
-                             select new { f, g }; // aqui eu escrevo a query
+                                  join f in contexto.Faixas on g.GeneroId equals f.GeneroId
+                                  select new { f, g }; // aqui eu escrevo a query
 
                 // aqui eu executo a query
                 faixaGenero = faixaGenero.Take(10); // pegando apenas 10 itens

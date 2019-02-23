@@ -170,3 +170,4 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 	03 - Linq to Entities
 		01 - Linq to entities contexto join take log sql
 		02 - Linq to entities where
+		03 - Linq to entities sintaxe de método
