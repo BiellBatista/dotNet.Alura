@@ -29,12 +29,25 @@ namespace Alura.Loja.Testes.ConsoleApp
 
                 Console.WriteLine($"Endereço de entrega: {cliente.EnderecoEntrega.Logradouro}");
 
+                // carregamento guloso
                 // fazendo um select com 1:N
+                //var produtos = contexto
+                //    .Produtos
+                //    .Include(p => p.Compras)
+                //    .Where(p => p.Id == 3002)
+                //    .FirstOrDefault();
+
                 var produtos = contexto
                     .Produtos
-                    .Include(p => p.Compras)
                     .Where(p => p.Id == 3002)
                     .FirstOrDefault();
+
+                // carregamento explicito
+                contexto.Entry(produtos)
+                    .Collection(p => p.Compras)
+                    .Query() // fazendo uma query
+                    .Where(c => c.Preco > 10) // parametro da query
+                    .Load(); // carregando a query para a referencia produtos
 
                 Console.WriteLine($"Mostrando as Compras do Produto {produtos.Nome}");
                 foreach(var item in produtos.Compras)

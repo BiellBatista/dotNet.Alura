@@ -144,3 +144,5 @@ Entity Framework Core: Banco de dados de forma eficiente
 		06 - Corrigindo o modelo para recuperar objetos relacionados
 		07 - LEFT JOIN?
 		08 - Populando coleções após a carga da entidade principal
+		09 - Consolidando seu conhecimento
+		10 - Encerramento - o que aprendemos
