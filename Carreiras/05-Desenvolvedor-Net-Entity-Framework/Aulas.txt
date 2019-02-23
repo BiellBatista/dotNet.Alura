@@ -179,3 +179,5 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 		09 - Projeto da aula atual
 	04 - Associando e Filtrando Entidades do Modelo
 		01 - Linq to entities join
+		02 - Linq to entities sem join
+		03 - Linq to entities refinando consultas
