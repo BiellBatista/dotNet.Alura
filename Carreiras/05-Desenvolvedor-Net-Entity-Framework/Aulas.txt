@@ -137,4 +137,6 @@ Entity Framework Core: Banco de dados de forma eficiente
 		07 - Consolidando seu conhecimento
 	08 - Recuperando objetos relacionados
 		01 - Aplicando condições nas consultas
-		02 - 
+		02 - Cidades do Rio de Janeiro
+		03 - Como realizar joins entre entidades relacionadas
+		04 - 

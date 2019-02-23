@@ -16,12 +16,38 @@ namespace Alura.Loja.Testes.ConsoleApp
         {
             using(var contexto = new LojaContext())
             {
+                //Logando o SQL
+                var serviceProvider = contexto.GetInfrastructure<IServiceProvider>();
+                var loggerFactory = serviceProvider.GetService<ILoggerFactory>();
+                loggerFactory.AddProvider(SqlLoggerProvider.Create());
+                //
                 var promocao = new Promocao();
                 promocao.Descricao = "Queima Total Janeiro 2017";
                 promocao.Inicio = new DateTime(2017, 1, 1);
                 promocao.Termino = new DateTime(2017, 1, 31);
 
-                var produtos = 
+                var produtos = contexto
+                    .Produtos
+                    .Where(p => p.Categoria == "Bebidas")
+                    .ToList();
+
+                foreach (var item in produtos)
+                    promocao.IncluirProduto(item);
+
+                contexto.Promocoes.Add(promocao);
+                ExbieEntries(contexto.ChangeTracker.Entries());
+                contexto.SaveChanges(); //fechando contexto
+                // quando fecha um contexto, os objetos do ChangeTracker deixa de ser gerenciados
+            }
+
+            using(var contexto2 = new LojaContext())
+            {
+                var promocao = contexto2.Promocoes.FirstOrDefault();
+                Console.WriteLine("\nMostrando os produtos da promoção...");
+                foreach (var item in promocao.Produtos)
+                {
+                    Console.WriteLine(item.Produto);
+                }
             }
         }
 
