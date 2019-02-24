@@ -200,4 +200,10 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 		02 - Linq to entities Sum
 		03 - Linq to entities groupby
 		04 - Calculando Quantidades - Simples
-		05 - 
+		05 - Totalizando Valores - Simples
+		06 - Calculando Quantidades Com Projeção de Dados
+		07 - Agrupando Valores de Consultas Linq
+		08 - Evitando Repetição de Expressões
+		09 - Projeto da aula atual
+	07 - Máximo, Mínimo, Média e Funções Customizadas
+		01 - Linq to entities min max avg

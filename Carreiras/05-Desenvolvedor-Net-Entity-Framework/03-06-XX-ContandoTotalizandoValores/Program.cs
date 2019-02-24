@@ -11,6 +11,29 @@ namespace _03_06_XX_ContandoTotalizandoValores
     {
         static void Main(string[] args)
         {
+            Contagem();
+            Sum();
+            GroupBy();
+        }
+
+        private static void Sum()
+        {
+            using (var contexto = new AluraTunesEntities())
+            {
+                var query = from inf in contexto.ItemNotaFiscals
+                            where inf.Faixa.Album.Artista.Nome == "Led Zeppelin"
+                            select new
+                            {
+                                TotalDoItem = inf.Quantidade * inf.PrecoUnitario
+                            };
+
+                //foreach (var inf in query)
+                //    Console.WriteLine("{0}", inf.TotalDoItem);
+                //    //Console.WriteLine("{0}\t{1}\t{2}", inf.Faixa.Nome, inf.Quantidade, inf.PrecoUnitario);
+
+                var totalDoArtista = query.Sum(q => q.TotalDoItem);
+                Console.WriteLine("Total do artista: R${0}", totalDoArtista);
+            }
         }
 
         private static void GroupBy()
@@ -65,3 +88,35 @@ namespace _03_06_XX_ContandoTotalizandoValores
         }
     }
 }
+
+/*
+ * Considere a consulta abaixo, para trazer uma lista de artistas e respectivos álbuns:
+ * var artistaEalbumQuery =
+from alb in contexto.Albums
+select new
+{
+    Artista = alb.Artista.Nome,
+    Titulo = alb.Titulo
+};
+foreach (var item in artistaEalbumQuery)
+{
+    Console.WriteLine("{0}\t{1}", item.Artista, item.Titulo);
+}
+
+ *Desenvolva uma nova consulta com base nessa, para trazer desta vez o nome do artista e a quantidade de álbuns dele.
+ * 
+ * Para implementar essa nova consulta, é necessário utilizar a cláusula group ... by ... into, para agrupar os álbuns por artista, e em seguida utilizar a variável de agrupamento (aqui chamada de agrupado) para extrair tanto o nome do artista quanto a contagem de álbuns por artista:
+ * 
+ * var artistaEqtdeAlbuns =
+from alb in contexto.Albums
+group alb by alb.Artista into agrupado
+select new
+{
+    Artista = agrupado.Key.Nome,
+    QuantidadeAlbuns = agrupado.Count()
+};
+foreach (var item in artistaEqtdeAlbuns)
+{
+    Console.WriteLine("{0}\t{1}", item.Artista, item.QuantidadeAlbuns);
+}
+ */
