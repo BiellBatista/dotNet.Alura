@@ -30,7 +30,7 @@ namespace _03_04_XX_AssociandoFiltrandoEntidades
                 // caso o parametro album não esteja vázio
                 if (string.IsNullOrEmpty(buscaAlbum))
                 {
-                    query = query.Where(q => q.Album.Titulo.Contains(buscaAlbum);
+                    query = query.Where(q => q.Album.Titulo.Contains(buscaAlbum));
                 }
 
                 foreach (var faixa in query)
