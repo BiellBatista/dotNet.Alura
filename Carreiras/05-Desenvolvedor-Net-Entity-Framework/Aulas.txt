@@ -198,3 +198,6 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 	06 - Contando e Totalizando Valores
 		01 - Linq to entities count
 		02 - Linq to entities Sum
+		03 - Linq to entities groupby
+		04 - Calculando Quantidades - Simples
+		05 - 
