@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,18 +19,29 @@ namespace _03_07_XX_MaxMinAVGFunctionCustomizadas
 
                 // selecionando o total
                 var query = from nf in contexto.NotaFiscals select nf.Total;
-
-                var contagem = query.Count();
-                var queryOrdenada = query.OrderBy(total => total);
-                // vá até a metade dos dados e pegue o primeiro
-                // só é possível fazer um skip, com a consulta ordenada
-                //var elementoCentral = query.Skip(contagem / 2).First();
-                var elementoCentral = queryOrdenada.Skip(contagem / 2).First();
-
-                var mediana = elementoCentral;
+                decimal mediana = Mediana(query);
 
                 Console.WriteLine("Mediana: {0}", mediana);
+
+                var vendaMediana = contexto.NotaFiscals.Mediana(nf => nf.Total);
+
+                Console.WriteLine("Mediana com Assinatura de Extensão: {0}", mediana);
             }
+        }
+
+        private static decimal Mediana(IQueryable<decimal> query)
+        {
+            var contagem = query.Count();
+            var queryOrdenada = query.OrderBy(total => total);
+            // vá até a metade dos dados e pegue o primeiro
+            // só é possível fazer um skip, com a consulta ordenada
+            //var elementoCentral = query.Skip(contagem / 2).First();
+
+            var elementoCentral_1 = queryOrdenada.Skip(contagem / 2).First();
+            var elementoCentral_2 = queryOrdenada.Skip((contagem - 1) / 2).First();
+
+            var mediana = (elementoCentral_1 + elementoCentral_2) / 2;
+            return mediana;
         }
 
         private static void MaximoMinimoMedia()
@@ -62,6 +74,30 @@ namespace _03_07_XX_MaxMinAVGFunctionCustomizadas
                 Console.WriteLine("A menor venda é de R${0}", vendas.MenorVenda);
                 Console.WriteLine("A média da venda é de R${0}", vendas.MediaVenda);
             }
+        }
+
+    }
+
+    // método de extensão
+    static class LinqExtension
+    {
+        public static decimal Mediana<TSource>(this IQueryable<TSource> source, Expression<Func<TSource, decimal>> selector)
+        {
+            var contagem = source.Count();
+
+            // transformando o selector para poder ser usado na consulta
+            var funcSelector = selector.Compile();
+
+            var queryOrdenada = source.Select(funcSelector).OrderBy(total => total);
+            // vá até a metade dos dados e pegue o primeiro
+            // só é possível fazer um skip, com a consulta ordenada
+            //var elementoCentral = query.Skip(contagem / 2).First();
+
+            var elementoCentral_1 = queryOrdenada.Skip(contagem / 2).First();
+            var elementoCentral_2 = queryOrdenada.Skip((contagem - 1) / 2).First();
+
+            var mediana = (elementoCentral_1 + elementoCentral_2) / 2;
+            return mediana;
         }
     }
 }

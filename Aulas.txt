@@ -86,3 +86,13 @@ Carreira Desenvolvedor .Net com Entity Framework
 		06 - Relacionamentos Muitos para Muitos no Entity
 		07 - Relacionamentos Um para Um no Entity
 		08 - Recuperando objetos relacionados
+	Entity LinQ parte 1: Crie queries poderosas em C#
+		01 - Linq to Objects
+		02 - Linq to XML
+		03 - Linq to Entities
+		04 - Associando e Filtrando Entidades do Modelo
+		05 - Ordenando Consultas
+		06 - Contando e Totalizando Valores
+		07 - Máximo, Mínimo, Média e Funções Customizadas
+	Entity LinQ parte 2: Store Procedures e consultas com o LinQPad
+		01 - Aprenda a criar relatórios com paginação

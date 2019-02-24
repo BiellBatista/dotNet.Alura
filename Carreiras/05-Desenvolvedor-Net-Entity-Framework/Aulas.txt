@@ -209,3 +209,13 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 		01 - Linq to entities min max avg
 		02 - Linq métodos extensão
 		03 - Linq métodos extensão
+		04 - Conclusão
+		05 - Calculando Menor Valor
+		06 - Calculando a Média
+		07 - Calculando Maior Valor
+		08 - Métodos de Extensão - Teoria
+		09 - Métodos de Extensão - Prática
+		10 - Projeto da aula atual
+Entity LinQ parte 2: Store Procedures e consultas com o LinQPad
+	01 - Aprenda a criar relatórios com paginação
+		01 - Introdução
