@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-05-XX-OrdenandoConsultas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-06-XX-ContandoTotalizandoValores", "03-06-XX-ContandoTotalizandoValores\03-06-XX-ContandoTotalizandoValores.csproj", "{B5A78798-4FE8-4126-9285-8442BBEDB86E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-07-XX-MaxMinAVGFunctionCustomizadas", "03-07-XX-MaxMinAVGFunctionCustomizadas\03-07-XX-MaxMinAVGFunctionCustomizadas.csproj", "{5BB9C928-BDA8-41EF-9601-C43A5EDCF42C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{B5A78798-4FE8-4126-9285-8442BBEDB86E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5A78798-4FE8-4126-9285-8442BBEDB86E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5A78798-4FE8-4126-9285-8442BBEDB86E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB9C928-BDA8-41EF-9601-C43A5EDCF42C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB9C928-BDA8-41EF-9601-C43A5EDCF42C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB9C928-BDA8-41EF-9601-C43A5EDCF42C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB9C928-BDA8-41EF-9601-C43A5EDCF42C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

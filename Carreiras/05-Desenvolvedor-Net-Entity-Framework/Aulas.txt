@@ -207,3 +207,4 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 		09 - Projeto da aula atual
 	07 - Máximo, Mínimo, Média e Funções Customizadas
 		01 - Linq to entities min max avg
+		02 - Linq métodos extensão
