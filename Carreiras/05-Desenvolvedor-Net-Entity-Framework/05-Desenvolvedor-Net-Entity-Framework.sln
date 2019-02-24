@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-03-XX-LinqToEntities", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-04-XX-AssociandoFiltrandoEntidades", "03-04-XX-AssociandoFiltrandoEntidades\03-04-XX-AssociandoFiltrandoEntidades.csproj", "{77890FF8-5AA8-4B06-AACC-AC5D373116F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-05-XX-OrdenandoConsultas", "03-05-XX-OrdenandoConsultas\03-05-XX-OrdenandoConsultas.csproj", "{46466DDC-51C6-4845-9B6B-421B610C23FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{77890FF8-5AA8-4B06-AACC-AC5D373116F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77890FF8-5AA8-4B06-AACC-AC5D373116F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77890FF8-5AA8-4B06-AACC-AC5D373116F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46466DDC-51C6-4845-9B6B-421B610C23FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46466DDC-51C6-4845-9B6B-421B610C23FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46466DDC-51C6-4845-9B6B-421B610C23FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46466DDC-51C6-4845-9B6B-421B610C23FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

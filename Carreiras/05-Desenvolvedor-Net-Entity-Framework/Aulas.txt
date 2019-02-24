@@ -189,3 +189,11 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 		09 - Projeto da aula atual
 	05 - Ordenando Consultas
 		01 - Linq to entities orderby
+		02 - Ordenando Consultas Linq - Sintaxe de Consulta
+		03 - Consulta Ordenada por Múltiplos Campos
+		04 - Ordenação Decrescente
+		05 - Ordenando Consultas Linq - Sintaxe de Método
+		06 - Ordenação Decrescente - Sintaxe de Método
+		07 - Projeto da aula atual
+	06 - Contando e Totalizando Valores
+		01 - 
