@@ -181,3 +181,11 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 		01 - Linq to entities join
 		02 - Linq to entities sem join
 		03 - Linq to entities refinando consultas
+		04 - Substituindo Joins Em Consultas Linq to Entities
+		05 - Entendendo Propriedades de Navegação
+		06 - Propriedades de Navegação em Linq to Objects?
+		07 - Refinando uma Consulta Linq
+		08 - Refinando uma Consulta Linq
+		09 - Projeto da aula atual
+	05 - Ordenando Consultas
+		01 - Linq to entities orderby
