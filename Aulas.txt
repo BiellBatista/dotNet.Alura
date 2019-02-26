@@ -96,3 +96,5 @@ Carreira Desenvolvedor .Net com Entity Framework
 		07 - Máximo, Mínimo, Média e Funções Customizadas
 	Entity LinQ parte 2: Store Procedures e consultas com o LinQPad
 		01 - Aprenda a criar relatórios com paginação
+		02 - Aplique Análise de Afinidade para sugerir compras de produtos
+		03 - Entenda execução adiada e execução imediata nas consultas LINQ

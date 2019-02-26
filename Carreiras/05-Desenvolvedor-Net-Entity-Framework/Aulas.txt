@@ -230,4 +230,9 @@ Entity LinQ parte 2: Store Procedures e consultas com o LinQPad
 		10 - Projeto da aula atual
 	02 - Aplique Análise de Afinidade para sugerir compras de produtos
 		01 - Comprou tambem
-		02 - 
+		02 - Análise de Afinidade
+		03 - Self Join
+		04 - Consulta para análise de afinidade
+		05 - Projeto da aula atual
+	03 - Entenda execução adiada e execução imediata nas consultas LINQ
+		01 - Execucao tardia - Execucao imediata
