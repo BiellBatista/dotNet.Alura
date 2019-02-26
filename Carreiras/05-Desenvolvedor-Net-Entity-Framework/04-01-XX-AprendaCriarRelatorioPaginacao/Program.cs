@@ -24,6 +24,11 @@ namespace _04_01_XX_AprendaCriarRelatorioPaginacao
 
             //}
 
+            
+        }
+
+        private static void UsandoSubConsulta()
+        {
             using (var contexto = new AluraTunesEntities())
             {
                 decimal queryMedia = contexto.NotaFiscals.Average(n => n.Total);
@@ -44,6 +49,7 @@ namespace _04_01_XX_AprendaCriarRelatorioPaginacao
                         nf.Data,
                         nf.Cliente,
                         nf.Valor);
+                Console.WriteLine("A média é de: {0}", queryMedia);
             }
         }
 

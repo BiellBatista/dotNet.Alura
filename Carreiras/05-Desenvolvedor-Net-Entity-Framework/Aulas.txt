@@ -221,3 +221,4 @@ Entity LinQ parte 2: Store Procedures e consultas com o LinQPad
 		01 - Introdução
 		02 - Linq to entities paginado
 		03 - Subconsulta
+		04 - Clientes compraram produto mais vendido
