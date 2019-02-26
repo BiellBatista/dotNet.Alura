@@ -222,3 +222,12 @@ Entity LinQ parte 2: Store Procedures e consultas com o LinQPad
 		02 - Linq to entities paginado
 		03 - Subconsulta
 		04 - Clientes compraram produto mais vendido
+		05 - Definindo tamanho de resultados de uma consulta
+		06 - Saltando elementos de uma sequência
+		07 - Acessando elementos de uma página
+		08 - Obtendo uma sequência de elementos a partir de uma posição
+		09 - Desenvolvendo algoritmo de paginação
+		10 - Projeto da aula atual
+	02 - Aplique Análise de Afinidade para sugerir compras de produtos
+		01 - Comprou tambem
+		02 - 

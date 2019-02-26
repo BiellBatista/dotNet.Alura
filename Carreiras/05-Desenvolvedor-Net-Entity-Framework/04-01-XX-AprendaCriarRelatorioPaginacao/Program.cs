@@ -24,7 +24,38 @@ namespace _04_01_XX_AprendaCriarRelatorioPaginacao
 
             //}
 
-            
+            using (var contexto = new AluraTunesEntities())
+            {
+                var faixasQuery = from f in contexto.Faixas
+                                  where f.ItemNotaFiscals.Count() > 0
+                                  let TotalDeVendas = f.ItemNotaFiscals.Sum(inf => inf.Quantidade * inf.PrecoUnitario)
+                                  orderby TotalDeVendas descending
+                                  select new
+                                  {
+                                      Id = f.FaixaId,
+                                      Nome = f.Nome,
+                                      Total = TotalDeVendas
+                                  };
+
+                var produtoMaisVendido = faixasQuery.First();
+
+                Console.WriteLine("{0}\t{1}\t{2}", produtoMaisVendido.Id, produtoMaisVendido.Nome, produtoMaisVendido.Total);
+
+                // listando todos os produtos
+                foreach (var faixa in faixasQuery)
+                    Console.WriteLine("{0}\t{1}\t{2}", faixa.Id, faixa.Nome, faixa.Total);
+
+                var query = from inf in contexto.ItemNotaFiscals
+                            where inf.FaixaId == produtoMaisVendido.Id
+                            select new
+                            {
+                                NomeClient = inf.NotaFiscal.Cliente.PrimeiroNome + " " + inf.NotaFiscal.Cliente.Sobrenome
+                            };
+
+                // mostrando os cliente que compraram o produto mais vendido
+                foreach (var client in query)
+                    Console.WriteLine(client.NomeClient);
+            }
         }
 
         private static void UsandoSubConsulta()
