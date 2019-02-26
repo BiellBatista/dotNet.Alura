@@ -219,3 +219,5 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 Entity LinQ parte 2: Store Procedures e consultas com o LinQPad
 	01 - Aprenda a criar relatórios com paginação
 		01 - Introdução
+		02 - Linq to entities paginado
+		03 - Subconsulta
