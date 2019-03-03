@@ -81,4 +81,14 @@ var alunosAgrupados =
             AnoLetivo = agrupado.Key.AnoLetivo,
             Alunos = agrupado.ToList(),
         };
+
+
+var numeros = new int[] {1,2,3,4,5,6,7,8,9,10};
+
+var impares = from n in numeros
+              where n % 2 == 1
+              select n;
+Você deseja obter a versão de sintaxe de método para essa consulta LINQ que utiliza sintaxe de consulta. Você clica no botão lambda (λ) para ver resultado, mas nada aparece. O que é necessário para que o LinqPad exiba na janela lambda (λ) a versão de sintaxe de método?
+
+É necessário modificar a consulta impares para que o array numeros seja transformado com o método AsQueryable(). Isso permite que o LinqPad exiba o resultado da consulta impares na janela de resultados.
  */

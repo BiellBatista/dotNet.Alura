@@ -70,6 +70,79 @@ Carreira Desenvolvedor C#
 		03 - Consultando com LINQ
 		04 - Mais Operadores LINQ
 		05 - Convertendo e Enumerando Coleções
+-------------------------------------------------------------------------------------------------------------------------
+Carreira Desenvolvedor ASP.NET MVC5
+	Curso C# Parte 1: Primeiros Passos
+		01 - História e ecossistema da linguagem
+		02 - Nosso primeiro programa e o Visual Studio
+		03 - Variáveis numéricas
+		04 - Variáveis de texto
+		05 - Controle de fluxo com IF
+		06 - Controle de fluxo com laços de repetição
+	Curso C# Parte 2: Introdução à Orientação a Objetos
+		01 - Nossa primeira classe
+		02 - Tipos
+		03 - Comportamentos de classes
+		04 - Namespace e composição e null
+		05 - Propriedades
+		06 - Construtores e membros estáticos
+	Curso C# Parte 3 - Entendendo Herança e Interface
+		01 - Conhecendo o problema do cliente
+		02 - Herança
+		03 - Construtores e protected
+		04 - Mais herança e herança múltipla
+		05 - Interfaces
+	Curso C# Parte 4 - Entendendo exceções
+		01 - Primeiros passos com exceções
+		02 - Tratamento de exceções
+		03 - ArgumentException ParamName e nameof
+		04 - Criando exceções ricas
+		05 - StackTrace e InnerException
+		06 - Finally e using
+	Entity Framework Core: Banco de dados de forma eficiente
+		01 - Introdução ao Entity Framework Core
+		02 - Manipulando objetos
+		03 - Como o Entity monta o SQL?
+		04 - Sincronizando o banco de dados com o modelo de classes
+		05 - Relacionamentos Um para Muitos no Entity
+		06 - Relacionamentos Muitos para Muitos no Entity
+		07 - Relacionamentos Um para Um no Entity
+		08 - Recuperando objetos relacionados
+	HTTP: Entendendo a web por baixo dos panos
+		01 - O que é HTTP?
+		02 - A web segura - HTTPS
+		03 - Endereços sob seu domínio
+		04 - O cliente pede e o servidor responde
+		05 - Depurando a requisição HTTP
+		06 - Parâmetros da requisição
+		07 - Serviços na web com REST
+		08 - HTTP2 - Por uma web mais eficiente
+	HTML5 e CSS3 I: Suas primeiras páginas da Web
+		01 - 
+		02 - 
+		03 - 
+		04 - 
+		05 - 
+		06 - 
+		07 - 
+		08 - 
+		09 - 
+		10 - 
+		11 - 
+		12 - 
+	ASP.NET MVC 5: O framework pronto para a web
+		01 - Introdução ao ASP.NET MVC
+		02 - O padrão MVC
+		03 - Controlando Requisições e a Listagem de Produtos
+		04 - Lidando com Formulários e o Cadastro de Produtos
+		05 - Validando um produto com Model Validation
+		06 - Trabalhando Melhor com as views
+		07 - Criando rotas na aplicação
+		08 - Layouts com o Twitter Bootstrap
+		09 - Ajax
+		10 - Sessões para autenticar usuários
+		11 - Filtro para autorização de usuários
+-------------------------------------------------------------------------------------------------------------------------
 Carreira Desenvolvedor .Net com Entity Framework
 	SQL Server: Introdução ao SQL com Microsoft SQL Server 2017
 		01 - Instalando e configurando o SQL Server
@@ -100,3 +173,4 @@ Carreira Desenvolvedor .Net com Entity Framework
 		03 - Entenda execução adiada e execução imediata nas consultas LINQ
 		04 - Aproveite recursos de programação paralela com Parallel LINQ
 		05 - Integre resultados de stored procedures em consultas LINQ
+		06 - Estude, analise e brinque com consultas através do LinqPad

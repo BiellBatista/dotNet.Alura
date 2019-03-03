@@ -259,4 +259,8 @@ Entity LinQ parte 2: Store Procedures e consultas com o LinQPad
 		06 - Projeto da aula atual
 	06 - Estude, analise e brinque com consultas através do LinqPad
 		01 - Linqpad
-		02 - 
+		02 - Linqpad
+		03 - Conclusao
+		04 - Recursos do LinqPad
+		05 - Exibindo resultados de consultas LINQ
+		06 - Obtendo uma sintaxe de método a partir de uma sintaxe de consulta
