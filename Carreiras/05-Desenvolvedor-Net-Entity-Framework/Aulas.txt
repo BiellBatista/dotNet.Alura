@@ -252,4 +252,11 @@ Entity LinQ parte 2: Store Procedures e consultas com o LinQPad
 		07 - Projeto da aula atual
 	05 - Integre resultados de stored procedures em consultas LINQ
 		01 - Linq to entities stores procedure
+		02 - Configurando uma aplicação para utilizar stored procedures em consultas
+		03 - Limitações do uso de stored procedures em consultas LINQ
+		04 - Passando parâmetros para stored procedures
+		05 - Agrupando consultas LINQ por mais de uma propriedade
+		06 - Projeto da aula atual
+	06 - Estude, analise e brinque com consultas através do LinqPad
+		01 - Linqpad
 		02 - 
