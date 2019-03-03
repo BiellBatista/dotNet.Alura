@@ -244,3 +244,4 @@ Entity LinQ parte 2: Store Procedures e consultas com o LinQPad
 		07 - Projeto da aula atual
 	04 - Aproveite recursos de programação paralela com Parallel LINQ
 		01 - Linq to entities - Linq paralelo
+		02 - Linq to entities - Linq paralelo parte 2

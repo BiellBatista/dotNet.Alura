@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-02-XX-AnaliseAfinidadeSu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-03-XX-EntendaExecucaoAdiadaEImediata", "04-03-XX-EntendaExecucaoAdiadaEImediata\04-03-XX-EntendaExecucaoAdiadaEImediata.csproj", "{19B02195-000D-4978-AEC1-430F7300038C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-04-XX-ProgramaçãoParalelaParallelLINQ", "04-04-XX-ProgramaçãoParalelaParallelLINQ\04-04-XX-ProgramaçãoParalelaParallelLINQ.csproj", "{DC8FC4DE-CA44-4CE2-8A93-C7E077611A06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{19B02195-000D-4978-AEC1-430F7300038C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19B02195-000D-4978-AEC1-430F7300038C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19B02195-000D-4978-AEC1-430F7300038C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC8FC4DE-CA44-4CE2-8A93-C7E077611A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8FC4DE-CA44-4CE2-8A93-C7E077611A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8FC4DE-CA44-4CE2-8A93-C7E077611A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8FC4DE-CA44-4CE2-8A93-C7E077611A06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
