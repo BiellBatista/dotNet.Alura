@@ -43,17 +43,23 @@ namespace _04_04_XX_ProgramaçãoParalelaParallelLINQ
                 var queryCodigos = listaFaixas
                     .AsParallel() // paralelizando a tarefa de query
                     .Select(f => new
-                {
-                    Arquivo = string.Format("{0}\\{1}.jpg", Imagens, f.FaixaId),
-                    Imagem = barcodeWriter.Write(string.Format("aluratunes.com/faixa/{0}", f.FaixaId))
-                });
+                    {
+                        Arquivo = string.Format("{0}\\{1}.jpg", Imagens, f.FaixaId),
+                        Imagem = barcodeWriter.Write(string.Format("aluratunes.com/faixa/{0}", f.FaixaId))
+                    });
 
                 var contagem = queryCodigos.Count();
                 stopwatch.Stop();
                 Console.WriteLine("Códigos gerados: {0} em {1} segundos", contagem, stopwatch.ElapsedMilliseconds);
 
-                foreach (var item in queryCodigos)
-                    item.Imagem.Save(item.Arquivo, ImageFormat.Jpeg);
+                stopwatch = Stopwatch.StartNew(); // cria a instância e inicia a contagem
+                //foreach (var item in queryCodigos)
+                //    item.Imagem.Save(item.Arquivo, ImageFormat.Jpeg);
+
+                queryCodigos.ForAll(item => item.Imagem.Save(item.Arquivo, ImageFormat.Jpeg));
+
+                stopwatch.Stop();
+                Console.WriteLine("Códigos gerados: {0} em {1} segundos", contagem, stopwatch.ElapsedMilliseconds);
             }
         }
     }

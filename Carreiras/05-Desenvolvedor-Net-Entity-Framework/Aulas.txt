@@ -245,3 +245,11 @@ Entity LinQ parte 2: Store Procedures e consultas com o LinQPad
 	04 - Aproveite recursos de programação paralela com Parallel LINQ
 		01 - Linq to entities - Linq paralelo
 		02 - Linq to entities - Linq paralelo parte 2
+		03 - Medindo tempo de execução de uma consulta
+		04 - Paralelizando execução de consulta - Prática
+		05 - Paralelizando execução de consulta - Teoria
+		06 - Paralelizando execução de um laço foreach
+		07 - Projeto da aula atual
+	05 - Integre resultados de stored procedures em consultas LINQ
+		01 - Linq to entities stores procedure
+		02 - 
