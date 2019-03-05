@@ -1,19 +1,6 @@
 ﻿
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Form</title>
-</head>
-<body>
-    <div>
-        <form action="/Produto/Adiciona" method="post">
-            @*Captura dos dados sem a regra de um obejto
+<form action="/Produto/Adiciona" method="post">
+    @*Captura dos dados sem a regra de um obejto
         <label for="nome">Nome:</label>
         <input id="nome" name="nome" />
 
@@ -28,37 +15,34 @@
 
         <label for="categoria">Categoria:</label>
         <input id="categoria" name="categoriaId" />*@
-            @Html.ValidationMessage("produto.Invalido")
-            <label for="nome">Nome:</label>
-            <input id="nome" name="produto.Nome" value="@ViewBag.Produto.Nome" />
-            @Html.ValidationMessage("produto.Nome")
+    @Html.ValidationMessage("produto.Invalido")
+    <label for="nome">Nome:</label>
+    <input id="nome" name="produto.Nome" value="@ViewBag.Produto.Nome" class="form-control" />
+    @Html.ValidationMessage("produto.Nome")
 
-            <label for="preco">Preço:</label>
-            <input id="preco" name="produto.Preco" value="@ViewBag.Produto.Preco" />
+    <label for="preco">Preço:</label>
+    <input id="preco" name="produto.Preco" value="@ViewBag.Produto.Preco" class="form-control" />
 
-            <label for="quantidade">Quantidade:</label>
-            <input id="quantidade" name="produto.Quantidade" value="@ViewBag.Produto.Quantidade" />
+    <label for="quantidade">Quantidade:</label>
+    <input id="quantidade" name="produto.Quantidade" value="@ViewBag.Produto.Quantidade" class="form-control" />
 
-            <label for="descricao">Descrição:</label>
-            <input id="descrica" name="produto.Descricao" value="@ViewBag.Produto.Descricao" />
+    <label for="descricao">Descrição:</label>
+    <input id="descrica" name="produto.Descricao" value="@ViewBag.Produto.Descricao" class="form-control" />
 
-            <label for="categoria">Categoria:</label>
-            @*<input id="categoria" name="produto.CategoriaId" />*@
-            <select id="categoria" name="produto.CategoriaId">
-                @foreach (var categoria in ViewBag.Categorias)
-                {
-                    <!--Fazendo com que o Razor redenrize a opção selecionada inicialmente pelo usuário-->
-                    <option value="@categoria.Id" selected="@categoria.Id.Equals(ViewBag.Produto.CategoriaId)">@categoria.Nome</option>
-                }
-            </select>
-            @Html.ValidationMessage("produto.CategoriaId")
+    <label for="categoria">Categoria:</label>
+    @*<input id="categoria" name="produto.CategoriaId" />*@
+    <select id="categoria" name="produto.CategoriaId" class="form-control">
+        @foreach (var categoria in ViewBag.Categorias)
+        {
+            <!--Fazendo com que o Razor redenrize a opção selecionada inicialmente pelo usuário-->
+            <option value="@categoria.Id" selected="@categoria.Id.Equals(ViewBag.Produto.CategoriaId)">@categoria.Nome</option>
+        }
+    </select>
+    @Html.ValidationMessage("produto.CategoriaId")
 
-            <input type="submit" value="Cadastrar" />
-        </form>
-    </div>
-</body>
-</html>
+    <input type="submit" value="Cadastrar" />
+</form>
 <!--Aula 05
-    
+
     Realizei algumas modificações nos input e no select para que quando o usuário informar um formulário com erro, o mesmo seja retornado com a mensagem de erro e com os dados que foram, inicialmente, preenchidos pelo o usuário.
     -->
