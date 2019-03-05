@@ -155,7 +155,14 @@ ASP.NET MVC 5: O framework pronto para a web
 		06 - Projeto do curso até o momento
 	03 - Controlando Requisições e a Listagem de Produtos
 		01 - Vídeo 1
+		02 - Controlando Requisições e a Listagem de Produtos
+		03 - Enviando informações para a view
+		04 - Laço na View
+		05 - Lista de produtos
+		06 - Lista de categorias
+		07 - Projeto do curso até o momento
 	04 - Lidando com Formulários e o Cadastro de Produtos
+		01 - Vídeo 1
 	05 - Validando um produto com Model Validation
 	06 - Trabalhando Melhor com as views
 	07 - Criando rotas na aplicação
