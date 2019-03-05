@@ -196,7 +196,14 @@ ASP.NET MVC 5: O framework pronto para a web
 		09 - Projeto do curso até o momento
 	07 - Criando rotas na aplicação
 		01 - Vídeo 1
+		02 - Criando rotas na aplicação
+		03 - RouteAttribute
+		04 - RouteAttribute com parâmetros
+		05 - Links com as rotas
+		06 - Utilizando o RouteLink
+		07 - Projeto do curso até o momento
 	08 - Layouts com o Twitter Bootstrap
+		01 - Vídeo 1
 	09 - Ajax
 	10 - Sessões para autenticar usuários
 	11 - Filtro para autorização de usuários

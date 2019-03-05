@@ -11,8 +11,8 @@ namespace _02_Desenvolvedor_ASP_NET_MVC5
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            routes.MapMvcAttributeRoutes(); // ativando a custimização de rotas
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

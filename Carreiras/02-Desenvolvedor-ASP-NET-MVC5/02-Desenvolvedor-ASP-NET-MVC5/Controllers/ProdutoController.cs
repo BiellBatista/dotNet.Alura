@@ -11,6 +11,9 @@ namespace _02_Desenvolvedor_ASP_NET_MVC5.Controllers
     public class ProdutoController : Controller
     {
         // GET: Produto
+        // personalizando a rota para acessar esta action
+        // o segundo argumento serve para fixa um nome para a action
+        [Route("produtos", Name="ListaProdutos")]
         public ActionResult Index()
         {
             ProdutosDAO dao = new ProdutosDAO();
@@ -94,7 +97,8 @@ namespace _02_Desenvolvedor_ASP_NET_MVC5.Controllers
                 return View("Form");
             }
         }
-
+        // personalizando a rota. Tudo que estiver depois do / será um parâmetro
+        [Route("produtos/{id}", Name="VisualizaProduto")]
         // recebendo o id vindo da URL. Com isso, não preciso especificar o nome do atributo
         public ActionResult Visualiza(int id)
         {
