@@ -18,5 +18,18 @@ namespace _02_Desenvolvedor_ASP_NET_MVC5.Controllers
             ViewBag.Categorias = categorias;
             return View();
         }
+
+        public ActionResult Form()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Adiciona(CategoriaDoProduto categoria)
+        {
+            CategoriasDAO dao = new CategoriasDAO();
+            dao.Adiciona(categoria);
+            return RedirectToAction("Index");
+        }
     }
 }

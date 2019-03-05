@@ -163,7 +163,17 @@ ASP.NET MVC 5: O framework pronto para a web
 		07 - Projeto do curso até o momento
 	04 - Lidando com Formulários e o Cadastro de Produtos
 		01 - Vídeo 1
+		02 - Lidando com Formulários e o Cadastro de Produtos
+		03 - Padrão de nome do model binder
+		04 - Formulário de cadastro
+		05 - Cadastro do produto
+		06 - Limitando o tipo de requisição
+		07 - Redirecionando para a lista de produtos
+		08 - Redirect para outro controller
+		09 - Cadastro de categorias
+		10 - Projeto do curso até o momento
 	05 - Validando um produto com Model Validation
+		01 - Vídeo 1
 	06 - Trabalhando Melhor com as views
 	07 - Criando rotas na aplicação
 	08 - Layouts com o Twitter Bootstrap
