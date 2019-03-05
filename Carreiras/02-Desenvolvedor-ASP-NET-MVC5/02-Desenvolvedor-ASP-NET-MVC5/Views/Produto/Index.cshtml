@@ -1,4 +1,7 @@
-﻿
+﻿@* Aqui estou destacando o tipo da variável Model, para que seja possível usar o Helper Html.ActionLink().
+    Ela é conhecida como View fortemente tipada*@
+@model IList<_02_Desenvolvedor_ASP_NET_MVC5.Models.Produto>
+
 @{
     Layout = null;
 }
@@ -21,11 +24,12 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach(var produto in ViewBag.Produtos)
+                @* Uso a variável Model para pegar a variável principal (aquela passada pelo método View()) *@
+                @foreach(var produto in Model)
                 {
                 <tr>
                     <td>@produto.Id</td>
-                    <td>@produto.Nome</td>
+                    <td>@Html.ActionLink(produto.Nome, "Visualiza", new { id = produto.Id })</td>
                     <td>@produto.Quantidade</td>
                 </tr>
                 }

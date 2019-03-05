@@ -17,8 +17,11 @@ namespace _02_Desenvolvedor_ASP_NET_MVC5.Controllers
             IList<Produto> produtos = dao.Lista();
             // jogo o meu objeto para a cama de View com o atributo ViewBag
             ViewBag.Produtos = produtos;
-
-            return View();
+            /*
+             * Toda variável enviada fora da ViewBag é considerada como principal de uma view.
+             * Envio a variável principal como argumento do método view
+             */
+            return View(produtos);
         }
 
         public ActionResult Form()
@@ -90,6 +93,15 @@ namespace _02_Desenvolvedor_ASP_NET_MVC5.Controllers
                 ViewBag.Categorias = dao.Lista();
                 return View("Form");
             }
+        }
+
+        // recebendo o id vindo da URL. Com isso, não preciso especificar o nome do atributo
+        public ActionResult Visualiza(int id)
+        {
+            ProdutosDAO dao = new ProdutosDAO();
+            Produto produto = dao.BuscaPorId(id);
+            ViewBag.Produto = produto;
+            return View();
         }
     }
 }

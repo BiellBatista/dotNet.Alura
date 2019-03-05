@@ -186,7 +186,16 @@ ASP.NET MVC 5: O framework pronto para a web
 		11 - Projeto do curso até o momento
 	06 - Trabalhando Melhor com as views
 		01 - Vídeo 1
+		02 - Trabalhando Melhor com as views
+		03 - Página de visualização de produtos
+		04 - Criando links com ActionLink
+		05 - Passando parâmetros pelo ActionLink
+		06 - Como declarar a view fortemente tipada
+		07 - Argumento do método View
+		08 - Lista de produtos com view fortemente tipada
+		09 - Projeto do curso até o momento
 	07 - Criando rotas na aplicação
+		01 - Vídeo 1
 	08 - Layouts com o Twitter Bootstrap
 	09 - Ajax
 	10 - Sessões para autenticar usuários
