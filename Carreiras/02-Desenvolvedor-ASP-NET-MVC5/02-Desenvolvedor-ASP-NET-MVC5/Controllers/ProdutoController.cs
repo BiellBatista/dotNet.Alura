@@ -13,7 +13,7 @@ namespace _02_Desenvolvedor_ASP_NET_MVC5.Controllers
         // GET: Produto
         // personalizando a rota para acessar esta action
         // o segundo argumento serve para fixa um nome para a action
-        [Route("produtos", Name="ListaProdutos")]
+        [Route("produtos", Name = "ListaProdutos")]
         public ActionResult Index()
         {
             ProdutosDAO dao = new ProdutosDAO();
@@ -69,7 +69,7 @@ namespace _02_Desenvolvedor_ASP_NET_MVC5.Controllers
         {
             int idDaInformatica = 1;
 
-            if(produto.CategoriaId.Equals(idDaInformatica) && produto.Preco < 100)
+            if (produto.CategoriaId.Equals(idDaInformatica) && produto.Preco < 100)
             {
                 // colocando novo erro de validação
                 ModelState.AddModelError("produto.Invalido", "Informática com preço abaixo de R$100,00");
@@ -79,7 +79,7 @@ namespace _02_Desenvolvedor_ASP_NET_MVC5.Controllers
              * O cara responsável por criar o modelo que será armazenado no banco de dados é chamado de Model Binder
              */
 
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 ProdutosDAO dao = new ProdutosDAO();
                 dao.Adiciona(produto);
@@ -97,8 +97,9 @@ namespace _02_Desenvolvedor_ASP_NET_MVC5.Controllers
                 return View("Form");
             }
         }
+
         // personalizando a rota. Tudo que estiver depois do / será um parâmetro
-        [Route("produtos/{id}", Name="VisualizaProduto")]
+        [Route("produtos/{id}", Name = "VisualizaProduto")]
         // recebendo o id vindo da URL. Com isso, não preciso especificar o nome do atributo
         public ActionResult Visualiza(int id)
         {
@@ -106,6 +107,18 @@ namespace _02_Desenvolvedor_ASP_NET_MVC5.Controllers
             Produto produto = dao.BuscaPorId(id);
             ViewBag.Produto = produto;
             return View();
+        }
+
+        public ActionResult DecrementaQtd(int id)
+        {
+            ProdutosDAO dao = new ProdutosDAO();
+            Produto produto = dao.BuscaPorId(id);
+            produto.Quantidade--;
+            dao.Atualiza(produto);
+
+            //return RedirectToAction("Index");
+            // uso um Json para facilitar a requisição assicrono do AJAX (JQuery)
+            return Json(produto);
         }
     }
 }

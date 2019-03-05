@@ -290,11 +290,20 @@
     <Content Include="Content\Css\bootstrap.css" />
     <Content Include="Content\Css\Site.css" />
     <Content Include="Global.asax" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriaController.cs" />
+    <Compile Include="Controllers\ContadorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProdutoController.cs" />
     <Compile Include="DAO\CategoriasDAO.cs" />
@@ -311,6 +320,18 @@
     <Compile Include="Migrations\201903051856326_LimitacaoCampos.cs" />
     <Compile Include="Migrations\201903051856326_LimitacaoCampos.Designer.cs">
       <DependentUpon>201903051856326_LimitacaoCampos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903052126315_MaisLimitacao.cs" />
+    <Compile Include="Migrations\201903052126315_MaisLimitacao.Designer.cs">
+      <DependentUpon>201903052126315_MaisLimitacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903052128340_MaisLimitacao1.cs" />
+    <Compile Include="Migrations\201903052128340_MaisLimitacao1.Designer.cs">
+      <DependentUpon>201903052128340_MaisLimitacao1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903052130596_MaisLimitacao2.cs" />
+    <Compile Include="Migrations\201903052130596_MaisLimitacao2.Designer.cs">
+      <DependentUpon>201903052130596_MaisLimitacao2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CategoriaDoProduto.cs" />
@@ -330,6 +351,7 @@
     <Content Include="Views\Produto\Visualiza.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -344,8 +366,19 @@
     <EmbeddedResource Include="Migrations\201903051856326_LimitacaoCampos.resx">
       <DependentUpon>201903051856326_LimitacaoCampos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903052126315_MaisLimitacao.resx">
+      <DependentUpon>201903052126315_MaisLimitacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903052128340_MaisLimitacao1.resx">
+      <DependentUpon>201903052128340_MaisLimitacao1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903052130596_MaisLimitacao2.resx">
+      <DependentUpon>201903052130596_MaisLimitacao2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Contador\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

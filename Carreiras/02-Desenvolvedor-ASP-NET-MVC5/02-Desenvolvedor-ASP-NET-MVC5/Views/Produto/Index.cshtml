@@ -8,6 +8,7 @@
             <th>Id</th>
             <th>Nome</th>
             <th>Quantidade</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -19,8 +20,40 @@
                 @*                    <td>@Html.ActionLink(produto.Nome, "Visualiza", new { id = produto.Id })</td>*@
                 @* Além de poder usar o ActionLink para gerar links, posso usar o RouteLinke. Faço para caso os nomes dos métodos mudem com frequência *@
                 <td>@Html.RouteLink(produto.Nome, "VisualizaProduto", new { id = produto.Id })</td>
-                <td>@produto.Quantidade</td>
+                @* 
+                    O id desta coluna fala que quero alterar um determinado dado de uma produto pelo seu ID    
+                *@
+                <td id="quantidade@(produto.Id)">@produto.Quantidade</td>
+                <td>
+                    <a href="#" onclick="decrementa(@produto.Id);">Decrementar</a> 
+                </td>
             </tr>
         }
     </tbody>
 </table>
+<!--Importando o jquery que irá cuidar do AJAX-->
+<script type="text/javascript" src="~/Scripts/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    // a variável do jquery é o $
+    // se eu quiser mandar um get assicrono uso o $.get()
+    // se eu quiser madnar um post assicrono uso o $.post()
+    // a Url.Action() é um URL helper usado para gerar urls automatica
+    // action (método) que será chamada e controller usado
+
+    function decrementa(produtoId) {
+        var url = "@Url.Action("DecrementaQtd", "Produto")";
+        // passando a url e o parametro
+        $.post(url, { id: produtoId }, atualiza);
+    }
+
+    // o response é o Json retornado pela action
+    // o Json é um objeto do C# transformado em Json para JavaScript
+    // como o Json é um objeto do C#, posso acessar os atributos do mesmo
+    function atualiza(response) {
+        /*
+         * Buscando o elemento pelo id (#) quantidade mais o ID do objeto e passando o HTML do atributo que foi alterado (quantidade)
+         */
+        $("#quantidade" + response.Id).html(response.Quantidade);
+    }
+
+</script>

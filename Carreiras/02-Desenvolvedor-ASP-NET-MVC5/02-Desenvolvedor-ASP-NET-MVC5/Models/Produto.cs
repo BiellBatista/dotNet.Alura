@@ -10,9 +10,10 @@ namespace _02_Desenvolvedor_ASP_NET_MVC5.Models
     {
         public int Id { get; set; }
 
-        [Required, StringLength(20), Range(0.0, 10000.0)]
+        [Required, StringLength(20)]
         public string Nome { get; set; }
-        public decimal Preco { get; set; }
+        [Range(0.0, 10000.0)]
+        public float Preco { get; set; }
         public CategoriaDoProduto Categoria { get; set; }
         public int? CategoriaId { get; set; }
         public string Descricao { get; set; }
