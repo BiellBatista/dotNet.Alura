@@ -26,6 +26,10 @@ namespace _02_Desenvolvedor_ASP_NET_MVC5.Controllers
             CategoriasDAO dao = new CategoriasDAO();
             IList<CategoriaDoProduto> categorias = dao.Lista();
             ViewBag.Categorias = categorias;
+            /*
+             * Devo fazer com a action Form envie um produto para a view, pois é necessário para preencher os campos
+             */
+            ViewBag.Produto = new Produto();
             return View();
         }
 
@@ -57,15 +61,35 @@ namespace _02_Desenvolvedor_ASP_NET_MVC5.Controllers
         [HttpPost]
         public ActionResult Adiciona(Produto produto)
         {
+            int idDaInformatica = 1;
+
+            if(produto.CategoriaId.Equals(idDaInformatica) && produto.Preco < 100)
+            {
+                // colocando novo erro de validação
+                ModelState.AddModelError("produto.Invalido", "Informática com preço abaixo de R$100,00");
+            }
+
             /*
              * O cara responsável por criar o modelo que será armazenado no banco de dados é chamado de Model Binder
              */
-            ProdutosDAO dao = new ProdutosDAO();
-            dao.Adiciona(produto);
 
-            // redirecionando o usuário para o método index do controller produto. Posso omitir o controller, caso o método esteja invocando o próprio
-            // Para redirecionar o usuário para uma action de outro controller, devemos utilizar a versão do RedirectToAction que recebe duas Strings, o nome da action e o nome do controller. Nesse caso, RedirectToAction("Index","Home").
-            return RedirectToAction("Index", "Produto");
+            if(ModelState.IsValid)
+            {
+                ProdutosDAO dao = new ProdutosDAO();
+                dao.Adiciona(produto);
+
+                // redirecionando o usuário para o método index do controller produto. Posso omitir o controller, caso o método esteja invocando o próprio
+                // Para redirecionar o usuário para uma action de outro controller, devemos utilizar a versão do RedirectToAction que recebe duas Strings, o nome da action e o nome do controller. Nesse caso, RedirectToAction("Index","Home").
+                return RedirectToAction("Index", "Produto");
+            }
+            else
+            {
+                // retornando os dados que o usuário preencheu no campo. Assim, ao recarregar a página para mostrar os erros, os campos virão com os mesmos dados que foram preenchido pelo usuário
+                ViewBag.Produto = produto;
+                CategoriasDAO dao = new CategoriasDAO();
+                ViewBag.Categorias = dao.Lista();
+                return View("Form");
+            }
         }
     }
 }

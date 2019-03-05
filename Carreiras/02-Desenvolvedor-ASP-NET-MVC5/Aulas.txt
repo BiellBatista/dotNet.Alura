@@ -174,7 +174,18 @@ ASP.NET MVC 5: O framework pronto para a web
 		10 - Projeto do curso até o momento
 	05 - Validando um produto com Model Validation
 		01 - Vídeo 1
+		02 - Validando um produto com Model Validation
+		03 - HtmlHelper na view
+		04 - Validação de intervalo de valores
+		05 - Limitando o tamanho do nome do produto
+		06 - Utilizando o ModelState para verificar erros de validação
+		07 - Indicando que um atributo é obrigatório
+		08 - Mostrando erros de validação na view
+		09 - Erros de validação programáticos
+		10 - Preenchendo os dados do produto após a validação
+		11 - Projeto do curso até o momento
 	06 - Trabalhando Melhor com as views
+		01 - Vídeo 1
 	07 - Criando rotas na aplicação
 	08 - Layouts com o Twitter Bootstrap
 	09 - Ajax

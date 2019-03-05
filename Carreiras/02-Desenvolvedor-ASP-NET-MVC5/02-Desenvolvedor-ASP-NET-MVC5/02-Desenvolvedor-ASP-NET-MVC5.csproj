@@ -302,6 +302,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903051604538_InitialCreate.cs" />
+    <Compile Include="Migrations\201903051604538_InitialCreate.Designer.cs">
+      <DependentUpon>201903051604538_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903051856326_LimitacaoCampos.cs" />
+    <Compile Include="Migrations\201903051856326_LimitacaoCampos.Designer.cs">
+      <DependentUpon>201903051856326_LimitacaoCampos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CategoriaDoProduto.cs" />
     <Compile Include="Models\Produto.cs" />
     <Compile Include="Models\Usuario.cs" />
@@ -323,7 +332,14 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201903051604538_InitialCreate.resx">
+      <DependentUpon>201903051604538_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903051856326_LimitacaoCampos.resx">
+      <DependentUpon>201903051856326_LimitacaoCampos.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
