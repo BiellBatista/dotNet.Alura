@@ -134,8 +134,27 @@ HTML5 e CSS3 I: Suas primeiras páginas da Web
 	12 - 
 ASP.NET MVC 5: O framework pronto para a web
 	01 - Introdução ao ASP.NET MVC
+		01 - ASP.NET 5 ou ASP.NET MVC Core?
+		02 - Vídeo 1
+		03 - Vídeo 2
+		04 - Introdução ao ASP.NET MVC
+		05 - Novo Projeto Asp.Net MVC 5
+		06 - Pasta dos controllers
+		07 - Primeiro Controller
+		08 - Pasta para as views
+		09 - Nome do Arquivo de View
+		10 - View para a página inicial
+		11 - Url para a página inicial
+		12 - Projeto do curso até o momento
 	02 - O padrão MVC
+		01 - Vídeo 1
+		02 - O padrão MVC
+		03 - Código da view (html, javascript e css) e lógica de negócios. Junto ou separado?
+		04 - O que é MVC?
+		05 - Quem é quem no MVC?
+		06 - Projeto do curso até o momento
 	03 - Controlando Requisições e a Listagem de Produtos
+		01 - Vídeo 1
 	04 - Lidando com Formulários e o Cadastro de Produtos
 	05 - Validando um produto com Model Validation
 	06 - Trabalhando Melhor com as views
