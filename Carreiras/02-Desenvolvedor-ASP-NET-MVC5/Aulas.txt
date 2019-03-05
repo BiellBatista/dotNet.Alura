@@ -226,4 +226,12 @@ ASP.NET MVC 5: O framework pronto para a web
 		09 - Projeto do curso até o momento
 	10 - Sessões para autenticar usuários
 		01 - Vídeo 1
+		02 - Sessões para autenticar usuários
+		03 - Acessando a sessão do servidor
+		04 - Objeto armazenado na sessão
+		05 - Contador com a sessão do ASP.NET MVC
+		06 - Login de usuários
+		07 - Projeto do curso até o momento
 	11 - Filtro para autorização de usuários
+		01 - Vídeo 1
+		02 - 
