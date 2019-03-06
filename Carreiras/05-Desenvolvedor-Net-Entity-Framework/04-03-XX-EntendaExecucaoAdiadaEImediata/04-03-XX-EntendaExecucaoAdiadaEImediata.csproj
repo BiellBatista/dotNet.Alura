@@ -315,13 +315,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AluraTunes.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="AluraTunes_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>AluraTunes.mdf</DependentUpon>
-    </Content>
     <Content Include="Data\AluraTunes.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>AluraTunes.Context.cs</LastGenOutput>
