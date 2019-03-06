@@ -234,4 +234,12 @@ ASP.NET MVC 5: O framework pronto para a web
 		07 - Projeto do curso até o momento
 	11 - Filtro para autorização de usuários
 		01 - Vídeo 1
-		02 - 
+		02 - Filtro para autorização de usuários
+		03 - Filtros do Asp.Net MVC
+		04 - Código antes da action
+		05 - Filtro de autenticação
+		06 - Restringindo o acesso à lista de produtos
+		07 - Criação do csrf token
+		08 - Validação do antiforgery token
+		09 - CSRF Token no cadastro de produtos
+		10 - Projeto do curso

@@ -4,10 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using _02_Desenvolvedor_ASP_NET_MVC5.DAO;
+using _02_Desenvolvedor_ASP_NET_MVC5.Filter;
 using _02_Desenvolvedor_ASP_NET_MVC5.Models;
 
 namespace _02_Desenvolvedor_ASP_NET_MVC5.Controllers
 {
+    // com esse attribute, ele será executado em todas as actions
+    [AutorizacaoFilter] // chamando a classe de autorização. Ela será executada antes do método
     public class ProdutoController : Controller
     {
         // GET: Produto
@@ -65,6 +68,7 @@ namespace _02_Desenvolvedor_ASP_NET_MVC5.Controllers
          * O [HttpPost] faz com que o método só aceite dados vindo pelo POST
          */
         [HttpPost]
+        [ValidateAntiForgeryToken] //usado junto com o token gerado no html
         public ActionResult Adiciona(Produto produto)
         {
             int idDaInformatica = 1;

@@ -15,6 +15,8 @@
 
         <label for="categoria">Categoria:</label>
         <input id="categoria" name="categoriaId" />*@
+    @* Gerando um token para não sofrer ataques e garantindo a certeza que a requisição veio do usuário *@
+    @Html.AntiForgeryToken()
     @Html.ValidationMessage("produto.Invalido")
     <label for="nome">Nome:</label>
     <input id="nome" name="produto.Nome" value="@ViewBag.Produto.Nome" class="form-control" />

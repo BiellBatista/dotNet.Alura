@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _02_Desenvolvedor_ASP_NET_MVC5.App_Start;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,8 @@ namespace _02_Desenvolvedor_ASP_NET_MVC5
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            // toda vez que eu subir uma aplicação ele irá executar esse cara que irá adicionar o filtro configurado no arquivo FilterConfig.cs
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
         }
     }
 }
