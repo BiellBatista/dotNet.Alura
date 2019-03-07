@@ -9,3 +9,4 @@ ASP.NET Identity parte 1: Gerencie contas de usuários
 		07 - Consolidando seu conhecimento
 	02 - Arquitetura do AspNet Identity
 		01 - Projeto da aula anterior
+		02 - IdentityDbContext e IdentityUser
