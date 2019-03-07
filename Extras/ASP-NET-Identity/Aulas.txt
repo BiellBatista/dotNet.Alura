@@ -10,3 +10,21 @@ ASP.NET Identity parte 1: Gerencie contas de usuários
 	02 - Arquitetura do AspNet Identity
 		01 - Projeto da aula anterior
 		02 - IdentityDbContext e IdentityUser
+		03 - UserStore e UserManager
+		04 - Do UserManager até o banco
+		05 - Arquitetura do Identity e assincronicidade
+		06 - Arquitetura do framework
+		07 - O que aprendemos?
+		08 - Consolidando seu conhecimento
+	03 - Owin
+		01 - Projeto da aula anterior
+		02 - Instalando o Owin
+		03 - Instalação de pacote
+		04 - Configurando o Owin
+		05 - Sobre o CreatePerOwinContext
+		06 - O que aprendemos?
+		07 - Consolidando seu conhecimento
+	04 - Validações de usuário
+		01 - Projeto da aula anterior
+		02 - O IdentityResult
+		03 - 
