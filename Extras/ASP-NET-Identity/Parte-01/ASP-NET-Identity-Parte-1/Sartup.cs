@@ -42,7 +42,14 @@ namespace ASP_NET_Identity_Parte_1
                 (opcoes, contextOwin) =>
                 {
                     var userStore = contextOwin.Get<IUserStore<UserAplication>>();
-                    return new UserManager<UserAplication>(userStore);
+                    //é no Owin que o UserManager é construido
+                    var userManager = new UserManager<UserAplication>(userStore);
+
+                    var userValidator = new UserValidator<UserAplication>(userManager);
+                    userValidator.RequireUniqueEmail = true; // tornando os e-mail único
+                    userManager.UserValidator = userValidator; //passando o novo objeto de validação para o gerenciador de usuario
+
+                    return userManager;
                 });
         }
     }

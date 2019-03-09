@@ -70,6 +70,14 @@ namespace ASP_NET_Identity_Parte_1.Controllers
                 novoUsuario.UserName = modelo.UserName;
                 novoUsuario.FullName = modelo.NomeCompleto;
 
+                // verifcando se o e-mail há está cadastrado na base de dados
+                var usuario = UserManager.FindByEmail(modelo.Email);
+                var usuarioJaExiste = usuario != null;
+
+                // se ele existe, volte para o início
+                if(usuarioJaExiste)
+                    return RedirectToAction("Index", "Home");
+
                 var resultado = await UserManager.CreateAsync(novoUsuario, modelo.Senha);
                 // a senha vai como argumento pois ela fica armazenada em outro lugar. Por padrão, o UserManager salva alterações automáticamente
                 //await userManager.CreateAsync(novoUsuario, modelo.Senha);
