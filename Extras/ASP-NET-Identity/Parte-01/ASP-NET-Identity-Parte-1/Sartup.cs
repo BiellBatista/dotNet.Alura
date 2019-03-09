@@ -61,6 +61,10 @@ namespace ASP_NET_Identity_Parte_1
 
                     userManager.EmailService = new EmailServico();
 
+                    var dataProtectionProvider = opcoes.DataProtectionProvider;
+                    var dataProtectionProvidresCreated = dataProtectionProvider.Create("ByteBank.Forum");
+                    userManager.UserTokenProvider = new DataProtectorTokenProvider<UserAplication>(dataProtectionProvidresCreated);
+
                     return userManager;
                 });
         }

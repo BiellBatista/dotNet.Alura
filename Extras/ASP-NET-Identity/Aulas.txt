@@ -40,3 +40,8 @@ ASP.NET Identity parte 1: Gerencie contas de usuários
 		04 - Implementando e integrando nosso servico de email
 		05 - Usando o GenerateEmailConfirmationTokenAsync
 		06 - Confirmando o email do usuario
+		07 - Confirmação de email
+		08 - Projeto final do curso
+		09 - O que aprendemos?
+		10 - Conclusão
+		11 - Consolidando seu conhecimento
