@@ -36,3 +36,6 @@ ASP.NET Identity parte 1: Gerencie contas de usuários
 	05 - Serviços de email
 		01 - Projeto da aula anterior
 		02 - Serviço de email
+		03 - Serviço de envio de email
+		04 - Implementando e integrando nosso servico de email
+		05 - 
