@@ -76,7 +76,8 @@ namespace ASP_NET_Identity_Parte_1.Controllers
 
                 // se ele existe, volte para o início
                 if(usuarioJaExiste)
-                    return RedirectToAction("Index", "Home");
+                    return View("AguardandoConfirmacao");
+                //return RedirectToAction("Index", "Home");
 
                 var resultado = await UserManager.CreateAsync(novoUsuario, modelo.Senha);
                 // a senha vai como argumento pois ela fica armazenada em outro lugar. Por padrão, o UserManager salva alterações automáticamente
@@ -87,7 +88,9 @@ namespace ASP_NET_Identity_Parte_1.Controllers
                 // verificando se houve erro na hora de salvar o dado
                 if (resultado.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home");
+                    await EnviarEmailDeConfirmacaoAsync(novoUsuario);
+                    return View("AguardandoConfirmacao");
+                    //return RedirectToAction("Index", "Home");
                 }
                 else
                 {
@@ -96,6 +99,31 @@ namespace ASP_NET_Identity_Parte_1.Controllers
             }
 
             return View(modelo);
+        }
+
+        public ActionResult ConfirmacaoEmail(string usuarioId, string token)
+        {
+            throw new NotImplementedException();
+        }
+
+        private async Task EnviarEmailDeConfirmacaoAsync(UserAplication usuario)
+        {
+            //token de confirmacao de email
+            var token = await UserManager.GenerateEmailConfirmationTokenAsync(usuario.Id);
+
+            var linkDeCallBack =
+                Url.Action(
+                    "ConfirmacaoEmail",
+                    "Conta",
+                    new { usuarioId = usuario.Id, token = token },
+                    Request.Url.Scheme);
+
+            // montando o e-mail
+            await UserManager.SendEmailAsync(
+                usuario.Id,
+                "Teste - Confirmação de E-mail",
+                $"Bem vindo ao teste, clique aqui {linkDeCallBack} para confirmar seu endereço de e-mail!"
+                );
         }
 
         private void AdicionaErros(IdentityResult resultado)
