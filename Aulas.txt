@@ -178,4 +178,7 @@ Carreira Desenvolvedor .Net com Entity Framework
 Extra ASP.NET Identity
 	 Parte 1: Gerencie contas de usuários
 		01 - Começando com AspNet Identity
-	
+		02 - Arquitetura do AspNet Identity
+		03 - Owin
+		04 - Validações de usuário
+		05 - Serviços de email

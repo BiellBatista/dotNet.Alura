@@ -1,4 +1,5 @@
-﻿using ASP_NET_Identity_Parte_1.Models;
+﻿using ASP_NET_Identity_Parte_1.App_Start.Identity;
+using ASP_NET_Identity_Parte_1.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
@@ -47,7 +48,16 @@ namespace ASP_NET_Identity_Parte_1
 
                     var userValidator = new UserValidator<UserAplication>(userManager);
                     userValidator.RequireUniqueEmail = true; // tornando os e-mail único
+
                     userManager.UserValidator = userValidator; //passando o novo objeto de validação para o gerenciador de usuario
+                    userManager.PasswordValidator = new SenhaValidador()
+                    {
+                        TamanhoRequerido = 6,
+                        ObrigatorioCaracteresEspeciais = true,
+                        ObrigatorioDigitos = true,
+                        ObrigatorioLowerCase = true,
+                        ObrigatorioUpperCase = true
+                    };
 
                     return userManager;
                 });
