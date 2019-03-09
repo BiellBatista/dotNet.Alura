@@ -20,7 +20,7 @@ namespace ASP_NET_Identity_Parte_1.Controllers
         {
             get
             {
-                if(_userManager == null)
+                if (_userManager == null)
                 {
                     var contextOwin = HttpContext.GetOwinContext();
                     // este método GetUserManager() vem do using Microsoft.AspNet.Identity.Owin;
@@ -44,7 +44,7 @@ namespace ASP_NET_Identity_Parte_1.Controllers
         [HttpPost]
         public async Task<ActionResult> Index(ContaRegistrarViewModel modelo)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 // isso tudo, entre o //, está no Startup.cs
                 ///*
@@ -70,17 +70,31 @@ namespace ASP_NET_Identity_Parte_1.Controllers
                 novoUsuario.UserName = modelo.UserName;
                 novoUsuario.FullName = modelo.NomeCompleto;
 
-                await UserManager.CreateAsync(novoUsuario, modelo.Senha);
+                var resultado = await UserManager.CreateAsync(novoUsuario, modelo.Senha);
                 // a senha vai como argumento pois ela fica armazenada em outro lugar. Por padrão, o UserManager salva alterações automáticamente
                 //await userManager.CreateAsync(novoUsuario, modelo.Senha);
                 // não preciso mais do dbContext, pois irei usar algo menos desacoplado
                 //dbContext.Users.Add(novoUsuario);
                 //dbContext.SaveChanges();
-
-                return RedirectToAction("Index", "Home");
+                // verificando se houve erro na hora de salvar o dado
+                if (resultado.Succeeded)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    AdicionaErros(resultado);
+                }
             }
 
             return View(modelo);
+        }
+
+        private void AdicionaErros(IdentityResult resultado)
+        {
+            foreach (var erro in resultado.Errors)
+                // adicionando erro no modelstate para o usuário ver o que está errado
+                ModelState.AddModelError("", erro);
         }
     }
 }

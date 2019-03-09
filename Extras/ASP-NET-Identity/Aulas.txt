@@ -27,4 +27,4 @@ ASP.NET Identity parte 1: Gerencie contas de usuários
 	04 - Validações de usuário
 		01 - Projeto da aula anterior
 		02 - O IdentityResult
-		03 - 
+		03 - Emails duplicados
