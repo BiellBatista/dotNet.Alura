@@ -59,6 +59,8 @@ namespace ASP_NET_Identity_Parte_1
                         ObrigatorioUpperCase = true
                     };
 
+                    userManager.EmailService = new EmailServico();
+
                     return userManager;
                 });
         }
