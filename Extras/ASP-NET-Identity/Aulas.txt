@@ -45,3 +45,9 @@ ASP.NET Identity parte 1: Gerencie contas de usuários
 		09 - O que aprendemos?
 		10 - Conclusão
 		11 - Consolidando seu conhecimento
+ASP.NET Identity parte 2: Autenticação, segurança com lockout
+	01 - Login e senha de usuário
+		01 - Introdução
+		02 - Projeto do curso anterior
+		03 - Criando a pagina de login
+		04 - 

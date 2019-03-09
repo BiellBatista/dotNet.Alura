@@ -182,3 +182,5 @@ Extra ASP.NET Identity
 		03 - Owin
 		04 - Validações de usuário
 		05 - Serviços de email
+	Parte 2: Autenticação, segurança com lockout
+		01 - Login e senha de usuário
