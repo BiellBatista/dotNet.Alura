@@ -119,17 +119,25 @@ namespace ASP_NET_Identity_Parte_2.Controllers
         [HttpGet]
         public async Task<ActionResult> Login()
         {
-            if(ModelState.IsValid)
-            {
-                // Realizer login pelo Identity
-            }
-
             return View();
         }
 
         [HttpPost]
         public async Task<ActionResult> Login(ContaLoginViewModel modelo)
         {
+            if (ModelState.IsValid)
+            {
+                var usuario = await UserManager.FindByEmailAsync(modelo.Email);
+
+                if(usuario != null)
+                {
+                    if (modelo.Senha == usuario.PasswordHash)
+                    {
+
+                    }
+                }
+            }
+
             return View();
         }
 
