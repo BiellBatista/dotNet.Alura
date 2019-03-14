@@ -58,4 +58,4 @@ ASP.NET Identity parte 2: Autenticação, segurança com lockout
 	02 - Projeto da aula anterior
 		01 - Projeto da aula anterior
 		02 - SignInManager
-		03 - 
+		03 - Como continuar logado

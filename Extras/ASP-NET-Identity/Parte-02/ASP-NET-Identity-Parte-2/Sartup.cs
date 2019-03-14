@@ -67,6 +67,21 @@ namespace ASP_NET_Identity_Parte_2
 
                     return userManager;
                 });
+
+            // a cada contexto do Owin, crie o SignInManager (responsável por gerenciar a senha)
+            builder.CreatePerOwinContext<SignInManager<UserAplication, string>>(
+                (opcoes, contextOwin) =>
+                {
+                    // pegando os dados do usuário
+                    var userManager = contextOwin.Get<UserManager<UserAplication>>();
+
+                    var signInManager = new SignInManager<UserAplication, string>(
+                        userManager,
+                        //auteciador.Isso vem porque estou usando o Owin, Identity e o plugin do Identity no Owin
+                        contextOwin.Authentication);
+
+                    return signInManager;
+                });
         }
     }
 }

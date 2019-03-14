@@ -35,6 +35,27 @@ namespace ASP_NET_Identity_Parte_2.Controllers
             }
         }
 
+        // pegando as configurações do OWIN
+        private SignInManager<UserAplication, string> _signInManager;
+        public SignInManager<UserAplication, string> SignInManager
+        {
+            get
+            {
+                if (_signInManager == null)
+                {
+                    var contextOwin = HttpContext.GetOwinContext();
+                    // este método GetUserManager() vem do using Microsoft.AspNet.Identity.Owin;
+                    _signInManager = contextOwin.GetUserManager<SignInManager<UserAplication, string>>();
+                }
+
+                return _signInManager;
+            }
+            set
+            {
+                _signInManager = value;
+            }
+        }
+
         // GET: Conta
         public ActionResult Index()
         {
@@ -75,7 +96,7 @@ namespace ASP_NET_Identity_Parte_2.Controllers
                 var usuarioJaExiste = usuario != null;
 
                 // se ele existe, volte para o início
-                if(usuarioJaExiste)
+                if (usuarioJaExiste)
                     return View("AguardandoConfirmacao");
                 //return RedirectToAction("Index", "Home");
 
@@ -107,10 +128,11 @@ namespace ASP_NET_Identity_Parte_2.Controllers
                 return View("Error");
             var resultado = await UserManager.ConfirmEmailAsync(usuarioId, token);
 
-            if(resultado.Succeeded)
+            if (resultado.Succeeded)
             {
                 return RedirectToAction("Index", "Home");
-            } else
+            }
+            else
             {
                 return View("Error");
             }
@@ -129,12 +151,24 @@ namespace ASP_NET_Identity_Parte_2.Controllers
             {
                 var usuario = await UserManager.FindByEmailAsync(modelo.Email);
 
-                if(usuario != null)
-                {
-                    if (modelo.Senha == usuario.PasswordHash)
-                    {
+                if (usuario == null)
+                    return SenhaOuUsuarioInvalido();
 
-                    }
+
+                var signInResultado =
+                    await SignInManager.PasswordSignInAsync(
+                        usuario.UserName,
+                        modelo.Senha,
+                        isPersistent: false,
+                        shouldLockout: false);
+
+                switch (signInResultado)
+                {
+                    case SignInStatus.Success:
+                        return RedirectToAction("Index", "Home");
+                    default:
+                        SenhaOuUsuarioInvalido();
+                        break;
                 }
             }
 
@@ -159,6 +193,12 @@ namespace ASP_NET_Identity_Parte_2.Controllers
                 "Teste - Confirmação de E-mail",
                 $"Bem vindo ao teste, clique aqui {linkDeCallBack} para confirmar seu endereço de e-mail!"
                 );
+        }
+
+        private ActionResult SenhaOuUsuarioInvalido()
+        {
+            ModelState.AddModelError("", "Credencias inválidas!");
+            return View("Login");
         }
 
         private void AdicionaErros(IdentityResult resultado)
