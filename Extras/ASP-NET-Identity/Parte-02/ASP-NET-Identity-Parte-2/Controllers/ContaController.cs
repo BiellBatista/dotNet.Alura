@@ -159,7 +159,9 @@ namespace ASP_NET_Identity_Parte_2.Controllers
                     await SignInManager.PasswordSignInAsync(
                         usuario.UserName,
                         modelo.Senha,
-                        isPersistent: false,
+                        // isPersistent serve para verificar se o usuário deseja continuar logado
+                        // true continua logado. False não continua logado
+                        isPersistent: modelo.ContinuarLogado,
                         shouldLockout: false);
 
                 switch (signInResultado)

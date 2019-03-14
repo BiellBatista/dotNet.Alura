@@ -55,7 +55,14 @@ ASP.NET Identity parte 2: Autenticação, segurança com lockout
 		06 - Salvando senhas
 		07 - O que aprendemos?
 		08 - Consolidando seu conhecimento
-	02 - Projeto da aula anterior
+	02 - Usando o SignInManager
 		01 - Projeto da aula anterior
 		02 - SignInManager
 		03 - Como continuar logado
+		04 - Autenticação
+		05 - Como realizar login
+		06 - O que aprendemos?
+		07 - Consolidando seu conhecimento
+	03 - Função de logoff
+		01 - Projeto da aula anterior
+		02 - Logoff

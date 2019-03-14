@@ -15,5 +15,8 @@ namespace ASP_NET_Identity_Parte_2.ViewModels
         [Required]
         [DataType(DataType.Password)]
         public string Senha { get; set; }
+
+        [Display(Name = "Continuar Logado")]
+        public bool ContinuarLogado { get; set; }
     }
 }

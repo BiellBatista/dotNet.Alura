@@ -4,6 +4,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
+using Microsoft.Owin.Security.Cookies;
 using Owin;
 using System;
 using System.Collections.Generic;
@@ -82,6 +83,13 @@ namespace ASP_NET_Identity_Parte_2
 
                     return signInManager;
                 });
+
+            // configurando a autenticação por coockie. Para isso, instalei o pacote Microsoft.Owin.Security.Cookies
+            builder.UseCookieAuthentication(new CookieAuthenticationOptions
+            {
+                // tipo de autenticação que estou buscando
+                AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie
+            });
         }
     }
 }
