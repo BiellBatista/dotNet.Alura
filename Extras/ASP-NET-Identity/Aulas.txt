@@ -66,3 +66,10 @@ ASP.NET Identity parte 2: Autenticação, segurança com lockout
 	03 - Função de logoff
 		01 - Projeto da aula anterior
 		02 - Logoff
+		03 - Classe para logoff
+		04 - Mecanismo de logoff
+		05 - O que aprendemos?
+		06 - Consolidando seu conhecimento
+	04 - Função de Lockout
+		01 - Projeto da aula anterior
+		02 - Lockout

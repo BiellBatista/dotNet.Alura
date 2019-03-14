@@ -3,6 +3,7 @@ using ASP_NET_Identity_Parte_2.ViewModels;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin.Security;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,6 +54,15 @@ namespace ASP_NET_Identity_Parte_2.Controllers
             set
             {
                 _signInManager = value;
+            }
+        }
+
+        public IAuthenticationManager AutenticationManager
+        {
+            get
+            {
+                var contextoOwin = Request.GetOwinContext();
+                return contextoOwin.Authentication;
             }
         }
 
@@ -175,6 +185,15 @@ namespace ASP_NET_Identity_Parte_2.Controllers
             }
 
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Logoff()
+        {
+            // matando o cookie do usuário e encerrando a sessão dele
+            AutenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+
+            return RedirectToAction("Index", "Home");
         }
 
         private async Task EnviarEmailDeConfirmacaoAsync(UserAplication usuario)
