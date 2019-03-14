@@ -66,6 +66,13 @@ namespace ASP_NET_Identity_Parte_2
                     var dataProtectionProvidresCreated = dataProtectionProvider.Create("ByteBank.Forum");
                     userManager.UserTokenProvider = new DataProtectorTokenProvider<UserAplication>(dataProtectionProvidresCreated);
 
+                    // configurando o limite de quantidade de tentativas falhas do usuário
+                    userManager.MaxFailedAccessAttemptsBeforeLockout = 3;
+                    // configurando o tempo de espera entre uma falha e outro
+                    userManager.DefaultAccountLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                    // todo mundo terá a segurança de máxima quantidade de login
+                    userManager.UserLockoutEnabledByDefault = true;
+
                     return userManager;
                 });
 

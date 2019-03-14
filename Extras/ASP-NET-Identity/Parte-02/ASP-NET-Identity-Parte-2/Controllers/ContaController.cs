@@ -172,12 +172,21 @@ namespace ASP_NET_Identity_Parte_2.Controllers
                         // isPersistent serve para verificar se o usuário deseja continuar logado
                         // true continua logado. False não continua logado
                         isPersistent: modelo.ContinuarLogado,
-                        shouldLockout: false);
+                        // shouldLockout ativa o limite máximo de login de falhas
+                        shouldLockout: true);
 
                 switch (signInResultado)
                 {
                     case SignInStatus.Success:
                         return RedirectToAction("Index", "Home");
+                    case SignInStatus.LockedOut:
+                        var senhaCorreta = await UserManager.CheckPasswordAsync(usuario, modelo.Senha);
+
+                        if (senhaCorreta)
+                            ModelState.AddModelError("", "A conta está bloqueada");
+                        else
+                            return SenhaOuUsuarioInvalido();
+                        break;
                     default:
                         SenhaOuUsuarioInvalido();
                         break;
