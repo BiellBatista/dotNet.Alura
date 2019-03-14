@@ -50,4 +50,5 @@ ASP.NET Identity parte 2: Autenticação, segurança com lockout
 		01 - Introdução
 		02 - Projeto do curso anterior
 		03 - Criando a pagina de login
-		04 - 
+		04 - Actions privadas
+		05 - 
