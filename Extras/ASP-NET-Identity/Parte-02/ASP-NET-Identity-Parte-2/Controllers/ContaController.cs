@@ -178,7 +178,7 @@ namespace ASP_NET_Identity_Parte_2.Controllers
                 switch (signInResultado)
                 {
                     case SignInStatus.Success:
-                        if(!usuario.EmailConfirmed) // verificando se o usuário confirmou o e-mail
+                        if (!usuario.EmailConfirmed) // verificando se o usuário confirmou o e-mail
                         {
                             AutenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
                             return View("AguardandoConfirmacao");
@@ -198,6 +198,52 @@ namespace ASP_NET_Identity_Parte_2.Controllers
                 }
             }
 
+            return View();
+        }
+
+        public ActionResult EsqueciSenha()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> EsqueciSenha(ContaEsqueciSenhaViewModel modelo)
+        {
+            if (ModelState.IsValid)
+            {
+                // Gerar o token de reset da senha
+                // Gerar a url para o usuário
+                // Vamos enviar o e-mail
+                // recuperando o usuário
+                var usuario = await UserManager.FindByEmailAsync(modelo.Email);
+
+                if (usuario != null)
+                {
+                    // gerando o token para o usuário resetar sua senha
+                    var token = await UserManager.GeneratePasswordResetTokenAsync(usuario.Id);
+
+                    var linkDeCallBack =
+                        Url.Action(
+                            "ConfirmacaoAlteracaoSenha",
+                            "Conta",
+                            new { usuarioId = usuario.Id, token = token },
+                            Request.Url.Scheme);
+
+                    // montando o e-mail
+                    await UserManager.SendEmailAsync(
+                        usuario.Id,
+                        "Teste - Alteração de Senha",
+                        $"Bem vindo ao teste, clique aqui {linkDeCallBack} para alterar a sua senha!"
+                        );
+                }
+
+                return View("EmailAlteracaoSenhaEnviado");
+            }
+            return View();
+        }
+
+        public ActionResult ConfirmacaoAlteracaoSenha(string userId, string token)
+        {
             return View();
         }
 
