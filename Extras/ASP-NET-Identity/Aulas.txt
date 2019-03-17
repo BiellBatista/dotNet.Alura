@@ -80,3 +80,4 @@ ASP.NET Identity parte 2: Autenticação, segurança com lockout e recuperando a se
 	05 - Recuperando a senha de forma segura
 		01 - Projeto da aula anterior
 		02 - Verificando propriedade EmailConfirmed
+		03 - Enviando token de alteração de senha

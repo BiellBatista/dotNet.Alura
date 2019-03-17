@@ -178,6 +178,11 @@ namespace ASP_NET_Identity_Parte_2.Controllers
                 switch (signInResultado)
                 {
                     case SignInStatus.Success:
+                        if(!usuario.EmailConfirmed) // verificando se o usuário confirmou o e-mail
+                        {
+                            AutenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+                            return View("AguardandoConfirmacao");
+                        }
                         return RedirectToAction("Index", "Home");
                     case SignInStatus.LockedOut:
                         var senhaCorreta = await UserManager.CheckPasswordAsync(usuario, modelo.Senha);
