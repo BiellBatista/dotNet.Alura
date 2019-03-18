@@ -31,11 +31,10 @@ namespace ASP_NET_Identity_Parte_3.App_Start.Identity
             if (ObrigatorioDigitos && !VerificaDigito(item))
                 erros.Add($"A senha deve conter no mínimo um dígito.");
 
-            // verificando se existe algum item na lista
             if (erros.Any())
-                return IdentityResult.Failed(erros.ToArray()); //o failed recebe um array de string (mensagens de erros)
+                return IdentityResult.Failed(erros.ToArray());
             else
-                return IdentityResult.Success; // retornando um sucesso
+                return IdentityResult.Success;
         }
 
         private bool VerificaTamanhoRequerido(string senha) =>

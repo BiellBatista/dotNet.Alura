@@ -7,7 +7,6 @@
 
 <h2>Alterar Senha</h2>
 
-@* sobrescrevendo o método BeginForm para que ele chama o método X (ConfirmacaoAlteracaoSenha) da controle Y (Conta) *@
 @using (Html.BeginForm("ConfirmacaoAlteracaoSenha", "Conta"))
 {
     @Html.ValidationSummary("", new { @classe = "text-danger" })

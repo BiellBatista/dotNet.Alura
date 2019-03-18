@@ -1,12 +1,8 @@
 ﻿using ASP_NET_Identity_Parte_3.Models;
 using ASP_NET_Identity_Parte_3.ViewModels;
 using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -15,8 +11,9 @@ namespace ASP_NET_Identity_Parte_3.Controllers
 {
     public class ContaController : Controller
     {
-        // backfiled da propriedade
         private UserManager<UserAplication> _userManager;
+        private SignInManager<UserAplication, string> _signInManager;
+
         public UserManager<UserAplication> UserManager
         {
             get
@@ -24,7 +21,6 @@ namespace ASP_NET_Identity_Parte_3.Controllers
                 if (_userManager == null)
                 {
                     var contextOwin = HttpContext.GetOwinContext();
-                    // este método GetUserManager() vem do using Microsoft.AspNet.Identity.Owin;
                     _userManager = contextOwin.GetUserManager<UserManager<UserAplication>>();
                 }
 
@@ -36,8 +32,7 @@ namespace ASP_NET_Identity_Parte_3.Controllers
             }
         }
 
-        // pegando as configurações do OWIN
-        private SignInManager<UserAplication, string> _signInManager;
+
         public SignInManager<UserAplication, string> SignInManager
         {
             get
@@ -45,7 +40,6 @@ namespace ASP_NET_Identity_Parte_3.Controllers
                 if (_signInManager == null)
                 {
                     var contextOwin = HttpContext.GetOwinContext();
-                    // este método GetUserManager() vem do using Microsoft.AspNet.Identity.Owin;
                     _signInManager = contextOwin.GetUserManager<SignInManager<UserAplication, string>>();
                 }
 
@@ -66,7 +60,6 @@ namespace ASP_NET_Identity_Parte_3.Controllers
             }
         }
 
-        // GET: Conta
         public ActionResult Index()
         {
             return View();
@@ -77,51 +70,23 @@ namespace ASP_NET_Identity_Parte_3.Controllers
         {
             if (ModelState.IsValid)
             {
-                // isso tudo, entre o //, está no Startup.cs
-                ///*
-                // * O contexto (DbContext (EntityFramework)) para gerenciar o banco de dados. Passo o a classe do banco de dados, para ele manipular
-                // * Passando a connectionstring
-                // */
-                //var dbContext = new IdentityDbContext<UserAplication>("DefaultConnection");
-                ///*
-                // * O UserStore(); gera a interface entre o identity e o entityframework. Neste caso, estou criando a interface para os modelos do Usuário
-                // * 
-                // */
-                //var userStore = new UserStore<UserAplication>(dbContext);
-                ///*
-                // * Uso o userManager para desacoplar o identity do entityframework e gerenciar as persistencia do usuário
-                // */
-                //var userManager = new UserManager<UserAplication>(userStore);
-                ///*
-                // * Criando um objeto para armazenar os dados do usuario
-                // */
                 var novoUsuario = new UserAplication();
 
                 novoUsuario.Email = modelo.Email;
                 novoUsuario.UserName = modelo.UserName;
                 novoUsuario.FullName = modelo.NomeCompleto;
 
-                // verifcando se o e-mail há está cadastrado na base de dados
                 var usuario = await UserManager.FindByEmailAsync(modelo.Email);
                 var usuarioJaExiste = usuario != null;
 
-                // se ele existe, volte para o início
                 if (usuarioJaExiste)
                     return View("AguardandoConfirmacao");
-                //return RedirectToAction("Index", "Home");
 
                 var resultado = await UserManager.CreateAsync(novoUsuario, modelo.Senha);
-                // a senha vai como argumento pois ela fica armazenada em outro lugar. Por padrão, o UserManager salva alterações automáticamente
-                //await userManager.CreateAsync(novoUsuario, modelo.Senha);
-                // não preciso mais do dbContext, pois irei usar algo menos desacoplado
-                //dbContext.Users.Add(novoUsuario);
-                //dbContext.SaveChanges();
-                // verificando se houve erro na hora de salvar o dado
                 if (resultado.Succeeded)
                 {
                     await EnviarEmailDeConfirmacaoAsync(novoUsuario);
                     return View("AguardandoConfirmacao");
-                    //return RedirectToAction("Index", "Home");
                 }
                 else
                 {
@@ -169,16 +134,13 @@ namespace ASP_NET_Identity_Parte_3.Controllers
                     await SignInManager.PasswordSignInAsync(
                         usuario.UserName,
                         modelo.Senha,
-                        // isPersistent serve para verificar se o usuário deseja continuar logado
-                        // true continua logado. False não continua logado
                         isPersistent: modelo.ContinuarLogado,
-                        // shouldLockout ativa o limite máximo de login de falhas
                         shouldLockout: true);
 
                 switch (signInResultado)
                 {
                     case SignInStatus.Success:
-                        if (!usuario.EmailConfirmed) // verificando se o usuário confirmou o e-mail
+                        if (!usuario.EmailConfirmed)
                         {
                             AutenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
                             return View("AguardandoConfirmacao");
@@ -211,15 +173,10 @@ namespace ASP_NET_Identity_Parte_3.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Gerar o token de reset da senha
-                // Gerar a url para o usuário
-                // Vamos enviar o e-mail
-                // recuperando o usuário
                 var usuario = await UserManager.FindByEmailAsync(modelo.Email);
 
                 if (usuario != null)
                 {
-                    // gerando o token para o usuário resetar sua senha
                     var token = await UserManager.GeneratePasswordResetTokenAsync(usuario.Id);
 
                     var linkDeCallBack =
@@ -229,7 +186,6 @@ namespace ASP_NET_Identity_Parte_3.Controllers
                             new { usuarioId = usuario.Id, token = token },
                             Request.Url.Scheme);
 
-                    // montando o e-mail
                     await UserManager.SendEmailAsync(
                         usuario.Id,
                         "Teste - Alteração de Senha",
@@ -258,10 +214,6 @@ namespace ASP_NET_Identity_Parte_3.Controllers
         {
             if(ModelState.IsValid)
             {
-                //verifica o token recebido
-                //verifica o id do usuário
-                //mudar a senha
-
                 var resultadoAlteracao = await UserManager.ResetPasswordAsync(
                     modelo.UsuarioId,
                     modelo.Token,
@@ -282,7 +234,6 @@ namespace ASP_NET_Identity_Parte_3.Controllers
         [HttpPost]
         public ActionResult Logoff()
         {
-            // matando o cookie do usuário e encerrando a sessão dele
             AutenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
 
             return RedirectToAction("Index", "Home");
@@ -290,7 +241,6 @@ namespace ASP_NET_Identity_Parte_3.Controllers
 
         private async Task EnviarEmailDeConfirmacaoAsync(UserAplication usuario)
         {
-            //token de confirmacao de email
             var token = await UserManager.GenerateEmailConfirmationTokenAsync(usuario.Id);
 
             var linkDeCallBack =
@@ -300,7 +250,6 @@ namespace ASP_NET_Identity_Parte_3.Controllers
                     new { usuarioId = usuario.Id, token = token },
                     Request.Url.Scheme);
 
-            // montando o e-mail
             await UserManager.SendEmailAsync(
                 usuario.Id,
                 "Teste - Confirmação de E-mail",
@@ -317,20 +266,7 @@ namespace ASP_NET_Identity_Parte_3.Controllers
         private void AdicionaErros(IdentityResult resultado)
         {
             foreach (var erro in resultado.Errors)
-                // adicionando erro no modelstate para o usuário ver o que está errado
                 ModelState.AddModelError("", erro);
         }
     }
 }
-
-/*
- * Arquitetura do Identity
- * Fontes de Dados (SQL, MongoDB)
- * Acesso aos Dados (EntityFramework, NHibernate)
- * Fonecedor/Store (UserStore)
- * Gerenciador/Managers (UserManager)
- * Aplicação
- * 
- * 
- * A aplicação conversa apenas com o gerenciador para a manipulação dos dados do usuário
- */

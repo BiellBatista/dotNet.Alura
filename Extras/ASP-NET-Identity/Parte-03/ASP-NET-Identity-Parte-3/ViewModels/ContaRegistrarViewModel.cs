@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace ASP_NET_Identity_Parte_3.ViewModels
 {
@@ -12,15 +8,15 @@ namespace ASP_NET_Identity_Parte_3.ViewModels
         public string UserName { get; set; }
 
         [Required]
-        [Display(Name = "Nome Completo")] // alterando a visualização na view
+        [Display(Name = "Nome Completo")]
         public string NomeCompleto { get; set; }
 
         [Required]
-        [EmailAddress] // validação de e-mail
+        [EmailAddress]
         public string Email { get; set; }
 
         [Required]
-        [DataType(DataType.Password)] // indicando que o campo é uma senha
+        [DataType(DataType.Password)]
         public string Senha { get; set; }
     }
 }
