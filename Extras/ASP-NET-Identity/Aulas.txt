@@ -1,3 +1,8 @@
+Depedencias:
+Install-Package Microsoft.AspNet.Identity.Core
+Install-Package Microsoft.AspNet.Identity.EntityFramework
+Install-Package Microsoft.Owin.Host.SystemWeb
+
 ASP.NET Identity parte 1: Gerencie contas de usuários
 	01 - Começando com AspNet Identity
 		01 - Introdução
@@ -91,4 +96,4 @@ ASP.NET Identity parte 2: Autenticação, segurança com lockout e recuperando a se
 ASP.NET Identity parte 3: Autorização, autenticação externa com redes sociais
 	01 - Conhecendo os mecanismos de autenticação externa
 		01 - Introdução
-		02 - 
+		02 - Autenticacao externa com o Google

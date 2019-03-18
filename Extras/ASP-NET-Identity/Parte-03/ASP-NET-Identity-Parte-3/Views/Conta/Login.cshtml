@@ -1,0 +1,19 @@
+﻿@model ASP_NET_Identity_Parte_3.ViewModels.ContaLoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+
+@using(Html.BeginForm())
+{
+    @Html.ValidationSummary("", new { @classe = "text-danger" })
+
+    @Html.EditorForModel()
+
+    @Html.ActionLink("Esqueci a minha senha", "EsqueciSenha");
+
+    <input type="submit" value="Login" />
+}
