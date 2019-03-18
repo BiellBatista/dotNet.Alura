@@ -242,8 +242,40 @@ namespace ASP_NET_Identity_Parte_2.Controllers
             return View();
         }
 
-        public ActionResult ConfirmacaoAlteracaoSenha(string userId, string token)
+        public ActionResult ConfirmacaoAlteracaoSenha(string usuarioId, string token)
         {
+            var modelo = new ContaConfirmacaoAlteracaoSenhaViewModel
+            {
+                UsuarioId = usuarioId,
+                Token = token
+            };
+
+            return View(modelo);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> ConfirmacaoAlteracaoSenha(ContaConfirmacaoAlteracaoSenhaViewModel modelo)
+        {
+            if(ModelState.IsValid)
+            {
+                //verifica o token recebido
+                //verifica o id do usuário
+                //mudar a senha
+
+                var resultadoAlteracao = await UserManager.ResetPasswordAsync(
+                    modelo.UsuarioId,
+                    modelo.Token,
+                    modelo.NovaSenha
+                    );
+
+                if(resultadoAlteracao.Succeeded)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+
+                AdicionaErros(resultadoAlteracao);
+            }
+
             return View();
         }
 

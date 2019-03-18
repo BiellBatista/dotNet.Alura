@@ -82,3 +82,13 @@ ASP.NET Identity parte 2: Autenticação, segurança com lockout e recuperando a se
 		02 - Verificando propriedade EmailConfirmed
 		03 - Enviando token de alteração de senha
 		04 - Alterando a senha
+		05 - Conclusão
+		06 - Projeto final do curso
+		07 - Geração de token
+		08 - Fluxo de alteração de senha
+		09 - O que aprendemos?
+		10 - Consolidando seu conhecimento
+ASP.NET Identity parte 3: Autorização, autenticação externa com redes sociais
+	01 - Conhecendo os mecanismos de autenticação externa
+		01 - Introdução
+		02 - 
