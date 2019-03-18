@@ -5,8 +5,10 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
+using Microsoft.Owin.Security.Google;
 using Owin;
 using System;
+using System.Configuration;
 using System.Data.Entity;
 
 [assembly: OwinStartup(typeof(ASP_NET_Identity_Parte_3.Sartup))]
@@ -71,9 +73,24 @@ namespace ASP_NET_Identity_Parte_3
                     return signInManager;
                 });
 
+            // cookie gerado pela aplicação
             builder.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie
+            });
+
+            // cookie gerado por servidor externo (aplicativo de terceiros), para autenticar o usuário
+            builder.UseCookieAuthentication(new CookieAuthenticationOptions
+            {
+                AuthenticationType = DefaultAuthenticationTypes.ExternalCookie
+            });
+
+            // configurando a autenticação do Google
+            builder.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions
+            {
+                ClientId = ConfigurationManager.AppSettings["google:client_id"], //id gerado pela API na página do google (arquivo client_id.json)
+                ClientSecret = ConfigurationManager.AppSettings["google:client_secret"], //secret gerado pela API na página do google (arquivo client_id.json)
+                Caption = "Google"
             });
         }
     }
