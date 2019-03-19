@@ -97,6 +97,25 @@ namespace ASP_NET_Identity_Parte_3.Controllers
             return View(modelo);
         }
 
+        [HttpPost]
+        //o argumento vem do button (que possui o name igual ao do argumento) e o valor está contido no atributo value
+        public ActionResult RegistrarPorAutenticacaoExterna(string provider)
+        {
+            SignInManager.AuthenticationManager.Challenge(new AuthenticationProperties
+            {
+                RedirectUri = Url.Action("RegistrarPorAutenticacaoExternaCallback")
+            }, provider);
+
+            return new HttpUnauthorizedResult();
+        }
+
+        public async Task<ActionResult> RegistrarPorAutenticacaoExternaCallback()
+        {
+            var loginInfo = await SignInManager.AuthenticationManager.GetExternalLoginInfoAsync();
+
+            return null;
+        }
+
         public async Task<ActionResult> ConfirmacaoEmail(string usuarioId, string token)
         {
             if (usuarioId == null || token == null)

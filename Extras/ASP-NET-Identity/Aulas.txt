@@ -108,3 +108,10 @@ ASP.NET Identity parte 3: Autorização, autenticação externa com redes sociais
 	02 - Implementando autenticação externa
 		01 - Projeto da aula anterior
 		02 - Registrando por autenticacao externa
+		03 - AuthenticationManager
+		04 - Argumento provider
+		05 - O que aprendemos?
+		06 - Consolidando seu conhecimento
+	03 - Configurando autenticação externa
+		01 - Projeto da aula anterior
+		02 - Adicionando logins para nosso usuario

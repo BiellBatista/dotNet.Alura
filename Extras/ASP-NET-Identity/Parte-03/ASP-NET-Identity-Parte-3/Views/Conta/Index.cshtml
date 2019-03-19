@@ -1,4 +1,7 @@
-﻿@model ASP_NET_Identity_Parte_3.ViewModels.ContaRegistrarViewModel
+﻿@* Adicionando o Owin para me passar todos os providers de autenticação. COm isso não preciso criar um formulário para cada autenticação externa *@
+@using Microsoft.Owin.Security
+
+@model ASP_NET_Identity_Parte_3.ViewModels.ContaRegistrarViewModel
 
 @{
     ViewBag.Title = "Registar";
@@ -21,4 +24,18 @@
             <input type="submit" value="Registar" class="btn btn-default" />
         </div>
     </div>
+}
+
+@using (Html.BeginForm("RegistrarPorAutenticacaoExterna", "Conta"))
+{
+    @* Pegando todas as autenticação externa. No meu caso, tenho apenas o Google *@
+    var providerAutenticaocao = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
+
+    if(providerAutenticaocao != null && providerAutenticaocao.Any())
+    {
+        foreach(var provider in providerAutenticaocao)
+        {
+            <button class="btn" type="submit" value="@provider.AuthenticationType" name="provider">@provider.Caption</button>
+        }
+    }
 }

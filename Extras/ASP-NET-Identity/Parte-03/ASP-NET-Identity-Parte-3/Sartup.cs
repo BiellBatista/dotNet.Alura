@@ -80,10 +80,7 @@ namespace ASP_NET_Identity_Parte_3
             });
 
             // cookie gerado por servidor externo (aplicativo de terceiros), para autenticar o usuário
-            builder.UseCookieAuthentication(new CookieAuthenticationOptions
-            {
-                AuthenticationType = DefaultAuthenticationTypes.ExternalCookie
-            });
+            builder.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
 
             // configurando a autenticação do Google
             builder.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions
@@ -95,3 +92,6 @@ namespace ASP_NET_Identity_Parte_3
         }
     }
 }
+/*
+ * Erros sobre middwelare envolve o Owin
+ */
