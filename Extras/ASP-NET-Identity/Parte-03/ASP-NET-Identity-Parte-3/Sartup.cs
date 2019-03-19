@@ -17,6 +17,7 @@ namespace ASP_NET_Identity_Parte_3
 {
     public class Sartup
     {
+        //o servidor WEB chama este método quando está subindo a nossa aplicação
         public void Configuration(IAppBuilder builder)
         {
             builder.CreatePerOwinContext<DbContext>(() =>
@@ -89,6 +90,22 @@ namespace ASP_NET_Identity_Parte_3
                 ClientSecret = ConfigurationManager.AppSettings["google:client_secret"], //secret gerado pela API na página do google (arquivo client_id.json)
                 Caption = "Google"
             });
+
+            CriarRoles();
+        }
+
+        private void CriarRoles()
+        {
+            using (var dbContext = new IdentityDbContext<UserAplication>("DefaultConnection"))
+            using (var roleStore = new RoleStore<IdentityRole>(dbContext))
+            using (var roleManager = new RoleManager<IdentityRole>(roleStore))
+            {
+                if (!roleManager.RoleExists(RolesName.ADMINISTRADOR))
+                    roleManager.Create(new IdentityRole(RolesName.ADMINISTRADOR));
+                if (!roleManager.RoleExists(RolesName.MODERADOR))
+                    roleManager.Create(new IdentityRole(RolesName.MODERADOR));
+            }
+
         }
     }
 }
