@@ -3,6 +3,7 @@ using ASP_NET_Identity_Parte_3.ViewModels;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -112,8 +113,31 @@ namespace ASP_NET_Identity_Parte_3.Controllers
         public async Task<ActionResult> RegistrarPorAutenticacaoExternaCallback()
         {
             var loginInfo = await SignInManager.AuthenticationManager.GetExternalLoginInfoAsync();
+            // verificando se o usuário existe, mesmo se for conexão externa (Google, Twitter...)
+            var usuarioExistente = await UserManager.FindByEmailAsync(loginInfo.Email);
 
-            return null;
+            if(usuarioExistente != null)
+                return View("Error");
+
+            var novoUsuario = new UserAplication();
+            novoUsuario.Email = loginInfo.Email;
+            novoUsuario.UserName = loginInfo.Email;
+            novoUsuario.FullName = 
+                loginInfo.ExternalIdentity.FindFirstValue(loginInfo.ExternalIdentity.NameClaimType);
+
+            // criando o usuário sem a senha, porque não é mais necessário. Afinal, estamos usando uma autenticação externa
+            var resultado = await UserManager.CreateAsync(novoUsuario);
+
+            if(resultado.Succeeded)
+            {
+                // é necessário adicionar uma forma de login
+                var resultadoAddLoginInfo = await UserManager.AddLoginAsync(novoUsuario.Id, loginInfo.Login);
+
+                if(resultadoAddLoginInfo.Succeeded)
+                    return RedirectToAction("Index", "Home");
+            }
+
+            return View("Error");
         }
 
         public async Task<ActionResult> ConfirmacaoEmail(string usuarioId, string token)
