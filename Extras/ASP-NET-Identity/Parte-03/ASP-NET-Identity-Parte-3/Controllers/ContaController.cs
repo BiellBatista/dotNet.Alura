@@ -116,24 +116,24 @@ namespace ASP_NET_Identity_Parte_3.Controllers
             // verificando se o usuário existe, mesmo se for conexão externa (Google, Twitter...)
             var usuarioExistente = await UserManager.FindByEmailAsync(loginInfo.Email);
 
-            if(usuarioExistente != null)
+            if (usuarioExistente != null)
                 return View("Error");
 
             var novoUsuario = new UserAplication();
             novoUsuario.Email = loginInfo.Email;
             novoUsuario.UserName = loginInfo.Email;
-            novoUsuario.FullName = 
+            novoUsuario.FullName =
                 loginInfo.ExternalIdentity.FindFirstValue(loginInfo.ExternalIdentity.NameClaimType);
 
             // criando o usuário sem a senha, porque não é mais necessário. Afinal, estamos usando uma autenticação externa
             var resultado = await UserManager.CreateAsync(novoUsuario);
 
-            if(resultado.Succeeded)
+            if (resultado.Succeeded)
             {
                 // é necessário adicionar uma forma de login
                 var resultadoAddLoginInfo = await UserManager.AddLoginAsync(novoUsuario.Id, loginInfo.Login);
 
-                if(resultadoAddLoginInfo.Succeeded)
+                if (resultadoAddLoginInfo.Succeeded)
                     return RedirectToAction("Index", "Home");
             }
 
@@ -206,6 +206,29 @@ namespace ASP_NET_Identity_Parte_3.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult LoginPorAutenticacaoExterna(string provider)
+        {
+            SignInManager.AuthenticationManager.Challenge(new AuthenticationProperties
+            {
+                RedirectUri = Url.Action("LoginPorAutenticacaoExternaCallback")
+            }, provider);
+
+            return new HttpUnauthorizedResult();
+        }
+
+        public async Task<ActionResult> LoginPorAutenticacaoExternaCallback()
+        {
+            // pegando o login, retornado pelo provider, do usuário
+            var loginInfo = await SignInManager.AuthenticationManager.GetExternalLoginInfoAsync();
+            var signInResultado = await SignInManager.ExternalSignInAsync(loginInfo, true);
+
+            if (signInResultado == SignInStatus.Success)
+                return RedirectToAction("Index", "Home");
+
+            return View("Error");
+        }
+
         public ActionResult EsqueciSenha()
         {
             return View();
@@ -255,7 +278,7 @@ namespace ASP_NET_Identity_Parte_3.Controllers
         [HttpPost]
         public async Task<ActionResult> ConfirmacaoAlteracaoSenha(ContaConfirmacaoAlteracaoSenhaViewModel modelo)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var resultadoAlteracao = await UserManager.ResetPasswordAsync(
                     modelo.UsuarioId,
@@ -263,7 +286,7 @@ namespace ASP_NET_Identity_Parte_3.Controllers
                     modelo.NovaSenha
                     );
 
-                if(resultadoAlteracao.Succeeded)
+                if (resultadoAlteracao.Succeeded)
                 {
                     return RedirectToAction("Index", "Home");
                 }
