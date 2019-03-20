@@ -91,21 +91,49 @@ namespace ASP_NET_Identity_Parte_3
                 Caption = "Google"
             });
 
-            CriarRoles();
+            using (var dbContext = new IdentityDbContext<UserAplication>("DefaultConnection"))
+            {
+                CriarRoles(dbContext);
+                CriarAdministrador(dbContext);
+            }
         }
 
-        private void CriarRoles()
+        private void CriarRoles(IdentityDbContext<UserAplication> dbContext)
         {
-            using (var dbContext = new IdentityDbContext<UserAplication>("DefaultConnection"))
             using (var roleStore = new RoleStore<IdentityRole>(dbContext))
             using (var roleManager = new RoleManager<IdentityRole>(roleStore))
             {
                 if (!roleManager.RoleExists(RolesName.ADMINISTRADOR))
                     roleManager.Create(new IdentityRole(RolesName.ADMINISTRADOR));
+
                 if (!roleManager.RoleExists(RolesName.MODERADOR))
                     roleManager.Create(new IdentityRole(RolesName.MODERADOR));
             }
 
+        }
+
+        private void CriarAdministrador(IdentityDbContext<UserAplication> dbContext)
+        {
+            using (var userSotre = new UserStore<UserAplication>(dbContext))
+            using (var userManager = new UserManager<UserAplication>(userSotre))
+            {
+                var admEmail = ConfigurationManager.AppSettings["admin:email"];
+                // não posso usar ASYNC em uma classe startup
+                var administrador = userManager.FindByEmail(admEmail);
+
+                if (administrador != null)
+                    return;
+
+                administrador = new UserAplication();
+
+                administrador.Email = admEmail;
+                administrador.EmailConfirmed = true;
+                administrador.UserName = ConfigurationManager.AppSettings["admin:user_name"];
+                userManager.Create(administrador, ConfigurationManager.AppSettings["admin:senha"]);
+
+                // adicionado o usuário adm na regra ADMINISTRADOR
+                userManager.AddToRole(administrador.Id, RolesName.ADMINISTRADOR);
+            }
         }
     }
 }

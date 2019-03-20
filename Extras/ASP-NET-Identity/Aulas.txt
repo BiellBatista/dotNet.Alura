@@ -123,3 +123,11 @@ ASP.NET Identity parte 3: Autorização, autenticação externa com redes sociais
 	04 - Roles e funções
 		01 - Projeto da aula anterior
 		02 - Criando Roles
+		03 - Criando o Administrador
+		04 - Role de um usuário
+		05 - Classes de roles
+		06 - O que aprendemos?
+		07 - Consolidando seu conhecimento
+	05 - Alterando as roles de um usuário
+		01 - Projeto da aula anterior
+		02 - Listando os usuários para alteralos
