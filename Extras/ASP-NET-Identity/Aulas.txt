@@ -131,3 +131,5 @@ ASP.NET Identity parte 3: Autorização, autenticação externa com redes sociais
 	05 - Alterando as roles de um usuário
 		01 - Projeto da aula anterior
 		02 - Listando os usuários para alteralos
+		03 - Criando a edição de roles de usuários
+		04 - Adicionando roles

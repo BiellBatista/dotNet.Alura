@@ -31,6 +31,20 @@ namespace ASP_NET_Identity_Parte_3
                     return new UserStore<UserAplication>(dbContext);
                 });
 
+            builder.CreatePerOwinContext<RoleStore<IdentityRole>>(
+                (opcoes, contextOwin) =>
+                {
+                    var dbContext = contextOwin.Get<DbContext>();
+                    return new RoleStore<IdentityRole>(dbContext);
+                });
+
+            builder.CreatePerOwinContext<RoleManager<IdentityRole>>(
+                (opcoes, contextOwin) =>
+                {
+                    var roleStore = contextOwin.Get<RoleStore<IdentityRole>>();
+                    return new RoleManager<IdentityRole>(roleStore);
+                });
+
             builder.CreatePerOwinContext<UserManager<UserAplication>>(
                 (opcoes, contextOwin) =>
                 {
