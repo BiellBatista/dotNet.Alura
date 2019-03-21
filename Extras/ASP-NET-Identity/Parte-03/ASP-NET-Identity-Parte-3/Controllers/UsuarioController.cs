@@ -66,9 +66,41 @@ namespace ASP_NET_Identity_Parte_3.Controllers
         public async Task<ActionResult> EditarFuncoes(string id)
         {
             var usuario = await UserManager.FindByIdAsync(id);
-            var modelo = new UsuarioEditarFuncoesViewModel(usuario, );
+            var modelo = new UsuarioEditarFuncoesViewModel(usuario, RoleManager);
 
             return View(modelo);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> EditarFuncoes(UsuarioEditarFuncoesViewModel modelo)
+        {
+            if(ModelState.IsValid)
+            {
+                var usuario = await UserManager.FindByIdAsync(modelo.Id);
+                var rolesUsuario = UserManager.GetRoles(usuario.Id);
+                var resultadoRemoca = await UserManager.RemoveFromRolesAsync(
+                    usuario.Id,
+                    rolesUsuario.ToArray()
+                    );
+
+                if(resultadoRemoca.Succeeded)
+                {
+                    var funcaosSelecionadasPeloAdm = modelo
+                        .Funcoes
+                        .Where(funcao => funcao.Selecionado)
+                        .Select(funcao => funcao.Nome)
+                        .ToArray();
+
+                    var resultadoAdicao = await UserManager.AddToRolesAsync(
+                        usuario.Id,
+                        funcaosSelecionadasPeloAdm);
+
+                    if (resultadoAdicao.Succeeded)
+                        return RedirectToAction("Index");
+                }
+            }
+
+            return View();
         }
     }
 }

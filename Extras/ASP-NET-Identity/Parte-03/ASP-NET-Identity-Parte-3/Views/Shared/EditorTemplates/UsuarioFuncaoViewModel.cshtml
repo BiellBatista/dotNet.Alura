@@ -1,0 +1,19 @@
+﻿@model ASP_NET_Identity_Parte_3.ViewModels.UsuarioFuncaoViewModel
+
+@{
+    Layout = null;
+}
+
+@* View que vão dentro da pasta EditorTemplates, serve para editar um pequeno trecho de uma view e carregam o mesmo nome do trecho que irão editar *@
+
+@Html.HiddenFor(modelo => modelo.Id)
+@Html.HiddenFor(modelo => modelo.Nome)
+
+<tr>
+    <td>
+        @Html.EditorFor(modelo => modelo.Selecionado)
+    </td>
+    <td>
+        @Html.DisplayFor(modelo => modelo.Nome)
+    </td>
+</tr>

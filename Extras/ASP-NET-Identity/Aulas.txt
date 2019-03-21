@@ -133,3 +133,10 @@ ASP.NET Identity parte 3: Autorização, autenticação externa com redes sociais
 		02 - Listando os usuários para alteralos
 		03 - Criando a edição de roles de usuários
 		04 - Adicionando roles
+		05 - Conclusão
+		06 - Projeto final do curso
+		07 - Remover várias roles
+		08 - RoleManager e UserManager
+		09 - O que aprendemos?
+		10 - Consolidando seu conhecimento
+ASP.NET Identity parte 4: Autenticação mais segura com 2 fatores

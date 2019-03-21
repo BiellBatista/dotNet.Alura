@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ASP_NET_Identity_Parte_3.ViewModels
 {
-    public class UsuarioFuncoViewModel
+    public class UsuarioFuncaoViewModel
     {
         public string Id { get; set; }
         public string Nome { get; set; }

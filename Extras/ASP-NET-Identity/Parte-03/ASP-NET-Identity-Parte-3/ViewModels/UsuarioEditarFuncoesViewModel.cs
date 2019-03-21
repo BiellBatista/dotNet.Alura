@@ -15,7 +15,7 @@ namespace ASP_NET_Identity_Parte_3.ViewModels
         public string Email { get; set; }
         public string UserName { get; set; }
 
-        public List<UsuarioFuncoViewModel> Funcoes { get; set; }
+        public List<UsuarioFuncaoViewModel> Funcoes { get; set; }
 
         public UsuarioEditarFuncoesViewModel()
         {
@@ -33,7 +33,7 @@ namespace ASP_NET_Identity_Parte_3.ViewModels
                 .Roles
                 .ToList()
                 .Select(funcao =>
-                    new UsuarioFuncoViewModel {
+                    new UsuarioFuncaoViewModel {
                         Nome = funcao.Name,
                         Id = funcao.Id
                         })
