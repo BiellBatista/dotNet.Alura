@@ -160,3 +160,11 @@ ASP.NET Identity parte 4: Autenticação mais segura com 2 fatores
 	03 - Implementando autenticação de 2 fatores
 		01 - Projeto da aula anterior
 		02 - Implementando autenticação de 2 fatores
+		03 - Registrando provedores
+		04 - O que aprendemos?
+		05 - Enviando SMS
+		06 - Consolidando seu conhecimento
+	04 - Continuando logado com autenticação de 2 fatores
+		01 - Projeto da aula anterior
+		02 - RememberBrowser e IsPersistent com 2 fatores
+		03 - Removendo o cookie TwoFactorRememberBrowserCookie

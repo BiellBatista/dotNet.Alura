@@ -217,10 +217,14 @@ namespace ASP_NET_Identity_Parte_4.Controllers
 
         // o parametro token pega o que vier do botão
         [HttpPost]
-        public async Task<ActionResult> VerificacaoDoisFatores(string token)
+        public async Task<ActionResult> VerificacaoDoisFatores(ContaVerificacaoDoisFatoresViewModel modelo)
         {
             // realizando a verificação de dois fatores
-            var resultado = await SignInManager.TwoFactorSignInAsync("SMS", token, false, false);
+            var resultado = await SignInManager.TwoFactorSignInAsync(
+                "SMS",
+                modelo.Token, 
+                modelo.ContinuarLogado,
+                modelo.LembrarNavegador);
 
             if (resultado == SignInStatus.Success)
                 return RedirectToAction("Index", "Home");

@@ -109,6 +109,7 @@ namespace ASP_NET_Identity_Parte_4
 
             // cookie para verificação de dois fatores
             builder.UseTwoFactorSignInCookie(DefaultAuthenticationTypes.TwoFactorCookie, TimeSpan.FromMinutes(5));
+            builder.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
 
             builder.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions
             {
