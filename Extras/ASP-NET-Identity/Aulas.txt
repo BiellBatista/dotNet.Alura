@@ -144,3 +144,6 @@ ASP.NET Identity parte 4: Autenticação mais segura com 2 fatores
 		01 - Introdução
 		02 - Fatores de autenticacao
 		03 - Pagina de edição de conta
+		04 - 2 fatores com IdentityUser
+		05 - O que aprendemos?
+		06 - Os fatores de autenticação

@@ -316,7 +316,7 @@ namespace ASP_NET_Identity_Parte_4.Controllers
         [HttpPost]
         public async Task<ActionResult> MinhaConta(ContaMinhaContaViewModel modelo)
         {
-
+            return View();
         }
 
         private async Task EnviarEmailDeConfirmacaoAsync(UserAplication usuario)
