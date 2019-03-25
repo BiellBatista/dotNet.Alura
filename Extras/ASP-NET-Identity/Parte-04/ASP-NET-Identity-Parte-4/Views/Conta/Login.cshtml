@@ -1,0 +1,33 @@
+﻿@using Microsoft.Owin.Security
+@model ASP_NET_Identity_Parte_4.ViewModels.ContaLoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary("", new { @classe = "text-danger" })
+
+    @Html.EditorForModel()
+
+    @Html.ActionLink("Esqueci a minha senha", "EsqueciSenha");
+
+    <input type="submit" value="Login" />
+}
+
+@using (Html.BeginForm("LoginPorAutenticacaoExterna", "Conta"))
+{
+    var providerAutenticaocao = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
+
+    if (providerAutenticaocao != null && providerAutenticaocao.Any())
+    {
+        foreach (var provider in providerAutenticaocao)
+        {
+            <button class="btn" type="submit" value="@provider.AuthenticationType" name="provider">@provider.Caption</button>
+        }
+    }
+}

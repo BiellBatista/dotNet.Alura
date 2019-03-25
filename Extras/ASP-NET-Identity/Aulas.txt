@@ -140,3 +140,6 @@ ASP.NET Identity parte 3: Autorização, autenticação externa com redes sociais
 		09 - O que aprendemos?
 		10 - Consolidando seu conhecimento
 ASP.NET Identity parte 4: Autenticação mais segura com 2 fatores
+	01 - O que são fatores de autenticação
+		01 - Introdução
+		02 - Fatores de autenticacao

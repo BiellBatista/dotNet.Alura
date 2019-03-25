@@ -182,5 +182,17 @@ Extra ASP.NET Identity
 		03 - Owin
 		04 - Validações de usuário
 		05 - Serviços de email
-	Parte 2: Autenticação, segurança com lockout
+	Parte 2: Autenticação, segurança com lockout e recuperando a senha de forma segura
 		01 - Login e senha de usuário
+		02 - Usando o SignInManager
+		03 - Função de logoff
+		04 - Função de Lockout
+		05 - Recuperando a senha de forma segura
+	Parte 3: Autorização, autenticação externa com redes sociais
+		01 - Conhecendo os mecanismos de autenticação externa
+		02 - Implementando autenticação externa
+		03 - Configurando autenticação externa
+		04 - Roles e funções
+		05 - Alterando as roles de um usuário
+	Parte 4: Autenticação mais segura com 2 fatores
+		01 - O que são fatores de autenticação
