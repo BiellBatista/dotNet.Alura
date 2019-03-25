@@ -196,3 +196,7 @@ Extra ASP.NET Identity
 		05 - Alterando as roles de um usuário
 	Parte 4: Autenticação mais segura com 2 fatores
 		01 - O que são fatores de autenticação
+		02 - Serviço de envio de SMS
+		03 - Implementando autenticação de 2 fatores
+		04 - Continuando logado com autenticação de 2 fatores
+		05 - SecurityStamp
