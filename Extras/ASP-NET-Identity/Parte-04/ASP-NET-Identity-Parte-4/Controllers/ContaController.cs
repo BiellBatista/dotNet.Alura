@@ -299,6 +299,26 @@ namespace ASP_NET_Identity_Parte_4.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        public async Task<ActionResult> MinhaConta()
+        {
+            var modelo = new ContaMinhaContaViewModel();
+            var usuarioId = HttpContext.User.Identity.GetUserId();
+            var usuario = await UserManager.FindByIdAsync(usuarioId);
+
+            modelo.NomeCompleto = usuario.FullName;
+            modelo.NumeroDeCelular = usuario.PhoneNumber;
+            modelo.HabilitarAutenticacaoDeDoisFatores = usuario.TwoFactorEnabled;
+            modelo.NumeroDeCelularConfirmado = usuario.PhoneNumberConfirmed;
+
+            return View(modelo);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> MinhaConta(ContaMinhaContaViewModel modelo)
+        {
+
+        }
+
         private async Task EnviarEmailDeConfirmacaoAsync(UserAplication usuario)
         {
             var token = await UserManager.GenerateEmailConfirmationTokenAsync(usuario.Id);
