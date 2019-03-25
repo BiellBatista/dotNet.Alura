@@ -102,7 +102,15 @@ namespace ASP_NET_Identity_Parte_4
 
             builder.UseCookieAuthentication(new CookieAuthenticationOptions
             {
-                AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie
+                AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
+                Provider = new CookieAuthenticationProvider
+                {
+                    OnValidateIdentity = SecurityStampValidator
+                    .OnValidateIdentity<UserManager<UserAplication>, UserAplication>(
+                        TimeSpan.FromSeconds(0),
+                        // gerando a função que irá cuida de gerar a identidade do httpContext
+                        (manager, usuario) => manager.CreateIdentityAsync(usuario, DefaultAuthenticationTypes.ApplicationCookie))
+                }
             });
 
             builder.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);

@@ -175,4 +175,10 @@ ASP.NET Identity parte 4: Autenticação mais segura com 2 fatores
 	05 - SecurityStamp
 		01 - Projeto da aula anterior
 		02 - SecurityStamp
-		03 - 
+		03 - Usando o SecurityStampValidator
+		04 - Conclusão
+		05 - Projeto final do curso
+		06 - Alterando o SecurityStamp
+		07 - O que aprendemos?
+		08 - Sobre o SecurityStamp
+		09 - Consolidando seu conhecimento
