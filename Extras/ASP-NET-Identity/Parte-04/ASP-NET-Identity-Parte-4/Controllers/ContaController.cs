@@ -338,6 +338,15 @@ namespace ASP_NET_Identity_Parte_4.Controllers
             return RedirectToAction("MinhaConta");
         }
 
+        [HttpPost]
+        public async Task<ActionResult> DeslogarDeTodosOsLocais()
+        {
+            var userId = HttpContext.User.Identity.GetUserId();
+            await UserManager.UpdateSecurityStampAsync(userId);
+
+            return RedirectToAction("Index", "Home");
+        }
+
         public async Task<ActionResult> MinhaConta()
         {
             var modelo = new ContaMinhaContaViewModel();

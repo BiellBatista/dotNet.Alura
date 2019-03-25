@@ -1,6 +1,8 @@
 ﻿@model ASP_NET_Identity_Parte_4.ViewModels.ContaMinhaContaViewModel
 
 @{
+    /**/
+
     ViewBag.Title = "MinhaConta";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -8,6 +10,11 @@
 <h2>Minha Conta</h2>
 
 @using (Html.BeginForm("EsquecerNavegador", "Conta", FormMethod.Post, new { id = "formulario_esquecer_navegador" }))
+{
+
+}
+
+@using (Html.BeginForm("DeslogarDeTodosOsLocais", "Conta", FormMethod.Post, new { id = "formulario_deslogar_de_todos_os_locais" }))
 {
 
 }
@@ -32,7 +39,8 @@
         <br />
         @Html.EditorFor(modelo => modelo.HabilitarAutenticacaoDeDoisFatores);
         <br />
-        <li><a href="javascript:document.getElementById('formulario_esquecer_navegador').submit()">Esquecer este navegador</a></li>
+        <a href="javascript:document.getElementById('formulario_esquecer_navegador').submit()">Esquecer este navegador</a>
+        <br />
     }
     else
     {
@@ -43,5 +51,7 @@
         @Html.ActionLink("Clique aqui para verificar o token recebido", "VerificacaoCodigoCelular")
     }
 
+    <a href="javascript:document.getElementById('formulario_deslogar_de_todos_os_locais').submit()">Deslogar de todos os locais</a>
+    <br />
     <input type="submit" value="Salvar" class="btn btn-default" />
 }
