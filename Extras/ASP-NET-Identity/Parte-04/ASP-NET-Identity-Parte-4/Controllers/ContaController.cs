@@ -192,6 +192,9 @@ namespace ASP_NET_Identity_Parte_4.Controllers
                         else
                             return SenhaOuUsuarioInvalido();
                         break;
+                    // caso o usuário tenha ativado a verificação de dois fatores
+                    case SignInStatus.RequiresVerification:
+                        return RedirectToAction("VerificacaoDoisFatores");
                     default:
                         SenhaOuUsuarioInvalido();
                         break;
@@ -199,6 +202,29 @@ namespace ASP_NET_Identity_Parte_4.Controllers
             }
 
             return View();
+        }
+
+        public async Task<ActionResult> VerificacaoDoisFatores()
+        {
+            // enviando o SMS de verificação
+            var resultado = await SignInManager.SendTwoFactorCodeAsync("SMS");
+
+            if (resultado)
+                return View();
+            else
+                return View("Error");
+        }
+
+        // o parametro token pega o que vier do botão
+        [HttpPost]
+        public async Task<ActionResult> VerificacaoDoisFatores(string token)
+        {
+            // realizando a verificação de dois fatores
+            var resultado = await SignInManager.TwoFactorSignInAsync("SMS", token, false, false);
+
+            if (resultado == SignInStatus.Success)
+                return RedirectToAction("Index", "Home");
+            return View("Error");
         }
 
         [HttpPost]
@@ -316,7 +342,7 @@ namespace ASP_NET_Identity_Parte_4.Controllers
         [HttpPost]
         public async Task<ActionResult> MinhaConta(ContaMinhaContaViewModel modelo)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 // pegando o Id do usuario que vem no Http
                 var usuarioId = HttpContext.User.Identity.GetUserId();
@@ -325,8 +351,13 @@ namespace ASP_NET_Identity_Parte_4.Controllers
                 usuario.FullName = modelo.NomeCompleto;
                 usuario.PhoneNumber = modelo.NumeroDeCelular;
 
-                if(!usuario.PhoneNumberConfirmed)
+                if (!usuario.PhoneNumberConfirmed)
                     await EnviarSmsDeConfirmacaoAsync(usuario);
+                else
+                {
+                    // ativiando a autenticação de dois fatores
+                    usuario.TwoFactorEnabled = modelo.HabilitarAutenticacaoDeDoisFatores;
+                }
 
                 var resultadoUpdate = await UserManager.UpdateAsync(usuario);
 
@@ -353,7 +384,7 @@ namespace ASP_NET_Identity_Parte_4.Controllers
             // confirmando o número do usuário
             var resultado = await UserManager.ChangePhoneNumberAsync(usuarioId, usuario.PhoneNumber, token);
 
-            if(resultado.Succeeded)
+            if (resultado.Succeeded)
                 return RedirectToAction("Index", "Home");
 
             AdicionaErros(resultado);

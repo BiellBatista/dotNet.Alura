@@ -15,6 +15,7 @@ using System.Data.Entity;
 
 namespace ASP_NET_Identity_Parte_4
 {
+    // quando fala de cookie, eu mexo aqui
     public class Sartup
     {
         public void Configuration(IAppBuilder builder)
@@ -44,6 +45,7 @@ namespace ASP_NET_Identity_Parte_4
                     return new RoleManager<IdentityRole>(roleStore);
                 });
 
+            // essa função gera o UserManager
             builder.CreatePerOwinContext<UserManager<UserAplication>>(
                 (opcoes, contextOwin) =>
                 {
@@ -66,6 +68,15 @@ namespace ASP_NET_Identity_Parte_4
                     userManager.EmailService = new EmailServico();
                     // configurando o serviço de SMS
                     userManager.SmsService = new SMSServico();
+
+                    // configurando o provider de SMS. O nome dele é "SMS"
+                    userManager.RegisterTwoFactorProvider(
+                        "SMS",
+                        new PhoneNumberTokenProvider<UserAplication>
+                        {
+                            // o {0} é o único argumento necessário, o mesmo será substituido por algum token gerado pelo provider
+                            MessageFormat = "Código de autenticação: {0}"
+                        });
 
                     var dataProtectionProvider = opcoes.DataProtectionProvider;
                     var dataProtectionProvidresCreated = dataProtectionProvider.Create("ByteBank.Forum");
@@ -95,6 +106,9 @@ namespace ASP_NET_Identity_Parte_4
             });
 
             builder.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
+
+            // cookie para verificação de dois fatores
+            builder.UseTwoFactorSignInCookie(DefaultAuthenticationTypes.TwoFactorCookie, TimeSpan.FromMinutes(5));
 
             builder.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions
             {

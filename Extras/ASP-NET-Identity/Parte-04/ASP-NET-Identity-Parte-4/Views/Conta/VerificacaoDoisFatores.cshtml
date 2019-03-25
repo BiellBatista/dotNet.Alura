@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "VerificacaoDoisFatores";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Verificacao de SMS</h2>
+
+@Html.ValidationSummary()
+
+@using (Html.BeginForm())
+{
+    <label>Token de SMS: </label>
+    // o botão enviar irá mandar o valor com o nome "token" como parametro
+    <input type="text" name="token" />
+
+    <input type="submit" value="Enviar" />
+}
