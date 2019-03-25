@@ -329,6 +329,15 @@ namespace ASP_NET_Identity_Parte_4.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        [HttpPost]
+        public ActionResult EsquecerNavegador()
+        {
+            // limpando o cookie do navegador, para o sistema esquecer o cookie
+            AutenticationManager.SignOut(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
+
+            return RedirectToAction("MinhaConta");
+        }
+
         public async Task<ActionResult> MinhaConta()
         {
             var modelo = new ContaMinhaContaViewModel();
