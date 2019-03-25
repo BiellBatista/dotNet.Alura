@@ -153,3 +153,10 @@ ASP.NET Identity parte 4: Autenticação mais segura com 2 fatores
 		01 - Projeto da aula anterior
 		02 - Twilio e confirmacao de celular por SMS
 		03 - Confirmando o token recebido por SMS
+		04 - Confirmando número de celular
+		05 - O que aprendemos?
+		06 - O método ChangePhoneNumber
+		07 - Consolidando seu conhecimento
+	03 - Implementando autenticação de 2 fatores
+		01 - Projeto da aula anterior
+		02 - Implementando autenticação de 2 fatores

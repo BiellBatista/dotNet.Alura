@@ -339,6 +339,28 @@ namespace ASP_NET_Identity_Parte_4.Controllers
             return View();
         }
 
+        public ActionResult VerificacaoCodigoCelular()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> VerificacaoCodigoCelular(string token)
+        {
+            var usuarioId = HttpContext.User.Identity.GetUserId();
+            var usuario = await UserManager.FindByIdAsync(usuarioId);
+
+            // confirmando o número do usuário
+            var resultado = await UserManager.ChangePhoneNumberAsync(usuarioId, usuario.PhoneNumber, token);
+
+            if(resultado.Succeeded)
+                return RedirectToAction("Index", "Home");
+
+            AdicionaErros(resultado);
+
+            return View();
+        }
+
         private async Task EnviarSmsDeConfirmacaoAsync(UserAplication user)
         {
             var tokenDeConfirmacao = await UserManager.GenerateChangePhoneNumberTokenAsync(user.Id, user.PhoneNumber);
