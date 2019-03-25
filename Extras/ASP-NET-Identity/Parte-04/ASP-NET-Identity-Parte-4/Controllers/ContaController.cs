@@ -316,7 +316,34 @@ namespace ASP_NET_Identity_Parte_4.Controllers
         [HttpPost]
         public async Task<ActionResult> MinhaConta(ContaMinhaContaViewModel modelo)
         {
+            if(ModelState.IsValid)
+            {
+                // pegando o Id do usuario que vem no Http
+                var usuarioId = HttpContext.User.Identity.GetUserId();
+                var usuario = await UserManager.FindByIdAsync(usuarioId);
+
+                usuario.FullName = modelo.NomeCompleto;
+                usuario.PhoneNumber = modelo.NumeroDeCelular;
+
+                if(!usuario.PhoneNumberConfirmed)
+                    await EnviarSmsDeConfirmacaoAsync(usuario);
+
+                var resultadoUpdate = await UserManager.UpdateAsync(usuario);
+
+                if (resultadoUpdate.Succeeded)
+                    return RedirectToAction("Index", "Home");
+
+                AdicionaErros(resultadoUpdate);
+            }
+
             return View();
+        }
+
+        private async Task EnviarSmsDeConfirmacaoAsync(UserAplication user)
+        {
+            var tokenDeConfirmacao = await UserManager.GenerateChangePhoneNumberTokenAsync(user.Id, user.PhoneNumber);
+
+            await UserManager.SendSmsAsync(user.Id, $"Token de confirmação: {tokenDeConfirmacao}");
         }
 
         private async Task EnviarEmailDeConfirmacaoAsync(UserAplication usuario)

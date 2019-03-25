@@ -64,6 +64,8 @@ namespace ASP_NET_Identity_Parte_4
                     };
 
                     userManager.EmailService = new EmailServico();
+                    // configurando o serviço de SMS
+                    userManager.SmsService = new SMSServico();
 
                     var dataProtectionProvider = opcoes.DataProtectionProvider;
                     var dataProtectionProvidresCreated = dataProtectionProvider.Create("ByteBank.Forum");
