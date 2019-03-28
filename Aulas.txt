@@ -271,3 +271,4 @@ Formação Desenvolvedor .NET
 		08 - Recuperando objetos relacionados
 	Asp.NET Core: Uma webapp usando o padrão MVC
 		01 - Transformando a aplicação em um servidor web
+		02 - Atendendo requisições diferentes
