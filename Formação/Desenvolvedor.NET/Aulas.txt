@@ -1,0 +1,7 @@
+Asp.NET Core: Uma webapp usando o padrão MVC
+	01 - Transformando a aplicação em um servidor web
+		01 - Visão Geral do Curso
+		02 - O que vou aprender?
+		03 - Ambiente e aplicação inicial
+		04 - Preparando o ambiente
+		05 - Nossa aplicação na Web

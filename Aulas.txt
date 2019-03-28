@@ -200,3 +200,74 @@ Extra ASP.NET Identity
 		03 - Implementando autenticação de 2 fatores
 		04 - Continuando logado com autenticação de 2 fatores
 		05 - SecurityStamp
+-------------------------------------------------------------------------------------------------------------------------
+Formação Desenvolvedor .NET
+	Curso C# Parte 1: Primeiros Passos
+		01 - História e ecossistema da linguagem
+		02 - Nosso primeiro programa e o Visual Studio
+		03 - Variáveis numéricas
+		04 - Variáveis de texto
+		05 - Controle de fluxo com IF
+		06 - Controle de fluxo com laços de repetição
+	Curso C# Parte 2: Introdução à Orientação a Objetos
+		01 - Nossa primeira classe
+		02 - Tipos
+		03 - Comportamentos de classes
+		04 - Namespace e composição e null
+		05 - Propriedades
+		06 - Construtores e membros estáticos
+	Curso C# Parte 3 - Entendendo Herança e Interface
+		01 - Conhecendo o problema do cliente
+		02 - Herança
+		03 - Construtores e protected
+		04 - Mais herança e herança múltipla
+		05 - Interfaces
+	Curso C# Parte 4 - Entendendo exceções
+		01 - Primeiros passos com exceções
+		02 - Tratamento de exceções
+		03 - ArgumentException ParamName e nameof
+		04 - Criando exceções ricas
+		05 - StackTrace e InnerException
+		06 - Finally e using
+	Curso C# Parte 5 - Bibliotecas DLLs, documentação e usando o NuGet
+		01 - Projeto de biblioteca
+		02 - Modificadores de acesso em bibliotecas
+		03 - Referencia de DLL
+		04 - Documentando
+		05 - NuGet
+	Curso C# Parte 6 - Strings, expressões regulares e a classe Object
+		01 - Mais sobre a String
+		02 - Métodos e propriedades
+		03 - Mais métodos de manipulação
+		04 - Expressões regulares
+		05 - Classe Object
+	Curso C# Parte 7 - Array e tipos genéricos
+		01 - Conhecendo Array
+		02 - Criando nossa Lista
+		03 - Criando o método Remover
+		04 - Indexadores e argumentos params
+		05 - Começando com genéricos
+	Curso C# Parte 8 - List<T>, lambda, linq
+		01 - ListT e métodos de extensão
+		02 - Método de extensão genérico
+		03 - Usando VAR e método Sort
+		04 - IComparable e IComparer
+		05 - OrderBy e expressões Lambda
+		06 - Linq e operador Where
+	Curso C# Parte 9 - Entrada e saída (I/O) com streams
+		01 - Lendo arquivos de texto
+		02 - Mais FileStream e leitor StreamReader
+		03 - Fazendo parse e StreamWriter
+		04 - O Flush e arquivos binarios
+		05 - Streams da Console
+	Entity Framework Core: Banco de dados de forma eficiente
+		01 - Introdução ao Entity Framework Core
+		02 - Manipulando objetos
+		03 - Como o Entity monta o SQL?
+		04 - Sincronizando o banco de dados com o modelo de classes
+		05 - Relacionamentos Um para Muitos no Entity
+		06 - Relacionamentos Muitos para Muitos no Entity
+		07 - Relacionamentos Um para Um no Entity
+		08 - Recuperando objetos relacionados
+	Asp.NET Core: Uma webapp usando o padrão MVC
+		01 - Transformando a aplicação em um servidor web
