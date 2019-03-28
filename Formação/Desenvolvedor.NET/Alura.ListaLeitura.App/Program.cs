@@ -1,5 +1,6 @@
 ﻿using Alura.ListaLeitura.App.Negocio;
 using Alura.ListaLeitura.App.Repositorio;
+using Microsoft.AspNetCore.Hosting;
 using System;
 
 namespace Alura.ListaLeitura.App
@@ -9,10 +10,18 @@ namespace Alura.ListaLeitura.App
         static void Main(string[] args)
         {
             var _repo = new LivroRepositorioCSV();
+            /*
+             * A classe WebHostBuilder é responsável por criar um hospedeiro para a aplicação
+             */
+            IWebHost host = new WebHostBuilder()
+                .UseKestrel() // falando para construir uma implementação do UseKestrel (servidor)
+                .UseStartup<Startup>()
+                .Build(); // levantando o hospedeiro
+            host.Run(); // subindo o servidor
 
-            ImprimeLista(_repo.ParaLer);
-            ImprimeLista(_repo.Lendo);
-            ImprimeLista(_repo.Lidos);
+            //ImprimeLista(_repo.ParaLer);
+            //ImprimeLista(_repo.Lendo);
+            //ImprimeLista(_repo.Lidos);
         }
 
         static void ImprimeLista(ListaDeLeitura lista)

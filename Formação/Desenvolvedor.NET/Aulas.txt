@@ -5,3 +5,4 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 		03 - Ambiente e aplicação inicial
 		04 - Preparando o ambiente
 		05 - Nossa aplicação na Web
+		06 - Uma resposta padrão
