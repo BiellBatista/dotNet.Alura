@@ -1,31 +1,31 @@
-Curso C# Parte 1: Primeiros Passos
+Curso C# Parte 1: Primeiros Passos (Curso feito em 01-Desenvolvedor-CSharp)
 	01 - História e ecossistema da linguagem
 	02 - Nosso primeiro programa e o Visual Studio
 	03 - Variáveis numéricas
 	04 - Variáveis de texto
 	05 - Controle de fluxo com IF
 	06 - Controle de fluxo com laços de repetição
-Curso C# Parte 2: Introdução à Orientação a Objetos
+Curso C# Parte 2: Introdução à Orientação a Objetos (Curso feito em 01-Desenvolvedor-CSharp)
 	01 - Nossa primeira classe
 	02 - Tipos
 	03 - Comportamentos de classes
 	04 - Namespace e composição e null
 	05 - Propriedades
 	06 - Construtores e membros estáticos
-Curso C# Parte 3 - Entendendo Herança e Interface
+Curso C# Parte 3 - Entendendo Herança e Interface (Curso feito em 01-Desenvolvedor-CSharp)
 	01 - Conhecendo o problema do cliente
 	02 - Herança
 	03 - Construtores e protected
 	04 - Mais herança e herança múltipla
 	05 - Interfaces
-Curso C# Parte 4 - Entendendo exceções
+Curso C# Parte 4 - Entendendo exceções (Curso feito em 01-Desenvolvedor-CSharp)
 	01 - Primeiros passos com exceções
 	02 - Tratamento de exceções
 	03 - ArgumentException ParamName e nameof
 	04 - Criando exceções ricas
 	05 - StackTrace e InnerException
 	06 - Finally e using
-Entity Framework Core: Banco de dados de forma eficiente
+Entity Framework Core: Banco de dados de forma eficiente (Curso feito em 05-Desenvolvedor-Net-Entity-Framework)
 	01 - Introdução ao Entity Framework Core
 	02 - Manipulando objetos
 	03 - Como o Entity monta o SQL?
