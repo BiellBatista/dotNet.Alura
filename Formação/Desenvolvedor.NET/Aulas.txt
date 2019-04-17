@@ -83,3 +83,4 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 	02 - Atendendo requisições diferentes
 		01 - A propriedade Request
 		02 - Alterando código de retorno
+		03 - Melhorando a lógica de tratamento de requisições

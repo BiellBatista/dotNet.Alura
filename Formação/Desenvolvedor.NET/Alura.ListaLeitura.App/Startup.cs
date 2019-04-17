@@ -32,7 +32,7 @@ namespace Alura.ListaLeitura.App
 
             if(caminhosAtendidos.ContainsKey(context.Request.Path))
                 return context.Response.WriteAsync(caminhosAtendidos[context.Request.Path]);
-
+            context.Response.StatusCode = 404; // adicionado um código de erro (404) para página não encontrada. Posso colocar qualquer coisa
             return context.Response.WriteAsync("Caminho não encontrado");
         }
 
