@@ -98,3 +98,5 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 		04 - Ajuda dos universitários
 		05 - Produtos de uma categoria
 		06 - Exibindo os detalhes de um livro
+		07 - O que aprendemos
+		08 - 

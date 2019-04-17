@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Alura.ListaLeitura.App
@@ -27,6 +28,7 @@ namespace Alura.ListaLeitura.App
             builder.MapRoute("Livros/Lendo", LivrosLendo); //para cada rota que quero atender, chamo o método MapRoute()
             builder.MapRoute("Livros/Lidos", LivrosLidos); //para cada rota que quero atender, chamo o método MapRoute()
             builder.MapRoute("Cadastro/NovoLivro/{nome}/{autor}", NovoLivroParaLer); //criando uma rota com template.
+            builder.MapRoute("Livros/Detalhes/{id:int}", ExibeDetalhes); //criando uma rota com template que aceite apenas int como parametro. Assim, o servido não atenden esta chamada e evita erros 500, pois não haverá erro na hora de converter uma string para um inteiro
             // Rota com template segue o padrão Cadastro/NovoLivro/{nome}/{autor}, onde os valores entre {} são argumentos
 
             var rotas = builder.Build(); //construindo as rotas. O método Build() é usado para construir objetos complexos
@@ -38,6 +40,15 @@ namespace Alura.ListaLeitura.App
              */
             //app.Run(LivrosParaLer); //execute o método LivrosParaLer. Um RequestDelegate é um método que tem como retorno um Task
             //app.Run(Roteamento); //minha rota
+        }
+
+        private Task ExibeDetalhes(HttpContext context)
+        {
+            int id = Convert.ToInt32(context.GetRouteValue("id"));
+            var repo = new LivroRepositorioCSV();
+            var livro = repo.Todos.First(l => l.Id == id);
+
+            return context.Response.WriteAsync(livro.Detalhes());
         }
 
         public Task NovoLivroParaLer(HttpContext context)
