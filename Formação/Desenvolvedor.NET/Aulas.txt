@@ -84,4 +84,12 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 		01 - A propriedade Request
 		02 - Alterando código de retorno
 		03 - Melhorando a lógica de tratamento de requisições
-		06 - Route 66
+		04 - Route 66
+		05 - VIP: Very Important Properties
+		06 - Respondendo uma requisição
+		07 - Para saber mais: HttpRequest
+		08 - O que aprendemos
+		09 - Consolidando os conhecimentos
+		10 - Projeto da aula atual
+	03 - Usando o serviço de roteamento do AspNet Core
+		01 - Incluindo um livro para ler
