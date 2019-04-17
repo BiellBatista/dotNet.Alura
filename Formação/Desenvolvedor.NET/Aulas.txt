@@ -93,3 +93,5 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 		10 - Projeto da aula atual
 	03 - Usando o serviço de roteamento do AspNet Core
 		01 - Incluindo um livro para ler
+		02 - O que está faltando?
+		03 - Rotas com template

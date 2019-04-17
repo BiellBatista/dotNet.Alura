@@ -1,6 +1,8 @@
 ﻿using Alura.ListaLeitura.App.Repositorio;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -8,14 +10,30 @@ namespace Alura.ListaLeitura.App
 {
     public class Startup
     {
+        // Os parametros IXXXX serve para passar a responsabilidade de criação para o ASP.NET Core. Injeção de depedência
+        public void ConfigureServices(IServiceCollection services)
+        {
+            // falando que a aplicação usa o serviço de roteamento nativo do ASP.NET Core
+            services.AddRouting();
+        }
+
         public void Configure(IApplicationBuilder app)
         {
+            var builder = new RouteBuilder(app); //criando o objeto complexo de rotas
+            //configurando as rotas
+            builder.MapRoute("Livros/ParaLer", LivrosParaLer); //para cada rota que quero atender, chamo o método MapRoute()
+            builder.MapRoute("Livros/Lendo", LivrosLendo); //para cada rota que quero atender, chamo o método MapRoute()
+            builder.MapRoute("Livros/Lidos", LivrosLidos); //para cada rota que quero atender, chamo o método MapRoute()
+
+            var rotas = builder.Build(); //construindo as rotas. O método Build() é usado para construir objetos complexos
+            app.UseRouter(rotas); //usando a rota nativa do Core e deixando a minha rota de lado
+
             /*
              * A sequência de requisição e resposta é chamada de, no .CORE, RequestPipeline
              * A interface IApplicationBuilder é responsável por fazer o pipeline
              */
             //app.Run(LivrosParaLer); //execute o método LivrosParaLer. Um RequestDelegate é um método que tem como retorno um Task
-            app.Run(Roteamento);
+            //app.Run(Roteamento); //minha rota
         }
 
         // qualquer requisição realizada no browser, irá passar pelo roteador
