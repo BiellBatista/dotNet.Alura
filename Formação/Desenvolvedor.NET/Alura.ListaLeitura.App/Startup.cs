@@ -23,17 +23,42 @@ namespace Alura.ListaLeitura.App
         public Task Roteamento(HttpContext context)
         {
             var _repo = new LivroRepositorioCSV();
-            var caminhosAtendidos = new Dictionary<string, string>
+            //var caminhosAtendidos = new Dictionary<string, string>
+            //{
+            //    {"/Livros/ParaLer", _repo.ParaLer.ToString() },
+            //    {"/Livros/Lendo", _repo.Lendo.ToString() },
+            //    {"/Livros/Lidos", _repo.Lidos.ToString() }
+            //};
+
+            var caminhosAtendidos = new Dictionary<string, RequestDelegate>
             {
-                {"/Livros/ParaLer", _repo.ParaLer.ToString() },
-                {"/Livros/Lendo", _repo.Lendo.ToString() },
-                {"/Livros/Lidos", _repo.Lidos.ToString() }
+                {"/Livros/ParaLer", LivrosParaLer },
+                {"/Livros/Lendo", LivrosLendo },
+                {"/Livros/Lidos", LivrosLidos }
             };
 
-            if(caminhosAtendidos.ContainsKey(context.Request.Path))
-                return context.Response.WriteAsync(caminhosAtendidos[context.Request.Path]);
+            if (caminhosAtendidos.ContainsKey(context.Request.Path))
+            {
+                var metodo = caminhosAtendidos[context.Request.Path];
+                return metodo.Invoke(context); //invocando um método delegate e passando o contexto (ambiente do usuário) para ele saber onde irá a resposta
+                //return context.Response.WriteAsync(caminhosAtendidos[context.Request.Path]);
+            }
             context.Response.StatusCode = 404; // adicionado um código de erro (404) para página não encontrada. Posso colocar qualquer coisa
             return context.Response.WriteAsync("Caminho não encontrado");
+        }
+
+        public Task LivrosLendo(HttpContext context)
+        {
+            // esrevendo a lista de livros
+            var _repo = new LivroRepositorioCSV();
+            return context.Response.WriteAsync(_repo.Lendo.ToString());
+        }
+
+        public Task LivrosLidos(HttpContext context)
+        {
+            // esrevendo a lista de livros
+            var _repo = new LivroRepositorioCSV();
+            return context.Response.WriteAsync(_repo.Lidos.ToString());
         }
 
         // Toda informação do HTTP é encapsulada na calsse HttpContext
