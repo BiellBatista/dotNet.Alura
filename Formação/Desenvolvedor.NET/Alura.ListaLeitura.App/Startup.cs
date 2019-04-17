@@ -31,6 +31,7 @@ namespace Alura.ListaLeitura.App
             builder.MapRoute("Livros/Detalhes/{id:int}", ExibeDetalhes); //criando uma rota com template que aceite apenas int como parametro. Assim, o servido não atenden esta chamada e evita erros 500, pois não haverá erro na hora de converter uma string para um inteiro
             // Rota com template segue o padrão Cadastro/NovoLivro/{nome}/{autor}, onde os valores entre {} são argumentos
             builder.MapRoute("Cadastro/NovoLivro", ExibeFormulario);
+            builder.MapRoute("Cadastro/Incluir", ProcessaFormulario);
 
             var rotas = builder.Build(); //construindo as rotas. O método Build() é usado para construir objetos complexos
             app.UseRouter(rotas); //usando a rota nativa do Core e deixando a minha rota de lado
@@ -43,13 +44,27 @@ namespace Alura.ListaLeitura.App
             //app.Run(Roteamento); //minha rota
         }
 
+        private Task ProcessaFormulario(HttpContext context)
+        {
+            var livro = new Livro()
+            {
+                Titulo = context.Request.Query["titulo"].First(), //pegando o valor da queryString (?titulo=X)
+                Autor = context.Request.Query["autor"].First() //pegando o valor da queryString (?titulo=X&autor=X)
+            };
+            var repo = new LivroRepositorioCSV();
+
+            repo.Incluir(livro);
+
+            return context.Response.WriteAsync("O livro foi adicionado com sucesso");
+        }
+
         private Task ExibeFormulario(HttpContext context)
         {
             var html = @"
                     <html>
-                        <form>
-                            <input />
-                            <input />
+                        <form action='/Cadastro/Incluir'>
+                            <input name='titulo' />
+                            <input name='autor' />
                             <button>Gravar</button>
                         </form>
                     </html>";

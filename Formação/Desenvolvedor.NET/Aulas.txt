@@ -104,3 +104,5 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 	04 - Melhorando a experiência do usuário com HTML
 		01 - Um formulário para entrada de dados
 		02 - Processando o formulário
+		03 - Recuperando informações do formulário
+		04 - Isolando o HTML em seu próprio arquivo
