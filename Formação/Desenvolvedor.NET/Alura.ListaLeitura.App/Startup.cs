@@ -30,6 +30,7 @@ namespace Alura.ListaLeitura.App
             builder.MapRoute("Cadastro/NovoLivro/{nome}/{autor}", NovoLivroParaLer); //criando uma rota com template.
             builder.MapRoute("Livros/Detalhes/{id:int}", ExibeDetalhes); //criando uma rota com template que aceite apenas int como parametro. Assim, o servido não atenden esta chamada e evita erros 500, pois não haverá erro na hora de converter uma string para um inteiro
             // Rota com template segue o padrão Cadastro/NovoLivro/{nome}/{autor}, onde os valores entre {} são argumentos
+            builder.MapRoute("Cadastro/NovoLivro", ExibeFormulario);
 
             var rotas = builder.Build(); //construindo as rotas. O método Build() é usado para construir objetos complexos
             app.UseRouter(rotas); //usando a rota nativa do Core e deixando a minha rota de lado
@@ -40,6 +41,20 @@ namespace Alura.ListaLeitura.App
              */
             //app.Run(LivrosParaLer); //execute o método LivrosParaLer. Um RequestDelegate é um método que tem como retorno um Task
             //app.Run(Roteamento); //minha rota
+        }
+
+        private Task ExibeFormulario(HttpContext context)
+        {
+            var html = @"
+                    <html>
+                        <form>
+                            <input />
+                            <input />
+                            <button>Gravar</button>
+                        </form>
+                    </html>";
+
+            return context.Response.WriteAsync(html);
         }
 
         private Task ExibeDetalhes(HttpContext context)

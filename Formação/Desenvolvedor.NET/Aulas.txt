@@ -99,4 +99,8 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 		05 - Produtos de uma categoria
 		06 - Exibindo os detalhes de um livro
 		07 - O que aprendemos
-		08 - 
+		08 - Consolidando os conhecimentos
+		09 - Projeto da aula atual
+	04 - Melhorando a experiência do usuário com HTML
+		01 - Um formulário para entrada de dados
+		02 - Processando o formulário
