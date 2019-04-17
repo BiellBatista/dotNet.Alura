@@ -1,8 +1,10 @@
-﻿using Alura.ListaLeitura.App.Repositorio;
+﻿using Alura.ListaLeitura.App.Negocio;
+using Alura.ListaLeitura.App.Repositorio;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -24,6 +26,8 @@ namespace Alura.ListaLeitura.App
             builder.MapRoute("Livros/ParaLer", LivrosParaLer); //para cada rota que quero atender, chamo o método MapRoute()
             builder.MapRoute("Livros/Lendo", LivrosLendo); //para cada rota que quero atender, chamo o método MapRoute()
             builder.MapRoute("Livros/Lidos", LivrosLidos); //para cada rota que quero atender, chamo o método MapRoute()
+            builder.MapRoute("Cadastro/NovoLivro/{nome}/{autor}", NovoLivroParaLer); //criando uma rota com template.
+            // Rota com template segue o padrão Cadastro/NovoLivro/{nome}/{autor}, onde os valores entre {} são argumentos
 
             var rotas = builder.Build(); //construindo as rotas. O método Build() é usado para construir objetos complexos
             app.UseRouter(rotas); //usando a rota nativa do Core e deixando a minha rota de lado
@@ -34,6 +38,20 @@ namespace Alura.ListaLeitura.App
              */
             //app.Run(LivrosParaLer); //execute o método LivrosParaLer. Um RequestDelegate é um método que tem como retorno um Task
             //app.Run(Roteamento); //minha rota
+        }
+
+        public Task NovoLivroParaLer(HttpContext context)
+        {
+            var livro = new Livro()
+            {
+                Titulo = context.GetRouteValue("nome").ToString(), //pegando o primeiro valor da rota
+                Autor = context.GetRouteValue("autor").ToString() //pegando o segundo valor da rota
+            };
+            var repo = new LivroRepositorioCSV();
+
+            repo.Incluir(livro);
+
+            return context.Response.WriteAsync("O livro foi adicionado com sucesso");
         }
 
         // qualquer requisição realizada no browser, irá passar pelo roteador

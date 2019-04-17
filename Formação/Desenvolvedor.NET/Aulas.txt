@@ -95,3 +95,6 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 		01 - Incluindo um livro para ler
 		02 - O que está faltando?
 		03 - Rotas com template
+		04 - Ajuda dos universitários
+		05 - Produtos de uma categoria
+		06 - Exibindo os detalhes de um livro
