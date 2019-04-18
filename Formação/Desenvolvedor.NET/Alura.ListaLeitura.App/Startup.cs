@@ -146,9 +146,21 @@ namespace Alura.ListaLeitura.App
         // Toda informação do HTTP é encapsulada na calsse HttpContext
         public Task LivrosParaLer(HttpContext context)
         {
-            // esrevendo a lista de livros
+            var html = CarregaArquivoHTML("para-ler");
             var _repo = new LivroRepositorioCSV();
-            return context.Response.WriteAsync(_repo.ParaLer.ToString());
+
+            foreach (var livro in _repo.ParaLer.Livros)
+            {
+                html = html.Replace("#NOVO-ITEM#", $"<li>{livro.Titulo} - {livro.Autor}</li>#NOVO-ITEM#");
+            }
+
+            html = html.Replace("#NOVO-ITEM#", "");
+
+            return context.Response.WriteAsync(html);
+
+            // esrevendo a lista de livros
+            //var _repo = new LivroRepositorioCSV();
+            //return context.Response.WriteAsync(_repo.ParaLer.ToString());
         }
         /*
          * o compilador ignora os modificadores (public, private, protected...) na avaliação de um delegate.

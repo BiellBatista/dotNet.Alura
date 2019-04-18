@@ -110,3 +110,8 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 		06 - Métodos de envio da requisição
 		07 - Sobre os métodos GET e POST
 		08 - Gerando HTML dinamicamente
+		09 - O que aprendemos
+		10 - Consolidando os conhecimentos
+		11 - Projeto da aula atual
+	05 - Organizando a aplicação
+		01 - A classe Startup e suas responsabilidades
