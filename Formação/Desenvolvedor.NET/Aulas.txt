@@ -108,3 +108,5 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 		04 - Isolando o HTML em seu próprio arquivo
 		05 - Mistura problemática
 		06 - Métodos de envio da requisição
+		07 - Sobre os métodos GET e POST
+		08 - Gerando HTML dinamicamente

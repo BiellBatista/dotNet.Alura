@@ -49,8 +49,10 @@ namespace Alura.ListaLeitura.App
         {
             var livro = new Livro()
             {
-                Titulo = context.Request.Query["titulo"].First(), //pegando o valor da queryString (?titulo=X)
-                Autor = context.Request.Query["autor"].First() //pegando o valor da queryString (?titulo=X&autor=X)
+                //Titulo = context.Request.Query["titulo"].First(), //pegando o valor da queryString (?titulo=X)
+                //Autor = context.Request.Query["autor"].First() //pegando o valor da queryString (?titulo=X&autor=X)
+                Titulo = context.Request.Form["titulo"].First(), //pegando o valor na requisição (método POST), é a propriedade FORM que faz isso
+                Autor = context.Request.Form["autor"].First() //pegando o valor na requisição (método POST)
             };
             var repo = new LivroRepositorioCSV();
 
