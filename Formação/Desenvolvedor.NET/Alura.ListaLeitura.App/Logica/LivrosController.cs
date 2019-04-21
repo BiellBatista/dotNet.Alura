@@ -57,13 +57,11 @@ namespace Alura.ListaLeitura.App.Logica
          * Termo usado pelo ASP.NET Core para representar o fluxo que uma requisição HTTP percorre dentro de sua aplicação até que a resposta seja entregue ao cliente.
          * O código que escrevemos nesse pipeline é chamado Middleware.
          */
-        public static Task Detalhes(HttpContext context)
+        public string Detalhes(int id)
         {
-            int id = Convert.ToInt32(context.GetRouteValue("id"));
             var repo = new LivroRepositorioCSV();
             var livro = repo.Todos.First(l => l.Id == id);
-
-            return context.Response.WriteAsync(livro.Detalhes());
+            return livro.Detalhes();
         }
 
         public string Teste()
