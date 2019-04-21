@@ -9,30 +9,34 @@ using System.Threading.Tasks;
 
 namespace Alura.ListaLeitura.App.Logica
 {
-    public class LivrosController
+    public class LivrosController : Controller
     {
         private static string CarregaLista(IEnumerable<Livro> livros)
         {
             var conteudoArquivo = HtmlUtils.CarregaArquivoHTML("para-ler");
-
+            //o foreach está na view (para-ler.cshtml)
             foreach (var livro in livros)
                 conteudoArquivo = conteudoArquivo.Replace("#NOVO-ITEM#", $"<li>{livro.Titulo} - {livro.Autor}</li>#NOVO-ITEM#");
             conteudoArquivo = conteudoArquivo.Replace("#NOVO-ITEM#", "");
             return conteudoArquivo;
         }
 
-        public static Task Lendo(HttpContext context)
+        public IActionResult Lendo()
         {
             // esrevendo a lista de livros
             var _repo = new LivroRepositorioCSV();
-            return context.Response.WriteAsync(_repo.Lendo.ToString());
+            ViewBag.Livros = _repo.Lendo.Livros;
+            return View("para-ler");
+            //return context.Response.WriteAsync(_repo.Lendo.ToString());
         }
 
-        public static Task Lidos(HttpContext context)
+        public IActionResult Lidos()
         {
             // esrevendo a lista de livros
             var _repo = new LivroRepositorioCSV();
-            return context.Response.WriteAsync(_repo.Lidos.ToString());
+            ViewBag.Livros = _repo.Lidos.Livros;
+            return View("para-ler");
+            //return context.Response.WriteAsync(_repo.Lidos.ToString());
         }
 
         // Toda informação do HTTP é encapsulada na calsse HttpContext
@@ -40,8 +44,9 @@ namespace Alura.ListaLeitura.App.Logica
         {
             var _repo = new LivroRepositorioCSV();
             //var html = CarregaLista(_repo.ParaLer.Livros);
-            var html = new ViewResult { ViewName = "para-ler" };
-            return html;
+            ViewBag.Livros = _repo.ParaLer.Livros;
+            //var html = new ViewResult { ViewName = "para-ler" };
+            return View("para-ler");
 
             // esrevendo a lista de livros
             //var _repo = new LivroRepositorioCSV();
