@@ -125,4 +125,6 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 		09 - Projeto da aula atual
 	06 - Introduzindo o AspNet Core MVC
 		01 - Roteamento padrão
-		02 - 
+		02 - Usando o AspNet Core MVC
+		03 - 
+		07 - Para saber mais: A criação da classe de roteamento padrão

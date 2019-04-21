@@ -1,4 +1,4 @@
-﻿using Alura.ListaLeitura.App.Logica;
+﻿using Alura.ListaLeitura.App.Mvc;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,15 +17,16 @@ namespace Alura.ListaLeitura.App
         public void Configure(IApplicationBuilder app)
         {
             var builder = new RouteBuilder(app); //criando o objeto complexo de rotas
+            builder.MapRoute("{classe}/{metodo}", RoteamentoPadrao.TratamentoPadrao); //criando um DefaultHandler (usando reflection) que me permite descatar os demais builder.MapRoute()
             //configurando as rotas (Mapeando as rotas)
-            builder.MapRoute("Livros/ParaLer", LivrosLogica.LivrosParaLer); //para cada rota que quero atender, chamo o método MapRoute()
-            builder.MapRoute("Livros/Lendo", LivrosLogica.LivrosLendo); //para cada rota que quero atender, chamo o método MapRoute()
-            builder.MapRoute("Livros/Lidos", LivrosLogica.LivrosLidos); //para cada rota que quero atender, chamo o método MapRoute()
-            builder.MapRoute("Cadastro/NovoLivro/{nome}/{autor}", CadastroLogica.NovoLivroParaLer); //criando uma rota com template.
-            builder.MapRoute("Livros/Detalhes/{id:int}", LivrosLogica.ExibeDetalhes); //criando uma rota com template que aceite apenas int como parametro. Assim, o servido não atenden esta chamada e evita erros 500, pois não haverá erro na hora de converter uma string para um inteiro
-            // Rota com template segue o padrão Cadastro/NovoLivro/{nome}/{autor}, onde os valores entre {} são argumentos
-            builder.MapRoute("Cadastro/NovoLivro", CadastroLogica.ExibeFormulario);
-            builder.MapRoute("Cadastro/Incluir", CadastroLogica.ProcessaFormulario);
+            //builder.MapRoute("Livros/ParaLer", LivrosLogica.ParaLer); //para cada rota que quero atender, chamo o método MapRoute()
+            //builder.MapRoute("Livros/Lendo", LivrosLogica.Lendo); //para cada rota que quero atender, chamo o método MapRoute()
+            //builder.MapRoute("Livros/Lidos", LivrosLogica.Lidos); //para cada rota que quero atender, chamo o método MapRoute()
+            //builder.MapRoute("Cadastro/NovoLivro/{nome}/{autor}", CadastroLogica.NovoLivro); //criando uma rota com template.
+            //builder.MapRoute("Livros/Detalhes/{id:int}", LivrosLogica.Detalhes); //criando uma rota com template que aceite apenas int como parametro. Assim, o servido não atenden esta chamada e evita erros 500, pois não haverá erro na hora de converter uma string para um inteiro
+            //// Rota com template segue o padrão Cadastro/NovoLivro/{nome}/{autor}, onde os valores entre {} são argumentos
+            //builder.MapRoute("Cadastro/ExibeFormulario", CadastroLogica.ExibeFormulario);
+            //builder.MapRoute("Cadastro/Incluir", CadastroLogica.Incluir);
 
             var rotas = builder.Build(); //construindo as rotas. O método Build() é usado para construir objetos complexos
             app.UseRouter(rotas); //usando a rota nativa do Core e deixando a minha rota de lado

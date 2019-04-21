@@ -18,17 +18,18 @@ namespace Alura.ListaLeitura.App.Logica
 
             foreach (var livro in livros)
                 conteudoArquivo = conteudoArquivo.Replace("#NOVO-ITEM#", $"<li>{livro.Titulo} - {livro.Autor}</li>#NOVO-ITEM#");
+            conteudoArquivo = conteudoArquivo.Replace("#NOVO-ITEM#", "");
             return conteudoArquivo;
         }
 
-        public static Task LivrosLendo(HttpContext context)
+        public static Task Lendo(HttpContext context)
         {
             // esrevendo a lista de livros
             var _repo = new LivroRepositorioCSV();
             return context.Response.WriteAsync(_repo.Lendo.ToString());
         }
 
-        public static Task LivrosLidos(HttpContext context)
+        public static Task Lidos(HttpContext context)
         {
             // esrevendo a lista de livros
             var _repo = new LivroRepositorioCSV();
@@ -36,7 +37,7 @@ namespace Alura.ListaLeitura.App.Logica
         }
 
         // Toda informação do HTTP é encapsulada na calsse HttpContext
-        public static Task LivrosParaLer(HttpContext context)
+        public static Task ParaLer(HttpContext context)
         {
             var _repo = new LivroRepositorioCSV();
             var html = CarregaLista(_repo.ParaLer.Livros);
@@ -55,13 +56,18 @@ namespace Alura.ListaLeitura.App.Logica
          * Termo usado pelo ASP.NET Core para representar o fluxo que uma requisição HTTP percorre dentro de sua aplicação até que a resposta seja entregue ao cliente.
          * O código que escrevemos nesse pipeline é chamado Middleware.
          */
-        public static Task ExibeDetalhes(HttpContext context)
+        public static Task Detalhes(HttpContext context)
         {
             int id = Convert.ToInt32(context.GetRouteValue("id"));
             var repo = new LivroRepositorioCSV();
             var livro = repo.Todos.First(l => l.Id == id);
 
             return context.Response.WriteAsync(livro.Detalhes());
+        }
+
+        public static Task Teste(HttpContext context)
+        {
+            return context.Response.WriteAsync("Nova funcionalidade foi implementada");
         }
     }
 }
