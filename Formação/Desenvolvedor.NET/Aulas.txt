@@ -126,5 +126,6 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 	06 - Introduzindo o AspNet Core MVC
 		01 - Roteamento padrão
 		02 - Usando o AspNet Core MVC
-		03 - 
+		03 - Pré-requisitos do Asp.Net Core MVC
+		04 - O estágio de Model Binding no request pipeline
 		07 - Para saber mais: A criação da classe de roteamento padrão
