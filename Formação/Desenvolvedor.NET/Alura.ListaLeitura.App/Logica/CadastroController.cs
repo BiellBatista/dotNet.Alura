@@ -1,9 +1,6 @@
-﻿using Alura.ListaLeitura.App.HTML;
-using Alura.ListaLeitura.App.Negocio;
+﻿using Alura.ListaLeitura.App.Negocio;
 using Alura.ListaLeitura.App.Repositorio;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 
 namespace Alura.ListaLeitura.App.Logica
 {
@@ -27,7 +24,7 @@ namespace Alura.ListaLeitura.App.Logica
         public IActionResult ExibeFormulario()
         {
             //var html = HtmlUtils.CarregaArquivoHTML("formulario");
-            var html = new ViewResult { ViewName = "formulario.html" }; //classe que representa um resultado do tipo HTML e atribuindo o arquivo do html
+            var html = new ViewResult { ViewName = "formulario" }; //classe que representa um resultado do tipo HTML e atribuindo o arquivo
             return html;
         }
 

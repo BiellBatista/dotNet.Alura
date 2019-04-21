@@ -15,6 +15,7 @@ namespace Alura.ListaLeitura.App
 
         public void Configure(IApplicationBuilder app)
         {
+            app.UseDeveloperExceptionPage();
             app.UseMvcWithDefaultRoute(); //usando o framework MVC com o roteamento padrão. ASsim, não preciso usar as configurações abaixo e precisei mudar as classes de Logica para Controller
             //var builder = new RouteBuilder(app); //criando o objeto complexo de rotas
             //builder.MapRoute("{classe}/{metodo}", RoteamentoPadrao.TratamentoPadrao); //criando um DefaultHandler (usando reflection) que me permite descatar os demais builder.MapRoute()

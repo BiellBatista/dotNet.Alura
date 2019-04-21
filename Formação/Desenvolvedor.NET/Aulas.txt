@@ -138,3 +138,6 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 		02 - Navegador não renderiza
 		03 - Resultados de actions
 		04 - Convenções nas views do AspNet Core MVC
+		05 - PreserveCompilationContext
+		06 - Ajude Roberta a entender as convenções
+		07 - O motor de views Razor

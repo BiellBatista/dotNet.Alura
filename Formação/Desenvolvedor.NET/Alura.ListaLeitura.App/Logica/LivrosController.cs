@@ -2,11 +2,9 @@
 using Alura.ListaLeitura.App.Negocio;
 using Alura.ListaLeitura.App.Repositorio;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Routing;
-using System;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Alura.ListaLeitura.App.Logica
@@ -38,12 +36,12 @@ namespace Alura.ListaLeitura.App.Logica
         }
 
         // Toda informação do HTTP é encapsulada na calsse HttpContext
-        public static Task ParaLer(HttpContext context)
+        public IActionResult ParaLer()
         {
             var _repo = new LivroRepositorioCSV();
-            var html = CarregaLista(_repo.ParaLer.Livros);
-
-            return context.Response.WriteAsync(html);
+            //var html = CarregaLista(_repo.ParaLer.Livros);
+            var html = new ViewResult { ViewName = "para-ler" };
+            return html;
 
             // esrevendo a lista de livros
             //var _repo = new LivroRepositorioCSV();
