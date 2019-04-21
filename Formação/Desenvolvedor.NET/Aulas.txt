@@ -141,3 +141,6 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 		05 - PreserveCompilationContext
 		06 - Ajude Roberta a entender as convenções
 		07 - O motor de views Razor
+		08 - Consolidando os conhecimentos
+		09 - Conclusão
+		10 - Projeto final
