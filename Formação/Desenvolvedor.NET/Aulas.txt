@@ -144,3 +144,9 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 		08 - Consolidando os conhecimentos
 		09 - Conclusão
 		10 - Projeto final
+ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
+	01 - Criando Uma Aplicação com ASP.NET Core
+		01 - Preparando o ambiente
+		02 - Um curso em 2 partes
+		03 - Introdução
+		04 - Criando a Primeira Aplicação

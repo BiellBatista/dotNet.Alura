@@ -277,3 +277,5 @@ Formação Desenvolvedor .NET
 		05 - Organizando a aplicação
 		06 - Introduzindo o AspNet Core MVC
 		07 - Renderização de views no AspNet Core MVC
+	ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
+		01 - Criando Uma Aplicação com ASP.NET Core
