@@ -135,3 +135,6 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 		09 - Projeto da aula atual
 	07 - Renderização de views no AspNet Core MVC
 		01 - O estágio ExecuteResult
+		02 - Navegador não renderiza
+		03 - Resultados de actions
+		04 - Convenções nas views do AspNet Core MVC

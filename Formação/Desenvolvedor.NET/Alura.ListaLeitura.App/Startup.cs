@@ -9,8 +9,8 @@ namespace Alura.ListaLeitura.App
         public void ConfigureServices(IServiceCollection services)
         {
             // falando que a aplicação usa o serviço de roteamento nativo do ASP.NET Core
-            services.AddRouting(); //injentando serviço de roteamento
-            services.AddMvc(); //adicionando o padrão MVC
+            //services.AddRouting(); //injentando serviço de roteamento
+            services.AddMvc(); //adicionando o padrão MVC (ele possui o serviço de roteamento)
         }
 
         public void Configure(IApplicationBuilder app)
