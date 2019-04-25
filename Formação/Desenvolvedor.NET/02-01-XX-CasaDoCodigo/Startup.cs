@@ -14,6 +14,7 @@ namespace _02_01_XX_CasaDoCodigo
             //services.AddTransient<ICatalogo, Catalogo>(); //criando um cerviço temporário (transidório), ou seja, toda fez que for solicitado um serviceProvider.GetService<>(), será instanciado um novo objeto. Passo dois parametros, a interface e o objeto concreto
             //services.AddTransient<IRelatorio, Relatorio>();
 
+            // Objetos com escopo são os mesmos em uma requisições, mas diferentes entre requisições diferentes.
             //services.AddScoped<ICatalogo, Catalogo>(); //criando um serviço de escopo, ou seja, toda fez que for realizado um request, o objeto será instanciado apenas uma vez. Passo dois parametros, a interface e o objeto concreto
             //services.AddScoped<IRelatorio, Relatorio>();
 
