@@ -2,7 +2,7 @@
 
 namespace _02_01_XX_CasaDoCodigo
 {
-    public class Catalogo
+    public class Catalogo : ICatalogo
     {
         public List<Livro> GetLivros()
         {
