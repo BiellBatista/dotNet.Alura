@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using System.Collections.Generic;
 
 namespace _02_01_XX_CasaDoCodigo
 {
@@ -26,9 +23,16 @@ namespace _02_01_XX_CasaDoCodigo
                 app.UseDeveloperExceptionPage();
             }
 
+            var livros = new List<Livro>();
+            livros.Add(new Livro("001", "Quem mexeu na minha query?", 12.99m));
+            livros.Add(new Livro("002", "Fique com o C#", 30.99m));
+            livros.Add(new Livro("003", "Java para Baixinhos", 25.99m));
+
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                foreach(var livro in livros)
+                    //o \r é o return. Ou seja, retorne uma nova linha
+                    await context.Response.WriteAsync($"{livro.Codigo, -10}{livro.Nome, -40}{livro.Preco.ToString("C"), 10}\r\n");
             });
         }
     }
