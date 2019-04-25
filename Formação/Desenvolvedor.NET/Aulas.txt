@@ -154,3 +154,5 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		06 - Separando Responsabilidades
 		07 - Obtendo Adicionando Serviço
 		08 - Ciclos de Vida de Serviços
+		09 - Quando escolher AddTransient, AddScoped ou AddSingleton
+		10 - Criando um Projeto
