@@ -150,3 +150,4 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		02 - Um curso em 2 partes
 		03 - Introdução
 		04 - Criando a Primeira Aplicação
+		05 - Criando Relatório de Livros
