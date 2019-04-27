@@ -158,3 +158,22 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		10 - Criando um Projeto
 	02 - Criando o Projeto ASP NET Core MVC
 		01 - Abrindo o Projeto
+		02 - Conhecendo a View
+		03 - Controller e Model
+		04 - O Padrão MVC
+		05 - Os Componentes do MVC
+		06 - O Arquivo Layout cshtml
+		07 - Compartilhando conteúdo entre as páginas
+		08 - A Página Carrossel
+		09 - Criando uma nova página numa aplicação MVC
+		10 - Modificando a Rota Padrão do MVC
+		11 - Consolidando seu conhecimento
+		12 - O que aprendemos?
+		13 - .NET Core ou .NET Framework? E agora?
+		14 - Contêineres: .NET Core ou .NET Framework?
+		15 - Microsserviços: .NET Core ou .NET Framework?
+		16 - Multiplataforma: .NET Core ou .NET Framework?
+		17 - Projeto da Aula Atual
+		18 - Para saber mais - Bootstrap
+	03 - Banco de Dados
+		01 - Criando o Modelo

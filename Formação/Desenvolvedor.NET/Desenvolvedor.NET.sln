@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-XXAlura.ListaLeitura.App", "Alura.ListaLeitura.App\01-XX-XXAlura.ListaLeitura.App.csproj", "{4C4A24F6-063D-48EE-BBEE-D9A8AAE4AA93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-XX-Alura.ListaLeitura.App", "Alura.ListaLeitura.App\01-XX-XX-Alura.ListaLeitura.App.csproj", "{4C4A24F6-063D-48EE-BBEE-D9A8AAE4AA93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-01-XX-CasaDoCodigo", "02-01-XX-CasaDoCodigo\02-01-XX-CasaDoCodigo.csproj", "{1A55B814-2CD2-4BDE-90F2-EFD13F689E87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-01-XX-CasaDoCodigo", "02-01-XX-CasaDoCodigo\02-01-XX-CasaDoCodigo.csproj", "{1A55B814-2CD2-4BDE-90F2-EFD13F689E87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-XX-CasaDoCodigo", "02-02-XX-CasaDoCodigo\02-02-XX-CasaDoCodigo.csproj", "{E41DE4FE-0887-4873-B5C1-2DCE1A5F81DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-02-XX-CasaDoCodigo", "02-02-XX-CasaDoCodigo\02-02-XX-CasaDoCodigo.csproj", "{E41DE4FE-0887-4873-B5C1-2DCE1A5F81DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

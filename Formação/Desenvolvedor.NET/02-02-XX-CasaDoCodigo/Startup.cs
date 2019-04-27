@@ -58,7 +58,7 @@ namespace _02_02_XX_CasaDoCodigo
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Pedido}/{action=Carrossel}/{id?}");
             });
         }
     }
