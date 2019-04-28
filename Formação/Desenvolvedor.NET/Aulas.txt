@@ -177,3 +177,5 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		18 - Para saber mais - Bootstrap
 	03 - Banco de Dados
 		01 - Criando o Modelo
+		02 - Conectando o Entity Framework ao Banco de Dados
+		03 - Configurando Banco de Dados
