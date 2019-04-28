@@ -181,3 +181,4 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		03 - Configurando Banco de Dados
 		04 - Usando o contexto do Entity Framework numa aplicação ASP.NET Core
 		05 - Relacionamentos e Migrações
+		06 - Gerando Banco, Classe Startup, Serviços, Injeção de Dependências
