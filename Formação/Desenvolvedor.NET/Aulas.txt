@@ -191,3 +191,5 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		13 - Projeto da Aula Atual
 	04 - Exibindo o Catálogo de Produtos
 		01 - DataService, Injeção de dependência
+		02 - O que é injeção de dependência e por que ela é necessária?
+		03 - Lendo Arquivo Json de Produtos

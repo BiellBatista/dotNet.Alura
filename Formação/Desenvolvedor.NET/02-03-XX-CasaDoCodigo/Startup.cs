@@ -39,6 +39,8 @@ namespace _02_03_XX_CasaDoCodigo
             services.AddDbContext<ApplicationContext>(options =>
             options.UseSqlServer(connectionString)
             ); //adicionando o contexto do banco
+            //implementando a injeção de depedênci, implementando a classe concreta da injeção
+            services.AddTransient<IDataServices, DataServices>(); //adicionando uma instancia temporária
         }
 
         // este método é executado quando a aplicação subir
@@ -72,7 +74,9 @@ namespace _02_03_XX_CasaDoCodigo
             //criando o banco de dados do contexto ApplicationContext, caso o mesmo não esteja criado. Porém, ao usar este método, eu não consigo usar migrações
             //serviceProvider.GetService<ApplicationContext>().Database.EnsureCreated();
             // faz a mesma coisa que o de cima, mas posos usar migrações
-            serviceProvider.GetService<ApplicationContext>().Database.Migrate();
+            //serviceProvider.GetService<ApplicationContext>().Database.Migrate();
+
+            serviceProvider.GetService<DataServices>().InicializaDB();
         }
     }
 }
