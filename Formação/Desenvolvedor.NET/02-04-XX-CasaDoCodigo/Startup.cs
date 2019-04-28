@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using _02_04_XX_CasaDoCodigo.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -41,6 +42,7 @@ namespace _02_04_XX_CasaDoCodigo
             ); //adicionando o contexto do banco
             //implementando a injeção de depedênci, implementando a classe concreta da injeção
             services.AddTransient<IDataServices, DataServices>(); //adicionando uma instancia temporária
+            services.AddTransient<IProdutoRepository, ProdutoRepository>();
         }
 
         // este método é executado quando a aplicação subir

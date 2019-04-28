@@ -198,3 +198,4 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		06 - Gravando Produtos no Banco de dados
 		07 - Inserir Produtos No Banco de Dados
 		08 - ProdutoRepository
+		09 - Injetando Modelo na View Carrossel
