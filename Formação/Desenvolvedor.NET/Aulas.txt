@@ -203,3 +203,9 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		11 - Consolidando seu conhecimento
 		12 - Exibindo uma página de produtos
 		13 - Paginação do Carrossel de Produtos
+		14 - Renderizando a view com o modelo
+		15 - O que aprendemos?
+		16 - Projeto da Aula Atual
+		17 - Para saber mais - Code First, Database First ou Model First? (http://gabsferreira.com/qual-tecnica-utilizar-com-o-entity-framework-code-first-database-first-ou-model-first/)
+	05 - Trabalhando com Session
+		01 - BaseRepository

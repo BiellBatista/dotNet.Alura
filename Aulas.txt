@@ -279,3 +279,7 @@ Formação Desenvolvedor .NET
 		07 - Renderização de views no AspNet Core MVC
 	ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		01 - Criando Uma Aplicação com ASP.NET Core
+		02 - Criando o Projeto ASP NET Core MVC
+		03 - Banco de Dados
+		04 - Exibindo o Catálogo de Produtos
+		05 - Trabalhando com Session

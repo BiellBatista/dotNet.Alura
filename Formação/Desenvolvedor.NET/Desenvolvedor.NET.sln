@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-03-XX-CasaDoCodigo", "02
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-04-XX-CasaDoCodigo", "02-04-XX-CasaDoCodigo\02-04-XX-CasaDoCodigo.csproj", "{7213266C-2A03-48A9-A777-6E7A7AB3B417}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-05-XX-CasaDoCodigo", "02-05-XX-CasaDoCodigo\02-05-XX-CasaDoCodigo.csproj", "{0417D267-35D1-476B-A5C2-8D55110D5062}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7213266C-2A03-48A9-A777-6E7A7AB3B417}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7213266C-2A03-48A9-A777-6E7A7AB3B417}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7213266C-2A03-48A9-A777-6E7A7AB3B417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0417D267-35D1-476B-A5C2-8D55110D5062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0417D267-35D1-476B-A5C2-8D55110D5062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0417D267-35D1-476B-A5C2-8D55110D5062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0417D267-35D1-476B-A5C2-8D55110D5062}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
