@@ -202,4 +202,4 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		10 - @model ou @Model?
 		11 - Consolidando seu conhecimento
 		12 - Exibindo uma página de produtos
-		13 - 
+		13 - Paginação do Carrossel de Produtos
