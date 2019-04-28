@@ -15,6 +15,11 @@ namespace _02_04_XX_CasaDoCodigo.Repositories
             this.contexto = contexto;
         }
 
+        public IList<Produto> GetProdutos()
+        {
+            return contexto.Set<Produto>().ToList();
+        }
+
         public void SaveProdutos(List<Livro> livros)
         {
             foreach (var livro in livros)

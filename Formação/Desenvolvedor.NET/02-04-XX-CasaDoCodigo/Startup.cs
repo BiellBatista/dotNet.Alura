@@ -78,7 +78,7 @@ namespace _02_04_XX_CasaDoCodigo
             // faz a mesma coisa que o de cima, mas posos usar migrações
             //serviceProvider.GetService<ApplicationContext>().Database.Migrate();
 
-            serviceProvider.GetService<IDataServices>().InicializaDB();
+            //serviceProvider.GetService<IDataServices>().InicializaDB();
         }
     }
 }
