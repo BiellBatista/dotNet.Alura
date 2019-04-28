@@ -23,6 +23,7 @@ namespace _02_03_XX_CasaDoCodigo
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        // esta classe adiciona e configura o serviço
         public void ConfigureServices(IServiceCollection services)
         {
             string connectionString = Configuration.GetConnectionString("Default");
@@ -40,8 +41,11 @@ namespace _02_03_XX_CasaDoCodigo
             ); //adicionando o contexto do banco
         }
 
+        // este método é executado quando a aplicação subir
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        //serve o contexto (banco de dados) da aplicação
+        // este método usa os serviços configurados no método de cima
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
@@ -64,6 +68,9 @@ namespace _02_03_XX_CasaDoCodigo
                     name: "default",
                     template: "{controller=Pedido}/{action=Carrossel}/{id?}");
             });
+
+            //criando o banco de dados do contexto ApplicationContext, caso o mesmo não esteja criado
+            serviceProvider.GetService<ApplicationContext>().Database.EnsureCreated();
         }
     }
 }

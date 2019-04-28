@@ -182,3 +182,4 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		04 - Usando o contexto do Entity Framework numa aplicação ASP.NET Core
 		05 - Relacionamentos e Migrações
 		06 - Gerando Banco, Classe Startup, Serviços, Injeção de Dependências
+		07 - Método EnsureCreated X Método Migrate
