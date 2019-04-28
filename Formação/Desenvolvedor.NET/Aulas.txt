@@ -179,3 +179,5 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		01 - Criando o Modelo
 		02 - Conectando o Entity Framework ao Banco de Dados
 		03 - Configurando Banco de Dados
+		04 - Usando o contexto do Entity Framework numa aplicação ASP.NET Core
+		05 - Relacionamentos e Migrações
