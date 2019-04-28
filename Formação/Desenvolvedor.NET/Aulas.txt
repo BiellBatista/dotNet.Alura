@@ -193,3 +193,6 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		01 - DataService, Injeção de dependência
 		02 - O que é injeção de dependência e por que ela é necessária?
 		03 - Lendo Arquivo Json de Produtos
+		04 - Injetando uma classe como dependência de outra
+		05 - Por que parâmetro como interface e não como classe concreta?
+		06 - Gravando Produtos no Banco de dados

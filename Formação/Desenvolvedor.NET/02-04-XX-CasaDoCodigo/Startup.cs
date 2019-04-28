@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace _02_03_XX_CasaDoCodigo
+namespace _02_04_XX_CasaDoCodigo
 {
     public class Startup
     {
