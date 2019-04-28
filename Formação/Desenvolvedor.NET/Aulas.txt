@@ -196,3 +196,5 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		04 - Injetando uma classe como dependência de outra
 		05 - Por que parâmetro como interface e não como classe concreta?
 		06 - Gravando Produtos no Banco de dados
+		07 - Inserir Produtos No Banco de Dados
+		08 - ProdutoRepository
