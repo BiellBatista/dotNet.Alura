@@ -69,8 +69,10 @@ namespace _02_03_XX_CasaDoCodigo
                     template: "{controller=Pedido}/{action=Carrossel}/{id?}");
             });
 
-            //criando o banco de dados do contexto ApplicationContext, caso o mesmo não esteja criado
-            serviceProvider.GetService<ApplicationContext>().Database.EnsureCreated();
+            //criando o banco de dados do contexto ApplicationContext, caso o mesmo não esteja criado. Porém, ao usar este método, eu não consigo usar migrações
+            //serviceProvider.GetService<ApplicationContext>().Database.EnsureCreated();
+            // faz a mesma coisa que o de cima, mas posos usar migrações
+            serviceProvider.GetService<ApplicationContext>().Database.Migrate();
         }
     }
 }

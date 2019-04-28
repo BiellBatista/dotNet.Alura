@@ -183,3 +183,11 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		05 - Relacionamentos e Migrações
 		06 - Gerando Banco, Classe Startup, Serviços, Injeção de Dependências
 		07 - Método EnsureCreated X Método Migrate
+		08 - Migrate x EnsureCreated
+		09 - Para saber mais: Como Ler Configurações no Controller?
+		10 - Para saber mais: Diferenças entre EF 6 e EF Core
+		11 - Consolidando seu conhecimento
+		12 - O que aprendemos?
+		13 - Projeto da Aula Atual
+	04 - Exibindo o Catálogo de Produtos
+		01 - DataService, Injeção de dependência
