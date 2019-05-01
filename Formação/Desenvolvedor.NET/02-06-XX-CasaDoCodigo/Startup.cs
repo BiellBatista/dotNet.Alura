@@ -76,7 +76,7 @@ namespace _02_06_XX_CasaDoCodigo
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Pedido}/{action=Carrossel}/{id?}");
+                    template: "{controller=Pedido}/{action=Carrossel}/{codigoProduto?}");
             });
 
             //criando o banco de dados do contexto ApplicationContext, caso o mesmo não esteja criado. Porém, ao usar este método, eu não consigo usar migrações

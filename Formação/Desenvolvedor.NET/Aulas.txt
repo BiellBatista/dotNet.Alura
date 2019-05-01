@@ -223,4 +223,7 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		01 - Obtendo ou criando novo pedido
 		02 - Obtendo produtos do banco de dados
 		03 - Salvando item de pedido
-		04 - 
+		04 - Gravando id do pedido na sessão
+		05 - Tela de carrinho e método Include
+		06 - Consultando entidades associadas
+		07  View de Resumo

@@ -1,5 +1,6 @@
 ﻿using _02_06_XX_CasaDoCodigo.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 
@@ -48,6 +49,8 @@ namespace _02_06_XX_CasaDoCodigo.Repositories
         {
             var pedidoId = GetPedidoId();
             var pedido = dbSet
+                .Include(p => p.Itens)
+                    .ThenInclude(i => i.Produto)
                 .Where(p => p.Id == pedidoId)
                 .SingleOrDefault();
 
