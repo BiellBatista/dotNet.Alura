@@ -33,6 +33,12 @@ namespace _02_05_XX_CasaDoCodigo
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            //adicionando o cache para ser utilizado na sessão
+            services.AddDistributedMemoryCache();
+            //adicionando a sessão
+            services.AddSession();
+
             services.AddDbContext<ApplicationContext>(options =>
             options.UseSqlServer(connectionString)
             ); //adicionando o contexto do banco
@@ -62,7 +68,8 @@ namespace _02_05_XX_CasaDoCodigo
             }
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            app.UseStaticFiles(); //falando que irei usar arquivos estáticos (html,css)
+            app.UseSession(); //configurando a sessção
             app.UseCookiePolicy();
 
             app.UseMvc(routes =>
