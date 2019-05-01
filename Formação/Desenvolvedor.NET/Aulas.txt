@@ -206,7 +206,7 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		14 - Renderizando a view com o modelo
 		15 - O que aprendemos?
 		16 - Projeto da Aula Atual
-		17 - Para saber mais - Code First, Database First ou Model First? (http://gabsferreira.com/qual-tecnica-utilizar-com-o-entity-framework-code-first-database-first-ou-model-first/)
+		17 - Para saber mais - Code First, Database First ou Model First? (encurtador.com.br/ehtzM)
 	05 - Trabalhando com Session
 		01 - BaseRepository
 		02 - Links com Tag Helpers
@@ -230,4 +230,7 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		08 - Consolidando seu conhecimento
 		09 - O que aprendemos?
 		10 - Conclusão
-		11 - 
+		11 - Projeto da aula atual
+		12 - Este curso continua na Parte 2!
+ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
+	01 - Implementando a Chamada AJAX
