@@ -212,3 +212,5 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		02 - Links com Tag Helpers
 		03 - Âncora HTML x AnchorTagHelper
 		04 - Passando código de produto na rota
+		05 - Modificando a rota default
+		06 - Configurando session, gravando e lendo PedidoId na sessão

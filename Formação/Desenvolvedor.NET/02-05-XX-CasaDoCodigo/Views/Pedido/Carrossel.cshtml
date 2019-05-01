@@ -32,7 +32,11 @@
                                     <div><h4><strong>R$ @produto.Preco</strong></h4></div>
                                     <div class="text-center">
                                         <!--passando o controller e a action como um link href-->
-                                        <a asp-controller="pedido" asp-action="carrinho" class="btn btn-success">Adicionar</a>
+                                        <!--se eu estiver navegando pelo mesmo controller, posso ocultar o asp-controller. FIz isso nas outras views-->
+                                        <a asp-controller="pedido"
+                                           asp-action="carrinho"
+                                           asp-route-id="@produto.Codigo"
+                                           class="btn btn-success">Adicionar</a>
                                     </div>
                                 </div>
                             </div>
