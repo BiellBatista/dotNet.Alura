@@ -209,3 +209,4 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		17 - Para saber mais - Code First, Database First ou Model First? (http://gabsferreira.com/qual-tecnica-utilizar-com-o-entity-framework-code-first-database-first-ou-model-first/)
 	05 - Trabalhando com Session
 		01 - BaseRepository
+		02 - Links com Tag Helpers
