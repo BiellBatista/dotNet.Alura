@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-02-XX-CasaDoCodigo", "02
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-03-XX-CasaDoCodigo", "02-03-XX-CasaDoCodigo\02-03-XX-CasaDoCodigo.csproj", "{40DCFBCD-99B0-4245-980B-A59214ABF699}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-04-XX-CasaDoCodigo", "02-04-XX-CasaDoCodigo\02-04-XX-CasaDoCodigo.csproj", "{7213266C-2A03-48A9-A777-6E7A7AB3B417}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-04-XX-CasaDoCodigo", "02-04-XX-CasaDoCodigo\02-04-XX-CasaDoCodigo.csproj", "{7213266C-2A03-48A9-A777-6E7A7AB3B417}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-05-XX-CasaDoCodigo", "02-05-XX-CasaDoCodigo\02-05-XX-CasaDoCodigo.csproj", "{0417D267-35D1-476B-A5C2-8D55110D5062}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-05-XX-CasaDoCodigo", "02-05-XX-CasaDoCodigo\02-05-XX-CasaDoCodigo.csproj", "{0417D267-35D1-476B-A5C2-8D55110D5062}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-06-XX-CasaDoCodigo", "02-06-XX-CasaDoCodigo\02-06-XX-CasaDoCodigo.csproj", "{B6A7C229-929E-4208-9598-4838F6BC1A17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{0417D267-35D1-476B-A5C2-8D55110D5062}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0417D267-35D1-476B-A5C2-8D55110D5062}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0417D267-35D1-476B-A5C2-8D55110D5062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6A7C229-929E-4208-9598-4838F6BC1A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A7C229-929E-4208-9598-4838F6BC1A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A7C229-929E-4208-9598-4838F6BC1A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A7C229-929E-4208-9598-4838F6BC1A17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
