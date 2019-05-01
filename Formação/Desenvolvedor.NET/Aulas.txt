@@ -226,4 +226,8 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		04 - Gravando id do pedido na sessão
 		05 - Tela de carrinho e método Include
 		06 - Consultando entidades associadas
-		07  View de Resumo
+		07 - View de Resumo
+		08 - Consolidando seu conhecimento
+		09 - O que aprendemos?
+		10 - Conclusão
+		11 - 

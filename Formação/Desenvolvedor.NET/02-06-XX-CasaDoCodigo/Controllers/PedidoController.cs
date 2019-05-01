@@ -43,7 +43,9 @@ namespace _02_06_XX_CasaDoCodigo.Controllers
 
         public IActionResult Resumo()
         {
-            return View();
+            Pedido pedido = pedidoRepository.GetPedido();
+
+            return View(pedido);
         }
     }
 }
