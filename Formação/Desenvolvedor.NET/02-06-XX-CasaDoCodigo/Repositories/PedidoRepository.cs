@@ -1,5 +1,6 @@
 ﻿using _02_06_XX_CasaDoCodigo.Models;
 using Microsoft.AspNetCore.Http;
+using System;
 using System.Linq;
 
 namespace _02_06_XX_CasaDoCodigo.Repositories
@@ -7,6 +8,7 @@ namespace _02_06_XX_CasaDoCodigo.Repositories
     public interface IPedidoRepository
     {
         Pedido GetPedido();
+        void AddItem(string codigoProduto);
     }
 
     public class PedidoRepository : BaseRepository<Pedido>, IPedidoRepository
@@ -19,6 +21,29 @@ namespace _02_06_XX_CasaDoCodigo.Repositories
             this.contextAccessor = contextAccessor;
         }
 
+        public void AddItem(string codigoProduto)
+        {
+            var produto = contexto.Set<Produto>()
+                .Where(p => p.Codigo == codigoProduto)
+                .SingleOrDefault();
+
+            if (produto is null)
+                throw new ArgumentException("Produto não encontrado");
+
+            var pedido = GetPedido();
+            var itemPedido = contexto.Set<ItemPedido>()
+                .Where(i => i.Produto.Codigo == codigoProduto
+                    && i.Pedido.Id == pedido.Id)
+                .SingleOrDefault();
+
+            if (itemPedido is null)
+            {
+                itemPedido = new ItemPedido(pedido, produto, 1, produto.Preco);
+                contexto.Set<ItemPedido>().Add(itemPedido);
+                contexto.SaveChanges();
+            }
+        }
+
         public Pedido GetPedido()
         {
             var pedidoId = GetPedidoId();
@@ -26,11 +51,12 @@ namespace _02_06_XX_CasaDoCodigo.Repositories
                 .Where(p => p.Id == pedidoId)
                 .SingleOrDefault();
 
-            if(pedido == null)
+            if (pedido == null)
             {
                 pedido = new Pedido();
                 dbSet.Add(pedido);
                 contexto.SaveChanges();
+                SetPedidoId(pedido.Id);
             }
 
             return pedido;
