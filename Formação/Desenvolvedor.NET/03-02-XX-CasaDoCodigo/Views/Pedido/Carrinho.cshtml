@@ -41,7 +41,8 @@
                             </button>
                         </span>
                         <input type="text" value="@(item.Quantidade)"
-                               class="form-control text-center" />
+                               class="form-control text-center" onblur="carrinho.updateQuantidade(this)" />
+                        <!--o evento onblur serve para executar um método após o elemento perder o foco-->
                         <span class="input-group-btn">
                             <button class="btn btn-default" onclick="carrinho.clickIncremento(this)">
                                 <span class="glyphicon-plus"></span>

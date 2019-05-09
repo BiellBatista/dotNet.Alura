@@ -16,6 +16,11 @@
         this.postQuantidade(data);
     }
 
+    updateQuantidade(input) {
+        let data = this.getData(input);
+        this.postQuantidade(data);
+    }
+
     getData(elemento) {
         let linhaeItem = $(elemento).parents('[item-id]'); //pegando
         let itemId = $(linhaeItem).attr('item-id'); //pegando o valor do atributo item-id
