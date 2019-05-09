@@ -243,3 +243,10 @@ ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 		07 - Criando Método POST no Servidor para Receber Requisição
 		08 - Método no Controller para a Chamada AJAX
 		09 - Ajax com jQuery
+		10 - Monte a Chamada AJAX
+		11 - Consolidando seu conhecimento
+		12 - Projeto Final da Aula Atual
+		13 - Para saber mais - Livro
+		14 - O que aprendemos?
+	02 - Alterando a Quantidade de Itens
+		01 - Chamando Repositório de Itens a Partir do Controller
