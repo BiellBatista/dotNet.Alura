@@ -255,3 +255,10 @@ ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 		04 - Organizando Código JavaScript com Classe
 		05 - Consuma Função de uma Classe JavaScript a Partir de evento HTML
 		06 - Digitando a Nova Quantidade
+		07 - Utilize o Evento Adequado
+		08 - Consolidando seu conhecimento
+		09 - Projeto Final da Aula Atual
+		10 - Para saber mais - ECMAScript 6
+		11 - O que aprendemos?
+	03 - Adicionando e Removendo Itens
+		01 - Criando uma ViewModel
