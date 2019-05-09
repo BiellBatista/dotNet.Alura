@@ -286,3 +286,4 @@ Formação Desenvolvedor .NET
 		06 - Carrinho e Resumo
 	ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 		01 - Implementando a Chamada AJAX
+		02 - Alterando a Quantidade de Itens
