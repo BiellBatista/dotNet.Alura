@@ -251,3 +251,5 @@ ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 	02 - Alterando a Quantidade de Itens
 		01 - Chamando Repositório de Itens a Partir do Controller
 		02 - Alterando a Quantidade no Banco de Dados
+		03 - Altere a Quantidade no Banco de Dados
+		04 - Organizando Código JavaScript com Classe
