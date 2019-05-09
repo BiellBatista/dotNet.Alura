@@ -36,14 +36,14 @@
                 <div class="col-md-2 text-center">
                     <div class="input-group">
                         <span class="input-group-btn">
-                            <button class="btn btn-default">
+                            <button class="btn btn-default" onclick="carrinho.clickDecremento(this)">
                                 <span class="glyphicon-minus"></span>
                             </button>
                         </span>
                         <input type="text" value="@(item.Quantidade)"
                                class="form-control text-center" />
                         <span class="input-group-btn">
-                            <button class="btn btn-default" onclick="clickIncremento(this)">
+                            <button class="btn btn-default" onclick="carrinho.clickIncremento(this)">
                                 <span class="glyphicon-plus"></span>
                             </button>
                         </span>
@@ -88,28 +88,7 @@
 
 @section Scripts
 {
-    <script type="text/javascript">
-        function clickIncremento(btn) {
-            let linhaeItem = $(btn).parents('[item-id]'); //pegando
-            let itemId = $(linhaeItem).attr('item-id'); //pegando o valor do atributo item-id
-            let novaQtde = $(linhaeItem).find('input').val(); //acessando o valor de uma tag abaixo da tag que tem o atributo ['item-id']
-            let data = {
-                Id: itemId,
-                Quantidade: novaQtde
-            };
-
-            $.ajax({
-                url: '/pedido/updatequantidade',
-                type: 'POST',
-                contentType: 'application/json',
-                data: JSON.stringify(data)
-            });
-
-            debugger;
-            //$(seletor).action(); o seletor significa a tag que quero manipular
-            /*
-             * Isso mesmo! O método parents obtém os "ancestrais" (elementos acima da hierarquia) do elemento. O método find vai obter os elementos abaixo da hiearquia.
-             */
-        }
+    <script src="~/js/carrinho.js">
+        //movido para o arquivo "carrinho.js"
     </script>
 }
