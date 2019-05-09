@@ -238,3 +238,4 @@ ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 		02 - Introdução
 		03 - Chamando Função JavaScript a Partir de um evento HTML
 		04 - Usando Filtros jQuery Para Acessar Elementos
+		05 - Navegando Pela Hierarquia de Elementos
