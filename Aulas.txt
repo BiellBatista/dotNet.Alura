@@ -174,6 +174,10 @@ Carreira Desenvolvedor .Net com Entity Framework
 		04 - Aproveite recursos de programação paralela com Parallel LINQ
 		05 - Integre resultados de stored procedures em consultas LINQ
 		06 - Estude, analise e brinque com consultas através do LinqPad
+	Entity Framework Core parte 1: Mapeando um banco pré-existente
+		01 - 
+	Entity Framework Core parte 2: Mapeando um banco pré-existente
+		01 - 
 -------------------------------------------------------------------------------------------------------------------------
 Extra ASP.NET Identity
 	 Parte 1: Gerencie contas de usuários
