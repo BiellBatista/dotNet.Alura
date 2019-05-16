@@ -1,6 +1,8 @@
 ﻿using _03_03_XX_CasaDoCodigo.Models;
+using _03_03_XX_CasaDoCodigo.Models.ViewModels;
 using _03_03_XX_CasaDoCodigo.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace _03_03_XX_CasaDoCodigo.Controllers
 {
@@ -34,8 +36,9 @@ namespace _03_03_XX_CasaDoCodigo.Controllers
                 pedidoRepository.AddItem(codigoProduto);
             }
 
-            Pedido pedido = pedidoRepository.GetPedido();
-            return View(pedido.Itens);
+            IList<ItemPedido> itens = pedidoRepository.GetPedido().Itens;
+            CarrinhoViewModel carrinhoViewModel = new CarrinhoViewModel(itens);
+            return View(carrinhoViewModel);
         }
 
         public IActionResult Carrossel()
