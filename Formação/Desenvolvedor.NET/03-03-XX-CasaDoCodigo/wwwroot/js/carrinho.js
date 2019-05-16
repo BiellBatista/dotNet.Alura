@@ -39,7 +39,7 @@
             type: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(data)
-        }).done(function(response) {
+        }).done(function(response) { //quando o ajax for concluido. Faça..
             location.reload();
         });
     }
