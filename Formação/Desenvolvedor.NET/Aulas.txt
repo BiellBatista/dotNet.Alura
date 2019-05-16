@@ -268,3 +268,4 @@ ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 		05 - Refatorando Repositórios
 		06 - Adicione a propriedade Subtotal em ItemPedido
 		07 - Atualizando o Item na View com JavaScript
+		08 - Atualizando Totais do Carrinho na View com JavaScript

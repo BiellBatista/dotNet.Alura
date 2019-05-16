@@ -39,10 +39,17 @@
             type: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(data)
-        }).done(function(response) { //quando o ajax for concluido. Faça..
-            location.reload();
+        }).done(function (response) { //quando o ajax for concluido. Faça..
+            let itemPedido = response.itemPedido;
+            let linhaDoItem = $(`[item-id=${itemPedido.id}]`); //pegando a div
+            linhaDoItem.find('input').val(itemPedido.quantidade); //procurando a tag dentro da linhaDoItem
+            linhaDoItem.find('[subtotal]').html((itemPedido.subTotal).duasCasas());
         });
     }
 }
 
 var carrinho = new Carrinho();
+
+Number.prototype.duasCasas = function () {
+    return this.toFixed(2).replace('.', ',');
+}
