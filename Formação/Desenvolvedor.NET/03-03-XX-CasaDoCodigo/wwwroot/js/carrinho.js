@@ -41,9 +41,17 @@
             data: JSON.stringify(data)
         }).done(function (response) { //quando o ajax for concluido. Faça..
             let itemPedido = response.itemPedido;
-            let linhaDoItem = $(`[item-id=${itemPedido.id}]`); //pegando a div
-            linhaDoItem.find('input').val(itemPedido.quantidade); //procurando a tag dentro da linhaDoItem
-            linhaDoItem.find('[subtotal]').html((itemPedido.subTotal).duasCasas());
+            let linhaDoItem = $(`[item-id=${itemPedido.id}]`); //pegando uma tag pelo seu atributo. Nesse caso é um elemento DIV
+            linhaDoItem.find('input').val(itemPedido.quantidade); //procurando a tag input dentro da linhaDoItem (tag DIV)
+            linhaDoItem.find('[subtotal]').html((itemPedido.subTotal).duasCasas()); //localizando uma tag pelo atributo e depois alterando o HTML (posso usar o método HTML() para elementos que podem conter html, como body, div e span)
+
+            let carrinhoViewModel = response.carrinhoViewModel;
+            $('[numero-itens]').html(`Total: ${carrinhoViewModel.itens.length} itens`);
+            $('[total]').html(`${(carrinhoViewModel.total).duasCasas()}`);
+
+            if (itemPedido.quantidade === 0) {
+                linhaDoItem.remove();
+            }
         });
     }
 }

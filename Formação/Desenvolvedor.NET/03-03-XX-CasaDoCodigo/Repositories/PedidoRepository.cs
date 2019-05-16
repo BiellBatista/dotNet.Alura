@@ -90,6 +90,10 @@ namespace _03_03_XX_CasaDoCodigo.Repositories
                 throw new ArgumentException("ItemPedido não encontrado");
 
             itemPedidoDB.AtualizaQuantidade(itemPedido.Quantidade);
+
+            if (itemPedido.Quantidade == 0)
+                itemPedidoRepository.RemoveItemPedido(itemPedido.Id);
+
             contexto.SaveChanges();
 
             var carrinhoViewModel = new CarrinhoViewModel(GetPedido().Itens);
