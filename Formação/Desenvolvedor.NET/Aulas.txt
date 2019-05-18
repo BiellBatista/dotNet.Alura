@@ -289,4 +289,5 @@ ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 		12 - O que aprendemos?
 	05 - Recebendo e Gravando Dados de Cadastro
 		01 - Gravando Cadastro no Banco de Dados
-		02 - 
+		02 - Protegendo uma Action com ValidateAntiForgeryToken
+		03 - 
