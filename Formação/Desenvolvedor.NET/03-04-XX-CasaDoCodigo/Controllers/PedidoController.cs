@@ -51,7 +51,8 @@ namespace _03_04_XX_CasaDoCodigo.Controllers
             return View(produtoRepository.GetProdutos());
         }
 
-        public IActionResult Resumo()
+        [HttpPost]
+        public IActionResult Resumo(Cadastro cadastro)
         {
             Pedido pedido = pedidoRepository.GetPedido();
 
