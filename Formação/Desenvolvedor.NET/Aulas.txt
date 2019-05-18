@@ -276,3 +276,5 @@ ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 		13 - O que aprendemos?
 	04 - Validando e Enviando Formulário de Cadastro
 		01 - Montando a View de Cadastro
+		02 - Defina o Binding dos Campos do Formulário
+		03 - Injetando o Cadastro na View e Redirecionando se Necessário
