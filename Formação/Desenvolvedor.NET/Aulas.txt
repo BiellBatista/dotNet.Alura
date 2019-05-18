@@ -279,3 +279,6 @@ ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 		02 - Defina o Binding dos Campos do Formulário
 		03 - Injetando o Cadastro na View e Redirecionando se Necessário
 		04 - Validando Campos do Formulário no Cliente
+		05 - Valide o Campo do Formulário
+		06 - Customizando Validações no Modelo de Cadastro
+		07 - Validando Dados do Formulário no Servidor
