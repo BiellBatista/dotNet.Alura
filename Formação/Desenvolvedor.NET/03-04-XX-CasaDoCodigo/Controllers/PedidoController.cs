@@ -36,7 +36,7 @@ namespace _03_04_XX_CasaDoCodigo.Controllers
 
         public IActionResult Carrinho(string codigoProduto)
         {
-            if(!string.IsNullOrEmpty(codigoProduto))
+            if (!string.IsNullOrEmpty(codigoProduto))
             {
                 pedidoRepository.AddItem(codigoProduto);
             }
@@ -54,9 +54,13 @@ namespace _03_04_XX_CasaDoCodigo.Controllers
         [HttpPost]
         public IActionResult Resumo(Cadastro cadastro)
         {
-            Pedido pedido = pedidoRepository.GetPedido();
+            if (ModelState.IsValid)
+            {
+                var pedido = pedidoRepository.UpdateCadastro(cadastro);
+                return View(pedido);
+            }
 
-            return View(pedido);
+            return RedirectToAction("Cadastro");
         }
 
         [HttpPost]

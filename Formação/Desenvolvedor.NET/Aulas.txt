@@ -282,3 +282,11 @@ ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 		05 - Valide o Campo do Formulário
 		06 - Customizando Validações no Modelo de Cadastro
 		07 - Validando Dados do Formulário no Servidor
+		08 - Retornando uma View Diferente
+		09 - Consolidando seu conhecimento
+		10 - Projeto Final da Aula Atual
+		11 - Para saber mais
+		12 - O que aprendemos?
+	05 - Recebendo e Gravando Dados de Cadastro
+		01 - Gravando Cadastro no Banco de Dados
+		02 - 
