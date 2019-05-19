@@ -264,3 +264,6 @@ Entity LinQ parte 2: Store Procedures e consultas com o LinQPad
 		04 - Recursos do LinqPad
 		05 - Exibindo resultados de consultas LINQ
 		06 - Obtendo uma sintaxe de método a partir de uma sintaxe de consulta
+Entity Framework Core parte 1: Mapeando um banco pré-existente
+	01 - Configurando nomes de tabelas e colunas
+		01 - Apresentação

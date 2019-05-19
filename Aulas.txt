@@ -175,7 +175,7 @@ Carreira Desenvolvedor .Net com Entity Framework
 		05 - Integre resultados de stored procedures em consultas LINQ
 		06 - Estude, analise e brinque com consultas através do LinqPad
 	Entity Framework Core parte 1: Mapeando um banco pré-existente
-		01 - 
+		01 - Configurando nomes de tabelas e colunas
 	Entity Framework Core parte 2: Mapeando um banco pré-existente
 		01 - 
 -------------------------------------------------------------------------------------------------------------------------
@@ -291,3 +291,6 @@ Formação Desenvolvedor .NET
 	ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 		01 - Implementando a Chamada AJAX
 		02 - Alterando a Quantidade de Itens
+		03 - Adicionando e Removendo Itens
+		04 - Validando e Enviando Formulário de Cadastro
+		05 - Recebendo e Gravando Dados de Cadastro
