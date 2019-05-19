@@ -1,6 +1,6 @@
 ﻿class Carrinho {
-    clickIncremento(btn) {
-        let data = this.getData(btn);
+    clickIncremento(button) {
+        let data = this.getData(button);
         data.Quantidade++;
         this.postQuantidade(data);
 
@@ -10,8 +10,8 @@
          */
     }
 
-    clickDecremento(btn) {
-        let data = this.getData(btn);
+    clickDecremento(button) {
+        let data = this.getData(button);
         data.Quantidade--;
         this.postQuantidade(data);
     }
@@ -24,10 +24,10 @@
     getData(elemento) {
         let linhaeItem = $(elemento).parents('[item-id]'); //pegando
         let itemId = $(linhaeItem).attr('item-id'); //pegando o valor do atributo item-id
-        let novaQtde = $(linhaeItem).find('input').val(); //acessando o valor de uma tag abaixo da tag que tem o atributo ['item-id']
+        let novaQuantidade = $(linhaeItem).find('input').val(); //acessando o valor de uma tag abaixo da tag que tem o atributo ['item-id']
         let data = {
             Id: itemId,
-            Quantidade: novaQtde
+            Quantidade: novaQuantidade
         };
 
         return data;
