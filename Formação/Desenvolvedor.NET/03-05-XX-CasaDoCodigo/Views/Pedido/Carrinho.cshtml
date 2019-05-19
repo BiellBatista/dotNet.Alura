@@ -5,6 +5,11 @@
 @model CarrinhoViewModel;
 
 <h3>Meu Carrinho</h3>
+
+<!--Passando o token de validação para esta view, porque é necessário ter um form para pegar o token (oculto). O token fica no final do form-->
+<form method="post" asp-action="carrinho"></form>
+<!--Isso mesmo. A tag <form> cria um FormTagHelper, que automaticamente fornece à página um token anti-falsificação na forma de um campo <input> oculto (hidden).-->
+
 <div class="panel panel-default">
     <div class="panel-heading">
         <div class="row">
@@ -88,7 +93,7 @@
 </div>
 
 @section Scripts
-{
+    {
     <script src="~/js/carrinho.js">
         //movido para o arquivo "carrinho.js"
     </script>

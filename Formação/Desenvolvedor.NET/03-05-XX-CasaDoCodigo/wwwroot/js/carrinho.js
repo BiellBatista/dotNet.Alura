@@ -34,11 +34,16 @@
     }
 
     postQuantidade(data) {
+        let token = $('[name=__RequestVerificationToken]').val(); //pegando o valor do elemento
+        let headers = {};
+        headers['RequestVerificationToken'] = token;
+
         $.ajax({
             url: '/pedido/updatequantidade',
             type: 'POST',
             contentType: 'application/json',
-            data: JSON.stringify(data)
+            data: JSON.stringify(data),
+            headers : headers
         }).done(function (response) { //quando o ajax for concluido. Faça..
             let itemPedido = response.itemPedido;
             let linhaDoItem = $(`[item-id=${itemPedido.id}]`); //pegando uma tag pelo seu atributo. Nesse caso é um elemento DIV

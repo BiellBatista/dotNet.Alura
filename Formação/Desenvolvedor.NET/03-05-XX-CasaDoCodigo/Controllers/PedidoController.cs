@@ -65,6 +65,7 @@ namespace _03_05_XX_CasaDoCodigo.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken] //Protegendo a Action do AJAX Contra Ataques Maliciosos
         public UpdateQuantidadeResponse UpdateQuantidade([FromBody] ItemPedido itemPedido)
         {
             return pedidoRepository.UpdateQuantidade(itemPedido);

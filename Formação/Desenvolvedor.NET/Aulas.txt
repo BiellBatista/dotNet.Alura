@@ -292,4 +292,7 @@ ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 		02 - Protegendo uma Action com ValidateAntiForgeryToken
 		03 - Proteja a Action do Controller
 		04 - Protegendo a Action do AJAX Contra Ataques Maliciosos
-		05 - 
+		05 - Forneça um Token Anti-Falsificação para a Página
+		06 - Passe o Token Anti-Falsificação na Chamada Ajax
+		07 - Aplicando os Campos do Cadastro do Modelo na View de Resumo
+		08 - 
