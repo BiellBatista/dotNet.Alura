@@ -290,4 +290,6 @@ ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 	05 - Recebendo e Gravando Dados de Cadastro
 		01 - Gravando Cadastro no Banco de Dados
 		02 - Protegendo uma Action com ValidateAntiForgeryToken
-		03 - 
+		03 - Proteja a Action do Controller
+		04 - Protegendo a Action do AJAX Contra Ataques Maliciosos
+		05 - 

@@ -52,6 +52,7 @@ namespace _03_05_XX_CasaDoCodigo.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken] //para não receber post fora do form (da minha página)
         public IActionResult Resumo(Cadastro cadastro)
         {
             if (ModelState.IsValid)
