@@ -7,23 +7,23 @@ SQL Server: Introdução ao SQL com Microsoft SQL Server 2017
 		05 - O que aprendemos?
 	02 - Manipulando o banco de dados
 		01 - Definições
-		02 - Localização da tabela
-		03 - Componentes de tabelas
-		04 - Agrupando tabelas
+		02 - Localização da tabela (B)
+		03 - Componentes de tabelas (A)
+		04 - Agrupando tabelas (C)
 		05 - Conhecendo o Management Studio
 		06 - Criando banco de dados
-		07 - Comando para criação de banco de dados
+		07 - Comando para criação de banco de dados (A)
 		08 - Criando banco através de assistente
-		09 - Como criamos banco de dados
+		09 - Como criamos banco de dados (C)
 		10 - Apagando banco de dados
-		11 - Comando para apagar banco de dados
+		11 - Comando para apagar banco de dados (C)
 		12 - Mãos na massa: Manipulando o banco de dados
 		13 - O que aprendemos?
 	03 - Gerenciando as tabelas do banco de dados
 		01 - Tipos de dados
-		02 - Diferença entre tipo de dados
-		03 - Tipo data
-		04 - Dados numéricos
+		02 - Diferença entre tipo de dados (B)
+		03 - Tipo data (A)
+		04 - Dados numéricos (A)
 		05 - Criando primeira tabela
 		06 - Criando tabela de vendedores
 		07 - Criando tabela através de assistente
@@ -44,9 +44,9 @@ SQL Server: Introdução ao SQL com Microsoft SQL Server 2017
 		09 - Excluindo registros
 		10 - Excluindo vendedor
 		11 - Chave primária
-		12 - Comando para criação da chave primária
+		12 - Comando para criação da chave primária (B)
 		13 - Resolvendo o problema da chave primária
-		14 - Cuidado ao executar o comando de chave primária
+		14 - Cuidado ao executar o comando de chave primária (C)
 		15 - Criando chave primária para a tabela de vendedores
 		16 - Manipulando datas e campos lógicos
 		17 - Modificando a tabela de vendedores
@@ -69,24 +69,24 @@ Entity Framework Core: Banco de dados de forma eficiente
 		01 - Visão geral do curso
 		02 - Introdução ao Entity Framework
 		03 - Preparando o ambiente (Obrigatório)
-		04 - As vantagens do ORM
+		04 - As vantagens do ORM (A / B / C)
 		05 - Instalando os pacotes necessários para o Entity
 		06 - Instale o EntityFrameworkCore usando o provider SQL Server
 		07 - Para saber mais: outros providers de bancos para o Entity
 		08 - Primeiro uso da ferramenta
-		09 - Usando o Entity
-		10 - Adivinhe o nome...
+		09 - Usando o Entity (A / B / D / F)
+		10 - Adivinhe o nome... (C)
 		11 - Para saber mais: Entity suporta transações
 		12 - Para saber mais: permitindo o uso de LojaContext com outros providers
 		13 - Para saber mais: outro método de inclusão, AddRange
 		14 - Consolidando seu conhecimento
 	02 - Manipulando objetos
 		01 - Recuperando objetos com o Entity
-		02 - Listando contas bancárias
+		02 - Listando contas bancárias (C)
 		03 - Deletando objetos com o Entity
-		04 - O que está faltando para excluir?
+		04 - O que está faltando para excluir? (A)
 		05 - Alterando objetos com o Entity
-		06 - A tarifa mudou!
+		06 - A tarifa mudou! (A)
 		07 - Organizando o código de acesso em um DAO
 		08 - Consolidando seu conhecimento
 	03 - Como o Entity monta o SQL?
@@ -94,55 +94,55 @@ Entity Framework Core: Banco de dados de forma eficiente
 		02 - Para saber mais: como o ChangeTracker funciona
 		03 - Logando o SQL no console
 		04 - O estado Added
-		05 - Qual estado do objeto?
+		05 - Qual estado do objeto? (D)
 		06 - Deleted e Detached
-		07 - Mudança de estados
+		07 - Mudança de estados (B)
 		08 - Visão geral do relacionamento entre os estados
-		09 - A mudança dos estados
-		10 - Os estados dos objetos
+		09 - A mudança dos estados (A)
+		10 - Os estados dos objetos (A)
 		11 - Para saber mais: resumo dos estados EntityState
 		12 - Consolidando seu conhecimento
 	04 - Sincronizando o banco de dados com o modelo de classes
 		01 - Como sincronizar o modelo de classes com a estrutura de dados?
-		02 - Trabalho sujo 2, a sincronização
+		02 - Trabalho sujo 2, a sincronização (C)
 		03 - O processo de migração
-		04 - Comandos do EntityFramework
-		05 - Procedimento de Migração
+		04 - Comandos do EntityFramework (C / D / F)
+		05 - Procedimento de Migração (C / D)
 		06 - Corrigindo problemas e aplicando as migrações no banco
 		07 - Para saber mais: sincronizando o banco com sua própria aplicação
 		08 - Consolidando seu conhecimento
 	05 - Relacionamentos Um para Muitos no Entity
 		01 - Relacionamento um para muitos
 		02 - Corrigindo a migração para refletir o relacionamento
-		03 - Sobre o relacionamento um-para-muitos
-		04 - Mapeando a chave estrangeira do relacionamento
+		03 - Sobre o relacionamento um-para-muitos (B)
+		04 - Mapeando a chave estrangeira do relacionamento (B)
 		05 - Inserindo objetos relacionados
-		06 - Compra com produto não existente no banco de dados
+		06 - Compra com produto não existente no banco de dados (A)
 		07 - Consolidando seu conhecimento
 	06 - Relacionamentos Muitos para Muitos no Entity
 		01 - Relacionamento muitos para muitos e a classe de join
 		02 - Mapeando chaves primárias compostas
-		03 - Relacionando contas a clientes
-		04 - Reservando um quarto de hotel...
+		03 - Relacionando contas a clientes (A / B / E)
+		04 - Reservando um quarto de hotel... (A / B / D)
 		05 - Manipulando promoções e produtos
-		06 - Onde foram parar os registros da tabela de join?
+		06 - Onde foram parar os registros da tabela de join? (C)
 		07 - Consolidando seu conhecimento
 	07 - Relacionamentos Um para Um no Entity
 		01 - Relacionamento um para um
 		02 - Escondendo informações específicas do banco
-		03 - Um erro não esperado
-		04 - Direto das Sombras!
+		03 - Um erro não esperado (A)
+		04 - Direto das Sombras! (A / B)
 		05 - Mudando o nome da tabela
-		06 - O DBA não aprovou o nome da sua tabela
+		06 - O DBA não aprovou o nome da sua tabela (C)
 		07 - Consolidando seu conhecimento
 	08 - Recuperando objetos relacionados
 		01 - Aplicando condições nas consultas
-		02 - Cidades do Rio de Janeiro
+		02 - Cidades do Rio de Janeiro (B)
 		03 - Como realizar joins entre entidades relacionadas
-		04 - O cliente possui que contas?
+		04 - O cliente possui que contas? (B)
 		05 - Para saber mais: sobrecarga de Include
 		06 - Corrigindo o modelo para recuperar objetos relacionados
-		07 - LEFT JOIN?
+		07 - LEFT JOIN? (C)
 		08 - Populando coleções após a carga da entidade principal
 		09 - Consolidando seu conhecimento
 		10 - Encerramento - o que aprendemos
@@ -152,8 +152,8 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 		01 - Introdução ao curso
 		02 - Introdução ao Linq com select from e where
 		03 - Linq com joins
-		04 - Sintaxe de Consulta Linq
-		05 - Filtrando com Linq
+		04 - Sintaxe de Consulta Linq (E)
+		05 - Filtrando com Linq (A)
 		06 - Consulta com Filtro (Com Método Contains)
 		07 - Consulta com Filtro (Com Operador de Igualdade)
 		08 - Consulta com Join
@@ -161,18 +161,18 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 		10 - Projeto da aula atual
 	02 - Linq to XML
 		01 - Linq to Xml
-		02 - Escolhendo a Modalidade Linq Mais Adequada
-		03 - Consulta Simples Com XML
-		04 - Debugando Uma Consulta Linq To XML - 1
-		05 - Debugando Uma Consulta Linq To XML - 2
+		02 - Escolhendo a Modalidade Linq Mais Adequada (C)
+		03 - Consulta Simples Com XML (A)
+		04 - Debugando Uma Consulta Linq To XML - 1 (D)
+		05 - Debugando Uma Consulta Linq To XML - 2 (B)
 		06 - Consulta com Join com Linq To XML
 		07 - Projeto da aula atual
 	03 - Linq to Entities
 		01 - Linq to entities contexto join take log sql
 		02 - Linq to entities where
 		03 - Linq to entities sintaxe de método
-		04 - Escrevendo Uma Consulta Linq to Entities
-		05 - Limitando o número de resultados numa consulta
+		04 - Escrevendo Uma Consulta Linq to Entities (A)
+		05 - Limitando o número de resultados numa consulta (B)
 		06 - Escolhendo entre Sintaxe de Método e Sintaxe de Consulta
 		07 - Reescrevendo Queries Como Sintaxe de Método
 		08 - Reescrevendo Queries Como Sintaxe de Consulta
@@ -181,17 +181,17 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 		01 - Linq to entities join
 		02 - Linq to entities sem join
 		03 - Linq to entities refinando consultas
-		04 - Substituindo Joins Em Consultas Linq to Entities
-		05 - Entendendo Propriedades de Navegação
+		04 - Substituindo Joins Em Consultas Linq to Entities (C)
+		05 - Entendendo Propriedades de Navegação (A)
 		06 - Propriedades de Navegação em Linq to Objects?
 		07 - Refinando uma Consulta Linq
 		08 - Refinando uma Consulta Linq
 		09 - Projeto da aula atual
 	05 - Ordenando Consultas
 		01 - Linq to entities orderby
-		02 - Ordenando Consultas Linq - Sintaxe de Consulta
-		03 - Consulta Ordenada por Múltiplos Campos
-		04 - Ordenação Decrescente
+		02 - Ordenando Consultas Linq - Sintaxe de Consulta (B)
+		03 - Consulta Ordenada por Múltiplos Campos (E)
+		04 - Ordenação Decrescente (C)
 		05 - Ordenando Consultas Linq - Sintaxe de Método
 		06 - Ordenação Decrescente - Sintaxe de Método
 		07 - Projeto da aula atual
@@ -199,8 +199,8 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 		01 - Linq to entities count
 		02 - Linq to entities Sum
 		03 - Linq to entities groupby
-		04 - Calculando Quantidades - Simples
-		05 - Totalizando Valores - Simples
+		04 - Calculando Quantidades - Simples (C)
+		05 - Totalizando Valores - Simples (E)
 		06 - Calculando Quantidades Com Projeção de Dados
 		07 - Agrupando Valores de Consultas Linq
 		08 - Evitando Repetição de Expressões
@@ -210,9 +210,9 @@ Entity LinQ parte 1: Crie queries poderosas em C#
 		02 - Linq métodos extensão
 		03 - Linq métodos extensão
 		04 - Conclusão
-		05 - Calculando Menor Valor
-		06 - Calculando a Média
-		07 - Calculando Maior Valor
+		05 - Calculando Menor Valor (E)
+		06 - Calculando a Média (B)
+		07 - Calculando Maior Valor (C)
 		08 - Métodos de Extensão - Teoria
 		09 - Métodos de Extensão - Prática
 		10 - Projeto da aula atual
@@ -222,47 +222,47 @@ Entity LinQ parte 2: Store Procedures e consultas com o LinQPad
 		02 - Linq to entities paginado
 		03 - Subconsulta
 		04 - Clientes compraram produto mais vendido
-		05 - Definindo tamanho de resultados de uma consulta
-		06 - Saltando elementos de uma sequência
-		07 - Acessando elementos de uma página
+		05 - Definindo tamanho de resultados de uma consulta (E)
+		06 - Saltando elementos de uma sequência (D)
+		07 - Acessando elementos de uma página (B)
 		08 - Obtendo uma sequência de elementos a partir de uma posição
 		09 - Desenvolvendo algoritmo de paginação
 		10 - Projeto da aula atual
 	02 - Aplique Análise de Afinidade para sugerir compras de produtos
 		01 - Comprou tambem
-		02 - Análise de Afinidade
-		03 - Self Join
+		02 - Análise de Afinidade (C)
+		03 - Self Join (D)
 		04 - Consulta para análise de afinidade
 		05 - Projeto da aula atual
 	03 - Entenda execução adiada e execução imediata nas consultas LINQ
 		01 - Execucao tardia - Execucao imediata
-		02 - Adicionando elementos após a definição de uma consulta
-		03 - Modificando variáveis de uma consulta em tempo de execução
-		04 - Remoção de elementos após a definição de uma consulta
+		02 - Adicionando elementos após a definição de uma consulta (A)
+		03 - Modificando variáveis de uma consulta em tempo de execução (E)
+		04 - Remoção de elementos após a definição de uma consulta (B)
 		05 - Execução adiada
 		06 - Forçando execução imediata
 		07 - Projeto da aula atual
 	04 - Aproveite recursos de programação paralela com Parallel LINQ
 		01 - Linq to entities - Linq paralelo
 		02 - Linq to entities - Linq paralelo parte 2
-		03 - Medindo tempo de execução de uma consulta
-		04 - Paralelizando execução de consulta - Prática
+		03 - Medindo tempo de execução de uma consulta (B)
+		04 - Paralelizando execução de consulta - Prática (E)
 		05 - Paralelizando execução de consulta - Teoria
-		06 - Paralelizando execução de um laço foreach
+		06 - Paralelizando execução de um laço foreach (C)
 		07 - Projeto da aula atual
 	05 - Integre resultados de stored procedures em consultas LINQ
 		01 - Linq to entities stores procedure
-		02 - Configurando uma aplicação para utilizar stored procedures em consultas
-		03 - Limitações do uso de stored procedures em consultas LINQ
-		04 - Passando parâmetros para stored procedures
+		02 - Configurando uma aplicação para utilizar stored procedures em consultas (E)
+		03 - Limitações do uso de stored procedures em consultas LINQ (C)
+		04 - Passando parâmetros para stored procedures (B)
 		05 - Agrupando consultas LINQ por mais de uma propriedade
 		06 - Projeto da aula atual
 	06 - Estude, analise e brinque com consultas através do LinqPad
 		01 - Linqpad
 		02 - Linqpad
 		03 - Conclusao
-		04 - Recursos do LinqPad
-		05 - Exibindo resultados de consultas LINQ
+		04 - Recursos do LinqPad (A / B / C / D / E)
+		05 - Exibindo resultados de consultas LINQ (C)
 		06 - Obtendo uma sintaxe de método a partir de uma sintaxe de consulta
 Entity Framework Core parte 1: Mapeando um banco pré-existente
 	01 - Configurando nomes de tabelas e colunas

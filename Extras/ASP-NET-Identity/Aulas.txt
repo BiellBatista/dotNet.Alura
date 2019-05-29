@@ -8,8 +8,8 @@ Install-Package Microsoft.Owin.Security.Google
 ASP.NET Identity parte 1: Gerencie contas de usuários
 	01 - Começando com AspNet Identity
 		01 - Introdução
-		02 - Propósito do AspNet Identity
-		03 - Instalando os pacotes necessários
+		02 - Propósito do AspNet Identity (B)
+		03 - Instalando os pacotes necessários (A)
 		04 - Pacote obrigatório
 		05 - Criando a pagina de registro
 		06 - O que aprendemos?
@@ -18,17 +18,17 @@ ASP.NET Identity parte 1: Gerencie contas de usuários
 		01 - Projeto da aula anterior
 		02 - IdentityDbContext e IdentityUser
 		03 - UserStore e UserManager
-		04 - Do UserManager até o banco
+		04 - Do UserManager até o banco (D)
 		05 - Arquitetura do Identity e assincronicidade
-		06 - Arquitetura do framework
+		06 - Arquitetura do framework (A / C / D)
 		07 - O que aprendemos?
 		08 - Consolidando seu conhecimento
 	03 - Owin
 		01 - Projeto da aula anterior
 		02 - Instalando o Owin
-		03 - Instalação de pacote
+		03 - Instalação de pacote (A)
 		04 - Configurando o Owin
-		05 - Sobre o CreatePerOwinContext
+		05 - Sobre o CreatePerOwinContext (B / C / D)
 		06 - O que aprendemos?
 		07 - Consolidando seu conhecimento
 	04 - Validações de usuário
@@ -36,18 +36,18 @@ ASP.NET Identity parte 1: Gerencie contas de usuários
 		02 - O IdentityResult
 		03 - Emails duplicados
 		04 - Criando senhas mais seguras
-		05 - Validação no AspNet Identity
-		06 - Usuários com email único
+		05 - Validação no AspNet Identity (D)
+		06 - Usuários com email único (A)
 		07 - O que aprendemos?
 		08 - Consolidando seu conhecimento
 	05 - Serviços de email
 		01 - Projeto da aula anterior
 		02 - Serviço de email
-		03 - Serviço de envio de email
+		03 - Serviço de envio de email (C)
 		04 - Implementando e integrando nosso servico de email
 		05 - Usando o GenerateEmailConfirmationTokenAsync
 		06 - Confirmando o email do usuario
-		07 - Confirmação de email
+		07 - Confirmação de email (A / B / C)
 		08 - Projeto final do curso
 		09 - O que aprendemos?
 		10 - Conclusão
@@ -57,31 +57,31 @@ ASP.NET Identity parte 2: Autenticação, segurança com lockout e recuperando a se
 		01 - Introdução
 		02 - Projeto do curso anterior
 		03 - Criando a pagina de login
-		04 - Actions privadas
+		04 - Actions privadas (B)
 		05 - Entendendo o PasswordHash
-		06 - Salvando senhas
+		06 - Salvando senhas (A / B)
 		07 - O que aprendemos?
 		08 - Consolidando seu conhecimento
 	02 - Usando o SignInManager
 		01 - Projeto da aula anterior
 		02 - SignInManager
 		03 - Como continuar logado
-		04 - Autenticação
-		05 - Como realizar login
+		04 - Autenticação (C)
+		05 - Como realizar login (C)
 		06 - O que aprendemos?
 		07 - Consolidando seu conhecimento
 	03 - Função de logoff
 		01 - Projeto da aula anterior
 		02 - Logoff
-		03 - Classe para logoff
-		04 - Mecanismo de logoff
+		03 - Classe para logoff (D)
+		04 - Mecanismo de logoff (B)
 		05 - O que aprendemos?
 		06 - Consolidando seu conhecimento
 	04 - Função de Lockout
 		01 - Projeto da aula anterior
 		02 - Lockout
-		03 - Usando lockout
-		04 - Requisitos para lockout
+		03 - Usando lockout (A)
+		04 - Requisitos para lockout (B)
 		05 - Consolidando seu conhecimento
 		06 - O que aprendemos?
 	05 - Recuperando a senha de forma segura
@@ -91,8 +91,8 @@ ASP.NET Identity parte 2: Autenticação, segurança com lockout e recuperando a se
 		04 - Alterando a senha
 		05 - Conclusão
 		06 - Projeto final do curso
-		07 - Geração de token
-		08 - Fluxo de alteração de senha
+		07 - Geração de token (D)
+		08 - Fluxo de alteração de senha (A)
 		09 - O que aprendemos?
 		10 - Consolidando seu conhecimento
 ASP.NET Identity parte 3: Autorização, autenticação externa com redes sociais
@@ -100,32 +100,32 @@ ASP.NET Identity parte 3: Autorização, autenticação externa com redes sociais
 		01 - Introdução
 		02 - Autenticacao externa com o Google
 		03 - Fluxo de autenticacao e Owin
-		04 - Extensão para o Google
-		05 - Configuração
+		04 - Extensão para o Google (B)
+		05 - Configuração (B / C)
 		06 - O que aprendemos?
 		07 - Consolidando seu conhecimento
 		08 - Projeto do curso anterior
 	02 - Implementando autenticação externa
 		01 - Projeto da aula anterior
 		02 - Registrando por autenticacao externa
-		03 - AuthenticationManager
-		04 - Argumento provider
+		03 - AuthenticationManager (B)
+		04 - Argumento provider (B)
 		05 - O que aprendemos?
 		06 - Consolidando seu conhecimento
 	03 - Configurando autenticação externa
 		01 - Projeto da aula anterior
 		02 - Adicionando logins para nosso usuario
 		03 - Realizando login por autenticador externo
-		04 - Método de Autenticação externa
-		05 - Claim de nome
+		04 - Método de Autenticação externa (C)
+		05 - Claim de nome (A / C / D)
 		06 - O que aprendemos?
 		07 - Consolidando seu conhecimento
 	04 - Roles e funções
 		01 - Projeto da aula anterior
 		02 - Criando Roles
 		03 - Criando o Administrador
-		04 - Role de um usuário
-		05 - Classes de roles
+		04 - Role de um usuário (B)
+		05 - Classes de roles (D)
 		06 - O que aprendemos?
 		07 - Consolidando seu conhecimento
 	05 - Alterando as roles de um usuário
@@ -135,8 +135,8 @@ ASP.NET Identity parte 3: Autorização, autenticação externa com redes sociais
 		04 - Adicionando roles
 		05 - Conclusão
 		06 - Projeto final do curso
-		07 - Remover várias roles
-		08 - RoleManager e UserManager
+		07 - Remover várias roles (A)
+		08 - RoleManager e UserManager (C)
 		09 - O que aprendemos?
 		10 - Consolidando seu conhecimento
 ASP.NET Identity parte 4: Autenticação mais segura com 2 fatores
@@ -144,33 +144,33 @@ ASP.NET Identity parte 4: Autenticação mais segura com 2 fatores
 		01 - Introdução
 		02 - Fatores de autenticacao
 		03 - Pagina de edição de conta
-		04 - 2 fatores com IdentityUser
+		04 - 2 fatores com IdentityUser (A)
 		05 - O que aprendemos?
-		06 - Os fatores de autenticação
+		06 - Os fatores de autenticação (A / B / D)
 		07 - Consolidando seu conhecimento
 		08 - Projeto do curso anterior
 	02 - Serviço de envio de SMS
 		01 - Projeto da aula anterior
 		02 - Twilio e confirmacao de celular por SMS
 		03 - Confirmando o token recebido por SMS
-		04 - Confirmando número de celular
+		04 - Confirmando número de celular (D)
 		05 - O que aprendemos?
-		06 - O método ChangePhoneNumber
+		06 - O método ChangePhoneNumber (A / B)
 		07 - Consolidando seu conhecimento
 	03 - Implementando autenticação de 2 fatores
 		01 - Projeto da aula anterior
 		02 - Implementando autenticação de 2 fatores
-		03 - Registrando provedores
+		03 - Registrando provedores (A)
 		04 - O que aprendemos?
-		05 - Enviando SMS
+		05 - Enviando SMS (A / D)
 		06 - Consolidando seu conhecimento
 	04 - Continuando logado com autenticação de 2 fatores
 		01 - Projeto da aula anterior
 		02 - RememberBrowser e IsPersistent com 2 fatores
 		03 - Removendo o cookie TwoFactorRememberBrowserCookie
-		04 - Cookie lembrar navegador
+		04 - Cookie lembrar navegador (D)
 		05 - O que aprendemos?
-		06 - Esquecendo o navegador
+		06 - Esquecendo o navegador (B)
 		07 - Consolidando seu conhecimento
 	05 - SecurityStamp
 		01 - Projeto da aula anterior
@@ -178,7 +178,7 @@ ASP.NET Identity parte 4: Autenticação mais segura com 2 fatores
 		03 - Usando o SecurityStampValidator
 		04 - Conclusão
 		05 - Projeto final do curso
-		06 - Alterando o SecurityStamp
+		06 - Alterando o SecurityStamp (D)
 		07 - O que aprendemos?
-		08 - Sobre o SecurityStamp
+		08 - Sobre o SecurityStamp (A / B / E)
 		09 - Consolidando seu conhecimento

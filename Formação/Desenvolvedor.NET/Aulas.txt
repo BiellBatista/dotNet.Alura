@@ -68,14 +68,14 @@ Entity Framework Core: Banco de dados de forma eficiente (Curso feito em 05-Dese
 Asp.NET Core: Uma webapp usando o padrão MVC
 	01 - Transformando a aplicação em um servidor web
 		01 - Visão Geral do Curso
-		02 - O que vou aprender?
+		02 - O que vou aprender? (A)
 		03 - Ambiente e aplicação inicial
 		04 - Preparando o ambiente
 		05 - Nossa aplicação na Web
 		06 - Uma resposta padrão
-		07 - A importância do contexto
-		08 - Delegados permitidos
-		09 - Segue o fluxo!
+		07 - A importância do contexto (B)
+		08 - Delegados permitidos (C)
+		09 - Segue o fluxo! (B)
 		10 - O que aprendemos
 		11 - Para saber mais: configurando ambientes diferentes
 		12 - Consolidando os conhecimentos
@@ -84,19 +84,19 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 		01 - A propriedade Request
 		02 - Alterando código de retorno
 		03 - Melhorando a lógica de tratamento de requisições
-		04 - Route 66
-		05 - VIP: Very Important Properties
-		06 - Respondendo uma requisição
+		04 - Route 66 (B)
+		05 - VIP: Very Important Properties (B)
+		06 - Respondendo uma requisição (B)
 		07 - Para saber mais: HttpRequest
 		08 - O que aprendemos
 		09 - Consolidando os conhecimentos
 		10 - Projeto da aula atual
 	03 - Usando o serviço de roteamento do AspNet Core
 		01 - Incluindo um livro para ler
-		02 - O que está faltando?
+		02 - O que está faltando? (B)
 		03 - Rotas com template
-		04 - Ajuda dos universitários
-		05 - Produtos de uma categoria
+		04 - Ajuda dos universitários (D)
+		05 - Produtos de uma categoria (B)
 		06 - Exibindo os detalhes de um livro
 		07 - O que aprendemos
 		08 - Consolidando os conhecimentos
@@ -104,10 +104,10 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 	04 - Melhorando a experiência do usuário com HTML
 		01 - Um formulário para entrada de dados
 		02 - Processando o formulário
-		03 - Recuperando informações do formulário
+		03 - Recuperando informações do formulário (A)
 		04 - Isolando o HTML em seu próprio arquivo
-		05 - Mistura problemática
-		06 - Métodos de envio da requisição
+		05 - Mistura problemática (A / C / D)
+		06 - Métodos de envio da requisição (B)
 		07 - Sobre os métodos GET e POST
 		08 - Gerando HTML dinamicamente
 		09 - O que aprendemos
@@ -115,31 +115,31 @@ Asp.NET Core: Uma webapp usando o padrão MVC
 		11 - Projeto da aula atual
 	05 - Organizando a aplicação
 		01 - A classe Startup e suas responsabilidades
-		02 - Responsabilidades de Startup
+		02 - Responsabilidades de Startup (D / E)
 		03 - Isolando as responsabilidades em classes distintas
 		04 - O padrão MVC
-		05 - Conceituando
-		06 - Correspondência MVC
+		05 - Conceituando (C)
+		06 - Correspondência MVC (A)
 		07 - O que aprendemos
 		08 - Consolidando os conhecimentos
 		09 - Projeto da aula atual
 	06 - Introduzindo o AspNet Core MVC
 		01 - Roteamento padrão
 		02 - Usando o AspNet Core MVC
-		03 - Pré-requisitos do Asp.Net Core MVC
+		03 - Pré-requisitos do Asp.Net Core MVC (A / B / C)
 		04 - O estágio de Model Binding no request pipeline
-		05 - Mudança à frente!
-		06 - Usando o Model Binding
+		05 - Mudança à frente! (A / C)
+		06 - Usando o Model Binding (C)
 		07 - Para saber mais: A criação da classe de roteamento padrão
 		08 - Consolidando os conhecimentos
 		09 - Projeto da aula atual
 	07 - Renderização de views no AspNet Core MVC
 		01 - O estágio ExecuteResult
-		02 - Navegador não renderiza
-		03 - Resultados de actions
+		02 - Navegador não renderiza (B)
+		03 - Resultados de actions (A)
 		04 - Convenções nas views do AspNet Core MVC
 		05 - PreserveCompilationContext
-		06 - Ajude Roberta a entender as convenções
+		06 - Ajude Roberta a entender as convenções (C)
 		07 - O motor de views Razor
 		08 - Consolidando os conhecimentos
 		09 - Conclusão
@@ -154,18 +154,18 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		06 - Separando Responsabilidades
 		07 - Obtendo Adicionando Serviço
 		08 - Ciclos de Vida de Serviços
-		09 - Quando escolher AddTransient, AddScoped ou AddSingleton
+		09 - Quando escolher AddTransient, AddScoped ou AddSingleton (A / C / E)
 		10 - Criando um Projeto
 	02 - Criando o Projeto ASP NET Core MVC
 		01 - Abrindo o Projeto
 		02 - Conhecendo a View
 		03 - Controller e Model
 		04 - O Padrão MVC
-		05 - Os Componentes do MVC
+		05 - Os Componentes do MVC (A)
 		06 - O Arquivo Layout cshtml
-		07 - Compartilhando conteúdo entre as páginas
+		07 - Compartilhando conteúdo entre as páginas (D)
 		08 - A Página Carrossel
-		09 - Criando uma nova página numa aplicação MVC
+		09 - Criando uma nova página numa aplicação MVC (A / C / D)
 		10 - Modificando a Rota Padrão do MVC
 		11 - Consolidando seu conhecimento
 		12 - O que aprendemos?
@@ -177,13 +177,13 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		18 - Para saber mais - Bootstrap
 	03 - Banco de Dados
 		01 - Criando o Modelo
-		02 - Conectando o Entity Framework ao Banco de Dados
+		02 - Conectando o Entity Framework ao Banco de Dados (D)
 		03 - Configurando Banco de Dados
-		04 - Usando o contexto do Entity Framework numa aplicação ASP.NET Core
+		04 - Usando o contexto do Entity Framework numa aplicação ASP.NET Core (D)
 		05 - Relacionamentos e Migrações
 		06 - Gerando Banco, Classe Startup, Serviços, Injeção de Dependências
 		07 - Método EnsureCreated X Método Migrate
-		08 - Migrate x EnsureCreated
+		08 - Migrate x EnsureCreated (D)
 		09 - Para saber mais: Como Ler Configurações no Controller?
 		10 - Para saber mais: Diferenças entre EF 6 e EF Core
 		11 - Consolidando seu conhecimento
@@ -193,39 +193,39 @@ ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
 		01 - DataService, Injeção de dependência
 		02 - O que é injeção de dependência e por que ela é necessária?
 		03 - Lendo Arquivo Json de Produtos
-		04 - Injetando uma classe como dependência de outra
+		04 - Injetando uma classe como dependência de outra (C / D / F / H)
 		05 - Por que parâmetro como interface e não como classe concreta?
 		06 - Gravando Produtos no Banco de dados
-		07 - Inserir Produtos No Banco de Dados
+		07 - Inserir Produtos No Banco de Dados (D)
 		08 - ProdutoRepository
 		09 - Injetando Modelo na View Carrossel
 		10 - @model ou @Model?
 		11 - Consolidando seu conhecimento
 		12 - Exibindo uma página de produtos
 		13 - Paginação do Carrossel de Produtos
-		14 - Renderizando a view com o modelo
+		14 - Renderizando a view com o modelo (D)
 		15 - O que aprendemos?
 		16 - Projeto da Aula Atual
 		17 - Para saber mais - Code First, Database First ou Model First? (encurtador.com.br/ehtzM)
 	05 - Trabalhando com Session
 		01 - BaseRepository
 		02 - Links com Tag Helpers
-		03 - Âncora HTML x AnchorTagHelper
+		03 - Âncora HTML x AnchorTagHelper (D)
 		04 - Passando código de produto na rota
-		05 - Modificando a rota default
+		05 - Modificando a rota default (D)
 		06 - Configurando session, gravando e lendo PedidoId na sessão
-		07 - Para quê sessão?
+		07 - Para quê sessão? (D)
 		08 - Consolidando seu conhecimento
 		09 - O que aprendemos?
 		10 - Projeto da Aula Atual
 		11 - Para saber mais - Entity Framework Core
 	06 - Carrinho e Resumo
 		01 - Obtendo ou criando novo pedido
-		02 - Obtendo produtos do banco de dados
+		02 - Obtendo produtos do banco de dados (D)
 		03 - Salvando item de pedido
-		04 - Gravando id do pedido na sessão
+		04 - Gravando id do pedido na sessão (D)
 		05 - Tela de carrinho e método Include
-		06 - Consultando entidades associadas
+		06 - Consultando entidades associadas (B)
 		07 - View de Resumo
 		08 - Consolidando seu conhecimento
 		09 - O que aprendemos?
@@ -239,11 +239,11 @@ ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 		03 - Chamando Função JavaScript a Partir de um evento HTML
 		04 - Usando Filtros jQuery Para Acessar Elementos
 		05 - Navegando Pela Hierarquia de Elementos
-		06 - Obtendo elementos na hierarquia do HTML
+		06 - Obtendo elementos na hierarquia do HTML (D)
 		07 - Criando Método POST no Servidor para Receber Requisição
 		08 - Método no Controller para a Chamada AJAX
-		09 - Ajax com jQuery
-		10 - Monte a Chamada AJAX
+		09 - Ajax com jQuery (D)
+		10 - Monte a Chamada AJAX (D)
 		11 - Consolidando seu conhecimento
 		12 - Projeto Final da Aula Atual
 		13 - Para saber mais - Livro
@@ -251,38 +251,38 @@ ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 	02 - Alterando a Quantidade de Itens
 		01 - Chamando Repositório de Itens a Partir do Controller
 		02 - Alterando a Quantidade no Banco de Dados
-		03 - Altere a Quantidade no Banco de Dados
+		03 - Altere a Quantidade no Banco de Dados (D)
 		04 - Organizando Código JavaScript com Classe
-		05 - Consuma Função de uma Classe JavaScript a Partir de evento HTML
+		05 - Consuma Função de uma Classe JavaScript a Partir de evento HTML (D)
 		06 - Digitando a Nova Quantidade
-		07 - Utilize o Evento Adequado
+		07 - Utilize o Evento Adequado (B)
 		08 - Consolidando seu conhecimento
 		09 - Projeto Final da Aula Atual
 		10 - Para saber mais - ECMAScript 6
 		11 - O que aprendemos?
 	03 - Adicionando e Removendo Itens
 		01 - Criando uma ViewModel
-		02 - Fornecendo os Dados Necessários Para a View
+		02 - Fornecendo os Dados Necessários Para a View (D)
 		03 - Preparando o Objeto de Resposta Para a Chamada AJAX
-		04 - Tratando Resposta da Chamada AJAX
+		04 - Tratando Resposta da Chamada AJAX (D)
 		05 - Refatorando Repositórios
 		06 - Adicione a propriedade Subtotal em ItemPedido
 		07 - Atualizando o Item na View com JavaScript
 		08 - Atualizando Totais do Carrinho na View com JavaScript
-		09 - Redefina o Valor do Input
+		09 - Redefina o Valor do Input (D)
 		10 - Consolidando seu conhecimento
 		11 - Projeto Final da Aula Atual
 		12 - Para saber mais - ASP.NET Core MVC
 		13 - O que aprendemos?
 	04 - Validando e Enviando Formulário de Cadastro
 		01 - Montando a View de Cadastro
-		02 - Defina o Binding dos Campos do Formulário
+		02 - Defina o Binding dos Campos do Formulário (D)
 		03 - Injetando o Cadastro na View e Redirecionando se Necessário
 		04 - Validando Campos do Formulário no Cliente
-		05 - Valide o Campo do Formulário
+		05 - Valide o Campo do Formulário (D)
 		06 - Customizando Validações no Modelo de Cadastro
 		07 - Validando Dados do Formulário no Servidor
-		08 - Retornando uma View Diferente
+		08 - Retornando uma View Diferente (D)
 		09 - Consolidando seu conhecimento
 		10 - Projeto Final da Aula Atual
 		11 - Para saber mais
@@ -290,10 +290,10 @@ ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 	05 - Recebendo e Gravando Dados de Cadastro
 		01 - Gravando Cadastro no Banco de Dados
 		02 - Protegendo uma Action com ValidateAntiForgeryToken
-		03 - Proteja a Action do Controller
+		03 - Proteja a Action do Controller (D)
 		04 - Protegendo a Action do AJAX Contra Ataques Maliciosos
-		05 - Forneça um Token Anti-Falsificação para a Página
-		06 - Passe o Token Anti-Falsificação na Chamada Ajax
+		05 - Forneça um Token Anti-Falsificação para a Página (D)
+		06 - Passe o Token Anti-Falsificação na Chamada Ajax (D)
 		07 - Aplicando os Campos do Cadastro do Modelo na View de Resumo
 		08 - Refatorando o Arquivo Carrinho js
 		09 - Consolidando seu conhecimento

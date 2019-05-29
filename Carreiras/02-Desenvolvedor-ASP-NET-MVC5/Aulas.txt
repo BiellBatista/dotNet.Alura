@@ -39,83 +39,83 @@ HTTP: Entendendo a web por baixo dos panos
 		01 - Este curso foi atualizado!
 		02 - Introdução
 		03 - O que é o HTTP
-		04 - Objetivo do treinamento
-		05 - Modelo Client-Server
-		06 - Papel do HTTP entre Cliente e Servidor
+		04 - Objetivo do treinamento (D)
+		05 - Modelo Client-Server (A)
+		06 - Papel do HTTP entre Cliente e Servidor (C)
 		07 - Para saber mais: Peer-To-Peer
-		08 - Para saber mais: Outros protocolos
+		08 - Para saber mais: Outros protocolos (B)
 		09 - Para saber mais: Arquitetura da Alura
 		10 - O que aprendemos?
 	02 - A web segura - HTTPS
 		01 - HTTPS - A versão segura do HTTP
-		02 - Enviando dados com HTTP
+		02 - Enviando dados com HTTP (B)
 		03 - Funcionamento do HTTPS
 		04 - Certificado digital
-		05 - Características do HTTPS
-		06 - Autoridade certificadora
+		05 - Características do HTTPS (A / C / D)
+		06 - Autoridade certificadora (A)
 		07 - Para Saber Mais: As chaves do HTTPS
 		08 - O que aprendemos?
 	03 - Endereços sob seu domínio
 		01 - Endereços
-		02 - O que é um domínio na Internet?
-		03 - Como funciona o DNS?
+		02 - O que é um domínio na Internet? (C)
+		03 - Como funciona o DNS? (A)
 		04 - Portas
-		05 - Porta padrão HTTP
+		05 - Porta padrão HTTP (D)
 		06 - Recursos
-		07 - Identificando o protocolo
-		08 - Recursos na URL
+		07 - Identificando o protocolo (D)
+		08 - Recursos na URL (B)
 		09 - Para saber mais: URI ou URL?
 		10 - O que aprendemos?
 	04 - O cliente pede e o servidor responde
 		01 - Modelo Requisição e Resposta
-		02 - O HTTP e o estado das requisições
-		03 - Sessão HTTP
+		02 - O HTTP e o estado das requisições (B)
+		03 - Sessão HTTP (D)
 		04 - O que é um cookie?
 		05 - Login e Senha
-		06 - Comunicação em HTTP
+		06 - Comunicação em HTTP (B)
 		07 - O que aprendemos?
 	05 - Depurando a requisição HTTP
 		01 - Depurando o método HTTP
 		02 - Console no Firefox e Internet Explorer
-		03 - Código de sucesso
+		03 - Código de sucesso (D)
 		04 - Analisando Request e Response
-		05 - Depurando os códigos de resposta HTTP
-		06 - Problema no servidor
-		07 - Recurso não encontrado
-		08 - Analisando Request e Response 2
-		09 - Classes de códigos
+		05 - Depurando os códigos de resposta HTTP (D)
+		06 - Problema no servidor (C)
+		07 - Recurso não encontrado (D)
+		08 - Analisando Request e Response 2 (A)
+		09 - Classes de códigos (A)
 		10 - Resumindo o capítulo
 		11 - Para saber mais: Mais códigos HTTP
 	06 - Parâmetros da requisição
 		01 - Revisando o capítulo anterior
-		02 - A qual grupo eu pertenço?
+		02 - A qual grupo eu pertenço? (C)
 		03 - Parâmetros na requisição com métodos GET e POST
-		04 - Testando parâmetros da requisição
-		05 - Enviando parâmetros de forma correta
-		06 - Qual é o método HTTP?
-		07 - Por que POST?
+		04 - Testando parâmetros da requisição (C)
+		05 - Enviando parâmetros de forma correta (C)
+		06 - Qual é o método HTTP? (C)
+		07 - Por que POST? (D)
 		08 - Para saber mais: Parâmetros na URL
 		09 - Para saber mais: Outros métodos HTTP e Web Services
 		10 - O que aprendemos?
 	07 - Serviços na web com REST
 		01 - Serviços Web-REST
-		02 - Métodos HTTP
-		03 - Sobre o HTTP
-		04 - Sobre o formato
+		02 - Métodos HTTP (A)
+		03 - Sobre o HTTP (B / C / E)
+		04 - Sobre o formato (E)
 		05 - O que é REST?
-		06 - Solicitando um recurso
-		07 - Identificando um recurso
+		06 - Solicitando um recurso (D)
+		07 - Identificando um recurso (B)
 		08 - O que aprendemos?
 		09 - Para saber mais: tipos de dados
 	08 - HTTP2 - Por uma web mais eficiente
 		01 - HTTP2 - Dados binários, GZIP ativo e TLS
-		02 - Motivos por trás do HTTP/2
-		03 - A tecnologia HPACK
-		04 - Comparações entre versões
+		02 - Motivos por trás do HTTP/2 (A / C)
+		03 - A tecnologia HPACK (C)
+		04 - Comparações entre versões (B / C / D)
 		05 - HTTP2 - Cabeçalhos Stateful
-		06 - Os cabeçalhos que mantêm estado
+		06 - Os cabeçalhos que mantêm estado (A)
 		07 - HTTP2 - Server Push
-		08 - O Server Push
+		08 - O Server Push (C)
 		09 - HTTP2 - Multiplexação
 		10 - HTTP2 - Resumo
 		11 - Considerações finais
@@ -139,12 +139,12 @@ ASP.NET MVC 5: O framework pronto para a web
 		03 - Vídeo 2
 		04 - Introdução ao ASP.NET MVC
 		05 - Novo Projeto Asp.Net MVC 5
-		06 - Pasta dos controllers
+		06 - Pasta dos controllers (C)
 		07 - Primeiro Controller
-		08 - Pasta para as views
-		09 - Nome do Arquivo de View
+		08 - Pasta para as views (B)
+		09 - Nome do Arquivo de View (B)
 		10 - View para a página inicial
-		11 - Url para a página inicial
+		11 - Url para a página inicial (B / C / E)
 		12 - Projeto do curso até o momento
 	02 - O padrão MVC
 		01 - Vídeo 1
@@ -156,18 +156,18 @@ ASP.NET MVC 5: O framework pronto para a web
 	03 - Controlando Requisições e a Listagem de Produtos
 		01 - Vídeo 1
 		02 - Controlando Requisições e a Listagem de Produtos
-		03 - Enviando informações para a view
-		04 - Laço na View
+		03 - Enviando informações para a view (D)
+		04 - Laço na View (D)
 		05 - Lista de produtos
 		06 - Lista de categorias
 		07 - Projeto do curso até o momento
 	04 - Lidando com Formulários e o Cadastro de Produtos
 		01 - Vídeo 1
 		02 - Lidando com Formulários e o Cadastro de Produtos
-		03 - Padrão de nome do model binder
+		03 - Padrão de nome do model binder (A / B / D)
 		04 - Formulário de cadastro
 		05 - Cadastro do produto
-		06 - Limitando o tipo de requisição
+		06 - Limitando o tipo de requisição (B)
 		07 - Redirecionando para a lista de produtos
 		08 - Redirect para outro controller
 		09 - Cadastro de categorias
@@ -175,11 +175,11 @@ ASP.NET MVC 5: O framework pronto para a web
 	05 - Validando um produto com Model Validation
 		01 - Vídeo 1
 		02 - Validando um produto com Model Validation
-		03 - HtmlHelper na view
+		03 - HtmlHelper na view (D)
 		04 - Validação de intervalo de valores
 		05 - Limitando o tamanho do nome do produto
 		06 - Utilizando o ModelState para verificar erros de validação
-		07 - Indicando que um atributo é obrigatório
+		07 - Indicando que um atributo é obrigatório (D)
 		08 - Mostrando erros de validação na view
 		09 - Erros de validação programáticos
 		10 - Preenchendo os dados do produto após a validação
@@ -190,8 +190,8 @@ ASP.NET MVC 5: O framework pronto para a web
 		03 - Página de visualização de produtos
 		04 - Criando links com ActionLink
 		05 - Passando parâmetros pelo ActionLink
-		06 - Como declarar a view fortemente tipada
-		07 - Argumento do método View
+		06 - Como declarar a view fortemente tipada (B)
+		07 - Argumento do método View (D)
 		08 - Lista de produtos com view fortemente tipada
 		09 - Projeto do curso até o momento
 	07 - Criando rotas na aplicação
@@ -199,17 +199,17 @@ ASP.NET MVC 5: O framework pronto para a web
 		02 - Criando rotas na aplicação
 		03 - RouteAttribute
 		04 - RouteAttribute com parâmetros
-		05 - Links com as rotas
+		05 - Links com as rotas (D)
 		06 - Utilizando o RouteLink
 		07 - Projeto do curso até o momento
 	08 - Layouts com o Twitter Bootstrap
 		01 - Vídeo 1
 		02 - Layouts com o Twitter Bootstrap
 		03 - Instalando os estilos
-		04 - Importando o arquivo de layout
+		04 - Importando o arquivo de layout (D)
 		05 - Criando o layout page
-		06 - Utilizando o Layout
-		07 - Configurações globais para views
+		06 - Utilizando o Layout (B)
+		07 - Configurações globais para views (D)
 		08 - _ViewStart.cshtml
 		09 - Estilo de tabelas
 		10 - Estilo nos formulários
@@ -217,29 +217,29 @@ ASP.NET MVC 5: O framework pronto para a web
 	09 - Ajax
 		01 - Vídeo 1
 		02 - Ajax
-		03 - Devolvendo Json
+		03 - Devolvendo Json (D)
 		04 - Action DecrementaQtd
-		05 - Importando o JQuery
-		06 - Requisições ajax
+		05 - Importando o JQuery (A)
+		06 - Requisições ajax (B)
 		07 - Função decrementa
 		08 - Link para decrementar o produto
 		09 - Projeto do curso até o momento
 	10 - Sessões para autenticar usuários
 		01 - Vídeo 1
 		02 - Sessões para autenticar usuários
-		03 - Acessando a sessão do servidor
-		04 - Objeto armazenado na sessão
+		03 - Acessando a sessão do servidor (D)
+		04 - Objeto armazenado na sessão (C)
 		05 - Contador com a sessão do ASP.NET MVC
 		06 - Login de usuários
 		07 - Projeto do curso até o momento
 	11 - Filtro para autorização de usuários
 		01 - Vídeo 1
 		02 - Filtro para autorização de usuários
-		03 - Filtros do Asp.Net MVC
-		04 - Código antes da action
+		03 - Filtros do Asp.Net MVC (D)
+		04 - Código antes da action (D)
 		05 - Filtro de autenticação
 		06 - Restringindo o acesso à lista de produtos
-		07 - Criação do csrf token
-		08 - Validação do antiforgery token
+		07 - Criação do csrf token (A)
+		08 - Validação do antiforgery token (D)
 		09 - CSRF Token no cadastro de produtos
 		10 - Projeto do curso
