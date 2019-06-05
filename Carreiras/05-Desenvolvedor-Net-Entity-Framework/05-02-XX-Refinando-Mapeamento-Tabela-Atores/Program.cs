@@ -7,7 +7,6 @@ namespace Alura.Filmes.App
     {
         static void Main(string[] args)
         {
-            //select * from actor
             using (var contexto = new AluraFilmesContexto())
             {
                 contexto.LogSQLToConsole();

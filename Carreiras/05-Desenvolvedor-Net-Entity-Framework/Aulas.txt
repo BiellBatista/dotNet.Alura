@@ -281,5 +281,5 @@ Entity Framework Core parte 1: Mapeando um banco pré-existente
 		13 - Projeto da aula atual
 	02 - Refinando o mapeamento da tabela de atores
 		01 - Gerando o script do banco de dados
-		02 - 
-		03 - 
+		02 - Como saber se o Migrations está instalado em meu projeto? (B)
+		03 - Configurando tipo e tamanho de colunas
