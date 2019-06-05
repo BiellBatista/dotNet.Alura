@@ -270,3 +270,6 @@ Entity Framework Core parte 1: Mapeando um banco pré-existente
 		02 - Preparando o ambiente
 		03 - Preparando o ambiente: banco AluraFilmes (Obrigatório)
 		04 - Mapeando atores
+		05 - Convenção para nomes de tabelas (C)
+		06 - Para saber mais: convenção sobre configuração
+		07 - Configurando nomes de tabelas
