@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-04-XX-ProgramaçãoParal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-05-XX-IntegreResultadosProceduresLINQ", "04-05-XX-IntegreResultadosProceduresLINQ\04-05-XX-IntegreResultadosProceduresLINQ.csproj", "{35E07DA7-7C34-49F9-8A5D-289829DB7971}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-01-XX-Mapeando-Banco-Existente", "Alura.Filmes.App\05-01-XX-Mapeando-Banco-Existente.csproj", "{47443DB8-7227-43FD-BB2B-ADD571D9DF81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{35E07DA7-7C34-49F9-8A5D-289829DB7971}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35E07DA7-7C34-49F9-8A5D-289829DB7971}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35E07DA7-7C34-49F9-8A5D-289829DB7971}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47443DB8-7227-43FD-BB2B-ADD571D9DF81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47443DB8-7227-43FD-BB2B-ADD571D9DF81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47443DB8-7227-43FD-BB2B-ADD571D9DF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47443DB8-7227-43FD-BB2B-ADD571D9DF81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

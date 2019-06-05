@@ -267,3 +267,6 @@ Entity LinQ parte 2: Store Procedures e consultas com o LinQPad
 Entity Framework Core parte 1: Mapeando um banco pré-existente
 	01 - Configurando nomes de tabelas e colunas
 		01 - Apresentação
+		02 - Preparando o ambiente
+		03 - Preparando o ambiente: banco AluraFilmes (Obrigatório)
+		04 - Mapeando atores
