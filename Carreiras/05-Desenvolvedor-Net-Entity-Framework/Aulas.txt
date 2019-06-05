@@ -273,3 +273,11 @@ Entity Framework Core parte 1: Mapeando um banco pré-existente
 		05 - Convenção para nomes de tabelas (C)
 		06 - Para saber mais: convenção sobre configuração
 		07 - Configurando nomes de tabelas
+		08 - Ajude Beto a configurar o Entity! (A)
+		09 - Configurando nomes de colunas
+		10 - Como recuperar o nome do Frodo? (B)
+		11 - O que aprendemos
+		12 - Consolidando os conhecimentos
+		13 - Projeto da aula atual
+	02 - Refinando o mapeamento da tabela de atores
+		01 - Gerando o script do banco de dados
