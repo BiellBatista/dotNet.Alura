@@ -1,6 +1,8 @@
 ﻿using Alura.Filmes.App.Dados;
 using Alura.Filmes.App.Extensions;
+using Microsoft.EntityFrameworkCore;
 using System;
+using System.Linq;
 
 namespace Alura.Filmes.App
 {
@@ -12,17 +14,30 @@ namespace Alura.Filmes.App
             {
                 contexto.LogSQLToConsole();
 
-                foreach (var item in contexto.Elenco)
-                {
-                    //pegando a entidade para que eu possa pegar as propriedades ocultas
-                    var entidade = contexto.Entry(item);
-                    //pegando as propriedades shadow
-                    var filmId = entidade.Property("film_id").CurrentValue;
-                    var actorId = entidade.Property("actor_id").CurrentValue;
-                    var lastUpdate = entidade.Property("last_update").CurrentValue;
+                var filme = contexto.Filmes
+                    .Include(f => f.Atores) //pedido para realizar um join com Atores
+                    .First();
 
-                    Console.WriteLine($"Filme: {filmId}, Ator: {actorId}, LastUpdate: {lastUpdate}");
+                Console.WriteLine(filme);
+                Console.WriteLine("Elenco");
+
+
+                foreach (var ator in filme.Atores)
+                {
+                    Console.WriteLine(ator);
                 }
+
+                //foreach (var item in contexto.Elenco)
+                //{
+                //    //pegando a entidade para que eu possa pegar as propriedades ocultas
+                //    var entidade = contexto.Entry(item);
+                //    //pegando as propriedades shadow
+                //    var filmId = entidade.Property("film_id").CurrentValue;
+                //    var actorId = entidade.Property("actor_id").CurrentValue;
+                //    var lastUpdate = entidade.Property("last_update").CurrentValue;
+
+                //    Console.WriteLine($"Filme: {filmId}, Ator: {actorId}, LastUpdate: {lastUpdate}");
+                //}
 
                 Console.ReadLine();
             }

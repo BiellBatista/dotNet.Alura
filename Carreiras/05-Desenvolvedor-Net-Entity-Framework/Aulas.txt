@@ -321,3 +321,6 @@ Entity Framework Core parte 1: Mapeando um banco pré-existente
 		03 - Definindo chaves primárias compostas
 		04 - Configure a chave primária composta (C)
 		05 - Recuperando os atores de um filme
+		06 - Convenção para descoberta de relacionamentos (B / C)
+		07 - Configurando chaves estrangeiras
+		08 - 
