@@ -310,3 +310,5 @@ Entity Framework Core parte 1: Mapeando um banco pré-existente
 		03 - Configurando o mapeamento de filmes
 		04 - Expected value was 'System.Int32' but the actual value was `System.Int16` (D)
 		05 - Usando a convenção de descoberta de tipos na propriedade Duração
+		06 - Frodo é Hobbit, Humano, Elfo ou o quê? (B)
+		07 - 

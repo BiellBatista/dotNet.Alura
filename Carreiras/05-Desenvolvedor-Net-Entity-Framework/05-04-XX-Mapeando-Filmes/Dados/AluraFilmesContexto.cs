@@ -49,7 +49,7 @@ namespace Alura.Filmes.App.Dados
 
             modelBuilder.Entity<Filme>()
                 .Property(f => f.Titulo)
-                .HasColumnName("titulo")
+                .HasColumnName("title")
                 .HasColumnType("varchar(255)")
                 .IsRequired();
 
