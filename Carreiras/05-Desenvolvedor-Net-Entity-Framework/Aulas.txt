@@ -290,4 +290,7 @@ Entity Framework Core parte 1: Mapeando um banco pré-existente
 		08 - Para saber mais: configurar por Anotação ou OnModelCreating?
 		09 - Beto quer isolar o mapeamento...
 		10 - O que aprendemos?
-		11 - 
+		11 - Consolidando os conhecimentos
+		12 - Projeto da aula atual
+	03 - Colunas que não existem na camada de negócio
+		01 - Colunas não necessárias no negócio
