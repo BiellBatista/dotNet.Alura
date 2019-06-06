@@ -1,9 +1,6 @@
 ﻿using Alura.Filmes.App.Dados;
 using Alura.Filmes.App.Extensions;
-using Alura.Filmes.App.Negocio;
-using Microsoft.EntityFrameworkCore;
 using System;
-using System.Linq;
 
 namespace Alura.Filmes.App
 {
@@ -15,8 +12,17 @@ namespace Alura.Filmes.App
             {
                 contexto.LogSQLToConsole();
 
-                foreach (var filme in contexto.Filmes)
-                    Console.WriteLine(filme);
+                foreach (var item in contexto.Elenco)
+                {
+                    //pegando a entidade para que eu possa pegar as propriedades ocultas
+                    var entidade = contexto.Entry(item);
+                    //pegando as propriedades shadow
+                    var filmId = entidade.Property("film_id").CurrentValue;
+                    var actorId = entidade.Property("actor_id").CurrentValue;
+                    var lastUpdate = entidade.Property("last_update").CurrentValue;
+
+                    Console.WriteLine($"Filme: {filmId}, Ator: {actorId}, LastUpdate: {lastUpdate}");
+                }
 
                 Console.ReadLine();
             }
