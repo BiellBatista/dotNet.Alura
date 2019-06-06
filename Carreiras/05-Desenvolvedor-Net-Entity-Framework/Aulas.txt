@@ -306,3 +306,7 @@ Entity Framework Core parte 1: Mapeando um banco pré-existente
 		11 - Projeto da aula atual
 	04 - Mapeando filmes
 		01 - A entidade Filme
+		02 - Invalid object name 'Filmes' (C)
+		03 - Configurando o mapeamento de filmes
+		04 - Expected value was 'System.Int32' but the actual value was `System.Int16` (D)
+		05 - Usando a convenção de descoberta de tipos na propriedade Duração
