@@ -10,6 +10,7 @@ namespace Alura.Filmes.App.Negocio
         public string AnoLancamento { get; set; }
         public short Duracao { get; set; }
         public IList<FilmeAtor> Atores { get; set; }
+        public IEnumerable<FilmeCategoria> Categorias { get; internal set; }
 
         public Filme()
         {

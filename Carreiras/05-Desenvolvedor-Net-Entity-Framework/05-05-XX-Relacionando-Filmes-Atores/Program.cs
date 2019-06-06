@@ -14,18 +14,33 @@ namespace Alura.Filmes.App
             {
                 contexto.LogSQLToConsole();
 
-                var filme = contexto.Filmes
-                    .Include(f => f.Atores) //pedido para realizar um join com Atores
-                    .First();
+                var categorias = contexto.Categorias
+                    .Include(c => c.Filmes)
+                    .ThenInclude(fc => fc.Filme);
 
-                Console.WriteLine(filme);
-                Console.WriteLine("Elenco");
-
-
-                foreach (var ator in filme.Atores)
+                foreach (var c in categorias)
                 {
-                    Console.WriteLine(ator);
+                    Console.WriteLine("");
+                    Console.WriteLine($"Filmes da categoria {c}:");
+                    foreach (var fc in c.Filmes)
+                    {
+                        Console.WriteLine(fc.Filme);
+                    }
                 }
+
+                //var filme = contexto.Filmes
+                //    .Include(f => f.Atores) //pedido para realizar um join com Atores que está na tabea filme
+                //    .ThenInclude(fa => fa.Ator) //adicinando mais um join, pegando o ator que está na tabela FilmeAtor
+                //    .First();
+
+                //Console.WriteLine(filme);
+                //Console.WriteLine("Elenco");
+
+
+                //foreach (var ator in filme.Atores)
+                //{
+                //    Console.WriteLine(ator.Ator);
+                //}
 
                 //foreach (var item in contexto.Elenco)
                 //{

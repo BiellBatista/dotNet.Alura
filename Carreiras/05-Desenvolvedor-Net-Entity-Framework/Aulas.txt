@@ -323,4 +323,9 @@ Entity Framework Core parte 1: Mapeando um banco pré-existente
 		05 - Recuperando os atores de um filme
 		06 - Convenção para descoberta de relacionamentos (B / C)
 		07 - Configurando chaves estrangeiras
-		08 - 
+		08 - O que aprendemos?
+		09 - Consolidando os conhecimentos
+		10 - Desafio: crie o mapeamento entre filmes e categorias
+		11 - Projeto da aula atual
+	06 - Incluindo a tabela de idiomas no projeto
+		01 - Múltiplos relacionamentos entre as mesmas tabelas
