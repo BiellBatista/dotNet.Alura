@@ -1,5 +1,6 @@
 ﻿using Alura.Filmes.App.Dados;
 using Alura.Filmes.App.Extensions;
+using System;
 
 namespace Alura.Filmes.App
 {
@@ -13,6 +14,7 @@ namespace Alura.Filmes.App
                 foreach (var ator in contexto.Atores)
                 {
                     System.Console.WriteLine(ator);
+                    //contexto.Entry(ator).Property("las_update").CurrentValue = DateTime.Now; //adicionado um valor para uma propriedade shadow. Tenho que fazer isso porque ela não pode, pela regra de negócio, ser declada na entidade Ator
                 }
                 System.Console.ReadLine();
             }
