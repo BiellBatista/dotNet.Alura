@@ -317,3 +317,5 @@ Entity Framework Core parte 1: Mapeando um banco pré-existente
 		10 - Projeto da aula atual
 	05 - Relacionando filmes a atores
 		01 - Relacionando filmes a atores
+		02 - Convenção do Entity para chaves primárias (A)
+		03 - Definindo chaves primárias compostas
