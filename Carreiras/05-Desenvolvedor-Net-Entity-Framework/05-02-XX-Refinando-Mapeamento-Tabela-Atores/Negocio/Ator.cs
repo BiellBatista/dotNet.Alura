@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Alura.Filmes.App.Negocio
 {
@@ -7,8 +8,10 @@ namespace Alura.Filmes.App.Negocio
     {
         [Column("actor_id")]
         public int Id { get; set; }
+        [Required]
         [Column("first_name", TypeName = "varchar(45)")]
         public string PrimeiroNome { get; set; }
+        [Required]
         //falando que esta coluna é do tipo varchar(45)
         [Column("last_name", TypeName = "varchar(45)")]
         public string UltimoNome { get; set; }

@@ -285,3 +285,5 @@ Entity Framework Core parte 1: Mapeando um banco pré-existente
 		03 - Configurando tipo e tamanho de colunas
 		04 - Convenções para determinar o tipo e tamanho das colunas (D)
 		05 - Configurando nulidade das colunas
+		06 - Beto ainda está confuso... (C)
+		07 - Movendo as informações de mapeamento para fora da camada de negócio
