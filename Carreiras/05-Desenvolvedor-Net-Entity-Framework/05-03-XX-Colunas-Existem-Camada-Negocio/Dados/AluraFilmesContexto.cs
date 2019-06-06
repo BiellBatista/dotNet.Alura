@@ -35,7 +35,8 @@ namespace Alura.Filmes.App.Dados
 
             modelBuilder.Entity<Ator>() //para a entidade ator
                 .Property<DateTime>("last_update") //crie uma propriedade shadow do tipo datetime que faz referencia a coluna last_update
-                .HasColumnType("datetime"); //a propriedade shadow faz referencia a uma coluna do tipo datetime
+                .HasColumnType("datetime") //a propriedade shadow faz referencia a uma coluna do tipo datetime
+                .HasDefaultValueSql("getdate()"); //definindo um valor padrão para a coluna, usando o SQL para isso. Com isso, não preciso usar o contexto.Entry(ator).Property("las_update").CurrentValue = DateTime.Now; para inserir um valor a cada insert
         }
     }
 }

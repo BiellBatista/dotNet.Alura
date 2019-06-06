@@ -297,3 +297,5 @@ Entity Framework Core parte 1: Mapeando um banco pré-existente
 		02 - Acerte o erro (C)
 		03 - Definindo valores para shadow properties
 		04 - Definindo valor padrão para colunas
+		05 - Recuperando valores das shadow properties
+		06 - 
