@@ -298,4 +298,11 @@ Entity Framework Core parte 1: Mapeando um banco pré-existente
 		03 - Definindo valores para shadow properties
 		04 - Definindo valor padrão para colunas
 		05 - Recuperando valores das shadow properties
-		06 - 
+		06 - Lidando com os valores de uma Shadow Property (C)
+		07 - Para saber mais: shadow properties geradas pelo Entity
+		08 - Beto precisa implementar um novo requisito... (B)
+		09 - O que aprendemos?
+		10 - Consolidando os conhecimentos
+		11 - Projeto da aula atual
+	04 - Mapeando filmes
+		01 - A entidade Filme
