@@ -11,6 +11,12 @@ namespace Alura.Filmes.App
             using (var contexto = new AluraFilmesContexto())
             {
                 contexto.LogSQLToConsole();
+
+                foreach (var idioma in contexto.Idiomas)
+                {
+                    Console.WriteLine(idioma);
+                }
+
                 Console.ReadLine();
             }
         }
