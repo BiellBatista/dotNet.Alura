@@ -346,3 +346,9 @@ Entity Framework Core parte 2: Mapeando um banco pré-existente
 		03 - Erro ao executar o comando Remove-Migration
 		04 - Convenção do EF Core para criação de índices (C)
 		05 - Configurando restrições UNIQUE
+		06 - Um Sméagol já é o bastante! (C)
+		07 - Não chegou no banco de dados? (C)
+		08 - Consolidando os conhecimentos
+		09 - Projeto da aula atual
+	02 - Classificação indicativa de filmes
+		01 - A coluna de Classificação Indicativa
