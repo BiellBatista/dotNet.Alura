@@ -331,3 +331,5 @@ Entity Framework Core parte 1: Mapeando um banco pré-existente
 		01 - Múltiplos relacionamentos entre as mesmas tabelas
 		02 - O Condado, Isengard e Rohan (B)
 		03 - Idioma falado e original de um filme
+		04 - O que está faltando? (A)
+		05 - Recuperando filmes de um determinado idioma

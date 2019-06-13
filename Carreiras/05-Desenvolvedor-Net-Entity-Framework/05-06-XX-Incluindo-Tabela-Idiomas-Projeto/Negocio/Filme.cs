@@ -10,6 +10,8 @@ namespace Alura.Filmes.App.Negocio
         public string AnoLancamento { get; set; }
         public short Duracao { get; set; }
         public IList<FilmeAtor> Atores { get; set; }
+        public Idioma IdiomaFalado { get; set; }
+        public Idioma IdiomaOriginal { get; set; }
         public IEnumerable<FilmeCategoria> Categorias { get; internal set; }
 
         public Filme()
@@ -23,3 +25,7 @@ namespace Alura.Filmes.App.Negocio
         }
     }
 }
+
+/**
+ * O EF não consegue descobrir o relacionamento para duas propriedades da mesma classe
+ */
