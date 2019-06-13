@@ -338,4 +338,8 @@ Entity Framework Core parte 1: Mapeando um banco pré-existente
 		08 - O que aprendemos?
 		09 - Projeto final do curso
 		10 - Conclusão
-		11 - 
+		11 - Considerações finais da parte 1
+Entity Framework Core parte 2: Mapeando um banco pré-existente
+	01 - Concluindo o mapeamento da tabelas de atores
+		01 - Visão geral do curso
+		02 - Criando índices com o Entity

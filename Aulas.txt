@@ -182,7 +182,12 @@ Carreira Desenvolvedor .Net com Entity Framework
 		05 - Relacionando filmes a atores
 		06 - Incluindo a tabela de idiomas no projeto
 	Entity Framework Core parte 2: Mapeando um banco pré-existente
-		01 - 
+		01 - Concluindo o mapeamento da tabelas de atores
+		02 - Classificação indicativa de filmes
+		03 - Lidando com enumerados
+		04 - Mapeando herança
+		05 - Assumindo o controle da geração do SQL
+		06 - Stored Procedures
 -------------------------------------------------------------------------------------------------------------------------
 Extra ASP.NET Identity
 	 Parte 1: Gerencie contas de usuários
