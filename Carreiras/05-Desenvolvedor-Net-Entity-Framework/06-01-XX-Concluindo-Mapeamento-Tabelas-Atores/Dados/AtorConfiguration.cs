@@ -32,6 +32,11 @@ namespace Alura.Filmes.App.Dados
                 .Property<DateTime>("last_update")
                 .HasColumnType("datetime")
                 .HasDefaultValueSql("getdate()");
+
+            //adicionando um indece que já existe no banco de dados
+            builder
+                .HasIndex(a => a.UltimoNome)
+                .HasName("idx_actor_last_name");
         }
     }
 }

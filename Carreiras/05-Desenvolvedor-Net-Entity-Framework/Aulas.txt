@@ -343,3 +343,6 @@ Entity Framework Core parte 2: Mapeando um banco pré-existente
 	01 - Concluindo o mapeamento da tabelas de atores
 		01 - Visão geral do curso
 		02 - Criando índices com o Entity
+		03 - Erro ao executar o comando Remove-Migration
+		04 - Convenção do EF Core para criação de índices (C)
+		05 - Configurando restrições UNIQUE
