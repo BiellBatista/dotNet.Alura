@@ -333,3 +333,9 @@ Entity Framework Core parte 1: Mapeando um banco pré-existente
 		03 - Idioma falado e original de um filme
 		04 - O que está faltando? (A)
 		05 - Recuperando filmes de um determinado idioma
+		06 - Diferença entre NULL e NOT NULL na recuperação de idiomas (B)
+		07 - Consolidando os conhecimentos
+		08 - O que aprendemos?
+		09 - Projeto final do curso
+		10 - Conclusão
+		11 - 

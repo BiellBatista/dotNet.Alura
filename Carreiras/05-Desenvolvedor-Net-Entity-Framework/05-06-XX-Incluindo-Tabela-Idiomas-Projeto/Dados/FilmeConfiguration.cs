@@ -45,7 +45,7 @@ namespace Alura.Filmes.App.Dados
                 .Property<byte>("language_id");
 
             builder
-                .Property<byte>("original_language_id");
+                .Property<byte?>("original_language_id"); //o ? permite a variável a aceitar null, mesmo que seja do tipo primitivo
 
             builder //um filme tem um idioma falado
                 .HasOne(f => f.IdiomaFalado) //a propriedade filme possui um relacionamento 1:N com a coleção de Filmes na classe Idioma
