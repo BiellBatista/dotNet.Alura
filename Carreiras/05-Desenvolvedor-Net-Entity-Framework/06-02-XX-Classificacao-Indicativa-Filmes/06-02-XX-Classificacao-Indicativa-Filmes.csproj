@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4F89B624-C1A9-4ED1-98DB-F884623809CB}</ProjectGuid>
+    <ProjectGuid>{7260D01E-E190-4B3A-88F1-2D9054683F51}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Alura.Filmes.App</RootNamespace>
     <AssemblyName>Alura.Filmes.App</AssemblyName>
