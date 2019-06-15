@@ -365,4 +365,7 @@ Entity Framework Core parte 2: Mapeando um banco pré-existente
 		03 - Configurando enumerados
 		04 - Convertendo enumerados para string
 		05 - Ignorando uma propriedade no Entity
-		06 - 
+		06 - Totalizando o valor da compra (B)
+		07 - Para saber mais: alternativas para ignorar o valor total da compra
+		08 - Migração com código vazio
+		09 - O modelo de dados do Entity
