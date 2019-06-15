@@ -363,3 +363,6 @@ Entity Framework Core parte 2: Mapeando um banco pré-existente
 		01 - Valores fixos em uma propriedade
 		02 - Convenção do Entity para enumerados (C)
 		03 - Configurando enumerados
+		04 - Convertendo enumerados para string
+		05 - Ignorando uma propriedade no Entity
+		06 - 

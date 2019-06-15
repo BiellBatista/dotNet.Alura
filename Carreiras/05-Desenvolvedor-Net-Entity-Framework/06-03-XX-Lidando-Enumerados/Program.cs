@@ -11,6 +11,7 @@ namespace Alura.Filmes.App
             using (var contexto = new AluraFilmesContexto())
             {
                 contexto.LogSQLToConsole();
+                
                 Console.ReadLine();
             }
         }
