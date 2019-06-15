@@ -369,3 +369,9 @@ Entity Framework Core parte 2: Mapeando um banco pré-existente
 		07 - Para saber mais: alternativas para ignorar o valor total da compra
 		08 - Migração com código vazio
 		09 - O modelo de dados do Entity
+		10 - O que aprendemos?
+		11 - Consolidando os conhecimentos
+		12 - Projeto da aula atual
+		13 - Para saber mais: progresso do EF Core
+	04 - Mapeando herança
+		01 - Mapeando herança
