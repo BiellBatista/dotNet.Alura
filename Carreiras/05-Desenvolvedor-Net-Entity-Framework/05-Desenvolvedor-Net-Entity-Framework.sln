@@ -67,6 +67,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-01-XX-Concluindo-Mapeame
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-02-XX-Classificacao-Indicativa-Filmes", "06-02-XX-Classificacao-Indicativa-Filmes\06-02-XX-Classificacao-Indicativa-Filmes.csproj", "{7260D01E-E190-4B3A-88F1-2D9054683F51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-03-XX-Lidando-Enumerados", "06-03-XX-Lidando-Enumerados\06-03-XX-Lidando-Enumerados.csproj", "{D0A4125D-5032-43DC-AB47-E1053B21A00B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +203,10 @@ Global
 		{7260D01E-E190-4B3A-88F1-2D9054683F51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7260D01E-E190-4B3A-88F1-2D9054683F51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7260D01E-E190-4B3A-88F1-2D9054683F51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0A4125D-5032-43DC-AB47-E1053B21A00B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0A4125D-5032-43DC-AB47-E1053B21A00B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0A4125D-5032-43DC-AB47-E1053B21A00B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0A4125D-5032-43DC-AB47-E1053B21A00B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

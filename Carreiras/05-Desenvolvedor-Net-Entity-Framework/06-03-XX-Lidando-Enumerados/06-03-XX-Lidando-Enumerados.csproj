@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7260D01E-E190-4B3A-88F1-2D9054683F51}</ProjectGuid>
+    <ProjectGuid>{D0A4125D-5032-43DC-AB47-E1053B21A00B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Alura.Filmes.App</RootNamespace>
     <AssemblyName>Alura.Filmes.App</AssemblyName>
@@ -132,11 +132,6 @@
     <Compile Include="Dados\FilmeConfiguration.cs" />
     <Compile Include="Dados\IdiomaConfiguration.cs" />
     <Compile Include="Extensions\DbContextExtensions.cs" />
-    <Compile Include="Migrations\20190615001944_FilmeCheckConstraint.cs" />
-    <Compile Include="Migrations\20190615001944_FilmeCheckConstraint.Designer.cs">
-      <DependentUpon>20190615001944_FilmeCheckConstraint.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\AluraFilmesContextoModelSnapshot.cs" />
     <Compile Include="Negocio\Ator.cs" />
     <Compile Include="Negocio\Categoria.cs" />
     <Compile Include="Negocio\Filme.cs" />
