@@ -13,6 +13,15 @@ namespace Alura.Filmes.App
             using (var contexto = new AluraFilmesContexto())
             {
                 contexto.LogSQLToConsole();
+
+                Console.WriteLine("Clientes:");
+                foreach (var cliente in contexto.Clientes)
+                {
+                    Console.WriteLine(cliente);
+                }
+
+                Console.WriteLine("Funcionários:");
+
                 Console.ReadLine();
             }
         }

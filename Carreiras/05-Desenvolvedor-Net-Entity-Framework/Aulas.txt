@@ -375,3 +375,4 @@ Entity Framework Core parte 2: Mapeando um banco pré-existente
 		13 - Para saber mais: progresso do EF Core
 	04 - Mapeando herança
 		01 - Mapeando herança
+		02 - Criando a classe ancestral Pessoa
