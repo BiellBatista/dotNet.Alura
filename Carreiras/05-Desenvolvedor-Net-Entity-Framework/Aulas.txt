@@ -354,3 +354,10 @@ Entity Framework Core parte 2: Mapeando um banco pré-existente
 		01 - A coluna de Classificação Indicativa
 		02 - Instrutor esquecido! (C)
 		03 - Criando a constraint de check
+		04 - Objeto já existe no banco de dados! (A)
+		05 - ALTER TABLE statement conflicted with the CHECK constraint "check_rating" (A)
+		06 - O que aprendemos?
+		07 - Consolidando os conhecimentos
+		08 - Projeto da aula atual
+	03 - Lidando com enumerados
+		01 - Valores fixos em uma propriedade
