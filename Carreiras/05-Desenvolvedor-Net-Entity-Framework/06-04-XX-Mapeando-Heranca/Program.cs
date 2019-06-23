@@ -35,7 +35,7 @@ namespace Alura.Filmes.App
 /*
  * Herança - Padrões de Mapeamento
  * 
- * TPH - Table Per Hierarchy: ele cria uma única tabela para a hierarquia.
- * TPC - Table Per Concrete Type: ele cria uma tabela por classes concretas. Ele vai lá na classe filha e vai criar uma tabela por cada classe (esse seria o padrão utilizado na aula 04, se eu tivesse colocado a tabela Pessoa no contexto para ser rastreada)
- * TPT - Table Per Type: ele cria uma tabela para todos os tipos que estão na hierarquia.
+ * TPH - Table Per Hierarchy: Cria uma única tabela para armazenar os registros de toda a hierarquia de tipos. Para isso, precisará adicionar uma coluna para definir o tipo daquele registro.
+ * TPC - Table Per Concrete Type: Nesse padrão, o Entity cria uma tabela para cada tipo concreto na hierarquia de tipos.
+ * TPT - Table Per Type: O Entity cria uma tabela para cada tipo participante da hierarquia de tipos.
  */
