@@ -400,3 +400,6 @@ Entity Framework Core parte 2: Mapeando um banco pré-existente
 		04 - Enviando comandos INSERT, UPDATE e DELETE
 		05 - Retorno do método ExecuteSqlCommand (B)
 		06 - Conclusão do curso
+		07 - Consolidando os conhecimentos
+		08 - O que aprendemos?
+		09 - Projeto final do curso
