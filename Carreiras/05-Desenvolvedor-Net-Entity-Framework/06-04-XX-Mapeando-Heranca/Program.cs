@@ -21,6 +21,10 @@ namespace Alura.Filmes.App
                 }
 
                 Console.WriteLine("Funcionários:");
+                foreach (var funcionario in contexto.Funcionarios)
+                {
+                    Console.WriteLine(funcionario);
+                }
 
                 Console.ReadLine();
             }

@@ -376,3 +376,5 @@ Entity Framework Core parte 2: Mapeando um banco pré-existente
 	04 - Mapeando herança
 		01 - Mapeando herança
 		02 - Criando a classe ancestral Pessoa
+		03 - Convenção do entity para heranças
+		04 - 
