@@ -215,6 +215,15 @@ Extra ASP.NET Identity
 		04 - Continuando logado com autenticação de 2 fatores
 		05 - SecurityStamp
 -------------------------------------------------------------------------------------------------------------------------
+Integrações em .NET
+	WCF : Distribua seus sistemas em .NET
+		01 - O que é WCF
+		02 - Criando o primeiro serviço
+		03 - Configurando um serviço
+		04 - Hosting do serviço
+		05 - Consumindo um serviço
+		06 - Acessando o serviço pelo browser
+-------------------------------------------------------------------------------------------------------------------------
 Formação Desenvolvedor .NET
 	Curso C# Parte 1: Primeiros Passos
 		01 - História e ecossistema da linguagem
