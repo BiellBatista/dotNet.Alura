@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-04-XX-Mapeando-Heranca",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-05-XX-Assumindo-Controle-Geracao-SQL", "06-05-XX-Assumindo-Controle-Geracao-SQL\06-05-XX-Assumindo-Controle-Geracao-SQL.csproj", "{7EA629C6-1497-450D-B2E1-B2CE387080C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-06-XX-Stored-Procedures", "06-06-XX-Stored-Procedures\06-06-XX-Stored-Procedures.csproj", "{55B0B189-43F3-4ACA-9819-1A729C46539E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +221,10 @@ Global
 		{7EA629C6-1497-450D-B2E1-B2CE387080C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EA629C6-1497-450D-B2E1-B2CE387080C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EA629C6-1497-450D-B2E1-B2CE387080C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B0B189-43F3-4ACA-9819-1A729C46539E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B0B189-43F3-4ACA-9819-1A729C46539E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B0B189-43F3-4ACA-9819-1A729C46539E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B0B189-43F3-4ACA-9819-1A729C46539E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
