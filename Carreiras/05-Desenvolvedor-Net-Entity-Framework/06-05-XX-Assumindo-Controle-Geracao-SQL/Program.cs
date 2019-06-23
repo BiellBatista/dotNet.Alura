@@ -1,6 +1,7 @@
 ﻿using Alura.Filmes.App.Dados;
 using Alura.Filmes.App.Extensions;
 using Alura.Filmes.App.Negocio;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 
@@ -14,16 +15,18 @@ namespace Alura.Filmes.App
             {
                 contexto.LogSQLToConsole();
 
-                Console.WriteLine("Clientes:");
-                foreach (var cliente in contexto.Clientes)
-                {
-                    Console.WriteLine(cliente);
-                }
+                var sql = @"SELECT TOP 5 a.first_name, a.last_name, COUNT(*) AS total
+                            FROM actor a
+	                            INNER JOIN film_actor fa ON fa.actor_id = a.actor_id
+                            GROUP BY a.first_name, a.last_name
+                            ORDER BY total DESC";
 
-                Console.WriteLine("Funcionários:");
-                foreach (var funcionario in contexto.Funcionarios)
+                //falando para o EF usar o meu SQL e não gerar um novo
+                var atoresMaisAtuantes = contexto.Atores.FromSql(sql);
+
+                foreach (var ator in atoresMaisAtuantes)
                 {
-                    Console.WriteLine(funcionario);
+                    Console.WriteLine($"O autor {ator.PrimeiroNome} {ator.UltimoNome} atuou em {ator.Filmografia.Count} filmes.");
                 }
 
                 Console.ReadLine();
@@ -31,11 +34,3 @@ namespace Alura.Filmes.App
         }
     }
 }
-
-/*
- * Herança - Padrões de Mapeamento
- * 
- * TPH - Table Per Hierarchy: Cria uma única tabela para armazenar os registros de toda a hierarquia de tipos. Para isso, precisará adicionar uma coluna para definir o tipo daquele registro.
- * TPC - Table Per Concrete Type: Nesse padrão, o Entity cria uma tabela para cada tipo concreto na hierarquia de tipos.
- * TPT - Table Per Type: O Entity cria uma tabela para cada tipo participante da hierarquia de tipos.
- */

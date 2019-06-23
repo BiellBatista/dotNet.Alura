@@ -385,3 +385,4 @@ Entity Framework Core parte 2: Mapeando um banco pré-existente
 		09 - Projeto da aula atual
 	05 - Assumindo o controle da geração do SQL
 		01 - Assumindo as rédeas do SQL gerado
+		02 - FromSql e suas limitações
