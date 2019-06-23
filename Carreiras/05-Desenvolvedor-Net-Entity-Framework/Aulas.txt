@@ -398,3 +398,5 @@ Entity Framework Core parte 2: Mapeando um banco pré-existente
 		02 - SELECT no método ExecuteSqlCommand (C)
 		03 - Parâmetros de uma Stored Procedure (A / C)
 		04 - Enviando comandos INSERT, UPDATE e DELETE
+		05 - Retorno do método ExecuteSqlCommand (B)
+		06 - Conclusão do curso
