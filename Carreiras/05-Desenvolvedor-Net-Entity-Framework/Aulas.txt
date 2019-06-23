@@ -390,3 +390,8 @@ Entity Framework Core parte 2: Mapeando um banco pré-existente
 		04 - Qual o problema, Beto? (A / C)
 		05 - SQL sem limitação! (B)
 		06 - Usando views com o Entity
+		07 - Consolidando os conhecimentos
+		08 - O que aprendemos?
+		09 - Projeto da aula atual
+	06 - Stored Procedures
+		01 - Usando Stored Procedures
