@@ -386,4 +386,7 @@ Entity Framework Core parte 2: Mapeando um banco pré-existente
 	05 - Assumindo o controle da geração do SQL
 		01 - Assumindo as rédeas do SQL gerado
 		02 - FromSql e suas limitações
-		03 - Limitações do FromSql
+		03 - Limitações do FromSql (B / C / D / E)
+		04 - Qual o problema, Beto? (A / C)
+		05 - SQL sem limitação! (B)
+		06 - Usando views com o Entity
