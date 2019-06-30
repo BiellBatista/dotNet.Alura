@@ -5,17 +5,17 @@ namespace Passagens
 {
     public class ClienteDAO
     {
-        private List<Cliente> cliente = new List<Cliente>();
+        private static List<Cliente> clientes = new List<Cliente>();
 
         public void Add(Cliente c)
         {
-            cliente.Add(c);
+            clientes.Add(c);
         }
 
         public Cliente Buscar(string nome)
         {
-            var resultado = from c in cliente where c.Nome.Equals(nome) select c;
-            return (Cliente) resultado;
+            var resultado = clientes.Where(c => c.Nome.Equals(nome)).FirstOrDefault();
+            return resultado;
         }
     }
 }

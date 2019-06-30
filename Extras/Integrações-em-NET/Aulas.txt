@@ -15,3 +15,10 @@ WCF: Distribua seus sistemas em .NET
 		07 - Criando a classe cliente
 	03 - Configurando um serviço
 		01 - Vídeo 1
+		02 - Configurando um serviço
+		03 - Compilando um serviço
+		04 - Configurando o nome do serviço
+		05 - Configurando um endpoint
+		06 - Rodando o nosso serviço
+	04 - Hosting do serviço
+		01 - Vídeo 1

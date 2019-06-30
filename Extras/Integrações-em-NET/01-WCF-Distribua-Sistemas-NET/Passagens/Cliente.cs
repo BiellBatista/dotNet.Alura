@@ -12,3 +12,11 @@ namespace Passagens
         public string Cpf { get; set; }
     }
 }
+
+/**
+ * Anotações do AppConfig...
+ * 
+ * Address: Endereço que desejamos utilizar.
+ * Binding: Forma/protocolo que queremos acessar este endereço.
+ * Contract: Quais métodos o nosso serviço expõe.
+ */
