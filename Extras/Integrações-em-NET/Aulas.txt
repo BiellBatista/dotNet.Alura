@@ -22,3 +22,13 @@ WCF: Distribua seus sistemas em .NET
 		06 - Rodando o nosso serviço
 	04 - Hosting do serviço
 		01 - Vídeo 1
+		02 - Hosting do serviço
+		03 - Adicionando um projeto a nossa solução
+		04 - Adicionando a referência do nosso serviço
+		05 - Criando o ServiceHost
+		06 - Iniciando o ServiceHost
+		07 - Deu problema!
+		08 - Adicionando um endpoint via código
+		09 - Testando o serviço
+	05 - Consumindo um serviço
+		01 - Vídeo 1
