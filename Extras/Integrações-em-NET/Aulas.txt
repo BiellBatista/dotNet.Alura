@@ -38,3 +38,11 @@ WCF: Distribua seus sistemas em .NET
 		05 - Salvando um cliente
 	06 - Acessando o serviço pelo browser
 		01 - Vídeo 1
+		02 - Acessando o serviço pelo browser
+		03 - Adicionando ServiceModel.Web
+		04 - WebInvoke
+		05 - Tornando um endpoint acessível via web
+		06 - Como acessar o endpoint?
+		07 - Página em branco
+		08 - Criando o método que exibe todos os clientes
+		09 - Adicionando a anotação WebInvoke no método Buscar
