@@ -46,3 +46,8 @@ WCF: Distribua seus sistemas em .NET
 		07 - Página em branco
 		08 - Criando o método que exibe todos os clientes
 		09 - Adicionando a anotação WebInvoke no método Buscar
+APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
+	01 - Introdução a Web APIs
+		01 - Introdução
+		02 - Preparando o ambiente
+		03 - Aplicação Inicial

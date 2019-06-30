@@ -223,6 +223,15 @@ Integrações em .NET
 		04 - Hosting do serviço
 		05 - Consumindo um serviço
 		06 - Acessando o serviço pelo browser
+	APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
+		01 - Introdução a Web APIs
+		02 - CRUD de livros na API
+		03 - Padronizando a API
+		04 - Recursos de uma API
+		05 - Negociando conteúdos
+		06 - Segurança na API
+		07 - Separando as aplicações
+	APIs Rest com Asp.NET Core 2.1 Parte 2: Consumindo nossa API
 -------------------------------------------------------------------------------------------------------------------------
 Formação Desenvolvedor .NET
 	Curso C# Parte 1: Primeiros Passos
