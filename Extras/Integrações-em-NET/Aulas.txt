@@ -32,3 +32,9 @@ WCF: Distribua seus sistemas em .NET
 		09 - Testando o serviço
 	05 - Consumindo um serviço
 		01 - Vídeo 1
+		02 - Consumindo um serviço
+		03 - Desenhando a tela da aplicação
+		04 - Adicionando referência ao serviço
+		05 - Salvando um cliente
+	06 - Acessando o serviço pelo browser
+		01 - Vídeo 1
