@@ -27,7 +27,7 @@ namespace Alura.WebAPI.WebApp.Api
         }
 
         [HttpPost]
-        public IActionResult Incluir(LivroUpload model)
+        public IActionResult Incluir([FromBody] LivroUpload model)
         {
             if (ModelState.IsValid)
             {
@@ -46,7 +46,9 @@ namespace Alura.WebAPI.WebApp.Api
         }
 
         [HttpPost]
-        public IActionResult Alterar(LivroUpload model)
+        //a tag FromBody é para indicar que o parâmetro vem no body da requisição e não na URL. Com isso, eu evito o problema do BadRequest
+        //Existe outras tagm além do FromBody
+        public IActionResult Alterar([FromBody] LivroUpload model)
         {
             if (ModelState.IsValid)
             {
