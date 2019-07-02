@@ -48,10 +48,23 @@ namespace Alura.ListaLeitura.WebApp.Controllers
             return File("~/images/capas/capa-vazia.png", "image/png");
         }
 
+        /**
+         * Este método é um Action, mas não retorna uma Action.
+         * Qualquer método público definido em um controller é uma action.
+         * Neste caso, por padrão, ele irá retornar o objeto em formato JSON.
+         * Quando eu acesso este método (action) pelo navegador, o objeto que está no return é serializado para JSON, mas se o id for um inexistente
+         * este action retorna NADA (sem código de status, página de erro, dado de erro...) e, por padrão, o navegador não altera a visualização,
+         * pois o retorno foi vázio
+         */
+        public Livro RecuperaLivro(int id)
+        {
+            return _repo.Find(id);
+        }
+
         [HttpGet]
         public IActionResult Detalhes(int id)
         {
-            var model = _repo.Find(id);
+            var model = RecuperaLivro(id);
             if (model == null)
             {
                 return NotFound();
@@ -62,12 +75,23 @@ namespace Alura.ListaLeitura.WebApp.Controllers
         [HttpGet]
         public IActionResult DetalhesSemHTML(int id)
         {
-            var model = _repo.Find(id);
+            var model = RecuperaLivro(id);
             if (model == null)
             {
                 return NotFound();
             }
             return Json(model.ToModel());
+        }
+
+        /**
+         * Este método retorna qualquer tipo do ActionResult ou um modelo
+         */
+        public ActionResult<LivroUpload> DetalhesJson(int id)
+        {
+            var model = RecuperaLivro(id);
+            if (model is null)
+                return NotFound();
+            return model.ToModel(); //retornando o próprio objeto sem converter para JSON. Estilo no método (RecuperaLivro)
         }
 
         [HttpPost]

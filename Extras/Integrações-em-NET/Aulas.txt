@@ -54,4 +54,11 @@ APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
 		04 - (Obrigatório) Download do projeto
 		05 - Tecnologias do curso (A)
 		06 - Integrando com outros sistemas
-		07 - 
+		07 - Roteamento MVC padrão (D)
+		08 - Tornando a App integrável (B)
+		09 - Para saber mais: outras maneiras de retornar json
+		10 - Consolidando o seu conhecimento
+		11 - O que aprendemos?
+		12 - Projeto da aula atual
+	02 - CRUD de livros na API
+		01 - API em um novo controlador
