@@ -62,3 +62,5 @@ APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
 		12 - Projeto da aula atual
 	02 - CRUD de livros na API
 		01 - API em um novo controlador
+		02 - Boa prática no projeto (A)
+		03 - Implementando as outras operações do CRUD
