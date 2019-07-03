@@ -84,3 +84,5 @@ APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
 		10 - Projeto da aula atual
 	04 - Recursos de uma API
 		01 - Novos recursos de nossa API
+		02 - Fabiana e o recurso Carro (B)
+		03 - Novo tipo para o recurso Livro
