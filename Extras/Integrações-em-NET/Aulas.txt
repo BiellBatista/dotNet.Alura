@@ -77,3 +77,10 @@ APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
 		03 - Configurando o padrão de rotas de API
 		04 - Controlador AspNet para APIs (A)
 		05 - O estilo arquitetural REST
+		06 - Arquitetura REST (D)
+		07 - Para saber mais: Endpoints
+		08 - Consolidando o seu conhecimento
+		09 - O que aprendemos?
+		10 - Projeto da aula atual
+	04 - Recursos de uma API
+		01 - Novos recursos de nossa API
