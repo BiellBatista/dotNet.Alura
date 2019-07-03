@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Alura.WebAPI.WebApp.Api
 {
     [ApiController] //todo controller que serve uma API deve ter esta anotação
-    [Route("[controller]")] //quando coloco a anotação de cima, devo usar esta, obrigatóriamente. Como ele está em cima, irá afetar todas as actions (métodos públicos) desta classe
+    [Route("api/[controller]")] //quando coloco a anotação de cima, devo usar esta, obrigatóriamente. Como ele está em cima, irá afetar todas as actions (métodos públicos) desta classe
     public class LivrosController : ControllerBase //Esta classe Base não possui suporte a view
     {
         private readonly IRepository<Livro> _repo;
@@ -23,7 +23,7 @@ namespace Alura.WebAPI.WebApp.Api
         [HttpGet]
         public IActionResult ListaDeLivros()
         {
-            var lista = _repo.All.Select(l => l.ToModel()).ToList();
+            var lista = _repo.All.Select(l => l.ToApi()).ToList();
             return Ok(lista);
         }
 
@@ -33,7 +33,7 @@ namespace Alura.WebAPI.WebApp.Api
             var model = _repo.Find(id);
             if (model is null)
                 return NotFound();
-            return Ok(model.ToModel());
+            return Ok(model.ToApi());
         }
 
         [HttpGet("{id}/capa")]

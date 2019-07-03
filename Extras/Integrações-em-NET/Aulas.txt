@@ -88,3 +88,9 @@ APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
 		03 - Novo tipo para o recurso Livro
 		04 - Filmes e seus atores (B)
 		05 - Tudo é recurso
+		06 - Consolidando o seu conhecimento
+		07 - O que aprendemos?
+		08 - Projeto da aula atual
+	05 - Negociando conteúdos
+		01 - Negociando tipos de conteúdo
+		
