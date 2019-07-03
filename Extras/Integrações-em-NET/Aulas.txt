@@ -75,3 +75,5 @@ APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
 		01 - Padronizando nossa API
 		02 - Vantagens de padronização (B)
 		03 - Configurando o padrão de rotas de API
+		04 - Controlador AspNet para APIs (A)
+		05 - O estilo arquitetural REST

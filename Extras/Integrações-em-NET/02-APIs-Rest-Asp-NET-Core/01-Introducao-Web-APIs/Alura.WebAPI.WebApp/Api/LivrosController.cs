@@ -8,7 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Alura.WebAPI.WebApp.Api
 {
-    public class LivrosController : Controller
+    [ApiController] //todo controller que serve uma API deve ter esta anotação
+    [Route("[controller]")] //quando coloco a anotação de cima, devo usar esta, obrigatóriamente. Como ele está em cima, irá afetar todas as actions (métodos públicos) desta classe
+    public class LivrosController : ControllerBase //Esta classe Base não possui suporte a view
     {
         private readonly IRepository<Livro> _repo;
 
@@ -17,13 +19,13 @@ namespace Alura.WebAPI.WebApp.Api
             _repo = repository;
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public IActionResult Recuperar(int id)
         {
             var model = _repo.Find(id);
             if (model is null)
                 return NotFound();
-            return Json(model.ToModel());
+            return Ok(model.ToModel());
         }
 
         [HttpPost]
@@ -45,7 +47,7 @@ namespace Alura.WebAPI.WebApp.Api
             return BadRequest(); //requisição inválida (error 400)
         }
 
-        [HttpPost]
+        [HttpPut]
         //a tag FromBody é para indicar que o parâmetro vem no body da requisição e não na URL. Com isso, eu evito o problema do BadRequest
         //Existe outras tagm além do FromBody
         public IActionResult Alterar([FromBody] LivroUpload model)
@@ -66,7 +68,7 @@ namespace Alura.WebAPI.WebApp.Api
             return BadRequest();
         }
 
-        [HttpPost]
+        [HttpDelete("{id}")]
         public IActionResult Remover(int id)
         {
             var model = _repo.Find(id);
