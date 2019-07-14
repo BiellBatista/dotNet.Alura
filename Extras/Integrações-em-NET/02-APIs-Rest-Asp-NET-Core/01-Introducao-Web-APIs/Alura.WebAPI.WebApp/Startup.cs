@@ -43,7 +43,8 @@ namespace Alura.ListaLeitura.WebApp
 
             services.AddTransient<IRepository<Livro>, RepositorioBaseEF<Livro>>();
 
-            services.AddMvc();
+            services.AddMvc()
+                    .AddXmlSerializerFormatters(); //coloque o formatado XML. Com isso, o usuário pode solicitar dados em XML, em vez de receber apenas JSON
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

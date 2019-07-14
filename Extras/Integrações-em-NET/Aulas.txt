@@ -93,4 +93,7 @@ APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
 		08 - Projeto da aula atual
 	05 - Negociando conteúdos
 		01 - Negociando tipos de conteúdo
-		
+		02 - Entregando respostas XML
+		03 - Preparando para entregar XML (A)
+		04 - Definindo o nome do XML (A)
+		05 - Formatos customizados
