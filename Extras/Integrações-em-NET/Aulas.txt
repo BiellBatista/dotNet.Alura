@@ -97,3 +97,9 @@ APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
 		03 - Preparando para entregar XML (A)
 		04 - Definindo o nome do XML (A)
 		05 - Formatos customizados
+		06 - Adicionando formatos (C)
+		07 - Consolidando o seu conhecimento
+		08 - O que aprendemos?
+		09 - Projeto da aula atual
+	06 - Segurança na API
+		01 - Protegendo nossa API
