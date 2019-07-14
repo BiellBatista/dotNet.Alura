@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using Alura.ListaLeitura.Modelos;
 using Alura.ListaLeitura.Persistencia;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Alura.WebAPI.WebApp.Api
 {
+    [Authorize]
     [ApiController] //todo controller que serve uma API deve ter esta anotação
     [Route("api/[controller]")] //quando coloco a anotação de cima, devo usar esta, obrigatóriamente. Como ele está em cima, irá afetar todas as actions (métodos públicos) desta classe
     public class LivrosController : ControllerBase //Esta classe Base não possui suporte a view
