@@ -103,3 +103,5 @@ APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
 		09 - Projeto da aula atual
 	06 - Segurança na API
 		01 - Protegendo nossa API
+		02 - Diferenças entre as estratégias de segurança
+		03 - O padrão JWT
