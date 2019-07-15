@@ -59,18 +59,18 @@ namespace Alura.ListaLeitura.WebApp
             {
                 options.DefaultAuthenticateScheme = "JwtBearer";
                 options.DefaultChallengeScheme = "JwtBearer";
-            }).AddJwtBearer("JwtBearer", options =>
-            {
+            }).AddJwtBearer("JwtBearer", options => {
                 //configurando a criação do token
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuer = true, //será validado o token
-                    ValidateAudience = true, //o juiz
-                    ValidateLifetime = true, //e a expiração
+                    ValidateAudience = true, //terá um juiz
+                    ValidateLifetime = true, //terá uma expiração
+                    ValidateIssuerSigningKey = true, //irei validar a signature (LoginController)
                     IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("alura-webapi-authentication-valid")), //chave que será usada para validar
                     ClockSkew = TimeSpan.FromMinutes(5), //a formula que será usada no teste de expiração (tempo de vida do token)
                     ValidIssuer = "Alura.WebApp", //dizendo o cara (aplicação) que é valido
-                    ValidAudience = "Postman" //cliente/audiencia o postman
+                    ValidAudience = "Postman", //cliente/audiencia o postman
                 };
             });
         }
