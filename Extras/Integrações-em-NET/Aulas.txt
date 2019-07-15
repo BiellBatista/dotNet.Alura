@@ -105,3 +105,7 @@ APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
 		01 - Protegendo nossa API
 		02 - Diferenças entre as estratégias de segurança
 		03 - O padrão JWT
+		04 - O que é JWT? (D)
+		05 - Implementando o JWT (B / D)
+		06 - Criando o endpoint de autenticação
+		07 - 
