@@ -116,3 +116,11 @@ APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
 		01 - Separando o provedor de autenticação
 		02 - Checklist para Fabíola (A / B / C / D / F)
 		03 - Separando a api
+		04 - Arquiteturas distribuídas (C)
+		05 - Conclusão
+		06 - Consolidando o seu conhecimento
+		07 - O que aprendemos?
+		08 - Projeto final
+APIs Rest com Asp.NET Core 2.1 Parte 2: Consumindo nossa API
+	01 - Consumindo nossa API
+		01 - Introdução
