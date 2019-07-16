@@ -89,3 +89,10 @@ APIs Rest com Asp.NET Core 2.1 Parte 2: Consumindo nossa API
 	02 - Requisições para verbos HTTP diferentes
 		01 - O problema que vamos resolver
 		02 - Home e as outras operações do CRUD
+		03 - Fixando o conhecimento (B)
+		04 - Pensando à frente... (A)
+		05 - Consolidando seus conhecimentos
+		06 - O que aprendemos?
+	03 - Requisições de Upload
+		01 - O problema que vamos resolver
+		02 - Enviando multipart/formdata
