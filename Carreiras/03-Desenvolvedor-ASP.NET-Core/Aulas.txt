@@ -83,3 +83,8 @@ APIs Rest com Asp.NET Core 2.1 Parte 2: Consumindo nossa API
 		06 - Consumindo a API de Star Wars (A)
 		07 - Como fazer uma requisição HTTP? (A)
 		08 - Reutilizando o código de consumo
+		09 - Consolidando seus conhecimentos
+		10 - Referências Utilizadas
+		11 - O que aprendemos?
+	02 - Requisições para verbos HTTP diferentes
+		01 - O problema que vamos resolver
