@@ -88,3 +88,4 @@ APIs Rest com Asp.NET Core 2.1 Parte 2: Consumindo nossa API
 		11 - O que aprendemos?
 	02 - Requisições para verbos HTTP diferentes
 		01 - O problema que vamos resolver
+		02 - Home e as outras operações do CRUD
