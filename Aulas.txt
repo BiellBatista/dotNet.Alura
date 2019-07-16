@@ -143,6 +143,27 @@ Carreira Desenvolvedor ASP.NET MVC5
 		10 - Sessões para autenticar usuários
 		11 - Filtro para autorização de usuários
 -------------------------------------------------------------------------------------------------------------------------
+Carreira Desenvolvedor ASP.NET Core
+	APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
+		01 - Introdução a Web APIs
+		02 - CRUD de livros na API
+		03 - Padronizando a API
+		04 - Recursos de uma API
+		05 - Negociando conteúdos
+		06 - Segurança na API
+		07 - Separando as aplicações
+	APIs Rest com Asp.NET Core 2.1 Parte 2: Consumindo nossa API
+		01 - Consumindo nossa API
+		02 - Requisições para verbos HTTP diferentes
+		03 - Requisições de Upload
+		04 - Consumindo com autenticação JWT
+		05 - Guardando o Token no Cookie
+	APIs Rest com Asp.NET Core 2.1 Parte 3: Padronizando a API
+		01 - Resiliência ante mudanças
+		02 - Lidando com grandes coleções
+		03 - Erros uniformes
+		04 - Descobrindo a API
+-------------------------------------------------------------------------------------------------------------------------
 Carreira Desenvolvedor .Net com Entity Framework
 	SQL Server: Introdução ao SQL com Microsoft SQL Server 2017
 		01 - Instalando e configurando o SQL Server
@@ -215,7 +236,7 @@ Extra ASP.NET Identity
 		04 - Continuando logado com autenticação de 2 fatores
 		05 - SecurityStamp
 -------------------------------------------------------------------------------------------------------------------------
-Integrações em .NET
+Extra Integrações em .NET
 	WCF : Distribua seus sistemas em .NET
 		01 - O que é WCF
 		02 - Criando o primeiro serviço
@@ -223,15 +244,6 @@ Integrações em .NET
 		04 - Hosting do serviço
 		05 - Consumindo um serviço
 		06 - Acessando o serviço pelo browser
-	APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
-		01 - Introdução a Web APIs
-		02 - CRUD de livros na API
-		03 - Padronizando a API
-		04 - Recursos de uma API
-		05 - Negociando conteúdos
-		06 - Segurança na API
-		07 - Separando as aplicações
-	APIs Rest com Asp.NET Core 2.1 Parte 2: Consumindo nossa API
 -------------------------------------------------------------------------------------------------------------------------
 Formação Desenvolvedor .NET
 	Curso C# Parte 1: Primeiros Passos

@@ -1,0 +1,85 @@
+APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
+	01 - Introdução a Web APIs
+		01 - Introdução
+		02 - Preparando o ambiente
+		03 - Aplicação Inicial
+		04 - (Obrigatório) Download do projeto
+		05 - Tecnologias do curso (A)
+		06 - Integrando com outros sistemas
+		07 - Roteamento MVC padrão (D)
+		08 - Tornando a App integrável (B)
+		09 - Para saber mais: outras maneiras de retornar json
+		10 - Consolidando o seu conhecimento
+		11 - O que aprendemos?
+		12 - Projeto da aula atual
+	02 - CRUD de livros na API
+		01 - API em um novo controlador
+		02 - Boa prática no projeto (A)
+		03 - Implementando as outras operações do CRUD
+		04 - ERRATA: Códigos de Status 203 e 204
+		05 - Códigos de Status HTTP (B)
+		06 - Testando requisições com o Postman
+		07 - Utilidade do Postman (D)
+		08 - Consolidando o seu conhecimento
+		09 - O que aprendemos?
+		10 - Projeto da aula atual
+	03 - Padronizando a API
+		01 - Padronizando nossa API
+		02 - Vantagens de padronização (B)
+		03 - Configurando o padrão de rotas de API
+		04 - Controlador AspNet para APIs (A)
+		05 - O estilo arquitetural REST
+		06 - Arquitetura REST (D)
+		07 - Para saber mais: Endpoints
+		08 - Consolidando o seu conhecimento
+		09 - O que aprendemos?
+		10 - Projeto da aula atual
+	04 - Recursos de uma API
+		01 - Novos recursos de nossa API
+		02 - Fabiana e o recurso Carro (B)
+		03 - Novo tipo para o recurso Livro
+		04 - Filmes e seus atores (B)
+		05 - Tudo é recurso
+		06 - Consolidando o seu conhecimento
+		07 - O que aprendemos?
+		08 - Projeto da aula atual
+	05 - Negociando conteúdos
+		01 - Negociando tipos de conteúdo
+		02 - Entregando respostas XML
+		03 - Preparando para entregar XML (A)
+		04 - Definindo o nome do XML (A)
+		05 - Formatos customizados
+		06 - Adicionando formatos (C)
+		07 - Consolidando o seu conhecimento
+		08 - O que aprendemos?
+		09 - Projeto da aula atual
+	06 - Segurança na API
+		01 - Protegendo nossa API
+		02 - Diferenças entre as estratégias de segurança
+		03 - O padrão JWT
+		04 - O que é JWT? (D)
+		05 - Implementando o JWT (B / D)
+		06 - Criando o endpoint de autenticação
+		07 - Informações do token (F)
+		08 - Consolidando o seu conhecimento
+		09 - O que aprendemos?
+		10 - Projeto da aula atual
+	07 - Separando as aplicações
+		01 - Separando o provedor de autenticação
+		02 - Checklist para Fabíola (A / B / C / D / F)
+		03 - Separando a api
+		04 - Arquiteturas distribuídas (C)
+		05 - Conclusão
+		06 - Consolidando o seu conhecimento
+		07 - O que aprendemos?
+		08 - Projeto final
+APIs Rest com Asp.NET Core 2.1 Parte 2: Consumindo nossa API
+	01 - Consumindo nossa API
+		01 - Introdução
+		02 - Preparando o ambiente
+		03 - Download do Projeto Inicial
+		04 - O problema que vamos resolver
+		05 - A classe HttpClient
+		06 - Consumindo a API de Star Wars (A)
+		07 - Como fazer uma requisição HTTP? (A)
+		08 - Reutilizando o código de consumo
