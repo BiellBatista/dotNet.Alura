@@ -1,6 +1,4 @@
-﻿using System.Linq;
-using Alura.ListaLeitura.Persistencia;
-using Alura.ListaLeitura.Modelos;
+﻿using Alura.ListaLeitura.Modelos;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -11,12 +9,14 @@ namespace Alura.ListaLeitura.WebApp.Controllers
     [Authorize]
     public class LivroController : Controller
     {
-        private readonly IRepository<Livro> _repo;
+        //private readonly IRepository<Livro> _repo;
         private readonly LivroApiClient _api;
 
-        public LivroController(IRepository<Livro> repository, LivroApiClient api)
+        //public LivroController(IRepository<Livro> repository, LivroApiClient api)
+        public LivroController(LivroApiClient api)
         {
-            _repo = repository;
+            //não preciso mais do repository, pois estou consumindo minha API
+            //_repo = repository;
             _api = api;
         }
 
@@ -50,9 +50,10 @@ namespace Alura.ListaLeitura.WebApp.Controllers
             return File("~/images/capas/capa-vazia.png", "image/png");
         }
 
-        public Livro RecuperaLivro(int id)
+        public async Task<LivroApi> RecuperaLivro(int id)
         {
-            return _repo.Find(id);
+            return await _api.GetLivroAsync(id);
+            //return _repo.Find(id);
         }
 
         [HttpGet]

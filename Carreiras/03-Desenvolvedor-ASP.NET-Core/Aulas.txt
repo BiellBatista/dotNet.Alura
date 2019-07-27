@@ -98,3 +98,9 @@ APIs Rest com Asp.NET Core 2.1 Parte 2: Consumindo nossa API
 		02 - Enviando multipart/formdata
 		03 - Ajude Nestor a enviar um formulário para sua API (C)
 		04 - Concluindo e removendo o acoplamento
+		05 - Consolidando seus conhecimentos
+		06 - Referências Utilizadas
+		07 - O que aprendemos?
+		08 - Projeto da aula atual
+	04 - Consumindo com autenticação JWT
+		01 - API com autenticação JWT
