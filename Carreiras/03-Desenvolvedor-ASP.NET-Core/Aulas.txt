@@ -96,3 +96,5 @@ APIs Rest com Asp.NET Core 2.1 Parte 2: Consumindo nossa API
 	03 - Requisições de Upload
 		01 - O problema que vamos resolver
 		02 - Enviando multipart/formdata
+		03 - Ajude Nestor a enviar um formulário para sua API (C)
+		04 - Concluindo e removendo o acoplamento

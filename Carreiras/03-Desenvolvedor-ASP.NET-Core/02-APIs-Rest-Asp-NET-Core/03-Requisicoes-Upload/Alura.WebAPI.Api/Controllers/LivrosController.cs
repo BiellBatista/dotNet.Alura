@@ -50,7 +50,10 @@ namespace Alura.WebAPI.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult Incluir([FromBody] LivroUpload model)
+        //public IActionResult Incluir([FromBody] LivroUpload model)
+        //como estou enviando os dados por um formulário, devo colocar a anotação [FromForm], indicando que os dados estão vindo de um formulário
+        public IActionResult Incluir([FromForm] LivroUpload model)
+
         {
             if (ModelState.IsValid)
             {
@@ -66,7 +69,10 @@ namespace Alura.WebAPI.Api.Controllers
         }
 
         [HttpPut]
-        public IActionResult Alterar([FromBody] LivroUpload model)
+        //public IActionResult Alterar([FromBody] LivroUpload model)
+        //como estou enviando os dados por um formulário, devo colocar a anotação [FromForm], indicando que os dados estão vindo de um formulário
+        public IActionResult Alterar([FromForm] LivroUpload model)
+
         {
             if (ModelState.IsValid)
             {
