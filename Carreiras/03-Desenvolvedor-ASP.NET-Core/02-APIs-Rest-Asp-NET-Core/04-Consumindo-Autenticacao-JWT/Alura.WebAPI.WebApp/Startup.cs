@@ -34,9 +34,16 @@ namespace Alura.ListaLeitura.WebApp
                 options.Password.RequireLowercase = false;
             }).AddEntityFrameworkStores<AuthDbContext>();
 
+            //amarrando o httpclient para consumir a API de livros
             services.AddHttpClient<LivroApiClient>(client =>
             {
                 client.BaseAddress = new System.Uri("http://localhost:6000/api/");
+            });
+
+            //amarrando o httpclient para consumir a API de autenticação
+            services.AddHttpClient<AuthApiClient>(client =>
+            {
+                client.BaseAddress = new System.Uri("http://localhost:5000/api/"); //adicionando o corpo básio, com isso não preciso repetir nas URI das requisições
             });
 
             services.ConfigureApplicationCookie(options =>

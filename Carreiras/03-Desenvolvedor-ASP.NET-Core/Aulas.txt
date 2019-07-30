@@ -106,3 +106,8 @@ APIs Rest com Asp.NET Core 2.1 Parte 2: Consumindo nossa API
 		01 - API com autenticação JWT
 		02 - O problema que vamos resolver
 		03 - Enviando o token no cabeçalho
+		04 - Content Negotiation na requisição (B)
+		05 - Consolidando seus conhecimentos
+		06 - O que aprendemos?
+	05 - Guardando o Token no Cookie
+		01 - Ajustando o login
