@@ -123,3 +123,8 @@ APIs Rest com Asp.NET Core 2.1 Parte 3: padronizando a API
 		01 - Introdução
 		02 - Preparando o ambiente
 		03 - Resiliência diante de mudanças
+		04 - O problema que vamos resolver
+		05 - Para saber mais: quando mudar de versão?
+		06 - Versionamento na URI
+		07 - Implementando versionamento hard-coded na rota
+		08 - Uma biblioteca para ajudar

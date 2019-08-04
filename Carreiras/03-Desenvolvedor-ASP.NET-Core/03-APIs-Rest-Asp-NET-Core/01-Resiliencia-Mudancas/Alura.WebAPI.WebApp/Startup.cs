@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Alura.WebAPI.WebApp.Formatters;
 using Alura.WebAPI.WebApp.HttpClients;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
@@ -36,11 +35,6 @@ namespace Alura.ListaLeitura.WebApp
             {
                 client.BaseAddress = new System.Uri("http://localhost:5000/api/");
             });
-
-            services.AddMvc(options =>
-            {
-                options.OutputFormatters.Add(new LivroCsvFormatter());
-            }).AddXmlSerializerFormatters();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
