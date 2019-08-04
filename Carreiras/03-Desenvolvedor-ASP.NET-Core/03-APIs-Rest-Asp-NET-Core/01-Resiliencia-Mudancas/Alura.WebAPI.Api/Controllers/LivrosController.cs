@@ -8,7 +8,8 @@ namespace Alura.WebAPI.Api.Controllers
 {
     [Authorize]
     [ApiController]
-    [Route("api/v1.0/[controller]")]
+    [ApiVersion("1.0")] //configurando o controle de versionamento
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class LivrosController : ControllerBase
     {
         private readonly IRepository<Livro> _repo;

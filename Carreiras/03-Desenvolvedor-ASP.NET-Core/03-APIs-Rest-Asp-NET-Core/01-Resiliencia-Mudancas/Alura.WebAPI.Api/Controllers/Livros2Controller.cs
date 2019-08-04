@@ -8,7 +8,8 @@ namespace Alura.WebAPI.Api.Controllers
 {
     [Authorize]
     [ApiController]
-    [Route("api/v2.0/livros")]
+    [ApiVersion("2.0")] //configurando o controle de versionamento. Isso indica a versão da API
+    [Route("api/v{version:apiVersion}/livros")] //o template ({version:apiVersion}) é usado com a tag de cima
     public class Livros2Controller : ControllerBase
     {
         private readonly IRepository<Livro> _repo;
