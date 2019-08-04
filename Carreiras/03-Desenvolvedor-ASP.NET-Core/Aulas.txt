@@ -121,3 +121,5 @@ APIs Rest com Asp.NET Core 2.1 Parte 2: Consumindo nossa API
 APIs Rest com Asp.NET Core 2.1 Parte 3: padronizando a API
 	01 - Resiliência diante mudanças
 		01 - Introdução
+		02 - Preparando o ambiente
+		03 - Resiliência diante de mudanças
