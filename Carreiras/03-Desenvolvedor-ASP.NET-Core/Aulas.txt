@@ -118,3 +118,6 @@ APIs Rest com Asp.NET Core 2.1 Parte 2: Consumindo nossa API
 		06 - O que aprendemos?
 		07 - Conclusão
 		08 - Projeto final do curso
+APIs Rest com Asp.NET Core 2.1 Parte 3: padronizando a API
+	01 - Resiliência diante mudanças
+		01 - Introdução
