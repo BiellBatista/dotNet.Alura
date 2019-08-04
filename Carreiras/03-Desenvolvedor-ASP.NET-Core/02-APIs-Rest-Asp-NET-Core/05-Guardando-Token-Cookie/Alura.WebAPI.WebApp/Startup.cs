@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Alura.WebAPI.WebApp.Formatters;
 using Alura.WebAPI.WebApp.HttpClients;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace Alura.ListaLeitura.WebApp
 {
@@ -26,13 +27,20 @@ namespace Alura.ListaLeitura.WebApp
                 options.UseSqlServer(Configuration.GetConnectionString("AuthDB"));
             });
 
-            services.AddIdentity<Usuario, IdentityRole>(options =>
-            {
-                options.Password.RequiredLength = 3;
-                options.Password.RequireNonAlphanumeric = false;
-                options.Password.RequireUppercase = false;
-                options.Password.RequireLowercase = false;
-            }).AddEntityFrameworkStores<AuthDbContext>();
+            //configurando o uso do Identity
+            //services.AddIdentity<Usuario, IdentityRole>(options =>
+            //{
+            //    options.Password.RequiredLength = 3;
+            //    options.Password.RequireNonAlphanumeric = false;
+            //    options.Password.RequireUppercase = false;
+            //    options.Password.RequireLowercase = false;
+            //}).AddEntityFrameworkStores<AuthDbContext>();
+
+            //mudandando o uso de autenticação do Identity para o Cookie
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options => {
+                    options.LoginPath = "/Usuario/Login"; //informando o caminho de autenticação
+                });
 
             //amarrando o httpclient para consumir a API de livros
             services.AddHttpClient<LivroApiClient>(client =>
@@ -46,10 +54,10 @@ namespace Alura.ListaLeitura.WebApp
                 client.BaseAddress = new System.Uri("http://localhost:5000/api/"); //adicionando o corpo básio, com isso não preciso repetir nas URI das requisições
             });
 
-            services.ConfigureApplicationCookie(options =>
-            {
-                options.LoginPath = "/Usuario/Login";
-            });
+            //services.ConfigureApplicationCookie(options =>
+            //{
+            //    options.LoginPath = "/Usuario/Login";
+            //});
 
             services.AddMvc(options =>
             {

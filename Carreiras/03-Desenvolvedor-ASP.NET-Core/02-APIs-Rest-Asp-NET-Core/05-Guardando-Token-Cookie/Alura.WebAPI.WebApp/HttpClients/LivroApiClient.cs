@@ -36,10 +36,10 @@ namespace Alura.WebAPI.WebApp.HttpClients
             //    .DefaultRequestHeaders.Authorization =
             //        new AuthenticationHeaderValue("Bearer", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImp0aSI6IjgxMjAzOTU5LWM4ODItNDQ2NS05MzA0LTcyNzMwODRhZWM1YyIsImV4cCI6MTU2NDQ2MDM2MiwiaXNzIjoiQWx1cmEuV2ViQXBwIiwiYXVkIjoiUG9zdG1hbiJ9.PCPmiv0p1CUC0HGcgbuP_1EN4EjMp5NYNMrBRFq3utI");
 
-            var token = await _auth.PostLoginAsync(new LoginModel { Login = "admin", Password = "123" });
-            _httpClient
-                .DefaultRequestHeaders.Authorization =
-                    new AuthenticationHeaderValue("Bearer", token);
+            //var token = await _auth.PostLoginAsync(new LoginModel { Login = "admin", Password = "123" });
+            //_httpClient
+            //    .DefaultRequestHeaders.Authorization =
+            //        new AuthenticationHeaderValue("Bearer", token);
 
             HttpResponseMessage resposta = await _httpClient.GetAsync($"livros/{id}/capa");
             resposta.EnsureSuccessStatusCode();
@@ -61,10 +61,10 @@ namespace Alura.WebAPI.WebApp.HttpClients
             //    .DefaultRequestHeaders.Authorization =
             //        new AuthenticationHeaderValue("Bearer", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImp0aSI6IjgxMjAzOTU5LWM4ODItNDQ2NS05MzA0LTcyNzMwODRhZWM1YyIsImV4cCI6MTU2NDQ2MDM2MiwiaXNzIjoiQWx1cmEuV2ViQXBwIiwiYXVkIjoiUG9zdG1hbiJ9.PCPmiv0p1CUC0HGcgbuP_1EN4EjMp5NYNMrBRFq3utI");
 
-            var token = await _auth.PostLoginAsync(new LoginModel { Login = "admin", Password = "123" });
-            _httpClient
-                .DefaultRequestHeaders.Authorization =
-                    new AuthenticationHeaderValue("Bearer", token);
+            //var token = await _auth.PostLoginAsync(new LoginModel { Login = "admin", Password = "123" });
+            //_httpClient
+            //    .DefaultRequestHeaders.Authorization =
+            //        new AuthenticationHeaderValue("Bearer", token);
 
             var resposta = await _httpClient.GetAsync($"listasleitura/{tipo}");
             resposta.EnsureSuccessStatusCode(); //verificando se houve um status code da família 200

@@ -111,3 +111,5 @@ APIs Rest com Asp.NET Core 2.1 Parte 2: Consumindo nossa API
 		06 - O que aprendemos?
 	05 - Guardando o Token no Cookie
 		01 - Ajustando o login
+		02 - Idéia central do vídeo anterior
+		03 - HTTPContext fora do Framework
