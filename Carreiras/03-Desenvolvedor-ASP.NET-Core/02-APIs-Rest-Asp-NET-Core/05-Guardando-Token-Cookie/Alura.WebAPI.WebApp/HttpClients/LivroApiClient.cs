@@ -1,5 +1,7 @@
 ﻿using Alura.ListaLeitura.Modelos;
 using Alura.ListaLeitura.Seguranca;
+using Microsoft.AspNetCore.Http;
+using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -14,15 +16,29 @@ namespace Alura.WebAPI.WebApp.HttpClients
     {
         private readonly HttpClient _httpClient;
         private readonly AuthApiClient _auth;
+        private readonly IHttpContextAccessor _acessor;
 
-        public LivroApiClient(HttpClient httpClient, AuthApiClient auth)
+        //O HttpContext só podem ser acessados em classes do Framework (Controller...), como esta classe não faz parte do framework, devo usar a interface IHttpContextAccessor no contrutor..
+        public LivroApiClient(HttpClient httpClient, AuthApiClient auth, IHttpContextAccessor acessor)
         {
             _httpClient = httpClient;
             _auth = auth;
+            _acessor = acessor;
+        }
+
+        private void AddBearerToken()
+        {
+            //var token = HttpContext.User.Claims.First(c => c.Type == "Token").Value; //pegando o cookie enviado pelo usuário
+            var token = _acessor.HttpContext.User.Claims.First(c => c.Type == "Token").Value; //pegando o cookie enviado pelo usuário. Com a utilização da interface
+
+            _httpClient
+                .DefaultRequestHeaders.Authorization =
+                    new AuthenticationHeaderValue("Bearer", token);
         }
 
         public async Task<LivroApi> GetLivroAsync(int id)
         {
+            AddBearerToken();
             HttpResponseMessage resposta = await _httpClient.GetAsync($"livros/{id}");
             resposta.EnsureSuccessStatusCode();
 
@@ -41,6 +57,7 @@ namespace Alura.WebAPI.WebApp.HttpClients
             //    .DefaultRequestHeaders.Authorization =
             //        new AuthenticationHeaderValue("Bearer", token);
 
+            AddBearerToken();
             HttpResponseMessage resposta = await _httpClient.GetAsync($"livros/{id}/capa");
             resposta.EnsureSuccessStatusCode();
 
@@ -49,6 +66,7 @@ namespace Alura.WebAPI.WebApp.HttpClients
 
         public async Task DeleteLivroAsync(int id)
         {
+            AddBearerToken();
             var resposta = await _httpClient.DeleteAsync($"livros/{id}");
             resposta.EnsureSuccessStatusCode();
         }
@@ -65,7 +83,7 @@ namespace Alura.WebAPI.WebApp.HttpClients
             //_httpClient
             //    .DefaultRequestHeaders.Authorization =
             //        new AuthenticationHeaderValue("Bearer", token);
-
+            AddBearerToken();
             var resposta = await _httpClient.GetAsync($"listasleitura/{tipo}");
             resposta.EnsureSuccessStatusCode(); //verificando se houve um status code da família 200
             return await resposta.Content.ReadAsAsync<Lista>();
@@ -73,6 +91,7 @@ namespace Alura.WebAPI.WebApp.HttpClients
 
         public async Task PostLivroAsync(LivroUpload model)
         {
+            AddBearerToken();
             HttpContent content = CreateMultipartFormDataContent(model);
             var resposta = await _httpClient.PostAsync("livros", content);
             resposta.EnsureSuccessStatusCode();
@@ -80,6 +99,7 @@ namespace Alura.WebAPI.WebApp.HttpClients
 
         public async Task PutLivroAsync(LivroUpload model)
         {
+            AddBearerToken();
             HttpContent content = CreateMultipartFormDataContent(model);
             var resposta = await _httpClient.PutAsync("livros", content);
             resposta.EnsureSuccessStatusCode();

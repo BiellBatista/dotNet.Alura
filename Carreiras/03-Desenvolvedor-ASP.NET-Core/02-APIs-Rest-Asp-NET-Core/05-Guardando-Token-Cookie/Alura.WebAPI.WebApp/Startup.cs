@@ -42,6 +42,8 @@ namespace Alura.ListaLeitura.WebApp
                     options.LoginPath = "/Usuario/Login"; //informando o caminho de autenticação
                 });
 
+            services.AddHttpContextAccessor(); //adicionado a necessidade de usar o HttpContext fora do contexto
+
             //amarrando o httpclient para consumir a API de livros
             services.AddHttpClient<LivroApiClient>(client =>
             {
