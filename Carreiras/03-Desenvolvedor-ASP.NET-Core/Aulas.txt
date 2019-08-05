@@ -129,3 +129,4 @@ APIs Rest com Asp.NET Core 2.1 Parte 3: padronizando a API
 		07 - Implementando versionamento hard-coded na rota
 		08 - Uma biblioteca para ajudar (Microsoft.AspNetCore.Mvc.Versioning)
 		09 - Versionamento na Query String
+		10 - Recapitulando
