@@ -134,3 +134,5 @@ APIs Rest com Asp.NET Core 2.1 Parte 3: padronizando a API
 		12 - Consolidando seus conhecimentos
 		13 - Referências Utilizadas
 		14 - O que aprendemos?
+	02 - Lidando com grandes coleções
+		01 - Grandes quantidades de dados
