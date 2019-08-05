@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Alura.WebAPI.WebApp.HttpClients;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Alura.WebAPI.WebApp.Formatters;
 
 namespace Alura.ListaLeitura.WebApp
 {
@@ -28,13 +29,18 @@ namespace Alura.ListaLeitura.WebApp
 
             services.AddHttpClient<LivroApiClient>(client =>
             {
-                client.BaseAddress = new System.Uri("http://localhost:6000/api/");
+                client.BaseAddress = new System.Uri("http://localhost:6000/api/v1.0/");
             });
 
             services.AddHttpClient<AuthApiClient>(client =>
             {
                 client.BaseAddress = new System.Uri("http://localhost:5000/api/");
             });
+
+            services.AddMvc(options =>
+            {
+                options.OutputFormatters.Add(new LivroCsvFormatter());
+            }).AddXmlSerializerFormatters();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
