@@ -23,13 +23,13 @@ namespace Alura.WebAPI.Api.Controllers
 
         [HttpGet]
         public IActionResult ListaDeLivros(
-            [FromQuery] LivroFiltro filtro,
-            [FromQuery] LivroOrdem ordem,
+            //[FromQuery] LivroFiltro filtro,
+            //[FromQuery] LivroOrdem ordem,
             [FromQuery] LivroPaginacao paginacao)
         {
             var livroPaginado = _repo.All
-                .AplicaFiltro(filtro)
-                .AplicaOrdem(ordem)
+                //.AplicaFiltro(filtro)
+                //.AplicaOrdem(ordem)
                 .Select(l => l.ToApi())
                 .ToLivroPaginado(paginacao);
 

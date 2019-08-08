@@ -144,3 +144,7 @@ APIs Rest com Asp.NET Core 2.1 Parte 3: padronizando a API
 		07 - Associando as técnicas corretas (B)
 		08 - Auxilie Maria Isabel (A)
 		09 - Concluindo a paginação
+		10 - Consolidando seus conhecimentos
+		11 - Referências Utilizadas
+		12 - O que aprendemos?
+	03 - Erros uniformes

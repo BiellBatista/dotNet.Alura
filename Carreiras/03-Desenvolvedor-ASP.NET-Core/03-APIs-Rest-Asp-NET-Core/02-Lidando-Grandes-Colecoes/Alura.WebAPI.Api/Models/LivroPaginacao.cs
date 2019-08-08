@@ -10,7 +10,21 @@ namespace Alura.WebAPI.Api.Models
     {
         public static LivroPaginado ToLivroPaginado(this IQueryable<LivroApi> query, LivroPaginacao paginacao)
         {
-            return new LivroPaginado();
+            int totalItens = query.Count();
+            int totalPaginas = (int) Math.Ceiling(totalItens / (double) paginacao.Tamanho);
+
+            return new LivroPaginado
+            {
+                Total = totalItens,
+                TotalPaginas = totalPaginas,
+                NumeroPagina = paginacao.Pagina,
+                TamanhoPagina = paginacao.Tamanho,
+                Resultado = query
+                    .Skip(paginacao.Tamanho * (paginacao.Pagina - 1))
+                    .Take(paginacao.Tamanho).ToList(),
+                Anterior = (paginacao.Pagina > 1) ? $"livros?tamanho={paginacao.Pagina - 1}&pagina={paginacao.Tamanho}" : "",
+                Proximo = (paginacao.Pagina < totalPaginas) ? $"livros?tamanho={paginacao.Pagina + 1}&pagina={paginacao.Tamanho}" : "",
+            };
         }
     }
 
@@ -27,7 +41,7 @@ namespace Alura.WebAPI.Api.Models
 
     public class LivroPaginacao
     {
-        public string Pagina { get; set; }
-        public string Tamanho { get; set; }
+        public int Pagina { get; set; } = 1; //definindo valores por padrão
+        public int Tamanho { get; set; } = 25;
     }
 }
