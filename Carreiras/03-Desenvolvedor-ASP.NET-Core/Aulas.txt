@@ -154,3 +154,4 @@ APIs Rest com Asp.NET Core 2.1 Parte 3: Padronizando a API
 		04 - Usando filtros
 		05 - Exemplo de filtro para exceções (C)
 		06 - Erros do ModelState
+		07 - Validação automática do ModelState
