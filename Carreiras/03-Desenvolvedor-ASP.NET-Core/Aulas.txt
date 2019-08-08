@@ -149,3 +149,5 @@ APIs Rest com Asp.NET Core 2.1 Parte 3: Padronizando a API
 		12 - O que aprendemos?
 	03 - Erros uniformes
 		01 - Padronizando os erros
+		02 - O problema que vamos resolver
+		03 - Capturando exceções
