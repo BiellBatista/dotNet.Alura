@@ -136,3 +136,5 @@ APIs Rest com Asp.NET Core 2.1 Parte 3: padronizando a API
 		14 - O que aprendemos?
 	02 - Lidando com grandes coleções
 		01 - Grandes quantidades de dados
+		02 - O problema que vamos resolver
+		03 - Aplicando filtros
