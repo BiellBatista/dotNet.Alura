@@ -151,3 +151,4 @@ APIs Rest com Asp.NET Core 2.1 Parte 3: Padronizando a API
 		01 - Padronizando os erros
 		02 - O problema que vamos resolver
 		03 - Capturando exceções
+		04 - Usando filtros

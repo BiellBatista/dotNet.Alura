@@ -67,7 +67,16 @@ namespace Alura.WebAPI.Api.Controllers
             if (ModelState.IsValid)
             {
                 var livro = model.ToLivro();
-                _repo.Incluir(livro);
+
+                try
+                {
+                    _repo.Incluir(livro);
+                }
+                catch (System.Exception e)
+                {
+                    var errorResponse = ErroResponse.From(e);
+                    return StatusCode(500, errorResponse);
+                }
 
                 var uri = Url.Action("Recuperar", new { id = livro.Id });
 
