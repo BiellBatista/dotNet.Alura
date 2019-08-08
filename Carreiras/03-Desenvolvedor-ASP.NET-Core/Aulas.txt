@@ -159,3 +159,6 @@ APIs Rest com Asp.NET Core 2.1 Parte 3: Padronizando a API
 		09 - Referências Utilizadas
 		10 - O que aprendemos?
 	04 - Descobrindo a API
+		01 - Facilitando a adoção da API
+		02 - O problema que vamos resolver
+		03 - Swagger e Open API
