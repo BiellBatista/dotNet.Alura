@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Alura.WebAPI.Api.Models
 {
@@ -11,7 +10,7 @@ namespace Alura.WebAPI.Api.Models
         public static LivroPaginado ToLivroPaginado(this IQueryable<LivroApi> query, LivroPaginacao paginacao)
         {
             int totalItens = query.Count();
-            int totalPaginas = (int) Math.Ceiling(totalItens / (double) paginacao.Tamanho);
+            int totalPaginas = (int)Math.Ceiling(totalItens / (double)paginacao.Tamanho);
 
             return new LivroPaginado
             {

@@ -9,9 +9,8 @@ namespace Alura.WebAPI.Api.Controllers
 {
     [Authorize]
     [ApiController]
-    [ApiVersion("2.0")] //configurando o controle de versionamento. Isso indica a versão da API
-    [Route("api/v{version:apiVersion}/livros")] //o template ({version:apiVersion}) é usado com a tag de cima
-    //[Route("api/livros")] //fazendo leitura pela queryString
+    [ApiVersion("2.0")]
+    [Route("api/v{version:apiVersion}/livros")]
     public class Livros2Controller : ControllerBase
     {
         private readonly IRepository<Livro> _repo;
@@ -23,13 +22,9 @@ namespace Alura.WebAPI.Api.Controllers
 
         [HttpGet]
         public IActionResult ListaDeLivros(
-            //[FromQuery] LivroFiltro filtro,
-            //[FromQuery] LivroOrdem ordem,
             [FromQuery] LivroPaginacao paginacao)
         {
             var livroPaginado = _repo.All
-                //.AplicaFiltro(filtro)
-                //.AplicaOrdem(ordem)
                 .Select(l => l.ToApi())
                 .ToLivroPaginado(paginacao);
 
@@ -68,15 +63,15 @@ namespace Alura.WebAPI.Api.Controllers
             {
                 var livro = model.ToLivro();
 
-                try
-                {
-                    _repo.Incluir(livro);
-                }
-                catch (System.Exception e)
-                {
-                    var errorResponse = ErroResponse.From(e);
-                    return StatusCode(500, errorResponse);
-                }
+                //try
+                //{
+                _repo.Incluir(livro);
+                //}
+                //catch (System.Exception e)
+                //{
+                //    var errorResponse = ErroResponse.From(e);
+                //    return StatusCode(500, errorResponse);
+                //}
 
                 var uri = Url.Action("Recuperar", new { id = livro.Id });
 

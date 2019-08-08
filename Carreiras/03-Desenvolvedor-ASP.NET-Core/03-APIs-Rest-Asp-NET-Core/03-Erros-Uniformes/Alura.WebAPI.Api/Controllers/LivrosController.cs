@@ -8,13 +8,8 @@ namespace Alura.WebAPI.Api.Controllers
 {
     [Authorize]
     [ApiController]
-    [ApiVersion("1.0")] //configurando o controle de versionamento
+    [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
-    //[Route("api/[controller]")] //fazendo leitura pela queryString.
-    /**
-     * A leitura da queryString é dada pela chave ?api-version=X.0.
-     * a biblioteca ApiVersion fica encarregada de realizar esse controle
-     */
     public class LivrosController : ControllerBase
     {
         private readonly IRepository<Livro> _repo;

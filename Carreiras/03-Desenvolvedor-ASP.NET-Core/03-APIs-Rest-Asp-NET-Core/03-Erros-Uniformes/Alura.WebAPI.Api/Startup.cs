@@ -1,9 +1,9 @@
 ﻿using Alura.ListaLeitura.Modelos;
 using Alura.ListaLeitura.Persistencia;
+using Alura.WebAPI.Api.Filtros;
 using Alura.WebAPI.Api.Formatters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -33,6 +33,7 @@ namespace Alura.WebAPI.Api
             services.AddMvc(options =>
             {
                 options.OutputFormatters.Add(new LivroCsvFormatter());
+                options.Filters.Add(new ErroResponseFilter());//amarrando o meu filtro de erro
             }).AddXmlSerializerFormatters();
 
             services.AddAuthentication(options =>
@@ -54,18 +55,7 @@ namespace Alura.WebAPI.Api
                 };
             });
 
-            services.AddApiVersioning(); //adicionando o controle de versionamento para pegar o template da URI e a queryString
-            //services.AddApiVersioning( options =>
-            //{
-            ////options.ApiVersionReader = new HeaderApiVersionReader("api-version"); //criando o leitor que irá ler a versão da API no header da requisição
-            ///**
-            // * Configurando para que o versionamento de API funcione no queryString e no parametro do header
-            // */
-            //options.ApiVersionReader = ApiVersionReader.Combine(
-            //    new QueryStringApiVersionReader("api-version"),
-            //    new HeaderApiVersionReader("api-version")
-            //        );
-            //}); //adicionando o controle de versionamento para pegar os dados do header
+            services.AddApiVersioning();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
