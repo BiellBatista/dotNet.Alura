@@ -139,3 +139,5 @@ APIs Rest com Asp.NET Core 2.1 Parte 3: padronizando a API
 		02 - O problema que vamos resolver
 		03 - Aplicando filtros
 		04 - Ordenando a coleção
+		05 - Adiantando a paginação (B / C)
+		06 - Paginação no servidor
