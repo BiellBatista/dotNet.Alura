@@ -141,3 +141,6 @@ APIs Rest com Asp.NET Core 2.1 Parte 3: padronizando a API
 		04 - Ordenando a coleção
 		05 - Adiantando a paginação (B / C)
 		06 - Paginação no servidor
+		07 - Associando as técnicas corretas (B)
+		08 - Auxilie Maria Isabel (A)
+		09 - Concluindo a paginação
