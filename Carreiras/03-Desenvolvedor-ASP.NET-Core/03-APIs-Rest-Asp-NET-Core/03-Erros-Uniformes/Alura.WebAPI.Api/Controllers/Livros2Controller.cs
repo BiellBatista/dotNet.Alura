@@ -78,7 +78,7 @@ namespace Alura.WebAPI.Api.Controllers
                 return Created(uri, livro);
             }
 
-            return BadRequest();
+            return BadRequest(ErroResponse.FromModelState(ModelState));
         }
 
         [HttpPut]
