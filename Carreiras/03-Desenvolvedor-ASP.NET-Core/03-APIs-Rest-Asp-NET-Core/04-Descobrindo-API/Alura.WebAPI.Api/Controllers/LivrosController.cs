@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using Alura.ListaLeitura.Modelos;
 using Alura.ListaLeitura.Persistencia;
+using Alura.WebAPI.Api.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,6 +10,7 @@ namespace Alura.WebAPI.Api.Controllers
     [Authorize]
     [ApiController]
     [ApiVersion("1.0")]
+    [ApiExplorerSettings(GroupName = "v1")]
     [Route("api/v{version:apiVersion}/[controller]")]
     public class LivrosController : ControllerBase
     {
@@ -27,6 +29,12 @@ namespace Alura.WebAPI.Api.Controllers
         }
 
         [HttpGet("{id}")]
+        /**
+         * esses três metados indicam o retorno desta action
+         */
+        [ProducesResponseType(statusCode: 200, Type = typeof(LivroApi))]
+        [ProducesResponseType(statusCode: 500, Type = typeof(ErroResponse))]
+        [ProducesResponseType(statusCode: 404)]
         public IActionResult Recuperar(int id)
         {
             var model = _repo.Find(id);

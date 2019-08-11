@@ -66,7 +66,16 @@ namespace Alura.WebAPI.Api
             //configurando o swagger (Open API) para gerar a documentação
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Description = "Documentação da API", Version = "1.0" });
+                //o primeiro argumento (v1), deve ser único, pois fará parte da URI
+                c.SwaggerDoc("v1", new Info {
+                    Title = "Livros API",
+                    Description = "Documentação da API de livros.",
+                    Version = "1.0"
+                }); //gerando uma documentação
+                c.SwaggerDoc("v2", new Info {
+                    Title = "Livros API",
+                    Description = "Documentação da API de livros.",
+                    Version = "2.0" });
             });
         }
 
@@ -81,7 +90,12 @@ namespace Alura.WebAPI.Api
             app.UseMvc();
 
             app.UseSwagger(); //usando o swagger, gera o .json
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1")); //configurando a interface HTML da documentação. Ele usa o .json gerado
+            app.UseSwaggerUI(c =>
+            {
+                //definindo os endpoint para as versões da documentação
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Versão 1.0");
+                c.SwaggerEndpoint("/swagger/v2/swagger.json", "Versão 2.0");
+            }); //configurando a interface HTML da documentação. Ele usa o .json gerado
             //é necessário para a URI do .json gerado
 
             /**
