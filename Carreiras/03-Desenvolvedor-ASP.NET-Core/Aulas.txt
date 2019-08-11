@@ -167,3 +167,7 @@ APIs Rest com Asp.NET Core 2.1 Parte 3: Padronizando a API
 		06 - Customizando a documentação
 		07 - (continuação) Documentação customizada
 		08 - Conclusão
+		09 - Consolidando seus conhecimentos
+		10 - Referências Utilizadas
+		11 - O que aprendemos?
+		12 - Projeto final do curso
