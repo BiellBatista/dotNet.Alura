@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.Swagger;
 using System;
+using System.Collections.Generic;
 
 namespace Alura.WebAPI.Api
 {
@@ -67,16 +68,49 @@ namespace Alura.WebAPI.Api
             services.AddSwaggerGen(c =>
             {
                 //o primeiro argumento (v1), deve ser único, pois fará parte da URI
-                c.SwaggerDoc("v1", new Info {
+                c.SwaggerDoc("v1", new Info
+                {
                     Title = "Livros API",
                     Description = "Documentação da API de livros.",
                     Version = "1.0"
                 }); //gerando uma documentação
-                c.SwaggerDoc("v2", new Info {
+                c.SwaggerDoc("v2", new Info
+                {
                     Title = "Livros API",
                     Description = "Documentação da API de livros.",
-                    Version = "2.0" });
+                    Version = "2.0"
+                });
             });
+
+            services.AddSwaggerGen(options =>
+            {
+                //definição do esquema de segurança utilizado
+                options.AddSecurityDefinition("Bearer", new ApiKeyScheme
+                {
+                    Name = "Authorization",
+                    In = "header",
+                    Type = "apiKey",
+                    Description = "Autenticação Bearer via JWT"
+                }); //configurando a informação de autenticação
+
+                //que operações usam o esquema acima - todas
+                options.AddSecurityRequirement(
+                    new Dictionary<string, IEnumerable<string>> {
+                        { "Bearer", new string[] { } }
+                    });
+
+                //descrevendo enumerados como strings
+                options.DescribeAllEnumsAsStrings();
+                options.DescribeStringEnumsInCamelCase();
+
+                //adicionando o filtro para incluir respostas 401 nas operações
+                options.OperationFilter<AuthResponsesOperationFilter>();
+
+                //adicionando o filtro para incluir descrições nas tags
+                options.DocumentFilter<TagDescriptionsDocumentFilter>();
+
+                options.EnableAnnotations();
+            }); //ativando as anotacoes extras do Swashbuckle
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

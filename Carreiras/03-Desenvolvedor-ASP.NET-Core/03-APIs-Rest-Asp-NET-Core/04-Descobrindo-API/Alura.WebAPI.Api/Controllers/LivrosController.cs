@@ -4,6 +4,7 @@ using Alura.ListaLeitura.Persistencia;
 using Alura.WebAPI.Api.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace Alura.WebAPI.Api.Controllers
 {
@@ -29,13 +30,18 @@ namespace Alura.WebAPI.Api.Controllers
         }
 
         [HttpGet("{id}")]
+        //Você também pode documentar quais os media-types que operação irá produzir.Essa info é bem importante para o dev que está consumindo sua api preparar adequadamente seu código.Para isso usamos outro argumento na anotação, o Produces, que espera um array de strings.
+      [SwaggerOperation(Summary = "Recupera o livro identificado por seu {id}.",
+            Tags = new[] { "Livros" }, //Com essa declaração de tags sua documentação agrupará as operações embaixo de cada tag.
+            Produces = new[] { "application/json", "application/xml" })]
         /**
          * esses três metados indicam o retorno desta action
          */
         [ProducesResponseType(statusCode: 200, Type = typeof(LivroApi))]
         [ProducesResponseType(statusCode: 500, Type = typeof(ErroResponse))]
         [ProducesResponseType(statusCode: 404)]
-        public IActionResult Recuperar(int id)
+        //Outra coisa importante é documentar os parâmetros esperados pelas operações, seus tipos e obrigatoriedade. Isso é feito com a anotação SwaggerParameter
+        public IActionResult Recuperar([FromRoute] [SwaggerParameter("Tipo da lista a ser obtida.")] int id)
         {
             var model = _repo.Find(id);
             if (model is null)
@@ -59,6 +65,7 @@ namespace Alura.WebAPI.Api.Controllers
         }
 
         [HttpPost]
+        [SwaggerOperation(Summary = "Registra novo livro na base.")] //adicionando um breve do resumo do que este endpoint faz
         public IActionResult Incluir([FromForm] LivroUpload model)
 
         {
