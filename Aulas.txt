@@ -245,6 +245,23 @@ Extra Integrações em .NET
 		05 - Consumindo um serviço
 		06 - Acessando o serviço pelo browser
 -------------------------------------------------------------------------------------------------------------------------
+Extra .NET para Web
+	ASP.NET: Razor
+		01 - Introdução ao Razor
+		02 - Utilizando templates
+		03 - Melhorando o código do layout
+		04 - Formulários em views fortemente tipadas
+		05 - Internacionalização
+		06 - Otimização das views
+	Projeto Completo: Controle Financeiro com Asp.NET MVC 5
+		01 - Abertura
+		02 - Preparando o ambiente
+		03 - Layout e cadastro de usuários
+		04 - Cadastro de movimentações
+		05 - Segurança com o Simple Membership
+		06 - Gerando Relatórios
+		07 - Fechamento
+-------------------------------------------------------------------------------------------------------------------------
 Formação Desenvolvedor .NET
 	Curso C# Parte 1: Primeiros Passos
 		01 - História e ecossistema da linguagem
