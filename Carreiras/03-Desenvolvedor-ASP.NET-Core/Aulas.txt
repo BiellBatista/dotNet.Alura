@@ -164,3 +164,4 @@ APIs Rest com Asp.NET Core 2.1 Parte 3: Padronizando a API
 		03 - Swagger e Open API
 		04 - Arquivo swagger.json (B)
 		05 - Swagger.json para nossa API
+		06 - Customizando a documentação

@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using Swashbuckle.AspNetCore.Swagger;
 using System;
 
 namespace Alura.WebAPI.Api
@@ -62,6 +63,11 @@ namespace Alura.WebAPI.Api
             });
 
             services.AddApiVersioning();
+            //configurando o swagger (Open API) para gerar a documentação
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Description = "Documentação da API", Version = "1.0" });
+            });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -73,6 +79,14 @@ namespace Alura.WebAPI.Api
 
             app.UseAuthentication();
             app.UseMvc();
+
+            app.UseSwagger(); //usando o swagger, gera o .json
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1")); //configurando a interface HTML da documentação. Ele usa o .json gerado
+            //é necessário para a URI do .json gerado
+
+            /**
+             * Preciso alterar a porta de 6000 para 6001, pois o chrome considera a 6000 não segura
+             */
         }
     }
 }
