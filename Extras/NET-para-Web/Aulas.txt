@@ -2,7 +2,20 @@ ASP.NET: Razor
 	01 - Introdução ao Razor
 		01 - Vídeo 1
 		02 - Introdução ao Razor
+		03 - Importando o projeto inicial
+		04 - Menu da página inicial
+		05 - Iterando na lista (A)
+		06 - Menu para a página inicial
+		07 - Ofertas na página inicial
+		08 - Condições na View (C)
+		09 - Texto dentro de um bloco de código (A)
+		10 - Menu superior
+		11 - Links do menu superior
+		12 - Acessar a Session a partir da view (C)
+		13 - Link para login
+		14 - Arquivos do projeto atual
 	02 - Utilizando templates
+		01 - Vídeo 1
 	03 - Melhorando o código do layout
 	04 - Formulários em views fortemente tipadas
 	05 - Internacionalização
