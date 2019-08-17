@@ -16,6 +16,14 @@ ASP.NET: Razor
 		14 - Arquivos do projeto atual
 	02 - Utilizando templates
 		01 - Vídeo 1
+		02 - Utilizando templates
+		03 - Utilizando layout pages (A)
+		04 - Adicionando o Layout Page na aplicação
+		05 - Layout na página inicial
+		06 - Configurações padrões para views (C)
+		07 - _ViewStart.cshtml
+		08 - Menu lateral
+		09 - Arquivos do projeto atual
 	03 - Melhorando o código do layout
 	04 - Formulários em views fortemente tipadas
 	05 - Internacionalização
