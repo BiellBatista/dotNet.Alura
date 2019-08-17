@@ -7,30 +7,9 @@
     <link href="~/Content/Style.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            @Html.ActionLink("Loja Razor", "Index", "Home", null, new { @class = "brand" })
-            <ul class="nav">
-                <li>@Html.ActionLink("Sobre", "About", "Home")</li>
-                <li>@Html.ActionLink("Contato", "Contato", "Home")</li>
-            </ul>
-            <p class="navbar-text pull-right">
-                @if (Session["usuarioLogado"] != null)
-                {
-                    @:Bem-vindo
-                    @Session["usuarioLogado"]
-                    @Html.ActionLink("Logout", "Logout", "Autenticacao")
-                }
-                else
-                {
-                    @:Olá visiante
-                    @Html.ActionLink("Login", "Index", "Autenticacao")
-                    @: ou
-                    @Html.ActionLink("Cadastre-se", "Form", "Usuarios")
-                }
-            </p>
-        </div>
-    </div>
+    @* usando uma view parcial 
+	O método Partial procura uma view dentro da pasta ~/Views/Shared com o mesmo nome do argumento que foi passado. O conteúdo dessa view é colocado no lugar da 	chamada para o Partial.*@
+    @Html.Partial("_MenuSuperior")
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="span3">
@@ -42,5 +21,12 @@
             </div>
         </div>
     </div>
+    @* quando quero importar uns scripts, uso a tag da section, com isso eu posso declarar o script de cada páginas nos seus respectivos
+        arquivos cshtml
+Para utilizarmos seções, precisamos demarcar no arquivo de template onde o código da seção deve ser substituído, fazemos isso utilizando a função RenderSection do Razor passando qual é o nome da seção que queremos utilizar.
+
+O que a view definir dentro da seção Scripts será colocado no lugar do @RenderSection. Com esse código estamos definindo uma seção obrigatória chamada Scripts, porém nem toda view precisa importar scripts adicionais, então precisamos marcar a seção como opcional:(False)*@
+    @RenderSection("Scripts", false)
+@* Esse método pode receber opcionalmente um segundo argumento booleano que indica se a seção é opcional ou obrigatória. Quando não passamos o segundo argumento, o Razor assume que a seção é obrigatória e, portanto deve ser definida por todas as views. Caso a view não implemente uma seção obrigatória, uma exceção é lançada. *@
 </body>
 </html>

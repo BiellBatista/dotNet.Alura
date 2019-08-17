@@ -25,6 +25,16 @@ ASP.NET: Razor
 		08 - Menu lateral
 		09 - Arquivos do projeto atual
 	03 - Melhorando o código do layout
+		01 - Vídeo 1
+		02 - Melhorando o código do layout
+		03 - Onde ficam as views parciais (B)
+		04 - HtmlHelper e views parciais (B)
+		05 - View Parcial para o menu
+		06 - Utilizando a view parcial
+		07 - HtmlHelper e seções (B)
+		08 - Seção de scripts no template
+		09 - Importando Scripts
+		10 - Arquivos do projeto atual
 	04 - Formulários em views fortemente tipadas
 	05 - Internacionalização
 	06 - Otimização das views

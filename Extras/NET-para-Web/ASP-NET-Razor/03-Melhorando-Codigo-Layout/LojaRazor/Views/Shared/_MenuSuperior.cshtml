@@ -1,0 +1,26 @@
+﻿<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        @Html.ActionLink("Loja Razor", "Index", "Home", null, new { @class = "brand" })
+        <ul class="nav">
+            <li>@Html.ActionLink("Sobre", "About", "Home")</li>
+            <li>@Html.ActionLink("Contato", "Contato", "Home")</li>
+        </ul>
+        <p class="navbar-text pull-right">
+            @if (Session["usuarioLogado"] != null)
+            {
+                @:Bem-vindo
+                @Session["usuarioLogado"]
+                @Html.ActionLink("Logout", "Logout", "Autenticacao")
+            }
+            else
+            {
+                @:Olá visiante
+                @Html.ActionLink("Login", "Index", "Autenticacao")
+                @: ou
+                @Html.ActionLink("Cadastre-se", "Form", "Usuarios")
+            }
+        </p>
+    </div>
+</div>
+
+@* Views Parciais são arquivos cshtml comuns que devem ficar dentro da pasta ~/Views/Shared do projeto. Então dentro dessa pasta, vamos criar um novo arquivo chamado _MenuSuperior.cshtml, novamente o nome do arquivo não é importante para o asp.net mvc. Dentro desse arquivo colocaremos o código que queremos isolar: *@
