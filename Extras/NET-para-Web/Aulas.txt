@@ -49,6 +49,8 @@ ASP.NET: Razor
 		11 - Validação com HtmlHelper
 		12 - Arquivos do projeto atual
 	05 - Internacionalização
+		01 - Vídeo 1
+		02 - 
 	06 - Otimização das views
 Projeto Completo: Controle Financeiro com Asp.NET MVC 5
 	01 - Abertura
