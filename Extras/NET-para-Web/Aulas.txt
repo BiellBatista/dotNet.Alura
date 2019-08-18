@@ -59,6 +59,15 @@ ASP.NET: Razor
 		08 - Arquivos do projeto atual
 	06 - Otimização das views
 		01 - Vídeo 1
+		02 - Otimização das views
+		03 - Bundle de Scripts (A)
+		04 - Adicionando Scripts ao bundle (A)
+		05 - Configurando os bundles
+		06 - Importando bundles na view (B)
+		07 - Utilizando bundle no Layout
+		08 - Importando o bundle de scripts
+		09 - Aplicação em modo produção
+		10 - Arquivos do projeto atual
 Projeto Completo: Controle Financeiro com Asp.NET MVC 5
 	01 - Abertura
 	02 - Preparando o ambiente
