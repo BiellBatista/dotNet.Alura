@@ -50,7 +50,13 @@ ASP.NET: Razor
 		12 - Arquivos do projeto atual
 	05 - Internacionalização
 		01 - Vídeo 1
-		02 - 
+		02 - Internacionalização
+		03 - Resource File (D)
+		04 - Acessando Resource File (B)
+		05 - Criando o Resource File
+		06 - Utilizando o Resource File na View
+		07 - Modificando o idioma da aplicação
+		08 - Arquivos do projeto atual
 	06 - Otimização das views
 Projeto Completo: Controle Financeiro com Asp.NET MVC 5
 	01 - Abertura
