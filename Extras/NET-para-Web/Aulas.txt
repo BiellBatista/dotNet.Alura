@@ -44,8 +44,8 @@ ASP.NET: Razor
 		06 - Formulário de cadastro
 		07 - Sexo do usuário
 		08 - RadioButtonFor
-		09 - 
-		10 - 
+		09 - Endereço com Estado
+		10 - Estado no formulário de cadastro
 		11 - 
 		12 - 
 	05 - Internacionalização

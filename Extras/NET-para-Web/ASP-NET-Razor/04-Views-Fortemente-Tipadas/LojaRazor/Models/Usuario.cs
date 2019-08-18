@@ -28,6 +28,9 @@ namespace LojaRazor.Models
         [Required, RegularExpression("\\d{5}-\\d{3}")]
         public string CEP { get; set; }
 
+        [Required]
+        public Estado Estado { get; set; }
+
         public string Observacoes { get; set; }
 
         public bool RecebePromocoes { get; set; }
