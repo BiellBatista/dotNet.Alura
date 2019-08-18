@@ -36,6 +36,18 @@ ASP.NET: Razor
 		09 - Importando Scripts
 		10 - Arquivos do projeto atual
 	04 - Formulários em views fortemente tipadas
+		01 - Vídeo 1
+		02 - Formulários em views fortemente tipadas
+		03 - Formulário com HtmlHelper (E)
+		04 - View fortemente tipada (D)
+		05 - Campo de texto (B)
+		06 - Formulário de cadastro
+		07 - Sexo do usuário
+		08 - 
+		09 - 
+		10 - 
+		11 - 
+		12 - 
 	05 - Internacionalização
 	06 - Otimização das views
 Projeto Completo: Controle Financeiro com Asp.NET MVC 5

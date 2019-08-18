@@ -1,40 +1,50 @@
-﻿<form action="@Url.Action("Cadastra")" method="post">
+﻿@model LojaRazor.Models.Usuario
+    @* Criando um formulário *@
+@using (Html.BeginForm("Cadastra", "Usuarios", FormMethod.Post))
+{
     <fieldset>
         <legend>Dados Pessoais</legend>
 
-        <label for="nome">Nome: </label>
-        <input id="nome" type="text" name="usuario.Nome" />
+        @Html.LabelFor(model => model.Nome, "Nome:")
+        @Html.TextBoxFor(model => model.Nome)
+        @Html.ValidationMessageFor(model => model.Nome)
 
-        <label for="email">E-mail: </label>
-        <input id="email" type="text" name="usuario.Email" />
+        @Html.LabelFor(model => model.Email, "E-mail:")
+        @Html.TextBoxFor(model => model.Email)
+        @Html.ValidationMessageFor(model => model.Email)
 
-        <label for="senha">Senha:</label>
-        <input id="senha" type="password" name="usuario.Senha" />
+        @Html.LabelFor(model => model.Senha, "Senha:")
+        @Html.TextBoxFor(model => model.Senha)
+        @Html.ValidationMessageFor(model => model.Senha)
 
-        <label for="dataDeNascimento">Data de Nascimento: </label>
-        <input id="dataDeNascimento" type="text" name="usuario.DataDeNascimento" />
+        @Html.LabelFor(model => model.DataDeNascimento, "Data de nascimento:")
+        @Html.TextBoxFor(model => model.DataDeNascimento)
+        @Html.ValidationMessageFor(model => model.DataDeNascimento)
     </fieldset>
 
     <fieldset>
         <legend>Dados de Entrega</legend>
 
-        <label for="endereco">Endereço: </label>
-        <input id="endereco" type="text" name="usuario.Endereco" />
+        @Html.LabelFor(model => model.Endereco, "Endereço:")
+        @Html.TextBoxFor(model => model.Endereco)
+        @Html.ValidationMessageFor(model => model.Endereco)
 
-        <label for="complemento">Complemento: </label>
-        <input id="complemento" type="text" name="usuario.Complemento" />
+        @Html.LabelFor(model => model.Complemento, "Complemento:")
+        @Html.TextBoxFor(model => model.Complemento)
+        @Html.ValidationMessageFor(model => model.Complemento)
 
-        <label for="cep">CEP: </label>
-        <input id="cep" type="text" name="usuario.CEP" />
+        @Html.LabelFor(model => model.CEP, "CEP:")
+        @Html.TextBoxFor(model => model.CEP)
+        @Html.ValidationMessageFor(model => model.Complemento)
 
-        <label for="observacoes">Observações: </label>
-        <textarea id="observacoes" name="usuario.Observacoes"></textarea>
+        @Html.LabelFor(model => model.Observacoes, "Observações:")
+        @Html.TextAreaFor(model => model.Observacoes)
+        @Html.ValidationMessageFor(model => model.Observacoes)
     </fieldset>
     <div>
-        <input name="usuario.RecebePromocoes" type="checkbox" value="true" />
+        @Html.CheckBoxFor(model => model.RecebePromocoes)
         Desejo receber informações sobre promoções
     </div>
 
     <input type="submit" value="Cadastrar" class="btn btn-large" />
-
-</form>
+}
