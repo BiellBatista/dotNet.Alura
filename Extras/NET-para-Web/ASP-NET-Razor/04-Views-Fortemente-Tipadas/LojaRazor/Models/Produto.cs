@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace LojaRazor.Models
+﻿namespace LojaRazor.Models
 {
     public class Produto
     {
-        
+
         public string Nome { get; set; }
 
         public string Descricao { get; set; }
@@ -16,9 +11,9 @@ namespace LojaRazor.Models
 
         public Produto(string nome, string descricao, decimal preco)
         {
-            this.Nome = nome;
-            this.Descricao = descricao;
-            this.Preco = preco;
+            Nome = nome;
+            Descricao = descricao;
+            Preco = preco;
         }
     }
 }

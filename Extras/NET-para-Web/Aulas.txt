@@ -43,7 +43,7 @@ ASP.NET: Razor
 		05 - Campo de texto (B)
 		06 - Formulário de cadastro
 		07 - Sexo do usuário
-		08 - 
+		08 - RadioButtonFor
 		09 - 
 		10 - 
 		11 - 

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace LojaRazor.Models
+﻿namespace LojaRazor.Models
 {
     public class Categoria
     {
@@ -11,7 +6,7 @@ namespace LojaRazor.Models
 
         public Categoria(string nome)
         {
-            this.Nome = nome;
+            Nome = nome;
         }
     }
 }
