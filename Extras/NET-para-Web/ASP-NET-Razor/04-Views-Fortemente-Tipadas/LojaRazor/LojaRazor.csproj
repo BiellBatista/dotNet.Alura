@@ -137,6 +137,7 @@
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Departamento.cs" />
     <Compile Include="Models\Produto.cs" />
+    <Compile Include="Models\Sexo.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -2,25 +2,39 @@
     @* Criando um formulário *@
 @using (Html.BeginForm("Cadastra", "Usuarios", FormMethod.Post))
 {
-    <fieldset>
-        <legend>Dados Pessoais</legend>
+<fieldset>
+    <legend>Dados Pessoais</legend>
 
-        @Html.LabelFor(model => model.Nome, "Nome:")
-        @Html.TextBoxFor(model => model.Nome)
-        @Html.ValidationMessageFor(model => model.Nome)
+    @Html.LabelFor(model => model.Nome, "Nome:")
+    @Html.TextBoxFor(model => model.Nome)
+    @Html.ValidationMessageFor(model => model.Nome)
 
-        @Html.LabelFor(model => model.Email, "E-mail:")
-        @Html.TextBoxFor(model => model.Email)
-        @Html.ValidationMessageFor(model => model.Email)
+    @Html.LabelFor(model => model.Email, "E-mail:")
+    @Html.TextBoxFor(model => model.Email)
+    @Html.ValidationMessageFor(model => model.Email)
 
-        @Html.LabelFor(model => model.Senha, "Senha:")
-        @Html.TextBoxFor(model => model.Senha)
-        @Html.ValidationMessageFor(model => model.Senha)
+    @Html.LabelFor(model => model.Senha, "Senha:")
+    @Html.TextBoxFor(model => model.Senha)
+    @Html.ValidationMessageFor(model => model.Senha)
 
-        @Html.LabelFor(model => model.DataDeNascimento, "Data de nascimento:")
-        @Html.TextBoxFor(model => model.DataDeNascimento)
-        @Html.ValidationMessageFor(model => model.DataDeNascimento)
-    </fieldset>
+    @Html.LabelFor(model => model.DataDeNascimento, "Data de nascimento:")
+    @Html.TextBoxFor(model => model.DataDeNascimento)
+    @Html.ValidationMessageFor(model => model.DataDeNascimento)
+
+    <div class="control-group">
+        @* cria o radio para a opção masculino *@
+        <label class="inline radio">
+            @Html.RadioButtonFor(u => u.Sexo, LojaRazor.Models.Sexo.Masculino)
+            Masculino
+        </label>
+
+        @* cria o radio para a opção feminino *@
+        <label class="inline radio">
+            @Html.RadioButtonFor(u => u.Sexo, LojaRazor.Models.Sexo.Feminino)
+            Feminino
+        </label>
+    </div>
+</fieldset>
 
     <fieldset>
         <legend>Dados de Entrega</legend>
