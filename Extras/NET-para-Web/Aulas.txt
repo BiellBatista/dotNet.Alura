@@ -46,7 +46,7 @@ ASP.NET: Razor
 		08 - RadioButtonFor
 		09 - Endereço com Estado
 		10 - Estado no formulário de cadastro
-		11 - 
+		11 - Validação com HtmlHelper
 		12 - 
 	05 - Internacionalização
 	06 - Otimização das views

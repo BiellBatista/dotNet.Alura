@@ -1,40 +1,40 @@
 ﻿@model LojaRazor.Models.Usuario
-    @* Criando um formulário *@
+@* Criando um formulário *@
 @using (Html.BeginForm("Cadastra", "Usuarios", FormMethod.Post))
 {
-<fieldset>
-    <legend>Dados Pessoais</legend>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
 
-    @Html.LabelFor(model => model.Nome, "Nome:")
-    @Html.TextBoxFor(model => model.Nome)
-    @Html.ValidationMessageFor(model => model.Nome)
+        @Html.LabelFor(model => model.Nome, "Nome:")
+        @Html.TextBoxFor(model => model.Nome)
+        @Html.ValidationMessageFor(model => model.Nome)
 
-    @Html.LabelFor(model => model.Email, "E-mail:")
-    @Html.TextBoxFor(model => model.Email)
-    @Html.ValidationMessageFor(model => model.Email)
+        @Html.LabelFor(model => model.Email, "E-mail:")
+        @Html.TextBoxFor(model => model.Email)
+        @Html.ValidationMessageFor(model => model.Email)
 
-    @Html.LabelFor(model => model.Senha, "Senha:")
-    @Html.TextBoxFor(model => model.Senha)
-    @Html.ValidationMessageFor(model => model.Senha)
+        @Html.LabelFor(model => model.Senha, "Senha:")
+        @Html.TextBoxFor(model => model.Senha)
+        @Html.ValidationMessageFor(model => model.Senha)
 
-    @Html.LabelFor(model => model.DataDeNascimento, "Data de nascimento:")
-    @Html.TextBoxFor(model => model.DataDeNascimento)
-    @Html.ValidationMessageFor(model => model.DataDeNascimento)
+        @Html.LabelFor(model => model.DataDeNascimento, "Data de nascimento:")
+        @Html.TextBoxFor(model => model.DataDeNascimento)
+        @Html.ValidationMessageFor(model => model.DataDeNascimento)
 
-    <div class="control-group">
-        @* cria o radio para a opção masculino *@
-        <label class="inline radio">
-            @Html.RadioButtonFor(u => u.Sexo, LojaRazor.Models.Sexo.Masculino)
-            Masculino
-        </label>
+        <div class="control-group">
+            @* cria o radio para a opção masculino *@
+            <label class="inline radio">
+                @Html.RadioButtonFor(u => u.Sexo, LojaRazor.Models.Sexo.Masculino)
+                Masculino
+            </label>
 
-        @* cria o radio para a opção feminino *@
-        <label class="inline radio">
-            @Html.RadioButtonFor(u => u.Sexo, LojaRazor.Models.Sexo.Feminino)
-            Feminino
-        </label>
-    </div>
-</fieldset>
+            @* cria o radio para a opção feminino *@
+            <label class="inline radio">
+                @Html.RadioButtonFor(u => u.Sexo, LojaRazor.Models.Sexo.Feminino)
+                Feminino
+            </label>
+        </div>
+    </fieldset>
 
     <fieldset>
         <legend>Dados de Entrega</legend>
@@ -50,6 +50,20 @@
         @Html.LabelFor(model => model.CEP, "CEP:")
         @Html.TextBoxFor(model => model.CEP)
         @Html.ValidationMessageFor(model => model.Complemento)
+
+        @*
+
+            Para melhorar a usabilidade do formulário, ao invés de radio buttons, utilizaremos um combo box (menu drop down). Para gerar o combo box, utilizaremos um novo método do HtmlHelper chamado DropDownListFor. Nesse método precisamos passar um lambda informando qual é o campo do modelo que queremos preencher e também uma lista de itens que devem ser mostrados (os estados do país em nosso exemplo).
+                @Html.DropDownListFor(u => u.Estado, lista_de_estados)
+
+            A lista de estados deve ser uma lista de SelectListItem. Então poderíamos utilizar, por exemplo, um List do C#, mas para isso teríamos que instanciar a lista e depois precisamos preenchê-la com os itens desejados. Para facilitar a criação da lista, o Asp.Net MVC nos fornece uma classe auxiliar chamada SelectList e podemos passar a lista de valores que queremos utilizar em sua inicialização dentro de seu construtor.
+                new SelectList(lista_de_itens)
+
+            Como lista de itens, queremos passar todos os valores do enum Estado. Para pegar essa lista de valores podemos utilizar o método GetValues da classe Enum:
+                   Enum.GetValues(typeof(Estado))
+        *@
+        @Html.LabelFor(u => u.Estado)
+        @Html.DropDownListFor(u => u.Estado, new SelectList(Enum.GetValues(typeof(LojaRazor.Models.Estado))))
 
         @Html.LabelFor(model => model.Observacoes, "Observações:")
         @Html.TextAreaFor(model => model.Observacoes)
