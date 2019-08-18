@@ -58,6 +58,7 @@ ASP.NET: Razor
 		07 - Modificando o idioma da aplicação
 		08 - Arquivos do projeto atual
 	06 - Otimização das views
+		01 - Vídeo 1
 Projeto Completo: Controle Financeiro com Asp.NET MVC 5
 	01 - Abertura
 	02 - Preparando o ambiente

@@ -64,7 +64,9 @@
 }
 
 @section Scripts {
-    <script src="~/Scripts/jquery-1.7.1.js" type="text/javascript"></script>
+    @*importando os scripts*@
+    @Scripts.Render("~/bundles/scripts")
+    @*<script src="~/Scripts/jquery-1.7.1.js" type="text/javascript"></script>
     <script src="~/Scripts/jquery.validate.js" type="text/javascript"></script>
-    <script type="text/javascript" src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.unobtrusive.js"></script>*@
 }

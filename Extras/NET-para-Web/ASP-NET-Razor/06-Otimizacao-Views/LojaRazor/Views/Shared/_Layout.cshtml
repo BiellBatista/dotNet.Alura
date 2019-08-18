@@ -3,8 +3,9 @@
 <head lang="pt-br">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Página Inicial</title>
-    <link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <link href="~/Content/Style.css" rel="stylesheet" />
+    @Styles.Render("~/bundles/estilos");
+    @*<link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <link href="~/Content/Style.css" rel="stylesheet" />*@
 </head>
 <body>
     @Html.Partial("_MenuSuperior")
