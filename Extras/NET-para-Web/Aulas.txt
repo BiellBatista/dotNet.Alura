@@ -47,7 +47,7 @@ ASP.NET: Razor
 		09 - Endereço com Estado
 		10 - Estado no formulário de cadastro
 		11 - Validação com HtmlHelper
-		12 - 
+		12 - Arquivos do projeto atual
 	05 - Internacionalização
 	06 - Otimização das views
 Projeto Completo: Controle Financeiro com Asp.NET MVC 5
