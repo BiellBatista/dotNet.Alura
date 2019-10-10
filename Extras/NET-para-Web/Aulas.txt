@@ -70,7 +70,14 @@ ASP.NET: Razor
 		10 - Arquivos do projeto atual
 Projeto Completo: Controle Financeiro com Asp.NET MVC 5
 	01 - Abertura
+		01 - Vídeo 1
 	02 - Preparando o ambiente
+		01 - Vídeo 1
+		02 - Preparando o ambiente
+		03 - Em sua opinião, quais são as vantagens e desvantagens de usarmos o Entity Framework para fazermos o acesso a dados em uma aplicação?
+		04 - Em sua opinião, qual é a vantagem de utilizarmos o Nuget (package manager console) para controlar as dependências da aplicação?
+		05 - Migrations
+		06 - Material da aula atual
 	03 - Layout e cadastro de usuários
 	04 - Cadastro de movimentações
 	05 - Segurança com o Simple Membership
