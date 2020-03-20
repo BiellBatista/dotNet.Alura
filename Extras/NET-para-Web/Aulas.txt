@@ -96,4 +96,5 @@ Projeto Completo: Controle Financeiro com Asp.NET MVC 5
 		04 - Simple Membership
 		05 - Material da aula atual
 	06 - Gerando Relatórios
+		01 - Vídeo 1
 	07 - Fechamento
