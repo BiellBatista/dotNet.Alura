@@ -86,7 +86,9 @@ Projeto Completo: Controle Financeiro com Asp.NET MVC 5
 		05 - Material da aula atual
 	04 - Cadastro de movimentações
 		01 - Vídeo 1
-		
+		02 - Cadastro de movimentações
+		03 - Cadastro de movimentação
+		04 - Material da aula atual
 	05 - Segurança com o Simple Membership
 	06 - Gerando Relatórios
 	07 - Fechamento
