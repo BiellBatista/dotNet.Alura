@@ -301,3 +301,16 @@ ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 		11 - Para saber mais - Curso Entity Framework Core
 		12 - O que aprendemos?
 		13 - Conclusão
+ASP.NET Core Parte 3: Identity
+	01 - Instalando ASPNET Core Identity
+		01 - Introdução
+		02 - Código-Fonte do Curso
+		03 - Por Que Identity
+		04 - Propósito do ASP.NET Core Identity (C)
+		05 - Instalação do Ambiente e Melhorias
+		06 - Instalando Entity Framework Core + Identity
+	02 - Integrando ao Projeto
+	03 - Razor Pages
+	04 - Obtendo Dados do Usuário Logado
+	05 - Usando Id do Usuário no Pedido
+	06 - Fazendo Login Externo

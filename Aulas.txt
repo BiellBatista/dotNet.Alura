@@ -351,3 +351,10 @@ Formação Desenvolvedor .NET
 		03 - Adicionando e Removendo Itens
 		04 - Validando e Enviando Formulário de Cadastro
 		05 - Recebendo e Gravando Dados de Cadastro
+	ASP.NET Core Parte 3: Identity
+		01 - Instalando ASPNET Core Identity
+		02 - Integrando ao Projeto
+		03 - Razor Pages
+		04 - Obtendo Dados do Usuário Logado
+		05 - Usando Id do Usuário no Pedido
+		06 - Fazendo Login Externo
