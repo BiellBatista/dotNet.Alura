@@ -97,4 +97,9 @@ Projeto Completo: Controle Financeiro com Asp.NET MVC 5
 		05 - Material da aula atual
 	06 - Gerando Relatórios
 		01 - Vídeo 1
+		02 - Gerando Relatórios
+		03 - view model para buscas
+		04 - Próximos passos
+		05 - Projeto completo
 	07 - Fechamento
+		01 - Vídeo 1

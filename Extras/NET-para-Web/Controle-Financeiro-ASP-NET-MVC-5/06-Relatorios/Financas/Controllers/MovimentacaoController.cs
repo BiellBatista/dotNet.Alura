@@ -1,5 +1,6 @@
 ﻿using Financas.DAO;
 using Financas.Entidades;
+using Financas.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,6 +46,23 @@ namespace Financas.Controllers
                 ViewBag.Usuarios = usuarioDAO.Lista();
                 return View("Form", movimentacao);
             }
+        }
+
+        //ao usar um argumento que pode receber nulo, não conseguirei usar o HtmlHelpers
+        //public ActionResult MovimentacoesPorUsuario(int? usuarioId)
+        //para isso uso uma ViewModel
+        public ActionResult MovimentacoesPorUsuario(MovimentacaoPorUsuarioModel model)
+        {
+            model.Usuarios = usuarioDAO.Lista();
+            model.Movimentacoes = movimentacaoDAO.BuscaPorUsuario(model.UsuarioId);
+            return View(model);
+        }
+
+        public ActionResult Busca(BuscaMovimentacoesModel model)
+        {
+            model.Usuarios = usuarioDAO.Lista();
+            model.Movimentacaos = movimentacaoDAO.Busca(model.ValorMinimo, model.ValorMaximo, model.DataMinima, model.DataMaxima, model.Tipo, model.UsuarioId);
+            return View(model);
         }
     }
 }
