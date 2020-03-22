@@ -313,6 +313,9 @@ ASP.NET Core Parte 3: Identity
 		08 - Criando o Scaffolding de Identity parte 1
 		09 - Criando e Aplicando a Migração do Identity
 		10 - Criando o Scaffolding de Identity parte 2
+		11 - Opções de Scaffolding do Identity (B)
+		12 - Faça o que eu fiz na aula
+		13 - O que aprendemos?
 	02 - Integrando ao Projeto
 	03 - Razor Pages
 	04 - Obtendo Dados do Usuário Logado
