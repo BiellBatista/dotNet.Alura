@@ -327,6 +327,7 @@ ASP.NET Core Parte 3: Identity
 		08 - Faça o que eu fiz na aula
 		09 - O que aprendemos?
 	03 - Razor Pages
+		01 - Por Dentro da RazorPage e da PageModel
 	04 - Obtendo Dados do Usuário Logado
 	05 - Usando Id do Usuário no Pedido
 	06 - Fazendo Login Externo
