@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
@@ -13,6 +11,11 @@ using Microsoft.Extensions.Logging;
 
 namespace _04_02_XX_CasaDoCodigo.Areas.Identity.Pages.Account
 {
+    /**
+     * Quando eu faço uma requisição, ela vem para o page model
+     * 
+     * Uma Page contém o código com elementos visuais e a lógica de apresentação da página. Uma PageModel contém o estado da página Razor e os métodos das actions da página.
+     */
     [AllowAnonymous]
     public class RegisterModel : PageModel
     {

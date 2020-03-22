@@ -66,6 +66,9 @@ namespace _04_02_XX_CasaDoCodigo
 
             app.UseStaticFiles();
             //adicionando o middleware do Identity ao meu pipelina
+            /**
+             * Correto. Cadeia de Responsabilidade é um padrão de design comportamental que permite passar requisições ao longo de uma cadeia de manipuladores. Ao receber uma requisição, cada manipulador decide processar a solicitação ou transmiti-la ao próximo manipulador da cadeia. No nosso caso, a “cadeia” é o pipeline do ASP.NET Core, e o manipulador é o “middleware” do ASP.NET Core Identity. 
+             */
             app.UseAuthentication();
             app.UseSession();
             app.UseMvc(routes =>
