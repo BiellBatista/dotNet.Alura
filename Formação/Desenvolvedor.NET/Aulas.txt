@@ -328,6 +328,8 @@ ASP.NET Core Parte 3: Identity
 		09 - O que aprendemos?
 	03 - Razor Pages
 		01 - Por Dentro da RazorPage e da PageModel
+		02 - Carregando Listas Iniciais (A)
+		03 - Traduzindo a Página de Nova Conta
 	04 - Obtendo Dados do Usuário Logado
 	05 - Usando Id do Usuário no Pedido
 	06 - Fazendo Login Externo

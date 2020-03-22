@@ -60,6 +60,9 @@ namespace _04_03_XX_CasaDoCodigo.Areas.Identity.Pages.Account
             public string ConfirmPassword { get; set; }
         }
 
+        /**
+         * O método OnGet (ou OnGetAsync) é chamado em uma Página Razor para inicializar o estado da página.
+         */
         public void OnGet(string returnUrl = null)
         {
             ReturnUrl = returnUrl;
