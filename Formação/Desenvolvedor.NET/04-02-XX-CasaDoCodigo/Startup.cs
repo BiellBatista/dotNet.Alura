@@ -65,6 +65,8 @@ namespace _04_02_XX_CasaDoCodigo
             }
 
             app.UseStaticFiles();
+            //adicionando o middleware do Identity ao meu pipelina
+            app.UseAuthentication();
             app.UseSession();
             app.UseMvc(routes =>
             {

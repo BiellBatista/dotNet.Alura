@@ -318,6 +318,8 @@ ASP.NET Core Parte 3: Identity
 		13 - O que aprendemos?
 	02 - Integrando ao Projeto
 		01 - Adicionando Componente Identity ao ASPNET Core
+		02 - Qual o Padrão de Projeto? (B)
+		03 - Integrando a LoginPartial no Front End
 	03 - Razor Pages
 	04 - Obtendo Dados do Usuário Logado
 	05 - Usando Id do Usuário no Pedido
