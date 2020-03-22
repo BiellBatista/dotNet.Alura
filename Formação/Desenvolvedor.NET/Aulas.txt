@@ -317,6 +317,7 @@ ASP.NET Core Parte 3: Identity
 		12 - Faça o que eu fiz na aula
 		13 - O que aprendemos?
 	02 - Integrando ao Projeto
+		01 - Adicionando Componente Identity ao ASPNET Core
 	03 - Razor Pages
 	04 - Obtendo Dados do Usuário Logado
 	05 - Usando Id do Usuário no Pedido
