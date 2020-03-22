@@ -311,6 +311,8 @@ ASP.NET Core Parte 3: Identity
 		06 - Instalando Entity Framework Core + Identity
 		07 - Pacote obrigatório (C)
 		08 - Criando o Scaffolding de Identity parte 1
+		09 - Criando e Aplicando a Migração do Identity
+		10 - Criando o Scaffolding de Identity parte 2
 	02 - Integrando ao Projeto
 	03 - Razor Pages
 	04 - Obtendo Dados do Usuário Logado
