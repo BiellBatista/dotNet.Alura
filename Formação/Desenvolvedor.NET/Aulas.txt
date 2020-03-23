@@ -341,5 +341,7 @@ ASP.NET Core Parte 3: Identity
 		02 - Forma de Autenticação (C)
 		03 - Acessando Email de Usuário com a Classe UserManager
 		04 - Customizando Usuário do Identity
+		05 - Customizando o Usuário (B)
+		06 - Obtendo e Salvando Cadastro do Usuário
 	05 - Usando Id do Usuário no Pedido
 	06 - Fazendo Login Externo
