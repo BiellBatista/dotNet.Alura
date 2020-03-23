@@ -332,6 +332,10 @@ ASP.NET Core Parte 3: Identity
 		03 - Traduzindo a Página de Nova Conta
 		04 - Implementando a Classe Descritora de Erros
 		05 - Protegendo Actions Contra Acesso Anônimo
+		06 - O Atributo de Autorização (A)
+		07 - Usuário Anônimo Detectado (A)
+		08 - Faça o que eu fiz na aula
+		09 - O que aprendemos?
 	04 - Obtendo Dados do Usuário Logado
 	05 - Usando Id do Usuário no Pedido
 	06 - Fazendo Login Externo

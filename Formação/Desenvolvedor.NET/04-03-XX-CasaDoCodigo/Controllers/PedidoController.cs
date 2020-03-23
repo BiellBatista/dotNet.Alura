@@ -4,6 +4,7 @@ using _04_03_XX_CasaDoCodigo.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace _04_03_XX_CasaDoCodigo.Controllers
 {
@@ -32,6 +33,7 @@ namespace _04_03_XX_CasaDoCodigo.Controllers
             return View(await produtoRepository.GetProdutosAsync(pesquisa));
         }
 
+        [Authorize]
         public async Task<IActionResult> Carrinho(string codigo)
         {
             if (!string.IsNullOrEmpty(codigo))
@@ -45,6 +47,7 @@ namespace _04_03_XX_CasaDoCodigo.Controllers
             return base.View(carrinhoViewModel);
         }
 
+        [Authorize]
         public async Task<IActionResult> Cadastro()
         {
             var pedido = await pedidoRepository.GetPedidoAsync();
@@ -59,6 +62,7 @@ namespace _04_03_XX_CasaDoCodigo.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Resumo(Cadastro cadastro)
         {
             if (ModelState.IsValid)
@@ -70,6 +74,7 @@ namespace _04_03_XX_CasaDoCodigo.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<UpdateQuantidadeResponse> UpdateQuantidade([FromBody]ItemPedido itemPedido)
         {
             return await pedidoRepository.UpdateQuantidadeAsync(itemPedido);

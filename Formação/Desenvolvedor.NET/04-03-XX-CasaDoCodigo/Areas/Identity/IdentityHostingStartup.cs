@@ -20,7 +20,13 @@ namespace _04_03_XX_CasaDoCodigo.Areas.Identity
                     options.UseSqlite(
                         context.Configuration.GetConnectionString("AppIdentityContextConnection")));
 
-                services.AddDefaultIdentity<AppIdentityUser>()
+                services.AddDefaultIdentity<AppIdentityUser>(options =>
+                {
+                    //editando as regras de validação de senha
+                    options.Password.RequireNonAlphanumeric = false;
+                    options.Password.RequireLowercase = false;
+                    options.Password.RequireUppercase = false;
+                })
                 .AddErrorDescriber<IdentityErrorDescriberPtBr>()
                     .AddEntityFrameworkStores<AppIdentityContext>();
             });
