@@ -347,4 +347,5 @@ ASP.NET Core Parte 3: Identity
 		08 - Faça o que eu fiz na aula
 		09 - O que aprendemos?
 	05 - Usando Id do Usuário no Pedido
+		01 - Adicionando Id do Cliente ao Modelo de Pedido
 	06 - Fazendo Login Externo
