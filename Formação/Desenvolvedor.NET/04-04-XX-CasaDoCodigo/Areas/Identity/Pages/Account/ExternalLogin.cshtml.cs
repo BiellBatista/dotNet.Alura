@@ -5,13 +5,13 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
-using _04_03_XX_CasaDoCodigo.Areas.Identity.Data;
+using _04_04_XX_CasaDoCodigo.Areas.Identity.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace _04_03_XX_CasaDoCodigo.Areas.Identity.Pages.Account
+namespace _04_04_XX_CasaDoCodigo.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
     public class ExternalLoginModel : PageModel

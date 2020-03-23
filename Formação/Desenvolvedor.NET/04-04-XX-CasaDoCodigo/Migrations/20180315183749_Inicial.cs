@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace _04_03_XX_CasaDoCodigo.Migrations
+namespace _04_04_XX_CasaDoCodigo.Migrations
 {
     public partial class Inicial : Migration
     {

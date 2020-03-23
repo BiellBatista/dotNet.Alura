@@ -1,7 +1,7 @@
-﻿using _04_03_XX_CasaDoCodigo.Models;
+﻿using _04_04_XX_CasaDoCodigo.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace _04_03_XX_CasaDoCodigo
+namespace _04_04_XX_CasaDoCodigo
 {
     public class ApplicationContext : DbContext
     {

@@ -1,12 +1,12 @@
-﻿using _04_03_XX_CasaDoCodigo.Models;
-using _04_03_XX_CasaDoCodigo.Models.ViewModels;
+﻿using _04_04_XX_CasaDoCodigo.Models;
+using _04_04_XX_CasaDoCodigo.Models.ViewModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace _04_03_XX_CasaDoCodigo.Repositories
+namespace _04_04_XX_CasaDoCodigo.Repositories
 {
     public interface IProdutoRepository
     {

@@ -1,9 +1,9 @@
-﻿using _04_03_XX_CasaDoCodigo.Models;
+﻿using _04_04_XX_CasaDoCodigo.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 
-namespace _04_03_XX_CasaDoCodigo
+namespace _04_04_XX_CasaDoCodigo
 {
     //MELHORIA: 8) dados do cadastro gravados na sessão
     public class HttpHelper : IHttpHelper

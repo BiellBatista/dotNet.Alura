@@ -1,5 +1,5 @@
-﻿using _04_03_XX_CasaDoCodigo.Models;
-using _04_03_XX_CasaDoCodigo.Models.ViewModels;
+﻿using _04_04_XX_CasaDoCodigo.Models;
+using _04_04_XX_CasaDoCodigo.Models.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -7,7 +7,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace _04_03_XX_CasaDoCodigo.Repositories
+namespace _04_04_XX_CasaDoCodigo.Repositories
 {
     //MELHORIA: 6) Repositórios simplificados
     public interface IPedidoRepository

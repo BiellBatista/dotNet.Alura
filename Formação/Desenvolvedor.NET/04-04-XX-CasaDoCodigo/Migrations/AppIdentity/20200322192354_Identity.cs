@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace _04_03_XX_CasaDoCodigo.Migrations.AppIdentity
+namespace _04_04_XX_CasaDoCodigo.Migrations.AppIdentity
 {
     public partial class Identity : Migration
     {

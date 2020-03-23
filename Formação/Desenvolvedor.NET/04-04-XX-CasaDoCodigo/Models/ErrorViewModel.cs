@@ -1,4 +1,4 @@
-namespace _04_03_XX_CasaDoCodigo.Models
+namespace _04_04_XX_CasaDoCodigo.Models
 {
     public class ErrorViewModel
     {

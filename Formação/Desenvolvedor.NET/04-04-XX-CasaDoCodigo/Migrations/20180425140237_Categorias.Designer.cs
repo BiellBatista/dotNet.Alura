@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace _04_03_XX_CasaDoCodigo.Migrations
+namespace _04_04_XX_CasaDoCodigo.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
     [Migration("20180425140237_Categorias")]

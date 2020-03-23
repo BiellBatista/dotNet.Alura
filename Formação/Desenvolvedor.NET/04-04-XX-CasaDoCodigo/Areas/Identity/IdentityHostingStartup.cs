@@ -1,5 +1,5 @@
-﻿using _04_03_XX_CasaDoCodigo.Areas.Identity.Data;
-using _04_03_XX_CasaDoCodigo.Models;
+﻿using _04_04_XX_CasaDoCodigo.Areas.Identity.Data;
+using _04_04_XX_CasaDoCodigo.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -7,8 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 //este atributo assembly faz com que este arquivo startup seja paralelo ao original
-[assembly: HostingStartup(typeof(_04_03_XX_CasaDoCodigo.Areas.Identity.IdentityHostingStartup))]
-namespace _04_03_XX_CasaDoCodigo.Areas.Identity
+[assembly: HostingStartup(typeof(_04_04_XX_CasaDoCodigo.Areas.Identity.IdentityHostingStartup))]
+namespace _04_04_XX_CasaDoCodigo.Areas.Identity
 {
     public class IdentityHostingStartup : IHostingStartup
     {

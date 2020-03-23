@@ -3,9 +3,9 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using _04_03_XX_CasaDoCodigo.Models;
+using _04_04_XX_CasaDoCodigo.Models;
 
-namespace _04_03_XX_CasaDoCodigo.Migrations.AppIdentity
+namespace _04_04_XX_CasaDoCodigo.Migrations.AppIdentity
 {
     [DbContext(typeof(AppIdentityContext))]
     partial class AppIdentityContextModelSnapshot : ModelSnapshot
@@ -127,7 +127,7 @@ namespace _04_03_XX_CasaDoCodigo.Migrations.AppIdentity
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("_04_03_XX_CasaDoCodigo.Areas.Identity.Data.AppIdentityUser", b =>
+            modelBuilder.Entity("_04_04_XX_CasaDoCodigo.Areas.Identity.Data.AppIdentityUser", b =>
                 {
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
@@ -203,7 +203,7 @@ namespace _04_03_XX_CasaDoCodigo.Migrations.AppIdentity
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("_04_03_XX_CasaDoCodigo.Areas.Identity.Data.AppIdentityUser")
+                    b.HasOne("_04_04_XX_CasaDoCodigo.Areas.Identity.Data.AppIdentityUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -211,7 +211,7 @@ namespace _04_03_XX_CasaDoCodigo.Migrations.AppIdentity
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("_04_03_XX_CasaDoCodigo.Areas.Identity.Data.AppIdentityUser")
+                    b.HasOne("_04_04_XX_CasaDoCodigo.Areas.Identity.Data.AppIdentityUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -224,7 +224,7 @@ namespace _04_03_XX_CasaDoCodigo.Migrations.AppIdentity
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("_04_03_XX_CasaDoCodigo.Areas.Identity.Data.AppIdentityUser")
+                    b.HasOne("_04_04_XX_CasaDoCodigo.Areas.Identity.Data.AppIdentityUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -232,7 +232,7 @@ namespace _04_03_XX_CasaDoCodigo.Migrations.AppIdentity
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("_04_03_XX_CasaDoCodigo.Areas.Identity.Data.AppIdentityUser")
+                    b.HasOne("_04_04_XX_CasaDoCodigo.Areas.Identity.Data.AppIdentityUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
-namespace _04_03_XX_CasaDoCodigo.Models
+namespace _04_04_XX_CasaDoCodigo.Models
 {
     public class Cadastro : BaseModel
     {

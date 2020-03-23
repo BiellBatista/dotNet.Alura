@@ -1,10 +1,10 @@
-﻿using _04_03_XX_CasaDoCodigo.Models;
+﻿using _04_04_XX_CasaDoCodigo.Models;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace _04_03_XX_CasaDoCodigo.Repositories
+namespace _04_04_XX_CasaDoCodigo.Repositories
 {
     public interface ICadastroRepository
     {

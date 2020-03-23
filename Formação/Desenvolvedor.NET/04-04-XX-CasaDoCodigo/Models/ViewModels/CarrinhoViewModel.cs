@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace _04_03_XX_CasaDoCodigo.Models.ViewModels
+namespace _04_04_XX_CasaDoCodigo.Models.ViewModels
 {
     public class CarrinhoViewModel
     {

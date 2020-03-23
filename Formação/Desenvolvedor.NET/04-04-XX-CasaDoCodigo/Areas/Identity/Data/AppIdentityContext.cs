@@ -1,8 +1,8 @@
-﻿using _04_03_XX_CasaDoCodigo.Areas.Identity.Data;
+﻿using _04_04_XX_CasaDoCodigo.Areas.Identity.Data;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace _04_03_XX_CasaDoCodigo.Models
+namespace _04_04_XX_CasaDoCodigo.Models
 {
     public class AppIdentityContext : IdentityDbContext<AppIdentityUser>
     {

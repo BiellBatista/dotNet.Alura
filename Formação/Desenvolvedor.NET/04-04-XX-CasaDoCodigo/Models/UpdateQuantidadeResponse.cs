@@ -1,6 +1,6 @@
-﻿using _04_03_XX_CasaDoCodigo.Models.ViewModels;
+﻿using _04_04_XX_CasaDoCodigo.Models.ViewModels;
 
-namespace _04_03_XX_CasaDoCodigo.Models
+namespace _04_04_XX_CasaDoCodigo.Models
 {
     public class UpdateQuantidadeResponse
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace _04_03_XX_CasaDoCodigo
+namespace _04_04_XX_CasaDoCodigo
 {
     //MELHORIA: 7) Projeto atualizado para ASP.NET Core 2.2
     //Veja propriedades do projeto

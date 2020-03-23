@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace _04_03_XX_CasaDoCodigo.Models.ViewModels
+namespace _04_04_XX_CasaDoCodigo.Models.ViewModels
 {
     public class BuscaProdutosViewModel
     {

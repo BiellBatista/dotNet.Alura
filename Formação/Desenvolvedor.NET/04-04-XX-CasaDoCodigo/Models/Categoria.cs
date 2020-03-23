@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace _04_03_XX_CasaDoCodigo.Models
+namespace _04_04_XX_CasaDoCodigo.Models
 {
     //MELHORIA: 3) Modelo agora inclui categoria
     public class Categoria : BaseModel
