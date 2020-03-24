@@ -24,5 +24,7 @@ namespace _04_05_XX_CasaDoCodigo.Models
         public int CadastroId { get; set; }
         [Required]
         public virtual Cadastro Cadastro { get; private set; }
+        [Required]
+        public string ClienteId { get; set; }
     }
 }
