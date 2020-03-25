@@ -1,6 +1,8 @@
-﻿using _04_05_XX_CasaDoCodigo.Models;
+﻿using _04_05_XX_CasaDoCodigo.Areas.Identity.Data;
+using _04_05_XX_CasaDoCodigo.Models;
 using _04_05_XX_CasaDoCodigo.Models.ViewModels;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -23,16 +25,19 @@ namespace _04_05_XX_CasaDoCodigo.Repositories
         private readonly IHttpContextAccessor contextAccessor;
         private readonly IHttpHelper httpHelper;
         private readonly ICadastroRepository cadastroRepository;
+        private readonly UserManager<AppIdentityUser> userManager;
 
         public PedidoRepository(IConfiguration configuration,
             ApplicationContext contexto,
             IHttpContextAccessor contextAccessor,
             IHttpHelper sessionHelper,
-            ICadastroRepository cadastroRepository) : base(configuration, contexto)
+            ICadastroRepository cadastroRepository,
+            UserManager<AppIdentityUser> userManager) : base(configuration, contexto)
         {
             this.contextAccessor = contextAccessor;
             this.httpHelper = sessionHelper;
             this.cadastroRepository = cadastroRepository;
+            this.userManager = userManager;
         }
 
         public async Task AddItemAsync(string codigo)
@@ -80,7 +85,8 @@ namespace _04_05_XX_CasaDoCodigo.Repositories
 
             if (pedido == null)
             {
-                pedido = new Pedido(httpHelper.GetCadastro());
+                var clientId = userManager.GetUserId(contextAccessor.HttpContext.User);
+                pedido = new Pedido(clientId);
                 await dbSet.AddAsync(pedido);
                 await contexto.SaveChangesAsync();
                 httpHelper.SetPedidoId(pedido.Id);

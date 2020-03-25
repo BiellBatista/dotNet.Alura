@@ -352,4 +352,7 @@ ASP.NET Core Parte 3: Identity
 		03 - Obtendo o Id do Cliente
 		04 - Instanciando UserManager (A)
 		05 - Gravando Id do Cliente na Tabela Pedido
+		06 - Obtendo o Id de Usuário (C)
+		07 - Faça o que eu fiz na aula
+		08 - O que aprendemos?
 	06 - Fazendo Login Externo
