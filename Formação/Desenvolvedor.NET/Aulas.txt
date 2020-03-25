@@ -350,4 +350,6 @@ ASP.NET Core Parte 3: Identity
 		01 - Adicionando Id do Cliente ao Modelo de Pedido
 		02 - Uma Migração, Dois Contextos (A)
 		03 - Obtendo o Id do Cliente
+		04 - Instanciando UserManager (A)
+		05 - Gravando Id do Cliente na Tabela Pedido
 	06 - Fazendo Login Externo

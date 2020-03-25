@@ -8,13 +8,15 @@ namespace _04_05_XX_CasaDoCodigo.Models
     //veja o diagrama
     public class Pedido : BaseModel
     {
-        public Pedido()
+        public Pedido(string clienteId)
         {
+            ClienteId = clienteId;
             Cadastro = new Cadastro();
         }
 
-        public Pedido(Cadastro cadastro)
+        public Pedido(Cadastro cadastro, string clienteId)
         {
+            ClienteId = clienteId;
             Cadastro = cadastro;
         }
 
