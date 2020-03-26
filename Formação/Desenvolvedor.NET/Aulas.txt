@@ -372,6 +372,9 @@ ASP.NET Core Parte 4: IdentityServer
 		01 - Introdução
 		02 - Código-Fonte do Curso
 		03 - Projeto Inicial
+		04 - Criando o Projeto de Serviço
+		05 - Projetos com Web API (A / C)
+		06 - Os Métodos HTTP
 	02 - Consumindo Web API de Relatório
 	03 - Criando e Executando Projeto IdentityServer4
 	04 - Configurando IdentityServer + Cliente MVC
