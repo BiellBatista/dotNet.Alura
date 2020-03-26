@@ -359,3 +359,6 @@ ASP.NET Core Parte 3: Identity
 		01 - O Processo de Autenticação Externa
 		02 - OAuth 2 (C)
 		03 - Configurando o Provedor Externo Microsoft parte 1
+		04 - Configurando o Provedor Externo Microsoft parte 2
+		05 - Novo Registro
+		06 - Configurando o Provedor Externo Google
