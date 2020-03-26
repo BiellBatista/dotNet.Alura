@@ -362,3 +362,8 @@ ASP.NET Core Parte 3: Identity
 		04 - Configurando o Provedor Externo Microsoft parte 2
 		05 - Novo Registro
 		06 - Configurando o Provedor Externo Google
+		07 - Adicionando Opção de Logon Externo (C)
+		08 - Código-Fonte do Curso
+		09 - Conclusão
+		10 - Faça o que eu fiz na aula
+		11 - O que aprendemos?
