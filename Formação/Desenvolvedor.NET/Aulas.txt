@@ -367,3 +367,13 @@ ASP.NET Core Parte 3: Identity
 		09 - Conclusão
 		10 - Faça o que eu fiz na aula
 		11 - O que aprendemos?
+ASP.NET Core Parte 4: IdentityServer
+	01 - Criando Web API de Relatório
+		01 - Introdução
+		02 - Código-Fonte do Curso
+		03 - Projeto Inicial
+	02 - Consumindo Web API de Relatório
+	03 - Criando e Executando Projeto IdentityServer4
+	04 - Configurando IdentityServer + Cliente MVC
+	05 - Acessando Dados do Usuário
+	06 - Configurando IdentityServer4 + WebAPI de Relatório

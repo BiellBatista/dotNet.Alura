@@ -358,3 +358,10 @@ Formação Desenvolvedor .NET
 		04 - Obtendo Dados do Usuário Logado
 		05 - Usando Id do Usuário no Pedido
 		06 - Fazendo Login Externo
+	ASP.NET Core Parte 4: IdentityServer
+		01 - Criando Web API de Relatório
+		02 - Consumindo Web API de Relatório
+		03 - Criando e Executando Projeto IdentityServer4
+		04 - Configurando IdentityServer + Cliente MVC
+		05 - Acessando Dados do Usuário
+		06 - Configurando IdentityServer4 + WebAPI de Relatório
