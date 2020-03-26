@@ -356,3 +356,6 @@ ASP.NET Core Parte 3: Identity
 		07 - Faça o que eu fiz na aula
 		08 - O que aprendemos?
 	06 - Fazendo Login Externo
+		01 - O Processo de Autenticação Externa
+		02 - OAuth 2 (C)
+		03 - Configurando o Provedor Externo Microsoft parte 1
