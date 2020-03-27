@@ -393,6 +393,7 @@ ASP.NET Core Parte 4: IdentityServer
 		08 - Faça o que eu fiz na aula
 		09 - O que aprendemos?
 	03 - Criando e Executando Projeto IdentityServer4
+		01 - Por que Identity Server 4
 	04 - Configurando IdentityServer + Cliente MVC
 	05 - Acessando Dados do Usuário
 	06 - Configurando IdentityServer4 + WebAPI de Relatório
