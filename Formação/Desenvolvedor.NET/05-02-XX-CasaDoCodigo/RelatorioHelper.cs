@@ -1,5 +1,6 @@
 ﻿using _05_02_XX_CasaDoCodigo.Models;
 using Newtonsoft.Json;
+using System;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -21,9 +22,13 @@ namespace _05_02_XX_CasaDoCodigo
             using (HttpClient httpClient = new HttpClient())
             {
                 // o texto do conteúdo (JSON)
-                var json = JsonConvert.SerializeObject(pedido);
+                var json = JsonConvert.SerializeObject(linhaRelatorio);
                 // o objeto HttpContent que empacota o texto (application/json)
                 HttpContent httpContent = new StringContent(json, Encoding.UTF8, "application/json");
+                // URI - identificador universal de recurso
+                Uri uri = new Uri("http://localhost:38116/api/relatorio");
+
+                await httpClient.PostAsync(uri, httpContent);
             }
         }
 

@@ -385,6 +385,8 @@ ASP.NET Core Parte 4: IdentityServer
 	02 - Consumindo Web API de Relatório
 		01 - Consumindo Web API a Partir da Aplicação MVC
 		02 - Consumindo Web API a Partir da Aplicação MVC parte 2
+		03 - HttpClient (A)
+		04 - Configuração e Resposta da Requisição HTTP
 	03 - Criando e Executando Projeto IdentityServer4
 	04 - Configurando IdentityServer + Cliente MVC
 	05 - Acessando Dados do Usuário
