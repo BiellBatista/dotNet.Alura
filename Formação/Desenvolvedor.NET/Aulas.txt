@@ -383,6 +383,8 @@ ASP.NET Core Parte 4: IdentityServer
 		12 - Faça o que eu fiz na aula
 		13 - O que aprendemos?
 	02 - Consumindo Web API de Relatório
+		01 - Consumindo Web API a Partir da Aplicação MVC
+		02 - Consumindo Web API a Partir da Aplicação MVC parte 2
 	03 - Criando e Executando Projeto IdentityServer4
 	04 - Configurando IdentityServer + Cliente MVC
 	05 - Acessando Dados do Usuário

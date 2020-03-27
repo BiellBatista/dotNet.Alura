@@ -1,5 +1,7 @@
 ﻿using _05_02_XX_CasaDoCodigo.Models;
+using Newtonsoft.Json;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,7 +17,14 @@ namespace _05_02_XX_CasaDoCodigo
         public async Task GerarRelatorio(Pedido pedido)
         {
             string linhaRelatorio = await GetLinhaRelatorio(pedido);
-            await System.IO.File.AppendAllLinesAsync("Relatorio.txt", new string[] { linhaRelatorio });
+            //await System.IO.File.AppendAllLinesAsync("Relatorio.txt", new string[] { linhaRelatorio });
+            using (HttpClient httpClient = new HttpClient())
+            {
+                // o texto do conteúdo (JSON)
+                var json = JsonConvert.SerializeObject(pedido);
+                // o objeto HttpContent que empacota o texto (application/json)
+                HttpContent httpContent = new StringContent(json, Encoding.UTF8, "application/json");
+            }
         }
 
         private async Task<string> GetLinhaRelatorio(Pedido pedido)
