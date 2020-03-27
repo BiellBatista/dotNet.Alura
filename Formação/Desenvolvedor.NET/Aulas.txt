@@ -375,6 +375,7 @@ ASP.NET Core Parte 4: IdentityServer
 		04 - Criando o Projeto de Serviço
 		05 - Projetos com Web API (A / C)
 		06 - Os Métodos HTTP
+		07 - Adaptando o RelatorioController e Usando Postman
 	02 - Consumindo Web API de Relatório
 	03 - Criando e Executando Projeto IdentityServer4
 	04 - Configurando IdentityServer + Cliente MVC
