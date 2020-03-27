@@ -45,6 +45,8 @@ namespace _05_02_XX_CasaDoCodigo
             services.AddTransient<IPedidoRepository, PedidoRepository>();
             services.AddTransient<ICadastroRepository, CadastroRepository>();
             services.AddTransient<IRelatorioHelper, RelatorioHelper>();
+            // adicionado o HttpFactory como depedência para RelatorioHelper
+            services.AddHttpClient<IRelatorioHelper, RelatorioHelper>();
 
             services.AddAuthentication()
                 .AddMicrosoftAccount(options =>
