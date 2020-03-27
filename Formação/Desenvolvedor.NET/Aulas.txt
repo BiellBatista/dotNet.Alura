@@ -376,6 +376,9 @@ ASP.NET Core Parte 4: IdentityServer
 		05 - Projetos com Web API (A / C)
 		06 - Os Métodos HTTP
 		07 - Adaptando o RelatorioController e Usando Postman
+		08 - Adaptando o RelatorioController e Usando Postman parte 2
+		09 - Erro HTTP 415 (A)
+		10 - Arquitetura Monolítica X Arquitetura de Serviços
 	02 - Consumindo Web API de Relatório
 	03 - Criando e Executando Projeto IdentityServer4
 	04 - Configurando IdentityServer + Cliente MVC
