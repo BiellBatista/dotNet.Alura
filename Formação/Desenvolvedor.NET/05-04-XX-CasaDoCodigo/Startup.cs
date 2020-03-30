@@ -48,17 +48,25 @@ namespace _05_04_XX_CasaDoCodigo
             // adicionado o HttpFactory como depedência para RelatorioHelper
             services.AddHttpClient<IRelatorioHelper, RelatorioHelper>();
 
-            services.AddAuthentication()
-                .AddMicrosoftAccount(options =>
-                {
-                    options.ClientId = Configuration["ExternalLogin:Microsoft:ClientId"];
-                    options.ClientSecret = Configuration["ExternalLogin:Microsoft:ClientSecret"];
-                })
-                .AddGoogle(options =>
-                {
-                    options.ClientId = Configuration["ExternalLogin:Google:ClientId"];
-                    options.ClientSecret = Configuration["ExternalLogin:Google:ClientSecret"];
-                });
+            // não será necessário usar o ASP.NET Core Identity, porque o Identity Server irá cuidar da autenticação/autorização
+            //services.AddAuthentication()
+            //    .AddMicrosoftAccount(options =>
+            //    {
+            //        options.ClientId = Configuration["ExternalLogin:Microsoft:ClientId"];
+            //        options.ClientSecret = Configuration["ExternalLogin:Microsoft:ClientSecret"];
+            //    })
+            //    .AddGoogle(options =>
+            //    {
+            //        options.ClientId = Configuration["ExternalLogin:Google:ClientId"];
+            //        options.ClientSecret = Configuration["ExternalLogin:Google:ClientSecret"];
+            //    });
+
+            services.AddAuthentication(options => {
+                // forma de autenticação local do usuário
+                options.DefaultScheme = "Cookies";
+                // protocolo que define o fluxo de autenticação
+                options.DefaultChallengeScheme = "OpenIdConnect";
+            });
         }
 
 

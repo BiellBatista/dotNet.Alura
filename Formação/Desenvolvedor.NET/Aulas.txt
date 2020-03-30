@@ -403,5 +403,7 @@ ASP.NET Core Parte 4: IdentityServer
 	04 - Configurando IdentityServer + Cliente MVC
 		01 - Explicando o Identity Server 4
 		02 - IdentityServer4, OAuth e OpenIdConnect
+		03 - OpenId Connect (C / D / F)
+		04 - Configurando IdentityServer + Cliente MVC
 	05 - Acessando Dados do Usuário
 	06 - Configurando IdentityServer4 + WebAPI de Relatório
