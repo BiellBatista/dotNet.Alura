@@ -410,4 +410,5 @@ ASP.NET Core Parte 4: IdentityServer
 		07 - Faça o que eu fiz na aula
 		08 - O que aprendemos?
 	05 - Acessando Dados do Usuário
+		01 - Configurando Endereço das Aplicações Web
 	06 - Configurando IdentityServer4 + WebAPI de Relatório
