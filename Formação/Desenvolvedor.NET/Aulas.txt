@@ -405,5 +405,9 @@ ASP.NET Core Parte 4: IdentityServer
 		02 - IdentityServer4, OAuth e OpenIdConnect
 		03 - OpenId Connect (C / D / F)
 		04 - Configurando IdentityServer + Cliente MVC
+		05 - Configurando IdentityServer + Cliente MVC parte 2
+		06 - Definindo a autoridade (A)
+		07 - Faça o que eu fiz na aula
+		08 - O que aprendemos?
 	05 - Acessando Dados do Usuário
 	06 - Configurando IdentityServer4 + WebAPI de Relatório

@@ -52,9 +52,9 @@ namespace _05_04_XX_CasaDoCodigo.IdentityServer
                     AllowedGrantTypes = GrantTypes.HybridAndClientCredentials,
                     ClientSecrets = { new Secret("49C1A7E1-0C79-4A89-A3D6-A37998FB86B0".Sha256()) },
 
-                    RedirectUris = { "http://localhost:5001/signin-oidc" },
-                    FrontChannelLogoutUri = "http://localhost:5001/signout-oidc",
-                    PostLogoutRedirectUris = { "http://localhost:5001/signout-callback-oidc" },
+                    RedirectUris = { "https://localhost:44394/signin-oidc" },
+                    FrontChannelLogoutUri = "https://localhost:44394/signout-oidc",
+                    PostLogoutRedirectUris = { "https://localhost:44394/signout-callback-oidc" },
 
                     AllowOfflineAccess = true,
                     AllowedScopes = { "openid", "profile", "api1" }

@@ -61,11 +61,33 @@ namespace _05_04_XX_CasaDoCodigo
             //        options.ClientSecret = Configuration["ExternalLogin:Google:ClientSecret"];
             //    });
 
-            services.AddAuthentication(options => {
+            services.AddAuthentication(options =>
+            {
                 // forma de autenticação local do usuário
                 options.DefaultScheme = "Cookies";
                 // protocolo que define o fluxo de autenticação
                 options.DefaultChallengeScheme = "OpenIdConnect";
+            })
+            //definindo o middleware que acessa os cookies do usuário
+            .AddCookie()
+            //adicionando o manipulador do OpenIdConnect
+            .AddOpenIdConnect(options =>
+            {
+                //avisando ao OpenIdConnect que as informações serão gravadas no Cookie. ELe irá obter através de cookies
+                options.SignInScheme = "Cookies";
+                //apontando o local do Identity Server
+                options.Authority = "http://localhost:5000";
+                // apontando o id do cliente (deve ser o mesmo que foi definido no Identity Server)
+                options.ClientId = "CasaDoCodigo.MVC";
+                // colocando o segredo que foi definido no Identity Server
+                options.ClientSecret = "49C1A7E1-0C79-4A89-A3D6-A37998FB86B0";
+                // avisando que as credencias serão salvas
+                options.SaveTokens = true;
+                // definido o tipo de resposta do identity server
+                // o code id_token garante que será retornado um código de autorização + o token de identidade
+                options.ResponseType = "code id_token";
+                // avisando ao identity server que não será utilizado o https
+                options.RequireHttpsMetadata = false;
             });
         }
 
