@@ -53,6 +53,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-03-XX-CasaDoCodigo.Relat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-03-XX-CasaDoCodigo.IdentityServer", "05-03-XX-CasaDoCodigo.IdentityServer\05-03-XX-CasaDoCodigo.IdentityServer.csproj", "{EDB1AEDB-E3A4-461E-807E-36BC6739BCD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-04-XX-CasaDoCodigo", "05-04-XX-CasaDoCodigo\05-04-XX-CasaDoCodigo.csproj", "{E11C8DCA-AC92-4CD7-8DD1-2EDD58D454DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-04-XX-CasaDoCodigo.IdentityServer", "05-04-XX-CasaDoCodigo.IdentityServer\05-04-XX-CasaDoCodigo.IdentityServer.csproj", "{6AC2DFB0-E5B0-419D-9482-40CF9219C14B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-04-XX-CasaDoCodigo.RelatorioWebAPI", "05-04-XX-CasaDoCodigo.RelatorioWebAPI\05-04-XX-CasaDoCodigo.RelatorioWebAPI.csproj", "{AD15D0EB-35B9-4AEF-AD94-171D6779E090}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +165,18 @@ Global
 		{EDB1AEDB-E3A4-461E-807E-36BC6739BCD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDB1AEDB-E3A4-461E-807E-36BC6739BCD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDB1AEDB-E3A4-461E-807E-36BC6739BCD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E11C8DCA-AC92-4CD7-8DD1-2EDD58D454DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E11C8DCA-AC92-4CD7-8DD1-2EDD58D454DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E11C8DCA-AC92-4CD7-8DD1-2EDD58D454DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E11C8DCA-AC92-4CD7-8DD1-2EDD58D454DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC2DFB0-E5B0-419D-9482-40CF9219C14B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC2DFB0-E5B0-419D-9482-40CF9219C14B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC2DFB0-E5B0-419D-9482-40CF9219C14B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC2DFB0-E5B0-419D-9482-40CF9219C14B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD15D0EB-35B9-4AEF-AD94-171D6779E090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD15D0EB-35B9-4AEF-AD94-171D6779E090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD15D0EB-35B9-4AEF-AD94-171D6779E090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD15D0EB-35B9-4AEF-AD94-171D6779E090}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

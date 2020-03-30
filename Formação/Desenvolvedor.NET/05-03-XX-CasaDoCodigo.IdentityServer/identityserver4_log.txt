@@ -448,3 +448,8 @@ Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such tab
 2020-03-29 18:51:41.570 -03:00 [DBG] Adding auth_time claim with value: 1585518701
 2020-03-29 18:51:41.636 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
 2020-03-29 18:51:41.839 -03:00 [INF] {"Username":"alice","Provider":null,"ProviderUserId":null,"SubjectId":"70cb8e0f-546a-4026-88ec-c45dff9fdc7b","DisplayName":"alice","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLUK5BVM8A7Q:00000003","TimeStamp":"2020-03-29T21:51:41.0000000Z","ProcessId":16596,"LocalIpAddress":"127.0.0.1:22151","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2020-03-29 18:54:26.565 -03:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2020-03-29 18:54:26.603 -03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2020-03-29 18:54:26.605 -03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2020-03-29 18:54:26.605 -03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2020-03-29 18:54:26.608 -03:00 [INF] {"SubjectId":"70cb8e0f-546a-4026-88ec-c45dff9fdc7b","DisplayName":"Alice Smith","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HLUK5BVM8A7R:00000002","TimeStamp":"2020-03-29T21:54:26.0000000Z","ProcessId":16596,"LocalIpAddress":"127.0.0.1:22151","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
