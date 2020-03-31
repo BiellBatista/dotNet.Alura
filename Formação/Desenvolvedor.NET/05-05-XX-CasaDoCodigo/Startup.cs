@@ -76,7 +76,7 @@ namespace _05_05_XX_CasaDoCodigo
                 //avisando ao OpenIdConnect que as informações serão gravadas no Cookie. ELe irá obter através de cookies
                 options.SignInScheme = "Cookies";
                 //apontando o local do Identity Server
-                options.Authority = "http://localhost:5000";
+                options.Authority = Configuration["CasaDoCodigoIdentityServerUrl"];
                 // apontando o id do cliente (deve ser o mesmo que foi definido no Identity Server)
                 options.ClientId = "CasaDoCodigo.MVC";
                 // colocando o segredo que foi definido no Identity Server

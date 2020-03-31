@@ -51,7 +51,7 @@ namespace _05_05_XX_CasaDoCodigo.IdentityServer
             })
                 .AddInMemoryIdentityResources(Config.GetIdentityResources())
                 .AddInMemoryApiResources(Config.GetApis())
-                .AddInMemoryClients(Config.GetClients())
+                .AddInMemoryClients(Config.GetClients(Configuration))
                 .AddAspNetIdentity<ApplicationUser>();
 
             if (Environment.IsDevelopment())

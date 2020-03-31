@@ -3,6 +3,7 @@
 
 
 using IdentityServer4.Models;
+using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 
 namespace _05_05_XX_CasaDoCodigo.IdentityServer
@@ -26,8 +27,10 @@ namespace _05_05_XX_CasaDoCodigo.IdentityServer
             };
         }
 
-        public static IEnumerable<Client> GetClients()
+        public static IEnumerable<Client> GetClients(IConfiguration configuration)
         {
+            string casaDoCodigoMvcUrl = configuration["CasaDoCodigoMvcUrl"];
+
             return new[]
             {
                 // client credentials flow client
@@ -52,9 +55,9 @@ namespace _05_05_XX_CasaDoCodigo.IdentityServer
                     AllowedGrantTypes = GrantTypes.HybridAndClientCredentials,
                     ClientSecrets = { new Secret("49C1A7E1-0C79-4A89-A3D6-A37998FB86B0".Sha256()) },
 
-                    RedirectUris = { "https://localhost:44394/signin-oidc" },
-                    FrontChannelLogoutUri = "https://localhost:44394/signout-oidc",
-                    PostLogoutRedirectUris = { "https://localhost:44394/signout-callback-oidc" },
+                    RedirectUris = { $"{casaDoCodigoMvcUrl}/signin-oidc" },
+                    FrontChannelLogoutUri = $"{casaDoCodigoMvcUrl}/signout-oidc",
+                    PostLogoutRedirectUris = { $"{casaDoCodigoMvcUrl}/signout-callback-oidc" },
 
                     AllowOfflineAccess = true,
                     AllowedScopes = { "openid", "profile", "api1" }
