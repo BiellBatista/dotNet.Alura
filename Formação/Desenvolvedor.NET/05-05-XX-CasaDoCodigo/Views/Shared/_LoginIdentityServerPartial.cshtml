@@ -1,0 +1,12 @@
+﻿@{
+    string nomeUsuario = "";
+}
+
+@if (!string.IsNullOrWhiteSpace(nomeUsuario))
+{
+    <div>Olá, @nomeUsuario <a>sair</a></div>
+}
+else
+{
+    <div>Nenhum usuário conectado. <a>entrar</a></div>
+}

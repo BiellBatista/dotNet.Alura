@@ -411,4 +411,5 @@ ASP.NET Core Parte 4: IdentityServer
 		08 - O que aprendemos?
 	05 - Acessando Dados do Usuário
 		01 - Configurando Endereço das Aplicações Web
+		02 - Criando uma Partial View para Login no IdentityServer
 	06 - Configurando IdentityServer4 + WebAPI de Relatório
