@@ -1,5 +1,6 @@
 ﻿@{
     string nomeUsuario = "";
+    var claims = User.Claims.ToList();
 }
 
 @if (!string.IsNullOrWhiteSpace(nomeUsuario))

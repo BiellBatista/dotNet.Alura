@@ -412,4 +412,7 @@ ASP.NET Core Parte 4: IdentityServer
 	05 - Acessando Dados do Usuário
 		01 - Configurando Endereço das Aplicações Web
 		02 - Criando uma Partial View para Login no IdentityServer
+		03 - Obtendo Declarações (Claims) do Usuário Logado
+		04 - Acessando dados de usuário (C)
+		05 - Obtendo Mais Declarações do Usuário a Partir do IdentityServer
 	06 - Configurando IdentityServer4 + WebAPI de Relatório
