@@ -93,6 +93,7 @@ namespace _05_05_XX_CasaDoCodigo.Repositories
                 var claimsPrincipal = contextAccessor.HttpContext.User;
                 //var clienteId = userManager.GetUserId(claimsPrincipal);
                 // mudando o objeto que irá buscar o id do usuário no Identity Server
+                // ? serve para caso o Value for nulo
                 var clienteId = claimsPrincipal.FindFirst("sub")?.Value; //id do usuário no OpenId
                 pedido = new Pedido(clienteId);
                 await dbSet.AddAsync(pedido);

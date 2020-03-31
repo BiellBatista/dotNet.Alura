@@ -415,4 +415,6 @@ ASP.NET Core Parte 4: IdentityServer
 		03 - Obtendo Declarações (Claims) do Usuário Logado
 		04 - Acessando dados de usuário (C)
 		05 - Obtendo Mais Declarações do Usuário a Partir do IdentityServer
+		06 - Obtendo nome de usuário (B)
+		07 - Criando ContaController e Actions de Login e Logout
 	06 - Configurando IdentityServer4 + WebAPI de Relatório

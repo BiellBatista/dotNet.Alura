@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using System;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace _05_05_XX_CasaDoCodigo
 {
@@ -61,6 +62,9 @@ namespace _05_05_XX_CasaDoCodigo
             //        options.ClientSecret = Configuration["ExternalLogin:Google:ClientSecret"];
             //    });
 
+            // avisando para a aplicação usar os nomes padrões do OpenId, em vez da do Microsoft
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+
             services.AddAuthentication(options =>
             {
                 // forma de autenticação local do usuário
@@ -88,6 +92,8 @@ namespace _05_05_XX_CasaDoCodigo
                 options.ResponseType = "code id_token";
                 // avisando ao identity server que não será utilizado o https
                 options.RequireHttpsMetadata = false;
+                // pegando as informações do cliente no IdentityServer
+                options.GetClaimsFromUserInfoEndpoint = true;
             });
         }
 
