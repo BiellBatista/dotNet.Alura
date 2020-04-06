@@ -72,14 +72,14 @@ namespace _05_05_XX_CasaDoCodigo
                 // protocolo que define o fluxo de autenticação
                 options.DefaultChallengeScheme = "OpenIdConnect";
             })
-            //definindo o middleware que acessa os cookies do usuário
+            // definindo o middleware que acessa os cookies do usuário
             .AddCookie()
-            //adicionando o manipulador do OpenIdConnect
+            // adicionando o manipulador do OpenIdConnect
             .AddOpenIdConnect(options =>
             {
-                //avisando ao OpenIdConnect que as informações serão gravadas no Cookie. ELe irá obter através de cookies
+                // avisando ao OpenIdConnect que as informações serão gravadas no Cookie. ELe irá obter através de cookies
                 options.SignInScheme = "Cookies";
-                //apontando o local do Identity Server
+                // apontando o local do Identity Server
                 options.Authority = Configuration["CasaDoCodigoIdentityServerUrl"];
                 // apontando o id do cliente (deve ser o mesmo que foi definido no Identity Server)
                 options.ClientId = "CasaDoCodigo.MVC";
