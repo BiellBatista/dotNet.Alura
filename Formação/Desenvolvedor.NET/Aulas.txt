@@ -419,4 +419,6 @@ ASP.NET Core Parte 4: IdentityServer
 		07 - Criando ContaController e Actions de Login e Logout
 		08 - Implementando Âncora e Botão de Login e Logout
 		09 - Adaptando o Cadastro para o Identity Server
+		10 - Faça o que eu fiz na aula
+		11 - O que aprendemos?
 	06 - Configurando IdentityServer4 + WebAPI de Relatório
