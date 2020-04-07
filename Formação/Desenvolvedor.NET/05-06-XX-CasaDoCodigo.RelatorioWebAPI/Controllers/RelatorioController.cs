@@ -34,8 +34,8 @@ namespace _05_06_XX_CasaDoCodigo.RelatorioWebAPI.Controllers
         }
 
         // POST: api/Relatorio
-        [HttpPost]
         [Authorize]
+        [HttpPost]
         public void Post([FromBody] string value)
         {
             Relatorio.Add(value);

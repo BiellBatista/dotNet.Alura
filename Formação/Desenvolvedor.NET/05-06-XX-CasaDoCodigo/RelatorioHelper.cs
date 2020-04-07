@@ -63,7 +63,7 @@ namespace _05_06_XX_CasaDoCodigo
                 {
                     Address = discoveryResponse.TokenEndpoint,
                     ClientId = "CasaDoCodigo.MVC",
-                    ClientSecret = "511536EF-F270-4058-80CA-1C89C192F69A",
+                    ClientSecret = "49C1A7E1-0C79-4A89-A3D6-A37998FB86B0",
                     Scope = "CasaDoCodigo.Relatorio"
                 }
                 );
@@ -73,6 +73,7 @@ namespace _05_06_XX_CasaDoCodigo
                 throw new ApplicationException(tokenResponse.Error);
             }
 
+            httpClient.SetBearerToken(tokenResponse.AccessToken);
             HttpResponseMessage httpResponseMessage = await httpClient.PostAsync(uri, httpContent);
 
             if (!httpResponseMessage.IsSuccessStatusCode)

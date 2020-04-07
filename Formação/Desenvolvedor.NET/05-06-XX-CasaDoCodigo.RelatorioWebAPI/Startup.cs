@@ -49,6 +49,7 @@ namespace _05_06_XX_CasaDoCodigo.RelatorioWebAPI
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseAuthentication(); //aplicando a configuração de autenticação no pipeline da aplicação
             app.UseMvc();
         }
     }

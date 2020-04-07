@@ -430,3 +430,7 @@ ASP.NET Core Parte 4: IdentityServer
 		06 - Fazendo requisição a um serviço protegido (B)
 		07 - Token de Acesso (A / B / E / F)
 		08 - Chamando a API
+		09 - Conclusão
+		10 - Código-Fonte do Curso
+		11 - Faça o que eu fiz na aula
+		12 - Criando a Página de Registro de Usuário
