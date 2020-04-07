@@ -59,11 +59,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-04-XX-CasaDoCodigo.Ident
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-04-XX-CasaDoCodigo.RelatorioWebAPI", "05-04-XX-CasaDoCodigo.RelatorioWebAPI\05-04-XX-CasaDoCodigo.RelatorioWebAPI.csproj", "{AD15D0EB-35B9-4AEF-AD94-171D6779E090}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-05-XX-CasaDoCodigo", "05-05-XX-CasaDoCodigo\05-05-XX-CasaDoCodigo.csproj", "{D4A2D5CE-E86A-484D-A00F-59200B198409}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-05-XX-CasaDoCodigo", "05-05-XX-CasaDoCodigo\05-05-XX-CasaDoCodigo.csproj", "{D4A2D5CE-E86A-484D-A00F-59200B198409}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-05-XX-CasaDoCodigo.IdentityServer", "05-05-XX-CasaDoCodigo.IdentityServer\05-05-XX-CasaDoCodigo.IdentityServer.csproj", "{BE6AC605-1EBB-4118-8062-C01089B7BFDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-05-XX-CasaDoCodigo.IdentityServer", "05-05-XX-CasaDoCodigo.IdentityServer\05-05-XX-CasaDoCodigo.IdentityServer.csproj", "{BE6AC605-1EBB-4118-8062-C01089B7BFDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-05-XX-CasaDoCodigo.RelatorioWebAPI", "05-05-XX-CasaDoCodigo.RelatorioWebAPI\05-05-XX-CasaDoCodigo.RelatorioWebAPI.csproj", "{1F8DD9AE-6F22-4635-8CFA-D528902D67B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-05-XX-CasaDoCodigo.RelatorioWebAPI", "05-05-XX-CasaDoCodigo.RelatorioWebAPI\05-05-XX-CasaDoCodigo.RelatorioWebAPI.csproj", "{1F8DD9AE-6F22-4635-8CFA-D528902D67B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-06-XX-CasaDoCodigo", "05-06-XX-CasaDoCodigo\05-06-XX-CasaDoCodigo.csproj", "{3E2F74F2-6C62-4B7E-B659-EC6CB2EFA42C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-06-XX-CasaDoCodigo.IdentityServer", "05-06-XX-CasaDoCodigo.IdentityServer\05-06-XX-CasaDoCodigo.IdentityServer.csproj", "{435C4712-3ACE-4560-A6BE-497AA603B242}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-06-XX-CasaDoCodigo.RelatorioWebAPI", "05-06-XX-CasaDoCodigo.RelatorioWebAPI\05-06-XX-CasaDoCodigo.RelatorioWebAPI.csproj", "{99C9D017-6FFF-4B74-991F-A9E31D92A5EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,6 +201,18 @@ Global
 		{1F8DD9AE-6F22-4635-8CFA-D528902D67B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F8DD9AE-6F22-4635-8CFA-D528902D67B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F8DD9AE-6F22-4635-8CFA-D528902D67B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E2F74F2-6C62-4B7E-B659-EC6CB2EFA42C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E2F74F2-6C62-4B7E-B659-EC6CB2EFA42C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E2F74F2-6C62-4B7E-B659-EC6CB2EFA42C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E2F74F2-6C62-4B7E-B659-EC6CB2EFA42C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{435C4712-3ACE-4560-A6BE-497AA603B242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{435C4712-3ACE-4560-A6BE-497AA603B242}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{435C4712-3ACE-4560-A6BE-497AA603B242}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{435C4712-3ACE-4560-A6BE-497AA603B242}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C9D017-6FFF-4B74-991F-A9E31D92A5EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C9D017-6FFF-4B74-991F-A9E31D92A5EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C9D017-6FFF-4B74-991F-A9E31D92A5EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C9D017-6FFF-4B74-991F-A9E31D92A5EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

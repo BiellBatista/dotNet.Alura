@@ -422,3 +422,4 @@ ASP.NET Core Parte 4: IdentityServer
 		10 - Faça o que eu fiz na aula
 		11 - O que aprendemos?
 	06 - Configurando IdentityServer4 + WebAPI de Relatório
+		01 - Protegendo Acesso ao Relatório de Vendas
