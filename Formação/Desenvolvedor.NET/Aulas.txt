@@ -426,3 +426,4 @@ ASP.NET Core Parte 4: IdentityServer
 		02 - Configurando Escopos Permitidos
 		03 - Configurando o Projeto IdentityServer
 		04 - Configurando o Projeto RelatorioWebAPI
+		05 - Obtendo o Token de Acesso
