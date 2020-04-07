@@ -23,7 +23,7 @@ namespace _05_06_XX_CasaDoCodigo.IdentityServer
         {
             return new ApiResource[]
             {
-                new ApiResource("api1", "My API #1")
+                new ApiResource("CasaDoCodigo.Relatorio", "Serviço de relatório de vendas")
             };
         }
 
@@ -60,7 +60,10 @@ namespace _05_06_XX_CasaDoCodigo.IdentityServer
                     PostLogoutRedirectUris = { $"{casaDoCodigoMvcUrl}/signout-callback-oidc" },
 
                     AllowOfflineAccess = true,
-                    AllowedScopes = { "openid", "profile", "api1" }
+                    // permissão da aplicação MVC
+                    AllowedScopes = { "openid", "profile", "CasaDoCodigo.Relatorio" }
+                    // "openid", "profile" são o escopo do OpenIdConnect (id_token)
+                    // CasaDoCodigo.Relatorio é o escopo do OAuth (access_token)
                 },
 
                 // SPA client using implicit flow

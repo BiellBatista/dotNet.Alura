@@ -423,3 +423,5 @@ ASP.NET Core Parte 4: IdentityServer
 		11 - O que aprendemos?
 	06 - Configurando IdentityServer4 + WebAPI de Relatório
 		01 - Protegendo Acesso ao Relatório de Vendas
+		02 - Configurando Escopos Permitidos
+		03 - Configurando o Projeto IdentityServer
