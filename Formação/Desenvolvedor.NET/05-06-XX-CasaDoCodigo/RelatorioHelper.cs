@@ -1,4 +1,5 @@
 ﻿using _05_06_XX_CasaDoCodigo.Models;
+using IdentityModel.Client;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using System;
@@ -47,6 +48,30 @@ namespace _05_06_XX_CasaDoCodigo
             // endereço relativo: api/relatorio
             Uri baseUri = new Uri(configuration["RelatorioWebAPIURL"]);
             Uri uri = new Uri(baseUri, RelativeUri);
+
+            //descobri o endereço (endpoint) do token de acesso
+            var discoveryResponse = await httpClient.GetDiscoveryDocumentAsync(configuration["CasaDoCodigoIdentityServerUrl"]);
+
+            if (discoveryResponse.IsError)
+            {
+                throw new ApplicationException(discoveryResponse.Error);
+            }
+
+            // solicitar o token de acesso
+            var tokenResponse = await httpClient.RequestClientCredentialsTokenAsync(
+                new ClientCredentialsTokenRequest
+                {
+                    Address = discoveryResponse.TokenEndpoint,
+                    ClientId = "CasaDoCodigo.MVC",
+                    ClientSecret = "511536EF-F270-4058-80CA-1C89C192F69A",
+                    Scope = "CasaDoCodigo.Relatorio"
+                }
+                );
+
+            if (tokenResponse.IsError)
+            {
+                throw new ApplicationException(tokenResponse.Error);
+            }
 
             HttpResponseMessage httpResponseMessage = await httpClient.PostAsync(uri, httpContent);
 

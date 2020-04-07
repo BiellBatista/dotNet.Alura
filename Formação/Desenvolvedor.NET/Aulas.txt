@@ -427,3 +427,6 @@ ASP.NET Core Parte 4: IdentityServer
 		03 - Configurando o Projeto IdentityServer
 		04 - Configurando o Projeto RelatorioWebAPI
 		05 - Obtendo o Token de Acesso
+		06 - Fazendo requisição a um serviço protegido (B)
+		07 - Token de Acesso (A / B / E / F)
+		08 - Chamando a API
