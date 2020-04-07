@@ -16,6 +16,7 @@ namespace _05_06_XX_CasaDoCodigo.IdentityServer
             {
                 new IdentityResources.OpenId(),
                 new IdentityResources.Profile(),
+                new IdentityResources.Email(),
             };
         }
 
@@ -61,7 +62,7 @@ namespace _05_06_XX_CasaDoCodigo.IdentityServer
 
                     AllowOfflineAccess = true,
                     // permissão da aplicação MVC
-                    AllowedScopes = { "openid", "profile", "CasaDoCodigo.Relatorio" }
+                    AllowedScopes = { "openid", "profile", "email", "CasaDoCodigo.Relatorio" }
                     // "openid", "profile" são o escopo do OpenIdConnect (id_token)
                     // CasaDoCodigo.Relatorio é o escopo do OAuth (access_token)
                 },

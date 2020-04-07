@@ -11,7 +11,7 @@ namespace _05_06_XX_CasaDoCodigo.Controllers
     public class ContaController : Controller
     {
         [Authorize]
-        public async Task<ActionResult> Login()
+        public ActionResult Login()
         {
             return Redirect(Url.Content("~/"));
         }

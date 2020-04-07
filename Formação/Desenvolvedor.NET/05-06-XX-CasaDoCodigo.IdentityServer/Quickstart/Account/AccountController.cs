@@ -17,6 +17,8 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Security.Claims;
+using System.Security.Principal;
 
 namespace IdentityServer4.Quickstart.UI
 {
@@ -148,7 +150,7 @@ namespace IdentityServer4.Quickstart.UI
             return View(vm);
         }
 
-        
+
         /// <summary>
         /// Show logout page
         /// </summary>
@@ -202,7 +204,85 @@ namespace IdentityServer4.Quickstart.UI
             return View("LoggedOut", vm);
         }
 
+        /// <summary>
+        /// Show register page
+        /// </summary>
+        [HttpGet]
+        public async Task<IActionResult> Register(string returnUrl)
+        {
+            // build a model so we know what to show on the login page
+            var vm = await BuildRegisterViewModelAsync(returnUrl);
 
+            if (vm.IsExternalLoginOnly)
+            {
+                // we only have one option for logging in and it's an external provider
+                return await ExternalLogin(vm.ExternalLoginScheme, returnUrl);
+            }
+
+            return View(vm);
+        }
+
+        /// <summary>
+        /// Handle postback from username/password register
+        /// </summary>
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(RegisterInputModel model, string button)
+        {
+            if (button != "register")
+            {
+                // the user clicked the "cancel" button
+                var context = await _interaction.GetAuthorizationContextAsync(model.ReturnUrl);
+                if (context != null)
+                {
+                    // if the user cancels, send a result back into IdentityServer as if they 
+                    // denied the consent (even if this client does not require consent).
+                    // this will send back an access denied OIDC error response to the client.
+                    await _interaction.GrantConsentAsync(context, ConsentResponse.Denied);
+
+                    // we can trust model.ReturnUrl since GetAuthorizationContextAsync returned non-null
+                    return Redirect(model.ReturnUrl);
+                }
+                else
+                {
+                    // since we don't have a valid context, then we just go back to the home page
+                    return Redirect("~/");
+                }
+            }
+
+            if (ModelState.IsValid)
+            {
+                var user = new ApplicationUser { UserName = model.Username, Email = model.Email };
+                var result = await _userManager.CreateAsync(user, model.Password);
+                if (result.Succeeded)
+                {
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+
+                    var claimsResult = _userManager.AddClaimsAsync(user, new Claim[]{
+                        new Claim("name", user.UserName),
+                        new Claim(JwtClaimTypes.GivenName, ""),
+                        new Claim(JwtClaimTypes.FamilyName, ""),
+                        new Claim("email", user.Email),
+                        new Claim(JwtClaimTypes.EmailVerified, "true", ClaimValueTypes.Boolean),
+                    }).Result;
+                    if (!claimsResult.Succeeded)
+                    {
+                        throw new Exception(result.Errors.First().Description);
+                    }
+
+                    return Redirect(model.ReturnUrl);
+                }
+
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(error.Code, error.Description);
+                }
+            }
+
+            // something went wrong, show form with error
+            var vm = await BuildRegisterViewModelAsync(model);
+            return View(vm);
+        }
 
         /*****************************************/
         /* helper APIs for the AccountController */
@@ -327,6 +407,140 @@ namespace IdentityServer4.Quickstart.UI
             }
 
             return vm;
+        }
+
+        private async Task<RegisterViewModel> BuildRegisterViewModelAsync(string returnUrl)
+        {
+            var context = await _interaction.GetAuthorizationContextAsync(returnUrl);
+            if (context?.IdP != null)
+            {
+                // this is meant to short circuit the UI and only trigger the one external IdP
+                return new RegisterViewModel
+                {
+                    EnableLocalLogin = false,
+                    ReturnUrl = returnUrl,
+                    Username = context?.LoginHint,
+                    ExternalProviders = new ExternalProvider[] { new ExternalProvider { AuthenticationScheme = context.IdP } }
+                };
+            }
+
+            var schemes = await _schemeProvider.GetAllSchemesAsync();
+
+            var providers = schemes
+                .Where(x => x.DisplayName != null ||
+                            (x.Name.Equals(AccountOptions.WindowsAuthenticationSchemeName, StringComparison.OrdinalIgnoreCase))
+                )
+                .Select(x => new ExternalProvider
+                {
+                    DisplayName = x.DisplayName,
+                    AuthenticationScheme = x.Name
+                }).ToList();
+
+            var allowLocal = true;
+            if (context?.ClientId != null)
+            {
+                var client = await _clientStore.FindEnabledClientByIdAsync(context.ClientId);
+                if (client != null)
+                {
+                    allowLocal = client.EnableLocalLogin;
+
+                    if (client.IdentityProviderRestrictions != null && client.IdentityProviderRestrictions.Any())
+                    {
+                        providers = providers.Where(provider => client.IdentityProviderRestrictions.Contains(provider.AuthenticationScheme)).ToList();
+                    }
+                }
+            }
+
+            return new RegisterViewModel
+            {
+                AllowRememberLogin = AccountOptions.AllowRememberLogin,
+                EnableLocalLogin = allowLocal && AccountOptions.AllowLocalLogin,
+                ReturnUrl = returnUrl,
+                Username = context?.LoginHint,
+                ExternalProviders = providers.ToArray()
+            };
+        }
+
+        private async Task<RegisterViewModel> BuildRegisterViewModelAsync(RegisterInputModel model)
+        {
+            var vm = await BuildRegisterViewModelAsync(model.ReturnUrl);
+            vm.Username = model.Username;
+            vm.RememberLogin = model.RememberLogin;
+            return vm;
+        }
+
+        /// <summary>
+        /// initiate roundtrip to external authentication provider
+        /// </summary>
+        [HttpGet]
+        public async Task<IActionResult> ExternalLogin(string provider, string returnUrl)
+        {
+            if (AccountOptions.WindowsAuthenticationSchemeName == provider)
+            {
+                // windows authentication needs special handling
+                return await ProcessWindowsLoginAsync(returnUrl);
+            }
+            else
+            {
+                // start challenge and roundtrip the return URL and 
+                var props = new AuthenticationProperties()
+                {
+                    RedirectUri = Url.Action("ExternalLoginCallback"),
+                    Items =
+                    {
+                        { "returnUrl", returnUrl },
+                        { "scheme", provider },
+                    }
+                };
+                return Challenge(props, provider);
+            }
+        }
+
+        private async Task<IActionResult> ProcessWindowsLoginAsync(string returnUrl)
+        {
+            // see if windows auth has already been requested and succeeded
+            var result = await HttpContext.AuthenticateAsync(AccountOptions.WindowsAuthenticationSchemeName);
+            if (result?.Principal is WindowsPrincipal wp)
+            {
+                // we will issue the external cookie and then redirect the
+                // user back to the external callback, in essence, tresting windows
+                // auth the same as any other external authentication mechanism
+                var props = new AuthenticationProperties()
+                {
+                    RedirectUri = Url.Action("ExternalLoginCallback"),
+                    Items =
+                    {
+                        { "returnUrl", returnUrl },
+                        { "scheme", AccountOptions.WindowsAuthenticationSchemeName },
+                    }
+                };
+
+                var id = new ClaimsIdentity(AccountOptions.WindowsAuthenticationSchemeName);
+                id.AddClaim(new Claim(JwtClaimTypes.Subject, wp.Identity.Name));
+                id.AddClaim(new Claim(JwtClaimTypes.Name, wp.Identity.Name));
+
+                // add the groups as claims -- be careful if the number of groups is too large
+                if (AccountOptions.IncludeWindowsGroups)
+                {
+                    var wi = wp.Identity as WindowsIdentity;
+                    var groups = wi.Groups.Translate(typeof(NTAccount));
+                    var roles = groups.Select(x => new Claim(JwtClaimTypes.Role, x.Value));
+                    id.AddClaims(roles);
+                }
+
+                await HttpContext.SignInAsync(
+                    IdentityConstants.ExternalScheme,
+                    new ClaimsPrincipal(id),
+                    props);
+                return Redirect(props.RedirectUri);
+            }
+            else
+            {
+                // trigger windows auth
+                // since windows auth don't support the redirect uri,
+                // this URL is re-triggered when we call challenge
+                return Challenge(AccountOptions.WindowsAuthenticationSchemeName);
+            }
         }
     }
 }

@@ -434,3 +434,4 @@ ASP.NET Core Parte 4: IdentityServer
 		10 - Código-Fonte do Curso
 		11 - Faça o que eu fiz na aula
 		12 - Criando a Página de Registro de Usuário
+		13 - O que aprendemos?

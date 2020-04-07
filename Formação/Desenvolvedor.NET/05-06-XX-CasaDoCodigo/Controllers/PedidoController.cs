@@ -76,6 +76,7 @@ namespace _05_06_XX_CasaDoCodigo.Controllers
             //pedido.Cadastro.CEP = usuario.CEP;
 
             pedido.Cadastro.Nome = User.FindFirst("name")?.Value;
+            pedido.Cadastro.Email = User.FindFirst("email")?.Value;
 
             return View(pedido.Cadastro);
         }

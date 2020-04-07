@@ -94,6 +94,7 @@ namespace _05_06_XX_CasaDoCodigo
                 options.RequireHttpsMetadata = false;
                 // pegando as informações do cliente no IdentityServer
                 options.GetClaimsFromUserInfoEndpoint = true;
+                options.Scope.Add("email");
             });
         }
 
