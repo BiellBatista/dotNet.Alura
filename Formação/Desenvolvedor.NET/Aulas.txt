@@ -425,3 +425,4 @@ ASP.NET Core Parte 4: IdentityServer
 		01 - Protegendo Acesso ao Relatório de Vendas
 		02 - Configurando Escopos Permitidos
 		03 - Configurando o Projeto IdentityServer
+		04 - Configurando o Projeto RelatorioWebAPI

@@ -56,6 +56,7 @@ namespace _05_06_XX_CasaDoCodigo.IdentityServer
 
             if (Environment.IsDevelopment())
             {
+                // este método cria a credêncial da chave usada para criar o token. Essa credêncial é criada no primeiro startup da aplicação
                 builder.AddDeveloperSigningCredential();
             }
             else
