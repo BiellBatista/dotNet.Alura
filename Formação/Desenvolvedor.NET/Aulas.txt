@@ -435,3 +435,12 @@ ASP.NET Core Parte 4: IdentityServer
 		11 - Faça o que eu fiz na aula
 		12 - Criando a Página de Registro de Usuário
 		13 - O que aprendemos?
+ASP.NET Core Parte 5: Modularização e Componentização
+	01 - Áreas
+		01 - Introdução
+		02 - Código-Fonte do Curso
+		03 - Área
+	02 - Partial Views
+	03 - ViewComponents
+	04 - Isolando Contextos
+	05 - Modelos Delimitados

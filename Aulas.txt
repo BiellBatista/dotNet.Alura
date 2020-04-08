@@ -365,3 +365,9 @@ Formação Desenvolvedor .NET
 		04 - Configurando IdentityServer + Cliente MVC
 		05 - Acessando Dados do Usuário
 		06 - Configurando IdentityServer4 + WebAPI de Relatório
+	ASP.NET Core Parte 5: Modularização e Componentização
+		01 - Áreas
+		02 - Partial Views
+		03 - ViewComponents
+		04 - Isolando Contextos
+		05 - Modelos Delimitados

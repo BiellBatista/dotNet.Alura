@@ -71,6 +71,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-06-XX-CasaDoCodigo.Ident
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-06-XX-CasaDoCodigo.RelatorioWebAPI", "05-06-XX-CasaDoCodigo.RelatorioWebAPI\05-06-XX-CasaDoCodigo.RelatorioWebAPI.csproj", "{99C9D017-6FFF-4B74-991F-A9E31D92A5EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-01-XX-CasaDoCodigo", "06-01-XX-CasaDoCodigo\06-01-XX-CasaDoCodigo.csproj", "{B9253AC9-F2B0-48CD-9581-2095F700D3E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-01-XX-CasaDoCodigo.IdentityServer", "06-01-XX-CasaDoCodigo.IdentityServer\06-01-XX-CasaDoCodigo.IdentityServer.csproj", "{B9A6D4BB-1A1D-4DB0-9FB4-6AFA06EE956F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-01-XX-CasaDoCodigo.RelatorioWebAPI", "06-01-XX-CasaDoCodigo.RelatorioWebAPI\06-01-XX-CasaDoCodigo.RelatorioWebAPI.csproj", "{ADBE4831-45D2-4C18-A4BF-345C945A863A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -213,6 +219,18 @@ Global
 		{99C9D017-6FFF-4B74-991F-A9E31D92A5EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99C9D017-6FFF-4B74-991F-A9E31D92A5EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99C9D017-6FFF-4B74-991F-A9E31D92A5EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9253AC9-F2B0-48CD-9581-2095F700D3E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9253AC9-F2B0-48CD-9581-2095F700D3E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9253AC9-F2B0-48CD-9581-2095F700D3E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9253AC9-F2B0-48CD-9581-2095F700D3E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9A6D4BB-1A1D-4DB0-9FB4-6AFA06EE956F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A6D4BB-1A1D-4DB0-9FB4-6AFA06EE956F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A6D4BB-1A1D-4DB0-9FB4-6AFA06EE956F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A6D4BB-1A1D-4DB0-9FB4-6AFA06EE956F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADBE4831-45D2-4C18-A4BF-345C945A863A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADBE4831-45D2-4C18-A4BF-345C945A863A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADBE4831-45D2-4C18-A4BF-345C945A863A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADBE4831-45D2-4C18-A4BF-345C945A863A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
