@@ -21,7 +21,6 @@
 
 
   <ItemGroup>
-    <Folder Include="Areas\Catalago\Controllers\" />
     <Folder Include="Areas\Catalago\Data\" />
     <Folder Include="Areas\Catalago\Models\" />
     <Folder Include="Areas\Catalago\Views\" />

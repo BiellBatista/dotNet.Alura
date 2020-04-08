@@ -440,6 +440,10 @@ ASP.NET Core Parte 5: Modularização e Componentização
 		01 - Introdução
 		02 - Código-Fonte do Curso
 		03 - Área
+		04 - Controller de Área e Roteamento de Área
+		05 - Definindo Áreas (A)
+		06 - Definindo a estrutura de áreas (C)
+		07 - Roteamento de Área
 	02 - Partial Views
 	03 - ViewComponents
 	04 - Isolando Contextos
