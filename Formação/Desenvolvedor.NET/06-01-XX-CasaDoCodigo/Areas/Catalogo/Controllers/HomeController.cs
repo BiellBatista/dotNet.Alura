@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace _06_01_XX_CasaDoCodigo.Areas.Catalago.Controllers
 {
+    [Area("Catalogo")]
     public class HomeController : Controller
     {
         private readonly IProdutoRepository produtoRepository;

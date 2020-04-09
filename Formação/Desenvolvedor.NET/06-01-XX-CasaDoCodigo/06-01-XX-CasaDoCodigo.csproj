@@ -21,9 +21,8 @@
 
 
   <ItemGroup>
-    <Folder Include="Areas\Catalago\Data\" />
-    <Folder Include="Areas\Catalago\Models\" />
-    <Folder Include="Areas\Catalago\Views\" />
+    <Folder Include="Areas\Catalogo\Data\" />
+    <Folder Include="Areas\Catalogo\Models\" />
   </ItemGroup>
 
 </Project>
