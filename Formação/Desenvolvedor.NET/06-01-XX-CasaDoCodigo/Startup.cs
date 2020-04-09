@@ -125,9 +125,15 @@ namespace _06_01_XX_CasaDoCodigo
             app.UseSession();
             app.UseMvc(routes =>
             {
+                //o routes é um construtor de rotas do ASP.NET Core
+                // definindo a rota da área. O ? serve para caso o parametro ser nulo, ele define o padrão (null)
+                routes.MapAreaRoute(
+                    name: "AreaCatalogo",
+                    areaName: "Catalogo",
+                    template: "Catalogo/{controller=Home}/{action=Index}/{pesquisa?}");
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Pedido}/{action=BuscaProdutos}/{codigo?}");
+                    template: "{controller=Home}/{action=Index}/{codigo?}");
             });
 
             var dataService = serviceProvider.GetRequiredService<IDataService>();
