@@ -451,6 +451,10 @@ ASP.NET Core Parte 5: Modularização e Componentização
 		01 - Apresentando Partial Views
 		02 - Outras Partial Views Mais Simples
 		03 - Criando Partial Views Mais Complexas
+		04 - Aplicação de Partial Views (B / C)
+		05 - Usando Partial Views Dentro de Views (C)
+		06 - Faça o que eu fiz na aula
+		07 - O que aprendemos?
 	03 - ViewComponents
 	04 - Isolando Contextos
 	05 - Modelos Delimitados
