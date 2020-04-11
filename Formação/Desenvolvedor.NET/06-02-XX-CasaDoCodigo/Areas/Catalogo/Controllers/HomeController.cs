@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using _06_02_XX_CasaDoCodigo.Repositories;
 using Microsoft.AspNetCore.Mvc;
 

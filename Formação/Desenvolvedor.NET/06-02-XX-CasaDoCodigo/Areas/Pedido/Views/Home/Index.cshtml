@@ -1,15 +1,12 @@
-﻿
+﻿@{
+    ViewData["Title"] = "Resumo";
+}
+
 @model Pedido;
+
 <h3>Resumo do Pedido</h3>
-<div class="row">
-    <div class="col-md-12">
-        <div class="pull-right">
-            <a class="btn btn-success" asp-area="catalogo" asp-controller="home" asp-action="index">
-                Voltar ao Catálogo
-            </a>
-        </div>
-    </div>
-</div>
+
+<partial name="_NavegacaoPedido" />
 <br />
 <div class="panel panel-default">
     <div class="panel-body">
@@ -42,6 +39,7 @@
                 <h3>Quantidade</h3>
             </div>
         </div>
+
         @foreach (var item in Model.Itens)
         {
 
@@ -55,12 +53,14 @@
                 </div>
             </div>
         }
+
     </div>
 </div>
+
 <div class="row">
     <div class="col-md-12">
         <div class="pull-right">
-            <a class="btn btn-success" asp-area="catalogo" asp-controller="home" asp-action="index">
+            <a class="btn btn-success" href="/">
                 Voltar ao Catálogo
             </a>
         </div>

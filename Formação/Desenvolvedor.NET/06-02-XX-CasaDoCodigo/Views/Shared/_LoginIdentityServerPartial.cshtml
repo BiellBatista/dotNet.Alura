@@ -5,7 +5,7 @@
 
 @if (!string.IsNullOrWhiteSpace(nomeUsuario))
 {
-    <form asp-controller="Conta" asp-action="Logout">
+    <form asp-area="" asp-controller="Conta" asp-action="Logout">
         <ul class="nav navbar-nav navbar-right">
             <li>
                 <a>Olá, @nomeUsuario !</a>
@@ -19,6 +19,6 @@
 else
 {
     <ul class="nav navbar-nav navbar-right">
-        <li><a asp-controller="Conta" asp-action="Login">Entrar</a></li>
+        <li><a asp-area="" asp-controller="Conta" asp-action="Login">Entrar</a></li>
     </ul>
 }

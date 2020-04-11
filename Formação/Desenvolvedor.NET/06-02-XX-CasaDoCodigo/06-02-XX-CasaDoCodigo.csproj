@@ -19,4 +19,14 @@
     <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Folder Include="Areas\Cadastro\Data\" />
+    <Folder Include="Areas\Cadastro\Models\" />
+    <Folder Include="Areas\Carrinho\Data\" />
+    <Folder Include="Areas\Carrinho\Models\" />
+    <Folder Include="Areas\Pedido\Data\" />
+    <Folder Include="Areas\Pedido\Models\" />
+  </ItemGroup>
+
 </Project>

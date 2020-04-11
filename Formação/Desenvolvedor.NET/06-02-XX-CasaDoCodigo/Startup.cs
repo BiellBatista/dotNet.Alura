@@ -131,6 +131,20 @@ namespace _06_02_XX_CasaDoCodigo
                     name: "AreaCatalogo",
                     areaName: "Catalogo",
                     template: "Catalogo/{controller=Home}/{action=Index}/{pesquisa?}");
+                routes.MapAreaRoute(
+                    name: "AreaCarrinho",
+                    areaName: "Carrinho",
+                    template: "Carrinho/{controller=Home}/{action=Index}/{codigo?}");
+
+                routes.MapAreaRoute(
+                    name: "AreaCadastro",
+                    areaName: "Cadastro",
+                    template: "Cadastro/{controller=Home}/{action=Index}");
+
+                routes.MapAreaRoute(
+                    name: "AreaPedido",
+                    areaName: "Pedido",
+                    template: "Pedido/{controller=Home}/{action=Index}");
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{codigo?}");

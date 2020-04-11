@@ -1,9 +1,13 @@
 ﻿@{
     ViewData["Title"] = "Cadastro";
 }
-@model Cadastro
+
+@model Cadastro;
+
 <h3>Cadastro</h3>
-<form asp-action="resumo" method="post">
+
+<form asp-area="pedido"
+      method="post">
 
     <div class="panel panel-default">
         <div class="panel-body">
@@ -94,20 +98,13 @@
                     <input type="text" class="form-control" id="cep" placeholder="CEP"
                            asp-for="@Model.CEP">
                     <span asp-validation-for="@Model.CEP" class="text-danger"></span>
+
                 </div>
-                <div class="form-group">
-                    <a class="btn btn-success" asp-area="catalogo" asp-controller="home" asp-action="index">
-                        Continuar Comprando
-                    </a>
-                </div>
-                <div class="form-group">
-                    <button type="submit"
-                            class="btn btn-success">
-                        Finalizar Pedido
-                    </button>
-                </div>
+
+                <partial name="_NavegacaoCadastro" />
             </div>
         </div>
     </div>
+
 
 </form>
