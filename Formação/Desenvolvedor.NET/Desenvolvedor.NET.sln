@@ -89,6 +89,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-03-XX-CasaDoCodigo.Ident
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-03-XX-CasaDoCodigo.RelatorioWebAPI", "06-03-XX-CasaDoCodigo.RelatorioWebAPI\06-03-XX-CasaDoCodigo.RelatorioWebAPI.csproj", "{19E7F6D4-B5F4-499F-ADD1-083A87EBB116}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-04-XX-CasaDoCodigo", "06-04-XX-CasaDoCodigo\06-04-XX-CasaDoCodigo.csproj", "{DDD380DD-C89A-48C7-9863-8BEB81668025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-04-XX-CasaDoCodigo.IdentityServer", "06-04-XX-CasaDoCodigo.IdentityServer\06-04-XX-CasaDoCodigo.IdentityServer.csproj", "{42702EB1-5A2C-4FB8-A4D0-274C7784BFD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-04-XX-CasaDoCodigo.RelatorioWebAPI", "06-04-XX-CasaDoCodigo.RelatorioWebAPI\06-04-XX-CasaDoCodigo.RelatorioWebAPI.csproj", "{8EEA57FC-3715-4514-95FF-C873092787C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +273,18 @@ Global
 		{19E7F6D4-B5F4-499F-ADD1-083A87EBB116}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19E7F6D4-B5F4-499F-ADD1-083A87EBB116}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19E7F6D4-B5F4-499F-ADD1-083A87EBB116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD380DD-C89A-48C7-9863-8BEB81668025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD380DD-C89A-48C7-9863-8BEB81668025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD380DD-C89A-48C7-9863-8BEB81668025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD380DD-C89A-48C7-9863-8BEB81668025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42702EB1-5A2C-4FB8-A4D0-274C7784BFD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42702EB1-5A2C-4FB8-A4D0-274C7784BFD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42702EB1-5A2C-4FB8-A4D0-274C7784BFD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42702EB1-5A2C-4FB8-A4D0-274C7784BFD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EEA57FC-3715-4514-95FF-C873092787C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EEA57FC-3715-4514-95FF-C873092787C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EEA57FC-3715-4514-95FF-C873092787C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EEA57FC-3715-4514-95FF-C873092787C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,11 @@
+﻿@addTagHelper *, 06-04-XX-CasaDoCodigo
+@{
+    ViewData["Title"] = "Catálago de Produtos";
+}
+
+@model BuscaProdutosViewModel;
+@* Se eu quiser que a PartialView herda o model da View, devo usar o parametro model
+    A PartialView herda a ViewData da view pai*@
+<partial name="_BuscaProduto" />
+
+<vc:categorias produtos="@Model.Produtos" />
