@@ -458,5 +458,6 @@ ASP.NET Core Parte 5: Modularização e Componentização
 	03 - ViewComponents
 		01 - Apresentando View Components
 		02 - Criando o ViewComponent de Categorias
+		03 - Recapitulando ViewComponents
 	04 - Isolando Contextos
 	05 - Modelos Delimitados

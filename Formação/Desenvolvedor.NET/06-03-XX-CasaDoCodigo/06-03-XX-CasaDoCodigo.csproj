@@ -6,6 +6,13 @@
     <RootNamespace>_06_03_XX_CasaDoCodigo</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Areas\Catalogo\ViewModels\**" />
+    <Content Remove="Areas\Catalogo\ViewModels\**" />
+    <EmbeddedResource Remove="Areas\Catalogo\ViewModels\**" />
+    <None Remove="Areas\Catalogo\ViewModels\**" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="IdentityModel" Version="4.2.0" />
@@ -17,6 +24,11 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
     <PackageReference Include="Serilog" Version="2.9.0" />
     <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Areas\Catalogo\Data\" />
   </ItemGroup>
 
 </Project>
