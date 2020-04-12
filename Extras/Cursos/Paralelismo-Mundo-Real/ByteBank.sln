@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-XX-ByteBank.View", "ByteBank.View\01-XX-ByteBank.View.csproj", "{3F1CCE92-E216-4D46-AC05-05259EE5E61B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-XX-ByteBank.View", "01-XX-ByteBank.View\01-XX-ByteBank.View.csproj", "{3F1CCE92-E216-4D46-AC05-05259EE5E61B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-XX-ByteBank.Core", "ByteBank.Core\01-XX-ByteBank.Core.csproj", "{3B254A19-C3FD-4246-B319-987933185190}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-XX-ByteBank.Core", "01-XX-ByteBank.Core\01-XX-ByteBank.Core.csproj", "{3B254A19-C3FD-4246-B319-987933185190}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

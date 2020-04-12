@@ -97,7 +97,7 @@
     <Resource Include="Assets\Logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ByteBank.Core\01-XX-ByteBank.Core.csproj">
+    <ProjectReference Include="..\01-XX-ByteBank.Core\01-XX-ByteBank.Core.csproj">
       <Project>{3b254a19-c3fd-4246-b319-987933185190}</Project>
       <Name>01-XX-ByteBank.Core</Name>
     </ProjectReference>

@@ -8,7 +8,7 @@
         WindowStartupLocation="CenterScreen">
     <DockPanel Margin="10">
         <!-- Logotipo -->
-        <Image Source="/_01_XX_ByteBank.View;component/Assets/Logo.png"
+        <Image Source="/01-XX-ByteBank.View;component/Assets/Logo.png"
                Height="75"
                DockPanel.Dock="Top"/>
 
