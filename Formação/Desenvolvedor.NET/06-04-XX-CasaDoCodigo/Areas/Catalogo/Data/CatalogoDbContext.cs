@@ -19,6 +19,10 @@ namespace _06_04_XX_CasaDoCodigo.Areas.Catalogo.Data
         {
             base.OnModelCreating(modelBuilder);
 
+            var produtos = GetProdutos();
+            var categoria = produtos.Select(p => p.Categoria).Distinct();
+
+
             modelBuilder.Entity<Categoria>(b =>
             {
                 b.HasKey(t => t.Id);
@@ -50,7 +54,19 @@ namespace _06_04_XX_CasaDoCodigo.Areas.Catalogo.Data
 
                     return categoria;
                 });
+            var produtos =
+                (from livro in livros
+                 join categoria in categorias
+                     on livro.Categoria equals categoria.Nome
+                 select new Produto(livro.Codigo, livro.Nome, livro.Preco, categoria))
+                 .Select((produto, index) =>
+                 {
+                     produto.Id = index + 1;
+                     return produto;
+                 })
+                 .ToList();
 
+            return produtos;
         }
     }
 }
