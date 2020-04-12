@@ -1,0 +1,10 @@
+﻿@addTagHelper *, 06-05-XX-CasaDoCodigo
+@{
+    ViewData["Title"] = "Catálogo de Produtos";
+}
+
+@model BuscaProdutosViewModel;
+
+<partial name="_BuscaProdutos" />
+
+<vc:categorias produtos="@Model.Produtos" />

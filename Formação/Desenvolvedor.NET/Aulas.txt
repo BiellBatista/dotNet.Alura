@@ -473,3 +473,4 @@ ASP.NET Core Parte 5: Modularização e Componentização
 		07 - Faça o que eu fiz na aula
 		08 - O que aprendemos?
 	05 - Modelos Delimitados
+		01 - O Que São Modelos Delimitados?

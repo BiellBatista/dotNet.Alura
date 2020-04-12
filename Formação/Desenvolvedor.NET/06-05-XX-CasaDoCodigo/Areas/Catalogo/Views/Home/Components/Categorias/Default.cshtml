@@ -1,0 +1,13 @@
+﻿@addTagHelper *, 06-05-XX-CasaDoCodigo
+@using _06_05_XX_CasaDoCodigo.Areas.Catalogo.Models.ViewModels
+@model CategoriasViewModel
+
+<div class="container">
+    @foreach (var categoria in Model.Categorias)
+    {
+        <vc:carrossel 
+            categoria="@categoria"
+            produtos="@Model.Produtos" 
+            tamanho-pagina="@Model.TamanhoPagina" />
+    }
+</div>
