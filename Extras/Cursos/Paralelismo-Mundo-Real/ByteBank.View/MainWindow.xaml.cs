@@ -35,6 +35,8 @@ namespace _01_XX_ByteBank.View
         private void BtnProcessar_Click(object sender, RoutedEventArgs e)
         {
             var contas = r_Repositorio.GetContaClientes();
+            var contas_parte1 = contas.Take(contas.Count() / 2);
+            var contas_parte2 = contas.Skip(contas.Count() / 2);
 
             var resultado = new List<string>();
 
@@ -42,11 +44,35 @@ namespace _01_XX_ByteBank.View
 
             var inicio = DateTime.Now;
 
-            foreach (var conta in contas)
+            // criando a primeira thread. Não estou executando ela
+            Thread thread_part1 = new Thread(() =>
             {
-                var resultadoConta = r_Servico.ConsolidarMovimentacao(conta);
-                resultado.Add(resultadoConta);
-            }
+                foreach (var conta in contas_parte1)
+                {
+                    var resultadoProcessamento = r_Servico.ConsolidarMovimentacao(conta);
+                    resultado.Add(resultadoProcessamento);
+                }
+            });
+
+            // criando a segunda thread. Não estou executando ela
+            Thread thread_part2 = new Thread(() =>
+            {
+                foreach (var conta in contas_parte2)
+                {
+                    var resultadoProcessamento = r_Servico.ConsolidarMovimentacao(conta);
+                    resultado.Add(resultadoProcessamento);
+                }
+            });
+
+            thread_part1.Start();
+            thread_part2.Start();
+
+            // nao preciso disso apos criar as thread
+            //foreach (var conta in contas)
+            //{
+            //    var resultadoConta = r_Servico.ConsolidarMovimentacao(conta);
+            //    resultado.Add(resultadoConta);
+            //}
 
             var fim = DateTime.Now;
 

@@ -3,6 +3,8 @@ Curso de C#: Paralelismo no mundo real
 		01 - Introdução
 		02 - Conhecendo o problema do cliente
 		03 - Criando Threads
+		04 - Usando o Thread.Start() (D)
+		05 - Usando a propriedade IsAlive e a Thread
 	02 - Usando Tasks
 	03 - Usando o AsyncAwait do C#
 	04 - Padrões de notificação de progresso de tarefas
