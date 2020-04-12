@@ -1,0 +1,15 @@
+Curso de C#: Paralelismo no mundo real
+	01 - Usando Threads
+		01 - Introdução
+		02 - Conhecendo o problema do cliente
+		03 - Criando Threads
+	02 - Usando Tasks
+	03 - Usando o AsyncAwait do C#
+	04 - Padrões de notificação de progresso de tarefas
+	05 - Criando tarefas canceláveis
+Curso de C#: Eventos, Delegates e Lambda
+	01 - Comportamentos e Eventos
+	02 - Delegates
+	03 - Manipulando Delegates
+	04 - Funções e nosso próprio evento
+	05 - Avançando em Eventos

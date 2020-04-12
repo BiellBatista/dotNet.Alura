@@ -262,6 +262,20 @@ Extra .NET para Web
 		06 - Gerando Relatórios
 		07 - Fechamento
 -------------------------------------------------------------------------------------------------------------------------
+Extra Cursos
+	C#: Paralelismo no mundo real
+		01 - Usando Threads
+		02 - Usando Tasks
+		03 - Usando o AsyncAwait do C#
+		04 - Padrões de notificação de progresso de tarefas
+		05 - Criando tarefas canceláveis
+	C#: Eventos, Delegates e Lambda
+		01 - Comportamentos e Eventos
+		02 - Delegates
+		03 - Manipulando Delegates
+		04 - Funções e nosso próprio evento
+		05 - Avançando em Eventos
+-------------------------------------------------------------------------------------------------------------------------
 Formação Desenvolvedor .NET
 	Curso C# Parte 1: Primeiros Passos
 		01 - História e ecossistema da linguagem
