@@ -9,6 +9,7 @@ Curso de C#: Paralelismo no mundo real
 		07 - Usando o Thread.IsAlive (A)
 		08 - Criando Threads
 	02 - Usando Tasks
+		01 - Abstraindo tarefas
 	03 - Usando o AsyncAwait do C#
 	04 - Padrões de notificação de progresso de tarefas
 	05 - Criando tarefas canceláveis
