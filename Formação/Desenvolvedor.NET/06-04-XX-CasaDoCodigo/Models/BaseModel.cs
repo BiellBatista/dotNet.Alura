@@ -6,6 +6,6 @@ namespace _06_04_XX_CasaDoCodigo.Models
     public abstract class BaseModel
     {
         [DataMember]
-        public int Id { get; protected set; }
+        public int Id { get; set; }
     }
 }
