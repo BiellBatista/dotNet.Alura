@@ -35,8 +35,12 @@ namespace _01_XX_ByteBank.View
         private void BtnProcessar_Click(object sender, RoutedEventArgs e)
         {
             var contas = r_Repositorio.GetContaClientes();
-            var contas_parte1 = contas.Take(contas.Count() / 2);
-            var contas_parte2 = contas.Skip(contas.Count() / 2);
+            var contasQuantiadePorThread = contas.Count() / 4;
+
+            var contas_parte1 = contas.Take(contasQuantiadePorThread);
+            var contas_parte2 = contas.Skip(contasQuantiadePorThread).Take(contasQuantiadePorThread);
+            var contas_parte3 = contas.Skip(contasQuantiadePorThread * 2).Take(contasQuantiadePorThread);
+            var contas_parte4 = contas.Skip(contasQuantiadePorThread * 3);
 
             var resultado = new List<string>();
 
@@ -64,8 +68,34 @@ namespace _01_XX_ByteBank.View
                 }
             });
 
+            Thread thread_part3 = new Thread(() =>
+            {
+                foreach (var conta in contas_parte2)
+                {
+                    var resultadoProcessamento = r_Servico.ConsolidarMovimentacao(conta);
+                    resultado.Add(resultadoProcessamento);
+                }
+            });
+
+            Thread thread_part4 = new Thread(() =>
+            {
+                foreach (var conta in contas_parte2)
+                {
+                    var resultadoProcessamento = r_Servico.ConsolidarMovimentacao(conta);
+                    resultado.Add(resultadoProcessamento);
+                }
+            });
+
             thread_part1.Start();
             thread_part2.Start();
+            thread_part3.Start();
+            thread_part4.Start();
+
+            while (thread_part1.IsAlive || thread_part2.IsAlive || thread_part3.IsAlive || thread_part4.IsAlive)
+            {
+                // este método irá colocar a thread para dormir (ela não consumirá processamento) por 250 milisegundos
+                Thread.Sleep(250);
+            }
 
             // nao preciso disso apos criar as thread
             //foreach (var conta in contas)
