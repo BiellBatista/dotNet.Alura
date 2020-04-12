@@ -465,4 +465,5 @@ ASP.NET Core Parte 5: Modularização e Componentização
 		07 - 	O que aprendemos?
 	04 - Isolando Contextos
 		01 - Criando um Novo Contexto
+		02 - Obtendo Categorias do Arquivo JSON
 	05 - Modelos Delimitados
