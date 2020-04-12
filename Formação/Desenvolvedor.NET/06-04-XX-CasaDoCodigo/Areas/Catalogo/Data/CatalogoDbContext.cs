@@ -20,23 +20,32 @@ namespace _06_04_XX_CasaDoCodigo.Areas.Catalogo.Data
             base.OnModelCreating(modelBuilder);
 
             var produtos = GetProdutos();
-            var categoria = produtos.Select(p => p.Categoria).Distinct();
+            var categorias = produtos.Select(p => p.Categoria).Distinct();
 
 
             modelBuilder.Entity<Categoria>(b =>
             {
                 b.HasKey(t => t.Id);
+                b.HasData(categorias); //propagação ou "seeding" dos dados
             });
 
             modelBuilder.Entity<Produto>(b =>
             {
                 b.HasKey(t => t.Id);
+                b.HasData(produtos.Select(p => new
+                {
+                    p.Id,
+                    p.Codigo,
+                    p.Nome,
+                    p.Preco,
+                    CategoriaId = p.Categoria.Id,
+                })); //propagação ou "seeding" dos dados
             });
         }
 
         private List<Livro> GetLivros()
         {
-            var json = File.ReadAllText("data/livros.json");
+            var json = File.ReadAllText("livros.json");
 
             return JsonConvert.DeserializeObject<List<Livro>>(json);
         }

@@ -462,10 +462,14 @@ ASP.NET Core Parte 5: Modularização e Componentização
 		04 - Características de uma View Component (A / E / F / G)
 		05 - Componente com Paginação de Dados (A)
 		06 - Faça o que eu fiz na aula
-		07 - 	O que aprendemos?
+		07 - O que aprendemos?
 	04 - Isolando Contextos
 		01 - Criando um Novo Contexto
 		02 - Obtendo Categorias do Arquivo JSON
 		03 - Obtendo Produtos do Arquivo JSON
 		04 - Propagação, Migração e Banco de Dados de Catálogo
+		05 - Propagação de Dados (B)
+		06 - Múltiplas classes de contexto (C)
+		07 - Faça o que eu fiz na aula
+		08 - O que aprendemos?
 	05 - Modelos Delimitados

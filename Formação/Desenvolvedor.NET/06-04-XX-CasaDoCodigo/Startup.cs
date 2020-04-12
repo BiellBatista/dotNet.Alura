@@ -1,4 +1,5 @@
-﻿using _06_04_XX_CasaDoCodigo.Repositories;
+﻿using _06_04_XX_CasaDoCodigo.Areas.Catalogo.Data;
+using _06_04_XX_CasaDoCodigo.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -34,9 +35,14 @@ namespace _06_04_XX_CasaDoCodigo
             services.AddSession();
 
             string connectionString = Configuration.GetConnectionString("Default");
+            string connectionStringCatalogo = Configuration.GetConnectionString("Catalogo");
 
             services.AddDbContext<ApplicationContext>(options =>
                 options.UseSqlServer(connectionString)
+            );
+
+            services.AddDbContext<CatalogoDbContext>(options =>
+                options.UseSqlServer(connectionStringCatalogo)
             );
 
             services.AddTransient<IDataService, DataService>();
