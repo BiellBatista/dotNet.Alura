@@ -10,6 +10,9 @@ Curso de C#: Paralelismo no mundo real
 		08 - Criando Threads
 	02 - Usando Tasks
 		01 - Abstraindo tarefas
+		02 - Criando e executando Tasks
+		03 - Tasks vs. Threads (A)
+		04 - Mantendo a interface gráfica ativa
 	03 - Usando o AsyncAwait do C#
 	04 - Padrões de notificação de progresso de tarefas
 	05 - Criando tarefas canceláveis

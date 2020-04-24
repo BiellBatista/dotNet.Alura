@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows;
 
 namespace _02_XX_ByteBank.View
@@ -24,12 +25,6 @@ namespace _02_XX_ByteBank.View
         private void BtnProcessar_Click(object sender, RoutedEventArgs e)
         {
             var contas = r_Repositorio.GetContaClientes();
-            var contasQuantiadePorThread = contas.Count() / 4;
-
-            var contas_parte1 = contas.Take(contasQuantiadePorThread);
-            var contas_parte2 = contas.Skip(contasQuantiadePorThread).Take(contasQuantiadePorThread);
-            var contas_parte3 = contas.Skip(contasQuantiadePorThread * 2).Take(contasQuantiadePorThread);
-            var contas_parte4 = contas.Skip(contasQuantiadePorThread * 3);
 
             var resultado = new List<string>();
 
@@ -37,51 +32,18 @@ namespace _02_XX_ByteBank.View
 
             var inicio = DateTime.Now;
 
-            Thread thread_part1 = new Thread(() =>
+            var contasTarefas = contas.Select(c =>
             {
-                foreach (var conta in contas_parte1)
+                //o cara responsável por gerenciar os núcleos. Ele dividi cada tarefa em uma thread
+                return Task.Factory.StartNew(() =>
                 {
-                    var resultadoProcessamento = r_Servico.ConsolidarMovimentacao(conta);
-                    resultado.Add(resultadoProcessamento);
-                }
-            });
+                    var resultadoConta = r_Servico.ConsolidarMovimentacao(c);
+                    resultado.Add(resultadoConta);
+                });
+            }).ToArray();
 
-            Thread thread_part2 = new Thread(() =>
-            {
-                foreach (var conta in contas_parte2)
-                {
-                    var resultadoProcessamento = r_Servico.ConsolidarMovimentacao(conta);
-                    resultado.Add(resultadoProcessamento);
-                }
-            });
-
-            Thread thread_part3 = new Thread(() =>
-            {
-                foreach (var conta in contas_parte2)
-                {
-                    var resultadoProcessamento = r_Servico.ConsolidarMovimentacao(conta);
-                    resultado.Add(resultadoProcessamento);
-                }
-            });
-
-            Thread thread_part4 = new Thread(() =>
-            {
-                foreach (var conta in contas_parte2)
-                {
-                    var resultadoProcessamento = r_Servico.ConsolidarMovimentacao(conta);
-                    resultado.Add(resultadoProcessamento);
-                }
-            });
-
-            thread_part1.Start();
-            thread_part2.Start();
-            thread_part3.Start();
-            thread_part4.Start();
-
-            while (thread_part1.IsAlive || thread_part2.IsAlive || thread_part3.IsAlive || thread_part4.IsAlive)
-            {
-                Thread.Sleep(250);
-            }
+            // espera todas as tarefas de "contasTarefas" ser concluida
+            Task.WaitAll(contasTarefas);
 
             var fim = DateTime.Now;
 
