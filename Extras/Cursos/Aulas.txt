@@ -21,6 +21,9 @@ Curso de C#: Paralelismo no mundo real
 		02 - Usando AsyncAwait
 		03 - SyncronizationContext (B)
 		04 - Entendendo melhor o Async
+		05 - Retorno de tarefas (C)
+		06 - O compilador e o Async/Await (A)
+		07 - Usando Async/Await
 	04 - Padrões de notificação de progresso de tarefas
 	05 - Criando tarefas canceláveis
 Curso de C#: Eventos, Delegates e Lambda
