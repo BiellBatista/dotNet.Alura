@@ -35,6 +35,9 @@ Curso de C#: Paralelismo no mundo real
 		01 - Conhecendo pattern .NET para cancelamento
 		02 - Dando a opção de cancelar ao usuário
 		03 - Usando o CancellationTokenSource e o CancellationToken
+		04 - Exceção de cancelamento (D)
+		05 - Quando lançar exceções de cancelamento (C)
+		06 - Passando o CancellationToken adiante
 Curso de C#: Eventos, Delegates e Lambda
 	01 - Comportamentos e Eventos
 	02 - Delegates
