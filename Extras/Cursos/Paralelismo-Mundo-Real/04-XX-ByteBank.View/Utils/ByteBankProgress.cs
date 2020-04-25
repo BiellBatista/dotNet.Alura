@@ -9,6 +9,7 @@ namespace _04_XX_ByteBank.View.Utils
         private readonly Action<T> _handler;
         private readonly TaskScheduler _taskSchedulerGui;
 
+	// handler significa manipulador
         public ByteBankProgress(Action<T> handler)
         {
             _taskSchedulerGui = TaskScheduler.FromCurrentSynchronizationContext();

@@ -43,8 +43,9 @@ Curso de C#: Paralelismo no mundo real
 		09 - Usando o CTS e o CT
 Curso de C#: Eventos, Delegates e Lambda
 	01 - Comportamentos e Eventos
+		01 - Introdução
+		02 - Nosso projeto inicial
 	02 - Delegates
 	03 - Manipulando Delegates
 	04 - Funções e nosso próprio evento
 	05 - Avançando em Eventos
-
