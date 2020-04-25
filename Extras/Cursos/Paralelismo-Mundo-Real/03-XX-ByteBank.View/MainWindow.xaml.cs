@@ -1,4 +1,5 @@
-﻿using _03_XX_ByteBank.Core.Repository;
+﻿using _03_XX_ByteBank.Core.Model;
+using _03_XX_ByteBank.Core.Repository;
 using _03_XX_ByteBank.Core.Service;
 using System;
 using System.Collections.Generic;
@@ -24,47 +25,44 @@ namespace _03_XX_ByteBank.View
 
         private void BtnProcessar_Click(object sender, RoutedEventArgs e)
         {
-            // o TaskScheduler existe na thread principal da aplicação
-            // o método "FromCurrentSynchronizationContext", retorna o this da thread que ele está sendo executado. Neste caso, é a principal
-            var taskSchedulerUI = TaskScheduler.FromCurrentSynchronizationContext();
             BtnProcessar.IsEnabled = false;
-            var contas = r_Repositorio.GetContaClientes();
 
-            var resultado = new List<string>();
+            var taskSchedulerUI = TaskScheduler.FromCurrentSynchronizationContext();
+            var contas = r_Repositorio.GetContaClientes();
 
             AtualizarView(new List<string>(), TimeSpan.Zero);
 
             var inicio = DateTime.Now;
-
-            var contasTarefas = contas.Select(c =>
-            {
-                // o cara responsável por gerenciar os núcleos. Ele dividi cada tarefa em uma thread
-                return Task.Factory.StartNew(() =>
-                {
-                    // o método retorna o this desta thread, não é a principal
-                    // TaskScheduler.FromCurrentSynchronizationContext();
-                    var resultadoConta = r_Servico.ConsolidarMovimentacao(c);
-                    resultado.Add(resultadoConta);
-                });
-            }).ToArray();
-
-            // espera todas as tarefas de "contasTarefas" ser concluida
-            // Task.WaitAll(contasTarefas);
-
-            // enquanto as tarefas são realizadas, faça
-            Task.WhenAll(contasTarefas)
+            // este é o mesmo esquema do callback em JS
+            ConsolidarContas(contas)
                 .ContinueWith(t =>
                 {
                     var fim = DateTime.Now;
-                    // o método retorna o this desta thread, não é a principal
-                    // TaskScheduler.FromCurrentSynchronizationContext();
+                    var resultado = t.Result;
                     AtualizarView(resultado, fim - inicio);
                 }, taskSchedulerUI)
                 .ContinueWith(t =>
                 {
                     BtnProcessar.IsEnabled = true;
                 }, taskSchedulerUI);
-            // o segundo parametro passa o this da thread principal, para que seja possível pegar os atributos dela
+        }
+
+        private Task<List<string>> ConsolidarContas(IEnumerable<ContaCliente> contas)
+        {
+            var resultado = new List<string>();
+            var tasks = contas.Select(c =>
+            {
+                return Task.Factory.StartNew(() =>
+                {
+                    var resultadoConta = r_Servico.ConsolidarMovimentacao(c);
+                    resultado.Add(resultadoConta);
+                });
+            });
+
+            return Task.WhenAll(tasks).ContinueWith(t =>
+            {
+                return resultado;
+            });
         }
 
         private void AtualizarView(List<String> result, TimeSpan elapsedTime)

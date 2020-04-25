@@ -18,6 +18,7 @@ Curso de C#: Paralelismo no mundo real
 		07 - Usando o TaskScheduler
 	03 - Usando o AsyncAwait do C#
 		01 - Tasks com retorno
+		02 - Usando AsyncAwait
 	04 - Padrões de notificação de progresso de tarefas
 	05 - Criando tarefas canceláveis
 Curso de C#: Eventos, Delegates e Lambda
