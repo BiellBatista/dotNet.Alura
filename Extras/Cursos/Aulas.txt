@@ -27,6 +27,8 @@ Curso de C#: Paralelismo no mundo real
 	04 - Padrões de notificação de progresso de tarefas
 		01 - Criando uma barra de progresso
 		02 - Reportando progresso ao usuário
+		03 - Como reportar progresso (B)
+		04 - Reportando com Progress
 	05 - Criando tarefas canceláveis
 Curso de C#: Eventos, Delegates e Lambda
 	01 - Comportamentos e Eventos

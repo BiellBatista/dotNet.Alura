@@ -1,6 +1,7 @@
 ﻿using _04_XX_ByteBank.Core.Model;
 using _04_XX_ByteBank.Core.Repository;
 using _04_XX_ByteBank.Core.Service;
+using _04_XX_ByteBank.View.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,26 +34,32 @@ namespace _04_XX_ByteBank.View
             LimparView();
 
             var inicio = DateTime.Now;
-            var resultado = await ConsolidarContas(contas);
+            var byteBankProgress = new ByteBankProgress<String>(str => PgsProgresso.Value++);
+            var resultado = await ConsolidarContas(contas, byteBankProgress);
             var fim = DateTime.Now;
 
             AtualizarView(resultado, fim - inicio);
             BtnProcessar.IsEnabled = true;
         }
 
-        private async Task<string[]> ConsolidarContas(IEnumerable<ContaCliente> contas)
+        private async Task<string[]> ConsolidarContas(IEnumerable<ContaCliente> contas, IProgress<string> reportadorDeProgresso)
         {
-            var taskSchedulerGui = TaskScheduler.FromCurrentSynchronizationContext();
+            // não é mais necessário, porque estou usando o reportador de progresso
+            //var taskSchedulerGui = TaskScheduler.FromCurrentSynchronizationContext();
             var tasks = contas.Select(c => Task.Factory.StartNew(() =>
             {
                 var resultadoConsolidacao = r_Servico.ConsolidarMovimentacao(c);
 
-                Task.Factory.StartNew(
-                    () => PgsProgresso.Value++,
-                    CancellationToken.None,
-                    TaskCreationOptions.None,
-                    taskSchedulerGui
-                    );
+                //reporta o progesso dessa thread
+                reportadorDeProgresso.Report(resultadoConsolidacao);
+
+                // não é mais necessário, porque estou usando o reportador de progresso
+                //Task.Factory.StartNew(
+                //    () => PgsProgresso.Value++,
+                //    CancellationToken.None,
+                //    TaskCreationOptions.None,
+                //    taskSchedulerGui
+                //    );
 
                 return resultadoConsolidacao;
             })
