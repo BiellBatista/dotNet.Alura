@@ -25,6 +25,7 @@ namespace _05_XX_ByteBank.View
         private async void BtnProcessar_Click(object sender, RoutedEventArgs e)
         {
             BtnProcessar.IsEnabled = false;
+
             var contas = r_Repositorio.GetContaClientes();
 
             PgsProgresso.Maximum = contas.Count();
@@ -32,6 +33,7 @@ namespace _05_XX_ByteBank.View
             LimparView();
 
             var inicio = DateTime.Now;
+            BtnCancelar.IsEnabled = true;
 
             var progress = new Progress<string>(str => PgsProgresso.Value++);
             var resultado = await ConsolidarContas(contas, progress);
@@ -39,6 +41,11 @@ namespace _05_XX_ByteBank.View
 
             AtualizarView(resultado, fim - inicio);
             BtnProcessar.IsEnabled = true;
+        }
+
+        private void BtnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            BtnCancelar.IsEnabled = false;
         }
 
         private async Task<string[]> ConsolidarContas(IEnumerable<ContaCliente> contas, IProgress<string> reportadorDeProgresso)
@@ -69,6 +76,6 @@ namespace _05_XX_ByteBank.View
 
             LstResultados.ItemsSource = result;
             TxtTempo.Text = mensagem;
-        }
+        }        
     }
 }

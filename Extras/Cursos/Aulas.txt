@@ -32,11 +32,13 @@ Curso de C#: Paralelismo no mundo real
 		05 - Contexto de sincronização de Progress<T> (C)
 		06 - Reportando progresso no ByteBank
 	05 - Criando tarefas canceláveis
+		01 - Conhecendo pattern .NET para cancelamento
+		02 - Dando a opção de cancelar ao usuário
+		03 - Usando o CancellationTokenSource e o CancellationToken
 Curso de C#: Eventos, Delegates e Lambda
 	01 - Comportamentos e Eventos
 	02 - Delegates
 	03 - Manipulando Delegates
 	04 - Funções e nosso próprio evento
 	05 - Avançando em Eventos
-
 
