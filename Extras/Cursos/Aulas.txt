@@ -25,6 +25,7 @@ Curso de C#: Paralelismo no mundo real
 		06 - O compilador e o Async/Await (A)
 		07 - Usando Async/Await
 	04 - Padrões de notificação de progresso de tarefas
+		01 - Criando uma barra de progresso
 	05 - Criando tarefas canceláveis
 Curso de C#: Eventos, Delegates e Lambda
 	01 - Comportamentos e Eventos
