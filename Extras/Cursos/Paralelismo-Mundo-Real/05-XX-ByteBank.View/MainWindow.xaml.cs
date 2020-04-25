@@ -80,7 +80,7 @@ namespace _05_XX_ByteBank.View
                     // retorna uma exceção, caso a operação seja cancelada
                     ct.ThrowIfCancellationRequested();
 
-                    var resultadoConsolidacao = r_Servico.ConsolidarMovimentacao(c);
+                    var resultadoConsolidacao = r_Servico.ConsolidarMovimentacao(c, ct);
                     reportadorDeProgresso.Report(resultadoConsolidacao);
 
                     // não preciso mais desse if, porque estou utilizando o throw do ct

@@ -1,17 +1,24 @@
 ﻿using _05_XX_ByteBank.Core.Model;
 using System;
+using System.Threading;
 
 namespace _05_XX_ByteBank.Core.Service
 {
     public class ContaClienteService
     {
-        public string ConsolidarMovimentacao(ContaCliente conta)
+        public string ConsolidarMovimentacao(ContaCliente conta) => ConsolidarMovimentacao(conta, CancellationToken.None);
+
+        public string ConsolidarMovimentacao(ContaCliente conta, CancellationToken ct)
         {
             var soma = 0m;
 
             foreach (var movimento in conta.Movimentacoes)
+            {
+                ct.ThrowIfCancellationRequested();
                 soma += movimento.Valor * FatorDeMultiplicacao(movimento.Data);
+            }
 
+            ct.ThrowIfCancellationRequested();
             AtualizarInvestimentos(conta);
             return $"Cliente {conta.NomeCliente} tem saldo atualizado de R${soma.ToString("#00.00")}";
         }

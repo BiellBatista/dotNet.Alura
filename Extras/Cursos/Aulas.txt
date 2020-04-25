@@ -38,6 +38,8 @@ Curso de C#: Paralelismo no mundo real
 		04 - Exceção de cancelamento (D)
 		05 - Quando lançar exceções de cancelamento (C)
 		06 - Passando o CancellationToken adiante
+		07 - Obtendo CancellationToken de um CancellationTokenSource (A)
+		08 - Conclusão
 Curso de C#: Eventos, Delegates e Lambda
 	01 - Comportamentos e Eventos
 	02 - Delegates
