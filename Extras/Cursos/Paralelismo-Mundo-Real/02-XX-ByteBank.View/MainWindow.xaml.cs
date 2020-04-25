@@ -24,6 +24,10 @@ namespace _02_XX_ByteBank.View
 
         private void BtnProcessar_Click(object sender, RoutedEventArgs e)
         {
+            // o TaskScheduler existe na thread principal da aplicação
+            // o método "FromCurrentSynchronizationContext", retorna o this da thread que ele está sendo executado. Neste caso, é a principal
+            var taskSchedulerUI = TaskScheduler.FromCurrentSynchronizationContext();
+            BtnProcessar.IsEnabled = false;
             var contas = r_Repositorio.GetContaClientes();
 
             var resultado = new List<string>();
@@ -34,20 +38,33 @@ namespace _02_XX_ByteBank.View
 
             var contasTarefas = contas.Select(c =>
             {
-                //o cara responsável por gerenciar os núcleos. Ele dividi cada tarefa em uma thread
+                // o cara responsável por gerenciar os núcleos. Ele dividi cada tarefa em uma thread
                 return Task.Factory.StartNew(() =>
                 {
+                    // o método retorna o this desta thread, não é a principal
+                    // TaskScheduler.FromCurrentSynchronizationContext();
                     var resultadoConta = r_Servico.ConsolidarMovimentacao(c);
                     resultado.Add(resultadoConta);
                 });
             }).ToArray();
 
             // espera todas as tarefas de "contasTarefas" ser concluida
-            Task.WaitAll(contasTarefas);
+            // Task.WaitAll(contasTarefas);
 
-            var fim = DateTime.Now;
-
-            AtualizarView(resultado, fim - inicio);
+            // enquanto as tarefas são realizadas, faça
+            Task.WhenAll(contasTarefas)
+                .ContinueWith(t =>
+                {
+                    var fim = DateTime.Now;
+                    // o método retorna o this desta thread, não é a principal
+                    // TaskScheduler.FromCurrentSynchronizationContext();
+                    AtualizarView(resultado, fim - inicio);
+                }, taskSchedulerUI)
+                .ContinueWith(t =>
+                {
+                    BtnProcessar.IsEnabled = true;
+                }, taskSchedulerUI);
+            // o segundo parametro passa o this da thread principal, para que seja possível pegar os atributos dela
         }
 
         private void AtualizarView(List<String> result, TimeSpan elapsedTime)
