@@ -98,7 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\04-XX-ByteBank.Core\04-XX-ByteBank.Core.csproj">
-      <Project>{f830ddb9-1887-493e-bda7-db19dc6c333c}</Project>
+      <Project>{4ee3a99e-71a1-41f3-9273-b8ba6edca86b}</Project>
       <Name>04-XX-ByteBank.Core</Name>
     </ProjectReference>
   </ItemGroup>

@@ -26,6 +26,7 @@ Curso de C#: Paralelismo no mundo real
 		07 - Usando Async/Await
 	04 - Padrões de notificação de progresso de tarefas
 		01 - Criando uma barra de progresso
+		02 - Reportando progresso ao usuário
 	05 - Criando tarefas canceláveis
 Curso de C#: Eventos, Delegates e Lambda
 	01 - Comportamentos e Eventos
@@ -33,3 +34,4 @@ Curso de C#: Eventos, Delegates e Lambda
 	03 - Manipulando Delegates
 	04 - Funções e nosso próprio evento
 	05 - Avançando em Eventos
+
