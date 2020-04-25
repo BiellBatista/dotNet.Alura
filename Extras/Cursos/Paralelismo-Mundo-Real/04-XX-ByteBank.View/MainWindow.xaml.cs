@@ -34,8 +34,11 @@ namespace _04_XX_ByteBank.View
             LimparView();
 
             var inicio = DateTime.Now;
-            var byteBankProgress = new ByteBankProgress<String>(str => PgsProgresso.Value++);
-            var resultado = await ConsolidarContas(contas, byteBankProgress);
+
+            var progress = new Progress<string>(str => PgsProgresso.Value++);
+            // não preciso usar o ByteBankProgress, porque o .NET já possui o progress
+            //var byteBankProgress = new ByteBankProgress<String>(str => PgsProgresso.Value++);
+            var resultado = await ConsolidarContas(contas, progress);
             var fim = DateTime.Now;
 
             AtualizarView(resultado, fim - inicio);

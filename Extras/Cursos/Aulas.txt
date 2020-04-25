@@ -29,6 +29,8 @@ Curso de C#: Paralelismo no mundo real
 		02 - Reportando progresso ao usuário
 		03 - Como reportar progresso (B)
 		04 - Reportando com Progress
+		05 - Contexto de sincronização de Progress<T> (C)
+		06 - Reportando progresso no ByteBank
 	05 - Criando tarefas canceláveis
 Curso de C#: Eventos, Delegates e Lambda
 	01 - Comportamentos e Eventos
