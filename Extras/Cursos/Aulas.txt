@@ -40,6 +40,7 @@ Curso de C#: Paralelismo no mundo real
 		06 - Passando o CancellationToken adiante
 		07 - Obtendo CancellationToken de um CancellationTokenSource (A)
 		08 - Conclusão
+		09 - Usando o CTS e o CT
 Curso de C#: Eventos, Delegates e Lambda
 	01 - Comportamentos e Eventos
 	02 - Delegates
