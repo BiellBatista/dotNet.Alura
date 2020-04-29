@@ -39,9 +39,15 @@ namespace _02_XX_ByteBank.Agencias
                 lstAgencias.Items.Add(agencia);
         }
 
-        private void lstAgencias_SelectionChanged()
+        private void lstAgencias_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            var agenciaSelecionada = (Agencia)lstAgencias.SelectedItem;
 
+            txtNumero.Text = agenciaSelecionada.Numero;
+            txtNome.Text = agenciaSelecionada.Nome;
+            txtTelefone.Text = agenciaSelecionada.Telefone;
+            txtEndereco.Text = agenciaSelecionada.Endereco;
+            txtDescricao.Text = agenciaSelecionada.Descricao;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
