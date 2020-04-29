@@ -4,20 +4,20 @@ using System.Windows;
 using System.Windows.Controls;
 
 namespace _02_XX_ByteBank.Agencias
-{ 
+{
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
         private readonly ByteBankEntities _contextoBancoDeDados = new ByteBankEntities();
-        private readonly AgenciasListBox lstAgencias;
+        private readonly ListBox lstAgencias;
 
         public MainWindow()
         {
             InitializeComponent();
 
-            lstAgencias = new AgenciasListBox(this);
+            lstAgencias = new ListBox();
             AtualizarControles();
         }
 
@@ -29,6 +29,8 @@ namespace _02_XX_ByteBank.Agencias
             Canvas.SetTop(lstAgencias, 15);
             Canvas.SetLeft(lstAgencias, 15);
 
+            lstAgencias.SelectionChanged += new SelectionChangedEventHandler(lstAgencias_SelectionChanged);
+
             container.Children.Add(lstAgencias);
 
             lstAgencias.Items.Clear();
@@ -37,9 +39,14 @@ namespace _02_XX_ByteBank.Agencias
                 lstAgencias.Items.Add(agencia);
         }
 
+        private void lstAgencias_SelectionChanged()
+        {
+
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var confirmacao = 
+            var confirmacao =
                 MessageBox.Show(
                     "Você deseja realmente excluir este item?",
                     "Confirmação",
