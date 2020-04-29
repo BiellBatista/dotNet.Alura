@@ -19,6 +19,7 @@ namespace _02_XX_ByteBank.Agencias
 
             lstAgencias = new ListBox();
             AtualizarControles();
+            AtualizarListaDeAgencias();
         }
 
         private void AtualizarControles()
@@ -32,7 +33,11 @@ namespace _02_XX_ByteBank.Agencias
             lstAgencias.SelectionChanged += new SelectionChangedEventHandler(lstAgencias_SelectionChanged);
 
             container.Children.Add(lstAgencias);
+            btnEditar.Click += new RoutedEventHandler(btnEditar_Click);
+        }
 
+        private void AtualizarListaDeAgencias()
+        {
             lstAgencias.Items.Clear();
             var agencias = _contextoBancoDeDados.Agencias.ToList();
             foreach (var agencia in agencias)
@@ -65,6 +70,12 @@ namespace _02_XX_ByteBank.Agencias
             {
                 //Não faz nada
             }
+        }
+
+        private void btnEditar_Click(object sender, RoutedEventArgs e)
+        {
+            var janelaEdicao = new EdicaoAgencia();
+            janelaEdicao.ShowDialog();
         }
     }
 }
