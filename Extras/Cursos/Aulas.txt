@@ -45,6 +45,12 @@ Curso de C#: Eventos, Delegates e Lambda
 	01 - Comportamentos e Eventos
 		01 - Introdução
 		02 - Nosso projeto inicial
+		03 - Comportamento em nossos elementos
+		04 - Comportamento de controles (A)
+		05 - Classes especializadas (A / B / C)
+		06 - Usando Eventos do dotNET
+		07 - O que aprendemos?
+		08 - Consolidando seu conhecimento
 	02 - Delegates
 	03 - Manipulando Delegates
 	04 - Funções e nosso próprio evento
