@@ -31,16 +31,28 @@ namespace _02_XX_ByteBank.Agencias
 
         private void AtualizarControles()
         {
-            btnOk.Click += new RoutedEventHandler(btnOk_Click);
             /**
-             * Adicionado um novo comportamento ao evento de click
-             * Eu só passo adicionar ou remover comportamentos, não posso atribuia (sobrescrever) os já existente
-             * += ou -=
+             * Eu posso combinar dois métodos delegates, porque eles são feitos para serem manipulados
              */
-            btnCancelar.Click += new RoutedEventHandler(btnCancelar_Click);
+            var okEventHandler = (RoutedEventHandler)btnOk_Click + Fechar;
+            // realizando a combinação, é equivalente ao de cima. Na verdade, é isso que o compilador faz, por baixo do pano
+            var cancelarEventHandler = (RoutedEventHandler)Delegate.Combine((RoutedEventHandler)btnCancelar_Click, (RoutedEventHandler)Fechar);
 
-            btnOk.Click += new RoutedEventHandler(Fechar);
-            btnCancelar.Click += new RoutedEventHandler(Fechar);
+            // não preciso do bloco abaixo, porque eu já combinei os métodos delegate
+            //btnOk.Click += new RoutedEventHandler(btnOk_Click);
+            ///**
+            // * Adicionado um novo comportamento ao evento de click
+            // * Eu só passo adicionar ou remover comportamentos, não posso atribuia (sobrescrever) os já existente
+            // * += ou -=
+            // */
+            //btnCancelar.Click += new RoutedEventHandler(btnCancelar_Click);
+
+            //btnOk.Click += new RoutedEventHandler(Fechar);
+            //btnCancelar.Click += new RoutedEventHandler(Fechar);
+
+            // como eu combinei os métodos delegate, eu posso fazer isso:
+            btnOk.Click += okEventHandler;
+            btnCancelar.Click += cancelarEventHandler;
         }
 
         private void btnOk_Click(object sender, RoutedEventArgs e) => DialogResult = true;

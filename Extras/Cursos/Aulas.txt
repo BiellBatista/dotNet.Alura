@@ -59,6 +59,9 @@ Curso de C#: Eventos, Delegates e Lambda
 		05 - Criando a janela de edição
 		06 - Assinando eventos mais de uma vez
 		07 - Mais manipulações de métodos
+		08 - Combinando delegates (B)
+		09 - O que aprendemos?
+		10 - Consolidando seu conhecimento
 	03 - Manipulando Delegates
 	04 - Funções e nosso próprio evento
 	05 - Avançando em Eventos
