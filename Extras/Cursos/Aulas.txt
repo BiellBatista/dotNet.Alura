@@ -57,6 +57,8 @@ Curso de C#: Eventos, Delegates e Lambda
 		03 - Respeitando assinaturas de delegate
 		04 - Entre eventos e delegates (A / B)
 		05 - Criando a janela de edição
+		06 - Assinando eventos mais de uma vez
+		07 - Mais manipulações de métodos
 	03 - Manipulando Delegates
 	04 - Funções e nosso próprio evento
 	05 - Avançando em Eventos

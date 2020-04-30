@@ -22,8 +22,8 @@
             <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Right"
                         Margin="0,5">
-                <Button Content="Ok" Margin="15,0" Padding="5"/>
-                <Button Content="Cancelar" Padding="5" />
+                <Button Content="Ok" Margin="15,0" Padding="5" Name="btnOk"/>
+                <Button Content="Cancelar" Padding="5" Name="btnCancelar" />
             </StackPanel>
         </StackPanel>
     </Canvas>
