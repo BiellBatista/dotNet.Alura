@@ -1,6 +1,7 @@
 ﻿using _03_XX_ByteBank.Agencias.DAL;
 using System;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Media;
 
 namespace _03_XX_ByteBank.Agencias
@@ -50,18 +51,35 @@ namespace _03_XX_ByteBank.Agencias
             btnOk.Click += okEventHandler;
             btnCancelar.Click += cancelarEventHandler;
 
-            txtNome.TextChanged += TxtNome_TextChanged;
+            txtNome.TextChanged += ConstruirDelegateValidacaoCampoNulo(txtNome);
+            txtDescricao.TextChanged += ConstruirDelegateValidacaoCampoNulo(txtDescricao);
+            txtEndereco.TextChanged += ConstruirDelegateValidacaoCampoNulo(txtEndereco);
+            txtNumero.TextChanged += ConstruirDelegateValidacaoCampoNulo(txtNumero);
+            txtTelefone.TextChanged += ConstruirDelegateValidacaoCampoNulo(txtTelefone);
         }
 
-        private void TxtNome_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        private TextChangedEventHandler ConstruirDelegateValidacaoCampoNulo(TextBox txt)
         {
-            var textoEstaVazio = String.IsNullOrEmpty(txtNome.Text);
+            return (sender, e) =>
+            {
+                var textoEstaVazio = String.IsNullOrEmpty(txt.Text);
 
-            if (textoEstaVazio)
-                txtNome.Background = new SolidColorBrush(Colors.OrangeRed);
-            else
-                txtNome.Background = new SolidColorBrush(Colors.White);
+                txt.Background = textoEstaVazio
+                ? new SolidColorBrush(Colors.OrangeRed)
+                : new SolidColorBrush(Colors.White);
+            };
         }
+
+        // não preciso deste método, porque o método de cima construi um delegate genérico
+        //private void TxtNome_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        //{
+        //    var textoEstaVazio = String.IsNullOrEmpty(txtNome.Text);
+
+        //    if (textoEstaVazio)
+        //        txtNome.Background = new SolidColorBrush(Colors.OrangeRed);
+        //    else
+        //        txtNome.Background = new SolidColorBrush(Colors.White);
+        //}
 
         // não preciso mais desse método, porque eu estou o declarando anonimamende lá em cima
         //private void btnOk_Click(object sender, RoutedEventArgs e) => DialogResult = true;
