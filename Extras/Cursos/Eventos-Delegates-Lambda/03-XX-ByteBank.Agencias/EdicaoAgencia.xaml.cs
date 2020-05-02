@@ -51,24 +51,34 @@ namespace _03_XX_ByteBank.Agencias
             btnOk.Click += okEventHandler;
             btnCancelar.Click += cancelarEventHandler;
 
-            txtNome.TextChanged += ConstruirDelegateValidacaoCampoNulo(txtNome);
-            txtDescricao.TextChanged += ConstruirDelegateValidacaoCampoNulo(txtDescricao);
-            txtEndereco.TextChanged += ConstruirDelegateValidacaoCampoNulo(txtEndereco);
-            txtNumero.TextChanged += ConstruirDelegateValidacaoCampoNulo(txtNumero);
-            txtTelefone.TextChanged += ConstruirDelegateValidacaoCampoNulo(txtTelefone);
+            txtNome.TextChanged += ValidarCampoNulo;
+            txtDescricao.TextChanged += ValidarCampoNulo;
+            txtEndereco.TextChanged += ValidarCampoNulo;
+            txtNumero.TextChanged += ValidarCampoNulo;
+            txtTelefone.TextChanged += ValidarCampoNulo;
         }
 
-        private TextChangedEventHandler ConstruirDelegateValidacaoCampoNulo(TextBox txt)
+        private void ValidarCampoNulo(object sender, EventArgs e)
         {
-            return (sender, e) =>
-            {
-                var textoEstaVazio = String.IsNullOrEmpty(txt.Text);
+            var txt = sender as TextBox;
+            var textoEstaVazio = String.IsNullOrEmpty(txt.Text);
 
-                txt.Background = textoEstaVazio
-                ? new SolidColorBrush(Colors.OrangeRed)
-                : new SolidColorBrush(Colors.White);
-            };
+            txt.Background = textoEstaVazio
+            ? new SolidColorBrush(Colors.OrangeRed)
+            : new SolidColorBrush(Colors.White);
         }
+
+        //private TextChangedEventHandler ConstruirDelegateValidacaoCampoNulo(TextBox txt)
+        //{
+        //    return (sender, e) =>
+        //    {
+        //        var textoEstaVazio = String.IsNullOrEmpty(txt.Text);
+
+        //        txt.Background = textoEstaVazio
+        //        ? new SolidColorBrush(Colors.OrangeRed)
+        //        : new SolidColorBrush(Colors.White);
+        //    };
+        //}
 
         // não preciso deste método, porque o método de cima construi um delegate genérico
         //private void TxtNome_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)

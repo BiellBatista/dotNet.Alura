@@ -71,5 +71,8 @@ Curso de C#: Eventos, Delegates e Lambda
 		06 - Validando campo de texto
 		07 - Construindo delegates dinamicamente
 		08 - Usando o parâmetro sender
+		09 - Debugando métodos anônimos (B)
+		10 - O que aprendemos?
+		11 - Consolidando seu conhecimento
 	04 - Funções e nosso próprio evento
 	05 - Avançando em Eventos
