@@ -77,4 +77,6 @@ Curso de C#: Eventos, Delegates e Lambda
 	04 - Funções e nosso próprio evento
 		01 - Projeto da aula anterior
 		02 - Usando funções
+		03 - Criando funções (A)
+		04 - Simplificando a sintaxe de funções
 	05 - Avançando em Eventos
