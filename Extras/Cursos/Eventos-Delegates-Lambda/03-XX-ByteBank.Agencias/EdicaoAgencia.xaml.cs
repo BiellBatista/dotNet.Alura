@@ -54,5 +54,8 @@ namespace _03_XX_ByteBank.Agencias
         //private void btnCancelar_Click(object sender, RoutedEventArgs e) => DialogResult = false;
 
         private void Fechar(object sender, RoutedEventArgs e) => Close();
+
+        //contravariância é o processo de receber um parâmetro B, só que a assinatura espera o A
+        //porém, o B é filho de A, com isso o compilador realizar um casting
     }
 }
