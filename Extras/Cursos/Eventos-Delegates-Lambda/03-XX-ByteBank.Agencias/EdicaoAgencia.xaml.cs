@@ -1,6 +1,7 @@
 ﻿using _03_XX_ByteBank.Agencias.DAL;
 using System;
 using System.Windows;
+using System.Windows.Media;
 
 namespace _03_XX_ByteBank.Agencias
 {
@@ -48,6 +49,18 @@ namespace _03_XX_ByteBank.Agencias
 
             btnOk.Click += okEventHandler;
             btnCancelar.Click += cancelarEventHandler;
+
+            txtNome.TextChanged += TxtNome_TextChanged;
+        }
+
+        private void TxtNome_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            var textoEstaVazio = String.IsNullOrEmpty(txtNome.Text);
+
+            if (textoEstaVazio)
+                txtNome.Background = new SolidColorBrush(Colors.OrangeRed);
+            else
+                txtNome.Background = new SolidColorBrush(Colors.White);
         }
 
         // não preciso mais desse método, porque eu estou o declarando anonimamende lá em cima

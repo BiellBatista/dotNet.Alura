@@ -69,5 +69,6 @@ Curso de C#: Eventos, Delegates e Lambda
 		04 - Contravariância em delegates
 		05 - Usando expressões lambdas
 		06 - Validando campo de texto
+		07 - Construindo delegates dinamicamente
 	04 - Funções e nosso próprio evento
 	05 - Avançando em Eventos
