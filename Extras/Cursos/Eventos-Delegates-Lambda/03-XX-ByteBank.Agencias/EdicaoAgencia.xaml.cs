@@ -31,17 +31,27 @@ namespace _03_XX_ByteBank.Agencias
 
         private void AtualizarControles()
         {
-            var okEventHandler = (RoutedEventHandler)btnOk_Click + Fechar;
-            var cancelarEventHandler = (RoutedEventHandler)btnCancelar_Click + Fechar;
+            // declarando o método btnOk_Click no modo anonimo
+            RoutedEventHandler dialogResultTrue = delegate (object sender, RoutedEventArgs e) { DialogResult = true; };
+            // declarando o método btnCancelar_Click no modo anonimo
+            RoutedEventHandler dialogResultFalse = delegate (object sender, RoutedEventArgs e) { DialogResult = false; };
+
+            // não preciso mais disso, porque estou utilizando um açuca sintatico
+            //var okEventHandler = (RoutedEventHandler)btnOk_Click + Fechar;
+            //var cancelarEventHandler = (RoutedEventHandler)btnCancelar_Click + Fechar;
+
+            var okEventHandler = dialogResultTrue + Fechar;
+            var cancelarEventHandler = dialogResultFalse + Fechar;
 
             btnOk.Click += okEventHandler;
             btnCancelar.Click += cancelarEventHandler;
         }
 
-        private void btnOk_Click(object sender, RoutedEventArgs e) => DialogResult = true;
+        // não preciso mais desse método, porque eu estou o declarando anonimamende lá em cima
+        //private void btnOk_Click(object sender, RoutedEventArgs e) => DialogResult = true;
 
-
-        private void btnCancelar_Click(object sender, RoutedEventArgs e) => DialogResult = false;
+        // não preciso mais desse método, porque eu estou o declarando anonimamende lá em cima
+        //private void btnCancelar_Click(object sender, RoutedEventArgs e) => DialogResult = false;
 
         private void Fechar(object sender, RoutedEventArgs e) => Close();
     }

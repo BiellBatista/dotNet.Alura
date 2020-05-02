@@ -65,5 +65,7 @@ Curso de C#: Eventos, Delegates e Lambda
 	03 - Manipulando Delegates
 		01 - Projeto da aula anterior
 		02 - Usando métodos anônimos para criar delegates
+		03 - Métodos anônimos (B)
+		04 - Contravariância em delegates
 	04 - Funções e nosso próprio evento
 	05 - Avançando em Eventos
