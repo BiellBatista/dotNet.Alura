@@ -75,4 +75,6 @@ Curso de C#: Eventos, Delegates e Lambda
 		10 - O que aprendemos?
 		11 - Consolidando seu conhecimento
 	04 - Funções e nosso próprio evento
+		01 - Projeto da aula anterior
+		02 - Usando funções
 	05 - Avançando em Eventos
