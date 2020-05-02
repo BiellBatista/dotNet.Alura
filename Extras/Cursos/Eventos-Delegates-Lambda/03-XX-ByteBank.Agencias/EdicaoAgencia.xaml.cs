@@ -32,9 +32,12 @@ namespace _03_XX_ByteBank.Agencias
         private void AtualizarControles()
         {
             // declarando o método btnOk_Click no modo anonimo
-            RoutedEventHandler dialogResultTrue = delegate (object sender, RoutedEventArgs e) { DialogResult = true; };
+            //RoutedEventHandler dialogResultTrue = delegate (object sender, RoutedEventArgs e) { DialogResult = true; };
+            // isso é a equivalencia do de cima
+            RoutedEventHandler dialogResultTrue = (sender, e) => DialogResult = true;
             // declarando o método btnCancelar_Click no modo anonimo
-            RoutedEventHandler dialogResultFalse = delegate (object sender, RoutedEventArgs e) { DialogResult = false; };
+            //RoutedEventHandler dialogResultFalse = delegate (object sender, RoutedEventArgs e) { DialogResult = false; };
+            RoutedEventHandler dialogResultFalse = (sender, e) => DialogResult = false;
 
             // não preciso mais disso, porque estou utilizando um açuca sintatico
             //var okEventHandler = (RoutedEventHandler)btnOk_Click + Fechar;
@@ -57,5 +60,7 @@ namespace _03_XX_ByteBank.Agencias
 
         //contravariância é o processo de receber um parâmetro B, só que a assinatura espera o A
         //porém, o B é filho de A, com isso o compilador realizar um casting
+
+        // não consigo aplicar a contravariância em métodos anonimos
     }
 }

@@ -68,5 +68,6 @@ Curso de C#: Eventos, Delegates e Lambda
 		03 - Métodos anônimos (B)
 		04 - Contravariância em delegates
 		05 - Usando expressões lambdas
+		06 - Validando campo de texto
 	04 - Funções e nosso próprio evento
 	05 - Avançando em Eventos
