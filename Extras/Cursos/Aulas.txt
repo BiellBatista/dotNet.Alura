@@ -83,4 +83,6 @@ Curso de C#: Eventos, Delegates e Lambda
 		06 - O Delegate e Evento de validação
 		07 - Criando Delegates (A / C / D)
 		08 - Executando nossos eventos
+		09 - O que aprendemos?
+		10 - Consolidando seu conhecimento
 	05 - Avançando em Eventos
