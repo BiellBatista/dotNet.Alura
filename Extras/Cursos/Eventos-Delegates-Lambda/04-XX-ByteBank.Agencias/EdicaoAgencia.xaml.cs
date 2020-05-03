@@ -21,6 +21,14 @@ namespace _04_XX_ByteBank.Agencias
             _agencia = agencia ?? throw new ArgumentNullException(nameof(agencia));
             AtualizarCamposDeTexto();
             AtualizarControles();
+            //na linha de baixo, estou forçando a chamada de um evento e passando um evento vázio, porque eu não tenho este evento
+            ValidarCampoNulo(txtNumero, EventArgs.Empty);
+            ValidarSomenteNumero(txtNumero, EventArgs.Empty);
+
+            ValidarCampoNulo(txtNome, EventArgs.Empty);
+            ValidarCampoNulo(txtTelefone, EventArgs.Empty);
+            ValidarCampoNulo(txtEndereco, EventArgs.Empty);
+            ValidarCampoNulo(txtDescricao, EventArgs.Empty);
         }
 
         private void AtualizarCamposDeTexto()
