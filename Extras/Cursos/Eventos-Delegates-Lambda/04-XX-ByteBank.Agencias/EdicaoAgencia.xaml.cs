@@ -55,12 +55,13 @@ namespace _04_XX_ByteBank.Agencias
         private void ValidarSomenteNumero(object sender, EventArgs e)
         {
             var txt = sender as TextBox;
-            Func<char, bool> verificaSeEhDigito = caractere =>
-            {
-                return Char.IsDigit(caractere);
-            };
-
-            var todosOsCaracteresSaoDigitos = txt.Text.All(verificaSeEhDigito);
+            // nao preciso mais disso
+            //Func<char, bool> verificaSeEhDigito = caractere =>
+            //{
+            //    return Char.IsDigit(caractere);
+            //};
+            // nao preciso da funcao de cima, porque ela foi reduzida, segue o resultado
+            var todosOsCaracteresSaoDigitos = txt.Text.All(Char.IsDigit);
 
             txt.Background = todosOsCaracteresSaoDigitos
             ? new SolidColorBrush(Colors.White)
