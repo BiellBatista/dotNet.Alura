@@ -39,7 +39,20 @@ namespace _05_XX_ByteBank.Agencias
         {
             if (_validacao != null)
             {
-                var ehValido = _validacao(Text);
+                // com este método, eu consigo acessar todos os delegates assinados (atributos) ao objeto (evento)
+                var listaValidacao = _validacao.GetInvocationList();
+                //var ehValido = _validacao(Text);
+                var ehValido = true;
+
+                foreach (ValidacaoEventHandler validacao in listaValidacao)
+                {
+                    if(!validacao(Text))
+                    {
+                        ehValido = false;
+                        break;
+                    }
+                }
+
                 Background = ehValido
                 ? new SolidColorBrush(Colors.White)
                 : new SolidColorBrush(Colors.OrangeRed);
@@ -47,3 +60,8 @@ namespace _05_XX_ByteBank.Agencias
         }
     }
 }
+
+/**
+ * O último valor (evento) que fica amarzenado no evento da tela é o do último delegate, porque os que foram executados anteriormente, são descatados
+ * isso é o principio da máquina de estado
+ */
