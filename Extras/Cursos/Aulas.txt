@@ -88,3 +88,4 @@ Curso de C#: Eventos, Delegates e Lambda
 	05 - Avançando em Eventos
 		01 - Projeto da aula anterior
 		02 - Usando os metodos Add e Remove
+		03 - Usando o GetExecutionList
