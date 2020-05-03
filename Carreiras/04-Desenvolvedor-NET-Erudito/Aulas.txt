@@ -1,0 +1,49 @@
+SOLID com C#: Orientação a Objetos com C#
+	01 - Coesão e o Single Responsibility Principle
+		01 - Vídeo 1
+		02 - Vídeo 2
+	02 - Acoplamento e a estabilidade
+	03 - Classes abertas, Open Closed e Dependency Inversion Principles
+	04 - Entendendo o encapsulamento
+	05 - Herança e o Liskov Substitutive Principle
+Design Patterns C# I: Boas práticas de programação
+	01 - A grande variedade de impostos e o padrão Strategy
+	02 - Muitos Descontos e o Chain of Responsibility
+	03 - Códigos parecidos e o Template Method
+	04 - Comportamentos compostos por outros comportamentos e o Decorator
+	05 - Estados que variam e o State
+	06 - Criação de objetos e o Builder
+	07 - Executando diferentes ações e o Observer
+	08 - Além dos padrões de projeto
+Design Patterns C# II: Boas práticas de programação
+	01 - Fábricas e o problema de criação de objetos
+	02 - Muitos objetos e o Flyweight
+	03 - Salvando estados anteriores e o Memento
+	04 - DSLs e o Interpreter
+	05 - Estruturas de dados e o Visitor
+	06 - Bridges
+	07 - Diferentes ações com Command
+	08 - Adapter
+	09 - Façades e Singletons
+C# Refatoração Parte 1: Praticando refatoração de código
+	01 - Extraindo métodos
+	02 - Extraindo variáveis temporárias
+	03 - Quebrando Variáveis e Preservando Parâmetros
+	04 - Substituindo Método
+	05 - Movendo Método e Campo
+	06 - Extraindo e Incorporando Classe
+	07 - Delegação e Intermediários
+	08 - Estendendo Classes
+C# Refatoração Parte 2: Refatorações baseadas em Orientação a Objetos
+	01 - Encapsulamento e Orientação a Objetos
+	02 - Lidando com Referências
+	03 - Dos Códigos às Classes
+	04 - Simplificando Expressões Condicionais
+	05 - Condições com Orientação a Objetos
+C# Refatoração Parte 3: Hierarquias de classes
+	01 - Ajustando Parâmetros e Métodos
+	02 - Criando parâmetros mais simples
+	03 - Trabalhando melhor com códigos de erro e exceções
+	04 - Descobrindo onde colocar campos e métodos
+	05 - Extraindo superclasse, subclasse e interfaces
+	06 - Aplicando herança e delegação
