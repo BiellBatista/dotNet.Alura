@@ -1,9 +1,10 @@
-﻿using System.Windows.Controls;
+﻿using System;
+using System.Windows.Controls;
 using System.Windows.Media;
 
 namespace _05_XX_ByteBank.Agencias
 {
-    public delegate bool ValidacaoEventHandler(string texto);
+    public delegate void ValidacaoEventHandler(object sender, ValidacaoEventArgs e);
 
     public class ValidacaoTextBox : TextBox
     {
@@ -48,12 +49,14 @@ namespace _05_XX_ByteBank.Agencias
             {
                 // com este método, eu consigo acessar todos os delegates assinados (atributos) ao objeto (evento)
                 var listaValidacao = _validacao.GetInvocationList();
+                var eventArgs = new ValidacaoEventArgs(Text);
                 //var ehValido = _validacao(Text);
                 var ehValido = true;
 
                 foreach (ValidacaoEventHandler validacao in listaValidacao)
                 {
-                    if (!validacao(Text))
+                    validacao(this, eventArgs);
+                    if (!eventArgs.EhValido)
                     {
                         ehValido = false;
                         break;

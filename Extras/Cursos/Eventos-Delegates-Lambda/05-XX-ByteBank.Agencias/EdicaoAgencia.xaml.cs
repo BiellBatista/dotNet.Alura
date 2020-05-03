@@ -50,14 +50,16 @@ namespace _05_XX_ByteBank.Agencias
             txtTelefone.Validacao += ValidarCampoNulo;
         }
 
-        private bool ValidarSomenteNumero(string texto)
+        private void ValidarSomenteNumero(object sender, ValidacaoEventArgs e)
         {
-            return texto.All(Char.IsDigit);
+            var ehValido = e.Texto.All(Char.IsDigit);
+            e.EhValido = ehValido;
         }
 
-        private bool ValidarCampoNulo(string texto)
+        private void ValidarCampoNulo(object sender, ValidacaoEventArgs e)
         {
-            return !String.IsNullOrEmpty(texto);
+            var ehValido = !String.IsNullOrEmpty(e.Texto);
+            e.EhValido = ehValido;
         }
 
         private void Fechar(object sender, RoutedEventArgs e) => Close();

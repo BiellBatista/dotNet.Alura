@@ -92,3 +92,8 @@ Curso de C#: Eventos, Delegates e Lambda
 		04 - Lista de delegates (A)
 		05 - Usando boas praticas no OnValidacao
 		06 - Criando nossos argumentos de evento
+		07 - Convenções (A / C / D)
+		08 - Consolidando seu conhecimento
+		09 - O que aprendemos?
+		10 - Projeto final do curso
+		11 - Conclusão
