@@ -81,4 +81,6 @@ Curso de C#: Eventos, Delegates e Lambda
 		04 - Simplificando a sintaxe de funções
 		05 - Criando um campo de validação customizado
 		06 - O Delegate e Evento de validação
+		07 - Criando Delegates (A / C / D)
+		08 - Executando nossos eventos
 	05 - Avançando em Eventos

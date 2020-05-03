@@ -21,14 +21,16 @@ namespace _04_XX_ByteBank.Agencias
             _agencia = agencia ?? throw new ArgumentNullException(nameof(agencia));
             AtualizarCamposDeTexto();
             AtualizarControles();
-            //na linha de baixo, estou forçando a chamada de um evento e passando um evento vázio, porque eu não tenho este evento
-            ValidarCampoNulo(txtNumero, EventArgs.Empty);
-            ValidarSomenteNumero(txtNumero, EventArgs.Empty);
 
-            ValidarCampoNulo(txtNome, EventArgs.Empty);
-            ValidarCampoNulo(txtTelefone, EventArgs.Empty);
-            ValidarCampoNulo(txtEndereco, EventArgs.Empty);
-            ValidarCampoNulo(txtDescricao, EventArgs.Empty);
+            // não preciso dessa sequência de linha, porque eu irei trabalhar com a minha manipulação personalizada
+            ////na linha de baixo, estou forçando a chamada de um evento e passando um evento vázio, porque eu não tenho este evento
+            //ValidarCampoNulo(txtNumero, EventArgs.Empty);
+            //ValidarSomenteNumero(txtNumero, EventArgs.Empty);
+
+            //ValidarCampoNulo(txtNome, EventArgs.Empty);
+            //ValidarCampoNulo(txtTelefone, EventArgs.Empty);
+            //ValidarCampoNulo(txtEndereco, EventArgs.Empty);
+            //ValidarCampoNulo(txtDescricao, EventArgs.Empty);
         }
 
         private void AtualizarCamposDeTexto()
@@ -51,39 +53,42 @@ namespace _04_XX_ByteBank.Agencias
             btnOk.Click += okEventHandler;
             btnCancelar.Click += cancelarEventHandler;
 
-            txtNumero.TextChanged += ValidarCampoNulo;
-            txtNumero.TextChanged += ValidarSomenteNumero;
+            //txtNumero.TextChanged += ValidarCampoNulo;
+            // usando a minha validacao personalizada
+            txtNumero.Validacao += ValidarCampoNulo;
+            txtNumero.Validacao += ValidarSomenteNumero;
 
-            txtNome.TextChanged += ValidarCampoNulo;
-            txtDescricao.TextChanged += ValidarCampoNulo;
-            txtEndereco.TextChanged += ValidarCampoNulo;
-            txtTelefone.TextChanged += ValidarCampoNulo;
+            txtNome.Validacao += ValidarCampoNulo;
+            txtDescricao.Validacao += ValidarCampoNulo;
+            txtEndereco.Validacao += ValidarCampoNulo;
+            txtTelefone.Validacao += ValidarCampoNulo;
         }
 
-        private void ValidarSomenteNumero(object sender, EventArgs e)
+        private bool ValidarSomenteNumero(string texto)
         {
-            var txt = sender as TextBox;
+            //var txt = sender as TextBox;
             // nao preciso mais disso
             //Func<char, bool> verificaSeEhDigito = caractere =>
             //{
             //    return Char.IsDigit(caractere);
             //};
             // nao preciso da funcao de cima, porque ela foi reduzida, segue o resultado
-            var todosOsCaracteresSaoDigitos = txt.Text.All(Char.IsDigit);
-
-            txt.Background = todosOsCaracteresSaoDigitos
-            ? new SolidColorBrush(Colors.White)
-            : new SolidColorBrush(Colors.OrangeRed);
+            //var todosOsCaracteresSaoDigitos = txt.Text.All(Char.IsDigit);
+            return texto.All(Char.IsDigit);
+            //txt.Background = todosOsCaracteresSaoDigitos
+            //? new SolidColorBrush(Colors.White)
+            //: new SolidColorBrush(Colors.OrangeRed);
         }
 
-        private void ValidarCampoNulo(object sender, EventArgs e)
+        private bool ValidarCampoNulo(string texto)
         {
-            var txt = sender as TextBox;
-            var textoEstaVazio = String.IsNullOrEmpty(txt.Text);
+            //var txt = sender as TextBox;
+            //var textoEstaVazio = String.IsNullOrEmpty(txt.Text);
 
-            txt.Background = textoEstaVazio
-            ? new SolidColorBrush(Colors.OrangeRed)
-            : new SolidColorBrush(Colors.White);
+            //txt.Background = textoEstaVazio
+            //? new SolidColorBrush(Colors.OrangeRed)
+            //: new SolidColorBrush(Colors.White);
+            return !String.IsNullOrEmpty(texto);
         }
 
         private void Fechar(object sender, RoutedEventArgs e) => Close();

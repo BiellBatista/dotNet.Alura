@@ -7,7 +7,10 @@ using System.Windows.Controls;
 
 namespace _04_XX_ByteBank.Agencias
 {
+    public delegate bool ValidacaoEventHandler(string texto);
+
     public class ValidacaoTextBox : TextBox
     {
+        public event ValidacaoEventHandler Validacao;
     }
 }
