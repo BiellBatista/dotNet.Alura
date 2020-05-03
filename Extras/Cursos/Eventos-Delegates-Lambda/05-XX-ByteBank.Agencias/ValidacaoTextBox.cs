@@ -25,17 +25,24 @@ namespace _05_XX_ByteBank.Agencias
             }
         }
 
-        public ValidacaoTextBox()
-        {
-            TextChanged += ValidacaoTextBox_TextChanged;
-        }
+        // não preciso desse construtor, porque estarei utilizando uma sobrecarga de método (OnTextChanged)
+        //public ValidacaoTextBox()
+        //{
+        //    TextChanged += ValidacaoTextBox_TextChanged;
+        //}
+        // não preciso desse método, porque estarei utilizando uma sobrecarga de método (OnTextChanged)
+        //private void ValidacaoTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        //{
+        //    OnValidacao();
+        //}
 
-        private void ValidacaoTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        protected override void OnTextChanged(TextChangedEventArgs e)
         {
+            base.OnTextChanged(e);
             OnValidacao();
         }
 
-        private void OnValidacao()
+        protected virtual void OnValidacao()
         {
             if (_validacao != null)
             {
@@ -46,7 +53,7 @@ namespace _05_XX_ByteBank.Agencias
 
                 foreach (ValidacaoEventHandler validacao in listaValidacao)
                 {
-                    if(!validacao(Text))
+                    if (!validacao(Text))
                     {
                         ehValido = false;
                         break;

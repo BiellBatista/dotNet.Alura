@@ -91,3 +91,4 @@ Curso de C#: Eventos, Delegates e Lambda
 		03 - Usando o GetExecutionList
 		04 - Lista de delegates (A)
 		05 - Usando boas praticas no OnValidacao
+		06 - Criando nossos argumentos de evento
