@@ -4,7 +4,15 @@ SOLID com C#: Orientação a Objetos com C#
 		02 - Vídeo 2
 		03 - Vídeo 3
 		04 - Vídeo 4
+		05 - Coesão e o Single Responsibility Principle
+		06 - Coesão
+		07 - Detectando classes não coesas
+		08 - O que fazer com classes não coesas?
+		09 - SRP
+		10 - Mão na massa
+		11 - Interface Segregation Principle
 	02 - Acoplamento e a estabilidade
+		01 - Vídeo 1
 	03 - Classes abertas, Open Closed e Dependency Inversion Principles
 	04 - Entendendo o encapsulamento
 	05 - Herança e o Liskov Substitutive Principle
