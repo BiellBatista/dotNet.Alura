@@ -2,6 +2,8 @@ SOLID com C#: Orientação a Objetos com C#
 	01 - Coesão e o Single Responsibility Principle
 		01 - Vídeo 1
 		02 - Vídeo 2
+		03 - Vídeo 3
+		04 - Vídeo 4
 	02 - Acoplamento e a estabilidade
 	03 - Classes abertas, Open Closed e Dependency Inversion Principles
 	04 - Entendendo o encapsulamento

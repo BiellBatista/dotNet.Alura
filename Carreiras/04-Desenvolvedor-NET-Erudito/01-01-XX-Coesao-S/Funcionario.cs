@@ -10,5 +10,10 @@
             Cargo = cargo;
             SalarioBase = salarioBase;
         }
+
+        public double CalcularSalario()
+        {
+            return this.Cargo.Regra.Calcular(this);
+        }
     }
 }

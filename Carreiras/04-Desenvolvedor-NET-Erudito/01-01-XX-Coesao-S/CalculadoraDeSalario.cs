@@ -6,7 +6,7 @@ namespace _01_01_XX_Coesao_S
     {
         public double Calcular(Funcionario funcionario)
         {
-            return funcionario.Cargo.Regra.Calcular(funcionario);
+            return funcionario.CalcularSalario();
         }
     }
 }
