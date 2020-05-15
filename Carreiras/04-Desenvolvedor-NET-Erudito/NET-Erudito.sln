@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-01-XX-Coesao-S", "01-01-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-02-XX-Acoplamento", "01-02-XX-Acoplamento\01-02-XX-Acoplamento.csproj", "{D89C5325-0CD7-4BF7-AE80-1A0947506093}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-03-XX-OCP-DIP", "01-03-XX-OCP-DIP\01-03-XX-OCP-DIP.csproj", "{685A2DA7-25E1-4610-A3D0-593FFF0F95F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D89C5325-0CD7-4BF7-AE80-1A0947506093}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D89C5325-0CD7-4BF7-AE80-1A0947506093}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D89C5325-0CD7-4BF7-AE80-1A0947506093}.Release|Any CPU.Build.0 = Release|Any CPU
+		{685A2DA7-25E1-4610-A3D0-593FFF0F95F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{685A2DA7-25E1-4610-A3D0-593FFF0F95F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{685A2DA7-25E1-4610-A3D0-593FFF0F95F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{685A2DA7-25E1-4610-A3D0-593FFF0F95F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

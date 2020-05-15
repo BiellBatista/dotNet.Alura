@@ -19,6 +19,7 @@ SOLID com C#: Orientação a Objetos com C#
 		05 - Resolvendo problema do acoplamento
 		06 - Mão na massa
 	03 - Classes abertas, Open Closed e Dependency Inversion Principles
+		01 - Vídeo 1
 	04 - Entendendo o encapsulamento
 	05 - Herança e o Liskov Substitutive Principle
 Design Patterns C# I: Boas práticas de programação
