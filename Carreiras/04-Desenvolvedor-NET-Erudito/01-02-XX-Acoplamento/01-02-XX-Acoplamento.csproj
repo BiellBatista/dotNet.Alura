@@ -42,17 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculadoraDeSalario.cs" />
-    <Compile Include="Cargo.cs" />
-    <Compile Include="Dba.cs" />
-    <Compile Include="Desenvolvedor.cs" />
-    <Compile Include="DezOuVintePorcento.cs" />
-    <Compile Include="Funcionario.cs" />
-    <Compile Include="IRegraDeCalculo.cs" />
+    <Compile Include="EnviadorDeEmail.cs" />
+    <Compile Include="Fatura.cs" />
+    <Compile Include="GeradorDeNotaFiscal.cs" />
+    <Compile Include="IAcaoAposGerarNota.cs" />
+    <Compile Include="NotaFiscal.cs" />
+    <Compile Include="NotaFiscalDao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuinzeOuVinteCincoPorcento.cs" />
-    <Compile Include="Tester.cs" />
+    <Compile Include="SAP.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

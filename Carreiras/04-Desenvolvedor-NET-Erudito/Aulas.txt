@@ -13,6 +13,11 @@ SOLID com C#: Orientação a Objetos com C#
 		11 - Interface Segregation Principle
 	02 - Acoplamento e a estabilidade
 		01 - Vídeo 1
+		02 - Acoplamento e a estabilidade
+		03 - Problema do acoplamento
+		04 - Classes estáveis
+		05 - Resolvendo problema do acoplamento
+		06 - Mão na massa
 	03 - Classes abertas, Open Closed e Dependency Inversion Principles
 	04 - Entendendo o encapsulamento
 	05 - Herança e o Liskov Substitutive Principle

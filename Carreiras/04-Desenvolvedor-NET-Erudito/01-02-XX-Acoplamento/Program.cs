@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace _01_02_XX_Acoplamento
 {
@@ -6,13 +7,18 @@ namespace _01_02_XX_Acoplamento
     {
         static void Main(string[] args)
         {
-            var calculadora = new CalculadoraDeSalario();
-            var funcionario = new Funcionario(new Desenvolvedor(new DezOuVintePorcento()), 2000);
+            EnviadorDeEmail enviadorDeEmail = new EnviadorDeEmail();
+            NotaFiscalDao nfDao = new NotaFiscalDao();
+            SAP sap = new SAP();
+            IList<IAcaoAposGerarNota> acoes = new List<IAcaoAposGerarNota>();
+            acoes.Add(enviadorDeEmail);
+            acoes.Add(nfDao);
+            acoes.Add(sap);
+            GeradorDeNotaFiscal gnf = new GeradorDeNotaFiscal(acoes);
+            Fatura fatura = new Fatura(200, "Gabriel Batista");
 
-            double resultado = calculadora.Calcular(funcionario);
-
-            Console.WriteLine("O salario de um desenvolvedor que ganha 2000 bruto eh: " + resultado);
-            Console.ReadKey();
+            gnf.Gerar(fatura);
+            Console.ReadLine();
         }
     }
 }
