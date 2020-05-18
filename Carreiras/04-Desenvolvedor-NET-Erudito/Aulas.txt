@@ -20,6 +20,11 @@ SOLID com C#: Orientação a Objetos com C#
 		06 - Mão na massa
 	03 - Classes abertas, Open Closed e Dependency Inversion Principles
 		01 - Vídeo 1
+		02 - Classes abertas, Open Closed e Dependency Inversion Principles
+		03 - OCP
+		04 - DIP
+		05 - OCP e DIP
+		06 - Mão na massa!
 	04 - Entendendo o encapsulamento
 	05 - Herança e o Liskov Substitutive Principle
 Design Patterns C# I: Boas práticas de programação

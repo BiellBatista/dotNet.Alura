@@ -1,5 +1,5 @@
+using _01_02_XX_Acoplamento;
 using System;
-using System.Collections.Generic;
 
 namespace _01_03_XX_OCP_DIP
 {
@@ -7,17 +7,12 @@ namespace _01_03_XX_OCP_DIP
     {
         static void Main(string[] args)
         {
-            EnviadorDeEmail enviadorDeEmail = new EnviadorDeEmail();
-            NotaFiscalDao nfDao = new NotaFiscalDao();
-            SAP sap = new SAP();
-            IList<IAcaoAposGerarNota> acoes = new List<IAcaoAposGerarNota>();
-            acoes.Add(enviadorDeEmail);
-            acoes.Add(nfDao);
-            acoes.Add(sap);
-            GeradorDeNotaFiscal gnf = new GeradorDeNotaFiscal(acoes);
-            Fatura fatura = new Fatura(200, "Gabriel Batista");
+            Compra compra = new Compra(500, "sao paulo");
+            CalculadoraDePrecos cacl = new CalculadoraDePrecos(new TabelaDePrecoPadrao(), new Frete());
 
-            gnf.Gerar(fatura);
+            double resultado = cacl.Calcular(compra);
+
+            Console.WriteLine("O preco da compra e: " + resultado);
             Console.ReadLine();
         }
     }
