@@ -1,4 +1,4 @@
-﻿namespace _01_03_XX_OCP_DIP
+﻿namespace _01_04_XX_Encapsulamento
 {
     public class Transportadora : IServicoDeEntrega
     {

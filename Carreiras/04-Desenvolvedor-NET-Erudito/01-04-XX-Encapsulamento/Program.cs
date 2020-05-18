@@ -1,7 +1,6 @@
-using _01_03_XX_OCP_DIP;
 using System;
 
-namespace _01_03_XX_OCP_DIP
+namespace _01_04_XX_Encapsulamento
 {
     class Program
     {

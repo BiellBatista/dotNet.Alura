@@ -26,6 +26,7 @@ SOLID com C#: Orientação a Objetos com C#
 		05 - OCP e DIP
 		06 - Mão na massa!
 	04 - Entendendo o encapsulamento
+		01 - Vídeo 1
 	05 - Herança e o Liskov Substitutive Principle
 Design Patterns C# I: Boas práticas de programação
 	01 - A grande variedade de impostos e o padrão Strategy
