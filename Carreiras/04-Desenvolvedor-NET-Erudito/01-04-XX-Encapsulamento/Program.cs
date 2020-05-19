@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace _01_04_XX_Encapsulamento
 {
@@ -6,12 +7,17 @@ namespace _01_04_XX_Encapsulamento
     {
         static void Main(string[] args)
         {
-            Compra compra = new Compra(500, "sao paulo");
-            CalculadoraDePrecos cacl = new CalculadoraDePrecos(new TabelaDePrecoPadrao(), new Frete());
+            List<Boleto> boletos = new List<Boleto>();
+            boletos.Add(new Boleto(200));
+            boletos.Add(new Boleto(300));
+            boletos.Add(new Boleto(4000));
 
-            double resultado = cacl.Calcular(compra);
+            Fatura fatura = new Fatura("Caelum", 900);
+            ProcessadorDeBoletos pdb = new ProcessadorDeBoletos();
 
-            Console.WriteLine("O preco da compra e: " + resultado);
+            pdb.Processar(boletos, fatura);
+
+            Console.WriteLine(fatura.Pago);
             Console.ReadLine();
         }
     }

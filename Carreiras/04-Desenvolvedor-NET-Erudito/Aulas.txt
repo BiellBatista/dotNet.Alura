@@ -27,6 +27,11 @@ SOLID com C#: Orientação a Objetos com C#
 		06 - Mão na massa!
 	04 - Entendendo o encapsulamento
 		01 - Vídeo 1
+		02 - Entendendo o encapsulamento
+		03 - O que é encapsulamento?
+		04 - Descobrindo código não encapsulado
+		05 - Lei de Demeter
+		06 - Mão na massa!
 	05 - Herança e o Liskov Substitutive Principle
 Design Patterns C# I: Boas práticas de programação
 	01 - A grande variedade de impostos e o padrão Strategy
