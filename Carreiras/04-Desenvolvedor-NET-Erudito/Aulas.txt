@@ -34,6 +34,11 @@ SOLID com C#: Orientação a Objetos com C#
 		06 - Mão na massa!
 	05 - Herança e o Liskov Substitutive Principle
 		01 - Vídeo 1
+		02 - Herança e o Liskov Substitutive Principle
+		03 - Problemas da herança
+		04 - Maneiras de reutilizar comportamento
+		05 - Leia mais sobre Liskov
+		06 - Mão na massa!
 Design Patterns C# I: Boas práticas de programação
 	01 - A grande variedade de impostos e o padrão Strategy
 	02 - Muitos Descontos e o Chain of Responsibility
