@@ -28,7 +28,10 @@ namespace _01_XX_TDD_xUnit.Core
 
         public void TerminaPregao()
         {
-            Ganhador = Lances.OrderBy(l => l.Valor).Last();
+            Ganhador = Lances
+                .DefaultIfEmpty(new Lance(null, 0))
+                .OrderBy(l => l.Valor)
+                .LastOrDefault();
         }
     }
 }

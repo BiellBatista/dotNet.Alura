@@ -100,5 +100,21 @@ namespace _02_XX_TDD_xUnit.Tests
             Assert.Equal(valorEsperado, valorObtido);
             Assert.Equal(beltrano, leilao.Ganhador.Cliente);
         }
+
+        [Fact]
+        public void LeilaoSemLances()
+        {
+            //Arranje - Cenário de entrada.
+            var leilao = new Leilao("Van Gogh");
+
+            //Act - Método que está sendo testado
+            leilao.TerminaPregao();
+
+            //Assert - Seção de verificação
+            var valorEsperado = 0;
+            var valorObtido = leilao.Ganhador.Valor;
+
+            Assert.Equal(valorEsperado, valorObtido);
+        }
     }
 }
