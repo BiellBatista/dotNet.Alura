@@ -12,6 +12,7 @@ namespace _03_XX_TDD_xUnit.Core
 
     public class Leilao
     {
+        private Interessada _ultimoCliente;
         private IList<Lance> _lances;
         public IEnumerable<Lance> Lances => _lances;
         public string Peca { get; }
@@ -29,7 +30,11 @@ namespace _03_XX_TDD_xUnit.Core
         {
             if (Estado == EstadoLeilao.LeilaoEmAndamento)
             {
-                _lances.Add(new Lance(cliente, valor));
+                if (cliente != _ultimoCliente)
+                {
+                    _lances.Add(new Lance(cliente, valor));
+                    _ultimoCliente = cliente;
+                }
             }
         }
 
