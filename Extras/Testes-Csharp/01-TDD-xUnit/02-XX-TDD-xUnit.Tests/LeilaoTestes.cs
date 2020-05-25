@@ -46,5 +46,54 @@ namespace _02_XX_TDD_xUnit.Tests
 
             Assert.Equal(valorEsperado, valorObtido);
         }
+
+        [Fact]
+        public void LeilaoComLancesOrdenadosPorValor()
+        {
+            //Arranje - Cenário de entrada.
+            var leilao = new Leilao("Van Gogh");
+            var fulano = new Interessada("Fulano", leilao);
+            var maria = new Interessada("Maria", leilao);
+
+            leilao.RecebeLance(fulano, 800);
+            leilao.RecebeLance(maria, 900);
+            leilao.RecebeLance(maria, 990);
+            leilao.RecebeLance(fulano, 1000);
+
+            //Act - Método que está sendo testado
+            leilao.TerminaPregao();
+
+            //Assert - Seção de verificação
+            var valorEsperado = 1000;
+            var valorObtido = leilao.Ganhador.Valor;
+
+            Assert.Equal(valorEsperado, valorObtido);
+        }
+
+        [Fact]
+        public void LeilaoComTresClientes()
+        {
+            //Arranje - Cenário de entrada.
+            var leilao = new Leilao("Van Gogh");
+            var fulano = new Interessada("Fulano", leilao);
+            var maria = new Interessada("Maria", leilao);
+            var beltrano = new Interessada("Beltrano", leilao);
+
+            leilao.RecebeLance(fulano, 800);
+            leilao.RecebeLance(maria, 900);
+            leilao.RecebeLance(fulano, 1000);
+            leilao.RecebeLance(maria, 990);
+            leilao.RecebeLance(beltrano, 1400);
+
+            //Act - Método que está sendo testado
+            leilao.TerminaPregao();
+
+            //Assert - Seção de verificação
+            var valorEsperado = 1400;
+            var valorObtido = leilao.Ganhador.Valor;
+
+            Assert.Equal(valorEsperado, valorObtido);
+            Assert.Equal(beltrano, leilao.Ganhador.Cliente);
+        }
     }
 }
