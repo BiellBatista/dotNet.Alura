@@ -26,6 +26,7 @@ C#: Testes de unidade e TDD com xUnit
 		12 - Para saber mais: outras formas de enviar dados
 		13 - O que aprendemos?
 	03 - Não deixe o sistema regredir
+		01 - Manutenção dos testes
 	04 - Testando todos os comportamentos
 	05 - Ajudando no design do código
 Mocks em C#: Testes de Integração com xUnit e Moq
