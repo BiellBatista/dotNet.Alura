@@ -32,6 +32,7 @@ C#: Testes de unidade e TDD com xUnit
 		04 - Convenção de nomes (B)
 		05 - [Errata] Nome da classe de teste
 		06 - Novos testes a cada funcionalidade
+		07 - Praticando TDD
 	04 - Testando todos os comportamentos
 	05 - Ajudando no design do código
 Mocks em C#: Testes de Integração com xUnit e Moq
