@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-TDD-xUnit.Core", "01-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-XX-TDD-xUnit.ConsoleApp", "01-XX-TDD-xUnit.ConsoleApp\01-XX-TDD-xUnit.ConsoleApp.csproj", "{82EDF854-5214-44C1-96C3-DF441A476F60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-XX-TDD-xUnit.Tests", "01-XX-TDD-xUnit.Tests\01-XX-TDD-xUnit.Tests.csproj", "{747BF40F-A3C4-400E-97C5-E9CFFD43F2DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{82EDF854-5214-44C1-96C3-DF441A476F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82EDF854-5214-44C1-96C3-DF441A476F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82EDF854-5214-44C1-96C3-DF441A476F60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{747BF40F-A3C4-400E-97C5-E9CFFD43F2DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{747BF40F-A3C4-400E-97C5-E9CFFD43F2DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{747BF40F-A3C4-400E-97C5-E9CFFD43F2DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{747BF40F-A3C4-400E-97C5-E9CFFD43F2DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3AE6F826-8F3C-411A-A533-5C5D953FCB4E} = {C422898B-6E4F-4700-AA14-A3CB29870EB1}
 		{82EDF854-5214-44C1-96C3-DF441A476F60} = {24E1A541-E28C-4CD9-BB5B-0755B1C6C3E0}
+		{747BF40F-A3C4-400E-97C5-E9CFFD43F2DF} = {24E1A541-E28C-4CD9-BB5B-0755B1C6C3E0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {84453B2F-7866-4F5F-8A29-8C3C5025FFAD}

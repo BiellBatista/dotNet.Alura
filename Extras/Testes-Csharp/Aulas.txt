@@ -6,6 +6,11 @@ C#: Testes de unidade e TDD com xUnit
 		04 - Objetivos da aula
 		05 - Estrutura de um teste automatizado
 		06 - A biblioteca XUnit
+		07 - Encontre o erro (C / D / E)
+		08 - Consolidando seus conhecimentos
+		09 - Projeto atual
+		10 - Referências Utilizadas
+		11 - O que aprendemos?
 	02 - Organizando seus testes
 	03 - Não deixe o sistema regredir
 	04 - Testando todos os comportamentos
