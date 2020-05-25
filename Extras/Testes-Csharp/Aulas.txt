@@ -1,0 +1,29 @@
+C#: Testes de unidade e TDD com xUnit
+	01 - Promovendo rápido feedback
+		01 - Introdução
+		02 - O sistema de leilões
+		03 - Avaliando um leilão
+	02 - Organizando seus testes
+	03 - Não deixe o sistema regredir
+	04 - Testando todos os comportamentos
+	05 - Ajudando no design do código
+Mocks em C#: Testes de Integração com xUnit e Moq
+	01 - Testes de Integração
+	02 - Dependências mais leves e rápidas
+	03 - Injetando dados para cenários complexos
+	04 - Testando o comportamento de seu sistema
+	05 - Verificando efeitos colaterais
+	06 - Aplicando em controladores AspNet Core
+Selenium WebDriver e C# parte 1: Primeiros passos
+	01 - Iniciando o uso do Selenium
+	02 - Compartilhando recursos entre testes
+	03 - Testando funcionalidades do leilão
+	04 - Encontrando elementos de outras maneiras
+	05 - Blindando os testes de mudanças na UI
+Selenium WebDriver e C# parte 2: Outros recursos
+	01 - Elementos invisíveis
+	02 - Formulários complexos
+	03 - Frameworks que dificultam
+	04 - Esperando para as verificações
+	05 - Melhorando o código de testes
+	06 - Outros recursos
