@@ -12,6 +12,7 @@ C#: Testes de unidade e TDD com xUnit
 		10 - Referências Utilizadas
 		11 - O que aprendemos?
 	02 - Organizando seus testes
+		01 - Escrevendo mais testes
 	03 - Não deixe o sistema regredir
 	04 - Testando todos os comportamentos
 	05 - Ajudando no design do código
