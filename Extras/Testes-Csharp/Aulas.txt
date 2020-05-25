@@ -28,6 +28,10 @@ C#: Testes de unidade e TDD com xUnit
 	03 - Não deixe o sistema regredir
 		01 - Manutenção dos testes
 		02 - Objetivos da aula
+		03 - Testando leilões com período antes do pregão (A)
+		04 - Convenção de nomes (B)
+		05 - [Errata] Nome da classe de teste
+		06 - Novos testes a cada funcionalidade
 	04 - Testando todos os comportamentos
 	05 - Ajudando no design do código
 Mocks em C#: Testes de Integração com xUnit e Moq

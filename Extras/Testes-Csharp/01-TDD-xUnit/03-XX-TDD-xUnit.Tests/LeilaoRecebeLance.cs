@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace _03_XX_TDD_xUnit.Tests
 {
-    public class LeilaoRecebeOferta
+    public class LeilaoRecebeLance
     {
         [Theory]
         [InlineData(2, new double[] { 800, 900 })]
@@ -34,6 +34,30 @@ namespace _03_XX_TDD_xUnit.Tests
             var qtdeObtida = leilao.Lances.Count();
 
             Assert.Equal(qtdeEsperada, qtdeObtida);
+        }
+
+        [Theory]
+        [InlineData(new double[] { 200, 300, 400, 500 })]
+        [InlineData(new double[] { 200 })]
+        [InlineData(new double[] { 200, 300, 400 })]
+        [InlineData(new double[] { 200, 300, 400, 500, 600, 700 })]
+        public void QtdePermaneceZeroDadoQuePregaoNaoFoiIniciado(double[] ofertas)
+        {
+            //Arranje - Cenário de entrada.
+            //Given - Dado leilão com três clientes e lances realizados por eles
+            var leilao = new Leilao("Van Gogh");
+            var fulano = new Interessada("Fulano de Tal", leilao);
+
+            //Act - Método que está sendo testado
+            //When - Quando o pregão/leilão termina
+            foreach (var valor in ofertas)
+            {
+                leilao.RecebeLance(fulano, valor);
+            }
+
+            //Assert - Seção de verificação
+            //Then - Então o cliente ganhador é o que deu o maior o lance
+            Assert.Empty(leilao.Lances);
         }
     }
 }
