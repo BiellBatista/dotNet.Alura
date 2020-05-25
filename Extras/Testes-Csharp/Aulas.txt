@@ -20,6 +20,11 @@ C#: Testes de unidade e TDD com xUnit
 		06 - Teorias e dados (C)
 		07 - Outros dados (C)
 		08 - Nomenclatura
+		09 - Consolidando seus conhecimentos
+		10 - Projeto atual
+		11 - Referências Utilizadas
+		12 - Para saber mais: outras formas de enviar dados
+		13 - O que aprendemos?
 	03 - Não deixe o sistema regredir
 	04 - Testando todos os comportamentos
 	05 - Ajudando no design do código
