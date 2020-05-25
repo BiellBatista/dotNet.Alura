@@ -3,6 +3,8 @@ C#: Testes de unidade e TDD com xUnit
 		01 - Introdução
 		02 - O sistema de leilões
 		03 - Avaliando um leilão
+		04 - Objetivos da aula
+		05 - Estrutura de um teste automatizado
 	02 - Organizando seus testes
 	03 - Não deixe o sistema regredir
 	04 - Testando todos os comportamentos

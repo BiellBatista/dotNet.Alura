@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>_01_XX_TDD_xUnit.ConsoleApp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\01-XX-TDD-xUnit.Core\01-XX-TDD-xUnit.Core.csproj" />
+  </ItemGroup>
+
+</Project>

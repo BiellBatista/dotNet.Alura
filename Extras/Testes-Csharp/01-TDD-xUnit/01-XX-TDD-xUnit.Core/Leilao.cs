@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace _01_XX_TDD_xUnit.Core
 {
@@ -7,6 +8,7 @@ namespace _01_XX_TDD_xUnit.Core
         private IList<Lance> _lances;
         public IEnumerable<Lance> Lances => _lances;
         public string Peca { get; }
+        public Lance Ganhador { get; private set; }
 
         public Leilao(string peca)
         {
@@ -26,7 +28,7 @@ namespace _01_XX_TDD_xUnit.Core
 
         public void TerminaPregao()
         {
-
+            Ganhador = Lances.Last();
         }
     }
 }
