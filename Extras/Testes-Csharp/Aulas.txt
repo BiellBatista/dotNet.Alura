@@ -34,6 +34,10 @@ C#: Testes de unidade e TDD com xUnit
 		06 - Novos testes a cada funcionalidade
 		07 - Praticando TDD
 		08 - Melhorando nosso código
+		09 - Consolidando os conhecimentos
+		10 - Projeto atual
+		11 - Referências Utilizadas
+		12 - O que aprendemos?
 	04 - Testando todos os comportamentos
 	05 - Ajudando no design do código
 Mocks em C#: Testes de Integração com xUnit e Moq
