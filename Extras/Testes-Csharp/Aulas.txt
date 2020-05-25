@@ -15,6 +15,7 @@ C#: Testes de unidade e TDD com xUnit
 		01 - Escrevendo mais testes
 		02 - Objetivos da aula
 		03 - O que devo testar
+		04 - Leilão sem lances
 	03 - Não deixe o sistema regredir
 	04 - Testando todos os comportamentos
 	05 - Ajudando no design do código

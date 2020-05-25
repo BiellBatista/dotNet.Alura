@@ -74,6 +74,7 @@ namespace _02_XX_TDD_xUnit.Tests
         public void LeilaoComTresClientes()
         {
             //Arranje - Cenário de entrada.
+            //Given - Dado leilão com três clientes e lances realizados por eles
             var leilao = new Leilao("Van Gogh");
             var fulano = new Interessada("Fulano", leilao);
             var maria = new Interessada("Maria", leilao);
@@ -86,10 +87,14 @@ namespace _02_XX_TDD_xUnit.Tests
             leilao.RecebeLance(beltrano, 1400);
 
             //Act - Método que está sendo testado
+            //When - Quando o pregão/leilão termina
             leilao.TerminaPregao();
 
             //Assert - Seção de verificação
+            //Then - Então o valor esperado é o maior lance dado pelo cliente
             var valorEsperado = 1400;
+            //Assert - Seção de verificação
+            //Then - Então o cliente ganhador é o que deu o maior o lance
             var valorObtido = leilao.Ganhador.Valor;
 
             Assert.Equal(valorEsperado, valorObtido);
