@@ -1,5 +1,5 @@
 ﻿using Xunit;
-using _01_XX_TDD_xUnit.Core;
+using _02_XX_TDD_xUnit.Core;
 using System.Linq;
 
 namespace _02_XX_TDD_xUnit.Tests

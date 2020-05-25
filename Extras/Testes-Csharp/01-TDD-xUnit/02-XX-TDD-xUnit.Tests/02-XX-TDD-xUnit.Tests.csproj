@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\01-XX-TDD-xUnit.Core\01-XX-TDD-xUnit.Core.csproj" />
+    <ProjectReference Include="..\02-XX-TDD-xUnit.Core\02-XX-TDD-xUnit.Core.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,5 @@
 ﻿using Xunit;
-using _01_XX_TDD_xUnit.Core;
+using _03_XX_TDD_xUnit.Core;
 using System.Linq;
 
 namespace _03_XX_TDD_xUnit.Tests
@@ -58,6 +58,30 @@ namespace _03_XX_TDD_xUnit.Tests
             //Assert - Seção de verificação
             //Then - Então o cliente ganhador é o que deu o maior o lance
             Assert.Empty(leilao.Lances);
+        }
+
+        [Fact]
+        public void NaoAceitaProximoLanceDadoMesmoClienteRealizouUltimoLance()
+        {
+            //Arranje - Cenário de entrada.
+            //Given - Dado leilão com três clientes e lances realizados por eles
+            var leilao = new Leilao("Van Gogh");
+            var fulano = new Interessada("Fulano", leilao);
+
+            leilao.IniciaPregao();
+            leilao.RecebeLance(fulano, 800);
+
+            //Act - Método que está sendo testado
+            //When - Quando o pregão/leilão termina
+            leilao.RecebeLance(fulano, 1000);
+
+            //Assert - Seção de verificação
+            //Then - Então o cliente ganhador é o que deu o maior o lance
+            leilao.TerminaPregao();
+            var qtdeEsperada = 1;
+            var qtdeObtida = leilao.Lances.Count();
+
+            Assert.Equal(qtdeEsperada, qtdeObtida);
         }
     }
 }

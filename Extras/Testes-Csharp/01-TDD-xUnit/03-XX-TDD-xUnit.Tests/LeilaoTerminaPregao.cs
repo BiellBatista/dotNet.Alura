@@ -1,4 +1,4 @@
-﻿using _01_XX_TDD_xUnit.Core;
+﻿using _03_XX_TDD_xUnit.Core;
 using Xunit;
 
 namespace _03_XX_TDD_xUnit.Tests
