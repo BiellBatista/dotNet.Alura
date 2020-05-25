@@ -16,10 +16,13 @@ namespace _03_XX_TDD_xUnit.Tests
             var leilao = new Leilao("Van Gogh");
             var fulano = new Interessada("Fulano", leilao);
 
+            leilao.IniciaPregao();
+
             foreach (var valor in ofertas)
             {
                 leilao.RecebeLance(fulano, valor);
             }
+
             leilao.TerminaPregao();
 
             //Act - Método que está sendo testado

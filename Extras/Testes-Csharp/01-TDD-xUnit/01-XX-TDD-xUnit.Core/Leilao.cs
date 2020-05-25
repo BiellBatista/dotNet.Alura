@@ -5,6 +5,7 @@ namespace _01_XX_TDD_xUnit.Core
 {
     public enum EstadoLeilao
     {
+        LeilaoAntesDoPregao,
         LeilaoEmAndamento,
         LeilaoFinalizado
     }
@@ -21,7 +22,7 @@ namespace _01_XX_TDD_xUnit.Core
         {
             Peca = peca;
             _lances = new List<Lance>();
-            Estado = EstadoLeilao.LeilaoEmAndamento;
+            Estado = EstadoLeilao.LeilaoAntesDoPregao;
         }
 
         public void RecebeLance(Interessada cliente, double valor)
@@ -34,7 +35,7 @@ namespace _01_XX_TDD_xUnit.Core
 
         public void IniciaPregao()
         {
-
+            Estado = EstadoLeilao.LeilaoEmAndamento;
         }
 
         public void TerminaPregao()
