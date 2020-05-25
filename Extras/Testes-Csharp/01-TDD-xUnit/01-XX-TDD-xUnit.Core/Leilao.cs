@@ -28,7 +28,7 @@ namespace _01_XX_TDD_xUnit.Core
 
         public void TerminaPregao()
         {
-            Ganhador = Lances.Last();
+            Ganhador = Lances.OrderBy(l => l.Valor).Last();
         }
     }
 }
