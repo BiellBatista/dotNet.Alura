@@ -17,6 +17,9 @@ C#: Testes de unidade e TDD com xUnit
 		03 - O que devo testar
 		04 - Leilão sem lances
 		05 - Teorizando com xUnit
+		06 - Teorias e dados (C)
+		07 - Outros dados (C)
+		08 - Nomenclatura
 	03 - Não deixe o sistema regredir
 	04 - Testando todos os comportamentos
 	05 - Ajudando no design do código
