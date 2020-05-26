@@ -62,6 +62,12 @@ C#: Testes de unidade e TDD com xUnit
 		11 - O que aprendemos?
 Mocks em C#: Testes de Integração com xUnit e Moq
 	01 - Testes de Integração
+		01 - Introdução
+		02 - Objetivos do curso
+		03 - Objetivos da aula
+		04 - Preparando o Ambiente
+		05 - [OBRIGATÓRIO] Projeto inicial
+		06 - Testando recursos caros
 	02 - Dependências mais leves e rápidas
 	03 - Injetando dados para cenários complexos
 	04 - Testando o comportamento de seu sistema

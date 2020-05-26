@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\01-XX-xUnit-Moq.Core\01-XX-xUnit-Moq.Core.csproj" />
+    <ProjectReference Include="..\01-XX-xUnit-Moq.Infrastructure\01-XX-xUnit-Moq.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
