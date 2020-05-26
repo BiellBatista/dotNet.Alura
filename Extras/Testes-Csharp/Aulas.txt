@@ -44,6 +44,10 @@ C#: Testes de unidade e TDD com xUnit
 		03 - Exceções com xUnit
 		04 - ArgumentException (B)
 		05 - Testando outra exceção
+		06 - Consolidando os conhecimentos
+		07 - Projeto atual
+		08 - Referências Utilizadas
+		09 - O que aprendemos?
 	05 - Ajudando no design do código
 Mocks em C#: Testes de Integração com xUnit e Moq
 	01 - Testes de Integração
