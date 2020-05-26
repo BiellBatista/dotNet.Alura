@@ -40,6 +40,8 @@ C#: Testes de unidade e TDD com xUnit
 		12 - O que aprendemos?
 	04 - Testando todos os comportamentos
 		01 - Terminando leilão sem pregão
+		02 - Objetivos da aula
+		03 - Exceções com xUnit
 	05 - Ajudando no design do código
 Mocks em C#: Testes de Integração com xUnit e Moq
 	01 - Testes de Integração

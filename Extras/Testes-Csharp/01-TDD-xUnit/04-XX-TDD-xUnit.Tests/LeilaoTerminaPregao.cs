@@ -1,4 +1,5 @@
 ﻿using _04_XX_TDD_xUnit.Core;
+using System;
 using Xunit;
 
 namespace _04_XX_TDD_xUnit.Tests
@@ -42,6 +43,29 @@ namespace _04_XX_TDD_xUnit.Tests
             var valorObtido = leilao.Ganhador.Valor;
 
             Assert.Equal(valorEsperado, valorObtido);
+        }
+
+        [Fact]
+        public void LancaInvalidOperationExceptionDadoLeilaoPregaoNaoIniciado()
+        {
+            //Arranje - Cenário de entrada.
+            //Given - Dado leilão com três clientes e lances realizados por eles
+            var leilao = new Leilao("Van Gogh");
+
+            try
+            {
+                //Act - Método que está sendo testado
+                //When - Quando o pregão/leilão termina
+                leilao.TerminaPregao();
+                // se o teste foi aprovado, ele irá falhar
+                Assert.True(false);
+            }
+            catch (Exception e)
+            {
+                //Assert - Seção de verificação
+                //Then - Então o cliente ganhador é o que deu o maior o lance
+                Assert.IsType<InvalidOperationException>(e);
+            }
         }
 
         [Fact]
