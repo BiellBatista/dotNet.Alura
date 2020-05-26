@@ -50,6 +50,8 @@ C#: Testes de unidade e TDD com xUnit
 		09 - O que aprendemos?
 	05 - Ajudando no design do código
 		01 - Outra forma de avaliar o leilão
+		02 - Objetivos da aula
+		03 - Testes ajudam o design
 Mocks em C#: Testes de Integração com xUnit e Moq
 	01 - Testes de Integração
 	02 - Dependências mais leves e rápidas

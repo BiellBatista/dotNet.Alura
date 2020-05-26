@@ -103,5 +103,40 @@ namespace _05_XX_TDD_xUnit.Tests
 
             Assert.Equal(valorEsperado, valorObtido);
         }
+
+        [Theory]
+        [InlineData(1200, 1250, new double[] { 800, 1150, 1400, 1250 })]
+        public void RetornaValorSuperiorMaisProximoDadoLeilaoNessaModalidade(double valorDestino, double valorEsperado, double[] ofertas)
+        {
+            //Arranje - Cenário de entrada.
+            //Given - Dado leilão com dois clientes e lances realizados por eles
+            var leilao = new Leilao("Van Gogh");
+            var fulano = new Interessada("Fulano", leilao);
+            var maria = new Interessada("Maria", leilao);
+
+            leilao.IniciaPregao();
+
+            for (int i = 0; i < ofertas.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    leilao.RecebeLance(fulano, ofertas[i]);
+                }
+                else
+                {
+                    leilao.RecebeLance(maria, ofertas[i]);
+                }
+            }
+
+            //Act - Método que está sendo testado
+            //When - Quando o pregão/leilão termina
+            leilao.TerminaPregao();
+
+            //Assert - Seção de verificação
+            //Then - Então o cliente ganhador é o que deu o maior o lance
+            var valorObtido = leilao.Ganhador.Valor;
+
+            Assert.Equal(valorEsperado, valorObtido);
+        }
     }
 }
