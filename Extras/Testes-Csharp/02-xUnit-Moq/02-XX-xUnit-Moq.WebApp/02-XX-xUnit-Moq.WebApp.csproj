@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <RootNamespace>_02_XX_xUnit_Moq.WebApp</RootNamespace>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\02-XX-xUnit-Moq.Core\02-XX-xUnit-Moq.Core.csproj" />
+    <ProjectReference Include="..\02-XX-xUnit-Moq.Infrastructure\02-XX-xUnit-Moq.Infrastructure.csproj" />
+    <ProjectReference Include="..\02-XX-xUnit-Moq.Services\02-XX-xUnit-Moq.Services.csproj" />
+  </ItemGroup>
+
+</Project>
