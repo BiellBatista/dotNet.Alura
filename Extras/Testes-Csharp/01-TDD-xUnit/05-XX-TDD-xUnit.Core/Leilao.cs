@@ -19,12 +19,14 @@ namespace _05_XX_TDD_xUnit.Core
         public string Peca { get; }
         public Lance Ganhador { get; private set; }
         public EstadoLeilao Estado { get; private set; }
+        public double ValorDestino { get; }
 
-        public Leilao(string peca)
+        public Leilao(string peca, double valorDestino = 0)
         {
             Peca = peca;
             _lances = new List<Lance>();
             Estado = EstadoLeilao.LeilaoAntesDoPregao;
+            ValorDestino = valorDestino;
         }
 
         private bool NovoLanceEhAceito(Interessada cliente, double valor)
@@ -54,10 +56,22 @@ namespace _05_XX_TDD_xUnit.Core
                 throw new InvalidOperationException("Não é possível terminar sem que ele tenha começado. Para isso, utilize o método IniciaPregao().");
             }
 
-            Ganhador = Lances
+            if (ValorDestino > 0)
+            {
+                Ganhador = Lances
+                    .DefaultIfEmpty(new Lance(null, 0))
+                    .Where(l => l.Valor > ValorDestino)
+                    .OrderBy(l => l.Valor)
+                    .FirstOrDefault();
+            }
+            else
+            {
+                Ganhador = Lances
                 .DefaultIfEmpty(new Lance(null, 0))
                 .OrderBy(l => l.Valor)
                 .LastOrDefault();
+            }
+
             Estado = EstadoLeilao.LeilaoFinalizado;
         }
     }

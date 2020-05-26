@@ -110,7 +110,7 @@ namespace _05_XX_TDD_xUnit.Tests
         {
             //Arranje - Cenário de entrada.
             //Given - Dado leilão com dois clientes e lances realizados por eles
-            var leilao = new Leilao("Van Gogh");
+            var leilao = new Leilao("Van Gogh", valorDestino);
             var fulano = new Interessada("Fulano", leilao);
             var maria = new Interessada("Maria", leilao);
 
