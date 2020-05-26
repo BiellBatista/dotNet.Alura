@@ -68,6 +68,7 @@ Mocks em C#: Testes de Integração com xUnit e Moq
 		04 - Preparando o Ambiente
 		05 - [OBRIGATÓRIO] Projeto inicial
 		06 - Testando recursos caros
+		07 - Dependência ou Morte
 	02 - Dependências mais leves e rápidas
 	03 - Injetando dados para cenários complexos
 	04 - Testando o comportamento de seu sistema
