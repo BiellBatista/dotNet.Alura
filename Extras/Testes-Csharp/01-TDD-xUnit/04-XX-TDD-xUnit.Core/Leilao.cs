@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace _04_XX_TDD_xUnit.Core
@@ -48,6 +49,11 @@ namespace _04_XX_TDD_xUnit.Core
 
         public void TerminaPregao()
         {
+            if (Estado != EstadoLeilao.LeilaoEmAndamento)
+            {
+                throw new InvalidOperationException("Não é possível terminar sem que ele tenha começado. Para isso, utilize o método IniciaPregao().");
+            }
+
             Ganhador = Lances
                 .DefaultIfEmpty(new Lance(null, 0))
                 .OrderBy(l => l.Valor)

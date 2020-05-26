@@ -52,20 +52,36 @@ namespace _04_XX_TDD_xUnit.Tests
             //Given - Dado leilão com três clientes e lances realizados por eles
             var leilao = new Leilao("Van Gogh");
 
-            try
-            {
+            //Testando exceção
+            //Assert - Seção de verificação
+            //Then - Então o cliente ganhador é o que deu o maior o lance
+            var excecaoObtida = Assert.Throws<InvalidOperationException>(
                 //Act - Método que está sendo testado
                 //When - Quando o pregão/leilão termina
-                leilao.TerminaPregao();
-                // se o teste foi aprovado, ele irá falhar
-                Assert.True(false);
-            }
-            catch (Exception e)
-            {
-                //Assert - Seção de verificação
-                //Then - Então o cliente ganhador é o que deu o maior o lance
-                Assert.IsType<InvalidOperationException>(e);
-            }
+                () => leilao.TerminaPregao()
+                );
+
+            //Assert - Seção de verificação
+            //Then - Então o cliente ganhador é o que deu o maior o lance
+            var msgEsperada = "Não é possível terminar sem que ele tenha começado. Para isso, utilize o método IniciaPregao().";
+            //validando a mensagens da exceção
+            Assert.Equal(msgEsperada, excecaoObtida.Message);
+
+            //o try catch é equivalente ao de cima
+            //try
+            //{
+            //    //Act - Método que está sendo testado
+            //    //When - Quando o pregão/leilão termina
+            //    leilao.TerminaPregao();
+            //    // se o teste foi aprovado, ele irá falhar
+            //    Assert.True(false);
+            //}
+            //catch (Exception e)
+            //{
+            //    //Assert - Seção de verificação
+            //    //Then - Então o cliente ganhador é o que deu o maior o lance
+            //    Assert.IsType<InvalidOperationException>(e);
+            //}
         }
 
         [Fact]
@@ -74,6 +90,7 @@ namespace _04_XX_TDD_xUnit.Tests
             //Arranje - Cenário de entrada.
             //Given - Dado leilão com três clientes e lances realizados por eles
             var leilao = new Leilao("Van Gogh");
+            leilao.IniciaPregao();
 
             //Act - Método que está sendo testado
             //When - Quando o pregão/leilão termina

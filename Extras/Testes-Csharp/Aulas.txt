@@ -42,6 +42,8 @@ C#: Testes de unidade e TDD com xUnit
 		01 - Terminando leilão sem pregão
 		02 - Objetivos da aula
 		03 - Exceções com xUnit
+		04 - ArgumentException (B)
+		05 - Testando outra exceção
 	05 - Ajudando no design do código
 Mocks em C#: Testes de Integração com xUnit e Moq
 	01 - Testes de Integração
