@@ -53,6 +53,7 @@ C#: Testes de unidade e TDD com xUnit
 		02 - Objetivos da aula
 		03 - Testes ajudam o design
 		04 - Estratégia de avaliação
+		05 - Inversão de dependência
 Mocks em C#: Testes de Integração com xUnit e Moq
 	01 - Testes de Integração
 	02 - Dependências mais leves e rápidas

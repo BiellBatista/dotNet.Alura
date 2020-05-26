@@ -13,8 +13,9 @@ namespace _05_XX_TDD_xUnit.Tests
         public void RetornaMaiorValorDadoLeilaoComPeloMenosUmLance(double valorEsperado, double[] ofertas)
         {
             //Arranje - Cenário de entrada.
-            //Given - Dado leilão com três clientes e lances realizados por eles
-            var leilao = new Leilao("Van Gogh");
+            //Given - Dado leilão com dois clientes e lances realizados por eles
+            IModalidadeAvaliacao modalidade = new MaiorValor();
+            var leilao = new Leilao("Van Gogh", modalidade);
             var fulano = new Interessada("Fulano", leilao);
             var maria = new Interessada("Maria", leilao);
 
@@ -110,7 +111,8 @@ namespace _05_XX_TDD_xUnit.Tests
         {
             //Arranje - Cenário de entrada.
             //Given - Dado leilão com dois clientes e lances realizados por eles
-            var leilao = new Leilao("Van Gogh", valorDestino);
+            var modalidade = new OfertaSuperiorMaisProxima(valorDestino);
+            var leilao = new Leilao("Van Gogh", modalidade);
             var fulano = new Interessada("Fulano", leilao);
             var maria = new Interessada("Maria", leilao);
 
