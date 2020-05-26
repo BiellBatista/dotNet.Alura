@@ -51,7 +51,8 @@ namespace _05_XX_TDD_xUnit.Tests
         {
             //Arranje - Cenário de entrada.
             //Given - Dado leilão com três clientes e lances realizados por eles
-            var leilao = new Leilao("Van Gogh");
+            var modalidade = new MaiorValor();
+            var leilao = new Leilao("Van Gogh", modalidade);
 
             //Testando exceção
             //Assert - Seção de verificação
@@ -90,7 +91,8 @@ namespace _05_XX_TDD_xUnit.Tests
         {
             //Arranje - Cenário de entrada.
             //Given - Dado leilão com três clientes e lances realizados por eles
-            var leilao = new Leilao("Van Gogh");
+            var modalidade = new MaiorValor();
+            var leilao = new Leilao("Van Gogh", modalidade);
             leilao.IniciaPregao();
 
             //Act - Método que está sendo testado
