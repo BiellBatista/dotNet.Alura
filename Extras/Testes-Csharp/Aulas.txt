@@ -49,6 +49,7 @@ C#: Testes de unidade e TDD com xUnit
 		08 - Referências Utilizadas
 		09 - O que aprendemos?
 	05 - Ajudando no design do código
+		01 - Outra forma de avaliar o leilão
 Mocks em C#: Testes de Integração com xUnit e Moq
 	01 - Testes de Integração
 	02 - Dependências mais leves e rápidas
