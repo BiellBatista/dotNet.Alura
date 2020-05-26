@@ -1,7 +1,6 @@
 ﻿using _01_XX_xUnit_Moq.Core.Models;
 using _01_XX_xUnit_Moq.Core.Commands;
 using _01_XX_xUnit_Moq.Infrastructure;
-using System;
 using Microsoft.Extensions.Logging;
 
 namespace _01_XX_xUnit_Moq.Services.Handlers
@@ -11,9 +10,9 @@ namespace _01_XX_xUnit_Moq.Services.Handlers
         IRepositorioTarefas _repo;
         ILogger<CadastraTarefaHandler> _logger;
 
-        public CadastraTarefaHandler()
+        public CadastraTarefaHandler(IRepositorioTarefas repositorio)
         {
-            _repo = new RepositorioTarefa();
+            _repo = repositorio;
             _logger = new LoggerFactory().CreateLogger<CadastraTarefaHandler>();
         }
 

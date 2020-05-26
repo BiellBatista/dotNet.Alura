@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _01_XX_xUnit_Moq.Testes.TestDubles
+namespace _01_XX_xUnit_Moq.Testes
 {
-    public class RepoFakeTarefas : IRepositorioTarefas
+    class RepositorioFake : IRepositorioTarefas
     {
         List<Tarefa> lista = new List<Tarefa>();
 
@@ -27,12 +27,12 @@ namespace _01_XX_xUnit_Moq.Testes.TestDubles
 
         public Categoria ObtemCategoriaPorId(int id)
         {
-            return new Categoria(id, string.Empty);
+            throw new NotImplementedException();
         }
 
         public IEnumerable<Tarefa> ObtemTarefas(Func<Tarefa, bool> filtro)
         {
-            return lista;
+            return lista.Where(filtro);
         }
     }
 }

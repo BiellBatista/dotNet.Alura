@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using _01_XX_xUnit_Moq.Core.Commands;
 using _01_XX_xUnit_Moq.Core.Models;
 using _01_XX_xUnit_Moq.Infrastructure;
