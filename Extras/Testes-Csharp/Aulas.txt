@@ -102,6 +102,8 @@ Mocks em C#: Testes de Integração com xUnit e Moq
 		07 - Projeto atual
 		08 - O que aprendemos?
 	05 - Verificando efeitos colaterais
+		01 - Objetivos da aula
+		02 - Mensagens de log
 	06 - Aplicando em controladores AspNet Core
 Selenium WebDriver e C# parte 1: Primeiros passos
 	01 - Iniciando o uso do Selenium
