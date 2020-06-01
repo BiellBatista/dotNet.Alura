@@ -96,6 +96,11 @@ Mocks em C#: Testes de Integração com xUnit e Moq
 		01 - Objetivos da aula
 		02 - O método foi chamado
 		03 - Outro exemplo
+		04 - Recapitulando
+		05 - Fakes, Stubs e Mocks (C)
+		06 - Faça o que eu fiz na aula
+		07 - Projeto atual
+		08 - O que aprendemos?
 	05 - Verificando efeitos colaterais
 	06 - Aplicando em controladores AspNet Core
 Selenium WebDriver e C# parte 1: Primeiros passos

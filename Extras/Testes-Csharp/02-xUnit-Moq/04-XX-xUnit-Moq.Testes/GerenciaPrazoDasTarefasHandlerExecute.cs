@@ -96,5 +96,6 @@ namespace _04_XX_xUnit_Moq.Testes
  * Dummy Object: são objetos que eu tenho que criar, mas que não são utilizados no assert. Neste teste, tenho como exemplos as categorias.
  * Fake Object: são classes que eu crio/uso para simular um recurso, de forma leve. Por exemplo, o repositório fake e o inMemoryDatabase.
  * Stubs: é um objeto do qual eu preciso fornecer alguma informação de entrada para o teste. Por exemplo, o lançamento de uma exceção, porque foi preciso
- *  mockar um objeto (simular). Em resumo, ele simula um objeto, do qual é necessário fornecer informação
+ *  mockar um objeto (simular). Em resumo, ele simula um objeto, do qual é necessário fornecer informação.
+ * Mocks: é um objeto que é parecido com o Stubs. A diferença é que o mock é verificado no assert e o Stubs no arrange
  */
