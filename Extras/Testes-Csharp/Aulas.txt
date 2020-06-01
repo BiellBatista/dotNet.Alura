@@ -86,6 +86,7 @@ Mocks em C#: Testes de Integração com xUnit e Moq
 	03 - Injetando dados para cenários complexos
 		01 - Objetivos da aula
 		02 - Lançando exceções
+		03 - Setup da exceção
 	04 - Testando o comportamento de seu sistema
 	05 - Verificando efeitos colaterais
 	06 - Aplicando em controladores AspNet Core
