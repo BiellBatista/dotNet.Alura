@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>_04_XX_xUnit_Moq.Services</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\04-XX-xUnit-Moq.Core\04-XX-xUnit-Moq.Core.csproj" />
+    <ProjectReference Include="..\04-XX-xUnit-Moq.Infrastructure\04-XX-xUnit-Moq.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
