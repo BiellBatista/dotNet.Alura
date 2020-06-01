@@ -9,9 +9,9 @@ namespace _02_XX_xUnit_Moq.Infrastructure
     {
         DbTarefasContext _ctx;
 
-        public RepositorioTarefa()
+        public RepositorioTarefa(DbTarefasContext context)
         {
-            _ctx = new DbTarefasContext();
+            _ctx = context;
         }
 
         public void AtualizarTarefas(params Tarefa[] tarefas)
