@@ -87,3 +87,8 @@ namespace _06_XX_xUnit_Moq.Testes
  * 
  * Spys: no spy a gente faz a verificação em um mock indiretamente ligado no teste. Ou seja, estou verificando os efeitos colaterais
  */
+
+/**
+ * Arrange - Dummy Objects, Fake Objects, Stubs (fornece valores)
+ * Assert - Mocks (verifica comportamentos, no próprio mock que está sendo testado), Spys(verifico efeitos colaterias (verificação indireta))
+ */
