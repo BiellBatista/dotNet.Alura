@@ -57,6 +57,30 @@ namespace _05_XX_xUnit_Moq.Testes
             //assert
             Assert.False(resultado.IsSuccess);
         }
+
+        [Fact]
+        public void QuandoExceptionForLancadaDeveLogarAMensagemDaExcecao()
+        {
+            //arrange
+            var comando = new CadastraTarefa("Estudar Xunit", new Categoria("Estudo"), new DateTime(2019, 12, 31));
+
+            var mock = new Mock<IRepositorioTarefas>(); //mocando o objeto a ser criado
+
+            //configurando o objeto, no meu caso, criando a exceção
+            // quando vc criar o método "IncluirTarefas", lance a exceção..
+            //mock faz um setup para quando o método IncluirTarefas for chamado para qualquer algumento de entrada (do tipo Tarefa)..
+            //lance a exceçõa..
+            mock.Setup(r => r.IncluirTarefas(It.IsAny<Tarefa[]>())).Throws(new Exception("Houve um erro na inclusão de tarefas"));
+
+            var repo = mock.Object; //falando para o mock me dar o objeto que foi mocado e configurado em cima
+            var handler = new CadastraTarefaHandler(repo);
+
+            //act
+            CommandResult resultado = handler.Execute(comando);
+
+            //assert
+
+        }
     }
 }
 
