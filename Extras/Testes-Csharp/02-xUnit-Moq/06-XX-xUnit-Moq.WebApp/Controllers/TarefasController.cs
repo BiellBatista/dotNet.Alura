@@ -32,8 +32,16 @@ namespace _06_XX_xUnit_Moq.WebApp.Controllers
 
             var comando = new CadastraTarefa(model.Titulo, categoria, model.Prazo);
             var handler = new CadastraTarefaHandler(_repo, _logger);
-            handler.Execute(comando);
-            return Ok();
+            var resultado = handler.Execute(comando);
+
+            if (resultado.IsSuccess)
+            {
+                return Ok();
+            }
+            else
+            {
+                return StatusCode(500);
+            }
         }
     }
 }

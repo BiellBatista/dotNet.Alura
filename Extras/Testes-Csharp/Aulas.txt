@@ -116,6 +116,12 @@ Mocks em C#: Testes de Integração com xUnit e Moq
 		01 - Objetivos da aula
 		02 - Aplicando no AspNet Core
 		03 - Testando exceções
+		04 - Fixando os conhecimentos (A)
+		05 - Para Saber Mais: Livro xUnit Test Patterns
+		06 - Faça o que eu fiz na aula
+		07 - O que aprendemos?
+		08 - Projeto final
+		09 - Conclusão
 Selenium WebDriver e C# parte 1: Primeiros passos
 	01 - Iniciando o uso do Selenium
 	02 - Compartilhando recursos entre testes
