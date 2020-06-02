@@ -35,8 +35,9 @@ namespace _05_XX_xUnit_Moq.Services.Handlers
 
                 return new CommandResult(true);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                _logger.LogError(e, e.Message);
                 return new CommandResult(false);
             }
         }

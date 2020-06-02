@@ -68,6 +68,7 @@ namespace _05_XX_xUnit_Moq.Testes
         {
             //arrange
             var mensagemDeErroEsperada = "Houve um erro na inclusão de tarefas";
+            var excecaoEsperada = new Exception(mensagemDeErroEsperada);
             var comando = new CadastraTarefa("Estudar Xunit", new Categoria("Estudo"), new DateTime(2019, 12, 31));
 
             var mockLogger = new Mock<ILogger<CadastraTarefaHandler>>();
@@ -78,7 +79,7 @@ namespace _05_XX_xUnit_Moq.Testes
             // quando vc criar o método "IncluirTarefas", lance a exceção..
             //mock faz um setup para quando o método IncluirTarefas for chamado para qualquer algumento de entrada (do tipo Tarefa)..
             //lance a exceçõa..
-            mock.Setup(r => r.IncluirTarefas(It.IsAny<Tarefa[]>())).Throws(new Exception(mensagemDeErroEsperada));
+            mock.Setup(r => r.IncluirTarefas(It.IsAny<Tarefa[]>())).Throws(excecaoEsperada);
 
             var repo = mock.Object; //falando para o mock me dar o objeto que foi mocado e configurado em cima
             var handler = new CadastraTarefaHandler(repo, mockLogger.Object);
@@ -88,7 +89,14 @@ namespace _05_XX_xUnit_Moq.Testes
 
             //assert
             // não consigo utilizar a verificação do mock, em métodos de extensoes
-            mockLogger.Verify(l => l.LogError(mensagemDeErroEsperada), Times.Once());
+            //mockLogger.Verify(l => l.LogError(mensagemDeErroEsperada), Times.Once());
+            mockLogger.Verify(l => l.Log(
+                LogLevel.Error, // nível de log
+                It.IsAny<EventId>(), // identificador do evento
+                It.IsAny<object>(), // objeto que será logado (mensagem)
+                excecaoEsperada, // excecao que será logada (já está com a mensagem)
+                It.IsAny<Func<object, Exception, string>>()), // funcao que converte o objeto e a excecao em uma string
+                Times.Once());
         }
     }
 }
