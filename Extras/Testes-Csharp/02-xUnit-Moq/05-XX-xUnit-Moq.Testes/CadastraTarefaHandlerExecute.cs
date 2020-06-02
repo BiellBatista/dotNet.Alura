@@ -7,6 +7,7 @@ using System;
 using System.Linq;
 using Xunit;
 using Moq;
+using Microsoft.Extensions.Logging;
 
 namespace _05_XX_xUnit_Moq.Testes
 {
@@ -24,7 +25,9 @@ namespace _05_XX_xUnit_Moq.Testes
             var context = new DbTarefasContext(options);
             var repo = new RepositorioTarefa(context);
 
-            var handler = new CadastraTarefaHandler(repo);
+            var mock = new Mock<ILogger<CadastraTarefaHandler>>();
+
+            var handler = new CadastraTarefaHandler(repo, mock.Object);
 
             //act
             handler.Execute(comando); //SUT >> CadastraTarefaHandlerExecute
@@ -40,6 +43,8 @@ namespace _05_XX_xUnit_Moq.Testes
             //arrange
             var comando = new CadastraTarefa("Estudar Xunit", new Categoria("Estudo"), new DateTime(2019, 12, 31));
 
+            var mockLogger = new Mock<ILogger<CadastraTarefaHandler>>();
+
             var mock = new Mock<IRepositorioTarefas>(); //mocando o objeto a ser criado
 
             //configurando o objeto, no meu caso, criando a exceção
@@ -49,7 +54,7 @@ namespace _05_XX_xUnit_Moq.Testes
             mock.Setup(r => r.IncluirTarefas(It.IsAny<Tarefa[]>())).Throws(new Exception("Houve um erro na inclusão de tarefas"));
 
             var repo = mock.Object; //falando para o mock me dar o objeto que foi mocado e configurado em cima
-            var handler = new CadastraTarefaHandler(repo);
+            var handler = new CadastraTarefaHandler(repo, mockLogger.Object);
 
             //act
             CommandResult resultado = handler.Execute(comando);
@@ -62,7 +67,10 @@ namespace _05_XX_xUnit_Moq.Testes
         public void QuandoExceptionForLancadaDeveLogarAMensagemDaExcecao()
         {
             //arrange
+            var mensagemDeErroEsperada = "Houve um erro na inclusão de tarefas";
             var comando = new CadastraTarefa("Estudar Xunit", new Categoria("Estudo"), new DateTime(2019, 12, 31));
+
+            var mockLogger = new Mock<ILogger<CadastraTarefaHandler>>();
 
             var mock = new Mock<IRepositorioTarefas>(); //mocando o objeto a ser criado
 
@@ -70,20 +78,21 @@ namespace _05_XX_xUnit_Moq.Testes
             // quando vc criar o método "IncluirTarefas", lance a exceção..
             //mock faz um setup para quando o método IncluirTarefas for chamado para qualquer algumento de entrada (do tipo Tarefa)..
             //lance a exceçõa..
-            mock.Setup(r => r.IncluirTarefas(It.IsAny<Tarefa[]>())).Throws(new Exception("Houve um erro na inclusão de tarefas"));
+            mock.Setup(r => r.IncluirTarefas(It.IsAny<Tarefa[]>())).Throws(new Exception(mensagemDeErroEsperada));
 
             var repo = mock.Object; //falando para o mock me dar o objeto que foi mocado e configurado em cima
-            var handler = new CadastraTarefaHandler(repo);
+            var handler = new CadastraTarefaHandler(repo, mockLogger.Object);
 
             //act
             CommandResult resultado = handler.Execute(comando);
 
             //assert
-
+            // não consigo utilizar a verificação do mock, em métodos de extensoes
+            mockLogger.Verify(l => l.LogError(mensagemDeErroEsperada), Times.Once());
         }
     }
 }
-
+// não consigo utilizar a verificação do mock, em métodos de extensoes
 /**
  * Dublês para Testes
  * 
