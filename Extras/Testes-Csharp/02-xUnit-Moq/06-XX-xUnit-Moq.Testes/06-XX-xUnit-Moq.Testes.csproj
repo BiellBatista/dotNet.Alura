@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.2.6" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
     <PackageReference Include="Moq" Version="4.12.0" />
@@ -19,6 +20,7 @@
     <ProjectReference Include="..\06-XX-xUnit-Moq.Core\06-XX-xUnit-Moq.Core.csproj" />
     <ProjectReference Include="..\06-XX-xUnit-Moq.Infrastructure\06-XX-xUnit-Moq.Infrastructure.csproj" />
     <ProjectReference Include="..\06-XX-xUnit-Moq.Services\06-XX-xUnit-Moq.Services.csproj" />
+    <ProjectReference Include="..\06-XX-xUnit-Moq.WebApp\06-XX-xUnit-Moq.WebApp.csproj" />
   </ItemGroup>
 
 </Project>
