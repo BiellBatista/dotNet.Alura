@@ -107,6 +107,11 @@ Mocks em C#: Testes de Integração com xUnit e Moq
 		03 - Extraindo pra capturar
 		04 - Superando a limitação do Moq
 		05 - Conhecendo uma API
+		06 - Recapitulando
+		07 - O que estou verificando? (A)
+		08 - Faça o que eu fiz na aula
+		09 - Projeto atual
+		10 - O que aprendemos?
 	06 - Aplicando em controladores AspNet Core
 Selenium WebDriver e C# parte 1: Primeiros passos
 	01 - Iniciando o uso do Selenium

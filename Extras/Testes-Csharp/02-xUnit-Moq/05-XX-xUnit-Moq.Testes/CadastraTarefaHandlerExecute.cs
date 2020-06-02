@@ -37,6 +37,7 @@ namespace _05_XX_xUnit_Moq.Testes
             Assert.NotNull(tarefa);
         }
 
+        //stub
         [Fact]
         public void QuandoExceptionForLancadaResultadoIsSuccessDeveSerFalso()
         {
@@ -88,7 +89,7 @@ namespace _05_XX_xUnit_Moq.Testes
             CommandResult resultado = handler.Execute(comando);
 
             //assert
-            // não consigo utilizar a verificação do mock, em métodos de extensoes
+            // não consigo utilizar no setup e na verificação do mock, métodos de extensões
             //mockLogger.Verify(l => l.LogError(mensagemDeErroEsperada), Times.Once());
             mockLogger.Verify(l => l.Log(
                 LogLevel.Error, // nível de log
@@ -98,6 +99,51 @@ namespace _05_XX_xUnit_Moq.Testes
                 It.IsAny<Func<object, Exception, string>>()), // funcao que converte o objeto e a excecao em uma string
                 Times.Once());
         }
+
+        delegate void CapturaMensagemLog(
+            LogLevel level,
+            EventId eventId,
+            object state,
+            Exception exception,
+            Func<object, Exception, string> function);
+
+        // spy
+        [Fact]
+        public void DadaTarefaComInfoValidasDeveLogar()
+        {
+            //arrange
+            var tituloTarefaEsperado = "Usar Moq para aprofundar conhecimento da API";
+            var comando = new CadastraTarefa(tituloTarefaEsperado, new Categoria("Estudo"), new DateTime(2019, 12, 31));
+
+            var mockLooger = new Mock<ILogger<CadastraTarefaHandler>>();
+            var mock = new Mock<IRepositorioTarefas>();
+
+            LogLevel levelCapturado = LogLevel.Error;
+            string mensagemCapturada = string.Empty;
+
+            CapturaMensagemLog captura = (level, eventId, state, exception, func) =>
+            {
+                levelCapturado = level;
+                mensagemCapturada = func(state, exception);
+            };
+
+            mockLooger.Setup(l => l.Log(
+                It.IsAny<LogLevel>(), // nível de log
+                It.IsAny<EventId>(), // identificador do evento
+                It.IsAny<object>(), // objeto que será logado (mensagem)
+                It.IsAny<Exception>(), // excecao que será logada (já está com a mensagem)
+                It.IsAny<Func<object, Exception, string>>() // funcao que converte o objeto e a excecao em uma string
+                )).Callback(captura);
+
+            var handler = new CadastraTarefaHandler(mock.Object, mockLooger.Object);
+
+            //act
+            handler.Execute(comando); //SUT >> CadastraTarefaHandlerExecute
+
+            //assert
+            Assert.Equal(LogLevel.Debug, levelCapturado);
+            Assert.Contains(tituloTarefaEsperado, mensagemCapturada);
+        }
     }
 }
 // não consigo utilizar a verificação do mock, em métodos de extensoes
@@ -105,7 +151,11 @@ namespace _05_XX_xUnit_Moq.Testes
  * Dublês para Testes
  * 
  * Dummy Object: são objetos que eu tenho que criar, mas que não são utilizados no assert. Neste teste, tenho como exemplos as categorias.
+ * 
  * Fake Object: são classes que eu crio/uso para simular um recurso, de forma leve. Por exemplo, o repositório fake e o inMemoryDatabase.
+ * 
  * Stubs: é um objeto do qual eu preciso fornecer alguma informação de entrada para o teste. Por exemplo, o lançamento de uma exceção, porque foi preciso
  *  mockar um objeto (simular). Em resumo, ele simula um objeto, do qual é necessário fornecer informação
+ * 
+ * Spys: no spy a gente faz a verificação em um mock indiretamente ligado no teste. Ou seja, estou verificando os efeitos colaterais
  */
