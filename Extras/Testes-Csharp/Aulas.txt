@@ -124,6 +124,12 @@ Mocks em C#: Testes de Integração com xUnit e Moq
 		09 - Conclusão
 Selenium WebDriver e C# parte 1: Primeiros passos
 	01 - Iniciando o uso do Selenium
+		01 - Introdução
+		02 - Objetivos do curso
+		03 - Objetivos da aula
+		04 - Preparando o ambiente
+		05 - [OBRIGATÓRIO] Projeto inicial
+		06 - Selenium Webdriver
 	02 - Compartilhando recursos entre testes
 	03 - Testando funcionalidades do leilão
 	04 - Encontrando elementos de outras maneiras
