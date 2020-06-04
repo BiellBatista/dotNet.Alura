@@ -1,8 +1,8 @@
 ﻿using Xunit;
-using _01_XX_Selenium_WebDriver.Core;
+using _03_XX_Selenium_WebDriver.Core;
 using System.Linq;
 
-namespace _01_XX_Selenium_WebDriver.Tests
+namespace _03_XX_Selenium_WebDriver.Tests
 {
     [Trait("Tipo", "Unidade")]
     public class LeilaoRecebeOferta

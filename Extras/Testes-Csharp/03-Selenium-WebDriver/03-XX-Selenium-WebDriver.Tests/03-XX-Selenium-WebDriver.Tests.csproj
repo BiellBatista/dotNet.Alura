@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <RootNamespace>_02_XX_Selenium_WebDriver.Tests</RootNamespace>
+    <RootNamespace>_03_XX_Selenium_WebDriver.Tests</RootNamespace>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\02-XX-Selenium-WebDriver.Core\02-XX-Selenium-WebDriver.Core.csproj" />
+    <ProjectReference Include="..\03-XX-Selenium-WebDriver.Core\03-XX-Selenium-WebDriver.Core.csproj" />
   </ItemGroup>
 
 </Project>

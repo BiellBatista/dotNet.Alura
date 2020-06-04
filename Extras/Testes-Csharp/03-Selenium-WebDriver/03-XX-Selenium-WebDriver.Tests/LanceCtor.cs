@@ -1,7 +1,7 @@
-﻿using _01_XX_Selenium_WebDriver.Core;
+﻿using _03_XX_Selenium_WebDriver.Core;
 using Xunit;
 
-namespace _01_XX_Selenium_WebDriver.Tests
+namespace _03_XX_Selenium_WebDriver.Tests
 {
     [Trait("Tipo", "Unidade")]
     public class LanceCtor
