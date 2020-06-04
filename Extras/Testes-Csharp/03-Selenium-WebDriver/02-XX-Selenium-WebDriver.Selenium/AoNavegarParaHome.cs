@@ -1,24 +1,21 @@
-﻿using _02_XX_Selenium_WebDriver.Selenium.Helpers;
-using OpenQA.Selenium.Chrome;
-using System;
+﻿using _02_XX_Selenium_WebDriver.Selenium.Fixtures;
+using OpenQA.Selenium;
 using Xunit;
 
 namespace _02_XX_Selenium_WebDriver.Selenium
 {
-    public class AoNavegarParaHome : IDisposable
+    public class AoNavegarParaHome : IClassFixture<TestFixture>
     {
-        private ChromeDriver driver;
+        private IWebDriver _driver;
 
         // Setup (inicializando os recursos)
-        public AoNavegarParaHome()
+        /**
+         * Marco esta classe com a interface ClassFixture e passo a classe que cuidará dos recursos
+         * devo passar no construtor a classe que cuidará dos recursos
+         */
+        public AoNavegarParaHome(TestFixture fixture)
         {
-            driver = new ChromeDriver(TestHelper.PastaDoExecutavel);
-        }
-
-        //TearDown (liberar os recursos que foram inicializados)
-        public void Dispose()
-        {
-            driver.Quit();
+            _driver = fixture.Driver;
         }
 
         [Fact]
@@ -27,10 +24,10 @@ namespace _02_XX_Selenium_WebDriver.Selenium
             // arrange
 
             // act
-            driver.Navigate().GoToUrl("http://localhost:5000");
+            _driver.Navigate().GoToUrl("http://localhost:5000");
 
             // assert
-            Assert.Contains("Leilões", driver.Title);
+            Assert.Contains("Leilões", _driver.Title);
         }
 
         [Fact]
@@ -39,10 +36,10 @@ namespace _02_XX_Selenium_WebDriver.Selenium
             // arrange
 
             // act
-            driver.Navigate().GoToUrl("http://localhost:5000");
+            _driver.Navigate().GoToUrl("http://localhost:5000");
 
             // assert
-            Assert.Contains("Próximos Leilões", driver.PageSource);
+            Assert.Contains("Próximos Leilões", _driver.PageSource);
         }
     }
 }
