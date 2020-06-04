@@ -1,17 +1,30 @@
 ﻿using _02_XX_Selenium_WebDriver.Selenium.Helpers;
-using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using System;
 using Xunit;
 
 namespace _02_XX_Selenium_WebDriver.Selenium
 {
-    public class AoNavegarParaHome
+    public class AoNavegarParaHome : IDisposable
     {
+        private ChromeDriver driver;
+
+        // Setup (inicializando os recursos)
+        public AoNavegarParaHome()
+        {
+            driver = new ChromeDriver(TestHelper.PastaDoExecutavel);
+        }
+
+        //TearDown (liberar os recursos que foram inicializados)
+        public void Dispose()
+        {
+            driver.Quit();
+        }
+
         [Fact]
         public void DadoChromeAbertoDeveMostrarLeiloesNoTitulo()
         {
             // arrange
-            IWebDriver driver = new ChromeDriver(TestHelper.PastaDoExecutavel);
 
             // act
             driver.Navigate().GoToUrl("http://localhost:5000");
@@ -24,7 +37,6 @@ namespace _02_XX_Selenium_WebDriver.Selenium
         public void DadoChromeAbertoDeveMostrarProximosLeiloesNaPagina()
         {
             // arrange
-            IWebDriver driver = new ChromeDriver(TestHelper.PastaDoExecutavel);
 
             // act
             driver.Navigate().GoToUrl("http://localhost:5000");

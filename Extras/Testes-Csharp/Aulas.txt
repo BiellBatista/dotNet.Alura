@@ -144,6 +144,8 @@ Selenium WebDriver e C# parte 1: Primeiros passos
 		03 - Nomenclatura e ajudantes
 		04 - Alinhado (A)
 		05 - Gerenciando o navegador
+		06 - Para saber mais: Setup e TearDown
+		07 - Compartilhando recursos
 	03 - Testando funcionalidades do leilão
 	04 - Encontrando elementos de outras maneiras
 	05 - Blindando os testes de mudanças na UI
