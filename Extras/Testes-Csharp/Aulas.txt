@@ -140,6 +140,8 @@ Selenium WebDriver e C# parte 1: Primeiros passos
 		14 - O que aprendemos?
 	02 - Compartilhando recursos entre testes
 		01 - Iniciando os testes
+		02 - Objetivos da aula
+		03 - Nomenclatura e ajudantes
 	03 - Testando funcionalidades do leilão
 	04 - Encontrando elementos de outras maneiras
 	05 - Blindando os testes de mudanças na UI
