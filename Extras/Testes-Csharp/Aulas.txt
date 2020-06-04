@@ -130,6 +130,14 @@ Selenium WebDriver e C# parte 1: Primeiros passos
 		04 - Preparando o ambiente
 		05 - [OBRIGATÓRIO] Projeto inicial
 		06 - Selenium Webdriver
+		07 - Primeiros passos com WebDriver (B / C / D)
+		08 - Para saber mais: implementações de IWebDriver
+		09 - Conceitos
+		10 - UI Tests vs Unit Tests (C)
+		11 - Faça o que eu fiz na aula
+		12 - Referências Utilizadas
+		13 - Projeto atual
+		14 - O que aprendemos?
 	02 - Compartilhando recursos entre testes
 	03 - Testando funcionalidades do leilão
 	04 - Encontrando elementos de outras maneiras
