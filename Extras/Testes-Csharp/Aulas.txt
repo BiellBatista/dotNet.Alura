@@ -142,6 +142,8 @@ Selenium WebDriver e C# parte 1: Primeiros passos
 		01 - Iniciando os testes
 		02 - Objetivos da aula
 		03 - Nomenclatura e ajudantes
+		04 - Alinhado (A)
+		05 - Gerenciando o navegador
 	03 - Testando funcionalidades do leilão
 	04 - Encontrando elementos de outras maneiras
 	05 - Blindando os testes de mudanças na UI
