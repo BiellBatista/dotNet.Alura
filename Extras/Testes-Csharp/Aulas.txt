@@ -147,6 +147,11 @@ Selenium WebDriver e C# parte 1: Primeiros passos
 		06 - Para saber mais: Setup e TearDown
 		07 - Compartilhando recursos
 		08 - Collection Fixtures
+		09 - Estratégias de compartilhamento do xUnit (C)
+		10 - Referências Utilizadas
+		11 - Faça o que eu fiz na aula
+		12 - Projeto atual
+		13 - O que aprendemos?
 	03 - Testando funcionalidades do leilão
 	04 - Encontrando elementos de outras maneiras
 	05 - Blindando os testes de mudanças na UI
