@@ -168,6 +168,8 @@ Selenium WebDriver e C# parte 1: Primeiros passos
 		01 - Mensagens de erro
 		02 - Objetivos da aula
 		03 - Outros locators
+		04 - Pedro precisa de você (C)
+		05 - Resultado com vários elementos
 	05 - Blindando os testes de mudanças na UI
 Selenium WebDriver e C# parte 2: Outros recursos
 	01 - Elementos invisíveis

@@ -84,7 +84,26 @@ namespace _04_XX_Selenium_WebDriver.Selenium.Testes
             botaoRegistro.Click();
 
             //act
-            IWebElement elemento = ???;
+            IWebElement elemento = driver.FindElement(By.CssSelector("span.msg-erro[data-valmsg-for=Nome]"));
+            Assert.True(elemento.Displayed);
+        }
+
+        [Fact]
+        public void DadoEmailInvalidoEmBrancoDeveMostrarMensagemDeErro()
+        {
+            //arrange - dado chrome aberto na página inicial do sistema
+            driver.Navigate().GoToUrl("http://localhost:5000");
+
+            var inputEmail = driver.FindElement(By.Id("Email"));
+            var botaoRegistro = driver.FindElement(By.Id("btnRegistro"));
+
+            inputEmail.SendKeys("gabriel");
+
+            //assert
+            botaoRegistro.Click();
+
+            //act
+            IWebElement elemento = driver.FindElement(By.CssSelector("span.msg-erro[data-valmsg-for=Email]"));
             Assert.True(elemento.Displayed);
         }
     }
