@@ -156,6 +156,8 @@ Selenium WebDriver e C# parte 1: Primeiros passos
 		01 - Testando o registro
 		02 - Objetivos da aula
 		03 - Obtendo elementos
+		04 - Procedimento típico (B / C / D)
+		05 - Registro inválido
 	04 - Encontrando elementos de outras maneiras
 	05 - Blindando os testes de mudanças na UI
 Selenium WebDriver e C# parte 2: Outros recursos
