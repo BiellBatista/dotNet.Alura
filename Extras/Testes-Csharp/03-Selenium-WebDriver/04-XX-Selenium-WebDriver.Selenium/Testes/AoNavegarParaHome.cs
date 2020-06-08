@@ -42,5 +42,24 @@ namespace _04_XX_Selenium_WebDriver.Selenium.Testes
             // assert
             Assert.Contains("Próximos Leilões", _driver.PageSource);
         }
+
+        [Fact]
+        public void DadoChromeAbertoFormRegistroNaoDeveMostrarMensagensDeErro()
+        {
+            // arrange
+
+            // act
+            _driver.Navigate().GoToUrl("http://localhost:5000");
+
+            // assert
+            var form = _driver.FindElement(By.TagName("form"));
+            var spans = form.FindElements(By.TagName("span"));
+
+            foreach (var span in spans)
+            {
+                // a condição tem que ser falsa
+                Assert.True(string.IsNullOrEmpty(span.Text));
+            }
+        }
     }
 }

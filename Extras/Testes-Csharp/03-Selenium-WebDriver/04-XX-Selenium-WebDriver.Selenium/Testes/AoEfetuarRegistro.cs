@@ -7,11 +7,11 @@ namespace _04_XX_Selenium_WebDriver.Selenium.Testes
     [Collection("Chrome Driver")]
     public class AoEfetuarRegistro
     {
-        private IWebDriver driver;
+        private IWebDriver _driver;
 
         public AoEfetuarRegistro(TestFixture fixture)
         {
-            driver = fixture.Driver;
+            _driver = fixture.Driver;
         }
 
         [Fact]
@@ -19,13 +19,13 @@ namespace _04_XX_Selenium_WebDriver.Selenium.Testes
         {
             //arrange - dado chrome aberto na página inicial do sistema
             //dados de registros válidos
-            driver.Navigate().GoToUrl("http://localhost:5000");
+            _driver.Navigate().GoToUrl("http://localhost:5000");
 
-            var inputNome = driver.FindElement(By.Id("Nome"));
-            var inputEmail = driver.FindElement(By.Id("Email"));
-            var inputSenha = driver.FindElement(By.Id("Password"));
-            var inputConfirmSenha = driver.FindElement(By.Id("ConfirmPassword"));
-            var botaoRegistro = driver.FindElement(By.Id("btnRegistro"));
+            var inputNome = _driver.FindElement(By.Id("Nome"));
+            var inputEmail = _driver.FindElement(By.Id("Email"));
+            var inputSenha = _driver.FindElement(By.Id("Password"));
+            var inputConfirmSenha = _driver.FindElement(By.Id("ConfirmPassword"));
+            var botaoRegistro = _driver.FindElement(By.Id("btnRegistro"));
 
             inputNome.SendKeys("Gabriel Batista");
             inputEmail.SendKeys("gabriel.texteis@gmail.com");
@@ -36,7 +36,7 @@ namespace _04_XX_Selenium_WebDriver.Selenium.Testes
             botaoRegistro.Click();
 
             //assert - devo ser redirecionado par auma página de agradecimento
-            Assert.Contains("Obrigado", driver.PageSource);
+            Assert.Contains("Obrigado", _driver.PageSource);
         }
 
         [Theory]
@@ -52,13 +52,13 @@ namespace _04_XX_Selenium_WebDriver.Selenium.Testes
         {
             //arrange - dado chrome aberto na página inicial do sistema
             //dados de registros válidos
-            driver.Navigate().GoToUrl("http://localhost:5000");
+            _driver.Navigate().GoToUrl("http://localhost:5000");
 
-            var inputNome = driver.FindElement(By.Id("Nome"));
-            var inputEmail = driver.FindElement(By.Id("Email"));
-            var inputSenha = driver.FindElement(By.Id("Password"));
-            var inputConfirmSenha = driver.FindElement(By.Id("ConfirmPassword"));
-            var botaoRegistro = driver.FindElement(By.Id("btnRegistro"));
+            var inputNome = _driver.FindElement(By.Id("Nome"));
+            var inputEmail = _driver.FindElement(By.Id("Email"));
+            var inputSenha = _driver.FindElement(By.Id("Password"));
+            var inputConfirmSenha = _driver.FindElement(By.Id("ConfirmPassword"));
+            var botaoRegistro = _driver.FindElement(By.Id("btnRegistro"));
 
             inputNome.SendKeys(nome);
             inputEmail.SendKeys(email);
@@ -69,33 +69,33 @@ namespace _04_XX_Selenium_WebDriver.Selenium.Testes
             botaoRegistro.Click();
 
             //assert - devo ser redirecionado par auma página de agradecimento
-            Assert.Contains("section-registro", driver.PageSource);
+            Assert.Contains("section-registro", _driver.PageSource);
         }
 
         [Fact]
         public void DadoNomeEmBrancoDeveMostrarMensagemDeErro()
         {
             //arrange - dado chrome aberto na página inicial do sistema
-            driver.Navigate().GoToUrl("http://localhost:5000");
+            _driver.Navigate().GoToUrl("http://localhost:5000");
 
-            var botaoRegistro = driver.FindElement(By.Id("btnRegistro"));
+            var botaoRegistro = _driver.FindElement(By.Id("btnRegistro"));
 
             //assert
             botaoRegistro.Click();
 
             //act
-            IWebElement elemento = driver.FindElement(By.CssSelector("span.msg-erro[data-valmsg-for=Nome]"));
-            Assert.True(elemento.Displayed);
+            IWebElement elemento = _driver.FindElement(By.CssSelector("span.msg-erro[data-valmsg-for=Nome]"));
+            Assert.Equal("The Nome field is required.", elemento.Text);
         }
 
         [Fact]
         public void DadoEmailInvalidoEmBrancoDeveMostrarMensagemDeErro()
         {
             //arrange - dado chrome aberto na página inicial do sistema
-            driver.Navigate().GoToUrl("http://localhost:5000");
+            _driver.Navigate().GoToUrl("http://localhost:5000");
 
-            var inputEmail = driver.FindElement(By.Id("Email"));
-            var botaoRegistro = driver.FindElement(By.Id("btnRegistro"));
+            var inputEmail = _driver.FindElement(By.Id("Email"));
+            var botaoRegistro = _driver.FindElement(By.Id("btnRegistro"));
 
             inputEmail.SendKeys("gabriel");
 
@@ -103,8 +103,8 @@ namespace _04_XX_Selenium_WebDriver.Selenium.Testes
             botaoRegistro.Click();
 
             //act
-            IWebElement elemento = driver.FindElement(By.CssSelector("span.msg-erro[data-valmsg-for=Email]"));
-            Assert.True(elemento.Displayed);
+            IWebElement elemento = _driver.FindElement(By.CssSelector("span.msg-erro[data-valmsg-for=Email]"));
+            Assert.Equal("Please enter a valid email address.", elemento.Text);
         }
     }
 }
