@@ -158,6 +158,12 @@ Selenium WebDriver e C# parte 1: Primeiros passos
 		03 - Obtendo elementos
 		04 - Procedimento típico (B / C / D)
 		05 - Registro inválido
+		06 - Ajude Marina! (C)
+		07 - Para saber mais: outras estratégias de localização
+		08 - Referências utilizadas
+		09 - Faça o que eu fiz na aula
+		10 - Projeto atual
+		11 - O que aprendemos?
 	04 - Encontrando elementos de outras maneiras
 	05 - Blindando os testes de mudanças na UI
 Selenium WebDriver e C# parte 2: Outros recursos
