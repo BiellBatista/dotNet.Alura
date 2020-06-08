@@ -15,25 +15,35 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Selenium-WebDriver.We
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Selenium-WebDriver.Dados", "01-XX-Selenium-WebDriver.Dados\01-XX-Selenium-WebDriver.Dados.csproj", "{7C733F15-4F1C-497A-B81E-DD4272EECF64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-XX-Selenium-WebDriver.Tests", "02-XX-Selenium-WebDriver.Tests\02-XX-Selenium-WebDriver.Tests.csproj", "{F22D2E00-97BB-48BB-AF94-6D35C5EA5CBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Selenium-WebDriver.Tests", "02-XX-Selenium-WebDriver.Tests\02-XX-Selenium-WebDriver.Tests.csproj", "{F22D2E00-97BB-48BB-AF94-6D35C5EA5CBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-XX-Selenium-WebDriver.Dados", "02-XX-Selenium-WebDriver.Dados\02-XX-Selenium-WebDriver.Dados.csproj", "{DB8FA092-C2AA-4243-B213-DE6706DBCD34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Selenium-WebDriver.Dados", "02-XX-Selenium-WebDriver.Dados\02-XX-Selenium-WebDriver.Dados.csproj", "{DB8FA092-C2AA-4243-B213-DE6706DBCD34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-XX-Selenium-WebDriver.Core", "02-XX-Selenium-WebDriver.Core\02-XX-Selenium-WebDriver.Core.csproj", "{FF4736BB-395A-4589-A4A1-23CE98DC5A20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Selenium-WebDriver.Core", "02-XX-Selenium-WebDriver.Core\02-XX-Selenium-WebDriver.Core.csproj", "{FF4736BB-395A-4589-A4A1-23CE98DC5A20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-XX-Selenium-WebDriver.WebApp", "02-XX-Selenium-WebDriver.WebApp\02-XX-Selenium-WebDriver.WebApp.csproj", "{D3B6232C-119F-444F-8C6A-0FE48028BFC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Selenium-WebDriver.WebApp", "02-XX-Selenium-WebDriver.WebApp\02-XX-Selenium-WebDriver.WebApp.csproj", "{D3B6232C-119F-444F-8C6A-0FE48028BFC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-XX-Selenium-WebDriver.Selenium", "02-XX-Selenium-WebDriver.Selenium\02-XX-Selenium-WebDriver.Selenium.csproj", "{BF11D173-AED2-4EE2-95FC-30730DFB8778}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Selenium-WebDriver.Selenium", "02-XX-Selenium-WebDriver.Selenium\02-XX-Selenium-WebDriver.Selenium.csproj", "{BF11D173-AED2-4EE2-95FC-30730DFB8778}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-XX-Selenium-WebDriver.Core", "03-XX-Selenium-WebDriver.Core\03-XX-Selenium-WebDriver.Core.csproj", "{797BDE62-4098-465A-B5E1-E8B8E6519ED7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Selenium-WebDriver.Core", "03-XX-Selenium-WebDriver.Core\03-XX-Selenium-WebDriver.Core.csproj", "{797BDE62-4098-465A-B5E1-E8B8E6519ED7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-XX-Selenium-WebDriver.Dados", "03-XX-Selenium-WebDriver.Dados\03-XX-Selenium-WebDriver.Dados.csproj", "{0A52109F-B6CD-4743-855C-987F55435795}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Selenium-WebDriver.Dados", "03-XX-Selenium-WebDriver.Dados\03-XX-Selenium-WebDriver.Dados.csproj", "{0A52109F-B6CD-4743-855C-987F55435795}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-XX-Selenium-WebDriver.WebApp", "03-XX-Selenium-WebDriver.WebApp\03-XX-Selenium-WebDriver.WebApp.csproj", "{1ECECAFF-1B4D-46BA-98DE-BCF5C17A80DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Selenium-WebDriver.WebApp", "03-XX-Selenium-WebDriver.WebApp\03-XX-Selenium-WebDriver.WebApp.csproj", "{1ECECAFF-1B4D-46BA-98DE-BCF5C17A80DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-XX-Selenium-WebDriver.Tests", "03-XX-Selenium-WebDriver.Tests\03-XX-Selenium-WebDriver.Tests.csproj", "{269180E6-E108-436C-BA12-4E8F28A564B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Selenium-WebDriver.Tests", "03-XX-Selenium-WebDriver.Tests\03-XX-Selenium-WebDriver.Tests.csproj", "{269180E6-E108-436C-BA12-4E8F28A564B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-XX-Selenium-WebDriver.Selenium", "03-XX-Selenium-WebDriver.Selenium\03-XX-Selenium-WebDriver.Selenium.csproj", "{9C5C8333-64F9-4AE6-857A-B989E400D61A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Selenium-WebDriver.Selenium", "03-XX-Selenium-WebDriver.Selenium\03-XX-Selenium-WebDriver.Selenium.csproj", "{9C5C8333-64F9-4AE6-857A-B989E400D61A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-XX-Selenium-WebDriver.Core", "04-XX-Selenium-WebDriver.Core\04-XX-Selenium-WebDriver.Core.csproj", "{71469EEF-82FF-4F57-96EB-DD3D0F1C9B56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-XX-Selenium-WebDriver.Dados", "04-XX-Selenium-WebDriver.Dados\04-XX-Selenium-WebDriver.Dados.csproj", "{67BDDC0F-5A98-41DF-A77A-CEB5AF1EC68D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-XX-Selenium-WebDriver.WebApp", "04-XX-Selenium-WebDriver.WebApp\04-XX-Selenium-WebDriver.WebApp.csproj", "{CB50A7D2-35A2-476D-A3AB-035EA216BA61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-XX-Selenium-WebDriver.Selenium", "04-XX-Selenium-WebDriver.Selenium\04-XX-Selenium-WebDriver.Selenium.csproj", "{A40305C8-A1D3-448C-94C6-AD25BD85E163}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-XX-Selenium-WebDriver.Tests", "04-XX-Selenium-WebDriver.Tests\04-XX-Selenium-WebDriver.Tests.csproj", "{685E311E-B4C8-4C7E-93F2-6E2D34D30CF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +107,26 @@ Global
 		{9C5C8333-64F9-4AE6-857A-B989E400D61A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C5C8333-64F9-4AE6-857A-B989E400D61A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C5C8333-64F9-4AE6-857A-B989E400D61A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71469EEF-82FF-4F57-96EB-DD3D0F1C9B56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71469EEF-82FF-4F57-96EB-DD3D0F1C9B56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71469EEF-82FF-4F57-96EB-DD3D0F1C9B56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71469EEF-82FF-4F57-96EB-DD3D0F1C9B56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67BDDC0F-5A98-41DF-A77A-CEB5AF1EC68D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67BDDC0F-5A98-41DF-A77A-CEB5AF1EC68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67BDDC0F-5A98-41DF-A77A-CEB5AF1EC68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67BDDC0F-5A98-41DF-A77A-CEB5AF1EC68D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB50A7D2-35A2-476D-A3AB-035EA216BA61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB50A7D2-35A2-476D-A3AB-035EA216BA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB50A7D2-35A2-476D-A3AB-035EA216BA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB50A7D2-35A2-476D-A3AB-035EA216BA61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A40305C8-A1D3-448C-94C6-AD25BD85E163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A40305C8-A1D3-448C-94C6-AD25BD85E163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A40305C8-A1D3-448C-94C6-AD25BD85E163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A40305C8-A1D3-448C-94C6-AD25BD85E163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{685E311E-B4C8-4C7E-93F2-6E2D34D30CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{685E311E-B4C8-4C7E-93F2-6E2D34D30CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{685E311E-B4C8-4C7E-93F2-6E2D34D30CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{685E311E-B4C8-4C7E-93F2-6E2D34D30CF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,6 +146,11 @@ Global
 		{1ECECAFF-1B4D-46BA-98DE-BCF5C17A80DC} = {C80543F3-648E-4D63-8340-D1B47D3131C8}
 		{269180E6-E108-436C-BA12-4E8F28A564B4} = {060B2CDE-6D52-42CE-A815-70B702D7E703}
 		{9C5C8333-64F9-4AE6-857A-B989E400D61A} = {060B2CDE-6D52-42CE-A815-70B702D7E703}
+		{71469EEF-82FF-4F57-96EB-DD3D0F1C9B56} = {C80543F3-648E-4D63-8340-D1B47D3131C8}
+		{67BDDC0F-5A98-41DF-A77A-CEB5AF1EC68D} = {C80543F3-648E-4D63-8340-D1B47D3131C8}
+		{CB50A7D2-35A2-476D-A3AB-035EA216BA61} = {C80543F3-648E-4D63-8340-D1B47D3131C8}
+		{A40305C8-A1D3-448C-94C6-AD25BD85E163} = {060B2CDE-6D52-42CE-A815-70B702D7E703}
+		{685E311E-B4C8-4C7E-93F2-6E2D34D30CF5} = {060B2CDE-6D52-42CE-A815-70B702D7E703}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F047DFFC-5A65-4C77-AB55-BBAE424F4A7D}
