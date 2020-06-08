@@ -71,5 +71,21 @@ namespace _04_XX_Selenium_WebDriver.Selenium.Testes
             //assert - devo ser redirecionado par auma página de agradecimento
             Assert.Contains("section-registro", driver.PageSource);
         }
+
+        [Fact]
+        public void DadoNomeEmBrancoDeveMostrarMensagemDeErro()
+        {
+            //arrange - dado chrome aberto na página inicial do sistema
+            driver.Navigate().GoToUrl("http://localhost:5000");
+
+            var botaoRegistro = driver.FindElement(By.Id("btnRegistro"));
+
+            //assert
+            botaoRegistro.Click();
+
+            //act
+            IWebElement elemento = ???;
+            Assert.True(elemento.Displayed);
+        }
     }
 }
