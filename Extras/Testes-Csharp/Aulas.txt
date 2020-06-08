@@ -178,6 +178,7 @@ Selenium WebDriver e C# parte 1: Primeiros passos
 		01 - Quando muda o HTML
 		02 - Objetivos da aula
 		03 - Page Objects
+		04 - Testando o login
 Selenium WebDriver e C# parte 2: Outros recursos
 	01 - Elementos invisíveis
 	02 - Formulários complexos

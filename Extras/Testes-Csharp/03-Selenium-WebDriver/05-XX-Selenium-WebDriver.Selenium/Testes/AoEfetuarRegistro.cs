@@ -1,4 +1,5 @@
 ﻿using _05_XX_Selenium_WebDriver.Selenium.Fixtures;
+using _05_XX_Selenium_WebDriver.Selenium.PageObjects;
 using OpenQA.Selenium;
 using Xunit;
 
@@ -80,10 +81,10 @@ namespace _05_XX_Selenium_WebDriver.Selenium.Testes
 
             var botaoRegistro = _driver.FindElement(By.Id("btnRegistro"));
 
-            //assert
+            //act
             botaoRegistro.Click();
 
-            //act
+            //assert
             IWebElement elemento = _driver.FindElement(By.CssSelector("span.msg-erro[data-valmsg-for=Nome]"));
             Assert.Equal("The Nome field is required.", elemento.Text);
         }
@@ -92,19 +93,21 @@ namespace _05_XX_Selenium_WebDriver.Selenium.Testes
         public void DadoEmailInvalidoEmBrancoDeveMostrarMensagemDeErro()
         {
             //arrange - dado chrome aberto na página inicial do sistema
-            _driver.Navigate().GoToUrl("http://localhost:5000");
+            var registroPO = new RegistroPO(_driver);
+            registroPO.Visitar();
 
-            var inputEmail = _driver.FindElement(By.Id("Email"));
-            var botaoRegistro = _driver.FindElement(By.Id("btnRegistro"));
-
-            inputEmail.SendKeys("gabriel");
-
-            //assert
-            botaoRegistro.Click();
+            registroPO.PreencheFormulario(
+                nome: "",
+                email: "gabriel",
+                senha: "",
+                confirmSenha: "senha"
+                );
 
             //act
-            IWebElement elemento = _driver.FindElement(By.CssSelector("span.msg-erro[data-valmsg-for=Email]"));
-            Assert.Equal("Please enter a valid email address.", elemento.Text);
+            registroPO.SubmeteFormulatio();
+
+            //assert
+            Assert.Equal("Please enter a valid email address.", registroPO.EmailMensagemErro);
         }
     }
 }
