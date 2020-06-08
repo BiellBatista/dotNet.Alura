@@ -154,6 +154,8 @@ Selenium WebDriver e C# parte 1: Primeiros passos
 		13 - O que aprendemos?
 	03 - Testando funcionalidades do leilão
 		01 - Testando o registro
+		02 - Objetivos da aula
+		03 - Obtendo elementos
 	04 - Encontrando elementos de outras maneiras
 	05 - Blindando os testes de mudanças na UI
 Selenium WebDriver e C# parte 2: Outros recursos
