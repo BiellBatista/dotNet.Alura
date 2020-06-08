@@ -175,6 +175,7 @@ Selenium WebDriver e C# parte 1: Primeiros passos
 		08 - Projeto atual
 		09 - O que aprendemos?
 	05 - Blindando os testes de mudanças na UI
+		01 - Quando muda o HTML
 Selenium WebDriver e C# parte 2: Outros recursos
 	01 - Elementos invisíveis
 	02 - Formulários complexos
