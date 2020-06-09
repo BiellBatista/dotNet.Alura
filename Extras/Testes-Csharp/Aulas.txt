@@ -192,6 +192,7 @@ Selenium WebDriver e C# parte 2: Outros recursos
 		03 - [OBRIGATÓRIO] Projeto Incial
 		04 - Objetivos da aula
 		05 - Fazendo logout
+		06 - Page Object do Dashboard
 	02 - Formulários complexos
 	03 - Frameworks que dificultam
 	04 - Esperando para as verificações
