@@ -179,6 +179,12 @@ Selenium WebDriver e C# parte 1: Primeiros passos
 		02 - Objetivos da aula
 		03 - Page Objects
 		04 - Testando o login
+		05 - Conclusão
+		06 - Fixando os conhecimentos (C)
+		07 - Referências utilizadas
+		08 - Faça o que eu fiz na aula
+		09 - Projeto final
+		10 - O que aprendemos?
 Selenium WebDriver e C# parte 2: Outros recursos
 	01 - Elementos invisíveis
 	02 - Formulários complexos
