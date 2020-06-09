@@ -187,6 +187,11 @@ Selenium WebDriver e C# parte 1: Primeiros passos
 		10 - O que aprendemos?
 Selenium WebDriver e C# parte 2: Outros recursos
 	01 - Elementos invisíveis
+		01 - Introdução
+		02 - Objetivos da segunda parte
+		03 - [OBRIGATÓRIO] Projeto Incial
+		04 - Objetivos da aula
+		05 - Fazendo logout
 	02 - Formulários complexos
 	03 - Frameworks que dificultam
 	04 - Esperando para as verificações
