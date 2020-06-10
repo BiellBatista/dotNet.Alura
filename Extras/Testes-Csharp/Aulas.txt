@@ -204,6 +204,7 @@ Selenium WebDriver e C# parte 2: Outros recursos
 		01 - Criando um leilão
 		02 - Objetivos da aula
 		03 - Concluindo o teste
+		04 - Testando categorias
 	03 - Frameworks que dificultam
 	04 - Esperando para as verificações
 	05 - Melhorando o código de testes

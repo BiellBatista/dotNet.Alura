@@ -13,6 +13,7 @@ namespace _02_XX_Selenium_WebDriver.Selenium.PageObjects
         private By _byInputImagem;
         private By _byInputInicioPregao;
         private By _byInputTerminoPregao;
+        private By _byBotaoSalvar;
 
         public NovoLeilaoPO(IWebDriver driver)
         {
@@ -21,9 +22,10 @@ namespace _02_XX_Selenium_WebDriver.Selenium.PageObjects
             _byInputDescricao = By.Id("Descricao");
             _byInputCategoria = By.Id("Categoria");
             _byInputValorInicial = By.Id("ValorInicial");
-            _byInputImagem = By.Id("Imagem");
+            _byInputImagem = By.Id("ArquivoImagem");
             _byInputInicioPregao = By.Id("InicioPregao");
             _byInputTerminoPregao = By.Id("TerminoPregao");
+            _byBotaoSalvar = By.CssSelector("button[type=submit]");
         }
 
         public void Visitar()
@@ -42,11 +44,16 @@ namespace _02_XX_Selenium_WebDriver.Selenium.PageObjects
         {
             _driver.FindElement(_byInputTitulo).SendKeys(titulo);
             _driver.FindElement(_byInputDescricao).SendKeys(descricao);
-            _driver.FindElement(_byInputCategoria).SendKeys(categoria);
+            //_driver.FindElement(_byInputCategoria).SendKeys(categoria);
             _driver.FindElement(_byInputValorInicial).SendKeys(valor.ToString());
             _driver.FindElement(_byInputImagem).SendKeys(imagem);
-            _driver.FindElement(_byInputInicioPregao).SendKeys(inicio.ToString());
-            _driver.FindElement(_byInputTerminoPregao).SendKeys(termino.ToString());
+            _driver.FindElement(_byInputInicioPregao).SendKeys(inicio.ToString("dd/MM/yyyy"));
+            _driver.FindElement(_byInputTerminoPregao).SendKeys(termino.ToString("dd/MM/yyyy"));
+        }
+
+        public void SubmeteFormulario()
+        {
+            _driver.FindElement(_byBotaoSalvar).Click();
         }
     }
 }
