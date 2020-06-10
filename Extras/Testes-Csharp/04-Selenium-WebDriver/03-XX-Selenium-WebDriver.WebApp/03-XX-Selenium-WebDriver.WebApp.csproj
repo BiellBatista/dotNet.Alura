@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-    <RootNamespace>_02_XX_Selenium_WebDriver.WebApp</RootNamespace>
+    <RootNamespace>_03_XX_Selenium_WebDriver.WebApp</RootNamespace>
   </PropertyGroup>
 
 
@@ -17,8 +17,8 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\02-XX-Selenium-WebDriver.Core\02-XX-Selenium-WebDriver.Core.csproj" />
-    <ProjectReference Include="..\02-XX-Selenium-WebDriver.Dados\02-XX-Selenium-WebDriver.Dados.csproj" />
+    <ProjectReference Include="..\03-XX-Selenium-WebDriver.Core\03-XX-Selenium-WebDriver.Core.csproj" />
+    <ProjectReference Include="..\03-XX-Selenium-WebDriver.Dados\03-XX-Selenium-WebDriver.Dados.csproj" />
   </ItemGroup>
 
 </Project>

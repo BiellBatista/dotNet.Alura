@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <RootNamespace>_01_XX_Selenium_WebDriver.Dados</RootNamespace>
+    <RootNamespace>_03_XX_Selenium_WebDriver.Dados</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\01-XX-Selenium-WebDriver.Core\01-XX-Selenium-WebDriver.Core.csproj" />
+    <ProjectReference Include="..\03-XX-Selenium-WebDriver.Core\03-XX-Selenium-WebDriver.Core.csproj" />
   </ItemGroup>
 
 </Project>
