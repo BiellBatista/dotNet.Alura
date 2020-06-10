@@ -195,6 +195,11 @@ Selenium WebDriver e C# parte 2: Outros recursos
 		06 - Page Object do Dashboard
 		07 - [Errata] FindElement e Click
 		08 - Simulando ações
+		09 - Usando as Interactions (B / D / E)
+		10 - Referências Utilizadas
+		11 - Faça o que eu fiz na aula
+		12 - Projeto atual
+		13 - O que aprendemos?
 	02 - Formulários complexos
 	03 - Frameworks que dificultam
 	04 - Esperando para as verificações
