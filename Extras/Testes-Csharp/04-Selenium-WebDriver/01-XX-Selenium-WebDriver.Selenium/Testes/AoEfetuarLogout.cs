@@ -25,7 +25,10 @@ namespace _01_XX_Selenium_WebDriver.Selenium.Testes
             loginPO.PreencheFormulario("fulano@example.org", "123");
             loginPO.SubmeteFormulario();
 
+            var dashboardPO = new DashboardInteressadaPO(_driver);
+
             //act - efetuar logout
+            dashboardPO.EfetuarLogout();
 
             //assert
             Assert.Contains("Próximos Leilões", _driver.PageSource);
