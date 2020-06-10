@@ -1,5 +1,8 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace _02_XX_Selenium_WebDriver.Selenium.PageObjects
 {
@@ -14,6 +17,18 @@ namespace _02_XX_Selenium_WebDriver.Selenium.PageObjects
         private By _byInputInicioPregao;
         private By _byInputTerminoPregao;
         private By _byBotaoSalvar;
+
+        public IEnumerable<string> Categorias
+        {
+            get
+            {
+                var elementoCategoria = new SelectElement(_driver.FindElement(_byInputCategoria));
+                return elementoCategoria
+                    .Options
+                    .Where(o => o.Enabled)
+                    .Select(o => o.Text);
+            }
+        }
 
         public NovoLeilaoPO(IWebDriver driver)
         {
