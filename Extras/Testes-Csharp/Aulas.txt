@@ -212,6 +212,8 @@ Selenium WebDriver e C# parte 2: Outros recursos
 		09 - O que aprendemos?
 	03 - Frameworks que dificultam
 		01 - Filtrando leilões
+		02 - Objetivos da aula
+		03 - Dropdowns do Materialize CSS
 	04 - Esperando para as verificações
 	05 - Melhorando o código de testes
 	06 - Outros recursos

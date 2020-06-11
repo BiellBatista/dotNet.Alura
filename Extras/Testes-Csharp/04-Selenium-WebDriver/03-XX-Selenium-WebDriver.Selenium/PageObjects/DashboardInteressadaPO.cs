@@ -8,12 +8,20 @@ namespace _03_XX_Selenium_WebDriver.Selenium.PageObjects
         private IWebDriver _driver;
         private By _byLogoutLink;
         private By _byMeuPerfilLink;
+        private By _bySelectCategorias;
+        private By _byInputTermo;
+        private By _byInputAndamento;
+        private By _byBotaoPesquisar;
 
         public DashboardInteressadaPO(IWebDriver driver)
         {
             _driver = driver;
             _byLogoutLink = By.Id("logout");
             _byMeuPerfilLink = By.Id("meu-perfil");
+            _bySelectCategorias = By.Id("");
+            _byInputTermo = By.Id("");
+            _byInputAndamento = By.Id("");
+            _byBotaoPesquisar = By.Id("");
         }
 
         /**
