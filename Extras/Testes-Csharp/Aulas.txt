@@ -216,6 +216,7 @@ Selenium WebDriver e C# parte 2: Outros recursos
 		03 - Dropdowns do Materialize CSS
 		04 - Estratégias de interação (C)
 		05 - Classe SelectMaterialize
+		06 - Concluindo o teste
 	04 - Esperando para as verificações
 	05 - Melhorando o código de testes
 	06 - Outros recursos
