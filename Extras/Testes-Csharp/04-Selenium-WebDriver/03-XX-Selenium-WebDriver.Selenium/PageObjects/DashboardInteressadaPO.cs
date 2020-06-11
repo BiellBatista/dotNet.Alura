@@ -1,5 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace _03_XX_Selenium_WebDriver.Selenium.PageObjects
 {
@@ -18,10 +20,34 @@ namespace _03_XX_Selenium_WebDriver.Selenium.PageObjects
             _driver = driver;
             _byLogoutLink = By.Id("logout");
             _byMeuPerfilLink = By.Id("meu-perfil");
-            _bySelectCategorias = By.Id("");
+            _bySelectCategorias = By.ClassName("select-wrapper");
             _byInputTermo = By.Id("");
             _byInputAndamento = By.Id("");
             _byBotaoPesquisar = By.Id("");
+        }
+
+        public void PesquisarLeiloes(List<string> categorias)
+        {
+            var selectWrapper = _driver.FindElement(_bySelectCategorias);
+            selectWrapper.Click();
+
+            // pegando as opções
+            var opcoes = selectWrapper
+                .FindElements(By.CssSelector("li>span"))
+                .ToList();
+
+            // desmarcando as opções
+            opcoes.ForEach(o => o.Click());
+
+            categorias.ForEach(c => opcoes
+                .Where(o => o.Text.Contains(c))
+                .ToList()
+                .ForEach(o => o.Click())
+            );
+
+            selectWrapper
+                .FindElement(By.TagName("li"))
+                .SendKeys(Keys.Tab);
         }
 
         /**
