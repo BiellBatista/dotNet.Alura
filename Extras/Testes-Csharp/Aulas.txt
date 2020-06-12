@@ -222,5 +222,7 @@ Selenium WebDriver e C# parte 2: Outros recursos
 		09 - Faça o que eu fiz na aula
 		10 - O que aprendemos?
 	04 - Esperando para as verificações
+		01 - [OBRIGATÓRIO] Projeto Modificado
+		02 - Dando lances
 	05 - Melhorando o código de testes
 	06 - Outros recursos
