@@ -22,17 +22,26 @@ namespace _03_XX_Selenium_WebDriver.Selenium.PageObjects
             _byLogoutLink = By.Id("logout");
             _byMeuPerfilLink = By.Id("meu-perfil");
             _bySelectCategorias = By.ClassName("select-wrapper");
-            _byInputTermo = By.Id("");
-            _byInputAndamento = By.Id("");
-            _byBotaoPesquisar = By.Id("");
+            _byInputTermo = By.Id("termo");
+            _byInputAndamento = By.ClassName("switch");
+            _byBotaoPesquisar = By.CssSelector("form>button.btn");
         }
 
-        public void PesquisarLeiloes(List<string> categorias)
+        public void PesquisarLeiloes(List<string> categorias, string termo, bool emAndamento)
         {
             var select = new SelectMaterialize(_driver, _bySelectCategorias);
 
             select.DeselectAll();
             categorias.ForEach(c => select.SelectByText(c));
+
+            _driver.FindElement(_byInputTermo).SendKeys(termo);
+
+            if (emAndamento)
+            {
+                _driver.FindElement(_byInputAndamento).Click();
+            }
+
+            _driver.FindElement(_byBotaoPesquisar).Click();
         }
 
         /**

@@ -29,10 +29,13 @@ namespace _03_XX_Selenium_WebDriver.Selenium.Testes
             var dashboardInteressadaPO = new DashboardInteressadaPO(_driver);
 
             //act
-            dashboardInteressadaPO.PesquisarLeiloes(new List<string> { "Arte", "Coleções" });
+            dashboardInteressadaPO.PesquisarLeiloes(
+                new List<string> { "Arte", "Coleções" },
+                "",
+                true);
 
             //assert
-            Assert.True(true);
+            Assert.Contains("Resultado da pesquisa", _driver.PageSource);
         }
     }
 }
