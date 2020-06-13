@@ -247,3 +247,4 @@ Selenium WebDriver e C# parte 2: Outros recursos
 		02 - Objetivos da Aula
 		03 - Encontre a célula (C)
 		04 - Opções do navegador
+		05 - MenuMobileVisivel
