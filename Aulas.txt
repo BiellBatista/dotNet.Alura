@@ -311,6 +311,29 @@ Extra .NET para Web
 		06 - Gerando Relatórios
 		07 - Fechamento
 -------------------------------------------------------------------------------------------------------------------------
+Extra Persistência com .NET
+	NHibernate: Persistência de dados com C#
+		01 - Configurando e Entendendo o NHibernate
+		02 - Inserindo e Alterando Dados
+		03 - Relacionamento entre Entidades
+		04 - Recuperando dados
+		05 - Resolvendo o Problema do N+1
+		06 - Buscas dinâmicas com criteria
+		07 - Cacheando dados
+		08 - Herança e Polimorfismo
+	.Net e MongoDB parte 1: Primeiros passos para usar esse famoso banco NoSQL
+		01 - Primeiros passos com MongoDB no .NET
+		02 - Inserindo um documento no MongoDB
+		03 - Listando e incluindo vários documentos
+		04 - Pesquisando documentos
+		05 - Alteração e exclusão de documentos
+	.Net e MongoDB parte 2: Integre uma webapp com o banco NoSQL
+		01 - Implementando as classes do Blog
+		02 - Implementando o acesso ao Blog através de usuários
+		03 - Interagindo com o Blog
+		04 - Utilizando coordenadas geoespaciais no MongoDB com .NET
+		05 - Implementando a aplicação de busca de aeroportos
+-------------------------------------------------------------------------------------------------------------------------
 Extra Testes em C#
 	C#: Testes de unidade e TDD com xUnit
 		01 - Promovendo rápido feedback
