@@ -11,19 +11,13 @@ namespace _05_XX_Selenium_WebDriver.Selenium.Testes
     {
         private IWebDriver _driver;
 
-        public AoFiltrarLeiloes(TestFixture fixture)
-        {
-            _driver = fixture.Driver;
-        }
+        public AoFiltrarLeiloes(TestFixture fixture) => _driver = fixture.Driver;
 
         [Fact]
         public void DadoLoginInteressadaDeveMostrarPainelResultado()
         {
             //arrange
-            var loginPO = new LoginPO(_driver);
-            loginPO.Visitar();
-            loginPO.PreencheFormulario("fulano@example.org", "123");
-            loginPO.SubmeteFormulario();
+            new LoginPO(_driver).EfetuarLoginComCredenciais("fulano@example.org", "123");
 
             var dashboardInteressadaPO = new DashboardInteressadaPO(_driver);
 
@@ -35,7 +29,6 @@ namespace _05_XX_Selenium_WebDriver.Selenium.Testes
 
             //assert
             Assert.Contains("Resultado da pesquisa", _driver.PageSource);
-
         }
     }
 }

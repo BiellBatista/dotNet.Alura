@@ -10,19 +10,17 @@ namespace _05_XX_Selenium_WebDriver.Selenium.Testes
     {
         private IWebDriver _driver;
 
-        public AoEfetuarLogout(TestFixture fixture)
-        {
-            _driver = fixture.Driver;
-        }
+        public AoEfetuarLogout(TestFixture fixture) => _driver = fixture.Driver;
 
         [Fact]
         public void DadoLoginValidoDeveIrParaHomeNaoLogada()
         {
             //arrange
-            var loginPO = new LoginPO(_driver);
-            loginPO.Visitar();
-            loginPO.PreencheFormulario("fulano@example.org", "123");
-            loginPO.SubmeteFormulario();
+            new LoginPO(_driver)
+                .Visitar()
+                .InformarEmail("fulano@example.org")
+                .InformarSenha("123")
+                .EfetuarLogin();
 
             var dashboardPO = new DashboardInteressadaPO(_driver);
 

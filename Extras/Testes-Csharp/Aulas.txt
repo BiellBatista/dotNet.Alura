@@ -238,4 +238,8 @@ Selenium WebDriver e C# parte 2: Outros recursos
 		03 - Dividindo responsabilidades
 		04 - Jordana quer aplicar o padrão Facade (C)
 		05 - Linguagem fluente
+		06 - Faça o que eu fiz na aula
+		07 - Referências Utilizadas
+		08 - Projeto atual
+		09 - O que aprendemos?
 	06 - Outros recursos

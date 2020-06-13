@@ -4,34 +4,54 @@ namespace _05_XX_Selenium_WebDriver.Selenium.PageObjects
 {
     public class LoginPO
     {
-        private IWebDriver driver;
-        private By byInputLogin;
-        private By byInputSenha;
-        private By byBotaoLogin;
+        private IWebDriver _driver;
+        private By _byInputLogin;
+        private By _byInputSenha;
+        private By _byBotaoLogin;
 
         public LoginPO(IWebDriver driver)
         {
-            this.driver = driver;
-            byInputLogin = By.Id("Login");
-            byInputSenha = By.Id("Password");
-            byBotaoLogin = By.Id("btnLogin");
+            _driver = driver;
+            _byInputLogin = By.Id("Login");
+            _byInputSenha = By.Id("Password");
+            _byBotaoLogin = By.Id("btnLogin");
         }
 
-        public void Visitar()
+        public LoginPO Visitar()
         {
-            driver.Navigate().GoToUrl("http://localhost:5000/Autenticacao/Login");
+            _driver.Navigate().GoToUrl("http://localhost:5000/Autenticacao/Login");
+
+            return this;
         }
 
-        public void PreencheFormulario(string login, string senha)
+        // essa assinatura de método é usada para Linguagem Fluente, muito utilizada no LinQ e no EF
+        public LoginPO PreencheFormulario(string login, string senha) => InformarEmail(login).InformarSenha(senha);
+
+        public LoginPO InformarEmail(string login)
         {
-            driver.FindElement(byInputLogin).SendKeys(login);
-            driver.FindElement(byInputSenha).SendKeys(senha);
+            _driver.FindElement(_byInputLogin).SendKeys(login);
+
+            return this;
         }
 
-        public void SubmeteFormulario()
+        public LoginPO InformarSenha(string senha)
         {
-            driver.FindElement(byBotaoLogin).Submit();
+            _driver.FindElement(_byInputSenha).SendKeys(senha);
+
+            return this;
         }
 
+        public LoginPO EfetuarLogin() => SubmeteFormulario();
+
+        public LoginPO SubmeteFormulario()
+        {
+            _driver.FindElement(_byBotaoLogin).Submit();
+
+            return this;
+        }
+
+        public void EfetuarLoginComCredenciais(string login, string senha) => Visitar()
+            .PreencheFormulario(login, senha)
+            .SubmeteFormulario();
     }
 }
