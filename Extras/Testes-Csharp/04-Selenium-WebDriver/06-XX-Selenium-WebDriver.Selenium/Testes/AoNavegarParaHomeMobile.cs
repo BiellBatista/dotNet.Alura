@@ -12,9 +12,28 @@ namespace _06_XX_Selenium_WebDriver.Selenium.Testes
 
         public AoNavegarParaHomeMobile()
         {
+            ////configurando a visualização para mobile
+            //var deviceSettings = new ChromeMobileEmulationDeviceSettings();
+            //deviceSettings.Width = 400;
+            //deviceSettings.Height = 800;
+            //deviceSettings.UserAgent = "Customizado";
+
+            ////ativando a visão mobile
+            //var options = new ChromeOptions();
+            //options.EnableMobileEmulation(deviceSettings);
+
+            //_driver = new ChromeDriver(TestHelper.PastaDoExecutavel, options);
+        }
+
+        public void Dispose() => _driver.Quit();
+
+        [Fact]
+        public void DadaLargura992DeveMostrarMenuMobile()
+        {
+            //arrange
             //configurando a visualização para mobile
             var deviceSettings = new ChromeMobileEmulationDeviceSettings();
-            deviceSettings.Width = 400;
+            deviceSettings.Width = 992;
             deviceSettings.Height = 800;
             deviceSettings.UserAgent = "Customizado";
 
@@ -23,14 +42,7 @@ namespace _06_XX_Selenium_WebDriver.Selenium.Testes
             options.EnableMobileEmulation(deviceSettings);
 
             _driver = new ChromeDriver(TestHelper.PastaDoExecutavel, options);
-        }
 
-        public void Dispose() => _driver.Quit();
-
-        [Fact]
-        public void DadaLargura400DeveMostrarMenuMobile()
-        {
-            //arrange
             var homePO = new HomeNaoLogadaPO(_driver);
 
             //act
@@ -38,6 +50,31 @@ namespace _06_XX_Selenium_WebDriver.Selenium.Testes
 
             //assert
             Assert.True(homePO.Menu.MenuMobileVisivel);
+        }
+
+        [Fact]
+        public void DadaLargura993NaoDeveMostrarMenuMobile()
+        {
+            //arrange
+            //configurando a visualização para mobile
+            var deviceSettings = new ChromeMobileEmulationDeviceSettings();
+            deviceSettings.Width = 993;
+            deviceSettings.Height = 800;
+            deviceSettings.UserAgent = "Customizado";
+
+            //ativando a visão mobile
+            var options = new ChromeOptions();
+            options.EnableMobileEmulation(deviceSettings);
+
+            _driver = new ChromeDriver(TestHelper.PastaDoExecutavel, options);
+
+            var homePO = new HomeNaoLogadaPO(_driver);
+
+            //act
+            homePO.Visitar();
+
+            //assert
+            Assert.False(homePO.Menu.MenuMobileVisivel);
         }
     }
 }
