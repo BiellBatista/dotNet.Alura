@@ -233,4 +233,5 @@ Selenium WebDriver e C# parte 2: Outros recursos
 		09 - Projeto Atual
 		10 - O que aprendemos?
 	05 - Melhorando o código de testes
+		01 - Melhorando os page objects
 	06 - Outros recursos
