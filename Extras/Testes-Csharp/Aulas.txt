@@ -236,4 +236,6 @@ Selenium WebDriver e C# parte 2: Outros recursos
 		01 - Melhorando os page objects
 		02 - Objetivos da Aula
 		03 - Dividindo responsabilidades
+		04 - Jordana quer aplicar o padrão Facade (C)
+		05 - Linguagem fluente
 	06 - Outros recursos
