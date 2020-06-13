@@ -243,3 +243,4 @@ Selenium WebDriver e C# parte 2: Outros recursos
 		08 - Projeto atual
 		09 - O que aprendemos?
 	06 - Outros recursos
+		01 - Xpath
