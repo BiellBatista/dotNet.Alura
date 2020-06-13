@@ -2,8 +2,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _04_XX_Selenium_WebDriver.Selenium.Fixtures
 {
@@ -15,6 +13,9 @@ namespace _04_XX_Selenium_WebDriver.Selenium.Fixtures
         public TestFixture()
         {
             Driver = new ChromeDriver(TestHelper.PastaDoExecutavel);
+            // o selenium irá procurar um elemento a cada 10 segundos
+            // estou alterando o Wait padrão do selenium (implicito)
+            //Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
         }
 
         //TearDown

@@ -2,6 +2,8 @@
 using Xunit;
 using _04_XX_Selenium_WebDriver.Selenium.PageObjects;
 using _04_XX_Selenium_WebDriver.Selenium.Fixtures;
+using OpenQA.Selenium.Support.UI;
+using System;
 
 namespace _04_XX_Selenium_WebDriver.Selenium.Testes
 {
@@ -31,7 +33,12 @@ namespace _04_XX_Selenium_WebDriver.Selenium.Testes
             detalhePO.OfertarLance(300);
 
             //assert
-            Assert.Equal(300, detalhePO.LanceAtual);
+            // falando para o selenium esperar oito segundos
+            // criando um wait explicito
+            var wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(8));
+            bool iguais = wait.Until(drv => detalhePO.LanceAtual == 300);
+
+            Assert.True(iguais);
         }
     }
 }

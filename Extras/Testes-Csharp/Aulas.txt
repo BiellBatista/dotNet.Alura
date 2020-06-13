@@ -227,5 +227,10 @@ Selenium WebDriver e C# parte 2: Outros recursos
 		03 - [ERRATA] Propriedade LanceAtual
 		04 - Objetivos da aula
 		05 - Esperando com Selenium
+		06 - Mudando pra usar Waits (A)
+		07 - Faça o que eu fiz na aula
+		08 - Referências Utilizadas
+		09 - Projeto Atual
+		10 - O que aprendemos?
 	05 - Melhorando o código de testes
 	06 - Outros recursos
