@@ -14,6 +14,7 @@ namespace _06_XX_Selenium_WebDriver.Selenium.PageObjects
             _driver = driver;
             _byLogoutLink = By.Id("logout");
             _byMeuPerfilLink = By.Id("meu-perfil");
+            //_byLogoutLink = By.XPath("//div[@class='car minhas-ofertas']/*/table/tbody/tr[last()]");
         }
 
         public void EfetuarLogout()
