@@ -1,10 +1,7 @@
 ﻿using _04_XX_Selenium_WebDriver.Selenium.Helpers;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium.Support.UI;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
 
 namespace _04_XX_Selenium_WebDriver.Selenium.PageObjects
 {

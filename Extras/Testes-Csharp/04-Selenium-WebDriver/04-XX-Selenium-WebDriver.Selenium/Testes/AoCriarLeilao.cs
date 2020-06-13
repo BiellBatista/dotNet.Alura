@@ -3,8 +3,6 @@ using OpenQA.Selenium;
 using Xunit;
 using _04_XX_Selenium_WebDriver.Selenium.PageObjects;
 using _04_XX_Selenium_WebDriver.Selenium.Fixtures;
-using System.Threading;
-using System.Linq;
 
 namespace _04_XX_Selenium_WebDriver.Selenium.Testes
 {

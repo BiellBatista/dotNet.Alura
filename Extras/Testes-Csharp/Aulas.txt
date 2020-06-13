@@ -224,5 +224,8 @@ Selenium WebDriver e C# parte 2: Outros recursos
 	04 - Esperando para as verificações
 		01 - [OBRIGATÓRIO] Projeto Modificado
 		02 - Dando lances
+		03 - [ERRATA] Propriedade LanceAtual
+		04 - Objetivos da aula
+		05 - Esperando com Selenium
 	05 - Melhorando o código de testes
 	06 - Outros recursos
