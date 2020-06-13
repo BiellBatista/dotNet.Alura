@@ -60,7 +60,6 @@ namespace _05_XX_Selenium_WebDriver.Selenium.PageObjects
                 .Build();
 
             acaoLogout.Perform();
-
         }
     }
 }
