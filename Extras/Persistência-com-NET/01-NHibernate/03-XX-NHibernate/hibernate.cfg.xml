@@ -10,5 +10,7 @@
     </property>
     <!--Falando para o NHibernate me mostrar os SQL gerados por ele-->
     <property name="show_sql">true</property>
+    <!--Por padrão o NHibernate mostra a consulta não formatada (padrão Lazy). Devo solicitar a formatação das consultas-->
+    <property name="format_sql">true</property>
   </session-factory>
 </hibernate-configuration>

@@ -2,7 +2,9 @@
 using _03_XX_NHibernate.Entidades;
 using _03_XX_NHibernate.Infra;
 using NHibernate;
+using NHibernate.Linq;
 using System;
+using System.Collections.Generic;
 
 namespace _03_XX_NHibernate
 {
@@ -10,36 +12,32 @@ namespace _03_XX_NHibernate
     {
         static void Main(string[] args)
         {
-            //NHibernateHelper.GeraSchema();
-            //gravando dados no banco
+            //Categoria umaCategoria = new Categoria();
+            //umaCategoria.Nome = "Uma Categoria";
 
-            //configuranto a sessão (conexão)
-            //Configuration cfg = NHibernateHelper.RecuperaConfiguracao();
-            //ISessionFactory sessionFactory = cfg.BuildSessionFactory();
+            //Produto novoProduto = new Produto();
+            //novoProduto.Nome = "Camiseta";
+            //novoProduto.Preco = 10;
+            //novoProduto.Categoria = umaCategoria;
 
-            //abrindo a sessão (conexão)
-            //ISession session = sessionFactory.OpenSession();
-
-            //Usuario novoUsuario = new Usuario();
-            //novoUsuario.Nome = "Gabriel";
-
-            //abrindo uma transação
+            //ISession session = NHibernateHelper.AbreSession();
             //ITransaction transacao = session.BeginTransaction();
-            //session.Save(novoUsuario);
-            //commitando
+
+            //session.Save(umaCategoria);
+            //session.Save(novoProduto);
             //transacao.Commit();
-            //fechando a sessão (conexão)
             //session.Close();
 
             ISession session = NHibernateHelper.AbreSession();
-            UsuarioDAO usuarioDao = new UsuarioDAO(session);
+            ITransaction transacao = session.BeginTransaction();
 
-            Usuario novoUsuario = new Usuario();
-            novoUsuario.Nome = "Diego";
+            Categoria categoria = session.Load<Categoria>(1);
+            IList<Produto> produtos = categoria.Produtos;
 
-            usuarioDao.Adiciona(novoUsuario);
-
+            transacao.Commit();
             session.Close();
+
+            produtos.ForEach(p => Console.WriteLine($"{p.Nome} - {p.Categoria.Nome}"));
 
             Console.Read();
         }

@@ -27,6 +27,16 @@ NHibernate: Persistência de dados com C#
 		14 - Controle de transações com filtros
 	03 - Relacionamento entre Entidades
 		01 - Vídeo 1
+		02 - Relacionamento entre Entidades
+		03 - Mapeamento Muitos-Para-Um
+		04 - Salvando produtos com categoria
+		05 - Transient Object Exception (C)
+		06 - Adicionando produto sem categoria
+		07 - Mapeamento Um-Para-Muitos
+		08 - Lazyness (D)
+		09 - Mostrando os produtos de uma categoria (A)
+		10 - Open Session in View
+		11 - Lado fraco do relacionamento
 	04 - Recuperando dados
 	05 - Resolvendo o Problema do N+1
 	06 - Buscas dinâmicas com criteria
