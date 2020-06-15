@@ -21,6 +21,10 @@ NHibernate: Persistência de dados com C#
 		08 - Estado dos objetos 3 (B)
 		09 - Estado dos objetos 4 (A)
 		10 - Projeto LojaWeb
+		11 - Cadastro de Entidades no Projeto Web
+		12 - Atualizando dados no projeto web
+		13 - Injeção de Dependências
+		14 - Controle de transações com filtros
 	03 - Relacionamento entre Entidades
 	04 - Recuperando dados
 	05 - Resolvendo o Problema do N+1
