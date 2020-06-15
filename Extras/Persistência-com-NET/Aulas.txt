@@ -2,6 +2,14 @@ NHibernate: Persistência de dados com C#
 	01 - Configurando e Entendendo o NHibernate
 		01 - Vídeo 1
 		02 - Configurando e Entendendo o NHibernate
+		03 - NHibernate (A)
+		04 - Hibernate no Nuget
+		05 - Arquivo de Mapeamento e Build Action (C)
+		06 - Mapeando a classe Usuario (A)
+		07 - hbm.xml do produto
+		08 - Arquivo de configuração (D)
+		09 - Hibernate.cfg.xml
+		10 - Testando a configuração
 	02 - Inserindo e Alterando Dados
 	03 - Relacionamento entre Entidades
 	04 - Recuperando dados
