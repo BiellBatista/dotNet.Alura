@@ -1,6 +1,7 @@
 NHibernate: Persistência de dados com C#
 	01 - Configurando e Entendendo o NHibernate
 		01 - Vídeo 1
+		02 - Configurando e Entendendo o NHibernate
 	02 - Inserindo e Alterando Dados
 	03 - Relacionamento entre Entidades
 	04 - Recuperando dados
