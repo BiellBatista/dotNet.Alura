@@ -12,6 +12,15 @@ NHibernate: Persistência de dados com C#
 		10 - Testando a configuração
 	02 - Inserindo e Alterando Dados
 		01 - Vídeo 1
+		02 - Inserindo e Alterando Dados
+		03 - AbreSession no NHibernateHelper
+		04 - Inserindo um objeto
+		05 - Carregando por Id
+		06 - Estado dos objetos 1 (B)
+		07 - Estado dos objetos 2 (B)
+		08 - Estado dos objetos 3 (B)
+		09 - Estado dos objetos 4 (A)
+		10 - Projeto LojaWeb
 	03 - Relacionamento entre Entidades
 	04 - Recuperando dados
 	05 - Resolvendo o Problema do N+1
