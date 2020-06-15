@@ -38,6 +38,7 @@ NHibernate: Persistência de dados com C#
 		10 - Open Session in View
 		11 - Lado fraco do relacionamento
 	04 - Recuperando dados
+		01 - Vídeo 1
 	05 - Resolvendo o Problema do N+1
 	06 - Buscas dinâmicas com criteria
 	07 - Cacheando dados
