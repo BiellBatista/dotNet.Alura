@@ -11,6 +11,7 @@ NHibernate: Persistência de dados com C#
 		09 - Hibernate.cfg.xml
 		10 - Testando a configuração
 	02 - Inserindo e Alterando Dados
+		01 - Vídeo 1
 	03 - Relacionamento entre Entidades
 	04 - Recuperando dados
 	05 - Resolvendo o Problema do N+1
