@@ -26,6 +26,7 @@ NHibernate: Persistência de dados com C#
 		13 - Injeção de Dependências
 		14 - Controle de transações com filtros
 	03 - Relacionamento entre Entidades
+		01 - Vídeo 1
 	04 - Recuperando dados
 	05 - Resolvendo o Problema do N+1
 	06 - Buscas dinâmicas com criteria

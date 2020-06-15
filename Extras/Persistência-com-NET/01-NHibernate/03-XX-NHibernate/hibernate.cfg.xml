@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Realizando as configurações de conexao com o MySQL-->
+<hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+  <session-factory>
+    <property name="connection.driver_class">NHibernate.Driver.MySqlDataDriver</property>
+    <property name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
+    <property name="dialect">NHibernate.Dialect.MySQL5Dialect</property>
+    <property name="connection.connection_string">
+      Server=localhost;Database=loja;Uid=root;Pwd=;
+    </property>
+    <!--Falando para o NHibernate me mostrar os SQL gerados por ele-->
+    <property name="show_sql">true</property>
+  </session-factory>
+</hibernate-configuration>
