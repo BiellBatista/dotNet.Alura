@@ -4,6 +4,8 @@
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="07-XX-NHibernate" namespace="_07_XX_NHibernate.Entidades">
   <!--mapeando a classe-->
   <class name="Usuario">
+    <!--Passando as orientações para a realização do cache dos dados buscados na categoria-->
+    <cache usage="nonstrict-read-write"/>
     <!--mapeando o id e falando que é autoincremental-->
     <id name="Id">
       <generator class="identity"/>

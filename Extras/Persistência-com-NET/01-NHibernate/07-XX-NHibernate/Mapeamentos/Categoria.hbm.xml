@@ -2,6 +2,8 @@
 
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="07-XX-NHibernate" namespace="_07_XX_NHibernate.Entidades">
   <class name="Categoria">
+    <!--Passando as orientações para a realização do cache dos dados buscados na categoria-->
+    <cache usage="nonstrict-read-write"/>
     <id name="Id">
       <generator class="identity"/>
     </id>
@@ -11,6 +13,7 @@
     <!--O atributo fetch=join fala para o NHibernate retornar os produtos que a categoria possui-->
     <!--O batch-size, junto com o join fetch, resolve o problema do N+1 Query-->
     <bag name="Produtos" fetch="join" batch-size="10">
+      <cache usage="nonstrict-read-write"/>
       <key column="CategoriaId"/>
       <one-to-many class="Produto"/>
     </bag>

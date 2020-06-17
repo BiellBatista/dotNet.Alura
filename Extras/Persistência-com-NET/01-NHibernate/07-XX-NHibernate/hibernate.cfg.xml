@@ -12,5 +12,11 @@
     <property name="show_sql">true</property>
     <!--Por padrão o NHibernate mostra a consulta não formatada (padrão Lazy). Devo solicitar a formatação das consultas-->
     <property name="format_sql">true</property>
+    <!--Ativando o cache das query para não recorrer ao banco de dados com frequência-->
+    <property name="cache.use_second_level_cache">true</property>
+    <!--configurando o provider cache da categoria-->
+    <property name="cache.provider_class">NHibernate.Caches.SysCache.SysCacheProvider, NHibernate.Caches.SysCache</property>
+    <!--Configuração o cache de querys-->
+    <property name="cache.use_query_cache">True</property>
   </session-factory>
 </hibernate-configuration>

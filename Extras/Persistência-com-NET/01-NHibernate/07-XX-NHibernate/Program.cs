@@ -14,17 +14,20 @@ namespace _07_XX_NHibernate
         static void Main(string[] args)
         {
             ISession session = NHibernateHelper.AbreSession();
+            ISession session2 = NHibernateHelper.AbreSession();
 
-            ProdutoDAO produtoDAO = new ProdutoDAO(session);
-            IList<Produto> produtos = produtoDAO.BuscaPorNomePrecoMinimoECategoria("", 20, "");
+            // cacheado as query para diminuir as idas e vindas do banco de dados
+            //Categoria c = session.Get<Categoria>(1);
+            //Categoria c2 = session2.Get<Categoria>(1);
 
-            foreach (var produto in produtos)
-            {
-                Console.WriteLine("Nome: " + produto.Nome + " Preco: " + produto.Preco.ToString() + " Categoria: " + produto.Categoria.Nome);
-            }
+            //Console.WriteLine(c.Produtos.Count);
+            //Console.WriteLine(c2.Produtos.Count);
+
+            //salvando so resultados de uma query
+            session.CreateQuery("from Usuario").SetCacheable(true).List<Usuario>();
+            session2.CreateQuery("from Usuario").SetCacheable(true).List<Usuario>();
 
             session.Close();
-
             Console.Read();
         }
     }

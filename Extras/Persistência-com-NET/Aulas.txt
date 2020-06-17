@@ -67,6 +67,15 @@ NHibernate: Persistência de dados com C#
 		07 - Busca dinâmica na aplicação.
 	07 - Cacheando dados
 		01 - Vídeo 1
+		02 - Cacheando dados
+		03 - O que é cache? (A)
+		04 - Habilitando Cache de Segundo Nível
+		05 - Configurando cache provider
+		06 - Cache de coleções
+		07 - Corrigindo o problema do cache de coleções
+		08 - Ativando cache de queries
+		09 - Cacheando uma query
+		10 - Corrigindo problema no cache de queries
 	08 - Herança e Polimorfismo
 .Net e MongoDB parte 1: Primeiros passos para usar esse famoso banco NoSQL
 	01 - Primeiros passos com MongoDB no .NET
