@@ -14,36 +14,23 @@ namespace _05_XX_NHibernate
         static void Main(string[] args)
         {
             ISession session = NHibernateHelper.AbreSession();
+            // falando para o NHibernate trazer a categoria do produto. Devo fazer isso, porque o NHibernate faz consulta lazzy
+            // ele busca os produtos e depois as categoria, não os dois ao mesmo tempo
+            // devo usar o distict para não vim valores repetidos
+            IQuery query = session.CreateQuery("from Produto p join fetch p.Categoria");
+            IList<Produto> produtos = query.List<Produto>();
 
-            //string hql = "from Produto";
-            //string hql = "from Produto p order by p.Nome";
-            // para declarar um parametro na minha consulta, uso o ?. A contagem começa no 0. Este é o método posicional
-            //string hql = "from Produto p where p.Preco > ?";
-            // parametro nomeado
-            //string hql = "from Produto p where p.Preco > :minimo and p.Categoria.Name = :categoria";
-            string hql = "select p.Categoria as Categoria, count(p) as NumeroDePedidos from Produto p group by p.Categoria";
-            IQuery query = session.CreateQuery(hql);
-            //query.SetParameter(0, 10); //falando que o parametro 0 será o 10
-            //query.SetParameter("minimo", 10); //falando que o parametro "minimo" será o 10
-            //query.SetParameter("categoria", "Uma categoria"); //falando que o parametro "categoria" será "Uma categoria"
-            //IList<Produto> produtos = query.List<Produto>();
-
-            query.SetResultTransformer(Transformers.AliasToBean<ProdutosPorCategoria>());
-            IList<ProdutosPorCategoria> relatorio = query.List<ProdutosPorCategoria>();
-            //foreach (var produto in produtos)
-            //{
-            //    Console.WriteLine(produto.Nome);
-            //}
+            foreach (var produto in produtos)
+            {
+                // sem o join fetch, o NHibernate procuraria a categoria para cada produto
+                // ou seja, para cada produto, ele iria dar um select.. COm o join fetch eu resolvo isso, porque
+                // ele vem com as categorias
+                Console.WriteLine(produto.Nome + " - " + produto.Categoria.Nome);
+            }
 
             session.Close();
 
             Console.Read();
         }
-    }
-
-    public class ProdutosPorCategoria
-    {
-        public Categoria Categoria { get; set; }
-        public long NumeroDePedidos { get; set; }
     }
 }

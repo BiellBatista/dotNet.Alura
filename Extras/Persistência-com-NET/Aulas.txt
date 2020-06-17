@@ -50,6 +50,13 @@ NHibernate: Persistência de dados com C#
 		10 - Número de produtos por categoria
 	05 - Resolvendo o Problema do N+1
 		01 - Vídeo 1
+		02 - Resolvendo o Problema do N+1
+		03 - Problema do N+1 (D)
+		04 - Reproduzindo o problema de N+1 queries em um relacionamento to many (A)
+		05 - Resolvendo o n + 1 de coleçoes utilizando o fetch join
+		06 - Batch Size
+		07 - Lista de Produtos Paginada
+		08 - Batch size e paginação (D)
 	06 - Buscas dinâmicas com criteria
 	07 - Cacheando dados
 	08 - Herança e Polimorfismo

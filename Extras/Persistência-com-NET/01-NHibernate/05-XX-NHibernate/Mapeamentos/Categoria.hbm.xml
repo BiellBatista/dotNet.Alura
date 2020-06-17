@@ -9,7 +9,8 @@
 
     <!--Mapeando propriedade do tipo list (um para muitos)-->
     <!--O atributo fetch=join fala para o NHibernate retornar os produtos que a categoria possui-->
-    <bag name="Produtos" fetch="join">
+    <!--O batch-size, junto com o join fetch, resolve o problema do N+1 Query-->
+    <bag name="Produtos" fetch="join" batch-size="10">
       <key column="CategoriaId"/>
       <one-to-many class="Produto"/>
     </bag>
