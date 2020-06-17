@@ -86,6 +86,17 @@ NHibernate: Persistência de dados com C#
 		07 - Uma Tabela por Sub-Classe
 .Net e MongoDB parte 1: Primeiros passos para usar esse famoso banco NoSQL
 	01 - Primeiros passos com MongoDB no .NET
+		01 - Introdução
+		02 - Vantagem da utilização do MongoDB (A)
+		03 - Desvantagem da utilização do MongoDB (B)
+		04 - Qual banco de dados utilizar? (B)
+		05 - Instalando e configurando o MongoDB
+		06 - Instalando o MongoDB como serviço
+		07 - Conectando ao MongoDB na linha de comando
+		08 - Conectando com Robo 3T (Robomongo)
+		09 - Instalação do driver
+		10 - Consolidando o seu conhecimento
+		11 - O que aprendemos?
 	02 - Inserindo um documento no MongoDB
 	03 - Listando e incluindo vários documentos
 	04 - Pesquisando documentos
