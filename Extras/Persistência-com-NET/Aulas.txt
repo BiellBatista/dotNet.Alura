@@ -66,6 +66,7 @@ NHibernate: Persistência de dados com C#
 		06 - Criteria com múltiplas condições (C)
 		07 - Busca dinâmica na aplicação.
 	07 - Cacheando dados
+		01 - Vídeo 1
 	08 - Herança e Polimorfismo
 .Net e MongoDB parte 1: Primeiros passos para usar esse famoso banco NoSQL
 	01 - Primeiros passos com MongoDB no .NET

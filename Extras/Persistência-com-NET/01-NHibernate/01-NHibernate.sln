@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-XX-NHibernate", "05-XX-N
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-XX-NHibernate", "06-XX-NHibernate\06-XX-NHibernate.csproj", "{563F0713-0149-4D5D-950B-A46F4F9082FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-XX-NHibernate", "07-XX-NHibernate\07-XX-NHibernate.csproj", "{5F89A8D2-C228-4E4F-89D6-28DC2227FBF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{563F0713-0149-4D5D-950B-A46F4F9082FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{563F0713-0149-4D5D-950B-A46F4F9082FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{563F0713-0149-4D5D-950B-A46F4F9082FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F89A8D2-C228-4E4F-89D6-28DC2227FBF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F89A8D2-C228-4E4F-89D6-28DC2227FBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F89A8D2-C228-4E4F-89D6-28DC2227FBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F89A8D2-C228-4E4F-89D6-28DC2227FBF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
