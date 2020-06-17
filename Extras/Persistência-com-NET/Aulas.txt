@@ -59,6 +59,12 @@ NHibernate: Persistência de dados com C#
 		08 - Batch size e paginação (D)
 	06 - Buscas dinâmicas com criteria
 		01 - Vídeo 1
+		02 - Buscas dinâmicas com criteria
+		03 - Limitação do HQL (B)
+		04 - Criteria com condições (A)
+		05 - Busca em relacionamentos utilizando a criteria (A)
+		06 - Criteria com múltiplas condições (C)
+		07 - Busca dinâmica na aplicação.
 	07 - Cacheando dados
 	08 - Herança e Polimorfismo
 .Net e MongoDB parte 1: Primeiros passos para usar esse famoso banco NoSQL
