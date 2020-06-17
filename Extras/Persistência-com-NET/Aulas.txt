@@ -77,6 +77,13 @@ NHibernate: Persistência de dados com C#
 		09 - Cacheando uma query
 		10 - Corrigindo problema no cache de queries
 	08 - Herança e Polimorfismo
+		01 - Vídeo 1
+		02 - Herança e Polimorfismo
+		03 - Vendas
+		04 - Vendendo produtos na loja web
+		05 - Pessoas Física e Jurídica
+		06 - Mapeando em uma única tabela
+		07 - Uma Tabela por Sub-Classe
 .Net e MongoDB parte 1: Primeiros passos para usar esse famoso banco NoSQL
 	01 - Primeiros passos com MongoDB no .NET
 	02 - Inserindo um documento no MongoDB
