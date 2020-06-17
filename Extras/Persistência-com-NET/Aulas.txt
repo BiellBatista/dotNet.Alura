@@ -58,6 +58,7 @@ NHibernate: Persistência de dados com C#
 		07 - Lista de Produtos Paginada
 		08 - Batch size e paginação (D)
 	06 - Buscas dinâmicas com criteria
+		01 - Vídeo 1
 	07 - Cacheando dados
 	08 - Herança e Polimorfismo
 .Net e MongoDB parte 1: Primeiros passos para usar esse famoso banco NoSQL
