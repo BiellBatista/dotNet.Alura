@@ -49,6 +49,7 @@ NHibernate: Persistência de dados com C#
 		09 - Múltiplas condições
 		10 - Número de produtos por categoria
 	05 - Resolvendo o Problema do N+1
+		01 - Vídeo 1
 	06 - Buscas dinâmicas com criteria
 	07 - Cacheando dados
 	08 - Herança e Polimorfismo
