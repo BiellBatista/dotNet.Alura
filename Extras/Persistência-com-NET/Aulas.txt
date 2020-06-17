@@ -39,6 +39,15 @@ NHibernate: Persistência de dados com C#
 		11 - Lado fraco do relacionamento
 	04 - Recuperando dados
 		01 - Vídeo 1
+		02 - Recuperando dados
+		03 - HQL para SQL (D)
+		04 - Ordenando os resultados da busca (A)
+		05 - Lista de entidades
+		06 - Busca de categorias por nome
+		07 - Busca de produtos com preço mínimo
+		08 - Busca de produtos por nome da categoria
+		09 - Múltiplas condições
+		10 - Número de produtos por categoria
 	05 - Resolvendo o Problema do N+1
 	06 - Buscas dinâmicas com criteria
 	07 - Cacheando dados
