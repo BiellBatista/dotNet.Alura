@@ -111,6 +111,11 @@ NHibernate: Persistência de dados com C#
 		11 - Tipos de variáveis para trabalhar com o MongoDB (B)
 		12 - Método para inclusão de um documento de maneira assíncrona (A)
 		13 - Usando o modelo OO com MongoDB
+		14 - Quais referências devemos adicionar? (C)
+		15 - Associação à propriedade de ObjectID (A)
+		16 - Declarando uma coleção no MongoDB .NET (A)
+		17 - Consolidando o seu conhecimento
+		18 - O que aprendemos?
 	03 - Listando e incluindo vários documentos
 	04 - Pesquisando documentos
 	05 - Alteração e exclusão de documentos
