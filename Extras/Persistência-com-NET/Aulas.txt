@@ -98,6 +98,9 @@ NHibernate: Persistência de dados com C#
 		10 - Consolidando o seu conhecimento
 		11 - O que aprendemos?
 	02 - Inserindo um documento no MongoDB
+		01 - Referências para uso das conexões do .NET com o MongoDB
+		02 - Referências para uso das conexões do .NET com o MongoDB (B)
+		03 - (Opcional) Diferenças entre programação síncrona e assíncrona
 	03 - Listando e incluindo vários documentos
 	04 - Pesquisando documentos
 	05 - Alteração e exclusão de documentos
