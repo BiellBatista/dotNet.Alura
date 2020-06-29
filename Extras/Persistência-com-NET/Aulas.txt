@@ -107,6 +107,10 @@ NHibernate: Persistência de dados com C#
 		07 - Comando para inclusão de um objeto JSON (A)
 		08 - Qual o tipo de variável? (B)
 		09 - Acessando o MongoDB e incluindo um documento BSON
+		10 - String de conexão (C)
+		11 - Tipos de variáveis para trabalhar com o MongoDB (B)
+		12 - Método para inclusão de um documento de maneira assíncrona (A)
+		13 - Usando o modelo OO com MongoDB
 	03 - Listando e incluindo vários documentos
 	04 - Pesquisando documentos
 	05 - Alteração e exclusão de documentos
