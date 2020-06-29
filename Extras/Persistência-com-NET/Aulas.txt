@@ -136,6 +136,7 @@ NHibernate: Persistência de dados com C#
 		08 - Consolidando o seu conhecimento
 		09 - O que aprendemos?
 	05 - Alteração e exclusão de documentos
+		01 - Alterando um documento
 .Net e MongoDB parte 2: Integre uma webapp com o banco NoSQL
 	01 - Implementando as classes do Blog
 	02 - Implementando o acesso ao Blog através de usuários
