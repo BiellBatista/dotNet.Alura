@@ -126,6 +126,7 @@ NHibernate: Persistência de dados com C#
 		07 - Download do arquivo do projeto
 		08 - O que aprendemos?
 	04 - Pesquisando documentos
+		01 - Listando livros usando como filtro um documento BSON
 	05 - Alteração e exclusão de documentos
 .Net e MongoDB parte 2: Integre uma webapp com o banco NoSQL
 	01 - Implementando as classes do Blog
