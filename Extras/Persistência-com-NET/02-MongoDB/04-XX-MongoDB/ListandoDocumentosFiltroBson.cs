@@ -22,7 +22,7 @@ namespace _04_XX_MongoDB
 
             var filtro = new BsonDocument { { "Autor", "Machado de Assis" } };
 
-            //buscando documentos, sem critério
+            //buscando documentos, com critério
             var listaLivros = await conexaoBiblioteca.Livros.Find(filtro).ToListAsync();
 
             foreach (var livro in listaLivros)

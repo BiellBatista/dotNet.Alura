@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>_04_XX_MongoDB.ListandoDocumentosFiltroBson</StartupObject>
+    <StartupObject>_04_XX_MongoDB.ListandoDocumentosFiltroClasse</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Crc32C.NET, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
@@ -95,6 +95,7 @@
     <Compile Include="IncluindoMuitosLivros.cs" />
     <Compile Include="ListandoDocumentos.cs" />
     <Compile Include="ListandoDocumentosFiltroBson.cs" />
+    <Compile Include="ListandoDocumentosFiltroClasse.cs" />
     <Compile Include="Livro.cs" />
     <Compile Include="ManipulandoClasses.cs" />
     <Compile Include="ManipulandoClassesExternas.cs" />
