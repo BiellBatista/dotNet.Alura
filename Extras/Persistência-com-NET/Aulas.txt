@@ -141,6 +141,10 @@ NHibernate: Persistência de dados com C#
 		03 - Alterando muitos documentos
 		04 - Mudança em um registro (C)
 		05 - Excluindo documentos
+		06 - Exclusão de um registro (C)
+		07 - Conclusão
+		08 - Consolidando o seu conhecimento
+		09 - O que aprendemos?
 .Net e MongoDB parte 2: Integre uma webapp com o banco NoSQL
 	01 - Implementando as classes do Blog
 	02 - Implementando o acesso ao Blog através de usuários
