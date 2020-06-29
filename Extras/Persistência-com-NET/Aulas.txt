@@ -132,6 +132,9 @@ NHibernate: Persistência de dados com C#
 		04 - Construtor de filtro (A)
 		05 - Busca de registros com filtros (B)
 		06 - Exibindo resultado da busca por um determinado critério
+		07 - Registros ordenados e limitados (C)
+		08 - Consolidando o seu conhecimento
+		09 - O que aprendemos?
 	05 - Alteração e exclusão de documentos
 .Net e MongoDB parte 2: Integre uma webapp com o banco NoSQL
 	01 - Implementando as classes do Blog
