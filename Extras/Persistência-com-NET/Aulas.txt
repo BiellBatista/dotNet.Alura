@@ -139,6 +139,8 @@ NHibernate: Persistência de dados com C#
 		01 - Alterando um documento
 		02 - Alteração de um registro (B)
 		03 - Alterando muitos documentos
+		04 - Mudança em um registro (C)
+		05 - Excluindo documentos
 .Net e MongoDB parte 2: Integre uma webapp com o banco NoSQL
 	01 - Implementando as classes do Blog
 	02 - Implementando o acesso ao Blog através de usuários
