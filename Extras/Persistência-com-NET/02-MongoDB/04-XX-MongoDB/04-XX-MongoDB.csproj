@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>_04_XX_MongoDB.ListandoDocumentosFiltroBson</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Crc32C.NET, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Crc32C.NET.1.0.5.0\lib\net20\Crc32C.NET.dll</HintPath>
@@ -91,6 +94,7 @@
     <Compile Include="ConectandoMongoDB.cs" />
     <Compile Include="IncluindoMuitosLivros.cs" />
     <Compile Include="ListandoDocumentos.cs" />
+    <Compile Include="ListandoDocumentosFiltroBson.cs" />
     <Compile Include="Livro.cs" />
     <Compile Include="ManipulandoClasses.cs" />
     <Compile Include="ManipulandoClassesExternas.cs" />
