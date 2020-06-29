@@ -101,6 +101,12 @@ NHibernate: Persistência de dados com C#
 		01 - Referências para uso das conexões do .NET com o MongoDB
 		02 - Referências para uso das conexões do .NET com o MongoDB (B)
 		03 - (Opcional) Diferenças entre programação síncrona e assíncrona
+		04 - Programações síncrona e assíncrona (A)
+		05 - Execução de processos da biblioteca MongoDB.Drive (A)
+		06 - Manipulando documentos JSON no .NET
+		07 - Comando para inclusão de um objeto JSON (A)
+		08 - Qual o tipo de variável? (B)
+		09 - Acessando o MongoDB e incluindo um documento BSON
 	03 - Listando e incluindo vários documentos
 	04 - Pesquisando documentos
 	05 - Alteração e exclusão de documentos
