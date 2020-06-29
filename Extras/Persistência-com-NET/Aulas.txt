@@ -117,6 +117,7 @@ NHibernate: Persistência de dados com C#
 		17 - Consolidando o seu conhecimento
 		18 - O que aprendemos?
 	03 - Listando e incluindo vários documentos
+		01 - Encapsulando o acesso ao MongoDB
 	04 - Pesquisando documentos
 	05 - Alteração e exclusão de documentos
 .Net e MongoDB parte 2: Integre uma webapp com o banco NoSQL
