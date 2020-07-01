@@ -157,6 +157,9 @@ NHibernate: Persistência de dados com C#
 		08 - Mão na massa: Alterando nossas classes
 		09 - O que aprendemos?
 	02 - Implementando o acesso ao Blog através de usuários
+		01 - Registro do usuário no Blog
+		02 - Localidade dos valores do usuário (A)
+		03 - Fazendo o acesso e testando a aplicação Blog
 	03 - Interagindo com o Blog
 	04 - Utilizando coordenadas geoespaciais no MongoDB com .NET
 	05 - Implementando a aplicação de busca de aeroportos

@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using _02_XX_MongoDB.Models;
 using _02_XX_MongoDB.Models.Account;
 
 namespace _02_XX_MongoDB.Controllers
@@ -76,8 +77,15 @@ namespace _02_XX_MongoDB.Controllers
                 return View(model);
             }
 
-            // XXX TRABALHE AQUI
-            // Inclua o usuário na base de dados.
+            var user = new Usuario
+            {
+                Nome = model.Nome,
+                Email = model.Email
+            };
+
+            var conexaoMongoDB = new AcessoMongoDB();
+
+            await conexaoMongoDB.Usuarios.InsertOneAsync(user);
 
             return RedirectToAction("Index", "Home");
         }
