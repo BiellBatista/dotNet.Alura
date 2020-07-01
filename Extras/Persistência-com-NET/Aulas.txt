@@ -153,6 +153,9 @@ NHibernate: Persistência de dados com C#
 		04 - Criando a classe de acesso ao MongoDB para a aplicação Blog
 		05 - Local da classe de acesso à base de dados (B)
 		06 - Criando as classes de dados para a aplicação Blog
+		07 - Classes da aplicação (C)
+		08 - Mão na massa: Alterando nossas classes
+		09 - O que aprendemos?
 	02 - Implementando o acesso ao Blog através de usuários
 	03 - Interagindo com o Blog
 	04 - Utilizando coordenadas geoespaciais no MongoDB com .NET
