@@ -148,6 +148,11 @@ NHibernate: Persistência de dados com C#
 .Net e MongoDB parte 2: Integre uma webapp com o banco NoSQL
 	01 - Implementando as classes do Blog
 		01 - Introdução
+		02 - Análise de dados da aplicação Blog
+		03 - Configuração da base de dados na aplicação de Blog (C)
+		04 - Criando a classe de acesso ao MongoDB para a aplicação Blog
+		05 - Local da classe de acesso à base de dados (B)
+		06 - Criando as classes de dados para a aplicação Blog
 	02 - Implementando o acesso ao Blog através de usuários
 	03 - Interagindo com o Blog
 	04 - Utilizando coordenadas geoespaciais no MongoDB com .NET
