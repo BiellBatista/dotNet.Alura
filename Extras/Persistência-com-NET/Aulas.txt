@@ -165,5 +165,6 @@ NHibernate: Persistência de dados com C#
 		06 - Mão na massa: Registrando usuários
 		07 - O que aprendemos?
 	03 - Interagindo com o Blog
+		01 - Incluindo uma nova publicação
 	04 - Utilizando coordenadas geoespaciais no MongoDB com .NET
 	05 - Implementando a aplicação de busca de aeroportos
