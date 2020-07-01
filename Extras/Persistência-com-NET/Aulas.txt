@@ -160,6 +160,10 @@ NHibernate: Persistência de dados com C#
 		01 - Registro do usuário no Blog
 		02 - Localidade dos valores do usuário (A)
 		03 - Fazendo o acesso e testando a aplicação Blog
+		04 - Diferença entre ToListAsync e SingleOrDefaultAsync (B)
+		05 - Buscando um usuário (C)
+		06 - Mão na massa: Registrando usuários
+		07 - O que aprendemos?
 	03 - Interagindo com o Blog
 	04 - Utilizando coordenadas geoespaciais no MongoDB com .NET
 	05 - Implementando a aplicação de busca de aeroportos
