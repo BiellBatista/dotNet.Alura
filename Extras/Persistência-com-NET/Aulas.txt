@@ -183,4 +183,7 @@ NHibernate: Persistência de dados com C#
 		04 - Restore de um banco de dados (B)
 		05 - Índice especial para buscar pontos em mapas (B)
 		06 - Criando a classe Aeroporto
+		07 - Referência especial para representar pontos geoespaciais (A)
+		08 - Tipo de uma coordenada geoespacial em uma classe no .NET (B)
+		09 - Criando a classe de conexão com o MongoDB para base geo
 	05 - Implementando a aplicação de busca de aeroportos

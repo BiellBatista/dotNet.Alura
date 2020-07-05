@@ -90,6 +90,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aeroporto.cs" />
     <Compile Include="AlterandoDocumento.cs" />
     <Compile Include="AlterandoDocumentoClasse.cs" />
     <Compile Include="ConectandoMongoDB.cs" />
