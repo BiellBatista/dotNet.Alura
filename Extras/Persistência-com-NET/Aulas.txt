@@ -178,4 +178,6 @@ NHibernate: Persistência de dados com C#
 		11 - O que aprendemos?
 	04 - Utilizando coordenadas geoespaciais no MongoDB com .NET
 		01 - Entendendo as coordenadas espaciais
+		02 - Representação de uma coordenada espacial no formato JSON (C)
+		03 - Carregando a base de dados com coordenadas geoespaciais
 	05 - Implementando a aplicação de busca de aeroportos
