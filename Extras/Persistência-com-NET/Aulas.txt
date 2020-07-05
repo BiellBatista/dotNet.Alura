@@ -200,3 +200,7 @@ NHibernate: Persistência de dados com C#
 		05 - Programando a interação com o MongoDB na aplicação de mapa
 		06 - Buscando lojas a partir de uma posição de latitude e longitude (A)
 		07 - Testando a aplicação de mapas
+		08 - Lembrando das referências (B)
+		09 - Conclusão
+		10 - Mãos na massa: Aplicação de busca de aeroportos
+		11 - O que aprendemos?
