@@ -193,3 +193,5 @@ NHibernate: Persistência de dados com C#
 		14 - Mãos na massa: Implementando a busca de aeroportos
 		15 - O que aprendemos?
 	05 - Implementando a aplicação de busca de aeroportos
+		01 - Entendendo a aplicação de busca de aeroportos
+		02 - 
