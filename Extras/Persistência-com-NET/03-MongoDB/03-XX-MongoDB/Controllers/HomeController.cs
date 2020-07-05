@@ -82,9 +82,20 @@ namespace _03_XX_MongoDB.Controllers
         [HttpGet]
         public async Task<ActionResult> Publicacoes(string tag = null)
         {
+            var connectandoMongoDB = new AcessoMongoDB();
+            var posts = new List<Publicacao>();
 
-            // XXX TRABALHE AQUI
-            // Busque as publicações pela TAG escolhida.
+            if (tag == null)
+            {
+                var filtro = new BsonDocument();
+                posts = await connectandoMongoDB.Publicacoes.Find(filtro).SortByDescending(x => x.DataCriacao).Limit(10).ToListAsync();
+            }
+            else
+            {
+                var construtor = Builders<Publicacao>.Filter;
+                var condicao = construtor.AnyEq(x => x.Tags, tag);
+                posts = await connectandoMongoDB.Publicacoes.Find(condicao).SortByDescending(x => x.DataCriacao).Limit(10).ToListAsync();
+            }
 
             return View(posts);
         }
