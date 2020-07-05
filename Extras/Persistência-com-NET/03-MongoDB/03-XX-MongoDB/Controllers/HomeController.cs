@@ -1,5 +1,7 @@
 ﻿using _03_XX_MongoDB.Models;
 using _03_XX_MongoDB.Models.Home;
+using MongoDB.Bson;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,16 +14,16 @@ namespace _03_XX_MongoDB.Controllers
     {
         public async Task<ActionResult> Index()
         {
+            var connectandoMongoDB = new AcessoMongoDB();
+            var filtro = new BsonDocument();
+            var publicacoesRecentes = await connectandoMongoDB.Publicacoes.Find(filtro).SortByDescending(x => x.DataCriacao).Limit(10).ToListAsync();
 
-            //XXX TRABALHE AQUI
-            // liste as dez mais recentes publicações
-            // Descomente as linhas abaixo
-            //var model = new IndexModel
-            //{
-            //    PublicacoesRecentes = PublicacoesRecentes
-            //};
+            var model = new IndexModel
+            {
+                PublicacoesRecentes = publicacoesRecentes
+            };
 
-            //return View(model);
+            return View(model);
         }
 
         [HttpGet]

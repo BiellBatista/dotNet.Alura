@@ -167,5 +167,7 @@ NHibernate: Persistência de dados com C#
 	03 - Interagindo com o Blog
 		01 - Incluindo uma nova publicação
 		02 - Listando as 10 publicações mais recentes
+		03 - Ordenando de forma decrescente (B)
+		04 - Exibindo detalhe de uma publicação
 	04 - Utilizando coordenadas geoespaciais no MongoDB com .NET
 	05 - Implementando a aplicação de busca de aeroportos
