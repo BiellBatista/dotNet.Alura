@@ -196,3 +196,5 @@ NHibernate: Persistência de dados com C#
 		01 - Entendendo a aplicação de busca de aeroportos
 		02 - Criando as classes na aplicação de busca de aeroportos usando ASP .NET MVC
 		03 - Entendendo como os parâmetros de entrada e saída da aplicação de mapa funcionam
+		04 - Obtendo a latitude e longitude de um endereço (C)
+		05 - Programando a interação com o MongoDB na aplicação de mapa
