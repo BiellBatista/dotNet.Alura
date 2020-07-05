@@ -166,5 +166,6 @@ NHibernate: Persistência de dados com C#
 		07 - O que aprendemos?
 	03 - Interagindo com o Blog
 		01 - Incluindo uma nova publicação
+		02 - Listando as 10 publicações mais recentes
 	04 - Utilizando coordenadas geoespaciais no MongoDB com .NET
 	05 - Implementando a aplicação de busca de aeroportos
