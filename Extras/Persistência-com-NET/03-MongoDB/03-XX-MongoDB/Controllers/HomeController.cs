@@ -59,23 +59,22 @@ namespace _03_XX_MongoDB.Controllers
         [HttpGet]
         public async Task<ActionResult> Publicacao(string id)
         {
+            var connectandoMongoDB = new AcessoMongoDB();
+            var publicacao = await connectandoMongoDB.Publicacoes.Find(x => x.Id == id).SingleOrDefaultAsync();
 
-            //XXX TRABALHE AQUI
-            // Busque na base MongoDB a publicação pelo ID
-            // Descomente as linhas abaixo
-            //if (publicacao == null)
-            //{
-            //    return RedirectToAction("Index");
-            //}
+            if (publicacao == null)
+            {
+                return RedirectToAction("Index");
+            }
 
-            //var model = new PublicacaoModel
-            //{
-            //    Publicacao = publicacao,
-            //    NovoComentario = new NovoComentarioModel
-            //    {
-            //        PublicacaoId = id
-            //    }
-            //};
+            var model = new PublicacaoModel
+            {
+                Publicacao = publicacao,
+                NovoComentario = new NovoComentarioModel
+                {
+                    PublicacaoId = id
+                }
+            };
 
             return View(model);
         }

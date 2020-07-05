@@ -169,5 +169,6 @@ NHibernate: Persistência de dados com C#
 		02 - Listando as 10 publicações mais recentes
 		03 - Ordenando de forma decrescente (B)
 		04 - Exibindo detalhe de uma publicação
+		05 - Listando as 10 mais recentes publicações de um assunto
 	04 - Utilizando coordenadas geoespaciais no MongoDB com .NET
 	05 - Implementando a aplicação de busca de aeroportos
