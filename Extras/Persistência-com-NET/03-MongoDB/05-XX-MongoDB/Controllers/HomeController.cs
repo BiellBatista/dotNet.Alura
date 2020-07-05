@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 using System.Net;
 using Newtonsoft.Json;
 using _05_XX_MongoDB.Geocoding;
-
+using MongoDB.Driver.GeoJsonObjectModel;
+using MongoDB.Driver;
 
 namespace _05_XX_MongoDB.Controllers
 {
@@ -28,6 +29,7 @@ namespace _05_XX_MongoDB.Controllers
             //Captura a posição atual e adiciona a lista de pontos
             Coordenada coordLocal = ObterCoordenadasDaLocalizacao(model.Endereco);
             var aeroportosProximos = new List<Coordenada>();
+            // o primeiro ponto deve ser o da minha localizacao atual
             aeroportosProximos.Add(coordLocal);
 
             //Captura a latitude e longitude locais
@@ -49,15 +51,40 @@ namespace _05_XX_MongoDB.Controllers
             //Captura o valor da distancia
             int distancia = model.Distancia * 1000;
 
-            //Conecta MongoDB    
+            //acesso ao servidor do MongoDB
+            var conexaoAeroporto = new ConectandoMongoDBGeo();
 
             //Configura o ponto atual no mapa           
+            var ponto = new GeoJson2DGeographicCoordinates(lon, lat);
+            var localizacao = new GeoJsonPoint<GeoJson2DGeographicCoordinates>(ponto);
 
             // filtro
+            var construtor = Builders<Aeroporto>.Filter;
+            FilterDefinition<Aeroporto> filtro_builder;
+
+            if (tipoAero == "")
+            {
+                //NearSphere irá traçar um circulo no mapa para verificar os pontos contidos nele
+                filtro_builder = construtor.NearSphere(x => x.Loc, localizacao, distancia);
+            }
+            else
+            {
+                //NearSphere irá traçar um circulo no mapa para verificar os pontos contidos nele
+                filtro_builder = construtor.NearSphere(x => x.Loc, localizacao, distancia) & construtor.Eq(x => x.Type, tipoAero);
+            }
 
             //Captura  a lista
+            var listaAirports = await conexaoAeroporto.Airports.Find(filtro_builder).ToListAsync();
 
             //Escreve os pontos
+            foreach (var airport in listaAirports)
+            {
+                var aereo = new Coordenada(airport.Name,
+                    Convert.ToString(airport.Loc.Coordinates.Latitude).Replace(',', '.'),
+                    Convert.ToString(airport.Loc.Coordinates.Longitude).Replace(',', '.'));
+
+                aeroportosProximos.Add(aereo);
+            }
 
             return Json(aeroportosProximos);
         }
