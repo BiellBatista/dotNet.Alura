@@ -174,5 +174,7 @@ NHibernate: Persistência de dados com C#
 		07 - Incluindo um novo comentário na publicação
 		08 - Inclusão de um novo comentário (A)
 		09 - Testando novamente a aplicação Blog
+		10 - Mãos na massa: Incrementando o Blog
+		11 - O que aprendemos?
 	04 - Utilizando coordenadas geoespaciais no MongoDB com .NET
 	05 - Implementando a aplicação de busca de aeroportos
