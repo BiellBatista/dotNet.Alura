@@ -94,6 +94,7 @@
     <Compile Include="AlterandoDocumento.cs" />
     <Compile Include="AlterandoDocumentoClasse.cs" />
     <Compile Include="ConectandoMongoDB.cs" />
+    <Compile Include="ConectandoMongoDBGeo.cs" />
     <Compile Include="ExcluindoDocumento.cs" />
     <Compile Include="IncluindoMuitosLivros.cs" />
     <Compile Include="ListandoDocumentos.cs" />
