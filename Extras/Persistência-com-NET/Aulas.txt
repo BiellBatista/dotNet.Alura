@@ -187,4 +187,9 @@ NHibernate: Persistência de dados com C#
 		08 - Tipo de uma coordenada geoespacial em uma classe no .NET (B)
 		09 - Criando a classe de conexão com o MongoDB para base geo
 		10 - Buscando aeroportos próximos de um ponto geográfico
+		11 - Representação de um ponto geoespacial (C)
+		12 - Definindo a localização de um ponto no mapa (B)
+		13 - Método para buscar pontos geoespaciais dentro de um raio de busca (A)
+		14 - Mãos na massa: Implementando a busca de aeroportos
+		15 - O que aprendemos?
 	05 - Implementando a aplicação de busca de aeroportos
