@@ -172,5 +172,7 @@ NHibernate: Persistência de dados com C#
 		05 - Listando as 10 mais recentes publicações de um assunto
 		06 - Listagem das publicações (C)
 		07 - Incluindo um novo comentário na publicação
+		08 - Inclusão de um novo comentário (A)
+		09 - Testando novamente a aplicação Blog
 	04 - Utilizando coordenadas geoespaciais no MongoDB com .NET
 	05 - Implementando a aplicação de busca de aeroportos

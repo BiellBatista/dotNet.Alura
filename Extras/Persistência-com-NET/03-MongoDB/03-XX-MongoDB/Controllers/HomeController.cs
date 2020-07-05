@@ -108,8 +108,21 @@ namespace _03_XX_MongoDB.Controllers
                 return RedirectToAction("Publicacao", new { id = model.PublicacaoId });
             }
 
-            //XXX TRABALHE AQUI
-            // Inclua novo comentário na publicação já existente.
+            var comment = new Comentario
+            {
+                Autor = User.Identity.Name,
+                Conteudo = model.Conteudo,
+                DataCriacao = DateTime.UtcNow,
+            };
+
+            var connectandoMongoDB = new AcessoMongoDB();
+
+            var construtor = Builders<Publicacao>.Filter;
+            var condicao = construtor.Eq(x => x.Id, model.PublicacaoId);
+            var construtorAlteracao = Builders<Publicacao>.Update;
+            var condicaoAlteracao = construtorAlteracao.Push(x => x.Comentarios, comment);
+
+            await connectandoMongoDB.Publicacoes.UpdateOneAsync(condicao, condicaoAlteracao);
 
             return RedirectToAction("Publicacao", new { id = model.PublicacaoId });
         }
