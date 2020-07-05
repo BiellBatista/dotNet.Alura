@@ -194,4 +194,5 @@ NHibernate: Persistência de dados com C#
 		15 - O que aprendemos?
 	05 - Implementando a aplicação de busca de aeroportos
 		01 - Entendendo a aplicação de busca de aeroportos
-		02 - 
+		02 - Criando as classes na aplicação de busca de aeroportos usando ASP .NET MVC
+		03 - Entendendo como os parâmetros de entrada e saída da aplicação de mapa funcionam

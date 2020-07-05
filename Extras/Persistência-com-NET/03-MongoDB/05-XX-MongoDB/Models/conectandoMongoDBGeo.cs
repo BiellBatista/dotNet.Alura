@@ -1,16 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
+﻿using MongoDB.Driver;
 
 namespace _05_XX_MongoDB.Models
 {
     public class ConectandoMongoDBGeo
     {
-        //XXX TRABALHE AQUI
-        // Crie a classe de conexão com o MongoDB
+        public const string STRING_CONEXAO = "mongodb://localhost:27017";
+        public const string NOME_DA_BASE = "geo";
+        public const string NOME_DA_COLECAO = "airports";
 
+        private static readonly IMongoClient _client;
+        private static readonly IMongoDatabase _baseDados;
 
+        static ConectandoMongoDBGeo()
+        {
+            _client = new MongoClient(STRING_CONEXAO);
+            _baseDados = _client.GetDatabase(NOME_DA_BASE);
+        }
+
+        public IMongoClient Cliente
+        {
+            get { return _client; }
+        }
+
+        public IMongoCollection<Aeroporto> Airports
+        {
+            get { return _baseDados.GetCollection<Aeroporto>(NOME_DA_COLECAO); }
+        }
     }
 }
