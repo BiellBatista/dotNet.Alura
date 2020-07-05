@@ -177,4 +177,5 @@ NHibernate: Persistência de dados com C#
 		10 - Mãos na massa: Incrementando o Blog
 		11 - O que aprendemos?
 	04 - Utilizando coordenadas geoespaciais no MongoDB com .NET
+		01 - Entendendo as coordenadas espaciais
 	05 - Implementando a aplicação de busca de aeroportos
