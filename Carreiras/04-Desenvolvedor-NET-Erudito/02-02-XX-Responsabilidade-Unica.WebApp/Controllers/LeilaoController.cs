@@ -1,34 +1,32 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using _02_02_XX_Responsabilidade_Unica.WebApp.Dados;
 using _02_02_XX_Responsabilidade_Unica.WebApp.Models;
 using System;
-using System.Collections.Generic;
 
 namespace _02_02_XX_Responsabilidade_Unica.WebApp.Controllers
 {
     public class LeilaoController : Controller
     {
-
         AppDbContext _context;
+        LeilaoDao _dao;
 
         public LeilaoController()
         {
             _context = new AppDbContext();
+            _dao = new LeilaoDao();
         }
 
         public IActionResult Index()
         {
-            var leiloes = _context.Leiloes
-                .Include(l => l.Categoria);
+            var leiloes = _dao.BuscarTodosLeiloes();
             return View(leiloes);
         }
 
         [HttpGet]
         public IActionResult Insert()
         {
-            ViewData["Categorias"] = _context.Categorias.ToList();
+            ViewData["Categorias"] = _dao.BuscarTodasCategorias();
             ViewData["Operacao"] = "Inclusão";
             return View("Form");
         }
@@ -38,11 +36,10 @@ namespace _02_02_XX_Responsabilidade_Unica.WebApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Leiloes.Add(model);
-                _context.SaveChanges();
+                _dao.IncluirLeilao(model);
                 return RedirectToAction("Index");
             }
-            ViewData["Categorias"] = _context.Categorias.ToList();
+            ViewData["Categorias"] = _dao.BuscarTodasCategorias();
             ViewData["Operacao"] = "Inclusão";
             return View("Form", model);
         }
@@ -50,9 +47,9 @@ namespace _02_02_XX_Responsabilidade_Unica.WebApp.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            ViewData["Categorias"] = _context.Categorias.ToList();
+            ViewData["Categorias"] = _dao.BuscarTodasCategorias();
             ViewData["Operacao"] = "Edição";
-            var leilao = _context.Leiloes.Find(id);
+            var leilao = _dao.BuscarLeilaoPorId(id);
             if (leilao == null) return NotFound();
             return View("Form", leilao);
         }
@@ -62,11 +59,10 @@ namespace _02_02_XX_Responsabilidade_Unica.WebApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Leiloes.Update(model);
-                _context.SaveChanges();
+                _dao.AlterarLeilao(model);
                 return RedirectToAction("Index");
             }
-            ViewData["Categorias"] = _context.Categorias.ToList();
+            ViewData["Categorias"] = _dao.BuscarTodasCategorias();
             ViewData["Operacao"] = "Edição";
             return View("Form", model);
         }
@@ -74,37 +70,34 @@ namespace _02_02_XX_Responsabilidade_Unica.WebApp.Controllers
         [HttpPost]
         public IActionResult Inicia(int id)
         {
-            var leilao = _context.Leiloes.Find(id);
+            var leilao = _dao.BuscarLeilaoPorId(id);
             if (leilao == null) return NotFound();
             if (leilao.Situacao != SituacaoLeilao.Rascunho) return StatusCode(405);
             leilao.Situacao = SituacaoLeilao.Pregao;
             leilao.Inicio = DateTime.Now;
-            _context.Leiloes.Update(leilao);
-            _context.SaveChanges();
+            _dao.AlterarLeilao(leilao);
             return RedirectToAction("Index");
         }
 
         [HttpPost]
         public IActionResult Finaliza(int id)
         {
-            var leilao = _context.Leiloes.Find(id);
+            var leilao = _dao.BuscarLeilaoPorId(id);
             if (leilao == null) return NotFound();
             if (leilao.Situacao != SituacaoLeilao.Pregao) return StatusCode(405);
             leilao.Situacao = SituacaoLeilao.Finalizado;
             leilao.Termino = DateTime.Now;
-            _context.Leiloes.Update(leilao);
-            _context.SaveChanges();
+            _dao.AlterarLeilao(leilao);
             return RedirectToAction("Index");
         }
 
         [HttpPost]
         public IActionResult Remove(int id)
         {
-            var leilao = _context.Leiloes.Find(id);
+            var leilao = _dao.BuscarLeilaoPorId(id);
             if (leilao == null) return NotFound();
             if (leilao.Situacao == SituacaoLeilao.Pregao) return StatusCode(405);
-            _context.Leiloes.Remove(leilao);
-            _context.SaveChanges();
+            _dao.ExcluirLeilao(leilao);
             return NoContent();
         }
 
@@ -112,24 +105,13 @@ namespace _02_02_XX_Responsabilidade_Unica.WebApp.Controllers
         public IActionResult Pesquisa(string termo)
         {
             ViewData["termo"] = termo;
-            var leiloes = _context.Leiloes
-                .Include(l => l.Categoria)
+            var leiloes = _dao.BuscarTodosLeiloes()
                 .Where(l => string.IsNullOrWhiteSpace(termo) ||
                     l.Titulo.ToUpper().Contains(termo.ToUpper()) ||
                     l.Descricao.ToUpper().Contains(termo.ToUpper()) ||
                     l.Categoria.Descricao.ToUpper().Contains(termo.ToUpper())
                 );
             return View("Index", leiloes);
-        }
-
-        private IEnumerable<Categoria> BuscarCategoria()
-        {
-            return _context.Categorias.ToList();
-        }
-
-        private Leilao BuscarPorId(int id)
-        {
-            return _context.Leiloes.First(l => l.Id == id);
         }
     }
 }
