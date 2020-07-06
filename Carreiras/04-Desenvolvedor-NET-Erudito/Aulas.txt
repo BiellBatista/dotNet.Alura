@@ -64,6 +64,13 @@ SOLID com C#: Orientação a Objetos com C# (novo)
 		09 - Projeto atual
 		10 - O que aprendemos?
 	03 - Inversão de dependências
+		01 - Projeto da aula anterior
+		02 - Objetivos da aula
+		03 - Diga-me com quem andas
+		04 - Dependências de EmpregadoManager (A / B / C / E / G / H)
+		05 - EmpregadoManager II (B / G)
+		06 - Uma abstração para o acesso aos dados
+		07 - LeilaoDaoComEfCore
 	04 - Princípio do Aberto/Fechado
 	05 - Segregação de Interfaces e Liskov
 Design Patterns C# I: Boas práticas de programação
