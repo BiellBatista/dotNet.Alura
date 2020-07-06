@@ -55,6 +55,7 @@ SOLID com C#: Orientação a Objetos com C# (novo)
 	02 - Responsabilidade única
 		01 - Objetivos da aula
 		02 - Analisando o LeilaoController
+		03 - Separando a lógica de acesso
 	03 - Inversão de dependências
 	04 - Princípio do Aberto/Fechado
 	05 - Segregação de Interfaces e Liskov

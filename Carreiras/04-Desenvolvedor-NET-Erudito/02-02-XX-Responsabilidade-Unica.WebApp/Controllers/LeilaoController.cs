@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using _02_02_XX_Responsabilidade_Unica.WebApp.Dados;
 using _02_02_XX_Responsabilidade_Unica.WebApp.Models;
 using System;
+using System.Collections.Generic;
 
 namespace _02_02_XX_Responsabilidade_Unica.WebApp.Controllers
 {
@@ -119,6 +120,16 @@ namespace _02_02_XX_Responsabilidade_Unica.WebApp.Controllers
                     l.Categoria.Descricao.ToUpper().Contains(termo.ToUpper())
                 );
             return View("Index", leiloes);
+        }
+
+        private IEnumerable<Categoria> BuscarCategoria()
+        {
+            return _context.Categorias.ToList();
+        }
+
+        private Leilao BuscarPorId(int id)
+        {
+            return _context.Leiloes.First(l => l.Id == id);
         }
     }
 }
