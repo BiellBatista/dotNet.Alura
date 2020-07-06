@@ -53,6 +53,8 @@ SOLID com C#: Orientação a Objetos com C# (novo)
 		10 - Referências utilizadas (em inglês)
 		11 - O que aprendemos?
 	02 - Responsabilidade única
+		01 - Objetivos da aula
+		02 - Analisando o LeilaoController
 	03 - Inversão de dependências
 	04 - Princípio do Aberto/Fechado
 	05 - Segregação de Interfaces e Liskov
