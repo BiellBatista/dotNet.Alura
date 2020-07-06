@@ -57,6 +57,12 @@ SOLID com C#: Orientação a Objetos com C# (novo)
 		02 - Analisando o LeilaoController
 		03 - Separando a lógica de acesso
 		04 - Conceitos
+		05 - Agentes de mudança (B / C / D)
+		06 - Agentes de mudança em controladores (B)
+		07 - Referências utilizadas (em inglês)
+		08 - Criação do LeilaoDao
+		09 - Projeto atual
+		10 - O que aprendemos?
 	03 - Inversão de dependências
 	04 - Princípio do Aberto/Fechado
 	05 - Segregação de Interfaces e Liskov
