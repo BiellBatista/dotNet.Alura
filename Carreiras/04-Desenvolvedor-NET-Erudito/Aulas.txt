@@ -39,6 +39,23 @@ SOLID com C#: Orientação a Objetos com C#
 		04 - Maneiras de reutilizar comportamento
 		05 - Leia mais sobre Liskov
 		06 - Mão na massa!
+SOLID com C#: Orientação a Objetos com C# (novo)
+	01 - Qualidade de software
+		01 - Introdução
+		02 - Objetivos do curso
+		03 - Projeto inicial
+		04 - Preparando o ambiente
+		05 - Objetivos da aula
+		06 - A história do projeto
+		07 - Qualidade de software
+		08 - Sinais de que você está repetindo código (A / B / D)
+		09 - Executando a aplicação
+		10 - Referências utilizadas (em inglês)
+		11 - O que aprendemos?
+	02 - Responsabilidade única
+	03 - Inversão de dependências
+	04 - Princípio do Aberto/Fechado
+	05 - Segregação de Interfaces e Liskov
 Design Patterns C# I: Boas práticas de programação
 	01 - A grande variedade de impostos e o padrão Strategy
 	02 - Muitos Descontos e o Chain of Responsibility

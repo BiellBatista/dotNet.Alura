@@ -171,6 +171,12 @@ Carreira Desenvolvedor .Net Erudito
 		03 - Classes abertas, Open Closed e Dependency Inversion Principles
 		04 - Entendendo o encapsulamento
 		05 - Herança e o Liskov Substitutive Principle
+	SOLID com C#: Orientação a Objetos com C# (novo)
+		01 - Qualidade de software
+		02 - Responsabilidade única
+		03 - Inversão de dependências
+		04 - Princípio do Aberto/Fechado
+		05 - Segregação de Interfaces e Liskov
 	Design Patterns C# I: Boas práticas de programação
 		01 - A grande variedade de impostos e o padrão Strategy
 		02 - Muitos Descontos e o Chain of Responsibility
