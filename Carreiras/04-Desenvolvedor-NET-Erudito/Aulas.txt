@@ -92,6 +92,8 @@ SOLID com C#: Orientação a Objetos com C# (novo)
 		12 - Projeto atual
 		13 - O que aprendemos?
 	05 - Segregação de Interfaces e Liskov
+		01 - Objetivos da aula
+		02 - Quando OO vira uma pedra no sapato
 Design Patterns C# I: Boas práticas de programação
 	01 - A grande variedade de impostos e o padrão Strategy
 	02 - Muitos Descontos e o Chain of Responsibility

@@ -35,11 +35,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-03-XX-Inversao-Dependenc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-03-XX-Inversao-Dependencias.Testes", "02-03-XX-Inversao-Dependencias.Testes\02-03-XX-Inversao-Dependencias.Testes.csproj", "{BB4F4281-FE27-4207-AE67-CA87232F10A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-04-XX-Inversao-Dependencias.CLI", "02-04-XX-Inversao-Dependencias.CLI\02-04-XX-Inversao-Dependencias.CLI.csproj", "{696F743C-439E-4ECA-ABE3-04CDADDA3032}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-04-XX-Principio-Aberto-Fechado.CLI", "02-04-XX-Principio-Aberto-Fechado.CLI\02-04-XX-Principio-Aberto-Fechado.CLI.csproj", "{696F743C-439E-4ECA-ABE3-04CDADDA3032}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-04-XX-Inversao-Dependencias.WebApp", "02-04-XX-Inversao-Dependencias.WebApp\02-04-XX-Inversao-Dependencias.WebApp.csproj", "{3A1BC9A5-0787-497A-971F-E02008671EF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-04-XX-Principio-Aberto-Fechado.WebApp", "02-04-XX-Principio-Aberto-Fechado.WebApp\02-04-XX-Principio-Aberto-Fechado.WebApp.csproj", "{3A1BC9A5-0787-497A-971F-E02008671EF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-04-XX-Inversao-Dependencias.Testes", "02-04-XX-Inversao-Dependencias.Testes\02-04-XX-Inversao-Dependencias.Testes.csproj", "{DCCF41FC-00F5-4DE4-8604-FB78206AD849}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-04-XX-Principio-Aberto-Fechado.Testes", "02-04-XX-Principio-Aberto-Fechado.Testes\02-04-XX-Principio-Aberto-Fechado.Testes.csproj", "{DCCF41FC-00F5-4DE4-8604-FB78206AD849}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-05-XX-Segregacao-Interfaces-Liskov.CLI", "02-05-XX-Segregacao-Interfaces-Liskov.CLI\02-05-XX-Segregacao-Interfaces-Liskov.CLI.csproj", "{318F6AAD-37D6-4AF7-A7F4-A2FC82B9AFA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-05-XX-Segregacao-Interfaces-Liskov.WebApp", "02-05-XX-Segregacao-Interfaces-Liskov.WebApp\02-05-XX-Segregacao-Interfaces-Liskov.WebApp.csproj", "{CF7A5E99-22BE-43E2-9487-F09CBE59D613}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-05-XX-Segregacao-Interfaces-Liskov.Testes", "02-05-XX-Segregacao-Interfaces-Liskov.Testes\02-05-XX-Segregacao-Interfaces-Liskov.Testes.csproj", "{3F7E494F-F0B6-482B-8FEA-58977C77E467}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +121,18 @@ Global
 		{DCCF41FC-00F5-4DE4-8604-FB78206AD849}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCCF41FC-00F5-4DE4-8604-FB78206AD849}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCCF41FC-00F5-4DE4-8604-FB78206AD849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{318F6AAD-37D6-4AF7-A7F4-A2FC82B9AFA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{318F6AAD-37D6-4AF7-A7F4-A2FC82B9AFA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{318F6AAD-37D6-4AF7-A7F4-A2FC82B9AFA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{318F6AAD-37D6-4AF7-A7F4-A2FC82B9AFA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF7A5E99-22BE-43E2-9487-F09CBE59D613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF7A5E99-22BE-43E2-9487-F09CBE59D613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF7A5E99-22BE-43E2-9487-F09CBE59D613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF7A5E99-22BE-43E2-9487-F09CBE59D613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F7E494F-F0B6-482B-8FEA-58977C77E467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7E494F-F0B6-482B-8FEA-58977C77E467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7E494F-F0B6-482B-8FEA-58977C77E467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7E494F-F0B6-482B-8FEA-58977C77E467}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -132,6 +150,9 @@ Global
 		{696F743C-439E-4ECA-ABE3-04CDADDA3032} = {B4762F5F-6801-40C2-8189-FA8A9F6A8FC8}
 		{3A1BC9A5-0787-497A-971F-E02008671EF7} = {B4762F5F-6801-40C2-8189-FA8A9F6A8FC8}
 		{DCCF41FC-00F5-4DE4-8604-FB78206AD849} = {B2B50159-6F60-4A3D-A431-4AEB6761E7B2}
+		{318F6AAD-37D6-4AF7-A7F4-A2FC82B9AFA6} = {B4762F5F-6801-40C2-8189-FA8A9F6A8FC8}
+		{CF7A5E99-22BE-43E2-9487-F09CBE59D613} = {B4762F5F-6801-40C2-8189-FA8A9F6A8FC8}
+		{3F7E494F-F0B6-482B-8FEA-58977C77E467} = {B2B50159-6F60-4A3D-A431-4AEB6761E7B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6D692372-E928-4B3E-AC65-145C08626939}
