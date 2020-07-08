@@ -13,7 +13,7 @@ namespace _02_05_XX_Segregacao_Interfaces_Liskov.WebApp.Services.Handlers
     {
         IAdminService _defaultService;
 
-        public ArquivamentoAdminService(ILeilaoDao dao) => _defaultService = new DefaultAdminService(dao);
+        public ArquivamentoAdminService(ILeilaoDao dao, ICategoriaDao categDao) => _defaultService = new DefaultAdminService(dao, categDao);
 
         public void CadastraLeilao(Leilao leilao) => _defaultService.CadastraLeilao(leilao);
         public IEnumerable<Categoria> ConsultaCategorias() => _defaultService.ConsultaCategorias();
