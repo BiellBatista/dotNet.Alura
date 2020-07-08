@@ -81,6 +81,8 @@ SOLID com C#: Orientação a Objetos com C# (novo)
 		01 - Objetivos da aula
 		02 - Encontramos um defeito
 		03 - Separando as funcionalidades
+		04 - Ajude Daenerys em seu projeto (B)
+		05 - Arquivando um leilão
 	05 - Segregação de Interfaces e Liskov
 Design Patterns C# I: Boas práticas de programação
 	01 - A grande variedade de impostos e o padrão Strategy

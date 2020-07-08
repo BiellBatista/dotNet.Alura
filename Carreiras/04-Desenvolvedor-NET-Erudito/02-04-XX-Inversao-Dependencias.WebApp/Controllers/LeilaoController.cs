@@ -1,33 +1,29 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using _02_04_XX_Inversao_Dependencias.WebApp.Dados;
-using _02_04_XX_Inversao_Dependencias.WebApp.Dados.EfCore;
 using _02_04_XX_Inversao_Dependencias.WebApp.Models;
-using System;
+using _02_04_XX_Inversao_Dependencias.WebApp.Services;
 
 namespace _02_04_XX_Inversao_Dependencias.WebApp.Controllers
 {
     public class LeilaoController : Controller
     {
-        AppDbContext _context;
-        ILeilaoDao _dao;
+        IAdminService _service;
 
-        public LeilaoController(ILeilaoDao dao)
+        public LeilaoController(IAdminService service)
         {
-            _context = new AppDbContext();
-            _dao = dao;
+            _service = service;
         }
 
         public IActionResult Index()
         {
-            var leiloes = _dao.BuscarTodosLeiloes();
+            var leiloes = _service.ConsultaLeiloes();
             return View(leiloes);
         }
 
         [HttpGet]
         public IActionResult Insert()
         {
-            ViewData["Categorias"] = _dao.BuscarTodasCategorias();
+            ViewData["Categorias"] = _service.ConsultaCategorias();
             ViewData["Operacao"] = "Inclusão";
             return View("Form");
         }
@@ -37,10 +33,10 @@ namespace _02_04_XX_Inversao_Dependencias.WebApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                _dao.IncluirLeilao(model);
+                _service.CadastraLeilao(model);
                 return RedirectToAction("Index");
             }
-            ViewData["Categorias"] = _dao.BuscarTodasCategorias();
+            ViewData["Categorias"] = _service.ConsultaCategorias();
             ViewData["Operacao"] = "Inclusão";
             return View("Form", model);
         }
@@ -48,9 +44,9 @@ namespace _02_04_XX_Inversao_Dependencias.WebApp.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            ViewData["Categorias"] = _dao.BuscarTodasCategorias();
+            ViewData["Categorias"] = _service.ConsultaCategorias();
             ViewData["Operacao"] = "Edição";
-            var leilao = _dao.BuscarLeilaoPorId(id);
+            var leilao = _service.ConsultaLeilaoPorId(id);
             if (leilao == null) return NotFound();
             return View("Form", leilao);
         }
@@ -60,10 +56,10 @@ namespace _02_04_XX_Inversao_Dependencias.WebApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                _dao.AlterarLeilao(model);
+                _service.ModificaLeilao(model);
                 return RedirectToAction("Index");
             }
-            ViewData["Categorias"] = _dao.BuscarTodasCategorias();
+            ViewData["Categorias"] = _service.ConsultaCategorias();
             ViewData["Operacao"] = "Edição";
             return View("Form", model);
         }
@@ -71,34 +67,27 @@ namespace _02_04_XX_Inversao_Dependencias.WebApp.Controllers
         [HttpPost]
         public IActionResult Inicia(int id)
         {
-            var leilao = _dao.BuscarLeilaoPorId(id);
+            var leilao = _service.ConsultaLeilaoPorId(id);
             if (leilao == null) return NotFound();
-            if (leilao.Situacao != SituacaoLeilao.Rascunho) return StatusCode(405);
-            leilao.Situacao = SituacaoLeilao.Pregao;
-            leilao.Inicio = DateTime.Now;
-            _dao.AlterarLeilao(leilao);
+            _service.IniciaPregaoDoLeilaoComId(id);
             return RedirectToAction("Index");
         }
 
         [HttpPost]
         public IActionResult Finaliza(int id)
         {
-            var leilao = _dao.BuscarLeilaoPorId(id);
+            var leilao = _service.ConsultaLeilaoPorId(id);
             if (leilao == null) return NotFound();
-            if (leilao.Situacao != SituacaoLeilao.Pregao) return StatusCode(405);
-            leilao.Situacao = SituacaoLeilao.Finalizado;
-            leilao.Termino = DateTime.Now;
-            _dao.AlterarLeilao(leilao);
+            _service.FinalizaPregaoDoLeilaoComId(id);
             return RedirectToAction("Index");
         }
 
         [HttpPost]
         public IActionResult Remove(int id)
         {
-            var leilao = _dao.BuscarLeilaoPorId(id);
+            var leilao = _service.ConsultaLeilaoPorId(id);
             if (leilao == null) return NotFound();
-            if (leilao.Situacao == SituacaoLeilao.Pregao) return StatusCode(405);
-            _dao.ExcluirLeilao(leilao);
+            _service.RemoveLeilao(leilao);
             return NoContent();
         }
 
@@ -106,7 +95,7 @@ namespace _02_04_XX_Inversao_Dependencias.WebApp.Controllers
         public IActionResult Pesquisa(string termo)
         {
             ViewData["termo"] = termo;
-            var leiloes = _dao.BuscarTodosLeiloes()
+            var leiloes = _service.ConsultaLeiloes()
                 .Where(l => string.IsNullOrWhiteSpace(termo) ||
                     l.Titulo.ToUpper().Contains(termo.ToUpper()) ||
                     l.Descricao.ToUpper().Contains(termo.ToUpper()) ||

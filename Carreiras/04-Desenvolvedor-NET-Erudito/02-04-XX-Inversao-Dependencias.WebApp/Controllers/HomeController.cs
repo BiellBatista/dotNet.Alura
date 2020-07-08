@@ -1,34 +1,21 @@
-﻿using System.Linq;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using _02_04_XX_Inversao_Dependencias.WebApp.Dados.EfCore;
-using _02_04_XX_Inversao_Dependencias.WebApp.Models;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
+using _02_04_XX_Inversao_Dependencias.WebApp.Services;
 
 namespace _02_04_XX_Inversao_Dependencias.WebApp.Controllers
 {
     public class HomeController : Controller
     {
-        AppDbContext _context;
+        IProdutoService _service;
 
-        public HomeController()
+        public HomeController(IProdutoService service)
         {
-            _context = new AppDbContext();
+            _service = service;
         }
 
         public IActionResult Index()
         {
-            var categorias = _context.Categorias
-                .Include(c => c.Leiloes)
-                .Select(c => new CategoriaComInfoLeilao
-                {
-                    Id = c.Id,
-                    Descricao = c.Descricao,
-                    Imagem = c.Imagem,
-                    EmRascunho = c.Leiloes.Where(l => l.Situacao == SituacaoLeilao.Rascunho).Count(),
-                    EmPregao = c.Leiloes.Where(l => l.Situacao == SituacaoLeilao.Pregao).Count(),
-                    Finalizados = c.Leiloes.Where(l => l.Situacao == SituacaoLeilao.Finalizado).Count(),
-                });
+            var categorias = _service.ConsultaCategoriasComTotalDeLeiloesEmPregao();
             return View(categorias);
         }
 
@@ -42,9 +29,7 @@ namespace _02_04_XX_Inversao_Dependencias.WebApp.Controllers
         [Route("[controller]/Categoria/{categoria}")]
         public IActionResult Categoria(int categoria)
         {
-            var categ = _context.Categorias
-                .Include(c => c.Leiloes)
-                .First(c => c.Id == categoria);
+            var categ = _service.ConsultaCategoriaPorIdComLeiloesEmPregao(categoria);
             return View(categ);
         }
 
@@ -53,12 +38,7 @@ namespace _02_04_XX_Inversao_Dependencias.WebApp.Controllers
         public IActionResult Busca(string termo)
         {
             ViewData["termo"] = termo;
-            var termoNormalized = termo.ToUpper();
-            var leiloes = _context.Leiloes
-                .Where(c =>
-                    c.Titulo.ToUpper().Contains(termoNormalized) ||
-                    c.Descricao.ToUpper().Contains(termoNormalized) ||
-                    c.Categoria.Descricao.ToUpper().Contains(termoNormalized));
+            var leiloes = _service.PesquisaLeiloesEmPregaoPorTermo(termo);
             return View(leiloes);
         }
     }
