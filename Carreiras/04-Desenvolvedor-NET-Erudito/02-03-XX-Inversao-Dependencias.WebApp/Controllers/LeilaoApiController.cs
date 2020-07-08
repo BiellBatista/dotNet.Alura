@@ -13,10 +13,10 @@ namespace _02_03_XX_Inversao_Dependencias.WebApp.Controllers
         AppDbContext _context;
         ILeilaoDao _dao;
 
-        public LeilaoApiController()
+        public LeilaoApiController(ILeilaoDao dao)
         {
             _context = new AppDbContext();
-            _dao = new LeilaoDaoComEFCore();
+            _dao = dao;
         }
 
         [HttpGet]

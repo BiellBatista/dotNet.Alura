@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace _02_03_XX_Inversao_Dependencias.WebApp.Dados
 {
-    interface ILeilaoDao
+    public interface ILeilaoDao
     {
         public Leilao BuscarLeilaoPorId(int id);
         public IEnumerable<Leilao> BuscarTodosLeiloes();

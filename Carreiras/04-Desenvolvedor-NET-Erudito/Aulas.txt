@@ -72,6 +72,11 @@ SOLID com C#: Orientação a Objetos com C# (novo)
 		06 - Uma abstração para o acesso aos dados
 		07 - LeilaoDaoComEfCore
 		08 - Injetando a dependência
+		09 - Conceitos
+		10 - Invertendo a dependência em nosso projeto
+		11 - E o HomeController, Daniel?
+		12 - Projeto atual
+		13 - O que aprendemos?
 	04 - Princípio do Aberto/Fechado
 	05 - Segregação de Interfaces e Liskov
 Design Patterns C# I: Boas práticas de programação
