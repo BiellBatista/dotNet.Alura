@@ -14,11 +14,6 @@ namespace _02_05_XX_Segregacao_Interfaces_Liskov.WebApp.Dados.EfCore
             _context = context;
         }
 
-        public void Alterar(Categoria obj)
-        {
-            throw new System.NotImplementedException();
-        }
-
         public Categoria BuscarPorId(int id)
         {
             return _context.Categorias
@@ -31,20 +26,11 @@ namespace _02_05_XX_Segregacao_Interfaces_Liskov.WebApp.Dados.EfCore
             return _context.Categorias
                 .Include(c => c.Leiloes);
         }
-
-        public void Excluir(Categoria obj)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Incluir(Categoria obj)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }
 
 /**
  * Não posso deixar de cumprir (preencher) os métodos da interface...
  * Ou seja, não posso ter throw new System.NotImplementedException();
+ * Devo ter coesão nas interfaces. Neste caso, criei uma interface de leitura e outra de escrita (CQRS)
  */

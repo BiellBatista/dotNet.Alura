@@ -2,7 +2,7 @@
 
 namespace _02_05_XX_Segregacao_Interfaces_Liskov.WebApp.Dados
 {
-    public interface ILeilaoDao : IDao<Leilao>
+    public interface ILeilaoDao : ICommand<Leilao>, IQuery<Leilao>
     {
     }
 }
