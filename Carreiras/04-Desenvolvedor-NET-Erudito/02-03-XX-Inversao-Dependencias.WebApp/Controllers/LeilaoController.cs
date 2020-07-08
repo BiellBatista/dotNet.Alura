@@ -1,6 +1,7 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using _02_03_XX_Inversao_Dependencias.WebApp.Dados;
+using _02_03_XX_Inversao_Dependencias.WebApp.Dados.EfCore;
 using _02_03_XX_Inversao_Dependencias.WebApp.Models;
 using System;
 
@@ -9,12 +10,12 @@ namespace _02_03_XX_Inversao_Dependencias.WebApp.Controllers
     public class LeilaoController : Controller
     {
         AppDbContext _context;
-        LeilaoDao _dao;
+        ILeilaoDao _dao;
 
         public LeilaoController()
         {
             _context = new AppDbContext();
-            _dao = new LeilaoDao();
+            _dao = new LeilaoDaoComEFCore();
         }
 
         public IActionResult Index()

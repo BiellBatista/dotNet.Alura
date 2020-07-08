@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using _02_03_XX_Inversao_Dependencias.WebApp.Models;
 
-namespace _02_03_XX_Inversao_Dependencias.WebApp.Dados
+namespace _02_03_XX_Inversao_Dependencias.WebApp.Dados.EfCore
 {
     public class AppDbContext : DbContext
     {

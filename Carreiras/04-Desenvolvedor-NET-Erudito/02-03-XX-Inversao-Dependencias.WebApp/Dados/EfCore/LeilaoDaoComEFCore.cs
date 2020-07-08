@@ -2,13 +2,13 @@
 using _02_03_XX_Inversao_Dependencias.WebApp.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace _02_03_XX_Inversao_Dependencias.WebApp.Dados
+namespace _02_03_XX_Inversao_Dependencias.WebApp.Dados.EfCore
 {
-    public class LeilaoDao
+    public class LeilaoDaoComEFCore : ILeilaoDao
     {
         AppDbContext _context;
 
-        public LeilaoDao()
+        public LeilaoDaoComEFCore()
         {
             _context = new AppDbContext();
         }

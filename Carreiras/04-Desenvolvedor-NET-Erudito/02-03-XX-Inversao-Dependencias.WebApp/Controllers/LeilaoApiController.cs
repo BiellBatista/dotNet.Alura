@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using _02_03_XX_Inversao_Dependencias.WebApp.Models;
 using _02_03_XX_Inversao_Dependencias.WebApp.Dados;
+using _02_03_XX_Inversao_Dependencias.WebApp.Dados.EfCore;
 using System;
 
 namespace _02_03_XX_Inversao_Dependencias.WebApp.Controllers
@@ -10,12 +11,12 @@ namespace _02_03_XX_Inversao_Dependencias.WebApp.Controllers
     public class LeilaoApiController : ControllerBase
     {
         AppDbContext _context;
-        LeilaoDao _dao;
+        ILeilaoDao _dao;
 
         public LeilaoApiController()
         {
             _context = new AppDbContext();
-            _dao = new LeilaoDao();
+            _dao = new LeilaoDaoComEFCore();
         }
 
         [HttpGet]

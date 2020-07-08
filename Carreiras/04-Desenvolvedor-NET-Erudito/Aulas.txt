@@ -71,6 +71,7 @@ SOLID com C#: Orientação a Objetos com C# (novo)
 		05 - EmpregadoManager II (B / G)
 		06 - Uma abstração para o acesso aos dados
 		07 - LeilaoDaoComEfCore
+		08 - Injetando a dependência
 	04 - Princípio do Aberto/Fechado
 	05 - Segregação de Interfaces e Liskov
 Design Patterns C# I: Boas práticas de programação
