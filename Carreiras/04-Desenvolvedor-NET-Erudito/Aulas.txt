@@ -78,6 +78,8 @@ SOLID com C#: Orientação a Objetos com C# (novo)
 		12 - Projeto atual
 		13 - O que aprendemos?
 	04 - Princípio do Aberto/Fechado
+		01 - Objetivos da aula
+		02 - Encontramos um defeito
 	05 - Segregação de Interfaces e Liskov
 Design Patterns C# I: Boas práticas de programação
 	01 - A grande variedade de impostos e o padrão Strategy

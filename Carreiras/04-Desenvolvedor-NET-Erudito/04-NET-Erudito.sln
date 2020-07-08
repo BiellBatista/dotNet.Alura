@@ -17,23 +17,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B4762F5F-680
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B2B50159-6F60-4A3D-A431-4AEB6761E7B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-01-XX-Qualidade-Software.CLI", "02-01-XX-Qualidade-Software.CLI\02-01-XX-Qualidade-Software.CLI.csproj", "{2B6012D2-2FDE-4915-9FB8-2ADFEFF49B25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-01-XX-Qualidade-Software.CLI", "02-01-XX-Qualidade-Software.CLI\02-01-XX-Qualidade-Software.CLI.csproj", "{2B6012D2-2FDE-4915-9FB8-2ADFEFF49B25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-01-XX-Qualidade-Software.WebApp", "02-01-XX-Qualidade-Software.WebApp\02-01-XX-Qualidade-Software.WebApp.csproj", "{C5631667-B490-4EFE-8D4D-36F21EC952A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-01-XX-Qualidade-Software.WebApp", "02-01-XX-Qualidade-Software.WebApp\02-01-XX-Qualidade-Software.WebApp.csproj", "{C5631667-B490-4EFE-8D4D-36F21EC952A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-01-XX-Qualidade-Software.Testes", "02-01-XX-Qualidade-Software.Testes\02-01-XX-Qualidade-Software.Testes.csproj", "{1BF30483-84EF-47DE-ACA7-D27B720DE8DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-01-XX-Qualidade-Software.Testes", "02-01-XX-Qualidade-Software.Testes\02-01-XX-Qualidade-Software.Testes.csproj", "{1BF30483-84EF-47DE-ACA7-D27B720DE8DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-XX-Responsabilidade-Unica.CLI", "02-02-XX-Responsabilidade-Unica.CLI\02-02-XX-Responsabilidade-Unica.CLI.csproj", "{2E1A88A6-C565-475B-841E-6035E1A43078}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-02-XX-Responsabilidade-Unica.CLI", "02-02-XX-Responsabilidade-Unica.CLI\02-02-XX-Responsabilidade-Unica.CLI.csproj", "{2E1A88A6-C565-475B-841E-6035E1A43078}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-XX-Responsabilidade-Unica.WebApp", "02-02-XX-Responsabilidade-Unica.WebApp\02-02-XX-Responsabilidade-Unica.WebApp.csproj", "{3018B334-3291-4BF6-8522-858721F43532}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-02-XX-Responsabilidade-Unica.WebApp", "02-02-XX-Responsabilidade-Unica.WebApp\02-02-XX-Responsabilidade-Unica.WebApp.csproj", "{3018B334-3291-4BF6-8522-858721F43532}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-XX-Responsabilidade-Unica.Testes", "02-02-XX-Responsabilidade-Unica.Testes\02-02-XX-Responsabilidade-Unica.Testes.csproj", "{BFAA957E-C5DD-49D1-A84B-75DA2987AA32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-02-XX-Responsabilidade-Unica.Testes", "02-02-XX-Responsabilidade-Unica.Testes\02-02-XX-Responsabilidade-Unica.Testes.csproj", "{BFAA957E-C5DD-49D1-A84B-75DA2987AA32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-03-XX-Inversao-Dependencias.CLI", "02-03-XX-Inversao-Dependencias.CLI\02-03-XX-Inversao-Dependencias.CLI.csproj", "{535BAFA3-D70B-4307-9AE8-4C845E61631E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-03-XX-Inversao-Dependencias.CLI", "02-03-XX-Inversao-Dependencias.CLI\02-03-XX-Inversao-Dependencias.CLI.csproj", "{535BAFA3-D70B-4307-9AE8-4C845E61631E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-03-XX-Inversao-Dependencias.WebApp", "02-03-XX-Inversao-Dependencias.WebApp\02-03-XX-Inversao-Dependencias.WebApp.csproj", "{5A02A1FC-5C76-472E-A61B-0B44615C98C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-03-XX-Inversao-Dependencias.WebApp", "02-03-XX-Inversao-Dependencias.WebApp\02-03-XX-Inversao-Dependencias.WebApp.csproj", "{5A02A1FC-5C76-472E-A61B-0B44615C98C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-03-XX-Inversao-Dependencias.Testes", "02-03-XX-Inversao-Dependencias.Testes\02-03-XX-Inversao-Dependencias.Testes.csproj", "{BB4F4281-FE27-4207-AE67-CA87232F10A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-03-XX-Inversao-Dependencias.Testes", "02-03-XX-Inversao-Dependencias.Testes\02-03-XX-Inversao-Dependencias.Testes.csproj", "{BB4F4281-FE27-4207-AE67-CA87232F10A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-04-XX-Inversao-Dependencias.CLI", "02-04-XX-Inversao-Dependencias.CLI\02-04-XX-Inversao-Dependencias.CLI.csproj", "{696F743C-439E-4ECA-ABE3-04CDADDA3032}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-04-XX-Inversao-Dependencias.WebApp", "02-04-XX-Inversao-Dependencias.WebApp\02-04-XX-Inversao-Dependencias.WebApp.csproj", "{3A1BC9A5-0787-497A-971F-E02008671EF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-04-XX-Inversao-Dependencias.Testes", "02-04-XX-Inversao-Dependencias.Testes\02-04-XX-Inversao-Dependencias.Testes.csproj", "{DCCF41FC-00F5-4DE4-8604-FB78206AD849}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +103,18 @@ Global
 		{BB4F4281-FE27-4207-AE67-CA87232F10A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB4F4281-FE27-4207-AE67-CA87232F10A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB4F4281-FE27-4207-AE67-CA87232F10A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{696F743C-439E-4ECA-ABE3-04CDADDA3032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696F743C-439E-4ECA-ABE3-04CDADDA3032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696F743C-439E-4ECA-ABE3-04CDADDA3032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696F743C-439E-4ECA-ABE3-04CDADDA3032}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A1BC9A5-0787-497A-971F-E02008671EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A1BC9A5-0787-497A-971F-E02008671EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A1BC9A5-0787-497A-971F-E02008671EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A1BC9A5-0787-497A-971F-E02008671EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCCF41FC-00F5-4DE4-8604-FB78206AD849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCCF41FC-00F5-4DE4-8604-FB78206AD849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCCF41FC-00F5-4DE4-8604-FB78206AD849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCCF41FC-00F5-4DE4-8604-FB78206AD849}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -111,6 +129,9 @@ Global
 		{535BAFA3-D70B-4307-9AE8-4C845E61631E} = {B4762F5F-6801-40C2-8189-FA8A9F6A8FC8}
 		{5A02A1FC-5C76-472E-A61B-0B44615C98C0} = {B4762F5F-6801-40C2-8189-FA8A9F6A8FC8}
 		{BB4F4281-FE27-4207-AE67-CA87232F10A1} = {B2B50159-6F60-4A3D-A431-4AEB6761E7B2}
+		{696F743C-439E-4ECA-ABE3-04CDADDA3032} = {B4762F5F-6801-40C2-8189-FA8A9F6A8FC8}
+		{3A1BC9A5-0787-497A-971F-E02008671EF7} = {B4762F5F-6801-40C2-8189-FA8A9F6A8FC8}
+		{DCCF41FC-00F5-4DE4-8604-FB78206AD849} = {B2B50159-6F60-4A3D-A431-4AEB6761E7B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6D692372-E928-4B3E-AC65-145C08626939}

@@ -25,7 +25,6 @@ namespace _02_03_XX_Inversao_Dependencias.CLI
             else if (args[0] == "listar")
             {
                 // listar leilões
-
             }
             else if (args[0] == "detalhe")
             {
