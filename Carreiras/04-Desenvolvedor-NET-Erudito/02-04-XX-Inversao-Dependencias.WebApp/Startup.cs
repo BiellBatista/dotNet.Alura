@@ -13,7 +13,8 @@ namespace _02_04_XX_Inversao_Dependencias.WebApp
         {
             services.AddTransient<ICategoriaDao, CategoriaDaoComEfCore>();
             //falando para o .net Core que onde estiver ILeilaoDao (construtor), será instanciado o LeiaoDaoComEFCore
-            services.AddTransient<ILeilaoDao, LeilaoDaoComEFCore>();
+            services.AddTransient<ILeilaoDao, LeilaoDaoComEfCore>();
+            services.AddTransient<IAdminService, ArquivamentoAdminService>();
             services.AddTransient<IProdutoService, DefaultProdutoService>();
             services.AddDbContext<AppDbContext>();
             services

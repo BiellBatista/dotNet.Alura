@@ -83,6 +83,14 @@ SOLID com C#: Orientação a Objetos com C# (novo)
 		03 - Separando as funcionalidades
 		04 - Ajude Daenerys em seu projeto (B)
 		05 - Arquivando um leilão
+		06 - Daniel, o enumerado ficou instável!
+		07 - Conceitos
+		08 - Camada de serviços
+		09 - Sempre fechado? (A / C / E)
+		10 - Para saber mais: O que eles têm em comum?
+		11 - Referências utilizadas (em inglês)
+		12 - Projeto atual
+		13 - O que aprendemos?
 	05 - Segregação de Interfaces e Liskov
 Design Patterns C# I: Boas práticas de programação
 	01 - A grande variedade de impostos e o padrão Strategy
