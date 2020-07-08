@@ -105,6 +105,7 @@ SOLID com C#: Orientação a Objetos com C# (novo)
 		11 - Conclusão
 Design Patterns C# I: Boas práticas de programação
 	01 - A grande variedade de impostos e o padrão Strategy
+		01 - Vídeo 1
 	02 - Muitos Descontos e o Chain of Responsibility
 	03 - Códigos parecidos e o Template Method
 	04 - Comportamentos compostos por outros comportamentos e o Decorator
