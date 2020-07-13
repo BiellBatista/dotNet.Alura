@@ -51,6 +51,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-01-XX-Strategy", "03-01-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-02-XX-Chain-Responsibility", "03-02-XX-Chain-Responsibility\03-02-XX-Chain-Responsibility.csproj", "{F4CBD517-6237-475D-B7D5-55798845CC06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-03-XX-Template-Method", "03-03-XX-Template-Method\03-03-XX-Template-Method.csproj", "{BB99ECF9-0033-4A82-95F8-3627E4AEAEDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +147,10 @@ Global
 		{F4CBD517-6237-475D-B7D5-55798845CC06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4CBD517-6237-475D-B7D5-55798845CC06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4CBD517-6237-475D-B7D5-55798845CC06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB99ECF9-0033-4A82-95F8-3627E4AEAEDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB99ECF9-0033-4A82-95F8-3627E4AEAEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB99ECF9-0033-4A82-95F8-3627E4AEAEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB99ECF9-0033-4A82-95F8-3627E4AEAEDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

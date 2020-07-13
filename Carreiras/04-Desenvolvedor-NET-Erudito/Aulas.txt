@@ -126,6 +126,7 @@ Design Patterns C# I: Boas práticas de programação
 		08 - Fim da corrente no Chain of Responsibility
 		09 - Quando usar o Chain of Responsibility?
 	03 - Códigos parecidos e o Template Method
+		01 - Vídeo 1
 	04 - Comportamentos compostos por outros comportamentos e o Decorator
 	05 - Estados que variam e o State
 	06 - Criação de objetos e o Builder
