@@ -6,15 +6,20 @@ namespace _03_02_XX_Chain_Responsibility
     {
         static void Main(string[] args)
         {
-            Imposto icms = new ICMS();
-            Imposto iss = new ISS();
+            CalculadorDeDesconto calculador = new CalculadorDeDesconto();
 
-            Orcamento orcamento = new Orcamento(500.0);
+            Orcamento orcamento = new Orcamento(500);
 
-            CalculadorDeImpostos calculador = new CalculadorDeImpostos();
+            orcamento.AdicionaItem(new Item("CANETA", 500));
+            orcamento.AdicionaItem(new Item("LAPIS", 500));
+            orcamento.AdicionaItem(new Item("GELADEIRA", 500));
+            orcamento.AdicionaItem(new Item("FOGAO", 500));
+            orcamento.AdicionaItem(new Item("MICROONDAS", 500));
+            orcamento.AdicionaItem(new Item("XBOX", 500));
 
-            calculador.RealizaCalculo(orcamento, icms);
-            calculador.RealizaCalculo(orcamento, iss);
+            double desconto = calculador.Calcula(orcamento);
+
+            Console.WriteLine(desconto);
 
             Console.ReadKey();
         }

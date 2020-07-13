@@ -117,6 +117,9 @@ Design Patterns C# I: Boas práticas de programação
 		10 - Quando usar o Strategy?
 	02 - Muitos Descontos e o Chain of Responsibility
 		01 - Vídeo 1
+		02 - Muitos Descontos e o Chain of Responsibility
+		03 - Padrão Chain of Responsibility
+		04 - Desconto por Venda Casada
 	03 - Códigos parecidos e o Template Method
 	04 - Comportamentos compostos por outros comportamentos e o Decorator
 	05 - Estados que variam e o State

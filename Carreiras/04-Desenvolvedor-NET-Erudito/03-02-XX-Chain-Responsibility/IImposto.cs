@@ -1,6 +1,6 @@
 ﻿namespace _03_02_XX_Chain_Responsibility
 {
-    public interface Imposto
+    public interface IImposto
     {
         double Calcula(Orcamento orcamento);
     }

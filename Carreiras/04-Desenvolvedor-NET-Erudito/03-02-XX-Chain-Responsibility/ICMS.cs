@@ -1,6 +1,6 @@
 ﻿namespace _03_02_XX_Chain_Responsibility
 {
-    public class ICMS : Imposto
+    public class ICMS : IImposto
     {
         public double Calcula(Orcamento orcamento)
         {
