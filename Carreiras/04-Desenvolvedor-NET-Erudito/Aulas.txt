@@ -131,6 +131,9 @@ Design Patterns C# I: Boas práticas de programação
 		03 - Padrão Template Method
 		04 - Modificador de acesso em Template Method (C)
 		05 - Imposto Z
+		06 - Relatórios e Template Method
+		07 - Chain of Responsibility e Template Method
+		08 - Quando usar o Template Method?
 	04 - Comportamentos compostos por outros comportamentos e o Decorator
 	05 - Estados que variam e o State
 	06 - Criação de objetos e o Builder
