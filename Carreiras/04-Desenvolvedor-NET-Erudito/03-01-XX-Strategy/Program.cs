@@ -8,6 +8,7 @@ namespace _03_01_XX_Strategy
         {
             Imposto icms = new ICMS();
             Imposto iss = new ISS();
+            Imposto iccc = new ICCC();
 
             Orcamento orcamento = new Orcamento(500.0);
 
@@ -15,6 +16,7 @@ namespace _03_01_XX_Strategy
 
             calculador.RealizaCalculo(orcamento, icms);
             calculador.RealizaCalculo(orcamento, iss);
+            calculador.RealizaCalculo(orcamento, iccc);
 
             Console.ReadKey();
         }
