@@ -127,6 +127,10 @@ Design Patterns C# I: Boas práticas de programação
 		09 - Quando usar o Chain of Responsibility?
 	03 - Códigos parecidos e o Template Method
 		01 - Vídeo 1
+		02 - Códigos parecidos e o Template Method
+		03 - Padrão Template Method
+		04 - Modificador de acesso em Template Method (C)
+		05 - Imposto Z
 	04 - Comportamentos compostos por outros comportamentos e o Decorator
 	05 - Estados que variam e o State
 	06 - Criação de objetos e o Builder
