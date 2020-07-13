@@ -120,6 +120,11 @@ Design Patterns C# I: Boas práticas de programação
 		02 - Muitos Descontos e o Chain of Responsibility
 		03 - Padrão Chain of Responsibility
 		04 - Desconto por Venda Casada
+		05 - Utilidade da classe CalculadorDeDescontos
+		06 - Implementando Chain of Responsibility em Requisições Web
+		07 - Recebendo o próximo ítem da corrente pelo construtor
+		08 - Fim da corrente no Chain of Responsibility
+		09 - Quando usar o Chain of Responsibility?
 	03 - Códigos parecidos e o Template Method
 	04 - Comportamentos compostos por outros comportamentos e o Decorator
 	05 - Estados que variam e o State
