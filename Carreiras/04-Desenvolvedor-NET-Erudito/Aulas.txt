@@ -111,6 +111,10 @@ Design Patterns C# I: Boas práticas de programação
 		04 - Estudando a motivação dos padrões (A)
 		05 - Implementando um Strategy
 		06 - Estratégia para o imposto ICCC
+		07 - Utilidade da classe CalculadoraDeImpostos
+		08 - Estratégias para Investimentos
+		09 - Strategy o tempo todo? (A)
+		10 - Quando usar o Strategy?
 	02 - Muitos Descontos e o Chain of Responsibility
 	03 - Códigos parecidos e o Template Method
 	04 - Comportamentos compostos por outros comportamentos e o Decorator
