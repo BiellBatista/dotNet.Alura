@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_03_05_XX_State</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ve-3CC1.tmp" />
+  </ItemGroup>
+
+</Project>

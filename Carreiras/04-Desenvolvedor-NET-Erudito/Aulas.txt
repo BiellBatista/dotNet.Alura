@@ -143,6 +143,7 @@ Design Patterns C# I: Boas práticas de programação
 		06 - Criando um Filtro
 		07 - Quando usar o Decorator?
 	05 - Estados que variam e o State
+		01 - Vídeo 1
 	06 - Criação de objetos e o Builder
 	07 - Executando diferentes ações e o Observer
 	08 - Além dos padrões de projeto
