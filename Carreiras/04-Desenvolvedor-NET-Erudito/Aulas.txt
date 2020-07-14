@@ -139,6 +139,7 @@ Design Patterns C# I: Boas práticas de programação
 		02 - Comportamentos compostos por outros comportamentos e o Decorator
 		03 - O padrão Decorator
 		04 - Criação de imposto muito alto com Decorator
+		05 - Decorando IKCV e ICPP
 	05 - Estados que variam e o State
 	06 - Criação de objetos e o Builder
 	07 - Executando diferentes ações e o Observer
