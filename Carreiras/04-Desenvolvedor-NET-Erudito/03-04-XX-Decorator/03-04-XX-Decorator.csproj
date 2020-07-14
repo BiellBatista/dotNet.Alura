@@ -6,4 +6,8 @@
     <RootNamespace>_03_04_XX_Decorator</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="ve-F345.tmp" />
+  </ItemGroup>
+
 </Project>

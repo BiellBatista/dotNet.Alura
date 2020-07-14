@@ -1,8 +1,8 @@
 ﻿namespace _03_04_XX_Decorator
 {
-    public abstract class TemplateDeImpostoCondicional : IImposto
+    public abstract class TemplateDeImpostoCondicional : Imposto
     {
-        public double Calcula(Orcamento orcamento)
+        public override double Calcula(Orcamento orcamento)
         {
             if (DeveUsarMaximaTaxacao(orcamento))
             {

@@ -1,10 +1,14 @@
 ﻿namespace _03_04_XX_Decorator
 {
-    public class ISS : IImposto
+    public class ISS : Imposto
     {
-        public double Calcula(Orcamento orcamento)
+        public ISS() { }
+        
+        public ISS(Imposto outroImposto) : base(outroImposto) { }
+
+        public override double Calcula(Orcamento orcamento)
         {
-            return orcamento.Valor * 0.06;
+            return orcamento.Valor * 0.06 + CalculoDoOutroImposto(orcamento);
         }
     }
 }

@@ -6,21 +6,13 @@ namespace _03_04_XX_Decorator
     {
         static void Main(string[] args)
         {
-            CalculadorDeDesconto calculador = new CalculadorDeDesconto();
+            Imposto iss = new ISS(new ICMS());
 
             Orcamento orcamento = new Orcamento(500);
 
-            orcamento.AdicionaItem(new Item("CANETA", 500));
-            orcamento.AdicionaItem(new Item("LAPIS", 500));
-            orcamento.AdicionaItem(new Item("GELADEIRA", 500));
-            orcamento.AdicionaItem(new Item("FOGAO", 500));
-            orcamento.AdicionaItem(new Item("MICROONDAS", 500));
-            orcamento.AdicionaItem(new Item("XBOX", 500));
+            double valor = iss.Calcula(orcamento);
 
-            double desconto = calculador.Calcula(orcamento);
-
-            Console.WriteLine(desconto);
-
+            Console.WriteLine(valor);
             Console.ReadKey();
         }
     }
