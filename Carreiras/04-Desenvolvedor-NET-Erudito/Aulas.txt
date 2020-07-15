@@ -162,6 +162,9 @@ Design Patterns C# I: Boas práticas de programação
 		08 - Quando usar o Builder?
 	07 - Executando diferentes ações e o Observer
 		01 - Vídeo 1
+		02 - Executando diferentes ações e o Observer
+		03 - Padrão Observer
+		04 - Observador Multiplicador do Saldo da Nota
 	08 - Além dos padrões de projeto
 Design Patterns C# II: Boas práticas de programação
 	01 - Fábricas e o problema de criação de objetos

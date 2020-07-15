@@ -14,10 +14,12 @@ namespace _03_07_XX_Observer
         private double ValorBruto { get; set; }
 
         private IList<ItemDaNota> TodosItens = new List<ItemDaNota>();
+        private IList<IAcaoAposGerarNota> TodasAcoesASeremExecutadas;
 
         public NotaFiscalBuilder()
         {
             Data = DateTime.Now;
+            TodasAcoesASeremExecutadas = new List<IAcaoAposGerarNota>();
         }
 
         public NotaFiscalBuilder ParaEmpresa(string razaoSocial)
@@ -59,7 +61,19 @@ namespace _03_07_XX_Observer
 
         public NotaFiscal Constroi()
         {
-            return new NotaFiscal(RazaoSocial, Cnpj, Data, ValorBruto, Impostos, TodosItens, Observacoes);
+            NotaFiscal nf = new NotaFiscal(RazaoSocial, Cnpj, Data, ValorBruto, Impostos, TodosItens, Observacoes);
+
+            foreach (var acao in TodasAcoesASeremExecutadas)
+            {
+                acao.Executa(nf);
+            }
+
+            return nf;
+        }
+
+        public void AdicionaAcao(IAcaoAposGerarNota novaAcao)
+        {
+            TodasAcoesASeremExecutadas.Add(novaAcao);
         }
     }
 }
