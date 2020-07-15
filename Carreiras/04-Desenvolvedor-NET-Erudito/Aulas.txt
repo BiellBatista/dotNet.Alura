@@ -178,6 +178,10 @@ Design Patterns C# I: Boas práticas de programação
 Design Patterns C# II: Boas práticas de programação
 	01 - Fábricas e o problema de criação de objetos
 		01 - Vídeo 1
+		02 - Fábricas e o problema de criação de objetos
+		03 - Escrevendo a fábrica
+		04 - Nomenclatura
+		05 - Factory e Builder
 	02 - Muitos objetos e o Flyweight
 	03 - Salvando estados anteriores e o Memento
 	04 - DSLs e o Interpreter
