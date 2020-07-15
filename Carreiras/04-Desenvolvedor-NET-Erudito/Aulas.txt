@@ -144,6 +144,13 @@ Design Patterns C# I: Boas práticas de programação
 		07 - Quando usar o Decorator?
 	05 - Estados que variam e o State
 		01 - Vídeo 1
+		02 - Estados que variam e o State
+		03 - Padrão State
+		04 - Desconto Extra aplicado uma única vez
+		05 - Estados de uma conta bancária
+		06 - State e o acesso aos atributos da classe principal (A)
+		07 - Estados enxergando a implementação da classe
+		08 - Quando usar o State?
 	06 - Criação de objetos e o Builder
 	07 - Executando diferentes ações e o Observer
 	08 - Além dos padrões de projeto
