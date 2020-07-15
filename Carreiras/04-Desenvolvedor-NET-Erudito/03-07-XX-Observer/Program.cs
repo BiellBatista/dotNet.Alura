@@ -11,6 +11,9 @@ namespace _03_07_XX_Observer
             builder.AdicionaAcao(new NotaFiscalDao());
             builder.AdicionaAcao(new EnviadorDeSms());
             builder.AdicionaAcao(new Impressora());
+            builder.AdicionaAcao(new Multiplicador(2));
+            builder.AdicionaAcao(new Multiplicador(3));
+            builder.AdicionaAcao(new Multiplicador(5.5));
 
             NotaFiscal notaFiscal = builder.ParaEmpresa("Caelum")
                                 .ComCnpj("123.456.789/0001-10")
