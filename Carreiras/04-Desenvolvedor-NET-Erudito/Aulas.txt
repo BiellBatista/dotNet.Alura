@@ -161,6 +161,7 @@ Design Patterns C# I: Boas práticas de programação
 		07 - Renomeando método do Builder
 		08 - Quando usar o Builder?
 	07 - Executando diferentes ações e o Observer
+		01 - Vídeo 1
 	08 - Além dos padrões de projeto
 Design Patterns C# II: Boas práticas de programação
 	01 - Fábricas e o problema de criação de objetos
