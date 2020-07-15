@@ -22,6 +22,12 @@ namespace _03_07_XX_Observer
             TodasAcoesASeremExecutadas = new List<IAcaoAposGerarNota>();
         }
 
+        public NotaFiscalBuilder(IList<IAcaoAposGerarNota> lista)
+        {
+            Data = DateTime.Now;
+            TodasAcoesASeremExecutadas = lista;
+        }
+
         public NotaFiscalBuilder ParaEmpresa(string razaoSocial)
         {
             RazaoSocial = razaoSocial;

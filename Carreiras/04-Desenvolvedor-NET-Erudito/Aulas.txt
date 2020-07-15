@@ -166,7 +166,15 @@ Design Patterns C# I: Boas práticas de programação
 		03 - Padrão Observer
 		04 - Observador Multiplicador do Saldo da Nota
 		05 - Builder
+		06 - Quando usar o Observer?
 	08 - Além dos padrões de projeto
+		01 - Além dos padrões de projeto
+		02 - Qual é o padrão para o problema dos Vários Filtros? (A)
+		03 - Qual é o padrão para o problema da Notificação de Sistemas Externos? (D)
+		04 - Qual é o padrão para o problema dos Algoritmos Similares? (C)
+		05 - Qual é o padrão para o problema do Contrato? (B)
+		06 - Padrões de Projeto
+		07 - O que voce pensa sobre Padrões de Projeto?
 Design Patterns C# II: Boas práticas de programação
 	01 - Fábricas e o problema de criação de objetos
 	02 - Muitos objetos e o Flyweight
