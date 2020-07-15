@@ -152,6 +152,7 @@ Design Patterns C# I: Boas práticas de programação
 		07 - Estados enxergando a implementação da classe
 		08 - Quando usar o State?
 	06 - Criação de objetos e o Builder
+		01 - Vídeo 1
 	07 - Executando diferentes ações e o Observer
 	08 - Além dos padrões de projeto
 Design Patterns C# II: Boas práticas de programação
