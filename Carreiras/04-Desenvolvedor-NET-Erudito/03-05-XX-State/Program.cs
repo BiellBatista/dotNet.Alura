@@ -6,13 +6,18 @@ namespace _03_05_XX_State
     {
         static void Main(string[] args)
         {
-            Imposto iss = new ISS(new ICMS());
+            Orcamento reforma = new Orcamento(500);
 
-            Orcamento orcamento = new Orcamento(500);
+            Console.WriteLine(reforma.Valor);
+            reforma.AplicaDescontonExtra();
+            Console.WriteLine(reforma.Valor);
 
-            double valor = iss.Calcula(orcamento);
+            reforma.Aprova();
+            reforma.AplicaDescontonExtra();
+            Console.WriteLine(reforma.Valor);
 
-            Console.WriteLine(valor);
+            reforma.Finaliza();
+
             Console.ReadKey();
         }
     }
