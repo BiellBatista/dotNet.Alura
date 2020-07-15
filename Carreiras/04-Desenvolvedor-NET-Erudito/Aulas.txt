@@ -153,6 +153,13 @@ Design Patterns C# I: Boas práticas de programação
 		08 - Quando usar o State?
 	06 - Criação de objetos e o Builder
 		01 - Vídeo 1
+		02 - Criação de objetos e o Builder
+		03 - Padrão Builder
+		04 - Builder para Item da Nota
+		05 - Builders ou construtores?
+		06 - Parâmetros opcionais no builder
+		07 - Renomeando método do Builder
+		08 - Quando usar o Builder?
 	07 - Executando diferentes ações e o Observer
 	08 - Além dos padrões de projeto
 Design Patterns C# II: Boas práticas de programação
