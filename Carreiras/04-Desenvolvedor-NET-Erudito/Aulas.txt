@@ -191,6 +191,11 @@ Design Patterns C# II: Boas práticas de programação
 		06 - Outros usos de Flyweight
 	03 - Salvando estados anteriores e o Memento
 		01 - Vídeo 1
+		02 - Salvando estados anteriores e o Memento
+		03 - Criando a classe Contrato
+		04 - Memento
+		05 - Necessidade da Classe Estado
+		06 - Problemas do memento
 	04 - DSLs e o Interpreter
 	05 - Estruturas de dados e o Visitor
 	06 - Bridges
