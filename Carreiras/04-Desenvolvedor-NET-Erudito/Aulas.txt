@@ -211,6 +211,7 @@ Design Patterns C# II: Boas práticas de programação
 		04 - Aceitando o visitor
 		05 - Escrevendo o Visitor
 		06 - Novo Visitor
+		07 - Métodos do Visitor
 	06 - Bridges
 	07 - Diferentes ações com Command
 	08 - Adapter
