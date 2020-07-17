@@ -218,6 +218,7 @@ Design Patterns C# II: Boas práticas de programação
 		03 - Bridges
 		04 - Bridges e Strategy
 	07 - Diferentes ações com Command
+		01 - Vídeo 1
 	08 - Adapter
 	09 - Façades e Singletons
 C# Refatoração Parte 1: Praticando refatoração de código
