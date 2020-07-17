@@ -223,7 +223,9 @@ Design Patterns C# II: Boas práticas de programação
 		03 - Classe Pedido
 		04 - Command
 		05 - Diferenças
+		06 - Integração com outros padrões
 	08 - Adapter
+		01 - Vídeo 1
 	09 - Façades e Singletons
 C# Refatoração Parte 1: Praticando refatoração de código
 	01 - Extraindo métodos
