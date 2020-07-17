@@ -206,6 +206,11 @@ Design Patterns C# II: Boas práticas de programação
 		07 - Raiz Quadrada
 	05 - Estruturas de dados e o Visitor
 		01 - Vídeo 1
+		02 - Estruturas de dados e o Visitor
+		03 - Mudando a interface Expressão
+		04 - Aceitando o visitor
+		05 - Escrevendo o Visitor
+		06 - Novo Visitor
 	06 - Bridges
 	07 - Diferentes ações com Command
 	08 - Adapter

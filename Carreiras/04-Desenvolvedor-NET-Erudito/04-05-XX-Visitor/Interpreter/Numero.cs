@@ -1,17 +1,24 @@
-﻿namespace _04_05_XX_Visitor.Interpreter
+﻿using _04_05_XX_Visitor.Visitor;
+
+namespace _04_05_XX_Visitor.Interpreter
 {
     public class Numero : IExpressao
     {
-        private int numero;
+        public int Valor { get; private set; }
 
         public Numero(int numero)
         {
-            this.numero = numero;
+            Valor = numero;
         }
 
         public int Avalia()
         {
-            return numero;
+            return Valor;
+        }
+
+        public void Aceita(IVisitor impressora)
+        {
+            impressora.ImprimeNumero(this);
         }
     }
 }

@@ -1,21 +1,28 @@
-﻿namespace _04_05_XX_Visitor.Interpreter
+﻿using _04_05_XX_Visitor.Visitor;
+
+namespace _04_05_XX_Visitor.Interpreter
 {
     public class Subtracao : IExpressao
     {
-        private IExpressao esquerda;
-        private IExpressao direita;
+        public IExpressao Esquerda { get; private set; }
+        public IExpressao Direita { get; private set; }
 
         public Subtracao(IExpressao esquerda, IExpressao direita)
         {
-            this.esquerda = esquerda;
-            this.direita = direita;
+            Esquerda = esquerda;
+            Direita = direita;
         }
 
         public int Avalia()
         {
-            int resultadoDaEsquerda = esquerda.Avalia();
-            int resultadoDaDireita = direita.Avalia();
+            int resultadoDaEsquerda = Esquerda.Avalia();
+            int resultadoDaDireita = Direita.Avalia();
             return resultadoDaEsquerda - resultadoDaDireita;
+        }
+
+        public void Aceita(IVisitor impressora)
+        {
+            impressora.ImprimeSubtracao(this);
         }
     }
 }
