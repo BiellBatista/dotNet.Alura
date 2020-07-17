@@ -202,6 +202,8 @@ Design Patterns C# II: Boas práticas de programação
 		03 - Expressões
 		04 - Avaliando expressões
 		05 - Novas expressões
+		06 - Quando usar?
+		07 - 
 	05 - Estruturas de dados e o Visitor
 	06 - Bridges
 	07 - Diferentes ações com Command
