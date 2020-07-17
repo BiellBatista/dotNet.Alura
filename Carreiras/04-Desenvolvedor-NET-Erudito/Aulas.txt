@@ -205,6 +205,7 @@ Design Patterns C# II: Boas práticas de programação
 		06 - Quando usar?
 		07 - Raiz Quadrada
 	05 - Estruturas de dados e o Visitor
+		01 - Vídeo 1
 	06 - Bridges
 	07 - Diferentes ações com Command
 	08 - Adapter
