@@ -10,8 +10,4 @@
     <None Remove="Memento\ve-9915.tmp" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Interpreter\" />
-  </ItemGroup>
-
 </Project>

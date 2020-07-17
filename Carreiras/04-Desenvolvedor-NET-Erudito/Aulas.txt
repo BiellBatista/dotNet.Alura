@@ -197,6 +197,11 @@ Design Patterns C# II: Boas práticas de programação
 		05 - Necessidade da Classe Estado
 		06 - Problemas do memento
 	04 - DSLs e o Interpreter
+		01 - Vídeo 1
+		02 - DSLs e o Interpreter
+		03 - Expressões
+		04 - Avaliando expressões
+		05 - Novas expressões
 	05 - Estruturas de dados e o Visitor
 	06 - Bridges
 	07 - Diferentes ações com Command
