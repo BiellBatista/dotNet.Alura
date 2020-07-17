@@ -213,6 +213,7 @@ Design Patterns C# II: Boas práticas de programação
 		06 - Novo Visitor
 		07 - Métodos do Visitor
 	06 - Bridges
+		01 - Vídeo 1
 	07 - Diferentes ações com Command
 	08 - Adapter
 	09 - Façades e Singletons
