@@ -2,7 +2,7 @@
 using System.IO;
 using System.Xml.Serialization;
 
-namespace _04_08_XX_Adapter.Adapter
+namespace _04_09_XX_Facades_Singletons.Adapter
 {
     public class GeradorDeXml
     {

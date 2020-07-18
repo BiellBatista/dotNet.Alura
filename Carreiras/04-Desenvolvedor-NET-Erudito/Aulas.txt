@@ -231,7 +231,8 @@ Design Patterns C# II: Boas práticas de programação
 		04 - Classe Cliente
 		05 - Adapter e Strategy
 		06 - Adapter e Command
-	09 - Façades e Singletons
+	09 - Facades e Singletons
+		01 - Vídeo 1
 C# Refatoração Parte 1: Praticando refatoração de código
 	01 - Extraindo métodos
 	02 - Extraindo variáveis temporárias
