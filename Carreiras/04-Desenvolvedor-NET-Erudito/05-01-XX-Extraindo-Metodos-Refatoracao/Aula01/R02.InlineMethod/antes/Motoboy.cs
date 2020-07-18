@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _05_01_XX_Extraindo_Metodos_Refatoracao.R02.InlineMethod.antes
+﻿namespace _05_01_XX_Extraindo_Metodos_Refatoracao.R02.InlineMethod.antes
 {
     class Motoboy
     {

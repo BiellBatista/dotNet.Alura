@@ -245,6 +245,9 @@ C# Refatoração Parte 1: Praticando refatoração de código
 		02 - Para saber mais - Material da Apresentação do Curso
 		03 - Introdução
 		04 - Extrair Método 1
+		05 - Código Limpo (A / B / D / F)
+		06 - Code Smells
+		07 - Extrair Método 2
 	02 - Extraindo variáveis temporárias
 	03 - Quebrando Variáveis e Preservando Parâmetros
 	04 - Substituindo Método
