@@ -241,6 +241,10 @@ Design Patterns C# II: Boas práticas de programação
 		07 - Facade e Adapter
 C# Refatoração Parte 1: Praticando refatoração de código
 	01 - Extraindo métodos
+		01 - Preparando o ambiente
+		02 - Para saber mais - Material da Apresentação do Curso
+		03 - Introdução
+		04 - Extrair Método 1
 	02 - Extraindo variáveis temporárias
 	03 - Quebrando Variáveis e Preservando Parâmetros
 	04 - Substituindo Método
