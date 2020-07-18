@@ -233,6 +233,12 @@ Design Patterns C# II: Boas práticas de programação
 		06 - Adapter e Command
 	09 - Facades e Singletons
 		01 - Vídeo 1
+		02 - Facades e Singletons
+		03 - O que é um singleton?
+		04 - O que é uma Façade?
+		05 - Implementando um Singleton
+		06 - Problemas do Singleton
+		07 - Facade e Adapter
 C# Refatoração Parte 1: Praticando refatoração de código
 	01 - Extraindo métodos
 	02 - Extraindo variáveis temporárias
