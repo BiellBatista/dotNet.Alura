@@ -282,6 +282,15 @@ C# Refatoração Parte 1: Praticando refatoração de código
 		11 - Projeto da Aula Atual
 	04 - Substituindo Método
 		01 - Substituir Método por Objeto Método
+		02 - Criando um objeto-método a partir de um método
+		03 - Substituir Algoritmo
+		04 - Avaliando problemas (D)
+		05 - Benefícios da técnica de refatoração (D)
+		06 - Comparando técnicas de refatoração (D)
+		07 - Consolidando seu conhecimento
+		08 - O que aprendemos?
+		09 - Para saber mais
+		10 - Projeto da Aula Atual
 	05 - Movendo Método e Campo
 	06 - Extraindo e Incorporando Classe
 	07 - Delegação e Intermediários
