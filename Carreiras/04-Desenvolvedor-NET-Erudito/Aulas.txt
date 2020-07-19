@@ -292,6 +292,7 @@ C# Refatoração Parte 1: Praticando refatoração de código
 		09 - Para saber mais
 		10 - Projeto da Aula Atual
 	05 - Movendo Método e Campo
+		01 - Mover Método
 	06 - Extraindo e Incorporando Classe
 	07 - Delegação e Intermediários
 	08 - Estendendo Classes
