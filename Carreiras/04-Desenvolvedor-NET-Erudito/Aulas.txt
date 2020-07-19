@@ -257,6 +257,7 @@ C# Refatoração Parte 1: Praticando refatoração de código
 		14 - Para saber mais
 		15 - Projeto da Aula Atual
 	02 - Extraindo variáveis temporárias
+		01 - Extrair Variável
 	03 - Quebrando Variáveis e Preservando Parâmetros
 	04 - Substituindo Método
 	05 - Movendo Método e Campo
