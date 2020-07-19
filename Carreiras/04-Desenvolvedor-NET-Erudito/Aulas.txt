@@ -258,6 +258,16 @@ C# Refatoração Parte 1: Praticando refatoração de código
 		15 - Projeto da Aula Atual
 	02 - Extraindo variáveis temporárias
 		01 - Extrair Variável
+		02 - Avaliando refatorações (C)
+		03 - Praticando Extrair Variável Temporária
+		04 - Incorporar Variável Temporária
+		05 - Avaliando "Extrair Variável" (D)
+		06 - Substituir Variável Por Método de Consulta
+		07 - Resolvendo duplicação de código (B)
+		08 - Consolidando seu conhecimento
+		09 - O que aprendemos?
+		10 - Para saber mais
+		11 - Projeto da Aula Atual
 	03 - Quebrando Variáveis e Preservando Parâmetros
 	04 - Substituindo Método
 	05 - Movendo Método e Campo
