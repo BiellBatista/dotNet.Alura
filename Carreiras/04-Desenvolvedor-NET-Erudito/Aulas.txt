@@ -281,6 +281,7 @@ C# Refatoração Parte 1: Praticando refatoração de código
 		10 - Para saber mais
 		11 - Projeto da Aula Atual
 	04 - Substituindo Método
+		01 - Substituir Método por Objeto Método
 	05 - Movendo Método e Campo
 	06 - Extraindo e Incorporando Classe
 	07 - Delegação e Intermediários
