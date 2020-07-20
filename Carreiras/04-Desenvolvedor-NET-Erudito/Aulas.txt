@@ -303,6 +303,7 @@ C# Refatoração Parte 1: Praticando refatoração de código
 		09 - Para saber mais - Early Return
 		10 - Projeto da Aula Atual
 	06 - Extraindo e Incorporando Classe
+		01 - Extrair Classe
 	07 - Delegação e Intermediários
 	08 - Estendendo Classes
 C# Refatoração Parte 2: Refatorações baseadas em Orientação a Objetos
