@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <AssemblyName>06-01-XX-Encapsulamento-Orientacao-Objetos-Refatoracao</AssemblyName>    
+    <RootNamespace>_06_01_XX_Encapsulamento_Orientacao_Objetos_Refatoracao</RootNamespace>
+  </PropertyGroup>
+
+</Project>

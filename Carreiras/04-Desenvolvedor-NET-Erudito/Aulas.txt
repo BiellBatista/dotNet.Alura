@@ -338,6 +338,10 @@ C# Refatoração Parte 1: Praticando refatoração de código
 		12 - Projeto da Aula Atual
 C# Refatoração Parte 2: Refatorações baseadas em Orientação a Objetos
 	01 - Encapsulamento e Orientação a Objetos
+		01 - Introdução
+		02 - Preparando o ambiente
+		03 - Para saber mais - Material da Apresentação do Curso
+		04 - Substituir Número Mágico
 	02 - Lidando com Referências
 	03 - Dos Códigos às Classes
 	04 - Simplificando Expressões Condicionais
