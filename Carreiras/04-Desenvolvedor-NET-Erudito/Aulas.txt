@@ -293,6 +293,15 @@ C# Refatoração Parte 1: Praticando refatoração de código
 		10 - Projeto da Aula Atual
 	05 - Movendo Método e Campo
 		01 - Mover Método
+		02 - Motivação para Mover Método (D)
+		03 - Mão na Massa: Movendo Método
+		04 - Comparando "Mover Método" com "Extrair Método" (D)
+		05 - Mover Campo
+		06 - Por que mover campo? (B)
+		07 - Consolidando seu conhecimento
+		08 - O que aprendemos?
+		09 - Para saber mais - Early Return
+		10 - Projeto da Aula Atual
 	06 - Extraindo e Incorporando Classe
 	07 - Delegação e Intermediários
 	08 - Estendendo Classes
