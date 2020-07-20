@@ -354,6 +354,16 @@ C# Refatoração Parte 2: Refatorações baseadas em Orientação a Objetos
 		14 - Projeto da Aula Atual
 	02 - Lidando com Referências
 		01 - Mudar de Valor para Referência
+		02 - Mudando de Valor para Referência (C)
+		03 - Mudar de Referência para Valor
+		04 - Mudando de Referência para Valor (C)
+		05 - Mudar Associação de Uni para Bidirecional
+		06 - Mudar Associação de Bi para Unidirecional
+		07 - Mudando a Direção de Associação (B)
+		08 - Duplicar Dados Observados
+		09 - Duplicando Dados Observados
+		10 - Para saber mais - Duplicar Dados Observados com Xamarin e MVVM
+		11 - Projeto da Aula Atual
 	03 - Dos Códigos às Classes
 	04 - Simplificando Expressões Condicionais
 	05 - Condições com Orientação a Objetos
