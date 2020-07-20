@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <AssemblyName>06-03-XX-Simplificando-Expressoes-Condicionais-Refatoracao</AssemblyName>    
+    <RootNamespace>_06_03_XX_Simplificando_Expressoes_Condicionais_Refatoracao</RootNamespace>
+  </PropertyGroup>
+
+</Project>
