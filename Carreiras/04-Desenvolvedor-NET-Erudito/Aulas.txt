@@ -353,6 +353,7 @@ C# Refatoração Parte 2: Refatorações baseadas em Orientação a Objetos
 		13 - Para saber mais - Métodos e encapsulamento com Java
 		14 - Projeto da Aula Atual
 	02 - Lidando com Referências
+		01 - Mudar de Valor para Referência
 	03 - Dos Códigos às Classes
 	04 - Simplificando Expressões Condicionais
 	05 - Condições com Orientação a Objetos

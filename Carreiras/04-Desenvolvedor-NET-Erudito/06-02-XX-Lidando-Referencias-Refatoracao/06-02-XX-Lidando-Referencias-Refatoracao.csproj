@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <AssemblyName>06-02-XX-Lidando-Referencias-Refatoracao</AssemblyName>    
+    <RootNamespace>_06_02_XX_Lidando_Referencias_Refatoracao</RootNamespace>
+  </PropertyGroup>
+
+</Project>
