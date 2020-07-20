@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _05_04_XX_Substituindo_Metodo.R08.ReplaceMethodWithMethodObject.antes
+namespace _05_06_XX_Extraindo_Incorporando_Classe_Refatoracao.R08.ReplaceMethodWithMethodObject.antes
 {
     class Produto
     {

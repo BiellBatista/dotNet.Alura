@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _05_04_XX_Substituindo_Metodo.R10.MoveMethod.antes
+namespace _05_05_XX_Movendo_Metodo_Campo_Refatoracao.R10.MoveMethod.antes
 {
     class ContaCorrente
     {

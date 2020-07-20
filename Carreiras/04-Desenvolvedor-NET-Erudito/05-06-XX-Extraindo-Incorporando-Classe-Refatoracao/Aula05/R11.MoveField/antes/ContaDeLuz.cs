@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _05_04_XX_Substituindo_Metodo.R11.MoveField.antes
+namespace _05_06_XX_Extraindo_Incorporando_Classe_Refatoracao.R11.MoveField.antes
 {
     class ContaDeLuz
     {
