@@ -3,8 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <AssemblyName>05-06-XX-Extraindo-Incorporando-Classe-Refatoraca</AssemblyName>
-    <RootNamespace>_05_06_XX_Extraindo_Incorporando_Classe_Refatoracao</RootNamespace>
+    <AssemblyName>05-07-XX-Delegacao-Intermediarios-Refatoracao</AssemblyName>
+    <RootNamespace>_05_07_XX_Delegacao_Intermediarios_Refatoracao</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

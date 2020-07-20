@@ -314,6 +314,7 @@ C# Refatoração Parte 1: Praticando refatoração de código
 		09 - O que aprendemos?
 		10 - Projeto da Aula Atual
 	07 - Delegação e Intermediários
+		01 - Ocultar Delegado
 	08 - Estendendo Classes
 C# Refatoração Parte 2: Refatorações baseadas em Orientação a Objetos
 	01 - Encapsulamento e Orientação a Objetos
