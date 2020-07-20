@@ -324,6 +324,7 @@ C# Refatoração Parte 1: Praticando refatoração de código
 		08 - O que aprendemos?
 		09 - Projeto da Aula Atual
 	08 - Estendendo Classes
+		01 - Introduzir Método Estrangeiro
 C# Refatoração Parte 2: Refatorações baseadas em Orientação a Objetos
 	01 - Encapsulamento e Orientação a Objetos
 	02 - Lidando com Referências
