@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <AssemblyName>06-03-XX-Dos-Codigos-Classes-Refatoracao</AssemblyName>    
+    <RootNamespace>_06_03_XX_Dos_Codigos_Classes_Refatoracao</RootNamespace>
+  </PropertyGroup>
+
+</Project>

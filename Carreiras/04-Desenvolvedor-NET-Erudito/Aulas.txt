@@ -376,6 +376,7 @@ C# Refatoração Parte 2: Refatorações baseadas em Orientação a Objetos
 		09 - Mão na massa: Substituir Subclasse por Campos
 		10 - Projeto da Aula Atual
 	04 - Simplificando Expressões Condicionais
+		01 - Decompor Condição
 	05 - Condições com Orientação a Objetos
 C# Refatoração Parte 3: Hierarquias de classes
 	01 - Ajustando Parâmetros e Métodos
