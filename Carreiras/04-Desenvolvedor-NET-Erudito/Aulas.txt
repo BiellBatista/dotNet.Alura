@@ -366,6 +366,15 @@ C# Refatoração Parte 2: Refatorações baseadas em Orientação a Objetos
 		11 - Projeto da Aula Atual
 	03 - Dos Códigos às Classes
 		01 - Substituir Código de Tipo por Classe
+		02 - Substituindo Código de Tipo (A)
+		03 - Substituir Código de Tipo por Subclasses
+		04 - Substituir Código de Tipo por State ou Strategy
+		05 - Substituir Código de Tipo por State ou Strategy (C)
+		06 - Para saber mais - Padrão de Projeto Strategy
+		07 - Substituir Subclasses por Campo
+		08 - Identificando Odores (A)
+		09 - Mão na massa: Substituir Subclasse por Campos
+		10 - Projeto da Aula Atual
 	04 - Simplificando Expressões Condicionais
 	05 - Condições com Orientação a Objetos
 C# Refatoração Parte 3: Hierarquias de classes
