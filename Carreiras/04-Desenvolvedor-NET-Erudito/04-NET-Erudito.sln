@@ -151,7 +151,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-01-XX-Ajustando-Parametr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-02-XX-Criando-Parametros-Simples-Refatoracao", "07-02-XX-Criando-Parametros-Simples-Refatoracao\07-02-XX-Criando-Parametros-Simples-Refatoracao.csproj", "{191E366A-DE4C-4960-B0DE-BE753059847E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-03-XX-Trabalhando-Melhor-Codigos-Erro-Excecoes", "07-03-XX-Trabalhando-Melhor-Codigos-Erro-Excecoes\07-03-XX-Trabalhando-Melhor-Codigos-Erro-Excecoes.csproj", "{E3B85AE2-D1DC-4D94-A313-4BB6D41845D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-03-XX-Trabalhando-Melhor-Codigos-Erro-Excecoes-Refatoracao", "07-03-XX-Trabalhando-Melhor-Codigos-Erro-Excecoes-Refatoracao\07-03-XX-Trabalhando-Melhor-Codigos-Erro-Excecoes-Refatoracao.csproj", "{E3B85AE2-D1DC-4D94-A313-4BB6D41845D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
