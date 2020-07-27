@@ -428,6 +428,7 @@ C# Refatoração Parte 3: Hierarquias de classes
 		11 - O que aprendemos?
 		12 - Projeto da Aula Atual
 	03 - Trabalhando melhor com códigos de erro e exceções
+		01 - Remover Método Setter
 	04 - Descobrindo onde colocar campos e métodos
 	05 - Extraindo superclasse, subclasse e interfaces
 	06 - Aplicando herança e delegação
