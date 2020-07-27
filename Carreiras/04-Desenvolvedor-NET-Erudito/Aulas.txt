@@ -452,5 +452,6 @@ C# Refatoração Parte 3: Hierarquias de classes
 		09 - O que aprendemos?
 		10 - Projeto da Aula Atual
 		11 - Para saber mais - Herança
-	05 - Extrai ndo superclasse, subclasse e interfaces
+	05 - Extraindo superclasse, subclasse e interfaces
+		01 - Extrair Subclasse
 	06 - Aplicando herança e delegação

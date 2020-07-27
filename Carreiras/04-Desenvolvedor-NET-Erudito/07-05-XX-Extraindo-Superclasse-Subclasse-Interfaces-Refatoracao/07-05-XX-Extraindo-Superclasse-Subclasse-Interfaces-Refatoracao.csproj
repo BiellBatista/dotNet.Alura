@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4CF1303A-399C-4602-A630-ADBF1137AF82}</ProjectGuid>
+    <ProjectGuid>{F24A5DCD-B24E-4739-8DA1-1165575E08AA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_07_04_XX_Descobrindo_Colocar_Campos_Metodos_Refatoracao</RootNamespace>
-    <AssemblyName>07-04-XX-Descobrindo-Colocar-Campos-Metodos-Refatoracao</AssemblyName>
+    <RootNamespace>_07_05_XX_Extraindo_Superclasse_Subclasse_Interfaces_Refatoracao</RootNamespace>
+    <AssemblyName>07-05-XX-Extraindo-Superclasse-Subclasse-Interfaces-Refatoracao</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
