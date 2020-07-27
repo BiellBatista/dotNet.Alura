@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace refatoracao.R42.RemoveParameter.antes
+namespace _07_01_XX_Ajustando_Parametros_Metodos_Refatoracao.R42.RemoveParameter.antes
 {
     class Program
     {

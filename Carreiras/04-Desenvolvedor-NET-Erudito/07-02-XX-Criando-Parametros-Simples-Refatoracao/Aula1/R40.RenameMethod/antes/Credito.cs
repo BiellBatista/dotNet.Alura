@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace refatoracao.R40.RenameMethod.antes
+namespace _07_02_XX_Criando_Parametros_Simples_Refatoracao.R40.RenameMethod.antes
 {
     class Programa
     {

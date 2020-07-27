@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace refatoracao.R43.SeparateQueryFromModifier.depois
+namespace _07_01_XX_Ajustando_Parametros_Metodos_Refatoracao.R43.SeparateQueryFromModifier.depois
 {
     public class Program
     {
