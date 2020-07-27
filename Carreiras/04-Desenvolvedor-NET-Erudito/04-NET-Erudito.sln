@@ -157,6 +157,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-04-XX-Descobrindo-Coloca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-05-XX-Extraindo-Superclasse-Subclasse-Interfaces-Refatoracao", "07-05-XX-Extraindo-Superclasse-Subclasse-Interfaces-Refatoracao\07-05-XX-Extraindo-Superclasse-Subclasse-Interfaces-Refatoracao.csproj", "{F24A5DCD-B24E-4739-8DA1-1165575E08AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-06-XX-Aplicando-Heranca-Delegacao-Refatoracao", "07-06-XX-Aplicando-Heranca-Delegacao-Refatoracao\07-06-XX-Aplicando-Heranca-Delegacao-Refatoracao.csproj", "{C5805761-FE77-4D61-9712-30E0BF954A0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -463,6 +465,10 @@ Global
 		{F24A5DCD-B24E-4739-8DA1-1165575E08AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F24A5DCD-B24E-4739-8DA1-1165575E08AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F24A5DCD-B24E-4739-8DA1-1165575E08AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5805761-FE77-4D61-9712-30E0BF954A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5805761-FE77-4D61-9712-30E0BF954A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5805761-FE77-4D61-9712-30E0BF954A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5805761-FE77-4D61-9712-30E0BF954A0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -463,3 +463,4 @@ C# Refatoração Parte 3: Hierarquias de classes
 		08 - O que aprendemos?
 		09 - Projeto da Aula Atual
 	06 - Aplicando herança e delegação
+		01 - Colapsar Hierarquia
