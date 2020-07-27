@@ -79,6 +79,17 @@
     <Compile Include="Aula4\R56.PushDownMethod\depois\Funcionario.cs" />
     <Compile Include="Aula4\R57.PushDownField\antes\Funcionario.cs" />
     <Compile Include="Aula4\R57.PushDownField\depois\Funcionario.cs" />
+    <Compile Include="Aula5\R58.ExtractSubclass\antes\ItemDeServico.cs" />
+    <Compile Include="Aula5\R58.ExtractSubclass\depois\ItemDeServico.cs" />
+    <Compile Include="Aula5\R59.ExtractSuperclass\antes\NotasFiscais.cs" />
+    <Compile Include="Aula5\R59.ExtractSuperclass\depois\NotasFiscais.cs" />
+    <Compile Include="Aula5\R60.ExtractInterface\antes\CNPJFormatter.cs" />
+    <Compile Include="Aula5\R60.ExtractInterface\antes\CPFFormatter.cs" />
+    <Compile Include="Aula5\R60.ExtractInterface\antes\Program.cs" />
+    <Compile Include="Aula5\R60.ExtractInterface\depois\CNPJFormatter.cs" />
+    <Compile Include="Aula5\R60.ExtractInterface\depois\CPFFormatter.cs" />
+    <Compile Include="Aula5\R60.ExtractInterface\depois\IFormatter.cs" />
+    <Compile Include="Aula5\R60.ExtractInterface\depois\Program.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -112,6 +123,10 @@
     <Content Include="Aula4\R56.PushDownMethod\depois\PushDownMethod2.png" />
     <Content Include="Aula4\R57.PushDownField\antes\PushDownField.png" />
     <Content Include="Aula4\R57.PushDownField\depois\PushDownField2.png" />
+    <Content Include="Aula5\R58.ExtractSubclass\antes\ExtractSubclass.png" />
+    <Content Include="Aula5\R58.ExtractSubclass\depois\ExtractSubclass2.png" />
+    <Content Include="Aula5\R59.ExtractSuperclass\antes\antes.png" />
+    <Content Include="Aula5\R59.ExtractSuperclass\depois\depois.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -454,4 +454,12 @@ C# Refatoração Parte 3: Hierarquias de classes
 		11 - Para saber mais - Herança
 	05 - Extraindo superclasse, subclasse e interfaces
 		01 - Extrair Subclasse
+		02 - Mão na Massa - Extrair Subclasse
+		03 - Mão de obra e matéria-prima (A)
+		04 - Extrair Superclasse
+		05 - Classes diferentes, métodos e dados iguais (A)
+		06 - Extrair Interface
+		07 - Interface e Superclasse (C)
+		08 - O que aprendemos?
+		09 - Projeto da Aula Atual
 	06 - Aplicando herança e delegação
