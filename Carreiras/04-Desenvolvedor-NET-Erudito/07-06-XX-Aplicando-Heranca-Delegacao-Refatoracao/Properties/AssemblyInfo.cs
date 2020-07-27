@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("_07_05_XX_Extraindo_Superclasse_Subclasse_Interfaces_Refatoracao")]
+[assembly: AssemblyTitle("_07_06_XX_Aplicando_Heranca_Delegacao_Refatoracao")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("_07_05_XX_Extraindo_Superclasse_Subclasse_Interfaces_Refatoracao")]
+[assembly: AssemblyProduct("_07_06_XX_Aplicando_Heranca_Delegacao_Refatoracao")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _07_05_XX_Extraindo_Superclasse_Subclasse_Interfaces_Refatoracao.R51.ReplaceConstructorWithFactoryMethod.depois
+namespace _07_06_XX_Aplicando_Heranca_Delegacao_Refatoracao.R51.ReplaceConstructorWithFactoryMethod.depois
 {
     class Programa
     {

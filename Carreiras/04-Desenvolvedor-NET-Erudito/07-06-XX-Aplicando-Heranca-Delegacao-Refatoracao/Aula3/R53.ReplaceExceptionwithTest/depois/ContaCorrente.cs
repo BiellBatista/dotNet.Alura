@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _07_05_XX_Extraindo_Superclasse_Subclasse_Interfaces_Refatoracao.R53.ReplaceExceptionwithTest.depois
+namespace _07_06_XX_Aplicando_Heranca_Delegacao_Refatoracao.R53.ReplaceExceptionwithTest.depois
 {
     class Program
     {

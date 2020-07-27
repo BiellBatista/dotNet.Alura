@@ -464,3 +464,14 @@ C# Refatoração Parte 3: Hierarquias de classes
 		09 - Projeto da Aula Atual
 	06 - Aplicando herança e delegação
 		01 - Colapsar Hierarquia
+		02 - Colapsar Hierarquia (A)
+		03 - Formar Método Template
+		04 - Mão na Massa - Formar Método Template
+		05 - Substituir Herança por Delegação
+		06 - Relacionamento entre Proprietario e Imovel (A)
+		07 - Substituir Delegação por Herança
+		08 -  Relacionamento entre Apartamento e Imovel (C)
+		09 - O que aprendemos?
+		10 - Para saber mais - Herança e Quebra de Encapsulamento
+		11 - Conclusão
+		12 - Projeto da Aula Atual

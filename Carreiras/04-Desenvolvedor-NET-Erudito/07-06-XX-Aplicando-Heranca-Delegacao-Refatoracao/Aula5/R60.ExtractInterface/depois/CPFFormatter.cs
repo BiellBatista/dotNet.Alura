@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace _07_05_XX_Extraindo_Superclasse_Subclasse_Interfaces_Refatoracao.R60.ExtractInterface.depois
+namespace _07_06_XX_Aplicando_Heranca_Delegacao_Refatoracao.R60.ExtractInterface.depois
 {
     public class CPFFormatter : IFormatter
     {
