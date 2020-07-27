@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _06_03_XX_Dos_Codigos_Classes_Refatoracao.R18.ReplaceMagicNumber.antes
+namespace _06_04_XX_Simplificando_Expressoes_Condicionais_Refatoracao.R18.ReplaceMagicNumber.antes
 {
     class Programa
     {

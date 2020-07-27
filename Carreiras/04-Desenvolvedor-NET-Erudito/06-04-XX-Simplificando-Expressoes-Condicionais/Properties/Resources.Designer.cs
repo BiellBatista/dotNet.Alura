@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _06_03_XX_Dos_Codigos_Classes.Properties
+namespace _06_04_XX_Simplificando_Expressoes_Condicionais_Refatoracao.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace _06_03_XX_Dos_Codigos_Classes.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_06_03_XX_Dos_Codigos_Classes.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_06_04_XX_Simplificando_Expressoes_Condicionais_Refatoracao.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

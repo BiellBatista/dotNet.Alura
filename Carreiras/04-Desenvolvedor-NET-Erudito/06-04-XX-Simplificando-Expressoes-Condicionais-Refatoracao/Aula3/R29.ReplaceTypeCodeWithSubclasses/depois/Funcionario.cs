@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _06_03_XX_Dos_Codigos_Classes_Refatoracao.R29.ReplaceTypeCodeWithSubclasses.depois
+namespace _06_04_XX_Simplificando_Expressoes_Condicionais_Refatoracao.R29.ReplaceTypeCodeWithSubclasses.depois
 {
     class Programa
     {

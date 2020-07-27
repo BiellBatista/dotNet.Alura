@@ -377,6 +377,15 @@ C# Refatoração Parte 2: Refatorações baseadas em Orientação a Objetos
 		10 - Projeto da Aula Atual
 	04 - Simplificando Expressões Condicionais
 		01 - Decompor Condição
+		02 - Refatorando Condição Complexa (C)
+		03 - Consolidar Expressão Condicional
+		04 - Consolidar Expressão Condicional (A)
+		05 - Consolidar Fragmentos Condicionais Duplicados
+		06 - Como refatorar esta condição? (B)
+		07 - Remover Flag de Controle
+		08 - Mão na massa: Removendo flag de controle
+		09 - Para saber mais - Early Return
+		10 - Projeto da Aula Atual
 	05 - Condições com Orientação a Objetos
 C# Refatoração Parte 3: Hierarquias de classes
 	01 - Ajustando Parâmetros e Métodos
