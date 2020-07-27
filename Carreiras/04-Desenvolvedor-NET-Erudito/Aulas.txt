@@ -404,7 +404,18 @@ C# Refatoração Parte 3: Hierarquias de classes
 		02 - Preparando o ambiente
 		03 - Material da Apresentação do Curso
 		04 - Renomear Método
+		05 - Proponha uma refatoração (C)
+		06 - Adicionar Parâmetro
+		07 - Quando um método não possui uma informação (A)
+		08 - Remover Parâmetro
+		09 - Proponha uma refatoração (C)
+		10 - Separar Consulta do Modificador
+		11 - Separar Consulta do Modificador
+		12 - O que aprendemos?
+		13 - Projeto da Aula Atual
+		14 - Para saber mais - Command Query Responsibility Segregation
 	02 - Criando parâmetros mais simples
+		01 - Parametrizar Método
 	03 - Trabalhando melhor com códigos de erro e exceções
 	04 - Descobrindo onde colocar campos e métodos
 	05 - Extraindo superclasse, subclasse e interfaces

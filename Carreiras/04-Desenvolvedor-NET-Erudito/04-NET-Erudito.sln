@@ -149,6 +149,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06-05-XX-Condicoes-Orientac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-01-XX-Ajustando-Parametros-Metodos-Refatoracao", "07-01-XX-Ajustando-Parametros-Metodos-Refatoracao\07-01-XX-Ajustando-Parametros-Metodos-Refatoracao.csproj", "{89C85F53-A631-48BF-A047-FC42D36BF9B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-02-XX-Criando-Parametros-Simples-Refatoracao", "07-02-XX-Criando-Parametros-Simples-Refatoracao\07-02-XX-Criando-Parametros-Simples-Refatoracao.csproj", "{191E366A-DE4C-4960-B0DE-BE753059847E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -439,6 +441,10 @@ Global
 		{89C85F53-A631-48BF-A047-FC42D36BF9B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89C85F53-A631-48BF-A047-FC42D36BF9B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89C85F53-A631-48BF-A047-FC42D36BF9B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{191E366A-DE4C-4960-B0DE-BE753059847E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{191E366A-DE4C-4960-B0DE-BE753059847E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{191E366A-DE4C-4960-B0DE-BE753059847E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{191E366A-DE4C-4960-B0DE-BE753059847E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
