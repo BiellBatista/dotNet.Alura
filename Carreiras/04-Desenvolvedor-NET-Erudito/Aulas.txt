@@ -388,6 +388,16 @@ C# Refatoração Parte 2: Refatorações baseadas em Orientação a Objetos
 		10 - Projeto da Aula Atual
 	05 - Condições com Orientação a Objetos
 		01 - Substituir Condição Aninhada com Cláusulas de Guarda
+		02 - Condições Aninhadas (C)
+		03 - Substituir Condição por Polimorfismo
+		04 - Comando Switch (B)
+		05 - Introduzir Objeto Nulo
+		06 - Introduzir Objeto Nulo (A)
+		07 - Introduzir Asserção
+		08 - Mão na massa: Introduzir Asserção
+		09 - Conclusão
+		10 - Para saber mais - Material da Apresentação do Curso
+		11 - Projeto da Aula Atual
 C# Refatoração Parte 3: Hierarquias de classes
 	01 - Ajustando Parâmetros e Métodos
 	02 - Criando parâmetros mais simples
