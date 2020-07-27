@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _06_04_XX_Simplificando_Expressoes_Condicionais_Refatoracao
+namespace _06_04_XX_Simplificando_Expressoes_Condicionais
 {
     public interface ICalculadoraObserver
     {

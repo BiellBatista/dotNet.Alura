@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _06_04_XX_Simplificando_Expressoes_Condicionais_Refatoracao
+namespace _06_04_XX_Simplificando_Expressoes_Condicionais
 {
     static class Program
     {

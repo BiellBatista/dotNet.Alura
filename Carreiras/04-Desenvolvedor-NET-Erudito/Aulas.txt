@@ -387,6 +387,7 @@ C# Refatoração Parte 2: Refatorações baseadas em Orientação a Objetos
 		09 - Para saber mais - Early Return
 		10 - Projeto da Aula Atual
 	05 - Condições com Orientação a Objetos
+		01 - Substituir Condição Aninhada com Cláusulas de Guarda
 C# Refatoração Parte 3: Hierarquias de classes
 	01 - Ajustando Parâmetros e Métodos
 	02 - Criando parâmetros mais simples

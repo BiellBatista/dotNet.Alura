@@ -1,4 +1,4 @@
-﻿namespace _06_04_XX_Simplificando_Expressoes_Condicionais_Refatoracao
+﻿namespace _06_04_XX_Simplificando_Expressoes_Condicionais
 {
     partial class FormCalculadoraAntes
     {

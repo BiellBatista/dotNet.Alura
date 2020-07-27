@@ -1,4 +1,4 @@
-﻿using _06_04_XX_Simplificando_Expressoes_Condicionais_Refatoracao;
+﻿using _06_04_XX_Simplificando_Expressoes_Condicionais;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _06_04_XX_Simplificando_Expressoes_Condicionais_Refatoracao
+namespace _06_04_XX_Simplificando_Expressoes_Condicionais
 {
     public partial class FormCalculadoraDepois : Form, ICalculadoraObserver
     {

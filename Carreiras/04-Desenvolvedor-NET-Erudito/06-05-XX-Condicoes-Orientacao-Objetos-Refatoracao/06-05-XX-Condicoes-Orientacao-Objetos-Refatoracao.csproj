@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <AssemblyName>06-05-XX-Condicoes-Orientacao-Objetos-Refatoracao</AssemblyName>    
+    <RootNamespace>_06_05_XX_Condicoes_Orientacao_Objetos_Refatoracao</RootNamespace>
+  </PropertyGroup>
+
+</Project>

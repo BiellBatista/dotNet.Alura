@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _06_04_XX_Simplificando_Expressoes_Condicionais_Refatoracao.Properties
+namespace _06_04_XX_Simplificando_Expressoes_Condicionais.Properties
 {
 
 
