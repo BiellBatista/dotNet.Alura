@@ -400,6 +400,10 @@ C# Refatoração Parte 2: Refatorações baseadas em Orientação a Objetos
 		11 - Projeto da Aula Atual
 C# Refatoração Parte 3: Hierarquias de classes
 	01 - Ajustando Parâmetros e Métodos
+		01 - Introdução
+		02 - Preparando o ambiente
+		03 - Material da Apresentação do Curso
+		04 - Renomear Método
 	02 - Criando parâmetros mais simples
 	03 - Trabalhando melhor com códigos de erro e exceções
 	04 - Descobrindo onde colocar campos e métodos
