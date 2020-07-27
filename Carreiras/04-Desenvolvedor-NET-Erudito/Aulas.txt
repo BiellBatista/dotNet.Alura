@@ -441,5 +441,16 @@ C# Refatoração Parte 3: Hierarquias de classes
 		11 - Projeto da Aula Atual
 		12 - Para saber mais - Exceções
 	04 - Descobrindo onde colocar campos e métodos
-	05 - Extraindo superclasse, subclasse e interfaces
+		01 - Subir Método
+		02 - Subir Método (B)
+		03 - Subir Corpo do Construtor
+		04 - Subir Corpo do Construtor (A)
+		05 - Descer Método
+		06 - Bônus e Comissão (B)
+		07 - Mão na Massa - Subir Corpo do Construtor
+		08 - Descer Campo
+		09 - O que aprendemos?
+		10 - Projeto da Aula Atual
+		11 - Para saber mais - Herança
+	05 - Extrai ndo superclasse, subclasse e interfaces
 	06 - Aplicando herança e delegação
