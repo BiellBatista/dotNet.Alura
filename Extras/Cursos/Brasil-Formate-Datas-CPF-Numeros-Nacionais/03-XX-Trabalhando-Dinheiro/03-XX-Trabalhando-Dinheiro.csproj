@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F65D5FB0-D92A-4E8A-AD2C-8550F0DEAB14}</ProjectGuid>
+    <ProjectGuid>{5F62BCC7-CB4F-4896-A68E-0C1AFDFEC1FD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_02_XX_Trabalhando_Datas_Numeros</RootNamespace>
-    <AssemblyName>02-XX-Trabalhando-Datas-Numeros</AssemblyName>
+    <RootNamespace>_03_XX_Trabalhando_Dinheiro</RootNamespace>
+    <AssemblyName>03-XX-Trabalhando-Dinheiro</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
