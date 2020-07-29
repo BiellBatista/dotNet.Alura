@@ -138,3 +138,5 @@ Curso de C# Brasil: Formate datas, cpf e números nacionais
 		03 - Variável string multi-linhas (B)
 		04 - Interpolação de Strings (B)
 		05 - Adicionando Mais Campos Ao Contrato
+		06 - Data por extenso (A)
+		07 - Inserindo Campos de Endereço e Dinheiro
