@@ -1,0 +1,32 @@
+C# 6: Melhorias em Coleções, Propriedades, Exceções e Strings
+	01 - Propriedades Mais Simples
+		01 - Preparando o ambiente
+		02 - Introdução
+	02 - Um Intelisense Mais Inteligente
+	03 - Strings Mais Inteligentes
+	04 - Exceções Aprimoradas
+	05 - Melhorias em Coleções
+C# 7: Tuplas, parâmetros, condicionais, e estilo de código
+	01 - Melhorias em Parâmetros
+	02 - Tuplas
+	03 - Melhorias em Condicionais
+	04 - Literais e Valores Padrão
+	05 - Estilo de Código
+C# 7.3: igualdade em tuplas, expression variables e refs
+	01 - Tuples
+	02 - Expression variables
+	03 - Reatribuição em Refs
+	04 - Backfield attributes
+	05 - Melhorias em resolução de sobrecarga
+C# Reflection parte 1: Metadados do seu código .NET
+	01 - O pontapé de nossa aplicação Web
+	02 - Usando nosso Assembly dinamicamente e convenções
+	03 - Invocando métodos dinamicamente
+	04 - Trabalhando com sobrecargas de métodos
+	05 - Invocando métodos com assinaturas complexas dinamicamente
+C# Reflection parte 2: Implementando injeção de dependência do zero
+	01 - Usando modelos em nossa View
+	02 - Usando atributos como filtros
+	03 - Conhecendo IoC
+	04 - Implementando IoC
+	05 - Ajustes finos e conclusão
