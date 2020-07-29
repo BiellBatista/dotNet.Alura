@@ -1,4 +1,5 @@
-﻿using Caelum.Stella.CSharp.Validation;
+﻿using Caelum.Stella.CSharp.Format;
+using Caelum.Stella.CSharp.Validation;
 using System.Diagnostics;
 
 namespace _01_XX_Validacao_Formatacao
@@ -26,6 +27,21 @@ namespace _01_XX_Validacao_Formatacao
 
             ValidarTitulo(titulo1);
             ValidarTitulo(titulo2);
+
+            //formatando CPF
+            Debug.WriteLine(cpf1);
+            string cpfFormatado = new CPFFormatter().Format(cpf1);
+            Debug.WriteLine(cpfFormatado);
+            Debug.WriteLine(new CPFFormatter().Format(cpfFormatado));
+            Debug.WriteLine(new CPFFormatter().Unformat(cpfFormatado));
+
+            //formatando CNPJ
+            Debug.WriteLine(cnpj1);
+            Debug.WriteLine(new CNPJFormatter().Format(cnpj1));
+
+            //formatando Titulo Eleitoral
+            Debug.WriteLine(titulo1);
+            Debug.WriteLine(new TituloEleitoralFormatter().Format(titulo1));
         }
 
         private static void ValidarCPF(string cpf)

@@ -105,6 +105,9 @@ C# Brasil: Formate datas, cpf e números nacionais
 		04 - Validando CNPJ e Título Eleitoral
 		05 - Validação de CNPJ (C)
 		06 - Formatando Documentos
+		07 - Idempotência do Format (C)
+		08 - Validando CPF, CNPJ e Título de Eleitor
+		09 - Projeto da Aula Atual
 	02 - Trabalhando com Datas e Números por Extenso
 	03 - Trabalhando com Dinheiro
 	04 - Buscando CEP na internet
