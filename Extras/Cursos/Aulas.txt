@@ -112,6 +112,9 @@ C# Brasil: Formate datas, cpf e números nacionais
 		01 - Trabalhando com Datas e Horas
 		02 - Formato de data no padrão brasileiro (B)
 		03 - Formatos Simplificados de Datas e Horas
+		04 - Exibição de Tempo (C)
+		05 - Formato de Ida-e-Volta (C)
+		06 - Números por Extenso
 	03 - Trabalhando com Dinheiro
 	04 - Buscando CEP na internet
 	05 - Aplicando o que aprendemos

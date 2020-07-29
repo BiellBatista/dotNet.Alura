@@ -22,6 +22,19 @@ namespace _02_XX_Trabalhando_Datas_Numeros
             Debug.WriteLine(data.ToString("HH:mm"));
             Debug.WriteLine(data.ToString("HH:mm:ss.fff"));
 
+            //formatos simplificados
+            Debug.WriteLine(data.ToString("D"));
+            Debug.WriteLine(data.ToString("m"));
+            Debug.WriteLine(data.ToString("Y"));
+
+            Debug.WriteLine(data.ToString("G")); //data e hora por extenso com os segundos
+            Debug.WriteLine(data.ToString("g")); //data e hora por extenso sem os segundos
+
+            Debug.WriteLine(data.ToString("O")); //formato de ida e volta (ToISOString)
+            Debug.WriteLine(DateTime.Parse(data.ToString("O")).ToString("dd/MM/yyyy HH:mm:ss.fff"));
+
+            Debug.WriteLine(data.ToString("t")); //Horas e minutos
+            Debug.WriteLine(data.ToString("T")); //Horas minutos e segundos
         }
     }
 }
