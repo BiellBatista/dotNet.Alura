@@ -133,3 +133,5 @@ Curso de C# Brasil: Formate datas, cpf e números nacionais
 		06 - Obtendo Partes do Endereço (A)
 		07 - Projeto da Aula Atual
 	05 - Aplicando o que aprendemos
+		01 - Preparando o ambiente
+		02 - Formatando Um Contrato de Trabalho
