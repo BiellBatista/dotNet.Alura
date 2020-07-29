@@ -381,6 +381,12 @@ Extra Cursos
 		03 - Manipulando Delegates
 		04 - Funções e nosso próprio evento
 		05 - Avançando em Eventos
+	C# Brasil: Formate datas, cpf e números nacionais
+		01 - Validação e Formatação de CPF, CNPJ, Título de Eleitor
+		02 - Trabalhando com Datas e Números por Extenso
+		03 - Trabalhando com Dinheiro
+		04 - Buscando CEP na internet
+		05 - Aplicando o que aprendemos
 -------------------------------------------------------------------------------------------------------------------------
 Formação Desenvolvedor .NET
 	Curso C# Parte 1: Primeiros Passos
