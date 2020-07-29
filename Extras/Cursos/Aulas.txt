@@ -109,6 +109,7 @@ C# Brasil: Formate datas, cpf e números nacionais
 		08 - Validando CPF, CNPJ e Título de Eleitor
 		09 - Projeto da Aula Atual
 	02 - Trabalhando com Datas e Números por Extenso
+		01 - Trabalhando com Datas e Horas
 	03 - Trabalhando com Dinheiro
 	04 - Buscando CEP na internet
 	05 - Aplicando o que aprendemos
