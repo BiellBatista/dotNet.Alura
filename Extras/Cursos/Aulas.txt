@@ -110,6 +110,8 @@ C# Brasil: Formate datas, cpf e números nacionais
 		09 - Projeto da Aula Atual
 	02 - Trabalhando com Datas e Números por Extenso
 		01 - Trabalhando com Datas e Horas
+		02 - Formato de data no padrão brasileiro (B)
+		03 - Formatos Simplificados de Datas e Horas
 	03 - Trabalhando com Dinheiro
 	04 - Buscando CEP na internet
 	05 - Aplicando o que aprendemos
