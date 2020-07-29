@@ -128,4 +128,8 @@ Curso de C# Brasil: Formate datas, cpf e números nacionais
 		01 - Consultando o Webservice do ViaCEP
 		02 - Trabalhando com HttpClient para obter dados de serviço ViaCEP
 		03 - Consultando ViaCEP Com Caelum Stella CSharp
+		04 - A Classe ViaCEP (A)
+		05 - Métodos Assíncronos (B)
+		06 - Obtendo Partes do Endereço (A)
+		07 - Projeto da Aula Atual
 	05 - Aplicando o que aprendemos
