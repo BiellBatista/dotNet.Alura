@@ -115,6 +115,8 @@ C# Brasil: Formate datas, cpf e números nacionais
 		04 - Exibição de Tempo (C)
 		05 - Formato de Ida-e-Volta (C)
 		06 - Números por Extenso
+		07 - Valores em reais por extenso
+		08 - Projeto da Aula Atual
 	03 - Trabalhando com Dinheiro
 	04 - Buscando CEP na internet
 	05 - Aplicando o que aprendemos

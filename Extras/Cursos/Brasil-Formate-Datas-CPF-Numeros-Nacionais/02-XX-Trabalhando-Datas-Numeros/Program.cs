@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Caelum.Stella.CSharp.Inwords;
+using System;
 using System.Diagnostics;
 using System.Globalization;
 
@@ -35,6 +36,22 @@ namespace _02_XX_Trabalhando_Datas_Numeros
 
             Debug.WriteLine(data.ToString("t")); //Horas e minutos
             Debug.WriteLine(data.ToString("T")); //Horas minutos e segundos
+
+            //numeros por extenso (usando a biblioteca caelum)
+            double valor = 75;
+            string extenso = new Numero(valor).Extenso();
+            Debug.WriteLine(extenso);
+
+            valor = 1532987;
+            extenso = new Numero(valor).Extenso();
+            Debug.WriteLine(extenso);
+
+            string extensoBRL = new MoedaBRL(valor).Extenso();
+            Debug.WriteLine(extensoBRL);
+
+            valor = 1532987.89;
+            extensoBRL = new MoedaBRL(valor).Extenso();
+            Debug.WriteLine(extensoBRL);
         }
     }
 }
