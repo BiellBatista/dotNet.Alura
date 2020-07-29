@@ -135,3 +135,6 @@ Curso de C# Brasil: Formate datas, cpf e números nacionais
 	05 - Aplicando o que aprendemos
 		01 - Preparando o ambiente
 		02 - Formatando Um Contrato de Trabalho
+		03 - Variável string multi-linhas (B)
+		04 - Interpolação de Strings (B)
+		05 - Adicionando Mais Campos Ao Contrato
