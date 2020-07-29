@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-XX-Trabalhando-Datas-Num
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-XX-Trabalhando-Dinheiro", "03-XX-Trabalhando-Dinheiro\03-XX-Trabalhando-Dinheiro.csproj", "{5F62BCC7-CB4F-4896-A68E-0C1AFDFEC1FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-XX-Buscando-CEP-Internet", "04-XX-Buscando-CEP-Internet\04-XX-Buscando-CEP-Internet.csproj", "{0C242D70-0AE2-4CD1-90BE-693586D10A36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5F62BCC7-CB4F-4896-A68E-0C1AFDFEC1FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F62BCC7-CB4F-4896-A68E-0C1AFDFEC1FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F62BCC7-CB4F-4896-A68E-0C1AFDFEC1FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C242D70-0AE2-4CD1-90BE-693586D10A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C242D70-0AE2-4CD1-90BE-693586D10A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C242D70-0AE2-4CD1-90BE-693586D10A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C242D70-0AE2-4CD1-90BE-693586D10A36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

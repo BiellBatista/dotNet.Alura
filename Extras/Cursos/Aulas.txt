@@ -125,4 +125,5 @@ Curso de C# Brasil: Formate datas, cpf e números nacionais
 		05 - Somando duas moedas diferentes (C)
 		06 - Projeto da Aula Atual
 	04 - Buscando CEP na internet
+		01 - Consultando o Webservice do ViaCEP
 	05 - Aplicando o que aprendemos
