@@ -119,5 +119,10 @@ Curso de C# Brasil: Formate datas, cpf e números nacionais
 		08 - Projeto da Aula Atual
 	03 - Trabalhando com Dinheiro
 		01 - Trabalhando com Dinheiro
+		02 - Exibindo dinheiro (A)
+		03 - Operações Com Decimal e Money (C)
+		04 - Formatando dólar
+		05 - Somando duas moedas diferentes (C)
+		06 - Projeto da Aula Atual
 	04 - Buscando CEP na internet
 	05 - Aplicando o que aprendemos
