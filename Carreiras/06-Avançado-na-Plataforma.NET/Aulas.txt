@@ -17,6 +17,7 @@ C# 6: Melhorias em Coleções, Propriedades, Exceções e Strings
 		15 - Para saber mais
 		16 - Projeto da Aula Atual
 	02 - Um Intelisense Mais Inteligente
+		01 - Using Static
 	03 - Strings Mais Inteligentes
 	04 - Exceções Aprimoradas
 	05 - Melhorias em Coleções
