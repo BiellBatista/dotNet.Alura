@@ -2,6 +2,20 @@ C# 6: Melhorias em Coleções, Propriedades, Exceções e Strings
 	01 - Propriedades Mais Simples
 		01 - Preparando o ambiente
 		02 - Introdução
+		03 - Propriedades Automáticas
+		04 - Propriedades Sem Setter
+		05 - Imutabilidade e Private Set
+		06 - Propriedades Automáticas Somente Leitura
+		07 - private set VS Propriedade Automática Somente-Leitura (C)
+		08 - Inicializadores de Propriedade Automática
+		09 - SintaxeDeExpressao em Propriedades e Métodos
+		10 - Inicializando Propriedades Automáticas (A)
+		11 - Método com sintaxe de expressão (A)
+		12 - Mão na massa - propriedade com sintaxe de expressão
+		13 - Consolidando seu conhecimento
+		14 - O que aprendemos?
+		15 - Para saber mais
+		16 - Projeto da Aula Atual
 	02 - Um Intelisense Mais Inteligente
 	03 - Strings Mais Inteligentes
 	04 - Exceções Aprimoradas
