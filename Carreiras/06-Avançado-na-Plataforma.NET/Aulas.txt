@@ -48,6 +48,8 @@ C# 6: Melhorias em Coleções, Propriedades, Exceções e Strings
 		09 - Projeto da Aula Atual
 	05 - Melhorias em Coleções
 		01 - Inicializadores de Índices
+		02 - Inicializando coleção com índices (A)
+		03 - Criando Lista Customizada com IEnumerable
 C# 7: Tuplas, parâmetros, condicionais, e estilo de código
 	01 - Melhorias em Parâmetros
 	02 - Tuplas
