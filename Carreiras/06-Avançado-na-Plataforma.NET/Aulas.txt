@@ -27,6 +27,10 @@ C# 6: Melhorias em Coleções, Propriedades, Exceções e Strings
 		08 - Projeto da Aula Atual
 	03 - Strings Mais Inteligentes
 		01 - Interpolação de Strings
+		02 - Concatenando strings (A / B / C)
+		03 - Interpolando strings (A)
+		04 - Para saber mais - Interpolação de Strings
+		05 - Monitorando Alteração em Propriedades
 	04 - Exceções Aprimoradas
 	05 - Melhorias em Coleções
 C# 7: Tuplas, parâmetros, condicionais, e estilo de código

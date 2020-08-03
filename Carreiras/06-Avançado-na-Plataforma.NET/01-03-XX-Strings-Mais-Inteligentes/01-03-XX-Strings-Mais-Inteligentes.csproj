@@ -49,6 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="R04.UsingStatic\csharp-6.cs" />
     <Compile Include="R05.OperadoresNullCondicionais\csharp-6.cs" />
+    <Compile Include="R06.InterpolacaoDeCadeiaDeCaracteres\csharp-6.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
