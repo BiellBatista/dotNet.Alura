@@ -59,6 +59,10 @@ C# 6: Melhorias em Coleções, Propriedades, Exceções e Strings
 		10 - Conclusão
 C# 7: Tuplas, parâmetros, condicionais, e estilo de código
 	01 - Melhorias em Parâmetros
+		01 - Introdução
+		02 - Preparando o ambiente
+		03 - Projeto Inicial da Aula Atual
+		04 - Variáveis Out
 	02 - Tuplas
 	03 - Melhorias em Condicionais
 	04 - Literais e Valores Padrão

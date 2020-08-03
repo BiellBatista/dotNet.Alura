@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-04-XX-Excecoes-Aprimorad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-05-XX-Melhorias-Colecoes", "01-05-XX-Melhorias-Colecoes\01-05-XX-Melhorias-Colecoes.csproj", "{01F88DC3-4791-4EBA-908D-351E63E5E53D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-01-XX-Melhorias-Parametros", "02-01-XX-Melhorias-Parametros\02-01-XX-Melhorias-Parametros.csproj", "{8C4A0AE2-DD55-42E6-A6C0-8544AA51BAFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{01F88DC3-4791-4EBA-908D-351E63E5E53D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01F88DC3-4791-4EBA-908D-351E63E5E53D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01F88DC3-4791-4EBA-908D-351E63E5E53D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C4A0AE2-DD55-42E6-A6C0-8544AA51BAFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C4A0AE2-DD55-42E6-A6C0-8544AA51BAFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C4A0AE2-DD55-42E6-A6C0-8544AA51BAFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C4A0AE2-DD55-42E6-A6C0-8544AA51BAFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
