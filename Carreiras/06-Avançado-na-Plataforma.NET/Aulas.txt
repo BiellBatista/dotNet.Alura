@@ -37,6 +37,7 @@ C# 6: Melhorias em Coleções, Propriedades, Exceções e Strings
 		09 - O que aprendemos?
 		10 - Projeto da Aula Atual
 	04 - Exceções Aprimoradas
+		01 - Validando Parâmetros
 	05 - Melhorias em Coleções
 C# 7: Tuplas, parâmetros, condicionais, e estilo de código
 	01 - Melhorias em Parâmetros
