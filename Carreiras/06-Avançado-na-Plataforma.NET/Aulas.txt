@@ -20,6 +20,11 @@ C# 6: Melhorias em Coleções, Propriedades, Exceções e Strings
 		01 - Using Static
 		02 - Acessando método estático sem mencionar nome da classe (C)
 		03 - Operadores Null Condicionais
+		04 - Sintaxe de expresssão e operadores null-condicionais (C)
+		05 - Operador null-condicional (A)
+		06 - Consolidando seu conhecimento
+		07 - O que aprendemos?
+		08 - Projeto da Aula Atual
 	03 - Strings Mais Inteligentes
 	04 - Exceções Aprimoradas
 	05 - Melhorias em Coleções
