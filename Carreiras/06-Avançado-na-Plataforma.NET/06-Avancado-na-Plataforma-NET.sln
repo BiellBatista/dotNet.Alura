@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-01-XX-Propriedades-mais-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-02-XX-Um-Intelisens-Mais-Inteligente", "01-02-XX-Um-Intelisens-Mais-Inteligente\01-02-XX-Um-Intelisens-Mais-Inteligente.csproj", "{B908FFB7-DA6C-42D9-8E6A-89ABE49DD83C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-03-XX-Strings-Mais-Inteligentes", "01-03-XX-Strings-Mais-Inteligentes\01-03-XX-Strings-Mais-Inteligentes.csproj", "{29E94A64-69D9-44F2-9053-D49388684A7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B908FFB7-DA6C-42D9-8E6A-89ABE49DD83C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B908FFB7-DA6C-42D9-8E6A-89ABE49DD83C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B908FFB7-DA6C-42D9-8E6A-89ABE49DD83C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E94A64-69D9-44F2-9053-D49388684A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E94A64-69D9-44F2-9053-D49388684A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E94A64-69D9-44F2-9053-D49388684A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E94A64-69D9-44F2-9053-D49388684A7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
