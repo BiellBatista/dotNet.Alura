@@ -51,6 +51,7 @@
     <Compile Include="R05.OperadoresNullCondicionais\csharp-6.cs" />
     <Compile Include="R06.InterpolacaoDeCadeiaDeCaracteres\csharp-6.cs" />
     <Compile Include="R07.ExpressoesNameOf\csharp-6.cs" />
+    <Compile Include="R08.FiltrosDeExcecao\csharp-6.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
