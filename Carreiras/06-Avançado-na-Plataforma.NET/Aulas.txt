@@ -31,6 +31,11 @@ C# 6: Melhorias em Coleções, Propriedades, Exceções e Strings
 		03 - Interpolando strings (A)
 		04 - Para saber mais - Interpolação de Strings
 		05 - Monitorando Alteração em Propriedades
+		06 - Expressoes NameOf
+		07 - Interpolação de strings e expressões nameof (C)
+		08 - Consolidando seu conhecimento
+		09 - O que aprendemos?
+		10 - Projeto da Aula Atual
 	04 - Exceções Aprimoradas
 	05 - Melhorias em Coleções
 C# 7: Tuplas, parâmetros, condicionais, e estilo de código
