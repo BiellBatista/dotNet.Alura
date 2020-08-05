@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-01-XX-Melhorias-Parametr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-XX-Tuplas", "02-02-XX-Tuplas\02-02-XX-Tuplas.csproj", "{48691EE1-34C8-498C-A720-DB87D93789D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-03-XX-Melhorias-Condicionais", "02-03-XX-Melhorias-Condicionais\02-03-XX-Melhorias-Condicionais.csproj", "{33983C6A-8BAF-4C76-8613-2C5F21B61F5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{48691EE1-34C8-498C-A720-DB87D93789D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48691EE1-34C8-498C-A720-DB87D93789D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48691EE1-34C8-498C-A720-DB87D93789D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33983C6A-8BAF-4C76-8613-2C5F21B61F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33983C6A-8BAF-4C76-8613-2C5F21B61F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33983C6A-8BAF-4C76-8613-2C5F21B61F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33983C6A-8BAF-4C76-8613-2C5F21B61F5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
