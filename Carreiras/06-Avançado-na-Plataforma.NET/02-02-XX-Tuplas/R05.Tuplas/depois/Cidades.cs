@@ -30,7 +30,7 @@ namespace _02_02_XX_Tuplas.R05.depois
                 string linha;
                 while ((linha = streamReader.ReadLine()) != null)
                 {
-                    var (estado, nome, _, _, capital) =
+                    var (estado, nome, latitude, longitude, capital) =
                         LerLinha(linha);
                     cidades.Add(new Cidade(estado, nome, capital));
                 }
