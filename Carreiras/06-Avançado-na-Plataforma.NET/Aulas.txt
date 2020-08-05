@@ -78,6 +78,11 @@ C# 7: Tuplas, parâmetros, condicionais, e estilo de código
 		03 - Retornando múltiplos valores (A / D / E / F)
 		04 - ValueTuple x Class (A / C / E)
 		05 - Descartes
+		06 - Usando ValueTuples (C)
+		07 - Para saber mais - Tuplas
+		08 - Consolidando seu conhecimento
+		09 - O que aprendemos?
+		10 - Projeto Final da Aula Atual
 	03 - Melhorias em Condicionais
 	04 - Literais e Valores Padrão
 	05 - Estilo de Código

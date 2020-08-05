@@ -31,6 +31,7 @@ namespace _02_02_XX_Tuplas.R06.depois
                 string linha;
                 while ((linha = streamReader.ReadLine()) != null)
                 {
+                    //o _ serve para descartar algum valor
                     var (estado, nome, _, _, capital) = LerLinha(linha);
                     cidades.Add(new Cidade(estado, nome, capital));
                 }
