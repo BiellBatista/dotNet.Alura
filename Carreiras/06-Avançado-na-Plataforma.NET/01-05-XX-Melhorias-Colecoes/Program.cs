@@ -9,7 +9,15 @@ namespace _01_05_XX_Melhorias_Colecoes
             string[] menus = new string[] {
                 "1. Propriedades Automáticas Somente-Leitura",
                 "2. Inicializadores De Propriedade Automática",
-                "3. Membros Com Corpo De Expressão"
+                "3. Membros Com Corpo De Expressão",
+                "4. Using Static",
+                "5. Operadores Null-Condicionais",
+                "6. Interpolação De Cadeia De Caracteres",
+                "7. Expressões nameOf",
+                "8. Filtros De Exceção",
+                "9. Await Em Blocos Catch E Finally",
+                "10. Inicializadores De Índice",
+                "11. Metodos De Extensão Para Inicializadores De Coleção"
             };
 
             Console.WriteLine("ÍNDICE DE PROGRAMAS");
@@ -40,6 +48,30 @@ namespace _01_05_XX_Melhorias_Colecoes
                         break;
                     case 3:
                         new R03.Programa().Main();
+                        break;
+                    case 4:
+                        new R04.Programa().Main();
+                        break;
+                    case 5:
+                        new R05.Programa().Main();
+                        break;
+                    case 6:
+                        new R06.Programa().Main();
+                        break;
+                    case 7:
+                        new R07.Programa().Main();
+                        break;
+                    case 8:
+                        new R08.Programa().Main();
+                        break;
+                    case 9:
+                        new R09.Programa().Main();
+                        break;
+                    case 10:
+                        new R10.Programa().Main();
+                        break;
+                    case 11:
+                        new R11.Programa().Main();
                         break;
                     default:
                         break;

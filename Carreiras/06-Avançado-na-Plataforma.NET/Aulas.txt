@@ -65,6 +65,8 @@ C# 7: Tuplas, parâmetros, condicionais, e estilo de código
 		04 - Variáveis Out
 		05 - Sintaxe das variáveis out (B / E)
 		06 - Locais e Retornos de Ref
+		07 - Retornando referências
+		08 - Parâmetros in
 	02 - Tuplas
 	03 - Melhorias em Condicionais
 	04 - Literais e Valores Padrão

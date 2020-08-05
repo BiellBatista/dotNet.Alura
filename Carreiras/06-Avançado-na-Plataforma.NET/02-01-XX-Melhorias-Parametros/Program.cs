@@ -1,6 +1,4 @@
-﻿using _02_01_XX_Melhorias_Parametros;
-using System;
-using System.Threading.Tasks;
+﻿using System;
 using static System.Console;
 
 namespace _02_01_XX_Melhorias_Parametros

@@ -9,7 +9,11 @@ namespace _01_03_XX_Strings_Mais_Inteligentes
             string[] menus = new string[] {
                 "1. Propriedades Automáticas Somente-Leitura",
                 "2. Inicializadores De Propriedade Automática",
-                "3. Membros Com Corpo De Expressão"
+                "3. Membros Com Corpo De Expressão",
+                "4. Using Static",
+                "5. Operadores Null-Condicionais",
+                "6. Interpolação De Cadeia De Caracteres",
+                "7. Expressões nameOf",
             };
 
             Console.WriteLine("ÍNDICE DE PROGRAMAS");
@@ -41,7 +45,17 @@ namespace _01_03_XX_Strings_Mais_Inteligentes
                     case 3:
                         new R03.Programa().Main();
                         break;
-                    default:
+                    case 4:
+                        new R04.Programa().Main();
+                        break;
+                    case 5:
+                        new R05.Programa().Main();
+                        break;
+                    case 6:
+                        new R06.Programa().Main();
+                        break;
+                    case 7:
+                        new R07.Programa().Main();
                         break;
                 }
 

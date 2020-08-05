@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
+﻿using System.IO;
 using static System.Console;
 
 namespace _02_01_XX_Melhorias_Parametros.R01.antes

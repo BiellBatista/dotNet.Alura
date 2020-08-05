@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace _01_02_XX_Um_Intelisens_Mais_Inteligentes
+namespace csharp_atualizacoes
 {
     class Program
     {
@@ -12,6 +16,12 @@ namespace _01_02_XX_Um_Intelisens_Mais_Inteligentes
                 "3. Membros Com Corpo De Expressão",
                 "4. Using Static",
                 "5. Operadores Null-Condicionais",
+                "6. Interpolação De Cadeia De Caracteres",
+                "7. Expressões nameOf",
+                "8. Filtros De Exceção",
+                "9. Await Em Blocos Catch E Finally",
+                "10. Inicializadores De Índice",
+                "11. Metodos De Extensão Para Inicializadores De Coleção"
             };
 
             Console.WriteLine("ÍNDICE DE PROGRAMAS");
@@ -35,19 +45,39 @@ namespace _01_02_XX_Um_Intelisens_Mais_Inteligentes
                 switch (programa)
                 {
                     case 1:
-                        new R01.Programa().Main();
+                        new CSharp6.R01.Programa().Main();
                         break;
                     case 2:
-                        new R02.Programa().Main();
+                        new CSharp6.R02.Programa().Main();
                         break;
                     case 3:
-                        new R03.Programa().Main();
+                        new CSharp6.R03.Programa().Main();
                         break;
                     case 4:
-                        new R04.Programa().Main();
+                        new CSharp6.R04.Programa().Main();
                         break;
                     case 5:
-                        new R05.Programa().Main();
+                        new CSharp6.R05.Programa().Main();
+                        break;
+                    case 6:
+                        new CSharp6.R06.Programa().Main();
+                        break;
+                    case 7:
+                        new CSharp6.R07.Programa().Main();
+                        break;
+                    case 8:
+                        new CSharp6.R08.Programa().Main();
+                        break;
+                    case 9:
+                        new CSharp6.R09.Programa().Main();
+                        break;
+                    case 10:
+                        new CSharp6.R10.Programa().Main();
+                        break;
+                    case 11:
+                        new CSharp6.R11.Programa().Main();
+                        break;
+                    default:
                         break;
                 }
 
