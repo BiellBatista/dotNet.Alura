@@ -97,6 +97,15 @@ C# 7: Tuplas, parâmetros, condicionais, e estilo de código
 	04 - Literais e Valores Padrão
 		01 - Projeto Inicial da Aula Atual
 		02 - Aprimoramento de Literais Numéricos
+		03 - Números mais legíveis (B / C)
+		04 - Números binários no C# (C)
+		05 - Async Main
+		06 - Método Main Assíncrono (A)
+		07 - Expressão Literal Padrão
+		08 - Valor padrão de literais (C)
+		09 - Consolidando seu conhecimento
+		10 - O que aprendemos?
+		11 - Projeto Final da Aula Atual
 	05 - Estilo de Código
 C# 7.3: igualdade em tuplas, expression variables e refs
 	01 - Tuples
