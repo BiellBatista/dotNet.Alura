@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Console;
 
 namespace _02_01_XX_Melhorias_Parametros.R03.antes
 {
@@ -27,8 +21,8 @@ namespace _02_01_XX_Melhorias_Parametros.R03.antes
             double diferencaY = ponto1.Y - ponto2.Y;
             double diferencaZ = ponto1.Z - ponto2.Z;
 
-            return Math.Sqrt(diferencaX * diferencaX 
-                            + diferencaY * diferencaY 
+            return Math.Sqrt(diferencaX * diferencaX
+                            + diferencaY * diferencaY
                             + diferencaZ * diferencaZ);
         }
 

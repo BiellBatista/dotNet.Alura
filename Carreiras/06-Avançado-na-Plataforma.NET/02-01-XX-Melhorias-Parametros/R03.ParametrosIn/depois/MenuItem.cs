@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Console;
 
 namespace _02_01_XX_Melhorias_Parametros.R03.depois
 {
@@ -18,10 +12,10 @@ namespace _02_01_XX_Melhorias_Parametros.R03.depois
             Console.WriteLine($"Distância entre {ponto1} e {ponto2}: {distancia}");
         }
 
-        private double CalcularDistancia(Ponto3D ponto1, Ponto3D ponto2 = default)
+        private double CalcularDistancia(in Ponto3D ponto1, Ponto3D ponto2 = default)
         {
             //OPS! PARÂMETRO DO MÉTODO ESTÁ SENDO MODIFICADO!
-            ponto1 = new Ponto3D(1, 2, 3);
+            //ponto1 = new Ponto3D(1, 2, 3);
 
             double diferencaX = ponto1.X - ponto2.X;
             double diferencaY = ponto1.Y - ponto2.Y;
