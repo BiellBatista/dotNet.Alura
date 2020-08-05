@@ -107,6 +107,8 @@ C# 7: Tuplas, parâmetros, condicionais, e estilo de código
 		10 - O que aprendemos?
 		11 - Projeto Final da Aula Atual
 	05 - Estilo de Código
+		01 - Projeto Inicial da Aula Atual
+		02 - Funções Locais
 C# 7.3: igualdade em tuplas, expression variables e refs
 	01 - Tuples
 	02 - Expression variables
