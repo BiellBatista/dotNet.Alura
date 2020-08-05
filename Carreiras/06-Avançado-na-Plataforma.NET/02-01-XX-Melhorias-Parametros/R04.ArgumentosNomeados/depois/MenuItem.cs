@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Console;
 
 namespace _02_01_XX_Melhorias_Parametros.R04.depois
 {
@@ -26,9 +20,9 @@ namespace _02_01_XX_Melhorias_Parametros.R04.depois
             // As 2 linhas abaixo geram erro de compilação:
 
             ////Error CS1738  Named argument specifications must appear after all fixed arguments have been specified.
-            //ImprimirDetalhesDoPedido(vendedor: "Maria de Fátima", 31, nomeProduto: "Caneca Vermelha"); // somente a partir do C# 7.2
+            ImprimirDetalhesDoPedido(vendedor: "Maria de Fátima", 31, nomeProduto: "Caneca Vermelha"); // somente a partir do C# 7.2
             ////Error CS1738  Named argument specifications must appear after all fixed arguments have been specified.
-            //ImprimirDetalhesDoPedido("Maria de Fátima", numeroPedido: 31, "Caneca Vermelha"); // somente a partir do C# 7.2
+            ImprimirDetalhesDoPedido("Maria de Fátima", numeroPedido: 31, "Caneca Vermelha"); // somente a partir do C# 7.2
         }
 
         void ImprimirDetalhesDoPedido(string vendedor, int numeroPedido, string nomeProduto)

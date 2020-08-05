@@ -69,6 +69,9 @@ C# 7: Tuplas, parâmetros, condicionais, e estilo de código
 		08 - Parâmetros in
 		09 - Diferenças entre ref, out e in (A / B / D)
 		10 - Argumentos Nomeados
+		11 - Argumentos nomeados (A / B / C / D / F / G)
+		12 - O que aprendemos?
+		13 - Projeto Final da Aula Atual
 	02 - Tuplas
 	03 - Melhorias em Condicionais
 	04 - Literais e Valores Padrão
