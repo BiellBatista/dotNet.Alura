@@ -111,6 +111,8 @@ C# 7: Tuplas, parâmetros, condicionais, e estilo de código
 		02 - Funções Locais
 		03 - Funções Locais (C)
 		04 - Mais Membros com Sintaxe de Expressão
+		05 - Propriedade com Sintaxe de Expressão (C)
+		06 - Estilo de Código
 C# 7.3: igualdade em tuplas, expression variables e refs
 	01 - Tuples
 	02 - Expression variables

@@ -48,6 +48,7 @@ namespace _02_05_XX_Estilo_Codigo.R13.depois
 
         public Cliente(string nome) => this.nome = nome;
 
+        //finalizado a construção da classe, devo usar o tio ~
         ~Cliente() => Console.WriteLine("Finalizando a classe.");
 
         private string nome;
