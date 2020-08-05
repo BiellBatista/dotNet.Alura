@@ -113,6 +113,13 @@ C# 7: Tuplas, parâmetros, condicionais, e estilo de código
 		04 - Mais Membros com Sintaxe de Expressão
 		05 - Propriedade com Sintaxe de Expressão (C)
 		06 - Estilo de Código
+		07 - EditorConfig
+		08 - Estilo de Código e EditorConfig (B)
+		09 - Para saber mais - Extensão Visual Studio para EditorConfig
+		10 - Consolidando seu conhecimento
+		11 - Projeto Final da Aula Atual
+		12 - O que aprendemos?
+		13 - Conclusão
 C# 7.3: igualdade em tuplas, expression variables e refs
 	01 - Tuples
 	02 - Expression variables
