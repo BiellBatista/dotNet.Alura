@@ -39,6 +39,7 @@ namespace _02_03_XX_Melhorias_Condicionais.R07.depois
 
             switch (parametro)
             {
+                // tentando converter o parametro para double, caso sucesso, atribua o resulta na variável valorDouble e entra no case
                 case double valorDouble:
                     Console.WriteLine($"Total anterior: {Soma}");
                     Console.WriteLine($"Somando: {valorDouble}");
@@ -46,33 +47,40 @@ namespace _02_03_XX_Melhorias_Condicionais.R07.depois
                     Console.WriteLine($"Total atual: {Soma}");
                     Console.WriteLine();
                     break;
+                // tentando converter o parametro para int, caso sucesso, atribua o resulta na variável valorInt e entra no case
                 case int valorInt:
                     Somar((double)valorInt);
                     break;
+                // tentando converter o parametro para decimal, caso sucesso, atribua o resulta na variável valorDecimal e entra no case
                 case decimal valorDecimal:
                     Somar((double)valorDecimal);
                     break;
+                // tentando converter o parametro para string, caso sucesso, atribua o resulta na variável str e entra no case
                 case string str
-                    when (Regex.Match(str, NUMERO_ENTRE_COLCHETES).Success):
+                    when (Regex.Match(str, NUMERO_ENTRE_COLCHETES).Success): //verificando se o valor da string bate com o regex, caso sim entre, caso não passe
                     {
                         Somar(Regex.Match(str, NUMERO_ENTRE_COLCHETES).Groups[1].Value);
                     }
                     break;
                 case string str
-                    when (double.TryParse(parametro.ToString(), NumberStyles.Currency, cultura.NumberFormat, out double valorDouble)):
+                    when (double.TryParse(parametro.ToString(), NumberStyles.Currency, cultura.NumberFormat, out double valorDouble)): //verificando se o valor da string bate com o regex, caso sim entre, caso não passe
                     {
                         Somar(valorDouble);
                     }
                     break;
+                // tentando converter o parametro para IEnumerable<object>, caso sucesso, atribua o resulta na variável colecao e entra no case
                 case IEnumerable<object> colecao:
                     foreach (var item in colecao) Somar(item);
                     break;
+                // tentando converter o parametro para IEnumerable<int>, caso sucesso, atribua o resulta na variável colecao e entra no case
                 case IEnumerable<int> colecao:
                     foreach (var item in colecao) Somar(item);
                     break;
+                // tentando converter o parametro para IEnumerable<decimal>, caso sucesso, atribua o resulta na variável colecao e entra no case
                 case IEnumerable<decimal> colecao:
                     foreach (var item in colecao) Somar(item);
                     break;
+                // tentando converter o parametro para IEnumerable<double>, caso sucesso, atribua o resulta na variável colecao e entra no case
                 case IEnumerable<double> colecao:
                     foreach (var item in colecao) Somar(item);
                     break;

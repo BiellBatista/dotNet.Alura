@@ -86,6 +86,10 @@ C# 7: Tuplas, parâmetros, condicionais, e estilo de código
 	03 - Melhorias em Condicionais
 		01 - Projeto Inicial da Aula Atual
 		02 - Correspondência de Padrões
+		03 - Correspondência de padrões (B)
+		04 - Switch com Correspondência de Padrões
+		05 - Sintaxe de switch com correspondência de padrões (B)
+		06 - Expressões Throw
 	04 - Literais e Valores Padrão
 	05 - Estilo de Código
 C# 7.3: igualdade em tuplas, expression variables e refs
