@@ -51,6 +51,7 @@ namespace _02_05_XX_Estilo_Codigo.R12.depois
             if (string.IsNullOrWhiteSpace(nome))
                 throw new ArgumentException(message: "Nome obrigatório", paramName: nameof(nome));
 
+            //além de declarar a função local, devo invocá-la (chamar)
             return await funcao();
 
             async Task<string> funcao()
