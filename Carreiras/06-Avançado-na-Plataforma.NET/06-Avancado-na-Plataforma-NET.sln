@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-03-XX-Reatribuicao-Refs"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-04-XX-Backfield-Attributes", "03-04-XX-Backfield-Attributes\03-04-XX-Backfield-Attributes.csproj", "{3184FC54-67EC-4119-B6B2-6E82803DC5C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-05-XX-Melhorias-Resolucao-Sobrecarga", "03-05-XX-Melhorias-Resolucao-Sobrecarga\03-05-XX-Melhorias-Resolucao-Sobrecarga.csproj", "{B1DA9F32-4C8A-4640-A278-DCF558267E6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{3184FC54-67EC-4119-B6B2-6E82803DC5C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3184FC54-67EC-4119-B6B2-6E82803DC5C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3184FC54-67EC-4119-B6B2-6E82803DC5C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1DA9F32-4C8A-4640-A278-DCF558267E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DA9F32-4C8A-4640-A278-DCF558267E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1DA9F32-4C8A-4640-A278-DCF558267E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DA9F32-4C8A-4640-A278-DCF558267E6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
