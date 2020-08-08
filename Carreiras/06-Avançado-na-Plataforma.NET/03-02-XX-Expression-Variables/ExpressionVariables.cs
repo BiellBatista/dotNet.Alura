@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace _03_02_XX_Expression_Variables
 {
@@ -22,5 +23,19 @@ namespace _03_02_XX_Expression_Variables
         }
 
         public static bool ValidaIdade(string idadeComoTexto) => int.TryParse(idadeComoTexto, out int idade) && idade > 18;
+
+        public static void RegistroDeAlunos()
+        {
+            var registroAlunos = new string[]
+            {
+                "1110651", "1020651", "1110600",
+                "1310800", "211060T", "011060W"
+            };
+
+            var alunosValidos =
+                from ra in registroAlunos
+                where int.TryParse(ra, out int raComoInt) && raComoInt > 1000
+                select ra + " é válido";
+        }
     }
 }

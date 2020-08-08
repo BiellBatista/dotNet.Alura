@@ -133,6 +133,9 @@ C# 7.3: Igualdade em tuplas, expression variables e refs
 	02 - Expression variables
 		01 - Expression Variables em campos
 		02 - Expression Variables no Liqn
+		03 - Faça como eu fiz na aula
+		04 - Usando expression variables (A / B / C)
+		05 - O que aprendemos?
 	03 - Reatribuição em Refs
 	04 - Backfield attributes
 	05 - Melhorias em resolução de sobrecarga
