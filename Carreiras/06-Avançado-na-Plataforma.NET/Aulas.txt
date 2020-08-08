@@ -120,8 +120,10 @@ C# 7: Tuplas, parâmetros, condicionais, e estilo de código
 		11 - Projeto Final da Aula Atual
 		12 - O que aprendemos?
 		13 - Conclusão
-C# 7.3: igualdade em tuplas, expression variables e refs
+C# 7.3: Igualdade em tuplas, expression variables e refs
 	01 - Tuples
+		01 - Introdução
+		02 - 
 	02 - Expression variables
 	03 - Reatribuição em Refs
 	04 - Backfield attributes

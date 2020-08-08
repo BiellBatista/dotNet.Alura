@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-04-XX-Literais-Valores-P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-05-XX-Estilo-Codigo", "02-05-XX-Estilo-Codigo\02-05-XX-Estilo-Codigo.csproj", "{23961DA6-C299-4439-AA23-F5D730B021E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-01-XX-Tuples", "03-01-XX-Tuples\03-01-XX-Tuples.csproj", "{D928F20A-9F58-4A8A-B923-A6FBEF1A2F38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{23961DA6-C299-4439-AA23-F5D730B021E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23961DA6-C299-4439-AA23-F5D730B021E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23961DA6-C299-4439-AA23-F5D730B021E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D928F20A-9F58-4A8A-B923-A6FBEF1A2F38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D928F20A-9F58-4A8A-B923-A6FBEF1A2F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D928F20A-9F58-4A8A-B923-A6FBEF1A2F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D928F20A-9F58-4A8A-B923-A6FBEF1A2F38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -278,7 +278,7 @@ Carreira Avançado na Plataforma.NET
 		03 - Melhorias em Condicionais
 		04 - Literais e Valores Padrão
 		05 - Estilo de Código
-	C# 7.3: igualdade em tuplas, expression variables e refs
+	C# 7.3: Igualdade em tuplas, expression variables e refs
 		01 - Tuples
 		02 - Expression variables
 		03 - Reatribuição em Refs
