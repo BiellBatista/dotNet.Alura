@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            TesteTuples.TesteTuple();
+            TesteTuples.TestaIgualdade();
         }
     }
 }

@@ -123,7 +123,9 @@ C# 7: Tuplas, parâmetros, condicionais, e estilo de código
 C# 7.3: Igualdade em tuplas, expression variables e refs
 	01 - Tuples
 		01 - Introdução
-		02 - 
+		02 - Igualdade entre tuples
+		03 - Igualdade entre tuples nomeadas
+		04 - Igualdade com tuples diferentes
 	02 - Expression variables
 	03 - Reatribuição em Refs
 	04 - Backfield attributes
