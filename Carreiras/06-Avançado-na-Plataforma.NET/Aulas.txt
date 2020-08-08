@@ -139,6 +139,9 @@ C# 7.3: Igualdade em tuplas, expression variables e refs
 	03 - Reatribuição em Refs
 		01 - Reatribuição em refs
 		02 - Foreach com refs
+		03 - Faça como eu fiz na aula
+		04 - Erro com ref var (A)
+		05 - O que aprendemos?
 	04 - Backfield attributes
 	05 - Melhorias em resolução de sobrecarga
 C# Reflection parte 1: Metadados do seu código .NET

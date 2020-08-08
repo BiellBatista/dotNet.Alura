@@ -14,26 +14,62 @@ namespace _03_03_XX_Reatribuicao_Refs
 
             maiorValor *= 2;
             Console.WriteLine($"Maior valor*2: {maiorValor}");
-            
+
             EscreverNumeros(numeros);
         }
 
         private static ref int ObterMaiorValor(int[] numeros)
         {
-            ref var maior = ref numeros[0];
+            //criando um "collection" de ref para ser usada no foreach
+            Span<int> numerosSpan = new Span<int>(numeros);
 
-            for (int i = 1; i < numeros.Length; i++)
+            ref var maior = ref numeros[0];
+            //preciso usar um Span para trabalhar com ref em foreach
+            foreach (ref var item in numerosSpan.Slice(0))
             {
-                if (numeros[i] > maior)
+                if (item > maior)
                 {
-                    maior = ref numeros[i];
+                    maior = ref item;
                 }
             }
+
+            //implementando o meu tipo interavel
+            //foreach (ref var item in new MeuIteravel())
+            //{
+
+            //}
 
             return ref maior;
         }
 
         private static void EscreverNumeros(int[] numeros) =>
             Console.WriteLine(string.Join(", ", numeros));
+    }
+
+
+    class MeuIteravel
+    {
+        public MeuEnumerator GetEnumerator()
+        {
+            return new MeuEnumerator();
+        }
+    }
+
+    class MeuEnumerator
+    {
+        private int[] numeros = { 1, 2, 3 };
+
+        public ref int Current
+        {
+            get
+            {
+                return ref numeros[0];
+            }
+        }
+
+        public bool MoveNext()
+        {
+            return false;
+        }
     }
 }
