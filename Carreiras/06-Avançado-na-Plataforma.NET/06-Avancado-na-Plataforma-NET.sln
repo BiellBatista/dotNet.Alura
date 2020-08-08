@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-01-XX-Tuples", "03-01-XX
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-02-XX-Expression-Variables", "03-02-XX-Expression-Variables\03-02-XX-Expression-Variables.csproj", "{B90C6A95-8B5E-468E-972F-5B18E36C35F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-03-XX-Reatribuicao-Refs", "03-03-XX-Reatribuicao-Refs\03-03-XX-Reatribuicao-Refs.csproj", "{36E6C628-8B60-4F35-A7F9-529B86703369}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{B90C6A95-8B5E-468E-972F-5B18E36C35F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B90C6A95-8B5E-468E-972F-5B18E36C35F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B90C6A95-8B5E-468E-972F-5B18E36C35F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E6C628-8B60-4F35-A7F9-529B86703369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E6C628-8B60-4F35-A7F9-529B86703369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E6C628-8B60-4F35-A7F9-529B86703369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E6C628-8B60-4F35-A7F9-529B86703369}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
