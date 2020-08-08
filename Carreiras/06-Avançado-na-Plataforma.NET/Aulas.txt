@@ -131,6 +131,7 @@ C# 7.3: Igualdade em tuplas, expression variables e refs
 		07 - Aridade de tuplas
 		08 - O que aprendemos?
 	02 - Expression variables
+		01 - Expression Variables em campos
 	03 - Reatribuição em Refs
 	04 - Backfield attributes
 	05 - Melhorias em resolução de sobrecarga
