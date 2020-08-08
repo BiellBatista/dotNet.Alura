@@ -126,6 +126,10 @@ C# 7.3: Igualdade em tuplas, expression variables e refs
 		02 - Igualdade entre tuples
 		03 - Igualdade entre tuples nomeadas
 		04 - Igualdade com tuples diferentes
+		05 - Faça como eu fiz na aula
+		06 - Comparação entre tuplas (D / E / F)
+		07 - Aridade de tuplas
+		08 - O que aprendemos?
 	02 - Expression variables
 	03 - Reatribuição em Refs
 	04 - Backfield attributes

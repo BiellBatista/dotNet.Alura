@@ -1,4 +1,6 @@
-﻿namespace _03_01_XX_Tuples
+﻿using System;
+
+namespace _03_01_XX_Tuples
 {
     static class TesteTuples
     {
@@ -15,7 +17,7 @@
             //isso foi adicionado no C# 7.3, é equivalente ao de cima
             var mesmoLugar = origem == destino;
 
-            System.Console.WriteLine(mesmoLugar);
+            Console.WriteLine(mesmoLugar);
         }
 
         public static void TestaIgualdade2()
@@ -39,7 +41,19 @@
              */
             var mesmoLugar = origem == destino;
 
-            System.Console.WriteLine(mesmoLugar);
+            Console.WriteLine(mesmoLugar);
+        }
+
+        public static void MaisAlgunsCasos()
+        {
+            //o compilador sempre compara a posicao
+            var ehIgual = (nome: "Pedro", idade: 15) == (nome: "Maria", idade: 12);
+
+            //eu posso comparar o int com o int? porque há uma possibilidade deles serem semelhantes
+            (string, int) pedro = (nome: "Pedro", idade: 15);
+            (string, int?) maria = (nome: "Maria", idade: 12);
+
+            Console.WriteLine(pedro == maria);
         }
     }
 }
