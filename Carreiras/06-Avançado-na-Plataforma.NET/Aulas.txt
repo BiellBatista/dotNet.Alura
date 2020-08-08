@@ -143,6 +143,7 @@ C# 7.3: Igualdade em tuplas, expression variables e refs
 		04 - Erro com ref var (A)
 		05 - O que aprendemos?
 	04 - Backfield attributes
+		01 - Backing field attribute
 	05 - Melhorias em resolução de sobrecarga
 C# Reflection parte 1: Metadados do seu código .NET
 	01 - O pontapé de nossa aplicação Web

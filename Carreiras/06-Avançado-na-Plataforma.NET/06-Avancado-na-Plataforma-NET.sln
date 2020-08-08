@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-02-XX-Expression-Variabl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-03-XX-Reatribuicao-Refs", "03-03-XX-Reatribuicao-Refs\03-03-XX-Reatribuicao-Refs.csproj", "{36E6C628-8B60-4F35-A7F9-529B86703369}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-04-XX-Backfield-Attributes", "03-04-XX-Backfield-Attributes\03-04-XX-Backfield-Attributes.csproj", "{3184FC54-67EC-4119-B6B2-6E82803DC5C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{36E6C628-8B60-4F35-A7F9-529B86703369}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36E6C628-8B60-4F35-A7F9-529B86703369}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36E6C628-8B60-4F35-A7F9-529B86703369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3184FC54-67EC-4119-B6B2-6E82803DC5C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3184FC54-67EC-4119-B6B2-6E82803DC5C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3184FC54-67EC-4119-B6B2-6E82803DC5C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3184FC54-67EC-4119-B6B2-6E82803DC5C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
