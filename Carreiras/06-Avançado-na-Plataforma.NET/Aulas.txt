@@ -157,6 +157,10 @@ C# 7.3: Igualdade em tuplas, expression variables e refs
 		07 - O que aprendemos?
 C# Reflection parte 1: Metadados do seu código .NET
 	01 - O pontapé de nossa aplicação Web
+		01 - Introdução
+		02 - Começando o nosso projeto
+		03 - Projeto inicial
+		04 - Escrevendo o código de suporte http
 	02 - Usando nosso Assembly dinamicamente e convenções
 	03 - Invocando métodos dinamicamente
 	04 - Trabalhando com sobrecargas de métodos
