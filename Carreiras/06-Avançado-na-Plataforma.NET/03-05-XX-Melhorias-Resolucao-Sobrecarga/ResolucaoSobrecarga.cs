@@ -42,4 +42,19 @@ namespace _03_05_XX_Melhorias_Resolucao_Sobrecarga
             Console.WriteLine(objeto);
         }
     }
+
+    class TesteDeSobrecarga
+    {
+        void Teste()
+        {
+            TesteDelegate(int.Parse);
+            TesteDelegate(EscreveMensagem);
+        }
+
+        public void TesteDelegate(Func<string, int> func) => Console.WriteLine("Func<string, int>");
+
+        public void TesteDelegate(Action<string> action) => Console.WriteLine("Action<string>");
+
+        public void EscreveMensagem(string a) => Console.WriteLine(a);
+    }
 }

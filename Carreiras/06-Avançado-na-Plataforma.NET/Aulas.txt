@@ -151,6 +151,10 @@ C# 7.3: Igualdade em tuplas, expression variables e refs
 		01 - Método estático ou de instância
 		02 - Melhoria em métodos genéricos
 		03 - Melhoria em metodos com argumentos de delegates
+		04 - Resolução de sobrecargas (C)
+		05 - Faça como eu fiz na aula
+		06 - Conclusão
+		07 - O que aprendemos?
 C# Reflection parte 1: Metadados do seu código .NET
 	01 - O pontapé de nossa aplicação Web
 	02 - Usando nosso Assembly dinamicamente e convenções
