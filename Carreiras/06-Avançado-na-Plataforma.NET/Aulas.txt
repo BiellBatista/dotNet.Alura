@@ -169,6 +169,9 @@ C# Reflection parte 1: Metadados do seu código .NET
 	02 - Usando nosso Assembly dinamicamente e convenções
 		01 - Projeto da aula anterior
 		02 - Criando convenções para acessar nosso assembly
+		03 - Como um recurso é localizado no Assembly .NET (D)
+		04 - Convenção de nome de recursos no assembly .NET (B)
+		05 - Criando nossa controller
 	03 - Invocando métodos dinamicamente
 	04 - Trabalhando com sobrecargas de métodos
 	05 - Invocando métodos com assinaturas complexas dinamicamente
