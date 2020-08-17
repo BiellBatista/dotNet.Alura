@@ -167,6 +167,8 @@ C# Reflection parte 1: Metadados do seu código .NET
 		08 - Embedded Resources e Streams (C)
 		09 - Dando o pontapé no portal ByteBank
 	02 - Usando nosso Assembly dinamicamente e convenções
+		01 - Projeto da aula anterior
+		02 - Criando convenções para acessar nosso assembly
 	03 - Invocando métodos dinamicamente
 	04 - Trabalhando com sobrecargas de métodos
 	05 - Invocando métodos com assinaturas complexas dinamicamente
