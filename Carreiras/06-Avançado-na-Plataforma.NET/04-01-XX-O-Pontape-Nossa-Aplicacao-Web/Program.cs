@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using _04_01_XX_O_Pontape_Nossa_Aplicacao_Web.Intraestrutura;
 
 namespace _04_01_XX_O_Pontape_Nossa_Aplicacao_Web
 {
@@ -10,6 +6,10 @@ namespace _04_01_XX_O_Pontape_Nossa_Aplicacao_Web
     {
         static void Main(string[] args)
         {
+            var prefixo = new string[] { "http://localhost:5341/" };
+            var webApplication = new WebApplication(prefixo);
+
+            webApplication.Iniciar();
         }
     }
 }
