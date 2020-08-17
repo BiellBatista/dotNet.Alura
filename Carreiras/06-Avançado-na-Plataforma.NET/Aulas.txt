@@ -162,6 +162,10 @@ C# Reflection parte 1: Metadados do seu código .NET
 		03 - Projeto inicial
 		04 - Escrevendo o código de suporte http
 		05 - Conhecendo nosso Assembly
+		06 - Trabalhando com o GetExecutingAssembly (A)
+		07 - Trabalhando com Embedded Resources (C)
+		08 - Embedded Resources e Streams (C)
+		09 - Dando o pontapé no portal ByteBank
 	02 - Usando nosso Assembly dinamicamente e convenções
 	03 - Invocando métodos dinamicamente
 	04 - Trabalhando com sobrecargas de métodos

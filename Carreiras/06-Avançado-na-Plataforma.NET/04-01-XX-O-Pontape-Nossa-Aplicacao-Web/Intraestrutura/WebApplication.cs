@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Net;
-using System.Text;
+using System.Reflection;
 
 namespace _04_01_XX_O_Pontape_Nossa_Aplicacao_Web.Intraestrutura
 {
@@ -20,6 +20,14 @@ namespace _04_01_XX_O_Pontape_Nossa_Aplicacao_Web.Intraestrutura
 
         public void Iniciar()
         {
+            while (true)
+            {
+                ManipularRequisicao();
+            }
+        }
+
+        private void ManipularRequisicao()
+        {
             var httpListener = new HttpListener();
 
             foreach (var prefixo in _prefixos)
@@ -33,17 +41,44 @@ namespace _04_01_XX_O_Pontape_Nossa_Aplicacao_Web.Intraestrutura
             var requisicao = contexto.Request;
             var response = contexto.Response;
 
-            var resposta = "Hello World";
-            var respostaBytes = Encoding.UTF8.GetBytes(resposta);
+            var path = requisicao.Url.AbsolutePath;
 
-            response.ContentType = "text/html; charset=utf-8";
-            response.StatusCode = 200;
-            response.ContentLength64 = respostaBytes.Length;
+            if (path == "/Assets/css/styles.css")
+            {
+                //retornando o assembly que está em execução no momento da chamada. O assembly retornado é o que chamou o método
+                var assembly = Assembly.GetExecutingAssembly();
+                var nomeResource = "04-01-XX-O-Pontape-Nossa-Aplicacao-Web.Assets.css.styles.cs";
+                var resourceStream = assembly.GetManifestResourceStream(nomeResource);
+                var bytesResource = new byte[resourceStream.Length];
 
-            response.OutputStream.Write(respostaBytes, 0, respostaBytes.Length);
-            response.OutputStream.Close();
+                resourceStream.Read(bytesResource, 0, (int)resourceStream.Length);
+                response.ContentType = "text/css; charset=utf-8";
+                response.StatusCode = 200;
+                response.ContentLength64 = resourceStream.Length;
 
-            httpListener.Stop();
+                response.OutputStream.Write(bytesResource, 0, bytesResource.Length);
+                response.OutputStream.Close();
+
+                httpListener.Stop();
+            }
+            else if (path == "/Assets/js/main.js")
+            {
+                //retornando o assembly que está em execução no momento da chamada. O assembly retornado é o que chamou o método
+                var assembly = Assembly.GetExecutingAssembly();
+                var nomeResource = "04-01-XX-O-Pontape-Nossa-Aplicacao-Web.Assets.js.main.js";
+                var resourceStream = assembly.GetManifestResourceStream(nomeResource);
+                var bytesResource = new byte[resourceStream.Length];
+
+                resourceStream.Read(bytesResource, 0, (int)resourceStream.Length);
+                response.ContentType = "application/js; charset=utf-8";
+                response.StatusCode = 200;
+                response.ContentLength64 = resourceStream.Length;
+
+                response.OutputStream.Write(bytesResource, 0, bytesResource.Length);
+                response.OutputStream.Close();
+
+                httpListener.Stop();
+            }
         }
     }
 }
