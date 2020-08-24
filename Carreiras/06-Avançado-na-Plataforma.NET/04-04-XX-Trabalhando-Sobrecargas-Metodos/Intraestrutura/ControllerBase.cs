@@ -2,7 +2,7 @@
 using System.Reflection;
 using System.Runtime.CompilerServices;
 
-namespace _04_03_XX_Invocando_Metodos_Dinamicamente.Intraestrutura
+namespace _04_04_XX_Trabalhando_Sobrecargas_Metodos.Intraestrutura
 {
     public abstract class ControllerBase
     {
@@ -11,7 +11,7 @@ namespace _04_03_XX_Invocando_Metodos_Dinamicamente.Intraestrutura
         {
             var type = GetType();
             var diretorioName = type.Name.Replace("Controller", "");
-            var nomeCompletoResource = $"_04_03_XX_Invocando_Metodos_Dinamicamente.View.{diretorioName}.{nomeArquivo}.html";
+            var nomeCompletoResource = $"_04_04_XX_Trabalhando_Sobrecargas_Metodos.View.{diretorioName}.{nomeArquivo}.html";
             var assembly = Assembly.GetExecutingAssembly();
             var streamRecurso = assembly.GetManifestResourceStream(nomeCompletoResource);
             var streamLeitura = new StreamReader(streamRecurso);

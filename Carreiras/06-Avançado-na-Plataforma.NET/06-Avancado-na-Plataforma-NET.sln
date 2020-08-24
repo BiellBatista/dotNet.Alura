@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-03-XX-Service", "04-03-X
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-03-XX-Invocando-Metodos-Dinamicamente", "04-03-XX-Invocando-Metodos-Dinamicamente\04-03-XX-Invocando-Metodos-Dinamicamente.csproj", "{0AD68BBA-9A68-4AFC-A538-2E5AB5C7CEA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-04-XX-Service", "04-04-XX-Service\04-04-XX-Service.csproj", "{683EFE8D-FBF0-411C-9A59-1F675380F26E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-04-XX-Trabalhando-Sobrecargas-Metodos", "04-04-XX-Trabalhando-Sobrecargas-Metodos\04-04-XX-Trabalhando-Sobrecargas-Metodos.csproj", "{FB008FB0-653F-4481-8443-7A2BD116A20F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +133,14 @@ Global
 		{0AD68BBA-9A68-4AFC-A538-2E5AB5C7CEA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AD68BBA-9A68-4AFC-A538-2E5AB5C7CEA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AD68BBA-9A68-4AFC-A538-2E5AB5C7CEA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{683EFE8D-FBF0-411C-9A59-1F675380F26E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{683EFE8D-FBF0-411C-9A59-1F675380F26E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{683EFE8D-FBF0-411C-9A59-1F675380F26E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{683EFE8D-FBF0-411C-9A59-1F675380F26E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB008FB0-653F-4481-8443-7A2BD116A20F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB008FB0-653F-4481-8443-7A2BD116A20F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB008FB0-653F-4481-8443-7A2BD116A20F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB008FB0-653F-4481-8443-7A2BD116A20F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
