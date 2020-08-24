@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace _04_02_XX_Usando_Assembly_Dinamicamente_Convencoes.Intraestrutura
 {
@@ -6,7 +7,7 @@ namespace _04_02_XX_Usando_Assembly_Dinamicamente_Convencoes.Intraestrutura
     {
         public static string ConverterPathParaNomeAssembly(string path)
         {
-            var prefixoAssembly = "04-02-XX-Usando-Assembly-Dinamicamente-Convencoes";
+            var prefixoAssembly = "_04_02_XX_Usando_Assembly_Dinamicamente_Convencoes";
             var pathComPontos = path.Replace('/', '.');
             var nomeCompleto = $"{prefixoAssembly}{pathComPontos}";
 
@@ -23,6 +24,14 @@ namespace _04_02_XX_Usando_Assembly_Dinamicamente_Convencoes.Intraestrutura
                 return "text/html; charset=utf-8";
 
             throw new NotImplementedException("Tipo de conteúdo não previsto!");
+        }
+
+        public static bool EhArquivo(string path)
+        {
+            var partesPath = path.Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
+            var ultimaParte = partesPath.Last();
+
+            return ultimaParte.Contains('.');
         }
     }
 }

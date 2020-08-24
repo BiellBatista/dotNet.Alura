@@ -1,6 +1,8 @@
-﻿using System;
+﻿using _04_02_XX_Usando_Assembly_Dinamicamente_Convencoes.Controller;
+using System;
 using System.Net;
 using System.Reflection;
+using System.Text;
 
 namespace _04_02_XX_Usando_Assembly_Dinamicamente_Convencoes.Intraestrutura
 {
@@ -43,26 +45,51 @@ namespace _04_02_XX_Usando_Assembly_Dinamicamente_Convencoes.Intraestrutura
 
             var path = requisicao.Url.AbsolutePath;
 
-            //retornando o assembly que está em execução no momento da chamada. O assembly retornado é o que chamou o método
-            var assembly = Assembly.GetExecutingAssembly();
-            var nomeResource = Utilidades.ConverterPathParaNomeAssembly(path);
-            var resourceStream = assembly.GetManifestResourceStream(nomeResource);
-
-            if (resourceStream == null)
+            if (Utilidades.EhArquivo(path))
             {
-                response.StatusCode = 404;
+                //retornando o assembly que está em execução no momento da chamada. O assembly retornado é o que chamou o método
+                var assembly = Assembly.GetExecutingAssembly();
+                var nomeResource = Utilidades.ConverterPathParaNomeAssembly(path);
+                var resourceStream = assembly.GetManifestResourceStream(nomeResource);
+
+                if (resourceStream == null)
+                {
+                    response.StatusCode = 404;
+                    response.OutputStream.Close();
+                }
+                else
+                {
+                    var bytesResource = new byte[resourceStream.Length];
+
+                    resourceStream.Read(bytesResource, 0, (int)resourceStream.Length);
+                    response.ContentType = Utilidades.ObterTipoDeConteudo(path);
+                    response.StatusCode = 200;
+                    response.ContentLength64 = resourceStream.Length;
+
+                    response.OutputStream.Write(bytesResource, 0, bytesResource.Length);
+                    response.OutputStream.Close();
+                }
+            }
+            else if (path == "/Cambio/MXN")
+            {
+                var controller = new CambioController();
+                var paginaConteudo = controller.MXN();
+                var bufferArquivo = Encoding.UTF8.GetBytes(paginaConteudo);
+
+                response.OutputStream.Write(bufferArquivo, 0, bufferArquivo.Length);
+                response.ContentType = "text/html; charset=utf-8";
+                response.StatusCode = 200;
                 response.OutputStream.Close();
             }
-            else
+            else if (path == "/Cambio/USD")
             {
-                var bytesResource = new byte[resourceStream.Length];
+                var controller = new CambioController();
+                var paginaConteudo = controller.USD();
+                var bufferArquivo = Encoding.UTF8.GetBytes(paginaConteudo);
 
-                resourceStream.Read(bytesResource, 0, (int)resourceStream.Length);
-                response.ContentType = Utilidades.ObterTipoDeConteudo(path);
+                response.OutputStream.Write(bufferArquivo, 0, bufferArquivo.Length);
+                response.ContentType = "text/html; charset=utf-8";
                 response.StatusCode = 200;
-                response.ContentLength64 = resourceStream.Length;
-
-                response.OutputStream.Write(bytesResource, 0, bytesResource.Length);
                 response.OutputStream.Close();
             }
 
