@@ -187,6 +187,7 @@ C# Reflection parte 1: Metadados do seu código .NET
 	04 - Trabalhando com sobrecargas de métodos
 		01 - Projeto da aula anterior
 		02 - Criando rotas parametrizaveis
+		03 - Traduzindo nossas URLs
 	05 - Invocando métodos com assinaturas complexas dinamicamente
 C# Reflection parte 2: Implementando injeção de dependência do zero
 	01 - Usando modelos em nossa View

@@ -30,5 +30,18 @@ namespace _04_04_XX_Trabalhando_Sobrecargas_Metodos.Controller
 
             return textoResultado;
         }
+
+        public string Calculo(string moedaOrigem, string moedaDestino, decimal valor)
+        {
+            var valorFinal = _cambioService.Calcular(moedaOrigem, moedaDestino, valor);
+            var textoPagina = View();
+            var textoResultado = textoPagina
+                .Replace("VALOR_MOEDA", valor.ToString())
+                .Replace("MOEDA_ORIGEM", valorFinal.ToString())
+                .Replace("VALOR_MOEDA_DESTINO", moedaOrigem)
+                .Replace("MOEDA_DESTINO", moedaDestino);
+
+            return textoResultado;
+        }
     }
 }
