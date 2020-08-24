@@ -178,6 +178,9 @@ C# Reflection parte 1: Metadados do seu código .NET
 	03 - Invocando métodos dinamicamente
 		01 - Criando manipuladores de requisição
 		02 - Criando instancias e invocando métodos dinamicamente
+		03 - Usando o Activator (A)
+		04 - O tipo ObjectHandle (B)
+		05 - CallerMemberNameAttribute
 	04 - Trabalhando com sobrecargas de métodos
 	05 - Invocando métodos com assinaturas complexas dinamicamente
 C# Reflection parte 2: Implementando injeção de dependência do zero

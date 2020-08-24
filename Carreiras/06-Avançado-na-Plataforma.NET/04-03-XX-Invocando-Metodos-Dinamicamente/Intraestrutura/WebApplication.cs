@@ -1,8 +1,5 @@
-﻿using _04_03_XX_Invocando_Metodos_Dinamicamente.Controller;
-using System;
+﻿using System;
 using System.Net;
-using System.Reflection;
-using System.Text;
 
 namespace _04_03_XX_Invocando_Metodos_Dinamicamente.Intraestrutura
 {
@@ -50,27 +47,10 @@ namespace _04_03_XX_Invocando_Metodos_Dinamicamente.Intraestrutura
                 var manipulador = new ManipuladorRequisicaoArquivo();
                 manipulador.Manipular(response, path);
             }
-            else if (path == "/Cambio/MXN")
+            else
             {
-                var controller = new CambioController();
-                var paginaConteudo = controller.MXN();
-                var bufferArquivo = Encoding.UTF8.GetBytes(paginaConteudo);
-
-                response.OutputStream.Write(bufferArquivo, 0, bufferArquivo.Length);
-                response.ContentType = "text/html; charset=utf-8";
-                response.StatusCode = 200;
-                response.OutputStream.Close();
-            }
-            else if (path == "/Cambio/USD")
-            {
-                var controller = new CambioController();
-                var paginaConteudo = controller.USD();
-                var bufferArquivo = Encoding.UTF8.GetBytes(paginaConteudo);
-
-                response.OutputStream.Write(bufferArquivo, 0, bufferArquivo.Length);
-                response.ContentType = "text/html; charset=utf-8";
-                response.StatusCode = 200;
-                response.OutputStream.Close();
+                var manipulador = new ManipuladorRequisicaoController();
+                manipulador.Manipular(response, path);
             }
 
             httpListener.Stop();
