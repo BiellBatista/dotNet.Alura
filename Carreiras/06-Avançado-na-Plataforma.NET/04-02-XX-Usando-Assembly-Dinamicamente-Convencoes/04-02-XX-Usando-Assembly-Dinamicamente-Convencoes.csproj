@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\CambioController.cs" />
     <Compile Include="Intraestrutura\Utilidades.cs" />
     <Compile Include="Intraestrutura\WebApplication.cs" />
     <Compile Include="Program.cs" />
@@ -71,6 +72,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\Home\Index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\04-02-XX-Service\04-02-XX-Service.csproj">
+      <Project>{C5542BC6-04EE-4317-ABCB-89BB34B52DA5}</Project>
+      <Name>04-02-XX-Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

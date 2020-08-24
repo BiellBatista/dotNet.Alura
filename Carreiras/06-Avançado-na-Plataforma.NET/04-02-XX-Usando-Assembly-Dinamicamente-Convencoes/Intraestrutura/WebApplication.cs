@@ -47,15 +47,24 @@ namespace _04_02_XX_Usando_Assembly_Dinamicamente_Convencoes.Intraestrutura
             var assembly = Assembly.GetExecutingAssembly();
             var nomeResource = Utilidades.ConverterPathParaNomeAssembly(path);
             var resourceStream = assembly.GetManifestResourceStream(nomeResource);
-            var bytesResource = new byte[resourceStream.Length];
 
-            resourceStream.Read(bytesResource, 0, (int)resourceStream.Length);
-            response.ContentType = Utilidades.ObterTipoDeConteudo(path);
-            response.StatusCode = 200;
-            response.ContentLength64 = resourceStream.Length;
+            if (resourceStream == null)
+            {
+                response.StatusCode = 404;
+                response.OutputStream.Close();
+            }
+            else
+            {
+                var bytesResource = new byte[resourceStream.Length];
 
-            response.OutputStream.Write(bytesResource, 0, bytesResource.Length);
-            response.OutputStream.Close();
+                resourceStream.Read(bytesResource, 0, (int)resourceStream.Length);
+                response.ContentType = Utilidades.ObterTipoDeConteudo(path);
+                response.StatusCode = 200;
+                response.ContentLength64 = resourceStream.Length;
+
+                response.OutputStream.Write(bytesResource, 0, bytesResource.Length);
+                response.OutputStream.Close();
+            }
 
             httpListener.Stop();
         }
