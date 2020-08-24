@@ -176,6 +176,7 @@ C# Reflection parte 1: Metadados do seu código .NET
 		07 - Como obter um Stream de recurso em nosso Assembly (B)
 		08 - Criando manipulador de requisições!
 	03 - Invocando métodos dinamicamente
+		01 - Criando manipuladores de requisição
 	04 - Trabalhando com sobrecargas de métodos
 	05 - Invocando métodos com assinaturas complexas dinamicamente
 C# Reflection parte 2: Implementando injeção de dependência do zero

@@ -39,6 +39,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-02-XX-Usando-Assembly-Di
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-02-XX-Service", "04-02-XX-Service\04-02-XX-Service.csproj", "{C5542BC6-04EE-4317-ABCB-89BB34B52DA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-03-XX-Service", "04-03-XX-Service\04-03-XX-Service.csproj", "{3C3C7556-D140-4A5D-ACEE-1C5E1E1F875C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-03-XX-Invocando-Metodos-Dinamicamente", "04-03-XX-Invocando-Metodos-Dinamicamente\04-03-XX-Invocando-Metodos-Dinamicamente.csproj", "{0AD68BBA-9A68-4AFC-A538-2E5AB5C7CEA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +121,14 @@ Global
 		{C5542BC6-04EE-4317-ABCB-89BB34B52DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5542BC6-04EE-4317-ABCB-89BB34B52DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5542BC6-04EE-4317-ABCB-89BB34B52DA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C3C7556-D140-4A5D-ACEE-1C5E1E1F875C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C3C7556-D140-4A5D-ACEE-1C5E1E1F875C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C3C7556-D140-4A5D-ACEE-1C5E1E1F875C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C3C7556-D140-4A5D-ACEE-1C5E1E1F875C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AD68BBA-9A68-4AFC-A538-2E5AB5C7CEA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD68BBA-9A68-4AFC-A538-2E5AB5C7CEA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD68BBA-9A68-4AFC-A538-2E5AB5C7CEA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AD68BBA-9A68-4AFC-A538-2E5AB5C7CEA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
