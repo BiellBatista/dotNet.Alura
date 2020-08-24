@@ -181,6 +181,9 @@ C# Reflection parte 1: Metadados do seu código .NET
 		03 - Usando o Activator (A)
 		04 - O tipo ObjectHandle (B)
 		05 - CallerMemberNameAttribute
+		06 - Informações do método de chamada
+		07 - O comportamento do CallerMemberName (C)
+		08 - Desenvolvendo a ControllerBase e o ManipuladorRequisicaoController!
 	04 - Trabalhando com sobrecargas de métodos
 	05 - Invocando métodos com assinaturas complexas dinamicamente
 C# Reflection parte 2: Implementando injeção de dependência do zero
