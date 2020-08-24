@@ -43,5 +43,7 @@ namespace _04_04_XX_Trabalhando_Sobrecargas_Metodos.Controller
 
             return textoResultado;
         }
+
+        public string Calculo(string moedaDestino, decimal valor) => Calculo("BRL", moedaDestino, valor);
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _04_04_XX_Trabalhando_Sobrecargas_Metodos.Intraestrutura.Binding;
+using System;
 using System.Net;
 using System.Text;
 
@@ -6,6 +7,8 @@ namespace _04_04_XX_Trabalhando_Sobrecargas_Metodos.Intraestrutura
 {
     public class ManipuladorRequisicaoController
     {
+        private readonly ActionBinder _actionBinder = new ActionBinder();
+
         public void Manipular(HttpListenerResponse response, string path)
         {
             var partes = path.Split(new char[] { '/' }, System.StringSplitOptions.RemoveEmptyEntries);
@@ -16,7 +19,8 @@ namespace _04_04_XX_Trabalhando_Sobrecargas_Metodos.Intraestrutura
             var controllerWrapper = Activator.CreateInstance("_04_04_XX_Trabalhando_Sobrecargas_Metodos.Controller", controllerNomeCompleto, new object[0]);
             var controller = controllerWrapper.Unwrap();
             //pegando as informacoes de um metodo do objeto que foi criado dinamicamente
-            var methodInfo = controller.GetType().GetMethod(actionName);
+            //var methodInfo = controller.GetType().GetMethod(actionName);
+            var methodInfo = _actionBinder.ObterMethodInfo(controller, path);
             //chamando o método
             var resultAction = (string)methodInfo.Invoke(controller, new object[0]);
 
