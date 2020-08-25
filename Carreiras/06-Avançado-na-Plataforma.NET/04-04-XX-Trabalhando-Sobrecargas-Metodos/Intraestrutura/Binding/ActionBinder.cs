@@ -23,6 +23,8 @@ namespace _04_04_XX_Trabalhando_Sobrecargas_Metodos.Intraestrutura.Binding
                 var nomeAction = nomeControllerComAction.Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries)[1];
                 var queryString = path.Substring(idxInterrogacao + 1);
                 var tuplasNomeValor = ObterArgumentoNomeValores(queryString);
+
+                return null;
             }
         }
 

@@ -22,9 +22,9 @@ namespace _04_04_XX_Trabalhando_Sobrecargas_Metodos.Intraestrutura
             //var methodInfo = controller.GetType().GetMethod(actionName);
             var methodInfo = _actionBinder.ObterMethodInfo(controller, path);
             //chamando o método
-            var resultAction = (string)methodInfo.Invoke(controller, new object[0]);
+            //var resultAction = (string)methodInfo.Invoke(controller, new object[0]);
 
-            var bufferArquivo = Encoding.UTF8.GetBytes(resultAction);
+            var bufferArquivo = Encoding.UTF8.GetBytes("");
 
             response.StatusCode = 200;
             response.ContentType = "text/html; charset=utf-8";

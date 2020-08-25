@@ -45,5 +45,7 @@ namespace _04_05_XX_Invocando_Metodos_Assinaturas_Complexas_Dinamicamente.Contro
         }
 
         public string Calculo(string moedaDestino, decimal valor) => Calculo("BRL", moedaDestino, valor);
+
+        public string Calculo(string moedaDestino) => Calculo("BRL", moedaDestino, 1);
     }
 }

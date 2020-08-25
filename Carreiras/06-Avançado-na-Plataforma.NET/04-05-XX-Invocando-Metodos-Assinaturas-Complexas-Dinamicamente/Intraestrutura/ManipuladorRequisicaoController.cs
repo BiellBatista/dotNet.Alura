@@ -22,7 +22,7 @@ namespace _04_05_XX_Invocando_Metodos_Assinaturas_Complexas_Dinamicamente.Intrae
             //var methodInfo = controller.GetType().GetMethod(actionName);
             var methodInfo = _actionBinder.ObterActionBindInfo(controller, path);
             //chamando o método
-            var resultAction = (string)methodInfo.Invoke(controller, new object[0]);
+            var resultAction = (string)methodInfo.Invoke(controller);
 
             var bufferArquivo = Encoding.UTF8.GetBytes(resultAction);
 

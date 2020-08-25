@@ -40,7 +40,7 @@ namespace _04_05_XX_Invocando_Metodos_Assinaturas_Complexas_Dinamicamente.Intrae
             var requisicao = contexto.Request;
             var response = contexto.Response;
 
-            var path = requisicao.Url.AbsolutePath;
+            var path = requisicao.Url.PathAndQuery;
 
             if (Utilidades.EhArquivo(path))
             {
