@@ -206,6 +206,9 @@ C# Reflection parte 1: Metadados do seu código .NET
 		09 - Implementando suporte a várias sobrecargas
 C# Reflection parte 2: Implementando injeção de dependência do zero
 	01 - Usando modelos em nossa View
+		01 - Introdução
+		02 - Projeto do curso anterior
+		03 - Usando modelos em nossa View
 	02 - Usando atributos como filtros
 	03 - Conhecendo IoC
 	04 - Implementando IoC
