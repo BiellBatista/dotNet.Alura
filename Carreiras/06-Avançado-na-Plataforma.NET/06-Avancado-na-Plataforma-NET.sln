@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-04-XX-Service", "04-04-X
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-04-XX-Trabalhando-Sobrecargas-Metodos", "04-04-XX-Trabalhando-Sobrecargas-Metodos\04-04-XX-Trabalhando-Sobrecargas-Metodos.csproj", "{FB008FB0-653F-4481-8443-7A2BD116A20F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-05-XX-Service", "04-05-XX-Service\04-05-XX-Service.csproj", "{7675E1D5-5FF1-4698-A03A-7164422B46DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-05-XX-Invocando-Metodos-Assinaturas-Complexas-Dinamicamente", "04-05-XX-Invocando-Metodos-Assinaturas-Complexas-Dinamicamente\04-05-XX-Invocando-Metodos-Assinaturas-Complexas-Dinamicamente.csproj", "{8D1CB0E8-5DCE-4533-B3EA-B5CD3D87E458}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +145,14 @@ Global
 		{FB008FB0-653F-4481-8443-7A2BD116A20F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB008FB0-653F-4481-8443-7A2BD116A20F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB008FB0-653F-4481-8443-7A2BD116A20F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7675E1D5-5FF1-4698-A03A-7164422B46DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7675E1D5-5FF1-4698-A03A-7164422B46DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7675E1D5-5FF1-4698-A03A-7164422B46DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7675E1D5-5FF1-4698-A03A-7164422B46DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D1CB0E8-5DCE-4533-B3EA-B5CD3D87E458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D1CB0E8-5DCE-4533-B3EA-B5CD3D87E458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D1CB0E8-5DCE-4533-B3EA-B5CD3D87E458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D1CB0E8-5DCE-4533-B3EA-B5CD3D87E458}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -195,6 +195,7 @@ C# Reflection parte 1: Metadados do seu código .NET
 		08 - Type::GetMethods() (A / D)
 		09 - Realizando testes no LinqPAD
 	05 - Invocando métodos com assinaturas complexas dinamicamente
+		01 - Recuperando sobrecargas
 C# Reflection parte 2: Implementando injeção de dependência do zero
 	01 - Usando modelos em nossa View
 	02 - Usando atributos como filtros
