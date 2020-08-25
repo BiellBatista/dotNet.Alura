@@ -20,7 +20,7 @@ namespace _04_05_XX_Invocando_Metodos_Assinaturas_Complexas_Dinamicamente.Intrae
             var controller = controllerWrapper.Unwrap();
             //pegando as informacoes de um metodo do objeto que foi criado dinamicamente
             //var methodInfo = controller.GetType().GetMethod(actionName);
-            var methodInfo = _actionBinder.ObterMethodInfo(controller, path);
+            var methodInfo = _actionBinder.ObterActionBindInfo(controller, path);
             //chamando o método
             var resultAction = (string)methodInfo.Invoke(controller, new object[0]);
 

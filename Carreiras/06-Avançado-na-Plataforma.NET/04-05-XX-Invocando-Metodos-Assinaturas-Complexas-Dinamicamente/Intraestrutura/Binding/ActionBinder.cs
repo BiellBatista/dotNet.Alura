@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 
 namespace _04_05_XX_Invocando_Metodos_Assinaturas_Complexas_Dinamicamente.Intraestrutura.Binding
 {
     public class ActionBinder
     {
-        public object ObterMethodInfo(object controller, string path)
+        public ActionBindInfo ObterActionBindInfo(object controller, string path)
         {
             var idxInterrogacao = path.IndexOf('?');
             var existeQueryString = idxInterrogacao >= 0;
@@ -15,7 +17,7 @@ namespace _04_05_XX_Invocando_Metodos_Assinaturas_Complexas_Dinamicamente.Intrae
                 var nomeAction = path.Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries)[1];
                 var methodInfo = controller.GetType().GetMethod(nomeAction);
 
-                return methodInfo;
+                return new ActionBindInfo(methodInfo, Enumerable.Empty<ArgumentoNomeValor>());
             }
             else
             {
@@ -23,6 +25,10 @@ namespace _04_05_XX_Invocando_Metodos_Assinaturas_Complexas_Dinamicamente.Intrae
                 var nomeAction = nomeControllerComAction.Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries)[1];
                 var queryString = path.Substring(idxInterrogacao + 1);
                 var tuplasNomeValor = ObterArgumentoNomeValores(queryString);
+                var nomeArgumentos = tuplasNomeValor.Select(tupla => tupla.Nome).ToArray();
+                var methodInfo = ObterMethodInfoAPartirDeNomeEArgumentos(nomeAction, nomeArgumentos, controller);
+
+                return new ActionBindInfo(methodInfo, tuplasNomeValor);
             }
         }
 
@@ -35,6 +41,39 @@ namespace _04_05_XX_Invocando_Metodos_Assinaturas_Complexas_Dinamicamente.Intrae
                 var partesTupla = tupla.Split(new char[] { '=' }, StringSplitOptions.RemoveEmptyEntries);
                 yield return new ArgumentoNomeValor(partesTupla[0], partesTupla[1]);
             }
+        }
+
+        private MethodInfo ObterMethodInfoAPartirDeNomeEArgumentos(string nomeAction, string[] argumentos, object controller)
+        {
+            var argumentosCount = argumentos.Length;
+
+            var bindingFlags =
+                BindingFlags.Instance |
+                BindingFlags.Static |
+                BindingFlags.Public |
+                BindingFlags.DeclaredOnly;
+
+            var metodos = controller.GetType().GetMethods(bindingFlags);
+            var sobrecargas = metodos.Where(metodo => metodo.Name == nomeAction);
+
+            foreach (var sobrecarga in sobrecargas)
+            {
+                var parametros = sobrecarga.GetParameters();
+
+                if (argumentosCount != parametros.Length)
+                {
+                    continue;
+                }
+
+                var match = parametros.All(parametro => argumentos.Contains(parametro.Name));
+
+                if (match)
+                {
+                    return sobrecarga;
+                }
+            }
+
+            throw new ArgumentException($"A sobrecarga do método {nomeAction} não foi encontrada");
         }
     }
 }
