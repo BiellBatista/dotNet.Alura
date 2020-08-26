@@ -1,4 +1,5 @@
 ﻿using _05_02_XX_Usando_Atributos_Filtros.Infraestrutura.Binding;
+using _05_02_XX_Usando_Atributos_Filtros.Infraestrutura.Filtros;
 using System;
 using System.Net;
 using System.Text;
@@ -8,6 +9,7 @@ namespace _05_02_XX_Usando_Atributos_Filtros.Infraestrutura
     public class ManipuladorRequisicaoController
     {
         private readonly ActionBinder _actionBinder = new ActionBinder();
+        private readonly FilterResolver _filterResolver = new FilterResolver();
 
         public void Manipular(HttpListenerResponse resposta, string path)
         {
@@ -21,9 +23,9 @@ namespace _05_02_XX_Usando_Atributos_Filtros.Infraestrutura
             var controller = controllerWrapper.Unwrap();
 
             //var methodInfo = controller.GetType().GetMethod(actionNome);
-            var methodInfo = _actionBinder.ObterActionBindInfo(controller, path);
-
-            var resultadoAction = (string)methodInfo.Invoke(controller);
+            var actionBindInfo = _actionBinder.ObterActionBindInfo(controller, path);
+            var filterResult = _filterResolver.VerificarFiltros(actionBindInfo);
+            var resultadoAction = (string)actionBindInfo.Invoke(controller);
 
             var buffer = Encoding.UTF8.GetBytes(resultadoAction);
 
