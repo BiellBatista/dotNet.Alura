@@ -210,6 +210,10 @@ C# Reflection parte 2: Implementando injeção de dependência do zero
 		02 - Projeto do curso anterior
 		03 - Usando modelos em nossa View
 		04 - Implementando o código de injeção de modelo
+		05 - O método PropertyInfo::GetValue(object) (B)
+		06 - Valor de instância no método PropertyInfo::GetValue(object) (B)
+		07 - O retorno de GetValue(object) (C)
+		08 - Implementando View(object model, [CallerMemberName] nomeArquivo = null)
 	02 - Usando atributos como filtros
 	03 - Conhecendo IoC
 	04 - Implementando IoC
