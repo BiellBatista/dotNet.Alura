@@ -1,7 +1,6 @@
 ﻿using _05_02_XX_Service;
 using _05_02_XX_Service.Cambio;
 using _05_02_XX_Usando_Atributos_Filtros.Infraestrutura;
-using _05_02_XX_Usando_Atributos_Filtros.Model;
 
 namespace _05_02_XX_Usando_Atributos_Filtros.Controller
 {
@@ -37,7 +36,7 @@ namespace _05_02_XX_Usando_Atributos_Filtros.Controller
         public string Calculo(string moedaOrigem, string moedaDestino, decimal valor)
         {
             var valorFinal = _cambioService.Calcular(moedaOrigem, moedaDestino, valor);
-            var modelo = new CalculoCambioModel
+            var modelo = new
             {
                 MoedaDestino = moedaDestino,
                 ValorDestino = valorFinal,
