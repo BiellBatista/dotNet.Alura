@@ -222,6 +222,8 @@ C# Reflection parte 2: Implementando injeção de dependência do zero
 		05 - Convenções na criação de atributos (C)
 		06 - Recuperando atributos de um método
 		07 - Concluindo os filtros de nossos atributos
+		08 - Atributos complexos (C)
+		09 - Criando e manipulando atributos
 	03 - Conhecendo IoC
 	04 - Implementando IoC
 	05 - Ajustes finos e conclusão
