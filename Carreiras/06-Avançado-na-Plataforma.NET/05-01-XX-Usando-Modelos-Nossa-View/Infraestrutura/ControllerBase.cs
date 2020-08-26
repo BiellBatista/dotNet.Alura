@@ -21,5 +21,12 @@ namespace _05_01_XX_Usando_Modelos_Nossa_View.Infraestrutura
 
             return textoPagina;
         }
+
+        protected string View(object model, [CallerMemberName] string nomeArquivo = null)
+        {
+            var viewBruta = View(nomeArquivo);
+
+            return string.Empty;
+        }
     }
 }

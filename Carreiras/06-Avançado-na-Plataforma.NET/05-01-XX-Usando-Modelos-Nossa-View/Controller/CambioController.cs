@@ -1,6 +1,7 @@
 ﻿using _05_01_XX_Service;
 using _05_01_XX_Service.Cambio;
 using _05_01_XX_Usando_Modelos_Nossa_View.Infraestrutura;
+using _05_01_XX_Usando_Modelos_Nossa_View.Model;
 
 namespace _05_01_XX_Usando_Modelos_Nossa_View.Controller
 {
@@ -36,16 +37,15 @@ namespace _05_01_XX_Usando_Modelos_Nossa_View.Controller
         public string Calculo(string moedaOrigem, string moedaDestino, decimal valor)
         {
             var valorFinal = _cambioService.Calcular(moedaOrigem, moedaDestino, valor);
-            var textoPagina = View();
+            var modelo = new CalculoCambioModel
+            {
+                MoedaDestino = moedaDestino,
+                ValorDestino = valorFinal,
+                MoedaOrigem = moedaOrigem,
+                ValorOrigem = valor
+            };
 
-            var textoResultado =
-                textoPagina
-                    .Replace("VALOR_MOEDA_ORIGEM", valor.ToString())
-                    .Replace("VALOR_MOEDA_DESTINO", valorFinal.ToString())
-                    .Replace("MOEDA_ORIGEM", moedaOrigem)
-                    .Replace("MOEDA_DESTINO", moedaDestino);
-
-            return textoResultado;
+            return View(modelo);
         }
 
         public string Calculo(string moedaDestino, decimal valor) =>

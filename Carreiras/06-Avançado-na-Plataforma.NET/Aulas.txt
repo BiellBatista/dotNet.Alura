@@ -209,6 +209,7 @@ C# Reflection parte 2: Implementando injeção de dependência do zero
 		01 - Introdução
 		02 - Projeto do curso anterior
 		03 - Usando modelos em nossa View
+		04 - Implementando o código de injeção de modelo
 	02 - Usando atributos como filtros
 	03 - Conhecendo IoC
 	04 - Implementando IoC
