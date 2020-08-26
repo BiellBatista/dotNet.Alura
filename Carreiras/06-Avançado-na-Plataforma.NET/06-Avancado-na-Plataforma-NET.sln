@@ -37,23 +37,27 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-01-XX-O-Pontape-Nossa-Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-02-XX-Usando-Assembly-Dinamicamente-Convencoes", "04-02-XX-Usando-Assembly-Dinamicamente-Convencoes\04-02-XX-Usando-Assembly-Dinamicamente-Convencoes.csproj", "{668E656A-C910-43FF-B71B-04F5B4F23295}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-02-XX-Service", "04-02-XX-Service\04-02-XX-Service.csproj", "{C5542BC6-04EE-4317-ABCB-89BB34B52DA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-02-XX-Service", "04-02-XX-Service\04-02-XX-Service.csproj", "{C5542BC6-04EE-4317-ABCB-89BB34B52DA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-03-XX-Service", "04-03-XX-Service\04-03-XX-Service.csproj", "{3C3C7556-D140-4A5D-ACEE-1C5E1E1F875C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-03-XX-Service", "04-03-XX-Service\04-03-XX-Service.csproj", "{3C3C7556-D140-4A5D-ACEE-1C5E1E1F875C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-03-XX-Invocando-Metodos-Dinamicamente", "04-03-XX-Invocando-Metodos-Dinamicamente\04-03-XX-Invocando-Metodos-Dinamicamente.csproj", "{0AD68BBA-9A68-4AFC-A538-2E5AB5C7CEA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-04-XX-Service", "04-04-XX-Service\04-04-XX-Service.csproj", "{683EFE8D-FBF0-411C-9A59-1F675380F26E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-04-XX-Service", "04-04-XX-Service\04-04-XX-Service.csproj", "{683EFE8D-FBF0-411C-9A59-1F675380F26E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-04-XX-Trabalhando-Sobrecargas-Metodos", "04-04-XX-Trabalhando-Sobrecargas-Metodos\04-04-XX-Trabalhando-Sobrecargas-Metodos.csproj", "{FB008FB0-653F-4481-8443-7A2BD116A20F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-05-XX-Service", "04-05-XX-Service\04-05-XX-Service.csproj", "{7675E1D5-5FF1-4698-A03A-7164422B46DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-05-XX-Service", "04-05-XX-Service\04-05-XX-Service.csproj", "{7675E1D5-5FF1-4698-A03A-7164422B46DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-05-XX-Invocando-Metodos-Assinaturas-Complexas-Dinamicamente", "04-05-XX-Invocando-Metodos-Assinaturas-Complexas-Dinamicamente\04-05-XX-Invocando-Metodos-Assinaturas-Complexas-Dinamicamente.csproj", "{8D1CB0E8-5DCE-4533-B3EA-B5CD3D87E458}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-01-XX-Usando-Modelos-Nossa-View", "05-01-XX-Usando-Modelos-Nossa-View\05-01-XX-Usando-Modelos-Nossa-View.csproj", "{9E9E0AD4-6B91-4564-82EC-E602E3AB2348}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-01-XX-Service", "05-01-XX-Service\05-01-XX-Service.csproj", "{E496BDB6-A9F1-4E4D-89B9-5C745047ECB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-01-XX-Service", "05-01-XX-Service\05-01-XX-Service.csproj", "{E496BDB6-A9F1-4E4D-89B9-5C745047ECB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-02-XX-Usando-Atributos-Filtros", "05-02-XX-Usando-Atributos-Filtros\05-02-XX-Usando-Atributos-Filtros.csproj", "{79D80710-CD13-4A1D-AAE2-0DCAEDF9B599}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-02-XX-Service", "05-02-XX-Service\05-02-XX-Service.csproj", "{D5C02222-14C2-4960-A320-63BC568D76B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +169,14 @@ Global
 		{E496BDB6-A9F1-4E4D-89B9-5C745047ECB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E496BDB6-A9F1-4E4D-89B9-5C745047ECB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E496BDB6-A9F1-4E4D-89B9-5C745047ECB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D80710-CD13-4A1D-AAE2-0DCAEDF9B599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D80710-CD13-4A1D-AAE2-0DCAEDF9B599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D80710-CD13-4A1D-AAE2-0DCAEDF9B599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D80710-CD13-4A1D-AAE2-0DCAEDF9B599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5C02222-14C2-4960-A320-63BC568D76B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C02222-14C2-4960-A320-63BC568D76B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C02222-14C2-4960-A320-63BC568D76B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C02222-14C2-4960-A320-63BC568D76B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
