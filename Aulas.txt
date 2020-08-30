@@ -529,3 +529,94 @@ Formação Desenvolvedor .NET
 		03 - ViewComponents
 		04 - Isolando Contextos
 		05 - Modelos Delimitados
+-------------------------------------------------------------------------------------------------------------------------
+Formação Certificação C# Programming
+	Certificação C# Programming parte 1: Criar tipos
+		01 - Tipos integrais
+		02 - Ponto flutuante, booleanos, structs e enums
+		03 - Criar tipos de referência
+		04 - Classes, métodos, métodos de extensão
+		05 - Criar métodos sobrecarregados e substituídos
+	Certificação C# Programming parte 2: Consumir tipos
+		01 - Propriedades e Acessadores
+		02 - Projetar Interfaces
+		03 - Interfaces Explícitas
+		04 - Classe Base
+		05 - Comparações Entre Objetos
+	Certificação C# Programming parte 3: Encapsulamento e Hierarquia de Classes
+		01 - Propriedades e Acessadores
+		02 - Projetar Interfaces
+		03 - Interfaces Explícitas
+		04 - Classe Base
+		05 - Comparações Entre Objetos
+	Certificação C# Programming parte 4: Fluxo de programa e exceções
+		01 - Fluxo de Programa If, Else, Switch
+		02 - Compilação Condicional
+		03 - Fluxo de Programa While e Do
+		04 - Iteração com For e Foreach
+		05 - Manipulação de Exceções
+		06 - Exceções com SQL Server e Rede
+	Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
+		01 - Gerenciamento de Memória
+		02 - Coletando Lixo
+		03 - O Padrão Disposable
+		04 - Concatenação, Escrita e Leitura de Strings
+		05 - Pesquisando Strings
+		06 - Formatação de Strings
+	Certificação C# Programming parte 6: Coleções, XML e JSON
+		01 - Serialização com XML
+		02 - Serialização com JSON
+		03 - Serialização Binária, Personalizada e com Contrato
+		04 - Arrays
+		05 - Listas
+		06 - Conjuntos, Dicionários e Filas
+	Certificação C# Programming parte 7: Eventos e LINQ
+		01 - Introdução aos Eventos
+		02 - Manipuladores de Eventos
+		03 - Delegados e Lambda
+		04 - Func, Action e Predicate
+		05 - Consultando e Filtrando Dados com LINQ
+		06 - Projeção de Dados
+		07 - Agrupamento e Agregação
+		08 - Paginação e Sintaxe de Método
+		09 - Consulta com XML
+	Certificação C# Programming parte 8: Entrada e Saída de Dados
+		01 - Ler e Gravar Bytes em Fluxos de Arquivos
+		02 - Ler e Gravar Strings em Fluxos de Arquivos
+		03 - Gerenciando Arquivos
+		04 - Gerenciando Diretórios
+		05 - Acessando a Web de Forma Assíncrona
+		06 - Lendo e Atualizando Banco de Dados
+		07 - Consumindo Serviços e Interpretando Dados
+	Certificação C# Programming parte 9: Depurar Aplicativos
+		01 - Gerenciando Assemblies
+		02 - Assinando Assemblies com Nome Forte
+		03 - Depurando Aplicações
+		04 - Compilação Condicional
+		05 - Compilação em Modo Debug e Release
+		06 - Rastreamento de Aplicações
+		07 - Gravando Mensagens no Event Log
+		08 - Contadores de Desempenho
+	Certificação C# Programming parte 10: Reflection
+		01 - Criar e aplicar atributos
+		02 - Ler os atributos
+		03 - Usar reflection
+		04 - Geração de código
+		05 - Tipos do System Reflection
+	Certificação C# Programming parte 11: Multithreading
+		01 - Introdução ao Task Parallel Library Ver primeiro vídeo
+		02 - Consultas LINQ com Paralelismo
+		03 - Espera, Continuação e Hierarquia de Tarefas
+		04 - Threads
+		05 - Desbloqueando a Interface do Usuário
+		06 - Async, Await, Coleções Simultâneas e Bloqueios
+		07 - Cancelamento de Tarefas e Métodos Thread Safe
+	Certificação C# Programming parte 12: Validar Segurança
+		01 - Validar Dados JSON
+		02 - Escolher o Tipo de Coleção Adequada
+		03 - Validando com Expressão Regular
+		04 - Funções Internas para Validar Tipos e Conteúdos
+		05 - Criptografia Simétrica e Assimétrica
+		06 - Gerenciamento de Chave
+		07 - Gerenciar e Criar Certificados
+		08 - Fazendo Hash de Dados
