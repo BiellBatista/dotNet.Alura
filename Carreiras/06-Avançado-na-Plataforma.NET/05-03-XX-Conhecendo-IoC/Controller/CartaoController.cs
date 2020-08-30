@@ -1,6 +1,5 @@
 ﻿using _05_03_XX_Conhecendo_IoC.Infraestrutura;
 using _05_03_XX_Service;
-using _05_03_XX_Service.Cartao;
 
 namespace _05_03_XX_Conhecendo_IoC.Controller
 {
@@ -8,9 +7,9 @@ namespace _05_03_XX_Conhecendo_IoC.Controller
     {
         private ICartaoService _cartaoService;
 
-        public CartaoController()
+        public CartaoController(ICartaoService cartaoService)
         {
-            _cartaoService = new CartaoServiceTeste();
+            _cartaoService = cartaoService;
         }
 
         public string Debito() => View(new

@@ -228,5 +228,8 @@ C# Reflection parte 2: Implementando injeção de dependência do zero
 		01 - Projeto da aula anterior
 		02 - Problemas com nossas classes de teste
 		03 - Criando nosso container de dependência
+		04 - Por que usar inversão de controle (A)
+		05 - Verificando hierarquias de classes (A / B)
+		06 - Construindo Container de dependência
 	04 - Implementando IoC
 	05 - Ajustes finos e conclusão

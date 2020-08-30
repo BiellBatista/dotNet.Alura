@@ -1,6 +1,4 @@
 ﻿using _05_03_XX_Service;
-using _05_03_XX_Service.Cambio;
-using _05_03_XX_Service.Cartao;
 using _05_03_XX_Conhecendo_IoC.Filtros;
 using _05_03_XX_Conhecendo_IoC.Infraestrutura;
 
@@ -11,10 +9,10 @@ namespace _05_03_XX_Conhecendo_IoC.Controller
         private ICambioService _cambioService;
         private ICartaoService _cartaoService;
 
-        public CambioController()
+        public CambioController(ICambioService cambioService, ICartaoService cartaoService)
         {
-            _cambioService = new CambioTesteService();
-            _cartaoService = new CartaoServiceTeste();
+            _cambioService = cambioService;
+            _cartaoService = cartaoService;
         }
 
         [ApenasHorarioComercialFiltro]
