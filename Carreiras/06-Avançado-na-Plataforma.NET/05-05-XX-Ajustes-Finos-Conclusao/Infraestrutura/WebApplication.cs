@@ -7,6 +7,14 @@ using System.Net;
 
 namespace _05_05_XX_Ajustes_Finos_Conclusao.Infraestrutura
 {
+    public class CartaoServiceTesteContainer
+    {
+        public string ObterCartaoDeCreditoDeDestaque()
+            => "Cartão de Crédito do Teste de Container";
+        public string ObterCartaoDeDebitoDeDestaque()
+            => "Cartão de Crédito do Teste de Container";
+    }
+
     public class WebApplication
     {
         private readonly string[] _prefixos;
@@ -58,8 +66,11 @@ namespace _05_05_XX_Ajustes_Finos_Conclusao.Infraestrutura
 
         private void Configurar()
         {
-            _container.Registrar(typeof(ICambioService), typeof(CambioTesteService));
-            _container.Registrar(typeof(ICartaoService), typeof(CartaoServiceTeste));
+            //_container.Registrar(typeof(ICambioService), typeof(CambioTesteService));
+            //_container.Registrar(typeof(ICartaoService), typeof(CartaoServiceTeste));
+
+            _container.Registrar<ICambioService, CambioTesteService>();
+            _container.Registrar<ICartaoService, CartaoServiceTeste>();
         }
     }
 }

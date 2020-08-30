@@ -242,3 +242,7 @@ C# Reflection parte 2: Implementando injeção de dependência do zero
 	05 - Ajustes finos e conclusão
 		01 - Projeto da aula anterior
 		02 - Usando constraints do compilador
+		03 - O compilador ajudando o Reflection (C)
+		04 - Limitações de nossa sobrecarga Registrar<TOrigem, TDestino>() (C)
+		05 - Comparando nossas implementações (A / C)
+		06 - Debugando nossa aplicação de ponta a ponta
