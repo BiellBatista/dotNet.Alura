@@ -232,4 +232,6 @@ C# Reflection parte 2: Implementando injeção de dependência do zero
 		05 - Verificando hierarquias de classes (A / B)
 		06 - Construindo Container de dependência
 	04 - Implementando IoC
+		01 - Projeto da aula anterior
+		02 - Implementando o método Recuperar
 	05 - Ajustes finos e conclusão
