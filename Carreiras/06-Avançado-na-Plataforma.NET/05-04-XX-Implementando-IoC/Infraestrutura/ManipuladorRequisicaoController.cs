@@ -1,5 +1,6 @@
 ﻿using _05_04_XX_Implementando_IoC.Infraestrutura.Binding;
 using _05_04_XX_Implementando_IoC.Infraestrutura.Filtros;
+using _05_04_XX_Implementando_IoC.Infraestrutura.IoC;
 using System;
 using System.Net;
 using System.Text;
@@ -9,15 +10,24 @@ namespace _05_04_XX_Implementando_IoC.Infraestrutura
     public class ManipuladorRequisicaoController
     {
         private readonly ActionBinder _actionBinder = new ActionBinder();
+        private readonly ControllerResolve _controllerResolve;
         private readonly FilterResolver _filterResolver = new FilterResolver();
+
+        public ManipuladorRequisicaoController(IContainer container)
+        {
+            _controllerResolve = new ControllerResolve(container);
+        }
 
         public void Manipular(HttpListenerResponse resposta, string path)
         {
             var partes = path.Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
             var controllerNome = partes[0];
             var controllerNomeCompleto = $"_05_04_XX_Implementando_IoC.Controller.{controllerNome}Controller";
-            var controllerWrapper = Activator.CreateInstance("_05_04_XX_Implementando_IoC", controllerNomeCompleto, new object[0]);
-            var controller = controllerWrapper.Unwrap();
+            //var controllerWrapper = Activator.CreateInstance("_05_04_XX_Implementando_IoC", controllerNomeCompleto, new object[0]);
+            //var controller = controllerWrapper.Unwrap();
+
+            var controller = _controllerResolve.ObterController(controllerNomeCompleto);
+
             var actionBindInfo = _actionBinder.ObterActionBindInfo(controller, path);
             var filterResult = _filterResolver.VerificarFiltros(actionBindInfo);
 

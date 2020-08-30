@@ -237,4 +237,6 @@ C# Reflection parte 2: Implementando injeção de dependência do zero
 		03 - Obtendo construtores (C)
 		04 - Informações de um parâmetro (B)
 		05 - Resolvendo nossas controllers com o novo container
+		06 - Comportamento de nosso container (B)
+		07 -  Finalizando o ContainerSimples
 	05 - Ajustes finos e conclusão

@@ -1,4 +1,8 @@
-﻿using System;
+﻿using _05_04_XX_Implementando_IoC.Infraestrutura.IoC;
+using _05_04_XX_Service;
+using _05_04_XX_Service.Cambio;
+using _05_04_XX_Service.Cartao;
+using System;
 using System.Net;
 
 namespace _05_04_XX_Implementando_IoC.Infraestrutura
@@ -6,12 +10,15 @@ namespace _05_04_XX_Implementando_IoC.Infraestrutura
     public class WebApplication
     {
         private readonly string[] _prefixos;
+        private readonly IContainer _container = new ContainerSimples();
 
         public WebApplication(string[] prefixos)
         {
             if (prefixos == null)
                 throw new ArgumentNullException(nameof(prefixos));
             _prefixos = prefixos;
+
+            Configurar();
         }
 
         public void Iniciar()
@@ -42,11 +49,17 @@ namespace _05_04_XX_Implementando_IoC.Infraestrutura
             }
             else
             {
-                var manipulador = new ManipuladorRequisicaoController();
+                var manipulador = new ManipuladorRequisicaoController(_container);
                 manipulador.Manipular(resposta, path);
             }
 
             httpListener.Stop();
+        }
+
+        private void Configurar()
+        {
+            _container.Registrar(typeof(ICambioService), typeof(CambioTesteService));
+            _container.Registrar(typeof(ICartaoService), typeof(CartaoServiceTeste));
         }
     }
 }
