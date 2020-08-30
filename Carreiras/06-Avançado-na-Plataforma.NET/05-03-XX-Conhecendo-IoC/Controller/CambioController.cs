@@ -1,5 +1,6 @@
-﻿using _05_02_XX_Service;
-using _05_02_XX_Service.Cambio;
+﻿using _05_03_XX_Service;
+using _05_03_XX_Service.Cambio;
+using _05_03_XX_Service.Cartao;
 using _05_03_XX_Conhecendo_IoC.Filtros;
 using _05_03_XX_Conhecendo_IoC.Infraestrutura;
 
@@ -8,10 +9,12 @@ namespace _05_03_XX_Conhecendo_IoC.Controller
     public class CambioController : ControllerBase
     {
         private ICambioService _cambioService;
+        private ICartaoService _cartaoService;
 
         public CambioController()
         {
             _cambioService = new CambioTesteService();
+            _cartaoService = new CartaoServiceTeste();
         }
 
         [ApenasHorarioComercialFiltro]
@@ -40,12 +43,15 @@ namespace _05_03_XX_Conhecendo_IoC.Controller
         public string Calculo(string moedaOrigem, string moedaDestino, decimal valor)
         {
             var valorFinal = _cambioService.Calcular(moedaOrigem, moedaDestino, valor);
+            var cartaoPromocao = _cartaoService.ObterCartaoDeCreditoDeDestaque();
+
             var modelo = new
             {
                 MoedaDestino = moedaDestino,
                 ValorDestino = valorFinal,
                 MoedaOrigem = moedaOrigem,
-                ValorOrigem = valor
+                ValorOrigem = valor,
+                CartaoPromocao = cartaoPromocao
             };
 
             return View(modelo);

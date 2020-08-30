@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\CambioController.cs" />
+    <Compile Include="Controller\CartaoController.cs" />
     <Compile Include="Controller\ErroController.cs" />
     <Compile Include="Filtros\ApenasHorarioComercialFiltroAttribute.cs" />
     <Compile Include="Infraestrutura\Binding\ActionBinder.cs" />
@@ -70,10 +71,16 @@
     <Content Include="View\Cambio\Calculo.html" />
     <Content Include="View\Cambio\MXN.html" />
     <Content Include="View\Cambio\USD.html" />
-    <Content Include="View\Cartoes\Credito.html" />
-    <Content Include="View\Cartoes\Debito.html" />
+    <Content Include="View\Cartao\Credito.html" />
+    <Content Include="View\Cartao\Debito.html" />
     <Content Include="View\Home\Index.html" />
     <EmbeddedResource Include="View\Erro\Inesperado.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\05-03-XX-Service\05-03-XX-Service.csproj">
+      <Project>{d1f1743e-7e6d-48f1-aa31-5ff9734cfeaa}</Project>
+      <Name>05-03-XX-Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
