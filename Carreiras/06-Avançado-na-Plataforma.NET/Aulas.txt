@@ -246,3 +246,6 @@ C# Reflection parte 2: Implementando injeção de dependência do zero
 		04 - Limitações de nossa sobrecarga Registrar<TOrigem, TDestino>() (C)
 		05 - Comparando nossas implementações (A / C)
 		06 - Debugando nossa aplicação de ponta a ponta
+		07 - Melhorando o método Registrar
+		08 - Projeto final do curso
+		09 - Conclusão
