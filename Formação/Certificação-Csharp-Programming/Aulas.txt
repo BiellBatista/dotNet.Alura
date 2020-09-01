@@ -17,6 +17,8 @@ Certificação C# Programming parte 1: Criar tipos
 		02 - Decimal
 		03 - decimal, float e double (C / E / F / G)
 		04 - Booleanos
+		05 - Avaliando condições (A)
+		06 - Structs
 	03 - Criar tipos de referência
 	04 - Classes, métodos, métodos de extensão
 	05 - Criar métodos sobrecarregados e substituídos
