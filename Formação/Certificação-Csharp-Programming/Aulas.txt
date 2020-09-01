@@ -25,6 +25,8 @@ Certificação C# Programming parte 1: Criar tipos
 		10 - Projeto da Aula Atual
 		11 - O que aprendemos?
 	03 - Criar tipos de referência
+		01 - Projeto Inicial da Aula Atual
+		02 - Tipos de Referência
 	04 - Classes, métodos, métodos de extensão
 	05 - Criar métodos sobrecarregados e substituídos
 Certificação C# Programming parte 2: Consumir tipos

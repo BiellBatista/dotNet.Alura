@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-01-XX-Tipos-Integrais", "01-01-XX-Tipos-Integrais\01-01-XX-Tipos-Integrais.csproj", "{77A70540-3F27-46F9-BD92-C54A53195C37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-02-XX-Ponto-Flutuante-Booleanos-StructsEnums", "01-02-XX-Ponto-Flutuante-Booleanos-StructsEnums\01-02-XX-Ponto-Flutuante-Booleanos-StructsEnums.csproj", "{BBDAB048-B3DF-47CE-BE64-C16DFF825B1F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-02-XX-Ponto-Flutuante-Booleanos-Structs-Enums", "01-02-XX-Ponto-Flutuante-Booleanos-Structs-Enums\01-02-XX-Ponto-Flutuante-Booleanos-Structs-Enums.csproj", "{BBDAB048-B3DF-47CE-BE64-C16DFF825B1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-03-XX-Criar-Tipos-Referencia", "01-03-XX-Criar-Tipos-Referencia\01-03-XX-Criar-Tipos-Referencia.csproj", "{F9A7C6DC-F2D6-40AF-98A8-ECCF80CFA023}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BBDAB048-B3DF-47CE-BE64-C16DFF825B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBDAB048-B3DF-47CE-BE64-C16DFF825B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBDAB048-B3DF-47CE-BE64-C16DFF825B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A7C6DC-F2D6-40AF-98A8-ECCF80CFA023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A7C6DC-F2D6-40AF-98A8-ECCF80CFA023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A7C6DC-F2D6-40AF-98A8-ECCF80CFA023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A7C6DC-F2D6-40AF-98A8-ECCF80CFA023}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

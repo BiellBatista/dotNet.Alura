@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{77A70540-3F27-46F9-BD92-C54A53195C37}</ProjectGuid>
+    <ProjectGuid>{F9A7C6DC-F2D6-40AF-98A8-ECCF80CFA023}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_01_01_XX_Tipos_Integrais</RootNamespace>
-    <AssemblyName>01-01-XX-Tipos-Integrais</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>_01_03_XX_Criar_Tipos_Referencia</RootNamespace>
+    <AssemblyName>01-03-XX-Criar-Tipos-Referencia</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -21,7 +22,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,12 +31,8 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,6 +45,16 @@
   <ItemGroup>
     <Compile Include="01-Tipos-de-Valor\Antes\TiposDeValor.cs" />
     <Compile Include="01-Tipos-de-Valor\Depois\TiposDeValor.cs" />
+    <Compile Include="10-Interfaces\Antes\Interfaces.cs" />
+    <Compile Include="10-Interfaces\Depois\Interfaces.cs" />
+    <Compile Include="11-Delegates\Antes\Delegates.cs" />
+    <Compile Include="11-Delegates\Depois\Delegates.cs" />
+    <Compile Include="12-Objetos\Antes\Objetos.cs" />
+    <Compile Include="12-Objetos\Depois\Objetos.cs" />
+    <Compile Include="13-Dynamic\Antes\Dinamicos.cs" />
+    <Compile Include="13-Dynamic\Depois\Dinamicos.cs" />
+    <Compile Include="14-Strings\Antes\Strings.cs" />
+    <Compile Include="14-Strings\Depois\Strings.cs" />
     <Compile Include="02-Tipos-Inteiros\Antes\Inteiros.cs" />
     <Compile Include="02-Tipos-Inteiros\Depois\Inteiros.cs" />
     <Compile Include="03-Tipos-de-Ponto-Flutuante\Antes\PontoFlutuante.cs" />
@@ -61,6 +67,10 @@
     <Compile Include="06-Estruturas-Definidas-pelo-Usuário\Depois\Estruturas.cs" />
     <Compile Include="07-Enums\Antes\Enumeracoes.cs" />
     <Compile Include="07-Enums\Depois\Enumeracoes.cs" />
+    <Compile Include="08-Tipos-de-Referência\Antes\TiposDeReferencia.cs" />
+    <Compile Include="08-Tipos-de-Referência\Depois\TiposDeReferencia.cs" />
+    <Compile Include="09-Classes\Antes\Classes.cs" />
+    <Compile Include="09-Classes\Depois\Classes.cs" />
     <Compile Include="IAulaItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,6 +79,5 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
