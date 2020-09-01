@@ -8,6 +8,10 @@ Certificação C# Programming parte 1: Criar tipos
 		06 - Características dos Tipos de Valor
 		07 - Copiando dados com tipos de valor (B)
 		08 - Números Integrais
+		09 - Identificando tipos de valor (C / D / E / F)
+		10 - Tipos inteiros (C)
+		11 - Consolidando seu conhecimento
+		12 - O que aprendemos?
 	02 - Ponto flutuante, booleanos, structs e enums
 	03 - Criar tipos de referência
 	04 - Classes, métodos, métodos de extensão
