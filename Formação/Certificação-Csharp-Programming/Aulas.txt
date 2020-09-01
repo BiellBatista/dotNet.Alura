@@ -30,6 +30,7 @@ Certificação C# Programming parte 1: Criar tipos
 		03 - Classes
 		04 - Para pensar: Tipo de valor ou tipo de referência?
 		05 - Interfaces
+		06 - Delegates
 	04 - Classes, métodos, métodos de extensão
 	05 - Criar métodos sobrecarregados e substituídos
 Certificação C# Programming parte 2: Consumir tipos

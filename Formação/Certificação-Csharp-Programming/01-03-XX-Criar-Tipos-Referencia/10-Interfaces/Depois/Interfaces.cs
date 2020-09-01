@@ -4,10 +4,25 @@
     {
         public void Executar()
         {
+            IEletrodomestico eletro1 = new Televisao();
+            eletro1.Ligar();
+
+            eletro1 = new Abajur();
         }
     }
 
-    class Televisao
+    interface IEletrodomestico
+    {
+        void Ligar();
+        void Desligar();
+    }
+
+    interface IIluminacao
+    {
+        double PotenciaDaLampada { get; set; }
+    }
+
+    class Televisao : IEletrodomestico
     {
         public void Desligar()
         {
@@ -18,8 +33,9 @@
         }
     }
 
-    class Abajur
+    class Abajur : IEletrodomestico, IIluminacao
     {
+
         public double PotenciaDaLampada { get; set; }
 
         public void Desligar()
@@ -31,21 +47,11 @@
         }
     }
 
-    class Lanterna
+    class Lanterna : IEletrodomestico, IIluminacao
     {
+
         public double PotenciaDaLampada { get; set; }
 
-        public void Desligar()
-        {
-        }
-
-        public void Ligar()
-        {
-        }
-    }
-
-    class Radio
-    {
         public void Desligar()
         {
         }
