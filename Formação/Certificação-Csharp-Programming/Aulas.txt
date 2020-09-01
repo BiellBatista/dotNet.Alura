@@ -21,6 +21,9 @@ Certificação C# Programming parte 1: Criar tipos
 		06 - Structs
 		07 - Structs: o que são? O que fazem? (A / B / E / F)
 		08 - Enums
+		09 - Consolidando seu conhecimento
+		10 - Projeto da Aula Atual
+		11 - O que aprendemos?
 	03 - Criar tipos de referência
 	04 - Classes, métodos, métodos de extensão
 	05 - Criar métodos sobrecarregados e substituídos
