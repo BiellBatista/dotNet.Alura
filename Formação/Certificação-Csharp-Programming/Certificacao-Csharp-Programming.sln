@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2018
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-01-XX-Tipos-Integrais", "01-01-XX-Tipos-Integrais\01-01-XX-Tipos-Integrais.csproj", "{77A70540-3F27-46F9-BD92-C54A53195C37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-02-XX-Ponto-Flutuante-Booleanos-StructsEnums", "01-02-XX-Ponto-Flutuante-Booleanos-StructsEnums\01-02-XX-Ponto-Flutuante-Booleanos-StructsEnums.csproj", "{BBDAB048-B3DF-47CE-BE64-C16DFF825B1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{77A70540-3F27-46F9-BD92-C54A53195C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77A70540-3F27-46F9-BD92-C54A53195C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77A70540-3F27-46F9-BD92-C54A53195C37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBDAB048-B3DF-47CE-BE64-C16DFF825B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBDAB048-B3DF-47CE-BE64-C16DFF825B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBDAB048-B3DF-47CE-BE64-C16DFF825B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBDAB048-B3DF-47CE-BE64-C16DFF825B1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
