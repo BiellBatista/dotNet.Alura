@@ -14,6 +14,7 @@ Certificação C# Programming parte 1: Criar tipos
 		12 - O que aprendemos?
 	02 - Ponto flutuante, booleanos, structs e enums
 		01 - Ponto Flutuante
+		02 - Decimal
 	03 - Criar tipos de referência
 	04 - Classes, métodos, métodos de extensão
 	05 - Criar métodos sobrecarregados e substituídos
