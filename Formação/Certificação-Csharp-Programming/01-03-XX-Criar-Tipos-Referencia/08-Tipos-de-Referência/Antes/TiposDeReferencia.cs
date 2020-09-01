@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace certificacao_csharp_roteiro.antes
+﻿namespace _01_03_XX_Criar_Tipos_Referencia.Antes
 {
     class TiposDeReferencia : IAulaItem
     {

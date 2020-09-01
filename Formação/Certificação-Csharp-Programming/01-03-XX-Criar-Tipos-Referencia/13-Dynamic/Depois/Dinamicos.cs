@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace certificacao_csharp_roteiro
+﻿namespace _01_03_XX_Criar_Tipos_Referencia.Depois
 {
     class Dinamicos : IAulaItem
     {
