@@ -19,6 +19,8 @@ Certificação C# Programming parte 1: Criar tipos
 		04 - Booleanos
 		05 - Avaliando condições (A)
 		06 - Structs
+		07 - Structs: o que são? O que fazem? (A / B / E / F)
+		08 - Enums
 	03 - Criar tipos de referência
 	04 - Classes, métodos, métodos de extensão
 	05 - Criar métodos sobrecarregados e substituídos
