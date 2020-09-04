@@ -56,6 +56,8 @@ Certificação C# Programming parte 1: Criar tipos
 		14 - O que aprendemos?
 		15 - Projeto da Aula Atual
 	05 - Criar métodos sobrecarregados e substituídos
+		01 - Projeto Inicial da Aula Atual
+		02 - Sobrecarga de Métodos
 Certificação C# Programming parte 2: Consumir tipos
 	01 - Propriedades e Acessadores
 	02 - Projetar Interfaces

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6851DC5C-0C81-4E2E-A30B-659681D5BA9D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>_01_05_Criar_Metodos_Sobrecarregados_Substituidos</RootNamespace>
+    <AssemblyName>01-05-Criar-Metodos-Sobrecarregados-Substituidos</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="01-Tipos-de-Valor\Antes\TiposDeValor.cs" />
+    <Compile Include="01-Tipos-de-Valor\Depois\TiposDeValor.cs" />
+    <Compile Include="02-Tipos-Inteiros\Antes\Inteiros.cs" />
+    <Compile Include="02-Tipos-Inteiros\Depois\Inteiros.cs" />
+    <Compile Include="03-Tipos-de-Ponto-Flutuante\Antes\PontoFlutuante.cs" />
+    <Compile Include="03-Tipos-de-Ponto-Flutuante\Depois\PontoFlutuante.cs" />
+    <Compile Include="04-Decimal\Antes\Decimal.cs" />
+    <Compile Include="04-Decimal\Depois\Decimal.cs" />
+    <Compile Include="05-Booleanos\Antes\Booleanos.cs" />
+    <Compile Include="05-Booleanos\Depois\Booleanos.cs" />
+    <Compile Include="06-Estruturas-Definidas-pelo-Usuário\Antes\Estruturas.cs" />
+    <Compile Include="06-Estruturas-Definidas-pelo-Usuário\Depois\Estruturas.cs" />
+    <Compile Include="07-Enums\Antes\Enumeracoes.cs" />
+    <Compile Include="07-Enums\Depois\Enumeracoes.cs" />
+    <Compile Include="08-Tipos-de-Referência\Antes\TiposDeReferencia.cs" />
+    <Compile Include="08-Tipos-de-Referência\Depois\TiposDeReferencia.cs" />
+    <Compile Include="09-Classes\Antes\Classes.cs" />
+    <Compile Include="09-Classes\Depois\Classes.cs" />
+    <Compile Include="10-Interfaces\Antes\Interfaces.cs" />
+    <Compile Include="10-Interfaces\Depois\Interfaces.cs" />
+    <Compile Include="11-Delegates\Antes\Delegates.cs" />
+    <Compile Include="11-Delegates\Depois\Delegates.cs" />
+    <Compile Include="12-Objetos\Antes\Objetos.cs" />
+    <Compile Include="12-Objetos\Depois\Objetos.cs" />
+    <Compile Include="13-Dynamic\Antes\Dinamicos.cs" />
+    <Compile Include="13-Dynamic\Depois\Dinamicos.cs" />
+    <Compile Include="14-Strings\Antes\Strings.cs" />
+    <Compile Include="14-Strings\Depois\Strings.cs" />
+    <Compile Include="15-Métodos\Antes\Metodos.cs" />
+    <Compile Include="15-Métodos\Depois\Metodos.cs" />
+    <Compile Include="16-Parâmetros-Opcionais\Antes\ParametrosNomeados.cs" />
+    <Compile Include="16-Parâmetros-Opcionais\Antes\ParametrosOpcionais.cs" />
+    <Compile Include="16-Parâmetros-Opcionais\Depois\ParametrosNomeados.cs" />
+    <Compile Include="16-Parâmetros-Opcionais\Depois\ParametrosOpcionais.cs" />
+    <Compile Include="17-Métodos-de-Extensão\Antes\MetodosDeExtensao.cs" />
+    <Compile Include="17-Métodos-de-Extensão\Depois\MetodosDeExtensao.cs" />
+    <Compile Include="18-Propriedades-Indexadas\Antes\IDictionary.cs" />
+    <Compile Include="18-Propriedades-Indexadas\Antes\PropriedadesIndexadas.cs" />
+    <Compile Include="18-Propriedades-Indexadas\Depois\IDictionary.cs" />
+    <Compile Include="18-Propriedades-Indexadas\Depois\PropriedadesIndexadas.cs" />
+    <Compile Include="19-Métodos-Sobrecarregados\Antes\Sobrecargas.cs" />
+    <Compile Include="19-Métodos-Sobrecarregados\Depois\Sobrecargas.cs" />
+    <Compile Include="20-Métodos-Substituídos\Antes\MetodosSubstituidos.cs" />
+    <Compile Include="20-Métodos-Substituídos\Depois\MetodosSubstituidos.cs" />
+    <Compile Include="IAulaItem.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
