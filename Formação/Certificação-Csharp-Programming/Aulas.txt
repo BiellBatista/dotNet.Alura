@@ -34,6 +34,8 @@ Certificação C# Programming parte 1: Criar tipos
 		07 - O que são e para que servem delegates? (A)
 		08 - Object
 		09 - Dynamic
+		10 - O tipo dynamic (A / E / F)
+		11 - Strings
 	04 - Classes, métodos, métodos de extensão
 	05 - Criar métodos sobrecarregados e substituídos
 Certificação C# Programming parte 2: Consumir tipos
