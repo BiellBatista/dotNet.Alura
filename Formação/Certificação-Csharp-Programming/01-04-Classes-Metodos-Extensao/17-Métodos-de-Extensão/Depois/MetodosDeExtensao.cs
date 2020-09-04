@@ -8,6 +8,14 @@ namespace _01_04_Classes_Metodos_Extensao.Depois
         {
             Impressora impressora = new Impressora("Este é\r\no meu documento");
             impressora.ImprimirDocumento();
+            ImprimirDocumentoHTML(impressora.Documento);
+            impressora.ImprimirDocumentoHTML();
+            impressora.ImprimirDocumentoComResumo();
+        }
+
+        void ImprimirDocumentoHTML(string documento)
+        {
+            Console.WriteLine($"<html><body>{documento}</body></html>");
         }
     }
 
@@ -25,7 +33,24 @@ namespace _01_04_Classes_Metodos_Extensao.Depois
             Console.WriteLine();
             Console.WriteLine(Documento);
         }
+
+        public void ImprimirDocumentoHTML()
+        {
+            Console.WriteLine($"<html><body>{Documento}</body></html>");
+        }
+    }
+
+    static class ImpressoraExtensions
+    {
+        public static void ImprimirDocumentoHTML(this Impressora impressora)
+        {
+            Console.WriteLine($"<html><body>{impressora.Documento}</body></html>");
+        }
+
+        public static void ImprimirDocumentoComResumo(this Impressora impressora)
+        {
+            Console.WriteLine();
+            Console.WriteLine($"{impressora.Documento}\r\nRESUMO\r\n======\r\nO documento tem: {impressora.Documento.Length} caracteres.");
+        }
     }
 }
-
-

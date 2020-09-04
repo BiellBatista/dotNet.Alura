@@ -50,6 +50,8 @@ Certificação C# Programming parte 1: Criar tipos
 		08 - Parâmetros Opcionais
 		09 - Para pensar: valores-padrão
 		10 - Métodos de Extensão
+		11 - Estendendo classes (B)
+		12 - Propriedades Indexadas
 	05 - Criar métodos sobrecarregados e substituídos
 Certificação C# Programming parte 2: Consumir tipos
 	01 - Propriedades e Acessadores
