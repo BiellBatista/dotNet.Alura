@@ -10,6 +10,11 @@ namespace _01_05_Criar_Metodos_Sobrecarregados_Substituidos.Depois
             gato.Beber();
             gato.Comer();
             gato.Andar();
+
+            Gato gata = new Gato() { Nome = "Pantera" };
+            gata.Beber();
+            gata.Comer();
+            gata.Andar();
         }
     }
 
@@ -45,6 +50,8 @@ namespace _01_05_Criar_Metodos_Sobrecarregados_Substituidos.Depois
             Console.WriteLine("Gato.Comer");
         }
 
+        //a palavra new deixa claro para o compilador que eu quero ter dois métodos, mas o Andar da classe Gato não sobrescreve o Andar da classe Animal
+        //não posso usar new na classe Base (animal)
         public new void Andar()
         {
             Console.WriteLine("Gato.Andar");
