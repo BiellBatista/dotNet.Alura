@@ -36,6 +36,9 @@ Certificação C# Programming parte 1: Criar tipos
 		09 - Dynamic
 		10 - O tipo dynamic (A / E / F)
 		11 - Strings
+		12 - Consolidando seu conhecimento
+		13 - Projeto da Aula Atual
+		14 - O que aprendemos?
 	04 - Classes, métodos, métodos de extensão
 	05 - Criar métodos sobrecarregados e substituídos
 Certificação C# Programming parte 2: Consumir tipos
