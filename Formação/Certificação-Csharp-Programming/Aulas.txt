@@ -52,6 +52,9 @@ Certificação C# Programming parte 1: Criar tipos
 		10 - Métodos de Extensão
 		11 - Estendendo classes (B)
 		12 - Propriedades Indexadas
+		13 - Consolidando seu conhecimento
+		14 - O que aprendemos?
+		15 - Projeto da Aula Atual
 	05 - Criar métodos sobrecarregados e substituídos
 Certificação C# Programming parte 2: Consumir tipos
 	01 - Propriedades e Acessadores
