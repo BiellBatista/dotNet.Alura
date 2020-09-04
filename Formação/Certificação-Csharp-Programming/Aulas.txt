@@ -58,6 +58,9 @@ Certificação C# Programming parte 1: Criar tipos
 	05 - Criar métodos sobrecarregados e substituídos
 		01 - Projeto Inicial da Aula Atual
 		02 - Sobrecarga de Métodos
+		03 - Como funciona a sobrecarga de métodos? (B)
+		04 - Sobrecarga (overload) de métodos (B)
+		05 - Substituição de Métodos
 Certificação C# Programming parte 2: Consumir tipos
 	01 - Propriedades e Acessadores
 	02 - Projetar Interfaces
