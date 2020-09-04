@@ -42,6 +42,11 @@ Certificação C# Programming parte 1: Criar tipos
 	04 - Classes, métodos, métodos de extensão
 		01 - Projeto Inicial da Aula Atual
 		02 - Métodos
+		03 - Para pensar: construtores
+		04 - Modificadores de Métodos (B)
+		05 - Escolha o modificador de acesso (D)
+		06 - Para pensar: Membros Estáticos
+		07 - Argumentos Nomeados
 	05 - Criar métodos sobrecarregados e substituídos
 Certificação C# Programming parte 2: Consumir tipos
 	01 - Propriedades e Acessadores
