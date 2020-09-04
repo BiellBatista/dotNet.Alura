@@ -69,6 +69,9 @@ Certificação C# Programming parte 1: Criar tipos
 		11 - Mapa do Curso
 Certificação C# Programming parte 2: Consumir tipos
 	01 - Propriedades e Acessadores
+		01 - Introdução
+		02 - Projeto Inicial da Aula Atual
+		03 - Boxing e unboxing
 	02 - Projetar Interfaces
 	03 - Interfaces Explícitas
 	04 - Classe Base
