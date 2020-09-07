@@ -8,16 +8,16 @@ namespace _02_03_XX_Interfaces_Explicitas.Depois
         {
             ///<image url="$(ProjectDir)img14.png" />
 
-            AnguloEmGraus anguloEmGraus = AnguloEmGraus.Converte(45);
+            AnguloEmGraus anguloEmGraus = 45; //chamando o método de conversão
             Console.WriteLine(anguloEmGraus);
 
-            AnguloEmRadianos anguloEmRadianos = AnguloEmRadianos.Converte(15);
+            AnguloEmRadianos anguloEmRadianos = (AnguloEmRadianos)15; //chamando o método de conversão explicita
             Console.WriteLine(anguloEmRadianos);
 
-            double graus = AnguloEmGraus.Converte(anguloEmGraus);
+            double graus = anguloEmGraus; //chamando o método de conversão
 
-            anguloEmRadianos = AnguloEmRadianos.Converte(anguloEmGraus);
-            anguloEmGraus = AnguloEmGraus.Converte(anguloEmRadianos);
+            anguloEmRadianos = anguloEmGraus; //chamando o método de conversão
+            anguloEmGraus = anguloEmRadianos; //chamando o método de conversão
             System.Console.WriteLine($"anguloEmGraus: {anguloEmGraus}");
             System.Console.WriteLine($"anguloEmRadianos: {anguloEmRadianos}");
         }
@@ -32,24 +32,26 @@ namespace _02_03_XX_Interfaces_Explicitas.Depois
             this.Radianos = radianos;
         }
 
-        public static AnguloEmRadianos Converte(AnguloEmGraus graus)
+        //este método de conversão faz uma conversão implicita. Não preciso colocar um casting
+        public static implicit operator AnguloEmRadianos(AnguloEmGraus graus)
         {
             return new AnguloEmRadianos(graus.Graus * System.Math.PI / 180);
         }
 
-        public static AnguloEmRadianos Converte(double radianos)
+        //este método de conversão faz uma conversão epxlicita. Ou seja, preciso realizar um casting(linha 14)
+        public static explicit operator AnguloEmRadianos(double radianos)
         {
             return new AnguloEmRadianos(radianos);
         }
 
-        public static double Converte(AnguloEmRadianos radianos)
+        public static implicit operator double(AnguloEmRadianos radianos)
         {
             return radianos.Radianos;
         }
 
         public override string ToString()
         {
-            return String.Format("{0} radianos", this.Radianos);
+            return string.Format("{0} radianos", this.Radianos);
         }
     }
 
@@ -59,25 +61,25 @@ namespace _02_03_XX_Interfaces_Explicitas.Depois
 
         public AnguloEmGraus(double graus) { this.Graus = graus; }
 
-        public static AnguloEmGraus Converte(AnguloEmRadianos radianos)
+        public static implicit operator AnguloEmGraus(AnguloEmRadianos radianos)
         {
             return new AnguloEmGraus(radianos.Radianos * 180 / System.Math.PI);
         }
 
-        public static AnguloEmGraus Converte(double graus)
+        //criando um método que irá converter os objetos
+        public static implicit operator AnguloEmGraus(double graus)
         {
             return new AnguloEmGraus(graus);
         }
 
-        public static double Converte(AnguloEmGraus graus)
+        public static implicit operator double(AnguloEmGraus graus)
         {
             return graus.Graus;
         }
 
         public override string ToString()
         {
-            return String.Format("{0} graus", this.Graus);
+            return string.Format("{0} graus", this.Graus);
         }
     }
-
 }

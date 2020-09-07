@@ -49,7 +49,7 @@ namespace _02_02_XX_Projetar_Interfaces.Depois
 
         public override string ToString()
         {
-            return String.Format("{0} radianos", this.Radianos);
+            return string.Format("{0} radianos", this.Radianos);
         }
     }
 
@@ -76,8 +76,7 @@ namespace _02_02_XX_Projetar_Interfaces.Depois
 
         public override string ToString()
         {
-            return String.Format("{0} graus", this.Graus);
+            return string.Format("{0} graus", this.Graus);
         }
     }
-
 }
