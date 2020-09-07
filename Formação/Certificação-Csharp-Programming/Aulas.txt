@@ -81,6 +81,8 @@ Certificação C# Programming parte 2: Consumir tipos
 	02 - Projetar Interfaces
 		01 - Projeto Inicial da Aula Atual
 		02 - Conversões Implícitas
+		03 - Conversões implícitas (B / E)
+		04 - Conversões Explícitas
 	03 - Interfaces Explícitas
 	04 - Classe Base
 	05 - Comparações Entre Objetos

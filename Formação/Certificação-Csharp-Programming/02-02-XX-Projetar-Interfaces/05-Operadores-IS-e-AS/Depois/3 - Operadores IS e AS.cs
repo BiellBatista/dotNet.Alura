@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace certificacao_csharp_roteiro
+﻿namespace _02_02_XX_Projetar_Interfaces.Depois
 {
     class OperadoresISeAS : IAulaItem
     {

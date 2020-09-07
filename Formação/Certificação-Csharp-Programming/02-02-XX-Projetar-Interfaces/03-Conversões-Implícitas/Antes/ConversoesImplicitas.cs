@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace certificacao_csharp_roteiro.antes
+﻿namespace _02_02_XX_Projetar_Interfaces.Antes
 {
     class ConversoesImplicitas : IAulaItem
     {
@@ -13,4 +7,3 @@ namespace certificacao_csharp_roteiro.antes
         }
     }
 }
-
