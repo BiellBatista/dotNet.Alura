@@ -84,6 +84,10 @@ Certificação C# Programming parte 2: Consumir tipos
 		03 - Conversões implícitas (B / E)
 		04 - Conversões Explícitas
 		05 - Operadores IS e AS
+		06 - Garantindo conversões seguras (D)
+		07 - O operador 'is' (C)
+		08 - O que aprendemos?
+		09 - Consolidando seu conhecimento
 	03 - Interfaces Explícitas
 	04 - Classe Base
 	05 - Comparações Entre Objetos

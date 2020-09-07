@@ -51,8 +51,8 @@
     <Compile Include="03-Conversões-Implícitas\Depois\ConversoesImplicitas.cs" />
     <Compile Include="04-Conversões-Explícitas\Antes\ConversoesExplicitas.cs" />
     <Compile Include="04-Conversões-Explícitas\Depois\ConversoesExplicitas.cs" />
-    <Compile Include="05-Operadores-IS-e-AS\Antes\3 - Operadores IS e AS.cs" />
-    <Compile Include="05-Operadores-IS-e-AS\Depois\3 - Operadores IS e AS.cs" />
+    <Compile Include="05-Operadores-IS-e-AS\Antes\OperadoresISeAS.cs" />
+    <Compile Include="05-Operadores-IS-e-AS\Depois\OperadoresISeAS.cs" />
     <Compile Include="06-Conversões-definidas-pelo-usuário\Antes\OperadoresDeConversao.cs" />
     <Compile Include="06-Conversões-definidas-pelo-usuário\Depois\OperadoresDeConversao.cs" />
     <Compile Include="07-Conversões-com-classes-auxiliares\Antes\MetodosAuxiliares.cs" />
