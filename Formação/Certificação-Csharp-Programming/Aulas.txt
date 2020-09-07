@@ -89,6 +89,7 @@ Certificação C# Programming parte 2: Consumir tipos
 		08 - O que aprendemos?
 		09 - Consolidando seu conhecimento
 	03 - Interfaces Explícitas
+		01 - Operadores de Conversão
 	04 - Classe Base
 	05 - Comparações Entre Objetos
 Certificação C# Programming parte 3: Encapsulamento e Hierarquia de Classes
