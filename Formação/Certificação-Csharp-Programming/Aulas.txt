@@ -92,6 +92,12 @@ Certificação C# Programming parte 2: Consumir tipos
 		01 - Operadores de Conversão
 		02 - Operadores (B)
 		03 - Métodos Auxiliares de Conversão
+		04 - Digitando strings e convertendo para inteiros (D)
+		05 - Conversões de string para int (A / E)
+		06 - Métodos de conversão (A)
+		07 - Consolidando seu conhecimento
+		08 - Projeto da Aula Atual
+		09 - O que aprendemos?
 	04 - Classe Base
 	05 - Comparações Entre Objetos
 Certificação C# Programming parte 3: Encapsulamento e Hierarquia de Classes
