@@ -103,6 +103,8 @@ Certificação C# Programming parte 2: Consumir tipos
 		02 - string, var, object e dynamic
 		03 - object e dynamic (B)
 		04 - Conversões de dynamic
+		05 - Conversões de dynamic (B)
+		06 - Resolução de Sobrecarga
 	05 - Comparações Entre Objetos
 Certificação C# Programming parte 3: Encapsulamento e Hierarquia de Classes
 	01 - Propriedades e Acessadores
