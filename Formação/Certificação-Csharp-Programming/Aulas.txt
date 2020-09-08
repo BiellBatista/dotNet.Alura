@@ -105,6 +105,9 @@ Certificação C# Programming parte 2: Consumir tipos
 		04 - Conversões de dynamic
 		05 - Conversões de dynamic (B)
 		06 - Resolução de Sobrecarga
+		07 - Conflito de resolução de sobrecarga (A / B)
+		08 - O que aprendemos?
+		09 - Consolidando seu conhecimento
 	05 - Comparações Entre Objetos
 Certificação C# Programming parte 3: Encapsulamento e Hierarquia de Classes
 	01 - Propriedades e Acessadores
