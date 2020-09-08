@@ -13,13 +13,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-04-XX-Classes-Metodos-Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-05-XX-Criar-Metodos-Sobrecarregados-Substituidos", "01-05-XX-Criar-Metodos-Sobrecarregados-Substituidos\01-05-XX-Criar-Metodos-Sobrecarregados-Substituidos.csproj", "{6851DC5C-0C81-4E2E-A30B-659681D5BA9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-01-XX-Propriedades-Acessadores", "02-01-XX-Propriedades-Acessadores\02-01-XX-Propriedades-Acessadores.csproj", "{248BA1BA-C401-4EC8-8861-E92AC4A1CCFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-01-XX-Box-Unbox-Converter-Tipos-Valor", "02-01-XX-Box-Unbox-Converter-Tipos-Valor\02-01-XX-Box-Unbox-Converter-Tipos-Valor.csproj", "{248BA1BA-C401-4EC8-8861-E92AC4A1CCFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-XX-Projetar-Interfaces", "02-02-XX-Projetar-Interfaces\02-02-XX-Projetar-Interfaces.csproj", "{05E50803-4DF2-4A5E-AA4D-7DD1E1CECBFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-XX-Cast-Tipos", "02-02-XX-Cast-Tipos\02-02-XX-Cast-Tipos.csproj", "{05E50803-4DF2-4A5E-AA4D-7DD1E1CECBFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-03-XX-Interfaces-Explicitas", "02-03-XX-Interfaces-Explicitas\02-03-XX-Interfaces-Explicitas.csproj", "{10C86C5E-ADC8-40A9-A6A5-C5A0F740BF0D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-03-XX-Implementando-Conversoes", "02-03-XX-Implementando-Conversoes\02-03-XX-Implementando-Conversoes.csproj", "{10C86C5E-ADC8-40A9-A6A5-C5A0F740BF0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-04-XX-Classe-Base", "02-04-XX-Classe-Base\02-04-XX-Classe-Base.csproj", "{C5C1822F-5854-460E-BB37-A380801B95CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-04-XX-Lidar-Tipos-Dinamicos", "02-04-XX-Lidar-Tipos-Dinamicos\02-04-XX-Lidar-Tipos-Dinamicos.csproj", "{C5C1822F-5854-460E-BB37-A380801B95CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-05-XX-Adicionando-Membros-Dinamicamente", "02-05-XX-Adicionando-Membros-Dinamicamente\02-05-XX-Adicionando-Membros-Dinamicamente.csproj", "{FFE956A8-C0C8-48D9-9B48-D0B518B4A3BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{C5C1822F-5854-460E-BB37-A380801B95CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5C1822F-5854-460E-BB37-A380801B95CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5C1822F-5854-460E-BB37-A380801B95CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE956A8-C0C8-48D9-9B48-D0B518B4A3BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE956A8-C0C8-48D9-9B48-D0B518B4A3BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE956A8-C0C8-48D9-9B48-D0B518B4A3BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE956A8-C0C8-48D9-9B48-D0B518B4A3BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

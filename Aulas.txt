@@ -538,11 +538,11 @@ Formação Certificação C# Programming
 		04 - Classes, métodos, métodos de extensão
 		05 - Criar métodos sobrecarregados e substituídos
 	Certificação C# Programming parte 2: Consumir tipos
-		01 - Propriedades e Acessadores
-		02 - Projetar Interfaces
-		03 - Interfaces Explícitas
-		04 - Classe Base
-		05 - Comparações Entre Objetos
+		01 - Box ou unbox para converter entre tipos de valor
+		02 - Cast de tipos
+		03 - Implementando conversões
+		04 - Lidar com tipos dinâmicos
+		05 - Adicionando membros dinamicamente
 	Certificação C# Programming parte 3: Encapsulamento e Hierarquia de Classes
 		01 - Propriedades e Acessadores
 		02 - Projetar Interfaces
