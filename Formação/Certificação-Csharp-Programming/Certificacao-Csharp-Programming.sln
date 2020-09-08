@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-XX-Projetar-Interface
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-03-XX-Interfaces-Explicitas", "02-03-XX-Interfaces-Explicitas\02-03-XX-Interfaces-Explicitas.csproj", "{10C86C5E-ADC8-40A9-A6A5-C5A0F740BF0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-04-XX-Classe-Base", "02-04-XX-Classe-Base\02-04-XX-Classe-Base.csproj", "{C5C1822F-5854-460E-BB37-A380801B95CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{10C86C5E-ADC8-40A9-A6A5-C5A0F740BF0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10C86C5E-ADC8-40A9-A6A5-C5A0F740BF0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10C86C5E-ADC8-40A9-A6A5-C5A0F740BF0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5C1822F-5854-460E-BB37-A380801B95CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C1822F-5854-460E-BB37-A380801B95CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C1822F-5854-460E-BB37-A380801B95CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5C1822F-5854-460E-BB37-A380801B95CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
