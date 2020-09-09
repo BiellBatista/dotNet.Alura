@@ -2,9 +2,10 @@
 
 namespace _03_01_XX_Propriedades_Acessadores.Depois
 {
-    class Program
+    class PropriedadesAcessadores : IAulaItem
     {
-        static void Main(string[] args)
+
+        public void Executar()
         {
             Funcionario funcionario = new Funcionario(1000);
             Console.WriteLine(funcionario.Salario);

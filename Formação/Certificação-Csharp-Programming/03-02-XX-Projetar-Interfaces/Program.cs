@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using _03_01_XX_Propriedades_Acessadores.Depois;
+using _03_02_XX_Projetar_Interfaces.Depois;
 
-namespace _03_01_XX_Propriedades_Acessadores
+namespace _03_02_XX_Projetar_Interfaces
 {
     class Program
     {
@@ -69,6 +69,7 @@ namespace _03_01_XX_Propriedades_Acessadores
             return new List<MenuItem>
             {
                 new MenuItem("Propriedades e Acessadores", typeof(PropriedadesAcessadores)),
+                new MenuItem("Projetar Interfaces", typeof(ProjetarInterfaces)),
             };
         }
     }

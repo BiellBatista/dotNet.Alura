@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F50CD1B3-C5F1-4062-8279-B5BAED027E31}</ProjectGuid>
+    <ProjectGuid>{3D9F4410-A444-4CDE-90CE-2C4B774F577C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_03_01_XX_Propriedades_Acessadores</RootNamespace>
-    <AssemblyName>03-01-XX-Propriedades-Acessadores</AssemblyName>
+    <RootNamespace>_03_02_XX_Projetar_Interfaces</RootNamespace>
+    <AssemblyName>03-02-XX-Projetar-Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="01-Propriedades-Acessadores\Antes\PropriedadesAcessadores.cs" />
     <Compile Include="01-Propriedades-Acessadores\Depois\PropriedadesAcessadores.cs" />
+    <Compile Include="02-Projetar-Interfaces\Antes\ProjetarInterfaces.cs" />
+    <Compile Include="02-Projetar-Interfaces\Depois\ProjetarInterfaces.cs" />
     <Compile Include="IAulaItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

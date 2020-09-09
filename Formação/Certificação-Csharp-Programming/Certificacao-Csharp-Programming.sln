@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-05-XX-Adicionando-Membro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-01-XX-Propriedades-Acessadores", "03-01-XX-Propriedades-Acessadores\03-01-XX-Propriedades-Acessadores.csproj", "{F50CD1B3-C5F1-4062-8279-B5BAED027E31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-02-XX-Projetar-Interfaces", "03-02-XX-Projetar-Interfaces\03-02-XX-Projetar-Interfaces.csproj", "{3D9F4410-A444-4CDE-90CE-2C4B774F577C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{F50CD1B3-C5F1-4062-8279-B5BAED027E31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F50CD1B3-C5F1-4062-8279-B5BAED027E31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F50CD1B3-C5F1-4062-8279-B5BAED027E31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D9F4410-A444-4CDE-90CE-2C4B774F577C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D9F4410-A444-4CDE-90CE-2C4B774F577C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D9F4410-A444-4CDE-90CE-2C4B774F577C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D9F4410-A444-4CDE-90CE-2C4B774F577C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
