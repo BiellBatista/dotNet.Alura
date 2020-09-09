@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-02-XX-Projetar-Interface
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-03-XX-Interfaces-Explicitas", "03-03-XX-Interfaces-Explicitas\03-03-XX-Interfaces-Explicitas.csproj", "{77F6F7C2-1D59-4FDC-9C00-76D0F80AEB0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-04-XX-Classe-Base", "03-04-XX-Classe-Base\03-04-XX-Classe-Base.csproj", "{E1B8F254-9679-471D-9CED-6B9441381E16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{77F6F7C2-1D59-4FDC-9C00-76D0F80AEB0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77F6F7C2-1D59-4FDC-9C00-76D0F80AEB0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77F6F7C2-1D59-4FDC-9C00-76D0F80AEB0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1B8F254-9679-471D-9CED-6B9441381E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1B8F254-9679-471D-9CED-6B9441381E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1B8F254-9679-471D-9CED-6B9441381E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1B8F254-9679-471D-9CED-6B9441381E16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
