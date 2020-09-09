@@ -122,6 +122,10 @@ Certificação C# Programming parte 2: Consumir tipos
 		11 - Mapa do Curso
 Certificação C# Programming parte 3: Encapsulamento e Hierarquia de Classes
 	01 - Propriedades e Acessadores
+		01 - Preparando o ambiente
+		02 - Introdução
+		03 - Projeto Inicial da Aula Atual
+		04 - Encapsulamento
 	02 - Projetar Interfaces
 	03 - Interfaces Explícitas
 	04 - Classe Base
