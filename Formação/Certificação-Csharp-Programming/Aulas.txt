@@ -147,6 +147,8 @@ Certificação C# Programming parte 3: Encapsulamento e Hierarquia de Classes
 		07 - O Que Aprendemos?
 		08 - Projeto da Aula Atual
 	03 - Interfaces Explícitas
+		01 - Projeto Inicial da Aula Atual
+		02 - Interfaces Explícitas
 	04 - Classe Base
 	05 - Comparações Entre Objetos
 Certificação C# Programming parte 4: Fluxo de programa e exceções
