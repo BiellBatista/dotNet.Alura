@@ -131,6 +131,12 @@ Certificação C# Programming parte 3: Encapsulamento e Hierarquia de Classes
 		07 - Propriedade somente leitura
 		08 - Propriedade auto-implementada (D)
 		09 - Modificadores de Visibilidade
+		10 - Quem pode acessar? (D)
+		11 - Público x Privado (C)
+		12 - Para pensar: tipos imutáveis
+		13 - Consolidando seu conhecimento
+		14 - O Que Aprendemos?
+		15 - Projeto da Aula Atual
 	02 - Projetar Interfaces
 	03 - Interfaces Explícitas
 	04 - Classe Base
