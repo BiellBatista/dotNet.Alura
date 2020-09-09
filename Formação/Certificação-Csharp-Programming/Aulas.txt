@@ -129,6 +129,8 @@ Certificação C# Programming parte 3: Encapsulamento e Hierarquia de Classes
 		05 - Getters e Setters (B / D / E)
 		06 - De que maneira você deve implementar o membro 'Voltagem'? (C)
 		07 - Propriedade somente leitura
+		08 - Propriedade auto-implementada (D)
+		09 - Modificadores de Visibilidade
 	02 - Projetar Interfaces
 	03 - Interfaces Explícitas
 	04 - Classe Base
