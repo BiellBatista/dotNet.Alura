@@ -110,6 +110,8 @@ Certificação C# Programming parte 2: Consumir tipos
 		09 - Consolidando seu conhecimento
 	05 - Adicionando membros dinamicamente
 		01 - Adicionando propriedades e métodos dinamicamente
+		02 - Adicionando membros dinamicamente (B)
+		03 - Interoperabilidade COM
 Certificação C# Programming parte 3: Encapsulamento e Hierarquia de Classes
 	01 - Propriedades e Acessadores
 	02 - Projetar Interfaces
