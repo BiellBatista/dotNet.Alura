@@ -4,7 +4,6 @@ namespace _03_02_XX_Projetar_Interfaces.Depois
 {
     class PropriedadesAcessadores : IAulaItem
     {
-
         public void Executar()
         {
             Funcionario funcionario = new Funcionario(1000);

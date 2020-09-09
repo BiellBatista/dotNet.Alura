@@ -2,10 +2,6 @@
 {
     class PropriedadesAcessadores : IAulaItem
     {
-        static void Main(string[] args)
-        {
-        }
-
         public void Executar()
         {
             throw new System.NotImplementedException();
