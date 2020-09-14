@@ -158,6 +158,15 @@ Certificação C# Programming parte 3: Encapsulamento e Hierarquia de Classes
 	04 - Classe Base
 		01 - Projeto Inicial da Aula Atual
 		02 - Classe Base
+		03 - Herdando de várias classes (B)
+		04 - Declarar a variável como classe-base ou não? (A)
+		05 - Qual palavra-chave você deve usar? (D)
+		06 - Declaração de herança (A / F)
+		07 - Classes abstratas e interfaces (B / C / D)
+		08 - Classe Base e Interface (A / C)
+		09 - Consolidando seu conhecimento
+		10 - O Que Aprendemos?
+		11 - Projeto da Aula Atual
 	05 - Comparações Entre Objetos
 Certificação C# Programming parte 4: Fluxo de programa e exceções
 	01 - Fluxo de Programa If, Else, Switch
