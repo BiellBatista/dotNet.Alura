@@ -1,0 +1,151 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+
+namespace _04_02_XX_Compilacao_Condicional.Depois
+{
+    class IteracaoForForeach : IAulaItem
+    {
+        public void Executar()
+        {
+            GetFatorial(5);
+            GetFatorial(4);
+            GetFatorial(3);
+            GetFatorial(2);
+            GetFatorial(1);
+            GetFatorial(0);
+
+            //RelatorioClientes.ImprimirListagemClientes();
+
+            //MenuCaixaEletronico menu = new MenuCaixaEletronico();
+            //menu.Executar();
+
+            IList<Conta4> contasEspeciais = GetContasEspeciais();
+
+            bool existe = ExisteContaComMaisDe50000();
+        }
+
+        private static IList<Conta4> GetContasEspeciais()
+        {
+            IList<Cliente> clientes = GetClientes();
+            IList<Conta4> contasEspeciais = new Collection<Conta4>();
+
+            //TAREFA: RETORNAR UMA LISTA COM 
+            //TODAS AS CONTAS COM MAIS DE 5 MIL DE SALDO
+
+            foreach (Cliente cliente in clientes)
+            {
+                foreach (Conta4 Conta4 in cliente.Contas)
+                {
+                    if (Conta4.Saldo > 5000)
+                    {
+                        contasEspeciais.Add(Conta4);
+                    }
+                }
+            }
+
+            return contasEspeciais;
+        }
+
+        private static bool ExisteContaComMaisDe50000()
+        {
+            IList<Cliente> clientes = GetClientes();
+
+            //TAREFA: RETORNAR VERDADEIRO OU FALSO
+            //INDICANDO SE EXISTE Conta4 COM MAIS DE 50 MIL DE SALDO
+
+            foreach (var cliente in clientes)
+            {
+                foreach (var Conta4 in cliente.Contas)
+                {
+                    if (Conta4.Saldo > 50000)
+                    {
+                        return true; //retorno antecipado ou early return
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        private static IList<Cliente> GetClientes()
+        {
+            IList<Cliente> clientes = new List<Cliente>();
+            IList<Conta4> contas1 = new List<Conta4>
+            {
+                new Conta4(1000m, 2, 0.025m),
+                new Conta4(30000m, 4, 0.045m),
+                new Conta4(50000m, 6, 0.045m)
+            };
+
+            clientes.Add(new Cliente("José", "da Silva", contas1));
+
+            IList<Conta4> contas2 = new List<Conta4>
+            {
+                new Conta4(400m, 2, 0.025m),
+                new Conta4(3000m, 4, 0.045m),
+                new Conta4(75000m, 6, 0.045m)
+            };
+
+            clientes.Add(new Cliente("Maria", "de Souza", contas2));
+
+            return clientes;
+        }
+
+        private static int GetFatorial(int numero)
+        {
+            //FATORIAL DE 5 = 5 x 4 x 3 x 2 x 1  = 120
+            //FATORIAL DE 4 = 4 x 3 x 2 x 1      = 24
+            //FATORIAL DE 3 = 3 x 2 x 1          = 6
+            //FATORIAL DE 2 = 2 x 1              = 2 
+            //FATORIAL DE 1                      = 1
+            //FATORIAL DE 0                      = 1 
+
+            int fatorial = 1;
+            //int fator = numero; //inicializacao
+
+            //while (fator >= 1) //condicao
+            //{
+            //    fatorial = fatorial * fator;
+            //    fator = fator - 1; //decremento
+            //}
+
+            for (int fator = numero; fator >= 1; fator--)
+            {
+                fatorial *= fator;
+            }
+
+            Console.WriteLine($"fatorial de {numero} é {fatorial}");
+
+            return fatorial;
+        }
+    }
+
+    class Conta4
+    {
+        public Conta4(decimal saldo, int periodo, decimal juros)
+        {
+            Periodo = periodo;
+            Saldo = saldo;
+            Juros = juros;
+        }
+
+        public decimal Saldo { get; set; }
+        public decimal Juros { get; set; }
+        public int Periodo { get; set; }
+    }
+
+    class Cliente
+    {
+        public Cliente(string nome, string sobrenome, IList<Conta4> contas)
+        {
+            Nome = nome;
+            Sobrenome = sobrenome;
+            Contas = contas;
+        }
+
+        public string Nome { get; set; }
+        public string Sobrenome { get; set; }
+        public IList<Conta4> Contas { get; set; }
+    }
+}

@@ -199,6 +199,7 @@ Certificação C# Programming parte 4: Fluxo de programa e exceções
 		16 - Consolidando seu conhecimento
 		17 - O que aprendemos?
 	02 - Compilação Condicional
+		01 - Diretivas de Compilação
 	03 - Fluxo de Programa While e Do
 	04 - Iteração com For e Foreach
 	05 - Manipulação de Exceções
