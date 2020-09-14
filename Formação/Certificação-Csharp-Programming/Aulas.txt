@@ -170,6 +170,7 @@ Certificação C# Programming parte 3: Encapsulamento e Hierarquia de Classes
 	05 - Comparações entre Objetos
 		01 - Projeto Inicial da Aula Atual
 		02 - Equals
+		03 - IComparable
 Certificação C# Programming parte 4: Fluxo de programa e exceções
 	01 - Fluxo de Programa If, Else, Switch
 	02 - Compilação Condicional
