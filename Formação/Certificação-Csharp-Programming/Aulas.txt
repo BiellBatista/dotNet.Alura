@@ -189,6 +189,15 @@ Certificação C# Programming parte 4: Fluxo de programa e exceções
 		06 - Cláusula de Guarda
 		07 - If, Else If, If
 		08 - Substituindo instruções If e Else por Switch
+		09 - IF-ELSE
+		10 - OPERADORES E EXPRESSÕES
+		11 - Para Saber Mais: Operadores em C#
+		12 - Implementando um mecanismo de notificação (A / D)
+		13 - Verificando se um valor é nulo (C)
+		14 - Calculando valor de juros (C)
+		15 - Decidindo entre opções (D)
+		16 - Consolidando seu conhecimento
+		17 - O que aprendemos?
 	02 - Compilação Condicional
 	03 - Fluxo de Programa While e Do
 	04 - Iteração com For e Foreach
