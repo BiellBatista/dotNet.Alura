@@ -20,6 +20,7 @@ namespace _04_01_XX_Fluxo_Programa_If_Else_Switch.Depois
                 bool numerico = char.IsDigit(caractere);
                 bool maiuscula = char.IsUpper(caractere);
                 bool valido = numerico || maiuscula;
+
                 if (!(valido))
                 {
                     codigoContratoValido = false;
@@ -35,6 +36,7 @@ namespace _04_01_XX_Fluxo_Programa_If_Else_Switch.Depois
             if (ValidarCodigo(codigoContrato))
             {
                 this.codigoContrato = codigoContrato;
+
                 Console.WriteLine($"Novo empréstimo com código: {codigoContrato}");
             }
             else
@@ -60,9 +62,12 @@ namespace _04_01_XX_Fluxo_Programa_If_Else_Switch.Depois
                 if (value > PRAZO_MAXIMO_PAGAMENTO_ANOS)
                 {
                     OnPrazoMaximoEstourado?.Invoke(this, new EventArgs());
+
                     return;
                 }
+
                 prazo = value;
+
                 Console.WriteLine($"novo prazo: {prazo}");
             }
         }

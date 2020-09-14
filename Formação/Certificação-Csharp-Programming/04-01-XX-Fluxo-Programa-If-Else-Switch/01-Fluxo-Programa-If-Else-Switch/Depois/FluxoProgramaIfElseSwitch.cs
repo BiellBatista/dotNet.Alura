@@ -61,6 +61,7 @@ namespace _04_01_XX_Fluxo_Programa_If_Else_Switch.Depois
             };
 
             int opcao = 0;
+
             do
             {
                 Console.Clear();
@@ -88,7 +89,6 @@ namespace _04_01_XX_Fluxo_Programa_If_Else_Switch.Depois
                 }
             }
             while (opcao != 0);
-
         }
     }
 }
