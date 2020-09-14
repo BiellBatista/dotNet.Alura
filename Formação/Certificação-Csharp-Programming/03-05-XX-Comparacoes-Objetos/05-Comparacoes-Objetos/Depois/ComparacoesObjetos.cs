@@ -27,10 +27,38 @@ namespace _03_05_XX_Comparacoes_Objetos.Depois
 
             Console.WriteLine(aluno1.Equals(aluno2));
             Console.WriteLine(aluno1.Equals(aluno3));
+
+            Aluno aluno4 = new Aluno
+            {
+                Nome = "ANDRÉ DOS SANTOS",
+                DataNascimento = new DateTime(1970, 1, 1)
+            };
+
+            Aluno aluno5 = new Aluno
+            {
+                Nome = "Ana de Souza",
+                DataNascimento = new DateTime(1990, 1, 1)
+            };
+
+            List<Aluno> alunos = new List<Aluno>
+            {
+                aluno1,
+                aluno2,
+                aluno3,
+                aluno4,
+                aluno5
+            };
+
+            alunos.Sort();
+
+            foreach (var aluno in alunos)
+            {
+                Console.WriteLine(aluno);
+            }
         }
     }
 
-    class Aluno
+    class Aluno : IComparable
     {
         public string Nome { get; set; }
         public DateTime DataNascimento { get; set; }
@@ -55,6 +83,24 @@ namespace _03_05_XX_Comparacoes_Objetos.Depois
             hashCode = hashCode * -1521134295 + DataNascimento.GetHashCode();
 
             return hashCode;
+        }
+
+        public int CompareTo(object obj)
+        {
+            //retorna 0 => objetos são iguais
+            //retorna > 0 => objeto atual vem depois
+            //retorna < 0 => objeto atual vem antes
+
+            Aluno outro = obj as Aluno;
+
+            int resultado = DataNascimento.CompareTo(outro.DataNascimento);
+
+            if (resultado == 0)
+            {
+                resultado = Nome.CompareTo(outro.Nome);
+            }
+
+            return resultado;
         }
     }
 }
