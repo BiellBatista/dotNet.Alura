@@ -181,6 +181,10 @@ Certificação C# Programming parte 3: Encapsulamento e Hierarquia de Classes
 		11 - Mapa do Curso
 Certificação C# Programming parte 4: Fluxo de programa e exceções
 	01 - Fluxo de Programa If, Else, Switch
+		01 - Introdução
+		02 - Conteúdo da Parte 4
+		03 - Projeto do Curso
+		04 - If e Else
 	02 - Compilação Condicional
 	03 - Fluxo de Programa While e Do
 	04 - Iteração com For e Foreach

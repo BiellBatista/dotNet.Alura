@@ -18,8 +18,8 @@ namespace _02_03_XX_Implementando_Conversoes.Depois
 
             anguloEmRadianos = anguloEmGraus; //chamando o método de conversão
             anguloEmGraus = anguloEmRadianos; //chamando o método de conversão
-            System.Console.WriteLine($"anguloEmGraus: {anguloEmGraus}");
-            System.Console.WriteLine($"anguloEmRadianos: {anguloEmRadianos}");
+            Console.WriteLine($"anguloEmGraus: {anguloEmGraus}");
+            Console.WriteLine($"anguloEmRadianos: {anguloEmRadianos}");
         }
     }
 

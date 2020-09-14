@@ -18,8 +18,8 @@ namespace _02_03_XX_Implementando_Conversoes.Antes
 
             anguloEmRadianos = AnguloEmRadianos.Converte(anguloEmGraus);
             anguloEmGraus = AnguloEmGraus.Converte(anguloEmRadianos);
-            System.Console.WriteLine($"anguloEmGraus: {anguloEmGraus}");
-            System.Console.WriteLine($"anguloEmRadianos: {anguloEmRadianos}");
+            Console.WriteLine($"anguloEmGraus: {anguloEmGraus}");
+            Console.WriteLine($"anguloEmRadianos: {anguloEmRadianos}");
         }
     }
 
