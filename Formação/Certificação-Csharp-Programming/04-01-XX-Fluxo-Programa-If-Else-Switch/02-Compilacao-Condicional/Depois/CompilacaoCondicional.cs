@@ -9,9 +9,9 @@ namespace _04_01_XX_Fluxo_Programa_If_Else_Switch.Depois
 
         public void Executar()
         {
-            //ContaBancaria conta = new ContaBancaria(100);
-            //conta.SacarDinheiro(35);
-            //conta.SacarDinheiro(150);
+            ContaBancaria conta = new ContaBancaria(100);
+            conta.SacarDinheiro(35);
+            conta.SacarDinheiro(150);
 
             Emprestimo2 emprestimo = new Emprestimo2("A1234");
 
