@@ -548,7 +548,7 @@ Formação Certificação C# Programming
 		02 - Projetar Interfaces
 		03 - Interfaces Explícitas
 		04 - Classe Base
-		05 - Comparações Entre Objetos
+		05 - Comparações entre Objetos
 	Certificação C# Programming parte 4: Fluxo de programa e exceções
 		01 - Fluxo de Programa If, Else, Switch
 		02 - Compilação Condicional
