@@ -222,6 +222,13 @@ Certificação C# Programming parte 4: Fluxo de programa e exceções
 		01 - Substituindo While por For
 		02 - Substituindo For por Foreach
 		03 - Usando Break ou Early Return
+		04 - LAÇOS COM FOR
+		05 - LAÇOS COM FOREACH
+		06 - Laços aninhados (A)
+		07 - Executando laços (D)
+		08 - Laços for aninhados (A)
+		09 - Consolidando seu conhecimento
+		10 - O que aprendemos?
 	05 - Manipulação de Exceções
 	06 - Exceções com SQL Server e Rede
 Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
