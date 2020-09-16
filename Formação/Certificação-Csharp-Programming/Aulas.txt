@@ -234,6 +234,12 @@ Certificação C# Programming parte 4: Fluxo de programa e exceções
 		02 - Capturando exceções com try e catch
 		03 - Lançando exceções especializadas
 		04 - Exceções Customizadas
+		05 - Lendo arquivo de log (D)
+		06 - Registrando exceções (D)
+		07 - Capturando diversos tipos de exceções (A)
+		08 - Capturando exceções (B)
+		09 - Consolidando seu conhecimento
+		10 - O que aprendemos?
 	06 - Exceções com SQL Server e Rede
 Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
 	01 - Gerenciamento de Memória
