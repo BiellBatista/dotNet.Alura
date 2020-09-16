@@ -211,6 +211,7 @@ Certificação C# Programming parte 4: Fluxo de programa e exceções
 		10 - O que aprendemos?
 	03 - Fluxo de Programa While e Do
 		01 - Repetindo com While
+		02 - Do While
 	04 - Iteração com For e Foreach
 	05 - Manipulação de Exceções
 	06 - Exceções com SQL Server e Rede
