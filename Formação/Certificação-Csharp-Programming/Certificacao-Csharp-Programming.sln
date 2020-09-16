@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-02-XX-Compilacao-Condici
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-03-XX-Fluxo-Programa-While-Do", "04-03-XX-Fluxo-Programa-While-Do\04-03-XX-Fluxo-Programa-While-Do.csproj", "{3630C698-CA16-44C8-A8AE-A63483A0626E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-04-XX-Iteracao-For-Foreach", "04-04-XX-Iteracao-For-Foreach\04-04-XX-Iteracao-For-Foreach.csproj", "{1AE43DA2-C81E-4129-8C8E-627F2C0AA732}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{3630C698-CA16-44C8-A8AE-A63483A0626E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3630C698-CA16-44C8-A8AE-A63483A0626E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3630C698-CA16-44C8-A8AE-A63483A0626E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AE43DA2-C81E-4129-8C8E-627F2C0AA732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AE43DA2-C81E-4129-8C8E-627F2C0AA732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AE43DA2-C81E-4129-8C8E-627F2C0AA732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AE43DA2-C81E-4129-8C8E-627F2C0AA732}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
