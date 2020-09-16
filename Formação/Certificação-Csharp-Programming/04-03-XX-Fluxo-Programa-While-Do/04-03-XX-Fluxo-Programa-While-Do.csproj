@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3630C698-CA16-44C8-A8AE-A63483A0626E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>_04_03_XX_Fluxo_Programa_While_Do</RootNamespace>
+    <AssemblyName>04-03-XX-Fluxo-Programa-While-Do</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="01-Fluxo-Programa-If-Else-Switch\Antes\CaixaEletronico.cs" />
+    <Compile Include="01-Fluxo-Programa-If-Else-Switch\Antes\ContaBancaria.cs" />
+    <Compile Include="01-Fluxo-Programa-If-Else-Switch\Antes\Emprestimo.cs" />
+    <Compile Include="01-Fluxo-Programa-If-Else-Switch\Antes\ExemplosComIf.cs" />
+    <Compile Include="01-Fluxo-Programa-If-Else-Switch\Antes\FluxoProgramaIfElseSwitch.cs" />
+    <Compile Include="01-Fluxo-Programa-If-Else-Switch\Depois\CaixaEletronico.cs" />
+    <Compile Include="01-Fluxo-Programa-If-Else-Switch\Depois\ContaBancaria.cs" />
+    <Compile Include="01-Fluxo-Programa-If-Else-Switch\Depois\Emprestimo.cs" />
+    <Compile Include="01-Fluxo-Programa-If-Else-Switch\Depois\ExemplosComIf.cs" />
+    <Compile Include="01-Fluxo-Programa-If-Else-Switch\Depois\FluxoProgramaIfElseSwitch.cs" />
+    <Compile Include="02-Compilacao-Condicional\Antes\CompilacaoCondicional.cs" />
+    <Compile Include="02-Compilacao-Condicional\Antes\ContaBancaria.cs" />
+    <Compile Include="02-Compilacao-Condicional\Antes\Emprestimo.cs" />
+    <Compile Include="02-Compilacao-Condicional\Antes\ExemplosComIf.cs" />
+    <Compile Include="02-Compilacao-Condicional\Depois\CompilacaoCondicional.cs" />
+    <Compile Include="02-Compilacao-Condicional\Depois\ContaBancaria.cs" />
+    <Compile Include="02-Compilacao-Condicional\Depois\Emprestimo.cs" />
+    <Compile Include="02-Compilacao-Condicional\Depois\ExemplosComIf.cs" />
+    <Compile Include="03-Fluxo-Programa-While-Do\Antes\ContaBancaria.cs" />
+    <Compile Include="03-Fluxo-Programa-While-Do\Antes\Emprestimo.cs" />
+    <Compile Include="03-Fluxo-Programa-While-Do\Antes\ExemplosComIf.cs" />
+    <Compile Include="03-Fluxo-Programa-While-Do\Antes\FluxoProgramaWhileDo.cs" />
+    <Compile Include="03-Fluxo-Programa-While-Do\Antes\MenuCaixaEletronico.cs" />
+    <Compile Include="03-Fluxo-Programa-While-Do\Antes\RelatorioClientes.cs" />
+    <Compile Include="03-Fluxo-Programa-While-Do\Depois\ContaBancaria.cs" />
+    <Compile Include="03-Fluxo-Programa-While-Do\Depois\Emprestimo.cs" />
+    <Compile Include="03-Fluxo-Programa-While-Do\Depois\ExemplosComIf.cs" />
+    <Compile Include="03-Fluxo-Programa-While-Do\Depois\FluxoProgramaWhileDo.cs" />
+    <Compile Include="03-Fluxo-Programa-While-Do\Depois\MenuCaixaEletronico.cs" />
+    <Compile Include="03-Fluxo-Programa-While-Do\Depois\RelatorioClientes.cs" />
+    <Compile Include="04-Iteracao-For-Foreach\Antes\ContaBancaria.cs" />
+    <Compile Include="04-Iteracao-For-Foreach\Antes\Emprestimo.cs" />
+    <Compile Include="04-Iteracao-For-Foreach\Antes\ExemplosComIf.cs" />
+    <Compile Include="04-Iteracao-For-Foreach\Antes\IteracaoForForeach.cs" />
+    <Compile Include="04-Iteracao-For-Foreach\Antes\MenuCaixaEletronico.cs" />
+    <Compile Include="04-Iteracao-For-Foreach\Antes\RelatorioClientes.cs" />
+    <Compile Include="04-Iteracao-For-Foreach\Depois\ContaBancaria.cs" />
+    <Compile Include="04-Iteracao-For-Foreach\Depois\Emprestimo.cs" />
+    <Compile Include="04-Iteracao-For-Foreach\Depois\ExemplosComIf.cs" />
+    <Compile Include="04-Iteracao-For-Foreach\Depois\IteracaoForForeach.cs" />
+    <Compile Include="04-Iteracao-For-Foreach\Depois\MenuCaixaEletronico.cs" />
+    <Compile Include="04-Iteracao-For-Foreach\Depois\RelatorioClientes.cs" />
+    <Compile Include="05-Manipulacao-de-Excecoes\Antes\Cliente.cs" />
+    <Compile Include="05-Manipulacao-de-Excecoes\Antes\LeitorDeArquivo.cs" />
+    <Compile Include="05-Manipulacao-de-Excecoes\Antes\ManipulacaoExcecoes.cs" />
+    <Compile Include="05-Manipulacao-de-Excecoes\Antes\OperacaoFinanceiraException.cs" />
+    <Compile Include="05-Manipulacao-de-Excecoes\Depois\Cliente.cs" />
+    <Compile Include="05-Manipulacao-de-Excecoes\Depois\LeitorDeArquivo.cs" />
+    <Compile Include="05-Manipulacao-de-Excecoes\Depois\ManipulacaoExcecoes.cs" />
+    <Compile Include="05-Manipulacao-de-Excecoes\Depois\OperacaoFinanceiraException.cs" />
+    <Compile Include="IAulaItem.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="03-Fluxo-Programa-While-Do\Antes\Clientes.txt" />
+    <Content Include="03-Fluxo-Programa-While-Do\Depois\Clientes.txt" />
+    <Content Include="04-Iteracao-For-Foreach\Antes\Clientes.txt" />
+    <Content Include="04-Iteracao-For-Foreach\Depois\Clientes.txt" />
+    <Content Include="05-Manipulacao-de-Excecoes\Antes\DB\ByteBank.sql" />
+    <Content Include="05-Manipulacao-de-Excecoes\Antes\DB\p_TARIFA_TRANSFERENCIA_i.sql" />
+    <Content Include="05-Manipulacao-de-Excecoes\Antes\DB\p_TRANSFERENCIA_BANCARIA_i.sql" />
+    <Content Include="05-Manipulacao-de-Excecoes\Depois\DB\ByteBank.sql" />
+    <Content Include="05-Manipulacao-de-Excecoes\Depois\DB\p_TARIFA_TRANSFERENCIA_i.sql" />
+    <Content Include="05-Manipulacao-de-Excecoes\Depois\DB\p_TRANSFERENCIA_BANCARIA_i.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
