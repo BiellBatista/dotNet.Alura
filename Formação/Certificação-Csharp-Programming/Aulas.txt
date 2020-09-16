@@ -220,6 +220,7 @@ Certificação C# Programming parte 4: Fluxo de programa e exceções
 		08 - Consolidando seu conhecimento
 	04 - Iteração com For e Foreach
 		01 - Substituindo While por For
+		02 - Substituindo For por Foreach
 	05 - Manipulação de Exceções
 	06 - Exceções com SQL Server e Rede
 Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
