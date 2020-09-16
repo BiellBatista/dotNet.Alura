@@ -233,6 +233,7 @@ Certificação C# Programming parte 4: Fluxo de programa e exceções
 		01 - Realizando transferência entre contas
 		02 - Capturando exceções com try e catch
 		03 - Lançando exceções especializadas
+		04 - Exceções Customizadas
 	06 - Exceções com SQL Server e Rede
 Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
 	01 - Gerenciamento de Memória
