@@ -201,6 +201,14 @@ Certificação C# Programming parte 4: Fluxo de programa e exceções
 	02 - Compilação Condicional
 		01 - Diretivas de Compilação
 		02 - Criando Símbolos de Compilação
+		03 - COMPILAÇÃO CONDICIONAL
+		04 - CONSTANTES DE COMPILAÇÃO CUSTOMIZADAS
+		05 - Complete o código (D)
+		06 - Qual diretório usar? (A)
+		07 - Qual código você deve usar? (A)
+		08 - Trabalhando com símbolos de compilação custom (C)
+		09 - Consolidando seu conhecimento
+		10 - O que aprendemos?
 	03 - Fluxo de Programa While e Do
 	04 - Iteração com For e Foreach
 	05 - Manipulação de Exceções

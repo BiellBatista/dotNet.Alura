@@ -111,11 +111,12 @@ namespace _04_02_XX_Compilacao_Condicional.Depois
         {
             String arquivo = "";
             //condição que será lida pelo compilador. Neste caso, ele só executa a linha "arquivo = ARQUIVO_LOG_TESTE;" se a aplicação for
-            //roada no modo debug. O # (hash) é o responsável pela indicação ao compilador
+            //roada no modo debug. O # (hash) é o responsável pela indicação ao compilador. Isso se chama diretiva de pré-compilação
 #if (DEBUG)
             arquivo = ARQUIVO_LOG_TESTE;
 #else
             arquivo = ARQUIVO_LOG_PRODUCAO;
+            //fechamento do if da pré-compilação
 #endif
 
             Directory.CreateDirectory(Path.GetDirectoryName(arquivo));
@@ -137,6 +138,7 @@ namespace _04_02_XX_Compilacao_Condicional.Depois
 
 #if TRIAL
             AvaliarEmprestimo();
+            //else if da pré-compilação
 #elif BASIC
             AvaliarEmprestimo();
             ProcessarEmprestimo();
@@ -144,6 +146,7 @@ namespace _04_02_XX_Compilacao_Condicional.Depois
 #elif ADVANCED
             AvaliarEmprestimo();
             ProcessarEmprestimo();
+            //fechamento do if da pré-compilação
 #endif
         }
 
