@@ -110,6 +110,8 @@ namespace _04_02_XX_Compilacao_Condicional.Depois
         public void GravarLog(string mensagem)
         {
             String arquivo = "";
+            //condição que será lida pelo compilador. Neste caso, ele só executa a linha "arquivo = ARQUIVO_LOG_TESTE;" se a aplicação for
+            //roada no modo debug. O # (hash) é o responsável pela indicação ao compilador
 #if (DEBUG)
             arquivo = ARQUIVO_LOG_TESTE;
 #else
