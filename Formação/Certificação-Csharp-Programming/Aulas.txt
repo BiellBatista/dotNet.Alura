@@ -245,6 +245,16 @@ Certificação C# Programming parte 4: Fluxo de programa e exceções
 		02 - Liberando recursos após a ocorrência de uma exceção
 		03 - Desfazendo Transação e Relançando Exceções
 		04 - Capturando Mais de Um Tipo de Exceção no Bloco Try Catch Finally
+		05 - Exceções de rede, comunicação e tempo limite
+		06 - Projeto do Curso
+		07 - Conclusão
+		08 - Exceção e bancos de dados (B)
+		09 - Banco de dados (D)
+		10 - Capturando múltiplas exceções (C)
+		11 - throw; vs. throw ex; (B)
+		12 - Consolidando seu conhecimento
+		13 - O que aprendemos?
+		14 - Mapa do Curso
 Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
 	01 - Gerenciamento de Memória
 	02 - Coletando Lixo
