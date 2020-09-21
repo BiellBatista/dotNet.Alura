@@ -2,33 +2,12 @@
 using System.Data.SqlClient;
 using System.IO;
 
-namespace _04_06_XX_Excecoes_SQL_Server_Rede.Depois
+namespace _04_06_XX_Excecoes_SQL_Server_Rede.Antes
 {
-    class ManipulacaoExcecoes6 : IAulaItem
+    class ExcecoesSQLServerRede : IAulaItem
     {
         public void Executar()
         {
-            ContaCorrente6 conta1 = new ContaCorrente6(1, 100);
-            ContaCorrente6 conta2 = new ContaCorrente6(4, 50);
-            Console.WriteLine(conta1);
-            Console.WriteLine(conta2);
-
-            ITransferenciaBancaria6 transferencia = new TransferenciaBancaria_BD6();
-            transferencia.Efetuar(conta1, conta2, 30);
-
-            Console.WriteLine(conta1);
-            Console.WriteLine(conta2);
-
-            try
-            {
-                transferencia.Efetuar(conta1, conta2, 250);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Aconteceu um problema na transferência.");
-                Logger.LogErro(ex.ToString());
-            }
-
             Console.ReadKey();
         }
     }
@@ -51,6 +30,12 @@ namespace _04_06_XX_Excecoes_SQL_Server_Rede.Depois
 
         public void Debitar(decimal valor)
         {
+            if (Saldo < valor)
+            {
+                //throw new ArgumentException("saldo insuficiente");
+                throw new SaldoInsuficienteException6();
+            }
+
             Saldo -= valor;
         }
 
@@ -63,11 +48,6 @@ namespace _04_06_XX_Excecoes_SQL_Server_Rede.Depois
         {
             return $"Conta Nº: {Id:0000}, Saldo: {Saldo:C}";
         }
-
-        public void AtualizarSaldo(decimal novoSaldo)
-        {
-            Saldo = novoSaldo;
-        }
     }
 
     interface ITransferenciaBancaria6
@@ -79,23 +59,6 @@ namespace _04_06_XX_Excecoes_SQL_Server_Rede.Depois
     {
         public void Efetuar(ContaCorrente6 contaDebito, ContaCorrente6 contaCredito, decimal valor)
         {
-            if (contaDebito == null)
-            {
-                throw new ArgumentNullException("contaDebito");
-            }
-            if (contaCredito == null)
-            {
-                throw new ArgumentNullException("contaCredito");
-            }
-            if (valor <= 0)
-            {
-                throw new ArgumentOutOfRangeException("valor");
-            }
-            if (valor > contaDebito.Saldo)
-            {
-                throw new SaldoInsuficienteException6();
-            }
-
             Logger.LogInfo("Entrando do método Efetuar.");
 
             contaDebito.Debitar(valor);
@@ -117,64 +80,19 @@ namespace _04_06_XX_Excecoes_SQL_Server_Rede.Depois
         {
             Logger.LogInfo("Entrando do método Efetuar.");
 
-            //CRIA CONEXÃO COM O BANCO DE DADOS E INICIA UMA TRANSAÇÃO
             connection = new SqlConnection(CONNECTION_STRING);
             connection.Open();
             transaction = connection.BeginTransaction();
 
-            //OBTÉM OS COMANDOS DO SQL SERVER
             SqlCommand comandoTransferencia = GetTransferenciaCommand(contaCredito.Id, contaDebito.Id, valor);
             SqlCommand comandoTaxa = GetTaxaTransferenciaCommand(contaCredito.Id, TAXA_TRANSFERENCIA);
 
-            try
-            {
-                //EXECUTA OS COMANDOS NO SERVIDOR DE BANCO DE DADOS
-                comandoTaxa.ExecuteNonQuery();
-                comandoTransferencia.ExecuteNonQuery();
-                transaction.Commit(); //A TRANSFERÊNCIA ACONTECE NESTA LINHA
+            comandoTaxa.ExecuteNonQuery();
+            comandoTransferencia.ExecuteNonQuery();
+            transaction.Commit();
 
-                AtualizarSaldo(contaDebito);
-                AtualizarSaldo(contaCredito);
-
-                Logger.LogInfo("Transferência realizada com sucesso.");
-            }
-            catch (SqlException ex) //EXCEÇÕES ESPECÍFICAS PRIMEIRO
-            {
-                transaction.Rollback(); //DESFAZ A TRANSAÇÃO
-
-                Logger.LogErro(ex.ToString());
-
-                throw;
-            }
-            catch (Exception ex) //EXCEÇÕES MAIS GENÉRICAS DEPOIS
-            {
-                Logger.LogErro(ex.ToString());
-
-                throw;
-            }
-            finally
-            {
-                //LIBERA OS RECURSOS
-                comandoTransferencia.Dispose();
-                comandoTaxa.Dispose();
-                transaction.Dispose();
-                connection.Dispose();
-            }
-
+            Logger.LogInfo("Transferência realizada com sucesso.");
             Logger.LogInfo("Saindo do método Efetuar.");
-        }
-
-        private ContaCorrente6 AtualizarSaldo(ContaCorrente6 conta)
-        {
-            SqlCommand comandoSaldo = new SqlCommand("SELECT SALDO_DISPONIVEL FROM CONTA WHERE CONTA_ID = @CONTA_ID", connection);
-            comandoSaldo.Parameters.AddWithValue("@CONTA_ID", conta.Id);
-
-            object obj = comandoSaldo.ExecuteScalar();
-            decimal novoSaldo = (decimal)(double?)obj;
-
-            conta.AtualizarSaldo(novoSaldo);
-
-            return conta;
         }
 
         private SqlCommand GetTransferenciaCommand(int contaDebitoId, int contaCreditoId, decimal valorTransferencia)
@@ -201,6 +119,19 @@ namespace _04_06_XX_Excecoes_SQL_Server_Rede.Depois
         }
     }
 
+    [Serializable]
+    public class SaldoInsuficienteException6 : Exception
+    {
+        public SaldoInsuficienteException6() { }
+        public SaldoInsuficienteException6(string message) : base(message) { }
+        public SaldoInsuficienteException6(string message, Exception inner) : base(message, inner) { }
+        protected SaldoInsuficienteException6(
+          System.Runtime.Serialization.SerializationInfo info,
+          System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
+
+        public override string Message => "Saldo Insuficiente.";
+    }
+
     class Logger6
     {
         public static void LogInfo(string mensagem)
@@ -215,25 +146,10 @@ namespace _04_06_XX_Excecoes_SQL_Server_Rede.Depois
 
         private static void Log(string mensagem, string tipo)
         {
-            Console.WriteLine(mensagem);
-
             using (var sw = new StreamWriter("logs.txt", append: true))
             {
                 sw.WriteLine(DateTime.Now.ToLocalTime() + ": " + tipo + " - " + mensagem);
             }
         }
-    }
-
-
-    [Serializable]
-    public class SaldoInsuficienteException6 : Exception
-    {
-        public SaldoInsuficienteException6() { }
-        public SaldoInsuficienteException6(string message) : base(message) { }
-        public SaldoInsuficienteException6(string message, Exception inner) : base(message, inner) { }
-        protected SaldoInsuficienteException6(
-          System.Runtime.Serialization.SerializationInfo info,
-          System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
-        public override string Message => "Saldo insuficiente.";
     }
 }

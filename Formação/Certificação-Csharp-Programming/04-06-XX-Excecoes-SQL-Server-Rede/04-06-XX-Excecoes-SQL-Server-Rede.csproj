@@ -95,11 +95,11 @@
     <Compile Include="05-Manipulacao-de-Excecoes\Depois\OperacaoFinanceiraException.cs" />
     <Compile Include="06-Excecoes-SQL-Server-Rede\Antes\Cliente.cs" />
     <Compile Include="06-Excecoes-SQL-Server-Rede\Antes\LeitorDeArquivo.cs" />
-    <Compile Include="06-Excecoes-SQL-Server-Rede\Antes\ManipulacaoExcecoes.cs" />
+    <Compile Include="06-Excecoes-SQL-Server-Rede\Antes\ExcecoesSQLServerRede.cs" />
     <Compile Include="06-Excecoes-SQL-Server-Rede\Antes\OperacaoFinanceiraException.cs" />
     <Compile Include="06-Excecoes-SQL-Server-Rede\Depois\Cliente.cs" />
     <Compile Include="06-Excecoes-SQL-Server-Rede\Depois\LeitorDeArquivo.cs" />
-    <Compile Include="06-Excecoes-SQL-Server-Rede\Depois\ManipulacaoExcecoes.cs" />
+    <Compile Include="06-Excecoes-SQL-Server-Rede\Depois\ExcecoesSQLServerRede.cs" />
     <Compile Include="06-Excecoes-SQL-Server-Rede\Depois\OperacaoFinanceiraException.cs" />
     <Compile Include="IAulaItem.cs" />
     <Compile Include="Program.cs" />

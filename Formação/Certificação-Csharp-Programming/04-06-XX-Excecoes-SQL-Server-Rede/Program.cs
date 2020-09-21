@@ -73,6 +73,7 @@ namespace _04_06_XX_Excecoes_SQL_Server_Rede
                 new MenuItem("Fluxo de Programa While e Do", typeof(FluxoProgramaWhileDo)),
                 new MenuItem("Iteração com For e Foreach", typeof(IteracaoForForeach)),
                 new MenuItem("Manipulação de Exceções", typeof(ManipulacaoExcecoes)),
+                new MenuItem("Exceções com SQL Server e Rede", typeof(ExcecoesSQLServerRede)),
             };
         }
     }
