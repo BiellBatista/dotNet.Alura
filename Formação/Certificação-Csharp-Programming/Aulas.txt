@@ -243,6 +243,7 @@ Certificação C# Programming parte 4: Fluxo de programa e exceções
 	06 - Exceções com SQL Server e Rede
 		01 - Fazendo a transferência bancária com SQL Server
 		02 - Liberando recursos após a ocorrência de uma exceção
+		03 - Desfazendo Transação e Relançando Exceções
 Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
 	01 - Gerenciamento de Memória
 	02 - Coletando Lixo
