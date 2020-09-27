@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-05-XX-Manipulacao-Exceco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-06-XX-Excecoes-SQL-Server-Rede", "04-06-XX-Excecoes-SQL-Server-Rede\04-06-XX-Excecoes-SQL-Server-Rede.csproj", "{466F7829-3E1A-4902-9284-BED51DD50115}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-01-XX-Strings-Ciclo-Vida-Objetos", "05-01-XX-Strings-Ciclo-Vida-Objetos\05-01-XX-Strings-Ciclo-Vida-Objetos.csproj", "{E5602D02-1578-4737-9DD1-888C08102441}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{466F7829-3E1A-4902-9284-BED51DD50115}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{466F7829-3E1A-4902-9284-BED51DD50115}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{466F7829-3E1A-4902-9284-BED51DD50115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5602D02-1578-4737-9DD1-888C08102441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5602D02-1578-4737-9DD1-888C08102441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5602D02-1578-4737-9DD1-888C08102441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5602D02-1578-4737-9DD1-888C08102441}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

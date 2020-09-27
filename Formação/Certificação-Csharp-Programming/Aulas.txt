@@ -257,6 +257,10 @@ Certificação C# Programming parte 4: Fluxo de programa e exceções
 		14 - Mapa do Curso
 Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
 	01 - Gerenciamento de Memória
+		01 - Introdução
+		02 - Preparando o ambiente
+		03 - Projeto do Curso
+		04 - Gerenciamento de Memória com Pilha
 	02 - Coletando Lixo
 	03 - O Padrão Disposable
 	04 - Concatenação, Escrita e Leitura de Strings
