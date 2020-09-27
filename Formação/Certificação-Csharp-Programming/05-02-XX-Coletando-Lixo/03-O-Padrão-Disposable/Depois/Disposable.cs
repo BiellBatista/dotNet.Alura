@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace _05_02_XX_Coletando_Lixo.Depois
 {
-    class Disposable2 : IAulaItem
+    public class Disposable2 : IAulaItem
     {
 	/// <summary>
         /// The main entry point for the application.

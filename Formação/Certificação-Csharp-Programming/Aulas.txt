@@ -270,6 +270,14 @@ Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
 		11 - O que aprendemos?
 	02 - Coletando Lixo
 		01 - Finalizadores
+		02 - O Padrão Disposable
+		03 - Um Processador de Cobrança (B / D)
+		04 - A pilha e o Coletor de Lixo
+		05 - Finalizador e o método Dispose
+		06 - Para pensar: descartando arrays de inteiros
+		07 - Para pensar: chamando Dispose várias vezes
+		08 - Consolidando seu conhecimento
+		09 - O que aprendemos?
 	03 - O Padrão Disposable
 	04 - Concatenação, Escrita e Leitura de Strings
 	05 - Pesquisando Strings

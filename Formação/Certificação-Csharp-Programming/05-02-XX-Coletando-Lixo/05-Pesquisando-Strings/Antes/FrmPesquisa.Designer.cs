@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPesquisa));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPesquisa));
             this.pnlBotoes = new System.Windows.Forms.Panel();
             this.btnExecutar = new System.Windows.Forms.Button();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
