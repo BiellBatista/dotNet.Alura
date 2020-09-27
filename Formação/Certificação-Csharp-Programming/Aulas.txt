@@ -281,6 +281,13 @@ Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
 	03 - O Padrão Disposable
 		01 - Liberando Recursos Gerenciados
 		02 - A Instrução Using
+		03 - O "açúcar sintático" using (A / C)
+		04 - Mão na massa: Lendo arquivo e liberando recursos
+		05 - Métodos do Coletor de Lixo (D)
+		06 - Permitindo Coleta de Referências
+		07 - Revisão
+		08 - Consolidando seu conhecimento
+		09 - O que aprendemos?
 	04 - Concatenação, Escrita e Leitura de Strings
 	05 - Pesquisando Strings
 	06 - Formatação de Strings
