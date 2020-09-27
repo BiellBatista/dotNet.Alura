@@ -279,6 +279,7 @@ Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
 		08 - Consolidando seu conhecimento
 		09 - O que aprendemos?
 	03 - O Padrão Disposable
+		01 - Liberando Recursos Gerenciados
 	04 - Concatenação, Escrita e Leitura de Strings
 	05 - Pesquisando Strings
 	06 - Formatação de Strings
