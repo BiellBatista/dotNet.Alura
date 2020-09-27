@@ -262,6 +262,12 @@ Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
 		03 - Projeto do Curso
 		04 - Gerenciamento de Memória com Pilha
 		05 - Pilha X Heap
+		06 - Mudando de class para struct
+		07 - Um array de inteiros e o Coletor de Lixo
+		08 - Armazenamento da pilha (C / E / F)
+		09 - Armazenando contas bancárias (A)
+		10 - Consolidando seu conhecimento
+		11 - O que aprendemos?
 	02 - Coletando Lixo
 	03 - O Padrão Disposable
 	04 - Concatenação, Escrita e Leitura de Strings
