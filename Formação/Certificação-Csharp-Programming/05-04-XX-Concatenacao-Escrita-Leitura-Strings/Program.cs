@@ -1,8 +1,8 @@
-﻿using _05_02_XX_Coletando_Lixo.Depois;
+﻿using _05_04_XX_Concatenacao_Escrita_Leitura_Strings.Depois;
 using System;
 using System.Collections.Generic;
 
-namespace _05_02_XX_Coletando_Lixo
+namespace _05_04_XX_Concatenacao_Escrita_Leitura_Strings
 {
     class Program
     {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _05_03_XX_O_Padrao_Disposable.Depois;
+using System;
 using System.Collections.Generic;
 
 namespace _05_03_XX_O_Padrao_Disposable

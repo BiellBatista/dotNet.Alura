@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace _05_03_XX_O_Padrao_Disposable.Depois
+namespace _05_04_XX_Concatenacao_Escrita_Leitura_Strings.Depois
 {
     internal class Pesquisa
     {

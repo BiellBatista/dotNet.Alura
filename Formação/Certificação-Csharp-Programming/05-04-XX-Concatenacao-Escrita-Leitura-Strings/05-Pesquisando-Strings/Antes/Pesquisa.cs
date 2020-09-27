@@ -1,19 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace _05_03_XX_O_Padrao_Disposable.Depois
+namespace _05_04_XX_Concatenacao_Escrita_Leitura_Strings.Antes
 {
     internal class Pesquisa
     {
-        private readonly Label lblDocumento;
+        private readonly Label txtPesquisa;
         private readonly List<string> parametros;
         private int indiceDe;
 
-        public Pesquisa(Label lblDocumento, List<string> parametros)
+        public Pesquisa(Label txtPesquisa, List<string> parametros)
         {
-            this.lblDocumento = lblDocumento;
+            this.txtPesquisa = txtPesquisa;
             this.parametros = parametros;
         }
 
@@ -34,6 +33,8 @@ namespace _05_03_XX_O_Padrao_Disposable.Depois
                     return TerminaCom();
                 case "IndiceDe":
                     return IndiceDe();
+                case "UltimoIndiceDe":
+                    return UltimoIndiceDe();
                 case "Trecho":
                     return Trecho();
                 case "Substituir":
@@ -45,11 +46,9 @@ namespace _05_03_XX_O_Padrao_Disposable.Depois
 
         private string Contem()
         {
-            //lblDocumento: caixa de texto do Windows Forms
+            //txtPesquisa: caixa de texto do Windows Forms
             var textoBusca = parametros.FirstOrDefault();
-
-            bool contem = lblDocumento.Text.ToUpper()
-                                .Contains(textoBusca.ToUpper());
+            bool contem = false; //implementar busca
 
             if (contem)
             {
@@ -64,7 +63,7 @@ namespace _05_03_XX_O_Padrao_Disposable.Depois
         private string ComecaCom()
         {
             var textoBusca = parametros.FirstOrDefault();
-            bool comecaCom = lblDocumento.Text.StartsWith(textoBusca, StringComparison.InvariantCultureIgnoreCase);
+            bool comecaCom = false; //implementar busca
 
             if (comecaCom)
             {
@@ -79,7 +78,7 @@ namespace _05_03_XX_O_Padrao_Disposable.Depois
         private string TerminaCom()
         {
             var textoBusca = parametros.FirstOrDefault();
-            var terminaCom = lblDocumento.Text.EndsWith(textoBusca, StringComparison.InvariantCultureIgnoreCase);
+            var terminaCom = false; //implementar busca
 
             if (terminaCom)
             {
@@ -95,7 +94,7 @@ namespace _05_03_XX_O_Padrao_Disposable.Depois
         {
             var textoBusca = parametros.FirstOrDefault();
 
-            indiceDe = lblDocumento.Text.IndexOf(textoBusca);
+            //indiceDe = ???; //implementar busca
 
             if (indiceDe == -1)
             {
@@ -107,15 +106,31 @@ namespace _05_03_XX_O_Padrao_Disposable.Depois
             }
         }
 
+        private string UltimoIndiceDe()
+        {
+            var textoBusca = parametros.FirstOrDefault();
+
+            //indiceDe = ???; //implementar busca
+
+            if (indiceDe == -1)
+            {
+                return "String não encontrada: '" + textoBusca + "'";
+            }
+            else
+            {
+                return "Último índice da string '" + textoBusca + "' é: " + indiceDe;
+            }
+        }
+
         private string Trecho()
         {
             int.TryParse(parametros[0], out int indiceInicial);
             int.TryParse(parametros[1], out int comprimento);
 
-            //lblDocumento.SelectionStart = ???
-            //lblDocumento.SelectionLength = ???
+            //txtPesquisa.SelectionStart = ???
+            //txtPesquisa.SelectionLength = ???
 
-            string trecho = lblDocumento.Text.Substring(indiceInicial, comprimento);
+            string trecho = ""; //implementar busca
 
             return "O trecho selecionado é: " + trecho;
         }
@@ -125,7 +140,7 @@ namespace _05_03_XX_O_Padrao_Disposable.Depois
             var antigoTexto = parametros[0];
             var novoTexto = parametros[1];
 
-            lblDocumento.Text = lblDocumento.Text.Replace(antigoTexto, novoTexto);
+            //txtPesquisa.Text = ??? implementar substituição
 
             return "Trecho substituído com sucesso.";
         }

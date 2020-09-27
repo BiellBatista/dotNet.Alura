@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{51CC1A4C-BE3E-43F7-A640-20F0530574A7}</ProjectGuid>
+    <ProjectGuid>{9672A3CA-5B84-440B-9824-367210A0EC8D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_05_03_XX_O_Padrao_Disposable</RootNamespace>
-    <AssemblyName>05-03-XX-O-Padrao-Disposable</AssemblyName>
+    <RootNamespace>_05_04_XX_Concatenacao_Escrita_Leitura_Strings</RootNamespace>
+    <AssemblyName>05-04-XX-Concatenacao-Escrita-Leitura-Strings</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
