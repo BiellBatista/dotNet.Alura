@@ -292,6 +292,7 @@ Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
 		01 - Manipulação de Strings
 		02 - StringBuilder
 		03 - StringReader
+		04 - StringWriter
 	05 - Pesquisando Strings
 	06 - Formatação de Strings
 Certificação C# Programming parte 6: Coleções, XML e JSON
