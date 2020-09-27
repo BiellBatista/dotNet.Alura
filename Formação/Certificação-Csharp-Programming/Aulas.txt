@@ -261,6 +261,7 @@ Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
 		02 - Preparando o ambiente
 		03 - Projeto do Curso
 		04 - Gerenciamento de Memória com Pilha
+		05 - Pilha X Heap
 	02 - Coletando Lixo
 	03 - O Padrão Disposable
 	04 - Concatenação, Escrita e Leitura de Strings
