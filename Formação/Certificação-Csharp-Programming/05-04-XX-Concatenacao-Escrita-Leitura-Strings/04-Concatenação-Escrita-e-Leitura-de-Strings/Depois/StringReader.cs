@@ -13,7 +13,7 @@ namespace _05_04_XX_Concatenacao_Escrita_Leitura_Strings.Depois
             //linha a linha.
             //2) Cada Linha deve começar com um caracter "•" e um espaço
 
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.OutputEncoding = System.Text.Encoding.UTF8; //configurando o console para aceitar um certo encoding
 
             string ingredientes = GetIngredientes();
 

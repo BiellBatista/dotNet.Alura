@@ -293,6 +293,16 @@ Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
 		02 - StringBuilder
 		03 - StringReader
 		04 - StringWriter
+		05 - Concatenando com StringBuilder
+		06 - Analisando texto (B)
+		07 - Concatenando strings (D)
+		08 - Para pensar: strings imutáveis
+		09 - Para pensar: um livro numa única string
+		10 - Para pensar: StringBuilder e string
+		11 - Para pensar: StringWriter
+		12 - Para pensar: o método 'Trim()'
+		13 - Consolidando seu conhecimento
+		14 - O que aprendemos?
 	05 - Pesquisando Strings
 	06 - Formatação de Strings
 Certificação C# Programming parte 6: Coleções, XML e JSON
