@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CC4B58A-9C6C-416E-8C82-71575039B34C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>_05_02_XX_Coletando_Lixo</RootNamespace>
+    <AssemblyName>05-02-XX-Coletando-Lixo</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="01-Gerenciamento-de-Memória\Antes\TiposDeReferencia.cs" />
+    <Compile Include="01-Gerenciamento-de-Memória\Antes\TiposDeValor.cs" />
+    <Compile Include="01-Gerenciamento-de-Memória\Depois\TiposDeReferencia.cs" />
+    <Compile Include="01-Gerenciamento-de-Memória\Depois\TiposDeValor.cs" />
+    <Compile Include="02-Coletando-Lixo\Antes\Disposable.cs" />
+    <Compile Include="02-Coletando-Lixo\Antes\Finalizador.cs" />
+    <Compile Include="02-Coletando-Lixo\Antes\FrmMensagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02-Coletando-Lixo\Antes\FrmMensagem.Designer.cs">
+      <DependentUpon>FrmMensagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02-Coletando-Lixo\Antes\MensageiroNotepad.cs" />
+    <Compile Include="02-Coletando-Lixo\Depois\Disposable.cs" />
+    <Compile Include="02-Coletando-Lixo\Depois\Finalizador.cs" />
+    <Compile Include="02-Coletando-Lixo\Depois\FrmMensagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02-Coletando-Lixo\Depois\FrmMensagem.Designer.cs">
+      <DependentUpon>FrmMensagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02-Coletando-Lixo\Depois\MensageiroNotepad.cs" />
+    <Compile Include="03-O-Padrão-Disposable\Antes\Disposable.cs" />
+    <Compile Include="03-O-Padrão-Disposable\Antes\Finalizador.cs" />
+    <Compile Include="03-O-Padrão-Disposable\Antes\FrmMensagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03-O-Padrão-Disposable\Antes\FrmMensagem.Designer.cs">
+      <DependentUpon>FrmMensagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03-O-Padrão-Disposable\Antes\MensageiroNotepad.cs" />
+    <Compile Include="03-O-Padrão-Disposable\Depois\Disposable.cs" />
+    <Compile Include="03-O-Padrão-Disposable\Depois\Finalizador.cs" />
+    <Compile Include="03-O-Padrão-Disposable\Depois\FrmMensagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03-O-Padrão-Disposable\Depois\FrmMensagem.Designer.cs">
+      <DependentUpon>FrmMensagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03-O-Padrão-Disposable\Depois\MensageiroNotepad.cs" />
+    <Compile Include="04-Concatenação-Escrita-e-Leitura-de-Strings\Antes\StringBuilder.cs" />
+    <Compile Include="04-Concatenação-Escrita-e-Leitura-de-Strings\Antes\StringReader.cs" />
+    <Compile Include="04-Concatenação-Escrita-e-Leitura-de-Strings\Antes\StringWriter.cs" />
+    <Compile Include="04-Concatenação-Escrita-e-Leitura-de-Strings\Depois\StringBuilder.cs" />
+    <Compile Include="04-Concatenação-Escrita-e-Leitura-de-Strings\Depois\StringReader.cs" />
+    <Compile Include="04-Concatenação-Escrita-e-Leitura-de-Strings\Depois\StringWriter.cs" />
+    <Compile Include="05-Pesquisando-Strings\Antes\Enumerar.cs" />
+    <Compile Include="05-Pesquisando-Strings\Antes\FrmPesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="05-Pesquisando-Strings\Antes\FrmPesquisa.Designer.cs">
+      <DependentUpon>FrmPesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="05-Pesquisando-Strings\Antes\Pesquisa.cs" />
+    <Compile Include="05-Pesquisando-Strings\Antes\PesquisandoStrings.cs" />
+    <Compile Include="05-Pesquisando-Strings\Depois\Enumerar.cs" />
+    <Compile Include="05-Pesquisando-Strings\Depois\FrmPesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="05-Pesquisando-Strings\Depois\FrmPesquisa.Designer.cs">
+      <DependentUpon>FrmPesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="05-Pesquisando-Strings\Depois\Pesquisa.cs" />
+    <Compile Include="05-Pesquisando-Strings\Depois\PesquisandoStrings.cs" />
+    <Compile Include="06-Formatação-de-Strings\Antes\Formatar.cs" />
+    <Compile Include="06-Formatação-de-Strings\Antes\Interpolacao.cs" />
+    <Compile Include="06-Formatação-de-Strings\Depois\Formatar.cs" />
+    <Compile Include="06-Formatação-de-Strings\Depois\Interpolacao.cs" />
+    <Compile Include="IAulaItem.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="02-Coletando-Lixo\Depois\FrmMensagem.resx">
+      <DependentUpon>FrmMensagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03-O-Padrão-Disposable\Depois\FrmMensagem.resx">
+      <DependentUpon>FrmMensagem.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
