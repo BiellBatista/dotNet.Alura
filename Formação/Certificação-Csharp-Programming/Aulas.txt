@@ -348,6 +348,7 @@ Certificação C# Programming parte 6: Coleções, XML e JSON
 		03 - Deserializando JSON
 		04 - Convertendo JSON para objeto (D)
 		05 - Serialização com NewtonSoft JSON
+		06 - Mapeando Objetos Para Serialização JSON
 	03 - Serialização Binária, Personalizada e com Contrato
 	04 - Arrays
 	05 - Listas
