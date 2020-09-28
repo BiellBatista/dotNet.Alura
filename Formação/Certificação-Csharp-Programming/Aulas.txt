@@ -343,6 +343,7 @@ Certificação C# Programming parte 6: Coleções, XML e JSON
 		11 - Consolidando seu conhecimento
 		12 - O que aprendemos?
 	02 - Serialização com JSON
+		01 - JSON x XML
 	03 - Serialização Binária, Personalizada e com Contrato
 	04 - Arrays
 	05 - Listas

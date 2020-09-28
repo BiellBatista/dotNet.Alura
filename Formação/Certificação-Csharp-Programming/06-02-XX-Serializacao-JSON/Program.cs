@@ -1,8 +1,8 @@
-﻿using _06_01_XX_Serializacao_XML.Depois;
+﻿using _06_02_XX_Serializacao_JSON.Depois;
 using System;
 using System.Collections.Generic;
 
-namespace _06_01_XX_Serializacao_XML
+namespace _06_02_XX_Serializacao_JSON
 {
     class Program
     {

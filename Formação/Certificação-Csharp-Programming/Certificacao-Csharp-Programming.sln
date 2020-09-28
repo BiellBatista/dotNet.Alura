@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-06-XX-Formatacao-Strings
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-01-XX-Serializacao-XML", "06-01-XX-Serializacao-XML\06-01-XX-Serializacao-XML.csproj", "{A13B8C30-0F9F-474B-B838-7E0BB12DDE19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-02-XX-Serializacao-JSON", "06-02-XX-Serializacao-JSON\06-02-XX-Serializacao-JSON.csproj", "{120D1EAF-4F98-4A0F-8221-BFFA70800019}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,10 @@ Global
 		{A13B8C30-0F9F-474B-B838-7E0BB12DDE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A13B8C30-0F9F-474B-B838-7E0BB12DDE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A13B8C30-0F9F-474B-B838-7E0BB12DDE19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{120D1EAF-4F98-4A0F-8221-BFFA70800019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{120D1EAF-4F98-4A0F-8221-BFFA70800019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{120D1EAF-4F98-4A0F-8221-BFFA70800019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{120D1EAF-4F98-4A0F-8221-BFFA70800019}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
