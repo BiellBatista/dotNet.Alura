@@ -30,17 +30,18 @@ namespace _06_01_XX_Serializacao_XML.Depois
             //AQUI VEM O CÓDIGO DO SEGUNDO SISTEMA
             var xmlSerializer2 = new XmlSerializer(typeof(MovieStore));
             MovieStore movieStore;
+
             using (var fileStream = new FileStream("MovieStore.xml", FileMode.Open, FileAccess.Read))
             {
                 movieStore = (MovieStore)xmlSerializer2.Deserialize(fileStream);
             }
+
             foreach (var movie in movieStore.Movies)
             {
                 Console.WriteLine(movie.Title);
             }
 
             Console.ReadKey();
-
         }
 
         private static LojaDeFilmes ObterDados()
