@@ -360,6 +360,10 @@ Certificação C# Programming parte 6: Coleções, XML e JSON
 		06 - Serializando JSON com contrato de dados (A)
 		07 - Serializar tipos de valor e tipos de referência
 		08 - Serialização Personalizada
+		09 - Qualquer dado pode ser serializado?
+		10 - Para pensar: que elementos da classe são serializados?
+		11 - Consolidando seu conhecimento
+		12 - O que aprendemos?
 	04 - Arrays
 	05 - Listas
 	06 - Conjuntos, Dicionários e Filas
