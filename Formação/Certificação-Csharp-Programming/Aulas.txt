@@ -355,6 +355,11 @@ Certificação C# Programming parte 6: Coleções, XML e JSON
 		01 - Serialização Binária
 		02 - Desserialização Binária
 		03 - Serialização Com Contrato de Dados
+		04 - Serializar XML com Contratos de Dados (B)
+		05 - Gerando instância de uma classe a partir de string XML (C)
+		06 - Serializando JSON com contrato de dados (A)
+		07 - Serializar tipos de valor e tipos de referência
+		08 - Serialização Personalizada
 	04 - Arrays
 	05 - Listas
 	06 - Conjuntos, Dicionários e Filas
