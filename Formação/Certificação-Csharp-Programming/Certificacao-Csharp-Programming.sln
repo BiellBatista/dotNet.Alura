@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-05-XX-Pesquisando-String
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-06-XX-Formatacao-Strings", "05-06-XX-Formatacao-Strings\05-06-XX-Formatacao-Strings.csproj", "{15191888-724C-41D4-B26A-1408157D47FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-01-XX-Serializacao-XML", "06-01-XX-Serializacao-XML\06-01-XX-Serializacao-XML.csproj", "{A13B8C30-0F9F-474B-B838-7E0BB12DDE19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +173,10 @@ Global
 		{15191888-724C-41D4-B26A-1408157D47FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15191888-724C-41D4-B26A-1408157D47FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15191888-724C-41D4-B26A-1408157D47FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13B8C30-0F9F-474B-B838-7E0BB12DDE19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13B8C30-0F9F-474B-B838-7E0BB12DDE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13B8C30-0F9F-474B-B838-7E0BB12DDE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13B8C30-0F9F-474B-B838-7E0BB12DDE19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
