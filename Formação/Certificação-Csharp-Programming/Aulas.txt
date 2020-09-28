@@ -317,6 +317,17 @@ Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
 		01 - String Format
 		02 - Formando números e datas
 		03 - Interpolação de strings
+		04 - Formatando strings com String.Format()
+		05 - Formatando números (A)
+		06 - Concatenando strings com expressões C# (A / D / E)
+		07 - Interpolando strings (C)
+		08 - Interpolação de strings e expressões nameof (A)
+		09 - Para pensar: interpolando strings geradas dinamicamente
+		10 - Consolidando seu conhecimento
+		11 - O que aprendemos?
+		12 - Preparando o ambiente
+		13 - Conclusão
+		14 - Mapa do Curso
 Certificação C# Programming parte 6: Coleções, XML e JSON
 	01 - Serialização com XML
 	02 - Serialização com JSON
