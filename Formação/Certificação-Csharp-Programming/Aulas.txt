@@ -354,6 +354,7 @@ Certificação C# Programming parte 6: Coleções, XML e JSON
 	03 - Serialização Binária, Personalizada e com Contrato
 		01 - Serialização Binária
 		02 - Desserialização Binária
+		03 - Serialização Com Contrato de Dados
 	04 - Arrays
 	05 - Listas
 	06 - Conjuntos, Dicionários e Filas
