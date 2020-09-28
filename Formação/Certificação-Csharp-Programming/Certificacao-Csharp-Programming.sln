@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-02-XX-Serializacao-JSON"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-03-XX-Serializacao-Binaria-Personalizada-Contrato", "06-03-XX-Serializacao-Binaria-Personalizada-Contrato\06-03-XX-Serializacao-Binaria-Personalizada-Contrato.csproj", "{D67DE101-AEBC-4332-9A7C-2D43721EBD9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-04-XX-Arrays", "06-04-XX-Arrays\06-04-XX-Arrays.csproj", "{772D9344-B769-4B7A-BAD1-9D8DFEF4DDE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{D67DE101-AEBC-4332-9A7C-2D43721EBD9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D67DE101-AEBC-4332-9A7C-2D43721EBD9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D67DE101-AEBC-4332-9A7C-2D43721EBD9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{772D9344-B769-4B7A-BAD1-9D8DFEF4DDE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{772D9344-B769-4B7A-BAD1-9D8DFEF4DDE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{772D9344-B769-4B7A-BAD1-9D8DFEF4DDE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{772D9344-B769-4B7A-BAD1-9D8DFEF4DDE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
