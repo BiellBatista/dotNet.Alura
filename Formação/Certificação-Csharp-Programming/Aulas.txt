@@ -305,6 +305,7 @@ Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
 		14 - O que aprendemos?
 	05 - Pesquisando Strings
 		01 - Pesquisa de strings, parte 1
+		02 - Pesquisa de strings, parte 2
 	06 - Formatação de Strings
 Certificação C# Programming parte 6: Coleções, XML e JSON
 	01 - Serialização com XML
