@@ -367,6 +367,9 @@ Certificação C# Programming parte 6: Coleções, XML e JSON
 	04 - Arrays
 		01 - Arrays
 		02 - Acessando Elementos do Array
+		03 - Modificando um valor de um elemento de um array (A)
+		04 - Uma coleção de nomes de meses do ano (D)
+		05 - Buscando e Redimensionanco Array
 	05 - Listas
 	06 - Conjuntos, Dicionários e Filas
 Certificação C# Programming parte 7: Eventos e LINQ
