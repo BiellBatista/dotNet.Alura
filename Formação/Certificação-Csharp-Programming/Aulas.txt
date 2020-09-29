@@ -371,6 +371,8 @@ Certificação C# Programming parte 6: Coleções, XML e JSON
 		04 - Uma coleção de nomes de meses do ano (D)
 		05 - Buscando e Redimensionanco Array
 		06 - Ordenando, Copiando, Clonando e Limpando Array
+		07 - Copiando dados de um array (B)
+		08 - Iteração com Array e Interface IEnumerable
 	05 - Listas
 	06 - Conjuntos, Dicionários e Filas
 Certificação C# Programming parte 7: Eventos e LINQ
