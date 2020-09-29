@@ -85,6 +85,7 @@ namespace _06_01_XX_Serializacao_XML
                 new MenuItem("Conjuntos", typeof(Conjuntos)),
                 new MenuItem("Dicionários", typeof(Dicionarios)),
                 new MenuItem("Dicionários", typeof(Filas)),
+                new MenuItem("Escolher os Tipos", typeof(EscolherTipos)),
             };
         }
     }

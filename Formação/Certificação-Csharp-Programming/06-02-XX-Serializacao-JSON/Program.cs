@@ -85,6 +85,7 @@ namespace _06_02_XX_Serializacao_JSON
                 new MenuItem("Conjuntos", typeof(Conjuntos)),
                 new MenuItem("Dicionários", typeof(Dicionarios)),
                 new MenuItem("Dicionários", typeof(Filas)),
+                new MenuItem("Escolher os Tipos", typeof(EscolherTipos)),
             };
         }
     }

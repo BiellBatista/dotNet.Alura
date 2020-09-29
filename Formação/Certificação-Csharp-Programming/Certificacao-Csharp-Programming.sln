@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-03-XX-Serializacao-Binar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-04-XX-Arrays", "06-04-XX-Arrays\06-04-XX-Arrays.csproj", "{772D9344-B769-4B7A-BAD1-9D8DFEF4DDE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-05-XX-Listas", "06-05-XX-Listas\06-05-XX-Listas.csproj", "{AF94B224-FB84-49CE-9712-202EE6EB121E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,10 @@ Global
 		{772D9344-B769-4B7A-BAD1-9D8DFEF4DDE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{772D9344-B769-4B7A-BAD1-9D8DFEF4DDE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{772D9344-B769-4B7A-BAD1-9D8DFEF4DDE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF94B224-FB84-49CE-9712-202EE6EB121E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF94B224-FB84-49CE-9712-202EE6EB121E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF94B224-FB84-49CE-9712-202EE6EB121E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF94B224-FB84-49CE-9712-202EE6EB121E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

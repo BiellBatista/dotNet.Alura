@@ -1,8 +1,8 @@
-﻿using _06_03_XX_Serializacao_Binaria_Personalizada_Contrato.Depois;
+﻿using _06_05_XX_Listas.Depois;
 using System;
 using System.Collections.Generic;
 
-namespace _06_03_XX_Serializacao_Binaria_Personalizada_Contrato
+namespace _06_05_XX_Listas
 {
     class Program
     {
