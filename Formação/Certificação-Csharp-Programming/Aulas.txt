@@ -366,6 +366,7 @@ Certificação C# Programming parte 6: Coleções, XML e JSON
 		12 - O que aprendemos?
 	04 - Arrays
 		01 - Arrays
+		02 - Acessando Elementos do Array
 	05 - Listas
 	06 - Conjuntos, Dicionários e Filas
 Certificação C# Programming parte 7: Eventos e LINQ
