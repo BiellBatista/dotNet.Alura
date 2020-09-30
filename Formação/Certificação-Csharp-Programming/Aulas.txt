@@ -382,6 +382,8 @@ Certificação C# Programming parte 6: Coleções, XML e JSON
 		03 - Adicionando e Inserindo na Lista
 		04 - Removendo elementos e Usando Predicados
 		05 - Comparando Objetos e Ordenando Listas
+		06 - Ordenando uma lista (C)
+		07 - Lista, Array, Foreach e a Interface IEnumerable
 	06 - Conjuntos, Dicionários e Filas
 Certificação C# Programming parte 7: Eventos e LINQ
 	01 - Introdução aos Eventos
