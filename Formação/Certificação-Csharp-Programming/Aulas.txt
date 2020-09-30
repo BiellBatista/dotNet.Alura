@@ -385,6 +385,9 @@ Certificação C# Programming parte 6: Coleções, XML e JSON
 		06 - Ordenando uma lista (C)
 		07 - Lista, Array, Foreach e a Interface IEnumerable
 		08 - Listas Somente-Leitura
+		09 - Quando Usar Lista Somente-leitura (A)
+		10 - Consolidando seu conhecimento
+		11 - O que aprendemos?
 	06 - Conjuntos, Dicionários e Filas
 Certificação C# Programming parte 7: Eventos e LINQ
 	01 - Introdução aos Eventos
