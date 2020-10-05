@@ -403,6 +403,13 @@ Certificação C# Programming parte 6: Coleções, XML e JSON
 		12 - Verificando elementos numa fila (A)
 		13 - Mão na Massa: Filas
 		14 - Interface e Coleção Customizada
+		15 - Uma Coleção Personalizada de Empréstimos (B)
+		16 - SortedList: Um Dicionário Ordenado
+		17 - Qual tipo de coleção você deve usar? (C)
+		18 - Projeto do Curso
+		19 - Conclusão
+		20 - Consolidando seu conhecimento
+		21 - O que aprendemos?
 Certificação C# Programming parte 7: Eventos e LINQ
 	01 - Introdução aos Eventos
 	02 - Manipuladores de Eventos
