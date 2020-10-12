@@ -450,6 +450,8 @@ Certificação C# Programming parte 7: Eventos e LINQ
 	05 - Consultando e Filtrando Dados com LINQ
 		01 - Criando o Relatório de Filmes
 		02 - Primeira Consulta LINQ com FROM e SELECT
+		03 - Sintaxe de Consulta Linq (E)
+		04 - Filtrando uma Consulta com WHERE
 	06 - Projeção de Dados
 	07 - Agrupamento e Agregação
 	08 - Paginação e Sintaxe de Método
