@@ -442,6 +442,8 @@ Certificação C# Programming parte 7: Eventos e LINQ
 		09 - O que aprendemos?
 	04 - Func, Action e Predicate
 		01 - Delegado Func e Delegado Action
+		02 - Criando funções (A)
+		03 - Criando e Consumindo Predicados
 	05 - Consultando e Filtrando Dados com LINQ
 	06 - Projeção de Dados
 	07 - Agrupamento e Agregação
