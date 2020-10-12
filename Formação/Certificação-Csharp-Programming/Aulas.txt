@@ -474,6 +474,7 @@ Certificação C# Programming parte 7: Eventos e LINQ
 		05 - Consolidando seu conhecimento
 		06 - O que aprendemos?
 	08 - Paginação e Sintaxe de Método
+		01 - Paginação com LINQ
 	09 - Consulta com XML
 Certificação C# Programming parte 8: Entrada e Saída de Dados
 	01 - Ler e Gravar Bytes em Fluxos de Arquivos
