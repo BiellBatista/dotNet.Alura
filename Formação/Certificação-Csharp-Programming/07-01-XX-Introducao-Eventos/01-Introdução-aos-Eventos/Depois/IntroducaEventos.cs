@@ -13,7 +13,7 @@ namespace _07_01_XX_Introducao_Eventos.Depois
 
             Console.WriteLine("A campainha será tocada.");
 
-            campainha.Tocar();
+            campainha.Tocar(); //este método irá acionar todos os métodos associados a esta action (neste caso, irá executar o método CampainhaTocou1 e CampainhaTocou2)
 
             campainha.OnCampainhaTocou -= CampainhaTocou1;
 
