@@ -415,6 +415,7 @@ Certificação C# Programming parte 7: Eventos e LINQ
 		01 - Introdução
 		02 - Projeto do Curso
 		03 - Criando a Classe Campainha
+		04 - Associando e Desassociando Métodos
 	02 - Manipuladores de Eventos
 	03 - Delegados e Lambda
 	04 - Func, Action e Predicate
