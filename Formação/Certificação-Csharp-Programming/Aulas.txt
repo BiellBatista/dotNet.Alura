@@ -469,6 +469,10 @@ Certificação C# Programming parte 7: Eventos e LINQ
 	07 - Agrupamento e Agregação
 		01 - Agrupamento e Funções de Agregação
 		02 - Agregação com Soma, Mínimo, Máximo e Média
+		03 - Calculando Quantidades - Simples (C)
+		04 - Para Saber Mais - Evitando Repetição de Expressões
+		05 - Consolidando seu conhecimento
+		06 - O que aprendemos?
 	08 - Paginação e Sintaxe de Método
 	09 - Consulta com XML
 Certificação C# Programming parte 8: Entrada e Saída de Dados
