@@ -460,6 +460,7 @@ Certificação C# Programming parte 7: Eventos e LINQ
 		10 - Consolidando seu conhecimento
 		11 - O que aprendemos?
 	06 - Projeção de Dados
+		01 - Selecionando Dados do Resultado com SELECT
 	07 - Agrupamento e Agregação
 	08 - Paginação e Sintaxe de Método
 	09 - Consulta com XML

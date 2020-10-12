@@ -79,6 +79,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-04-XX-Func-Action-Predic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-05-XX-Consultando-Filtrando-Dados-LINQ", "07-05-XX-Consultando-Filtrando-Dados-LINQ\07-05-XX-Consultando-Filtrando-Dados-LINQ.csproj", "{FF533BAA-B6DF-44E5-842B-29FCF35F367F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-06-XX-Projecao-Dados", "07-06-XX-Projecao-Dados\07-06-XX-Projecao-Dados.csproj", "{3F317022-5516-4818-A813-007FA54F658A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -237,6 +239,10 @@ Global
 		{FF533BAA-B6DF-44E5-842B-29FCF35F367F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF533BAA-B6DF-44E5-842B-29FCF35F367F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF533BAA-B6DF-44E5-842B-29FCF35F367F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F317022-5516-4818-A813-007FA54F658A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F317022-5516-4818-A813-007FA54F658A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F317022-5516-4818-A813-007FA54F658A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F317022-5516-4818-A813-007FA54F658A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
