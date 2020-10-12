@@ -419,6 +419,9 @@ Certificação C# Programming parte 7: Eventos e LINQ
 		05 - Criando Eventos
 		06 - Action x Evento (A)
 		07 - Argumentos de Eventos
+		08 - Entre eventos e delegates (A / B)
+		09 - Consolidando seu conhecimento
+		10 - O que aprendemos?
 	02 - Manipuladores de Eventos
 	03 - Delegados e Lambda
 	04 - Func, Action e Predicate
