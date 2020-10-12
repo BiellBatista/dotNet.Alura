@@ -468,6 +468,7 @@ Certificação C# Programming parte 7: Eventos e LINQ
 		06 - O que aprendemos?
 	07 - Agrupamento e Agregação
 		01 - Agrupamento e Funções de Agregação
+		02 - Agregação com Soma, Mínimo, Máximo e Média
 	08 - Paginação e Sintaxe de Método
 	09 - Consulta com XML
 Certificação C# Programming parte 8: Entrada e Saída de Dados
