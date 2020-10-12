@@ -482,6 +482,7 @@ Certificação C# Programming parte 7: Eventos e LINQ
 		06 - O que aprendemos?
 	09 - Consulta com XML
 		01 - Consultando XML com LINQ
+		02 - Obtendo Elementos de Um Documento XML (A)
 Certificação C# Programming parte 8: Entrada e Saída de Dados
 	01 - Ler e Gravar Bytes em Fluxos de Arquivos
 	02 - Ler e Gravar Strings em Fluxos de Arquivos
