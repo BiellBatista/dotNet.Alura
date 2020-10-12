@@ -448,6 +448,7 @@ Certificação C# Programming parte 7: Eventos e LINQ
 		05 - Consolidando seu conhecimento
 		06 - O que aprendemos?
 	05 - Consultando e Filtrando Dados com LINQ
+		01 - Criando o Relatório de Filmes
 	06 - Projeção de Dados
 	07 - Agrupamento e Agregação
 	08 - Paginação e Sintaxe de Método
