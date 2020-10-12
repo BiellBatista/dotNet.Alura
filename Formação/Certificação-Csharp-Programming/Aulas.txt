@@ -492,6 +492,9 @@ Certificação C# Programming parte 7: Eventos e LINQ
 		09 - O que aprendemos?
 Certificação C# Programming parte 8: Entrada e Saída de Dados
 	01 - Ler e Gravar Bytes em Fluxos de Arquivos
+		01 - Introdução
+		02 - Projeto do Curso
+		03 - A Classe FileStream
 	02 - Ler e Gravar Strings em Fluxos de Arquivos
 	03 - Gerenciando Arquivos
 	04 - Gerenciando Diretórios
