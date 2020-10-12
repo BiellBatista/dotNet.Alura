@@ -432,6 +432,8 @@ Certificação C# Programming parte 7: Eventos e LINQ
 		07 - O que aprendemos?
 	03 - Delegados e Lambda
 		01 - Criando Delegados
+		02 - Criando Delegates (C / D)
+		03 - Expressão Lambda e Métodos Anônimos
 	04 - Func, Action e Predicate
 	05 - Consultando e Filtrando Dados com LINQ
 	06 - Projeção de Dados
