@@ -452,6 +452,13 @@ Certificação C# Programming parte 7: Eventos e LINQ
 		02 - Primeira Consulta LINQ com FROM e SELECT
 		03 - Sintaxe de Consulta Linq (E)
 		04 - Filtrando uma Consulta com WHERE
+		05 - Filtrando com LINQ (C)
+		06 - Consulta com Filtro (Com Método Contains)
+		07 - Consulta com Filtro (Com Operador de Igualdade)
+		08 - Consulta com Join
+		09 - Filtrando Consultas com Join
+		10 - Consolidando seu conhecimento
+		11 - O que aprendemos?
 	06 - Projeção de Dados
 	07 - Agrupamento e Agregação
 	08 - Paginação e Sintaxe de Método
