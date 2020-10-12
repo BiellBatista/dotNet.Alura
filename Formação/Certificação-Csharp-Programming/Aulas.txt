@@ -424,6 +424,9 @@ Certificação C# Programming parte 7: Eventos e LINQ
 		10 - O que aprendemos?
 	02 - Manipuladores de Eventos
 		01 - Acessando Manipuladores de Eventos
+		02 - Notificando através de código (A / B)
+		03 - Lista de delegates (B)
+		04 - Tratando Exceções Agregadas
 	03 - Delegados e Lambda
 	04 - Func, Action e Predicate
 	05 - Consultando e Filtrando Dados com LINQ
