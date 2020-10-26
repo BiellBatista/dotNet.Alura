@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Antes\LerGravarBytesFluxosArquivos01.cs" />
+    <Compile Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Antes\LerGravarBytesFluxosArquivos02.cs" />
     <Compile Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\LerGravarBytesFluxosArquivos01.cs" />
+    <Compile Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\LerGravarBytesFluxosArquivos02.cs" />
     <Compile Include="IAulaItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
