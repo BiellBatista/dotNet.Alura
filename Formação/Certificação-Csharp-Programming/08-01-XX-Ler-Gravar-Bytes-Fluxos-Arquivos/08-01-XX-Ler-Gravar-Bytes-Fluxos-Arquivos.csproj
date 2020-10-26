@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Antes\LerGravarBytesFluxosArquivos01.cs" />
+    <Compile Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\LerGravarBytesFluxosArquivos01.cs" />
     <Compile Include="IAulaItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -50,9 +52,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Antes\" />
-    <Folder Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\" />
+    <Content Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Antes\Diretores.txt" />
+    <Content Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\Diretores.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

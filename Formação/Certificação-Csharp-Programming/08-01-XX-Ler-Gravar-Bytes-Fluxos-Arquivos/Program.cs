@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _08_01_XX_Ler_Gravar_Bytes_Fluxos_Arquivos.Depois;
+using System;
 using System.Collections.Generic;
 
 namespace _08_01_XX_Ler_Gravar_Bytes_Fluxos_Arquivos
@@ -74,7 +75,7 @@ namespace _08_01_XX_Ler_Gravar_Bytes_Fluxos_Arquivos
         {
             return new List<MenuItem>
             {
-                //new MenuItem("Introdução aos Eventos", typeof(IntroducaEventos)),
+                new MenuItem("Ler e Gravar Bytes em Fluxos de Arquivos", typeof(LerGravarBytesFluxosArquivos01)),
             };
         }
     }
