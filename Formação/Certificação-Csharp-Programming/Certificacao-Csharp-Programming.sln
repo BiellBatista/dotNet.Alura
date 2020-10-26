@@ -89,6 +89,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-09-XX-Consulta-XML", "07
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-01-XX-Ler-Gravar-Bytes-Fluxos-Arquivos", "08-01-XX-Ler-Gravar-Bytes-Fluxos-Arquivos\08-01-XX-Ler-Gravar-Bytes-Fluxos-Arquivos.csproj", "{70F91F93-2491-4224-8214-E6C9D3F467E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-02-XX-Ler-Gravar-Strings-Fluxos-Arquivos", "08-02-XX-Ler-Gravar-Strings-Fluxos-Arquivos\08-02-XX-Ler-Gravar-Strings-Fluxos-Arquivos.csproj", "{057D0AEF-BF53-44D5-BD57-BB0F8A1DD38E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +269,10 @@ Global
 		{70F91F93-2491-4224-8214-E6C9D3F467E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70F91F93-2491-4224-8214-E6C9D3F467E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70F91F93-2491-4224-8214-E6C9D3F467E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{057D0AEF-BF53-44D5-BD57-BB0F8A1DD38E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{057D0AEF-BF53-44D5-BD57-BB0F8A1DD38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{057D0AEF-BF53-44D5-BD57-BB0F8A1DD38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{057D0AEF-BF53-44D5-BD57-BB0F8A1DD38E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

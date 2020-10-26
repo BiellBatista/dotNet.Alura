@@ -505,6 +505,7 @@ Certificação C# Programming parte 8: Entrada e Saída de Dados
 		11 - Faça o que eu fiz na aula
 		12 - O que aprendemos?
 	02 - Ler e Gravar Strings em Fluxos de Arquivos
+		01 - Liberando Recursos do Stream com Bloco Using
 	03 - Gerenciando Arquivos
 	04 - Gerenciando Diretórios
 	05 - Acessando a Web de Forma Assíncrona

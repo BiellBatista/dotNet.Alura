@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using _08_01_XX_Ler_Gravar_Bytes_Fluxos_Arquivos.Depois;
+using _08_02_XX_Ler_Gravar_Strings_Fluxos_Arquivos.Depois;
 
-namespace _08_01_XX_Ler_Gravar_Bytes_Fluxos_Arquivos
+namespace _08_02_XX_Ler_Gravar_Strings_Fluxos_Arquivos
 {
     public class Program
     {
@@ -76,6 +76,7 @@ namespace _08_01_XX_Ler_Gravar_Bytes_Fluxos_Arquivos
             return new List<MenuItem>
             {
                 new MenuItem("Ler e Gravar Bytes em Fluxos de Arquivos", typeof(LerGravarBytesFluxosArquivos01)),
+                new MenuItem("Ler e Gravar Strings em Fluxos de Arquivos", typeof(LerGravarStringsFluxosArquivos01)),
             };
         }
     }
