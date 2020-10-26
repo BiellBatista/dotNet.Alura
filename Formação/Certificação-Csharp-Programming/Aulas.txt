@@ -499,6 +499,11 @@ Certificação C# Programming parte 8: Entrada e Saída de Dados
 		05 - Posição Relativa e Absoluta do Fluxo
 		06 - Escrevendo Em Arquivo com FileStream
 		07 - Convertendo Bytes do Arquivo em Texto
+		08 - Quebrando um arquivo em dois arquivos diferentes (A)
+		09 - Lendo documento (B / C)
+		10 - Mãos na massa
+		11 - Faça o que eu fiz na aula
+		12 - O que aprendemos?
 	02 - Ler e Gravar Strings em Fluxos de Arquivos
 	03 - Gerenciando Arquivos
 	04 - Gerenciando Diretórios
