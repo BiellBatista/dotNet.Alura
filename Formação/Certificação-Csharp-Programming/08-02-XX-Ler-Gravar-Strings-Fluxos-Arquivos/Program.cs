@@ -77,7 +77,8 @@ namespace _08_02_XX_Ler_Gravar_Strings_Fluxos_Arquivos
             {
                 new MenuItem("Ler e Gravar Bytes em Fluxos de Arquivos", typeof(LerGravarBytesFluxosArquivos01)),
                 new MenuItem("Ler e Gravar Strings em Fluxos de Arquivos", typeof(LerGravarStringsFluxosArquivos01)),
-                new MenuItem("Ler e Gravar Strings em Fluxos de Arquivos", typeof(LerGravarStringsFluxosArquivos02)),
+                new MenuItem("Gravando e Lendo Texto de Arquivos com StreamWriter e StreamReader", typeof(LerGravarStringsFluxosArquivos02)),
+                new MenuItem("Gravando e Lendo Arquivo Compactado", typeof(LerGravarStringsFluxosArquivos03)),
             };
         }
     }
