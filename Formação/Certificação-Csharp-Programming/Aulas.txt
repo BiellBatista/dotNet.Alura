@@ -518,6 +518,7 @@ Certificação C# Programming parte 8: Entrada e Saída de Dados
 		11 - Mãos na massa
 		12 - O que aprendemos?
 	03 - Gerenciando Arquivos
+		01 - Os Métodos da Classe File
 	04 - Gerenciando Diretórios
 	05 - Acessando a Web de Forma Assíncrona
 	06 - Lendo e Atualizando Banco de Dados
