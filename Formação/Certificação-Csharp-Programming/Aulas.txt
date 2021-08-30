@@ -510,8 +510,10 @@ Certificação C# Programming parte 8: Entrada e Saída de Dados
 		03 - Copiando arquivos (D)
 		04 - Gravando e Lendo Texto de Arquivos com StreamWriter e StreamReader
 		05 - Lendo arquivo de log (A)
-		06 - Trabalhando com `StreamReader` (B / D)
+		06 - Trabalhando com 'StreamReader' (B / D)
 		07 - Gravando e Lendo Arquivo Compactado
+		08 - Faça como eu fiz na aula
+		09 - BinaryWriter vs StreamWriter (B)
 	03 - Gerenciando Arquivos
 	04 - Gerenciando Diretórios
 	05 - Acessando a Web de Forma Assíncrona
