@@ -528,6 +528,7 @@ Certificação C# Programming parte 8: Entrada e Saída de Dados
 		08 - Faça como eu fiz na aula
 		09 - O que aprendemos?
 	04 - Gerenciando Diretórios
+		01 - Os Métodos da Classe Directory
 	05 - Acessando a Web de Forma Assíncrona
 	06 - Lendo e Atualizando Banco de Dados
 	07 - Consumindo Serviços e Interpretando Dados
