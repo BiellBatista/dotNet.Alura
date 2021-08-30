@@ -81,6 +81,7 @@ namespace _08_03_XX_Gerenciando_Arquivos
                 new MenuItem("Gravando e Lendo Arquivo Compactado", typeof(LerGravarStringsFluxosArquivos03)),
                 new MenuItem("Gerenciando Arquivos", typeof(GerenciandoArquivos01)),
                 new MenuItem("Tratando Exceções de Fluxo", typeof(GerenciandoArquivos02)),
+                new MenuItem("Obtendo Informações Sobre os Drives", typeof(GerenciandoArquivos03)),
             };
         }
     }
