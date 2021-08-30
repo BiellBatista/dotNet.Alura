@@ -80,6 +80,7 @@ namespace _08_03_XX_Gerenciando_Arquivos
                 new MenuItem("Gravando e Lendo Texto de Arquivos com StreamWriter e StreamReader", typeof(LerGravarStringsFluxosArquivos02)),
                 new MenuItem("Gravando e Lendo Arquivo Compactado", typeof(LerGravarStringsFluxosArquivos03)),
                 new MenuItem("Gerenciando Arquivos", typeof(GerenciandoArquivos01)),
+                new MenuItem("Tratando Exceções de Fluxo", typeof(GerenciandoArquivos02)),
             };
         }
     }
