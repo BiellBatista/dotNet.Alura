@@ -16,8 +16,4 @@
     <Content Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\Diretores.txt" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="03-Gerenciando-Arquivos\Depois\" />
-  </ItemGroup>
-
 </Project>
