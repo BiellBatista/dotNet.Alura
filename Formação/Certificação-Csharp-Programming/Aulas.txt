@@ -522,6 +522,7 @@ Certificação C# Programming parte 8: Entrada e Saída de Dados
 		02 - Classe File (B)
 		03 - Tratando Exceções de Fluxo
 		04 - Obtendo Informações Sobre os Drives
+		05 - Informações do Arquivo
 	04 - Gerenciando Diretórios
 	05 - Acessando a Web de Forma Assíncrona
 	06 - Lendo e Atualizando Banco de Dados
