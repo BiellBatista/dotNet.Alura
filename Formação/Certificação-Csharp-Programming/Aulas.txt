@@ -508,6 +508,7 @@ Certificação C# Programming parte 8: Entrada e Saída de Dados
 		01 - Liberando Recursos do Stream com Bloco Using
 		02 - Erro ao ler arquivo (B / E)
 		03 - Copiando arquivos (D)
+		04 - Gravando e Lendo Texto de Arquivos com StreamWriter e StreamReader
 	03 - Gerenciando Arquivos
 	04 - Gerenciando Diretórios
 	05 - Acessando a Web de Forma Assíncrona

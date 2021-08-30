@@ -48,7 +48,9 @@
     <Compile Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\LerGravarBytesFluxosArquivos01.cs" />
     <Compile Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\LerGravarBytesFluxosArquivos02.cs" />
     <Compile Include="02-Ler-Gravar-Strings-Fluxos-Arquivos\Antes\LerGravarStringsFluxosArquivos01.cs" />
+    <Compile Include="02-Ler-Gravar-Strings-Fluxos-Arquivos\Antes\LerGravarStringsFluxosArquivos02.cs" />
     <Compile Include="02-Ler-Gravar-Strings-Fluxos-Arquivos\Depois\LerGravarStringsFluxosArquivos01.cs" />
+    <Compile Include="02-Ler-Gravar-Strings-Fluxos-Arquivos\Depois\LerGravarStringsFluxosArquivos02.cs" />
     <Compile Include="IAulaItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
