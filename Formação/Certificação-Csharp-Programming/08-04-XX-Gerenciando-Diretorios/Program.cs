@@ -84,6 +84,7 @@ namespace _08_04_XX_Gerenciando_Diretorios
                 new MenuItem("Obtendo Informações Sobre os Drives", typeof(GerenciandoArquivos03)),
                 new MenuItem("Informações do Arquivo", typeof(GerenciandoArquivos04)),
                 new MenuItem("Gerenciando Diretórios", typeof(GerenciandoDiretorios01)),
+                new MenuItem("Manipulando e Obtendo Informações Sobre um Diretório", typeof(GerenciandoDiretorios02)),
             };
         }
     }
