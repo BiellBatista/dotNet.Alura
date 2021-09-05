@@ -83,6 +83,7 @@ namespace _08_04_XX_Gerenciando_Diretorios
                 new MenuItem("Tratando Exceções de Fluxo", typeof(GerenciandoArquivos02)),
                 new MenuItem("Obtendo Informações Sobre os Drives", typeof(GerenciandoArquivos03)),
                 new MenuItem("Informações do Arquivo", typeof(GerenciandoArquivos04)),
+                new MenuItem("Gerenciando Diretórios", typeof(GerenciandoDiretorios01)),
             };
         }
     }
