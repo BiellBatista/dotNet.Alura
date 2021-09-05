@@ -92,6 +92,7 @@ namespace _08_05_XX_Acessando_Web_Forma_Assincrona
                 new MenuItem("Acessando a Web de Forma Assíncrona", typeof(AcessandoWebFormaAssincrona03)),
                 new MenuItem("Acessando a Web em Aplicativos Móveis, Windows, Web, etc", typeof(AcessandoWebFormaAssincrona04)),
                 new MenuItem("Gravando e Lendo de Forma Assíncrona", typeof(AcessandoWebFormaAssincrona05)),
+                new MenuItem("Capturando Exceções em Métodos Assíncronos", typeof(AcessandoWebFormaAssincrona06)),
             };
         }
     }
