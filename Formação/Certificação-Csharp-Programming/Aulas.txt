@@ -541,6 +541,7 @@ Certificação C# Programming parte 8: Entrada e Saída de Dados
 		03 - Acessando a Web de Forma Assíncrona
 		04 - Leitura assíncrona de serviço web (C)
 		05 - Acessando a Web em Aplicativos Móveis, Windows, Web, etc
+		06 - Gravando e Lendo de Forma Assíncrona
 	06 - Lendo e Atualizando Banco de Dados
 	07 - Consumindo Serviços e Interpretando Dados
 Certificação C# Programming parte 9: Depurar Aplicativos
