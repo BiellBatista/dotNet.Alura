@@ -532,6 +532,9 @@ Certificação C# Programming parte 8: Entrada e Saída de Dados
 		02 - Manipulando e Obtendo Informações Sobre um Diretório
 		03 - Manipulando Caminhos
 		04 - Procurando Arquivos Recursivamente
+		05 - Procurando arquivos em vários níveis de diretórios (A / C / D)
+		06 - Faça como eu fiz na aula
+		07 - O que aprendemos?
 	05 - Acessando a Web de Forma Assíncrona
 	06 - Lendo e Atualizando Banco de Dados
 	07 - Consumindo Serviços e Interpretando Dados
