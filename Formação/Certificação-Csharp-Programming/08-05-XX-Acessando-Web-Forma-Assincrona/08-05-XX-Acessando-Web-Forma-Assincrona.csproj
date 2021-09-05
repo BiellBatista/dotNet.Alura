@@ -12,7 +12,4 @@
 	  <Content Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Antes\Diretores.txt" />
 	  <Content Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\Diretores.txt" />
 	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="05-Acessando-Web-Forma-Assincrona\Depois\" />
-	</ItemGroup>
 </Project>

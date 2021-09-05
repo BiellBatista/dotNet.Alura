@@ -88,6 +88,7 @@ namespace _08_05_XX_Acessando_Web_Forma_Assincrona
                 new MenuItem("Manipulando Caminhos", typeof(GerenciandoDiretorios03)),
                 new MenuItem("Procurando Arquivos Recursivamente", typeof(GerenciandoDiretorios04)),
                 new MenuItem("Acessando a Web de Forma Assíncrona", typeof(AcessandoWebFormaAssincrona01)),
+                new MenuItem("Trabalhando com WebClient", typeof(AcessandoWebFormaAssincrona02)),
             };
         }
     }
