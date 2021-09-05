@@ -538,6 +538,7 @@ Certificação C# Programming parte 8: Entrada e Saída de Dados
 	05 - Acessando a Web de Forma Assíncrona
 		01 - Criando Requisição e Obtendo Resposta da Web
 		02 - Trabalhando com WebClient
+		03 - Acessando a Web de Forma Assíncrona
 	06 - Lendo e Atualizando Banco de Dados
 	07 - Consumindo Serviços e Interpretando Dados
 Certificação C# Programming parte 9: Depurar Aplicativos
