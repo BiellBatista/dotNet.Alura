@@ -536,6 +536,7 @@ Certificação C# Programming parte 8: Entrada e Saída de Dados
 		06 - Faça como eu fiz na aula
 		07 - O que aprendemos?
 	05 - Acessando a Web de Forma Assíncrona
+		01 - Criando Requisição e Obtendo Resposta da Web
 	06 - Lendo e Atualizando Banco de Dados
 	07 - Consumindo Serviços e Interpretando Dados
 Certificação C# Programming parte 9: Depurar Aplicativos
