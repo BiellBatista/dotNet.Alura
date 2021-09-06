@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net5.0</TargetFramework>
+		<RootNamespace>_08_07_XX_Consumindo_Servicos_Interpretando_Dados</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Antes\Diretores.txt" />
+		<None Remove="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\Diretores.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Antes\Diretores.txt" />
+		<Content Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\Diretores.txt" />
+	</ItemGroup>
+</Project>
