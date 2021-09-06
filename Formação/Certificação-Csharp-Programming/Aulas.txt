@@ -567,6 +567,9 @@ Certificação C# Programming parte 8: Entrada e Saída de Dados
 		08 - O que aprendemos?
 Certificação C# Programming parte 9: Depurar Aplicativos
 	01 - Gerenciando Assemblies
+		01 - Introdução
+		02 - Projeto do Curso
+		03 - Assemblies
 	02 - Assinando Assemblies com Nome Forte
 	03 - Depurando Aplicações
 	04 - Compilação Condicional

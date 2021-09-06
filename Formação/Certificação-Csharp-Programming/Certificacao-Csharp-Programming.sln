@@ -101,6 +101,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-06-XX-Lendo-Atualizando-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-07-XX-Consumindo-Servicos-Interpretando-Dados", "08-07-XX-Consumindo-Servicos-Interpretando-Dados\08-07-XX-Consumindo-Servicos-Interpretando-Dados.csproj", "{DF88FB06-5AEE-49EF-97AA-B69E8D87E8EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-01-XX-Gerenciando-Assemblies", "09-01-XX-Gerenciando-Assemblies\09-01-XX-Gerenciando-Assemblies.csproj", "{A1F9B8A0-828F-4089-B179-02A4EB95BA04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -303,6 +305,10 @@ Global
 		{DF88FB06-5AEE-49EF-97AA-B69E8D87E8EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF88FB06-5AEE-49EF-97AA-B69E8D87E8EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF88FB06-5AEE-49EF-97AA-B69E8D87E8EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1F9B8A0-828F-4089-B179-02A4EB95BA04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F9B8A0-828F-4089-B179-02A4EB95BA04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F9B8A0-828F-4089-B179-02A4EB95BA04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F9B8A0-828F-4089-B179-02A4EB95BA04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
