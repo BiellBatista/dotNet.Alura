@@ -2,7 +2,7 @@
 
 namespace _05_04_XX_Concatenacao_Escrita_Leitura_Strings.Antes
 {
-    class StringBuilder1 : IAulaItem
+    internal class StringBuilder1 : IAulaItem
     {
         public void Executar()
         {

@@ -33,7 +33,7 @@ namespace _06_02_XX_Serializacao_JSON.Depois
 
     public class Pedagio
     {
-        Queue<string> fila = new Queue<string>();
+        private Queue<string> fila = new Queue<string>();
 
         public void Enfileirar(string veiculo)
         {

@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace _05_02_XX_Coletando_Lixo.Depois
 {
-    class TiposDeReferencia : IAulaItem
+    internal class TiposDeReferencia : IAulaItem
     {
         public async void Executar()
         {
@@ -25,6 +25,7 @@ namespace _05_02_XX_Coletando_Lixo.Depois
                 };
             }
         }
+
         ///<image url="$(ProjectDir)\img1.png"/>
 
         private static void GerarTiposReferencia()
@@ -39,18 +40,19 @@ namespace _05_02_XX_Coletando_Lixo.Depois
                 };
             }
         }
+
         ///<image url="$(ProjectDir)\img2.png"/>
         ///<image url="$(ProjectDir)\img4.png"/>
         ///<image url="$(ProjectDir)\img5.png"/>
         ///<image url="$(ProjectDir)\img6.png"/>
     }
 
-    struct EstruturaLivro
+    internal struct EstruturaLivro
     {
         public double NumeroPaginas { get; set; }
     }
 
-    class ClasseLivro
+    internal class ClasseLivro
     {
         public string Introducao { get; set; }
         public string Texto { get; set; }

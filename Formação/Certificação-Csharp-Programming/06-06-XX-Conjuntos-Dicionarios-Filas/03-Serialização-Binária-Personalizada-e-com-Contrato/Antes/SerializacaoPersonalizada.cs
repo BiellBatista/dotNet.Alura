@@ -1,6 +1,6 @@
 ﻿namespace _06_06_XX_Conjuntos_Dicionarios_Filas.Antes
 {
-    class SerializacaoPersonalizada : IAulaItem
+    internal class SerializacaoPersonalizada : IAulaItem
     {
         public void Executar()
         {

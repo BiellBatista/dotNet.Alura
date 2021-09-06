@@ -2,7 +2,7 @@
 
 namespace _02_03_XX_Implementando_Conversoes.Depois
 {
-    class OperadoresISeAS : IAulaItem
+    internal class OperadoresISeAS : IAulaItem
     {
         public void Executar()
         {
@@ -44,7 +44,7 @@ namespace _02_03_XX_Implementando_Conversoes.Depois
         }
     }
 
-    class Cliente
+    internal class Cliente
     {
         public Cliente(string nome, int idade)
         {

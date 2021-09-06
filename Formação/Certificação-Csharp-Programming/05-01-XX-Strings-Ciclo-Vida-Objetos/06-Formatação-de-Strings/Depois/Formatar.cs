@@ -5,19 +5,19 @@ namespace _05_01_XX_Strings_Ciclo_Vida_Objetos.Depois
     public class Formatar : IAulaItem
     {
         private const string MODELO = @"CONTRATO INDIVIDUAL DE TRABALHO TEMPORÁRIO
-            EMPREGADOR: {0} 
+            EMPREGADOR: {0}
             EMPREGADO: {1}
 Pelo presente instrumento particular de contrato individual de trabalho,
 fica justo e contratado o seguinte:
- Cláusula 1ª - O EMPREGADO prestará ao EMPREGADOR, a partir de 
-{2:d} e assinatura deste instrumento, seus trabalhos 
-exercendo a função de {3}, prestando pessoalmente o 
-labor diário no período compreendido entre {4:t} e {5:t}, 
+ Cláusula 1ª - O EMPREGADO prestará ao EMPREGADOR, a partir de
+{2:d} e assinatura deste instrumento, seus trabalhos
+exercendo a função de {3}, prestando pessoalmente o
+labor diário no período compreendido entre {4:t} e {5:t},
 e intervalo de 1 hora para almoço;
-            Cláusula 2ª - Não haverá expediente nos dias de sábado, sendo 
+            Cláusula 2ª - Não haverá expediente nos dias de sábado, sendo
 prestado a compensação de horário semanal;
-            Cláusula 3ª - O EMPREGADOR pagará mensalmente, ao EMPREGADO, a 
-título de salário a importância de {6:C3}, com os 
+            Cláusula 3ª - O EMPREGADOR pagará mensalmente, ao EMPREGADO, a
+título de salário a importância de {6:C3}, com os
 descontos previstos por lei;
 
 São Paulo, {7:D}

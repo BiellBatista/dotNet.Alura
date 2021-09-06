@@ -2,17 +2,17 @@
 
 namespace _01_04_XX_Classes_Metodos_Extensao.Antes
 {
-    class ParametrosOpcionais : IAulaItem
+    internal class ParametrosOpcionais : IAulaItem
     {
         public void Executar()
         {
-
         }
     }
 
-    class ClienteEspecial
+    internal class ClienteEspecial
     {
         private readonly string nome;
+
         public ClienteEspecial(string nome)
         {
             this.nome = nome;

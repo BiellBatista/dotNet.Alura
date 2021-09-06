@@ -2,7 +2,7 @@
 
 namespace _04_05_XX_Manipulacao_Excecoes.Depois
 {
-    class ContaBancaria3
+    internal class ContaBancaria3
     {
         private decimal saldo = 0m;
 

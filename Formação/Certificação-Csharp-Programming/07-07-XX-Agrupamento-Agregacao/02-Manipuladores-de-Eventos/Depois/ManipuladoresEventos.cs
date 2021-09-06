@@ -83,4 +83,5 @@ namespace _07_07_XX_Agrupamento_Agregacao.Depois
         public string Apartamento { get; }
     }
 }
+
 /// <image url="$(ProjectDir)/img2.png"/>

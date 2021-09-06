@@ -2,11 +2,11 @@
 
 namespace _04_02_XX_Compilacao_Condicional.Depois
 {
-    class ExemplosComIf4
+    internal class ExemplosComIf4
     {
         public static void IfSemElse()
         {
-            // instrução if sem um else  
+            // instrução if sem um else
             bool condicao = true;
 
             if (condicao)
@@ -14,7 +14,7 @@ namespace _04_02_XX_Compilacao_Condicional.Depois
                 //instrução then;
                 FacaAlgo();
             }
-            // Próxima instrução do programa. 
+            // Próxima instrução do programa.
         }
 
         public static void IfElse()
@@ -152,7 +152,7 @@ namespace _04_02_XX_Compilacao_Condicional.Depois
                 Console.WriteLine("m não é o menor.");
             }
 
-            // NOT e OR  
+            // NOT e OR
             m1 = 4;
 
             if (!(m1 >= n1 || m1 >= p1))

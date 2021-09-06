@@ -4,7 +4,7 @@ namespace _07_05_XX_Consultando_Filtrando_Dados_LINQ.Depois
 {
     public class FuncActionPredicate : IAulaItem
     {
-        delegate int Operacao(int a, int b);
+        private delegate int Operacao(int a, int b);
 
         public void Executar()
         {

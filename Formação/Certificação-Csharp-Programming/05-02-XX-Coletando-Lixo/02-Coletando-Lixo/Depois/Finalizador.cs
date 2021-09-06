@@ -2,7 +2,7 @@
 
 namespace _05_02_XX_Coletando_Lixo.Depois
 {
-    class Finalizador : IAulaItem
+    internal class Finalizador : IAulaItem
     {
         public void Executar()
         {
@@ -17,9 +17,9 @@ namespace _05_02_XX_Coletando_Lixo.Depois
         }
     }
 
-    class Livro
+    internal class Livro
     {
-        static int UltimoId = 0;
+        private static int UltimoId = 0;
         public string Introducao { get; set; }
         public string Texto { get; set; }
         public string Conclusao { get; set; }

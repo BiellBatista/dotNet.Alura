@@ -9,6 +9,7 @@ namespace _06_01_XX_Serializacao_XML.Antes
         {
             throw new NotImplementedException();
         }
+
         private LojaDeFilmes7 GetLoja()
         {
             return new LojaDeFilmes7

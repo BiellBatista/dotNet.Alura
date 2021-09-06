@@ -74,7 +74,7 @@ namespace _06_05_XX_Listas.Depois
             return lista.GetEnumerator();
         }
 
-        static bool EhPlacaValida(string value)
+        private static bool EhPlacaValida(string value)
         {
             Regex regex = new Regex(@"^[A-Z]{3}\-\d{4}$");
 

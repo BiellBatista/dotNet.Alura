@@ -3,7 +3,7 @@ using System.IO;
 
 namespace _04_02_XX_Compilacao_Condicional.Antes
 {
-    class RelatorioClientes
+    internal class RelatorioClientes
     {
         public static void ImprimirListagemClientes()
         {

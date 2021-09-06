@@ -2,7 +2,7 @@
 
 namespace _04_04_XX_Iteracao_For_Foreach.Depois
 {
-    class ContaBancaria4
+    internal class ContaBancaria4
     {
         private decimal saldo = 0m;
 

@@ -3,7 +3,7 @@ using System.IO;
 
 namespace _05_06_XX_Formatacao_Strings.Antes
 {
-    class StringWriter1 : IAulaItem
+    internal class StringWriter1 : IAulaItem
     {
         public void Executar()
         {

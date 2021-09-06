@@ -2,7 +2,7 @@
 
 namespace _04_01_XX_Fluxo_Programa_If_Else_Switch.Antes
 {
-    class ContaBancaria2
+    internal class ContaBancaria2
     {
         private decimal saldo = 0m;
 

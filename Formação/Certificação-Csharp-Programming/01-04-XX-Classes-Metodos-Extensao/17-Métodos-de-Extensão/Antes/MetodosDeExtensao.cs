@@ -2,7 +2,7 @@
 
 namespace _01_04_XX_Classes_Metodos_Extensao.Antes
 {
-    class MetodosDeExtensao : IAulaItem
+    internal class MetodosDeExtensao : IAulaItem
     {
         public void Executar()
         {
@@ -11,7 +11,7 @@ namespace _01_04_XX_Classes_Metodos_Extensao.Antes
         }
     }
 
-    class Impressora
+    internal class Impressora
     {
         public string Documento { get; }
 
@@ -27,5 +27,3 @@ namespace _01_04_XX_Classes_Metodos_Extensao.Antes
         }
     }
 }
-
-

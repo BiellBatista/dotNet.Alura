@@ -1,13 +1,14 @@
-﻿using System;
+﻿using _04_05_XX_Manipulacao_Excecoes.Depois;
+using System;
 using System.Collections.Generic;
-using _04_05_XX_Manipulacao_Excecoes.Depois;
 
 namespace _04_05_XX_Manipulacao_Excecoes
 {
-    class Program
+    internal class Program
     {
-        static IList<MenuItem> menuItems;
-        static void Main(string[] args)
+        private static IList<MenuItem> menuItems;
+
+        private static void Main(string[] args)
         {
             IAulaItem itemSelecionado;
             menuItems = GetMenuItems();
@@ -77,7 +78,7 @@ namespace _04_05_XX_Manipulacao_Excecoes
         }
     }
 
-    class MenuItem
+    internal class MenuItem
     {
         public MenuItem(string titulo, Type tipoClasse)
         {

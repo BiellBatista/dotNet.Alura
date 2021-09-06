@@ -1,6 +1,6 @@
 ﻿namespace _07_06_XX_Projecao_Dados
 {
-    interface IAulaItem
+    internal interface IAulaItem
     {
         void Executar();
     }

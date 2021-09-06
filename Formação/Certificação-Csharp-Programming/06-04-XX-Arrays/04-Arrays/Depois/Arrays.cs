@@ -106,6 +106,7 @@ namespace _06_04_XX_Arrays.Depois
             Console.WriteLine();
         }
     }
+
     ///<image url="$(ProjectDir)\img1.png"/>
     ///<image url="$(ProjectDir)\img2.png"/>
 }

@@ -2,7 +2,7 @@
 
 namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Antes
 {
-    class Estruturas : IAulaItem
+    internal class Estruturas : IAulaItem
     {
         public void Executar()
         {

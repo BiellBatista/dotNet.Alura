@@ -51,7 +51,6 @@ namespace _07_04_XX_Func_Action_Predicate.Depois
             }
             Console.WriteLine();
 
-
             filmesSelecionados2 =
             from filme in documentoFilmes.Descendants("Filme")
             .Where(elemento => (string)elemento.Element("Diretor")

@@ -7,6 +7,7 @@ namespace _06_06_XX_Conjuntos_Dicionarios_Filas.Depois
     {
         public List<Director3> Directors = new List<Director3>();
         public List<Movie3> Movies = new List<Movie3>();
+
         public static MovieStore3 AddMovie(Movie3 movie)
         {
             MovieStore3 store = new MovieStore3();
@@ -18,6 +19,7 @@ namespace _06_06_XX_Conjuntos_Dicionarios_Filas.Depois
     public class Director3
     {
         public string Name { get; set; }
+
         [XmlIgnore]
         public int NumberOfMovies;
     }

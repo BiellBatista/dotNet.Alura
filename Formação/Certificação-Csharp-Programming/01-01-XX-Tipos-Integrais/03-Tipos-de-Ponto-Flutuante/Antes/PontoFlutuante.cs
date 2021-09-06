@@ -1,6 +1,6 @@
 ﻿namespace _01_01_XX_Tipos_Integrais.Antes
 {
-    class PontoFlutuante : IAulaItem
+    internal class PontoFlutuante : IAulaItem
     {
         public void Executar()
         {

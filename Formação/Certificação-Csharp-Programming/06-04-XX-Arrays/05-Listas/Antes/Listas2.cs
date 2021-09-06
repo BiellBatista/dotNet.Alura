@@ -9,6 +9,7 @@ namespace _06_04_XX_Arrays.Antes
         {
             throw new NotImplementedException();
         }
+
         private LojaDeFilmes7 GetLoja()
         {
             return new LojaDeFilmes7

@@ -3,7 +3,7 @@ using System.Text;
 
 namespace _05_02_XX_Coletando_Lixo.Depois
 {
-    class StringBuilder1 : IAulaItem
+    internal class StringBuilder1 : IAulaItem
     {
         public void Executar()
         {

@@ -9,6 +9,7 @@ namespace _06_06_XX_Conjuntos_Dicionarios_Filas.Antes
         {
             throw new NotImplementedException();
         }
+
         private LojaDeFilmes7 GetLoja()
         {
             return new LojaDeFilmes7

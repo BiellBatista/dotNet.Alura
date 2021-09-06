@@ -51,7 +51,6 @@ namespace _07_07_XX_Agrupamento_Agregacao.Depois
             }
             Console.WriteLine();
 
-
             filmesSelecionados2 =
             from filme in documentoFilmes.Descendants("Filme")
             .Where(elemento => (string)elemento.Element("Diretor")

@@ -2,7 +2,7 @@
 
 namespace _01_04_XX_Classes_Metodos_Extensao.Depois
 {
-    class ParametrosOpcionais : IAulaItem
+    internal class ParametrosOpcionais : IAulaItem
     {
         public void Executar()
         {
@@ -19,7 +19,7 @@ namespace _01_04_XX_Classes_Metodos_Extensao.Depois
         }
     }
 
-    class ClienteEspecial
+    internal class ClienteEspecial
     {
         private readonly string nome;
 

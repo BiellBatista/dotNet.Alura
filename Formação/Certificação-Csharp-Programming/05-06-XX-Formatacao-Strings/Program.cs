@@ -4,11 +4,11 @@ using System.Collections.Generic;
 
 namespace _05_06_XX_Formatacao_Strings
 {
-    class Program
+    internal class Program
     {
-        static IList<MenuItem> menuItems;
+        private static IList<MenuItem> menuItems;
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             IAulaItem itemSelecionado;
 
@@ -87,7 +87,7 @@ namespace _05_06_XX_Formatacao_Strings
         }
     }
 
-    class MenuItem
+    internal class MenuItem
     {
         public MenuItem(string titulo, Type tipoClasse)
         {

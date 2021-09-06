@@ -3,7 +3,7 @@ using System.IO;
 
 namespace _05_02_XX_Coletando_Lixo.Depois
 {
-    class StringWriter1 : IAulaItem
+    internal class StringWriter1 : IAulaItem
     {
         public void Executar()
         {
@@ -47,4 +47,3 @@ namespace _05_02_XX_Coletando_Lixo.Depois
         }
     }
 }
-

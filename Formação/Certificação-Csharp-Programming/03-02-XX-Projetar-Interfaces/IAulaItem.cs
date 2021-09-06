@@ -1,6 +1,6 @@
 ﻿namespace _03_02_XX_Projetar_Interfaces
 {
-    interface IAulaItem
+    internal interface IAulaItem
     {
         void Executar();
     }

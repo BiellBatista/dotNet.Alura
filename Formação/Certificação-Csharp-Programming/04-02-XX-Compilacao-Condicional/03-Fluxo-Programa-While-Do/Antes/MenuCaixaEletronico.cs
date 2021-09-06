@@ -4,9 +4,9 @@ using System.Text.RegularExpressions;
 
 namespace _04_02_XX_Compilacao_Condicional.Antes
 {
-    class MenuCaixaEletronico
+    internal class MenuCaixaEletronico
     {
-        delegate void ItemMenu();
+        private delegate void ItemMenu();
 
         public void Executar()
         {

@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace _05_01_XX_Strings_Ciclo_Vida_Objetos.Depois
 {
-    class Disposable2 : IAulaItem
+    internal class Disposable2 : IAulaItem
     {
-	/// <summary>
+        /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]

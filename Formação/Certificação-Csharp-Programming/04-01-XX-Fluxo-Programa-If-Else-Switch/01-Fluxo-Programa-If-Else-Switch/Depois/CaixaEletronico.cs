@@ -3,9 +3,10 @@ using System.Linq;
 
 namespace _04_01_XX_Fluxo_Programa_If_Else_Switch.Depois
 {
-    class CaixaEletronico
+    internal class CaixaEletronico
     {
         private Conta conta;
+
         public CaixaEletronico()
         {
             ExibirLogo();
@@ -54,7 +55,7 @@ namespace _04_01_XX_Fluxo_Programa_If_Else_Switch.Depois
             //{
             //    Console.WriteLine("Resultado: Erro de comunicação com Servidor");
             //}
-            //else 
+            //else
             //{
             //    Console.WriteLine("Resultado: Erro desconhecido");
             //}
@@ -68,18 +69,23 @@ namespace _04_01_XX_Fluxo_Programa_If_Else_Switch.Depois
                 case ResultadoOperacao.OperacaoIniciada:
                     Console.WriteLine("Resultado: Operacão iniciada");
                     break;
+
                 case ResultadoOperacao.SaldoInsuficiente:
                     Console.WriteLine("Resultado: Saldo insuficiente");
                     break;
+
                 case ResultadoOperacao.Sucesso:
                     Console.WriteLine("Resultado: Sucesso");
                     break;
+
                 case ResultadoOperacao.ErroNaoTemDinheiro:
                     Console.WriteLine("Resultado: Erro não tem dinheiro");
                     break;
+
                 case ResultadoOperacao.ErroComunicacaoComServidor:
                     Console.WriteLine("Resultado: Erro de comunicação com Servidor");
                     break;
+
                 default:
                     Console.WriteLine("Resultado: Erro desconhecido");
                     break;
@@ -87,7 +93,7 @@ namespace _04_01_XX_Fluxo_Programa_If_Else_Switch.Depois
         }
     }
 
-    class Conta
+    internal class Conta
     {
         private decimal saldo = 0m;
 

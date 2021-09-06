@@ -2,7 +2,7 @@
 
 namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
 {
-    class TiposDeReferencia : IAulaItem
+    internal class TiposDeReferencia : IAulaItem
     {
         public void Executar()
         {
@@ -38,7 +38,7 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
         }
     }
 
-    class Cliente
+    internal class Cliente
     {
         public Cliente(string nome, int idade)
         {

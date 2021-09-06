@@ -1,14 +1,15 @@
-﻿using System;
+﻿using _01_01_XX_Tipos_Integrais.Depois;
+using System;
 using System.Collections.Generic;
-using _01_01_XX_Tipos_Integrais.Depois;
 using Decimal = _01_01_XX_Tipos_Integrais.Depois.Decimal;
 
 namespace _01_01_XX_Tipos_Integrais
 {
-    class Program
+    internal class Program
     {
-        static IList<MenuItem> menuItems;
-        static void Main(string[] args)
+        private static IList<MenuItem> menuItems;
+
+        private static void Main(string[] args)
         {
             IAulaItem itemSelecionado;
             menuItems = GetMenuItems();
@@ -101,12 +102,12 @@ namespace _01_01_XX_Tipos_Integrais
                 //new MenuItem("Conversões de Dynamic", typeof(ConversoesDeDynamic)),
                 //new MenuItem("Resolucão de Sobrecarga", typeof(ResolucaoSobrecarga)),
                 //new MenuItem("Usando ExpandObject", typeof(UsandoExpandObject)),
-                //new MenuItem("Interoperabilidade COM", typeof(InteropCOM))                
+                //new MenuItem("Interoperabilidade COM", typeof(InteropCOM))
             };
         }
     }
 
-    class MenuItem
+    internal class MenuItem
     {
         public MenuItem(string titulo, Type tipoClasse)
         {

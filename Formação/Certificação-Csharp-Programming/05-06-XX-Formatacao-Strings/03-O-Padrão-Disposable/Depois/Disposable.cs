@@ -5,7 +5,7 @@ namespace _05_06_XX_Formatacao_Strings.Depois
 {
     public class Disposable2 : IAulaItem
     {
-	/// <summary>
+        /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]

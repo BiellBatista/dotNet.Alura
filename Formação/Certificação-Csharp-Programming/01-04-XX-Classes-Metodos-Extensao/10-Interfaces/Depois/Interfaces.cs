@@ -1,6 +1,6 @@
 ﻿namespace _01_04_XX_Classes_Metodos_Extensao.Depois
 {
-    class Interfaces : IAulaItem
+    internal class Interfaces : IAulaItem
     {
         public void Executar()
         {
@@ -11,18 +11,19 @@
         }
     }
 
-    interface IEletrodomestico
+    internal interface IEletrodomestico
     {
         void Ligar();
+
         void Desligar();
     }
 
-    interface IIluminacao
+    internal interface IIluminacao
     {
         double PotenciaDaLampada { get; set; }
     }
 
-    class Televisao : IEletrodomestico
+    internal class Televisao : IEletrodomestico
     {
         public void Desligar()
         {
@@ -33,9 +34,8 @@
         }
     }
 
-    class Abajur : IEletrodomestico, IIluminacao
+    internal class Abajur : IEletrodomestico, IIluminacao
     {
-
         public double PotenciaDaLampada { get; set; }
 
         public void Desligar()
@@ -47,9 +47,8 @@
         }
     }
 
-    class Lanterna : IEletrodomestico, IIluminacao
+    internal class Lanterna : IEletrodomestico, IIluminacao
     {
-
         public double PotenciaDaLampada { get; set; }
 
         public void Desligar()

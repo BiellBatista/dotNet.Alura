@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace _01_04_XX_Classes_Metodos_Extensao.Depois
 {
-    class PropriedadesIndexadas : IAulaItem
+    internal class PropriedadesIndexadas : IAulaItem
     {
         public void Executar()
         {
@@ -18,7 +18,7 @@ namespace _01_04_XX_Classes_Metodos_Extensao.Depois
         }
     }
 
-    class ClienteCinema
+    internal class ClienteCinema
     {
         public ClienteCinema(string nome)
         {
@@ -33,7 +33,7 @@ namespace _01_04_XX_Classes_Metodos_Extensao.Depois
         }
     }
 
-    class Sala
+    internal class Sala
     {
         private readonly IDictionary<string, ClienteCinema> reservas
             = new Dictionary<string, ClienteCinema>();

@@ -2,14 +2,13 @@
 
 namespace _01_04_XX_Classes_Metodos_Extensao.Antes
 {
-    class ParametrosNomeados : IAulaItem
+    internal class ParametrosNomeados : IAulaItem
     {
         public void Executar()
         {
-
         }
 
-        void ImprimirDetalhesDoPedido(string vendedor, int numeroPedido, string nomeProduto)
+        private void ImprimirDetalhesDoPedido(string vendedor, int numeroPedido, string nomeProduto)
         {
             if (string.IsNullOrWhiteSpace(vendedor))
             {

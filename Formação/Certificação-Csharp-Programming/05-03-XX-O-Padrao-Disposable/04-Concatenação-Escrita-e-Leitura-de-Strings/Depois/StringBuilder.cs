@@ -3,7 +3,7 @@ using System.Text;
 
 namespace _05_03_XX_O_Padrao_Disposable.Depois
 {
-    class StringBuilder1 : IAulaItem
+    internal class StringBuilder1 : IAulaItem
     {
         public void Executar()
         {

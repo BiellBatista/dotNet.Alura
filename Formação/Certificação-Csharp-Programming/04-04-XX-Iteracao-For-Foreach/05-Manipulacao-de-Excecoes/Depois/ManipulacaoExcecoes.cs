@@ -4,7 +4,7 @@ using System.IO;
 
 namespace _04_04_XX_Iteracao_For_Foreach.Depois
 {
-    class ManipulacaoExcecoes : IAulaItem
+    internal class ManipulacaoExcecoes : IAulaItem
     {
         public void Executar()
         {
@@ -33,7 +33,7 @@ namespace _04_04_XX_Iteracao_For_Foreach.Depois
         }
     }
 
-    class ContaCorrente
+    internal class ContaCorrente
     {
         public int Id { get; }
         public decimal Saldo { get; private set; }
@@ -70,12 +70,12 @@ namespace _04_04_XX_Iteracao_For_Foreach.Depois
         }
     }
 
-    interface ITransferenciaBancaria
+    internal interface ITransferenciaBancaria
     {
         void Efetuar(ContaCorrente contaDebito, ContaCorrente contaCredito, decimal valor);
     }
 
-    class TransferenciaBancaria : ITransferenciaBancaria
+    internal class TransferenciaBancaria : ITransferenciaBancaria
     {
         public void Efetuar(ContaCorrente contaDebito, ContaCorrente contaCredito, decimal valor)
         {
@@ -106,7 +106,7 @@ namespace _04_04_XX_Iteracao_For_Foreach.Depois
         }
     }
 
-    class TransferenciaBancaria_BD : ITransferenciaBancaria
+    internal class TransferenciaBancaria_BD : ITransferenciaBancaria
     {
         private const string CONNECTION_STRING = @"Data Source=(localdb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DB\ByteBank.mdf;Integrated Security=True";
         private const decimal TAXA_TRANSFERENCIA = 1.0m;
@@ -201,7 +201,7 @@ namespace _04_04_XX_Iteracao_For_Foreach.Depois
         }
     }
 
-    class Logger
+    internal class Logger
     {
         public static void LogInfo(string mensagem)
         {
@@ -224,16 +224,25 @@ namespace _04_04_XX_Iteracao_For_Foreach.Depois
         }
     }
 
-
     [Serializable]
     public class SaldoInsuficienteException : Exception
     {
-        public SaldoInsuficienteException() { }
-        public SaldoInsuficienteException(string message) : base(message) { }
-        public SaldoInsuficienteException(string message, Exception inner) : base(message, inner) { }
+        public SaldoInsuficienteException()
+        {
+        }
+
+        public SaldoInsuficienteException(string message) : base(message)
+        {
+        }
+
+        public SaldoInsuficienteException(string message, Exception inner) : base(message, inner)
+        {
+        }
+
         protected SaldoInsuficienteException(
           System.Runtime.Serialization.SerializationInfo info,
           System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
+
         public override string Message => "Saldo insuficiente.";
     }
 }

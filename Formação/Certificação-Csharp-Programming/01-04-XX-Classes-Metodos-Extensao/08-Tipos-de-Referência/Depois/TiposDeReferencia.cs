@@ -2,7 +2,7 @@
 
 namespace _01_04_XX_Classes_Metodos_Extensao.Depois
 {
-    class TiposDeReferencia : IAulaItem
+    internal class TiposDeReferencia : IAulaItem
     {
         public void Executar()
         {
@@ -38,7 +38,7 @@ namespace _01_04_XX_Classes_Metodos_Extensao.Depois
         }
     }
 
-    class Cliente
+    internal class Cliente
     {
         public Cliente(string nome, int idade)
         {

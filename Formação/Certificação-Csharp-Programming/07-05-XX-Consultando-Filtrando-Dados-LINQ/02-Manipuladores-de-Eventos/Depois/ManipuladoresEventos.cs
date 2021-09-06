@@ -83,4 +83,5 @@ namespace _07_05_XX_Consultando_Filtrando_Dados_LINQ.Depois
         public string Apartamento { get; }
     }
 }
+
 /// <image url="$(ProjectDir)/img2.png"/>

@@ -2,14 +2,13 @@
 
 namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Antes
 {
-    class ParametrosNomeados : IAulaItem
+    internal class ParametrosNomeados : IAulaItem
     {
         public void Executar()
         {
-
         }
 
-        void ImprimirDetalhesDoPedido(string vendedor, int numeroPedido, string nomeProduto)
+        private void ImprimirDetalhesDoPedido(string vendedor, int numeroPedido, string nomeProduto)
         {
             if (string.IsNullOrWhiteSpace(vendedor))
             {

@@ -3,7 +3,7 @@ using System.IO;
 
 namespace _05_01_XX_Strings_Ciclo_Vida_Objetos.Antes
 {
-    class StringWriter1 : IAulaItem
+    internal class StringWriter1 : IAulaItem
     {
         public void Executar()
         {

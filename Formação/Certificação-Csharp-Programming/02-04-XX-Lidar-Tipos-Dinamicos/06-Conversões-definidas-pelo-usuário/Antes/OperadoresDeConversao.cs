@@ -2,7 +2,7 @@
 
 namespace _02_04_XX_Lidar_Tipos_Dinamicos.Antes
 {
-    class OperadoresDeConversao : IAulaItem
+    internal class OperadoresDeConversao : IAulaItem
     {
         public void Executar()
         {
@@ -57,7 +57,10 @@ namespace _02_04_XX_Lidar_Tipos_Dinamicos.Antes
     {
         public double Graus { get; }
 
-        public AnguloEmGraus(double graus) { this.Graus = graus; }
+        public AnguloEmGraus(double graus)
+        {
+            this.Graus = graus;
+        }
 
         public static AnguloEmGraus Converte(AnguloEmRadianos radianos)
         {

@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 
 namespace _04_06_XX_Excecoes_SQL_Server_Rede.Antes
 {
-    class IteracaoForForeach : IAulaItem
+    internal class IteracaoForForeach : IAulaItem
     {
         public void Executar()
         {
@@ -21,13 +21,12 @@ namespace _04_06_XX_Excecoes_SQL_Server_Rede.Antes
             //menu.Executar();
         }
 
-
         private static IList<Conta> GetContasEspeciais()
         {
             IList<Cliente> clientes = GetClientes();
             IList<Conta> contasEspeciais = new Collection<Conta>();
 
-            //TAREFA: RETORNAR UMA LISTA COM 
+            //TAREFA: RETORNAR UMA LISTA COM
             //TODAS AS CONTAS COM MAIS DE 5 MIL DE SALDO
 
             return contasEspeciais;
@@ -72,9 +71,9 @@ namespace _04_06_XX_Excecoes_SQL_Server_Rede.Antes
             //FATORIAL DE 5 = 5 x 4 x 3 x 2 x 1  = 120
             //FATORIAL DE 4 = 4 x 3 x 2 x 1      = 24
             //FATORIAL DE 3 = 3 x 2 x 1          = 6
-            //FATORIAL DE 2 = 2 x 1              = 2 
+            //FATORIAL DE 2 = 2 x 1              = 2
             //FATORIAL DE 1                      = 1
-            //FATORIAL DE 0                      = 1 
+            //FATORIAL DE 0                      = 1
 
             int fatorial = 1;
             int fator = numero;
@@ -91,7 +90,7 @@ namespace _04_06_XX_Excecoes_SQL_Server_Rede.Antes
         }
     }
 
-    class Conta4
+    internal class Conta4
     {
         public Conta4(decimal saldo, int periodo, decimal juros)
         {
@@ -105,7 +104,7 @@ namespace _04_06_XX_Excecoes_SQL_Server_Rede.Antes
         public int Periodo { get; set; }
     }
 
-    class Cliente
+    internal class Cliente
     {
         public Cliente(string nome, string sobrenome, IList<Conta4> contas)
         {

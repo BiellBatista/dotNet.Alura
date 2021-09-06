@@ -16,7 +16,6 @@ namespace _06_06_XX_Conjuntos_Dicionarios_Filas.Depois
             {
                 serializer.WriteObject(fileStream, loja);
             }
-
         }
 
         private static LojaDeFilmes5 ObterDados()

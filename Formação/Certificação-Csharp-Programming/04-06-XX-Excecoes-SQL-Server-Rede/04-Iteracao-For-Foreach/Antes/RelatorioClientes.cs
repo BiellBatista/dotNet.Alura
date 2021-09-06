@@ -3,7 +3,7 @@ using System.IO;
 
 namespace _04_06_XX_Excecoes_SQL_Server_Rede.Antes
 {
-    class RelatorioClientes4
+    internal class RelatorioClientes4
     {
         public static void ImprimirListagemClientes()
         {

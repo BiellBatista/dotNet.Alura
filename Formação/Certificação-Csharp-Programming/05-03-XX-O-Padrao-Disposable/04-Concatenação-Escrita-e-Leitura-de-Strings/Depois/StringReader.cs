@@ -3,7 +3,7 @@ using System.IO;
 
 namespace _05_03_XX_O_Padrao_Disposable.Depois
 {
-    class StringReader1 : IAulaItem
+    internal class StringReader1 : IAulaItem
     {
         public void Executar()
         {

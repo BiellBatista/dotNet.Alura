@@ -1,6 +1,6 @@
 ﻿namespace _02_02_XX_Cast_Tipos.Antes
 {
-    class Unboxing : IAulaItem
+    internal class Unboxing : IAulaItem
     {
         public void Executar()
         {

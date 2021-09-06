@@ -2,7 +2,7 @@
 
 namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
 {
-    class ParametrosOpcionais : IAulaItem
+    internal class ParametrosOpcionais : IAulaItem
     {
         public void Executar()
         {
@@ -19,7 +19,7 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
         }
     }
 
-    class ClienteEspecial
+    internal class ClienteEspecial
     {
         private readonly string nome;
 

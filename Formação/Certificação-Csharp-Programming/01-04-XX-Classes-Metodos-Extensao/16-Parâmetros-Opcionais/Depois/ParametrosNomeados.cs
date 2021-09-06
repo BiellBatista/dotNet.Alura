@@ -2,7 +2,7 @@
 
 namespace _01_04_XX_Classes_Metodos_Extensao.Depois
 {
-    class ParametrosNomeados : IAulaItem
+    internal class ParametrosNomeados : IAulaItem
     {
         public void Executar()
         {
@@ -22,7 +22,7 @@ namespace _01_04_XX_Classes_Metodos_Extensao.Depois
             ImprimirDetalhesDoPedido("Maria de Fátima", numeroPedido: 31, "Caneca Vermelha");
         }
 
-        void ImprimirDetalhesDoPedido(string vendedor, int numeroPedido, string nomeProduto)
+        private void ImprimirDetalhesDoPedido(string vendedor, int numeroPedido, string nomeProduto)
         {
             if (string.IsNullOrWhiteSpace(vendedor))
             {

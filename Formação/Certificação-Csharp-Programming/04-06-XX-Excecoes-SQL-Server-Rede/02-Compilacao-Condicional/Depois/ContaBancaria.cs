@@ -2,7 +2,7 @@
 
 namespace _04_06_XX_Excecoes_SQL_Server_Rede.Depois
 {
-    class ContaBancaria2
+    internal class ContaBancaria2
     {
         private decimal saldo = 0m;
 

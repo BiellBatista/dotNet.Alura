@@ -2,7 +2,7 @@
 
 namespace _02_04_XX_Lidar_Tipos_Dinamicos.Depois
 {
-    class ConversoesExplicitas : IAulaItem
+    internal class ConversoesExplicitas : IAulaItem
     {
         public void Executar()
         {

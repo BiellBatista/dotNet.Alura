@@ -2,7 +2,7 @@
 
 namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
 {
-    class MetodosDeExtensao : IAulaItem
+    internal class MetodosDeExtensao : IAulaItem
     {
         public void Executar()
         {
@@ -13,13 +13,13 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
             impressora.ImprimirDocumentoComResumo();
         }
 
-        void ImprimirDocumentoHTML(string documento)
+        private void ImprimirDocumentoHTML(string documento)
         {
             Console.WriteLine($"<html><body>{documento}</body></html>");
         }
     }
 
-    class Impressora
+    internal class Impressora
     {
         public string Documento { get; }
 
@@ -40,7 +40,7 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
         }
     }
 
-    static class ImpressoraExtensions
+    internal static class ImpressoraExtensions
     {
         public static void ImprimirDocumentoHTML(this Impressora impressora)
         {

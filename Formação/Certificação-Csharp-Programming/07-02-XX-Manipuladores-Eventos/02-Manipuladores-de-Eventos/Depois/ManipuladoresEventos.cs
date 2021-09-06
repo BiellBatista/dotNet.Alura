@@ -83,4 +83,5 @@ namespace _07_02_XX_Manipuladores_Eventos.Depois
         public string Apartamento { get; }
     }
 }
+
 /// <image url="$(ProjectDir)/img2.png"/>

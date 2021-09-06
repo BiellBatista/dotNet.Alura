@@ -2,18 +2,18 @@
 
 namespace _04_04_XX_Iteracao_For_Foreach.Antes
 {
-    class ExemplosComIf
+    internal class ExemplosComIf
     {
         private static void IfSemElse()
         {
-            // instrução if sem um else  
+            // instrução if sem um else
             bool condicao = true;
             if (condicao)
             {
                 //instrução then;
                 FacaAlgo();
             }
-            // Próxima instrução do programa. 
+            // Próxima instrução do programa.
         }
 
         private static void IfElse()
@@ -153,7 +153,7 @@ namespace _04_04_XX_Iteracao_For_Foreach.Antes
                 Console.WriteLine("m não é o menor.");
             }
 
-            // NOT e OR  
+            // NOT e OR
             m1 = 4;
             if (!(m1 >= n1 || m1 >= p1))
             {

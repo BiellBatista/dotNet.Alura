@@ -1,6 +1,6 @@
 ﻿namespace _03_05_XX_Comparacoes_Objetos.Antes
 {
-    class PropriedadesAcessadores : IAulaItem
+    internal class PropriedadesAcessadores : IAulaItem
     {
         public void Executar()
         {

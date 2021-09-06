@@ -34,7 +34,6 @@ namespace _06_06_XX_Conjuntos_Dicionarios_Filas.Depois
             filmes.Add(ameaca);
             Imprimir(filmes);
 
-
             //3. não permite acesso pelo índice
             //filmes[0];
 

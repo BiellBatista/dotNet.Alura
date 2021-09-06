@@ -34,7 +34,6 @@ namespace _06_01_XX_Serializacao_XML.Depois
             filmes.Add(ameaca);
             Imprimir(filmes);
 
-
             //3. não permite acesso pelo índice
             //filmes[0];
 

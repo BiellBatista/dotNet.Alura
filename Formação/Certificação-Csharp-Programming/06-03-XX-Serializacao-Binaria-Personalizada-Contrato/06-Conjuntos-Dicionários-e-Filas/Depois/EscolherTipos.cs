@@ -74,7 +74,7 @@ namespace _06_03_XX_Serializacao_Binaria_Personalizada_Contrato.Depois
             return lista.GetEnumerator();
         }
 
-        static bool EhPlacaValida(string value)
+        private static bool EhPlacaValida(string value)
         {
             Regex regex = new Regex(@"^[A-Z]{3}\-\d{4}$");
 

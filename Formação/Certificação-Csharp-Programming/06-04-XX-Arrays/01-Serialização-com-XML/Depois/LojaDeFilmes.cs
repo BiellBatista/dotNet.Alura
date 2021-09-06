@@ -8,6 +8,7 @@ namespace _06_04_XX_Arrays.Depois
     {
         [XmlArray("Directors")]
         public List<Diretor> Diretores = new List<Diretor>(); //Directors
+
         [XmlArray("Movies")]
         public List<Filme> Filmes = new List<Filme>(); //Movies
 
@@ -22,6 +23,7 @@ namespace _06_04_XX_Arrays.Depois
     {
         [XmlElement("Name")]
         public string Nome { get; set; } //Name
+
         [XmlIgnore]
         public int NumeroFilmes;
     }
@@ -31,8 +33,10 @@ namespace _06_04_XX_Arrays.Depois
     {
         [XmlElement("Director")]
         public Diretor Diretor { get; set; } //Director
+
         [XmlElement("Title")]
         public string Titulo { get; set; } //Title
+
         [XmlElement("Year")]
         public string Ano { get; set; } //Year
     }

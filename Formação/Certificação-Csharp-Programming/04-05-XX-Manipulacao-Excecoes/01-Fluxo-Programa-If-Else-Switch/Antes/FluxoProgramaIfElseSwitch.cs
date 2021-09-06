@@ -3,9 +3,9 @@ using System.Text.RegularExpressions;
 
 namespace _04_05_XX_Manipulacao_Excecoes.Antes
 {
-    class FluxoProgramaIfElseSwitch : IAulaItem
+    internal class FluxoProgramaIfElseSwitch : IAulaItem
     {
-        delegate void ItemMenu();
+        private delegate void ItemMenu();
 
         public void Executar()
         {

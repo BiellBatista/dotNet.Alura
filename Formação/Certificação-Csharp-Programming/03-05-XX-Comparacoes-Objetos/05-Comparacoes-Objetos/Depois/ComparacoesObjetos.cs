@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace _03_05_XX_Comparacoes_Objetos.Depois
 {
-    class ComparacoesObjetos : IAulaItem
+    internal class ComparacoesObjetos : IAulaItem
     {
         public void Executar()
         {
@@ -58,7 +58,7 @@ namespace _03_05_XX_Comparacoes_Objetos.Depois
         }
     }
 
-    class Aluno : IComparable
+    internal class Aluno : IComparable
     {
         public string Nome { get; set; }
         public DateTime DataNascimento { get; set; }

@@ -1,6 +1,6 @@
 ﻿namespace _02_03_XX_Implementando_Conversoes.Antes
 {
-    class Unboxing : IAulaItem
+    internal class Unboxing : IAulaItem
     {
         public void Executar()
         {

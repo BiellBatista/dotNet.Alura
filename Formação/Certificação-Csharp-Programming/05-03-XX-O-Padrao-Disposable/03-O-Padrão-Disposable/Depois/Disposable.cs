@@ -5,7 +5,7 @@ namespace _05_03_XX_O_Padrao_Disposable.Depois
 {
     public class Disposable2 : IAulaItem
     {
-	/// <summary>
+        /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]

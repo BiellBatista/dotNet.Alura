@@ -1,6 +1,6 @@
 ﻿namespace _06_06_XX_Conjuntos_Dicionarios_Filas
 {
-    interface IAulaItem
+    internal interface IAulaItem
     {
         void Executar();
     }

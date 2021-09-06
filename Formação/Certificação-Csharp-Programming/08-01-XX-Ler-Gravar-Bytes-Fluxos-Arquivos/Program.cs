@@ -1,14 +1,14 @@
-﻿using System;
+﻿using _08_01_XX_Ler_Gravar_Bytes_Fluxos_Arquivos.Depois;
+using System;
 using System.Collections.Generic;
-using _08_01_XX_Ler_Gravar_Bytes_Fluxos_Arquivos.Depois;
 
 namespace _08_01_XX_Ler_Gravar_Bytes_Fluxos_Arquivos
 {
     public class Program
     {
-        static IList<MenuItem> menuItems;
+        private static IList<MenuItem> menuItems;
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             IAulaItem itemSelecionado;
 
@@ -80,7 +80,7 @@ namespace _08_01_XX_Ler_Gravar_Bytes_Fluxos_Arquivos
         }
     }
 
-    class MenuItem
+    internal class MenuItem
     {
         public MenuItem(string titulo, Type tipoClasse)
         {

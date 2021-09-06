@@ -1,13 +1,13 @@
 ﻿namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Antes
 {
-    class Interfaces : IAulaItem
+    internal class Interfaces : IAulaItem
     {
         public void Executar()
         {
         }
     }
 
-    class Televisao
+    internal class Televisao
     {
         public void Desligar()
         {
@@ -18,20 +18,7 @@
         }
     }
 
-    class Abajur
-    {
-        public double PotenciaDaLampada { get; set; }
-
-        public void Desligar()
-        {
-        }
-
-        public void Ligar()
-        {
-        }
-    }
-
-    class Lanterna
+    internal class Abajur
     {
         public double PotenciaDaLampada { get; set; }
 
@@ -44,7 +31,20 @@
         }
     }
 
-    class Radio
+    internal class Lanterna
+    {
+        public double PotenciaDaLampada { get; set; }
+
+        public void Desligar()
+        {
+        }
+
+        public void Ligar()
+        {
+        }
+    }
+
+    internal class Radio
     {
         public void Desligar()
         {

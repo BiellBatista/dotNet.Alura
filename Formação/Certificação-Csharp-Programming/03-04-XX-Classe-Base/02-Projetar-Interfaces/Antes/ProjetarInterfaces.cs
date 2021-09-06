@@ -2,7 +2,7 @@
 
 namespace _03_04_XX_Classe_Base.Antes
 {
-    class ProjetarInterfaces : IAulaItem
+    internal class ProjetarInterfaces : IAulaItem
     {
         public void Executar()
         {
@@ -13,9 +13,10 @@ namespace _03_04_XX_Classe_Base.Antes
         }
     }
 
-    class Televisao
+    internal class Televisao
     {
         public event EventHandler Ligou;
+
         public event EventHandler Desligou;
 
         public double FrequenciaDoCanal { get; set; }
@@ -33,11 +34,12 @@ namespace _03_04_XX_Classe_Base.Antes
         }
     }
 
-    class Abajur
+    internal class Abajur
     {
         public int PotenciaDaLampada { get; set; }
 
         public event EventHandler Ligou;
+
         public event EventHandler Desligou;
 
         public void Desligar()
@@ -49,11 +51,12 @@ namespace _03_04_XX_Classe_Base.Antes
         }
     }
 
-    class Lanterna
+    internal class Lanterna
     {
         public double PotenciaDaLampada { get; set; }
 
         public event EventHandler Ligou;
+
         public event EventHandler Desligou;
 
         public void Desligar()
@@ -65,9 +68,10 @@ namespace _03_04_XX_Classe_Base.Antes
         }
     }
 
-    class Radio
+    internal class Radio
     {
         public event EventHandler Ligou;
+
         public event EventHandler Desligou;
 
         public double FrequenciaDaEstacao { get; set; }

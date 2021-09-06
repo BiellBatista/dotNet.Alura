@@ -2,7 +2,7 @@
 
 namespace _02_05_XX_Adicionando_Membros_Dinamicamente.Depois
 {
-    class InteropCOM : IAulaItem
+    internal class InteropCOM : IAulaItem
     {
         public void Executar()
         {
@@ -30,7 +30,7 @@ namespace _02_05_XX_Adicionando_Membros_Dinamicamente.Depois
 /**
  * Eu consigo utilizar os componentes COM (coisas escritas em C++) e abrir aplicações. Porém, isso deve ser feito com o tipo dynamic,
  * pois está em outra linguagem. Posso usar o dynamic para acessar coisas em python ou Ruby.
- * 
+ *
  * Muitos aplicativos, como por exemplo o Microsoft Office Suite, fornecem recursos de automação que são acessado via interfaces COM.
 
 Isso também acontece com alguns dos elementos de baixo nível do sistema operacional Windows. É pouco provável que você tenha que interagir com objetos COM no seu dia-a-dia como programador, mas caso seja necessário, os tipos dinâmicos reduzem grande parte do esforço necessário para acessar os tipos de objetos expostos pelo COM.

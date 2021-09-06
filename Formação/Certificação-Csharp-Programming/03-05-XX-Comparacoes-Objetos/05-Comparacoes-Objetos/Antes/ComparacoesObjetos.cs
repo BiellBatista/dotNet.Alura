@@ -2,7 +2,7 @@
 
 namespace _03_05_XX_Comparacoes_Objetos.Antes
 {
-    class ComparacoesObjetos : IAulaItem
+    internal class ComparacoesObjetos : IAulaItem
     {
         public void Executar()
         {
@@ -26,7 +26,7 @@ namespace _03_05_XX_Comparacoes_Objetos.Antes
         }
     }
 
-    class Aluno
+    internal class Aluno
     {
         public string Nome { get; set; }
         public DateTime DataNascimento { get; set; }

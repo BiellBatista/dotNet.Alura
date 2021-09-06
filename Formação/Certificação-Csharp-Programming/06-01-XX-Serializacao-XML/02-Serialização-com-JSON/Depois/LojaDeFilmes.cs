@@ -8,6 +8,7 @@ namespace _06_01_XX_Serializacao_XML.Depois
     {
         [JsonProperty("Directors")]
         public List<Diretor> Diretores = new List<Diretor>();
+
         [JsonProperty("Movies")]
         public List<Filme> Filmes = new List<Filme>();
 
@@ -22,6 +23,7 @@ namespace _06_01_XX_Serializacao_XML.Depois
     {
         [JsonProperty("Name")]
         public string Nome { get; set; }
+
         [JsonIgnore]
         public int NumeroFilmes;
     }
@@ -31,8 +33,10 @@ namespace _06_01_XX_Serializacao_XML.Depois
     {
         [JsonProperty("Director")]
         public Diretor Diretor { get; set; }
+
         [JsonProperty("Title")]
         public string Titulo { get; set; }
+
         [JsonProperty("Year")]
         public string Ano { get; set; }
     }

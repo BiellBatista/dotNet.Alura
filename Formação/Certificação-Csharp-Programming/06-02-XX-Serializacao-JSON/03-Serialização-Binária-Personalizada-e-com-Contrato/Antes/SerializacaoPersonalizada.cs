@@ -1,6 +1,6 @@
 ﻿namespace _06_02_XX_Serializacao_JSON.Antes
 {
-    class SerializacaoPersonalizada : IAulaItem
+    internal class SerializacaoPersonalizada : IAulaItem
     {
         public void Executar()
         {

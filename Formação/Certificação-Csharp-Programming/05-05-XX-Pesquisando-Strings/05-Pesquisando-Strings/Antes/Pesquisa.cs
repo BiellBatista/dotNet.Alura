@@ -27,18 +27,25 @@ namespace _05_05_XX_Pesquisando_Strings.Antes
             {
                 case "Contem":
                     return Contem();
+
                 case "ComecaCom":
                     return ComecaCom();
+
                 case "TerminaCom":
                     return TerminaCom();
+
                 case "IndiceDe":
                     return IndiceDe();
+
                 case "UltimoIndiceDe":
                     return UltimoIndiceDe();
+
                 case "Trecho":
                     return Trecho();
+
                 case "Substituir":
                     return Substituir();
+
                 default:
                     return string.Empty;
             }

@@ -2,7 +2,7 @@
 
 namespace _01_04_XX_Classes_Metodos_Extensao.Depois
 {
-    class TiposInteiros : IAulaItem
+    internal class TiposInteiros : IAulaItem
     {
         public void Executar()
         {
@@ -11,7 +11,7 @@ namespace _01_04_XX_Classes_Metodos_Extensao.Depois
 
             char resposta = 'S'; // System.Char
 
-            byte niveldeAzul = 0xF; // = 255 em decimal 
+            byte niveldeAzul = 0xF; // = 255 em decimal
             //nivelDeAzul = -3 //byte não permite numeros negativos
 
             short passageirosVoo = 230; // System.Int16
@@ -23,7 +23,7 @@ namespace _01_04_XX_Classes_Metodos_Extensao.Depois
             long populacaoDoBrasil = 207_660_929; // +/- 207 milhões - System.Int64
 
             sbyte niveldeBrilho = -127; //System.SByte permite numeros negativos
-            ushort passageirosNavio = 230; // System.UInt16 
+            ushort passageirosNavio = 230; // System.UInt16
             uint estoque = 1500; // System.UInt32
             ulong populacaoDoMundo = 7_000_000_000; //7 bilhões = System.UInt64
 

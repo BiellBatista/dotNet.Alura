@@ -2,7 +2,7 @@
 
 namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
 {
-    class PontoFlutuante
+    internal class PontoFlutuante
     {
         public void Executar()
         {

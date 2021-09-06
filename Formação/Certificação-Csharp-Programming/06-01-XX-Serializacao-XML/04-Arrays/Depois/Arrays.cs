@@ -106,6 +106,7 @@ namespace _06_01_XX_Serializacao_XML.Depois
             Console.WriteLine();
         }
     }
+
     ///<image url="$(ProjectDir)\img1.png"/>
     ///<image url="$(ProjectDir)\img2.png"/>
 }

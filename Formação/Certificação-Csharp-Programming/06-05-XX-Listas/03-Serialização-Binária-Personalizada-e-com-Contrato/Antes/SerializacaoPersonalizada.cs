@@ -1,6 +1,6 @@
 ﻿namespace _06_05_XX_Listas.Antes
 {
-    class SerializacaoPersonalizada : IAulaItem
+    internal class SerializacaoPersonalizada : IAulaItem
     {
         public void Executar()
         {

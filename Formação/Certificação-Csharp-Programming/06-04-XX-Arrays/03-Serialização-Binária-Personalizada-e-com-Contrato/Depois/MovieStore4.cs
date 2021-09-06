@@ -19,6 +19,7 @@ namespace _06_04_XX_Arrays.Depois
     public class Director4
     {
         public string Name { get; set; }
+
         [XmlIgnore]
         public int NumberOfMovies;
     }

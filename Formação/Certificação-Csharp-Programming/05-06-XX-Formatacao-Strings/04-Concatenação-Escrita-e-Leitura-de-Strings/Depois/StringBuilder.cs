@@ -3,7 +3,7 @@ using System.Text;
 
 namespace _05_06_XX_Formatacao_Strings.Depois
 {
-    class StringBuilder1 : IAulaItem
+    internal class StringBuilder1 : IAulaItem
     {
         public void Executar()
         {

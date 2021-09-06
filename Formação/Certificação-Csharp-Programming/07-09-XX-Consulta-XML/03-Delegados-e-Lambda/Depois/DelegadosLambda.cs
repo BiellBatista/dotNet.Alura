@@ -4,7 +4,7 @@ namespace _07_09_XX_Consulta_XML.Depois
 {
     public class DelegadosLambda : IAulaItem
     {
-        delegate int Operacao(int a, int b);
+        private delegate int Operacao(int a, int b);
 
         public void Executar()
         {

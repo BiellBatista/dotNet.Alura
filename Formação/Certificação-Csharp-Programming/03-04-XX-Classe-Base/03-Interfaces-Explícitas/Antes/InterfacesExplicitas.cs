@@ -2,7 +2,7 @@
 
 namespace _03_04_XX_Classe_Base.Antes
 {
-    class InterfacesExplicitas : IAulaItem
+    internal class InterfacesExplicitas : IAulaItem
     {
         public void Executar()
         {
@@ -23,7 +23,7 @@ namespace _03_04_XX_Classe_Base.Antes
         }
     }
 
-    interface IFuncionario
+    internal interface IFuncionario
     {
         string CPF { get; set; }
         string Nome { get; set; }
@@ -39,7 +39,7 @@ namespace _03_04_XX_Classe_Base.Antes
         void EfeturarPagamento();
     }
 
-    class Funcionario : IFuncionario
+    internal class Funcionario : IFuncionario
     {
         public string CPF { get; set; }
         public string Nome { get; set; }

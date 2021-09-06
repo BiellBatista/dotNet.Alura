@@ -1,13 +1,14 @@
-﻿using System;
+﻿using _02_05_XX_Adicionando_Membros_Dinamicamente.Depois;
+using System;
 using System.Collections.Generic;
-using _02_05_XX_Adicionando_Membros_Dinamicamente.Depois;
 
 namespace _02_05_XX_Adicionando_Membros_Dinamicamente
 {
-    class Program
+    internal class Program
     {
-        static IList<MenuItem> menuItems;
-        static void Main(string[] args)
+        private static IList<MenuItem> menuItems;
+
+        private static void Main(string[] args)
         {
             IAulaItem itemSelecionado;
             menuItems = GetMenuItems();
@@ -84,7 +85,7 @@ namespace _02_05_XX_Adicionando_Membros_Dinamicamente
         }
     }
 
-    class MenuItem
+    internal class MenuItem
     {
         public MenuItem(string titulo, Type tipoClasse)
         {

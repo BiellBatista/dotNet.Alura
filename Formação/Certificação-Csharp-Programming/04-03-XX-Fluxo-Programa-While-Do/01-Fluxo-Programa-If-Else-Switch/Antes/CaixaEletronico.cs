@@ -3,9 +3,10 @@ using System.Linq;
 
 namespace _04_03_XX_Fluxo_Programa_While_Do.Antes
 {
-    class CaixaEletronico
+    internal class CaixaEletronico
     {
         private Conta conta;
+
         public CaixaEletronico()
         {
             ExibirLogo();
@@ -65,7 +66,7 @@ namespace _04_03_XX_Fluxo_Programa_While_Do.Antes
         }
     }
 
-    class Conta
+    internal class Conta
     {
         private decimal saldo = 0m;
 

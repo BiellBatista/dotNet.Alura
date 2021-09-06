@@ -3,7 +3,7 @@ using System.IO;
 
 namespace _05_06_XX_Formatacao_Strings.Depois
 {
-    class StringReader1 : IAulaItem
+    internal class StringReader1 : IAulaItem
     {
         public void Executar()
         {

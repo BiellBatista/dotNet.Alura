@@ -2,7 +2,7 @@
 
 namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
 {
-    class Objetos : IAulaItem
+    internal class Objetos : IAulaItem
     {
         public void Executar()
         {
@@ -26,7 +26,7 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
         }
     }
 
-    class Jogador
+    internal class Jogador
     {
         public int Pontuacao { get; set; } = 10;
     }

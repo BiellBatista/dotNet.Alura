@@ -2,7 +2,7 @@
 
 namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
 {
-    class MetodosSubstituidos : IAulaItem
+    internal class MetodosSubstituidos : IAulaItem
     {
         public void Executar()
         {
@@ -18,7 +18,7 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
         }
     }
 
-    class Animal
+    internal class Animal
     {
         public String Nome { get; set; }
 
@@ -38,7 +38,7 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
         }
     }
 
-    class Gato : Animal
+    internal class Gato : Animal
     {
         public new void Beber()
         {

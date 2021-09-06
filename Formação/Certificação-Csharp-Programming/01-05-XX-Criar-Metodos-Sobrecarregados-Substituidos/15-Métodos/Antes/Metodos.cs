@@ -2,7 +2,7 @@
 
 namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Antes
 {
-    class Metodos : IAulaItem
+    internal class Metodos : IAulaItem
     {
         public void Executar()
         {
@@ -10,7 +10,7 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Antes
         }
     }
 
-    class Retangulo
+    internal class Retangulo
     {
         public double Altura { get; set; }
         public double Largura { get; set; }
@@ -28,7 +28,7 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Antes
             return Altura * Largura;
         }
 
-        bool Semelhante(double outroRetanguloAltura, double outroRetanguloLargura)
+        private bool Semelhante(double outroRetanguloAltura, double outroRetanguloLargura)
         {
             return
                 ((Largura / Altura) == /*proporção deste retângulo*/

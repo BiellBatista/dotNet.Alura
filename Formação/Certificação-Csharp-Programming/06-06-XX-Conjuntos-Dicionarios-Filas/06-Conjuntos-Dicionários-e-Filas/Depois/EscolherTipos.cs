@@ -74,7 +74,7 @@ namespace _06_06_XX_Conjuntos_Dicionarios_Filas.Depois
             return lista.GetEnumerator();
         }
 
-        static bool EhPlacaValida(string value)
+        private static bool EhPlacaValida(string value)
         {
             Regex regex = new Regex(@"^[A-Z]{3}\-\d{4}$");
 

@@ -2,7 +2,7 @@
 
 namespace _05_01_XX_Strings_Ciclo_Vida_Objetos.Depois
 {
-    class Finalizador2 : IAulaItem
+    internal class Finalizador2 : IAulaItem
     {
         public void Executar()
         {
@@ -17,9 +17,9 @@ namespace _05_01_XX_Strings_Ciclo_Vida_Objetos.Depois
         }
     }
 
-    class Livro2
+    internal class Livro2
     {
-        static int UltimoId = 0;
+        private static int UltimoId = 0;
         public string Introducao { get; set; }
         public string Texto { get; set; }
         public string Conclusao { get; set; }

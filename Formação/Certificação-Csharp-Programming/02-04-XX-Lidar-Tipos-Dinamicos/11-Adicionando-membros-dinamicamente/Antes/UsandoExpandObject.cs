@@ -2,7 +2,7 @@
 
 namespace _02_04_XX_Lidar_Tipos_Dinamicos.Antes
 {
-    class UsandoExpandObject : IAulaItem
+    internal class UsandoExpandObject : IAulaItem
     {
         public void Executar()
         {

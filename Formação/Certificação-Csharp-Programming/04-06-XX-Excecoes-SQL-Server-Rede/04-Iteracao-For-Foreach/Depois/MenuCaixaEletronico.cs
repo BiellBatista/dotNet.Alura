@@ -4,9 +4,10 @@ using System.Text.RegularExpressions;
 
 namespace _04_06_XX_Excecoes_SQL_Server_Rede.Depois
 {
-    class MenuCaixaEletronico4
+    internal class MenuCaixaEletronico4
     {
-        delegate void ItemMenu();
+        private delegate void ItemMenu();
+
         public void Executar()
         {
             var itensMenu = new ItemMenu[]
@@ -25,7 +26,6 @@ namespace _04_06_XX_Excecoes_SQL_Server_Rede.Depois
             {
                 opcao = GerarMenu(itensMenu);
             } while (opcao != 0);
-
         }
 
         private static int GerarMenu(ItemMenu[] itensMenu)

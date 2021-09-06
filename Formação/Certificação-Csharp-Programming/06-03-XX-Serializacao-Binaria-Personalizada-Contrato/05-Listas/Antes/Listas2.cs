@@ -9,6 +9,7 @@ namespace _06_03_XX_Serializacao_Binaria_Personalizada_Contrato.Antes
         {
             throw new NotImplementedException();
         }
+
         private LojaDeFilmes7 GetLoja()
         {
             return new LojaDeFilmes7

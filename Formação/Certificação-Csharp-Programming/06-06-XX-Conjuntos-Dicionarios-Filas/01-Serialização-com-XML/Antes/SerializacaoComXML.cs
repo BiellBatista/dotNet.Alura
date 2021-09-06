@@ -7,7 +7,7 @@ namespace _06_06_XX_Conjuntos_Dicionarios_Filas.Antes
     {
         public void Executar()
         {
-            //TAREFA: transferir os dados de um objeto de uma classe 
+            //TAREFA: transferir os dados de um objeto de uma classe
             //  para outra classe, usando um arquivo XML intermediário
             //
             //1) Obter os dados de uma loja de filmes (classe LojaDeFilmes)
@@ -27,11 +27,9 @@ namespace _06_06_XX_Conjuntos_Dicionarios_Filas.Antes
 
             //INÍCIO DO CÓDIGO DO PRIMEIRO SISTEMA
 
-
             //AQUI VEM O CÓDIGO DO SEGUNDO SISTEMA
 
             Console.ReadKey();
-
         }
 
         private static LojaDeFilmes ObterDados()

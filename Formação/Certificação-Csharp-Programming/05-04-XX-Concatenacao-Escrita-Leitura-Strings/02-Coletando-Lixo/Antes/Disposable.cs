@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace _05_04_XX_Concatenacao_Escrita_Leitura_Strings.Antes
 {
-    class Disposable : IAulaItem
+    internal class Disposable : IAulaItem
     {
-	/// <summary>
+        /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]

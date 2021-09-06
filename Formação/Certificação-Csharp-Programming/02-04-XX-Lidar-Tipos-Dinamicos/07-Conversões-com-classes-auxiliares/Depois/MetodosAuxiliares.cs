@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace _02_04_XX_Lidar_Tipos_Dinamicos.Depois
 {
-    class MetodosAuxiliares : IAulaItem
+    internal class MetodosAuxiliares : IAulaItem
     {
         public void Executar()
         {

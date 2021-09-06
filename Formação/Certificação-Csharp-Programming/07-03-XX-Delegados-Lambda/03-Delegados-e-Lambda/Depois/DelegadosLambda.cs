@@ -4,7 +4,7 @@ namespace _07_03_XX_Delegados_Lambda.Depois
 {
     public class DelegadosLambda : IAulaItem
     {
-        delegate int Operacao(int a, int b);
+        private delegate int Operacao(int a, int b);
 
         public void Executar()
         {

@@ -2,7 +2,7 @@
 
 namespace _01_04_XX_Classes_Metodos_Extensao.Depois
 {
-    class Metodos : IAulaItem
+    internal class Metodos : IAulaItem
     {
         public void Executar()
         {
@@ -19,7 +19,7 @@ namespace _01_04_XX_Classes_Metodos_Extensao.Depois
         }
     }
 
-    class Retangulo
+    internal class Retangulo
     {
         public double Altura { get; set; }
         public double Largura { get; set; }

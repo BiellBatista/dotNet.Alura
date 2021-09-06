@@ -2,7 +2,7 @@
 
 namespace _03_05_XX_Comparacoes_Objetos.Depois
 {
-    class ProjetarInterfaces : IAulaItem
+    internal class ProjetarInterfaces : IAulaItem
     {
         public void Executar()
         {
@@ -13,28 +13,31 @@ namespace _03_05_XX_Comparacoes_Objetos.Depois
         }
     }
 
-    interface IEletrodomestico
+    internal interface IEletrodomestico
     {
         event EventHandler Ligou;
+
         event EventHandler Desligou;
 
         void Desligar();
+
         void Ligar();
     }
 
-    interface IIluminacao
+    internal interface IIluminacao
     {
         double PotenciaDaLampada { get; set; }
     }
 
-    interface IRadioReceptor
+    internal interface IRadioReceptor
     {
         double Frequencia { get; set; }
     }
 
-    class Televisao : IEletrodomestico, IRadioReceptor
+    internal class Televisao : IEletrodomestico, IRadioReceptor
     {
         public event EventHandler Ligou;
+
         public event EventHandler Desligou;
 
         public double Frequencia { get; set; }
@@ -52,11 +55,12 @@ namespace _03_05_XX_Comparacoes_Objetos.Depois
         }
     }
 
-    class Abajur : IEletrodomestico, IIluminacao
+    internal class Abajur : IEletrodomestico, IIluminacao
     {
         public double PotenciaDaLampada { get; set; }
 
         public event EventHandler Ligou;
+
         public event EventHandler Desligou;
 
         public void Desligar()
@@ -68,11 +72,12 @@ namespace _03_05_XX_Comparacoes_Objetos.Depois
         }
     }
 
-    class Lanterna : IEletrodomestico, IIluminacao
+    internal class Lanterna : IEletrodomestico, IIluminacao
     {
         public double PotenciaDaLampada { get; set; }
 
         public event EventHandler Ligou;
+
         public event EventHandler Desligou;
 
         public void Desligar()
@@ -84,9 +89,10 @@ namespace _03_05_XX_Comparacoes_Objetos.Depois
         }
     }
 
-    class Radio : IEletrodomestico, IRadioReceptor
+    internal class Radio : IEletrodomestico, IRadioReceptor
     {
         public event EventHandler Ligou;
+
         public event EventHandler Desligou;
 
         public double Frequencia { get; set; }

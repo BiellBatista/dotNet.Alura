@@ -19,6 +19,7 @@ namespace _06_01_XX_Serializacao_XML.Antes
     public class Director
     {
         public string Name { get; set; }
+
         [XmlIgnore]
         public int NumberOfMovies;
     }

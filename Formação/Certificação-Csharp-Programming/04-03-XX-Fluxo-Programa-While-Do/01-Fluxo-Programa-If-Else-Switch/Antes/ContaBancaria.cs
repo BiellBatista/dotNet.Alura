@@ -2,7 +2,7 @@
 
 namespace _04_03_XX_Fluxo_Programa_While_Do.Antes
 {
-    class ContaBancaria
+    internal class ContaBancaria
     {
         private decimal saldo = 0m;
 

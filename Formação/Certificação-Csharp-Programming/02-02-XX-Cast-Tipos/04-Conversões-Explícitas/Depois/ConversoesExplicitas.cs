@@ -2,7 +2,7 @@
 
 namespace _02_02_XX_Cast_Tipos.Depois
 {
-    class ConversoesExplicitas : IAulaItem
+    internal class ConversoesExplicitas : IAulaItem
     {
         public void Executar()
         {

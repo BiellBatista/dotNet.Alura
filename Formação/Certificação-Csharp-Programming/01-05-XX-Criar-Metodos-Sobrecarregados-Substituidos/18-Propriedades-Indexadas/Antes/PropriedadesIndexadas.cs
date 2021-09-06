@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Antes
 {
-    class PropriedadesIndexadas : IAulaItem
+    internal class PropriedadesIndexadas : IAulaItem
     {
         public void Executar()
         {
@@ -15,7 +15,7 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Antes
         }
     }
 
-    class ClienteCinema
+    internal class ClienteCinema
     {
         public ClienteCinema(string nome)
         {
@@ -30,7 +30,7 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Antes
         }
     }
 
-    class Sala
+    internal class Sala
     {
         private readonly IDictionary<string, ClienteCinema> reservas
             = new Dictionary<string, ClienteCinema>();

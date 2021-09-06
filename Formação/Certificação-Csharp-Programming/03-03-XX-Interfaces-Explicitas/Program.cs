@@ -1,13 +1,14 @@
-﻿using System;
+﻿using _03_03_XX_Interfaces_Explicitas.Depois;
+using System;
 using System.Collections.Generic;
-using _03_03_XX_Interfaces_Explicitas.Depois;
 
 namespace _03_03_XX_Interfaces_Explicitas
 {
-    class Program
+    internal class Program
     {
-        static IList<MenuItem> menuItems;
-        static void Main(string[] args)
+        private static IList<MenuItem> menuItems;
+
+        private static void Main(string[] args)
         {
             IAulaItem itemSelecionado;
             menuItems = GetMenuItems();
@@ -75,7 +76,7 @@ namespace _03_03_XX_Interfaces_Explicitas
         }
     }
 
-    class MenuItem
+    internal class MenuItem
     {
         public MenuItem(string titulo, Type tipoClasse)
         {

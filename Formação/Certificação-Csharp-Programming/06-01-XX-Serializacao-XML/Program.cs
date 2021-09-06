@@ -4,11 +4,11 @@ using System.Collections.Generic;
 
 namespace _06_01_XX_Serializacao_XML
 {
-    class Program
+    internal class Program
     {
-        static IList<MenuItem> menuItems;
+        private static IList<MenuItem> menuItems;
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             IAulaItem itemSelecionado;
 
@@ -90,7 +90,7 @@ namespace _06_01_XX_Serializacao_XML
         }
     }
 
-    class MenuItem
+    internal class MenuItem
     {
         public MenuItem(string titulo, Type tipoClasse)
         {

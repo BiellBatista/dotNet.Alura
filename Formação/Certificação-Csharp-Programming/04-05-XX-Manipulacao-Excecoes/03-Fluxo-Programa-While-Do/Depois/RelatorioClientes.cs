@@ -3,7 +3,7 @@ using System.IO;
 
 namespace _04_05_XX_Manipulacao_Excecoes.Depois
 {
-    class RelatorioClientes
+    internal class RelatorioClientes
     {
         public static void ImprimirListagemClientes()
         {

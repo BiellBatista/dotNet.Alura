@@ -2,7 +2,7 @@
 
 namespace _01_03_XX_Criar_Tipos_Referencia.Antes
 {
-    class Estruturas : IAulaItem
+    internal class Estruturas : IAulaItem
     {
         public void Executar()
         {

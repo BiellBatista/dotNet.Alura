@@ -1,6 +1,6 @@
 ﻿namespace _05_02_XX_Coletando_Lixo
 {
-    interface IAulaItem
+    internal interface IAulaItem
     {
         void Executar();
     }

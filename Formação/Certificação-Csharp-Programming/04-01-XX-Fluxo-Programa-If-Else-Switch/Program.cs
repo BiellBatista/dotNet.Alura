@@ -1,13 +1,14 @@
-﻿using System;
+﻿using _04_01_XX_Fluxo_Programa_If_Else_Switch.Depois;
+using System;
 using System.Collections.Generic;
-using _04_01_XX_Fluxo_Programa_If_Else_Switch.Depois;
 
 namespace _04_01_XX_Fluxo_Programa_If_Else_Switch
 {
-    class Program
+    internal class Program
     {
-        static IList<MenuItem> menuItems;
-        static void Main(string[] args)
+        private static IList<MenuItem> menuItems;
+
+        private static void Main(string[] args)
         {
             IAulaItem itemSelecionado;
             menuItems = GetMenuItems();
@@ -77,7 +78,7 @@ namespace _04_01_XX_Fluxo_Programa_If_Else_Switch
         }
     }
 
-    class MenuItem
+    internal class MenuItem
     {
         public MenuItem(string titulo, Type tipoClasse)
         {

@@ -4,9 +4,9 @@ using System.Text.RegularExpressions;
 
 namespace _04_01_XX_Fluxo_Programa_If_Else_Switch.Depois
 {
-    class MenuCaixaEletronico
+    internal class MenuCaixaEletronico
     {
-        delegate void ItemMenu();
+        private delegate void ItemMenu();
 
         public void Executar()
         {
@@ -26,7 +26,6 @@ namespace _04_01_XX_Fluxo_Programa_If_Else_Switch.Depois
             {
                 opcao = GerarMenu(itensMenu);
             } while (opcao != 0);
-
         }
 
         private static int GerarMenu(ItemMenu[] itensMenu)

@@ -33,7 +33,7 @@ namespace _06_05_XX_Listas.Depois
 
     public class Pedagio
     {
-        Queue<string> fila = new Queue<string>();
+        private Queue<string> fila = new Queue<string>();
 
         public void Enfileirar(string veiculo)
         {

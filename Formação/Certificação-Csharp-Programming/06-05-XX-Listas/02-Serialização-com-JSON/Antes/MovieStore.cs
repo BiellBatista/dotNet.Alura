@@ -19,6 +19,7 @@ namespace _06_05_XX_Listas.Antes
     public class Director2
     {
         public string Name { get; set; }
+
         [XmlIgnore]
         public int NumberOfMovies;
     }

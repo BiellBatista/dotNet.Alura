@@ -1,6 +1,6 @@
 ﻿namespace _01_03_XX_Criar_Tipos_Referencia.Antes
 {
-    class Strings : IAulaItem
+    internal class Strings : IAulaItem
     {
         public void Executar()
         {

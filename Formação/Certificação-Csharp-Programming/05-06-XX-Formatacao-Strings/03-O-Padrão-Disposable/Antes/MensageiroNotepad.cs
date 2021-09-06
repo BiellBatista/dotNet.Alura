@@ -6,10 +6,11 @@ namespace _05_06_XX_Formatacao_Strings.Antes
 {
     public class MensageiroNotepad2
     {
-        IntPtr ponteiroNotepad;
+        private IntPtr ponteiroNotepad;
 
         [DllImport("user32.dll", EntryPoint = "FindWindowEx")]
         public static extern IntPtr FindWindowEx(IntPtr hwndParent, IntPtr hwndChildAfter, string lpszClass, string lpszWindow);
+
         [DllImport("User32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int uMsg, int wParam, string lParam);
 
@@ -36,18 +37,18 @@ namespace _05_06_XX_Formatacao_Strings.Antes
             ponteiroNotepad = IntPtr.Zero;
         }
 
-        const uint PROCESS_DUP_HANDLE = 0x0040;
+        private const uint PROCESS_DUP_HANDLE = 0x0040;
 
         [DllImport("kernel32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
-        static extern bool CloseHandle(IntPtr hObject);
+        private static extern bool CloseHandle(IntPtr hObject);
 
         [DllImport("kernel32.dll")]
-        static extern IntPtr OpenProcess(ProcessAccessFlags dwDesiredAccess,
+        private static extern IntPtr OpenProcess(ProcessAccessFlags dwDesiredAccess,
             [MarshalAs(UnmanagedType.Bool)] bool bInheritHandle, IntPtr dwProcessId);
 
         [Flags]
-        enum ProcessAccessFlags : uint
+        private enum ProcessAccessFlags : uint
         {
             All = 0x001F0FFF,
             Terminate = 0x00000001,
@@ -63,12 +64,12 @@ namespace _05_06_XX_Formatacao_Strings.Antes
 
         [DllImport("kernel32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
-        static extern bool DuplicateHandle(IntPtr hSourceProcessHandle,
+        private static extern bool DuplicateHandle(IntPtr hSourceProcessHandle,
            IntPtr hSourceHandle, IntPtr hTargetProcessHandle, out IntPtr lpTargetHandle,
            uint dwDesiredAccess, [MarshalAs(UnmanagedType.Bool)] bool bInheritHandle, DuplicateOptions dwOptions);
 
         [Flags]
-        enum DuplicateOptions : uint
+        private enum DuplicateOptions : uint
         {
             DUPLICATE_CLOSE_SOURCE = (0x00000001),
             DUPLICATE_SAME_ACCESS = (0x00000002),

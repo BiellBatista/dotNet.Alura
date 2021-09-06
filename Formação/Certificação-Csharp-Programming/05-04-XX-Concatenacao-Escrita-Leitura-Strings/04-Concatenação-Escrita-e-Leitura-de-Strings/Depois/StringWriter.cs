@@ -3,7 +3,7 @@ using System.IO;
 
 namespace _05_04_XX_Concatenacao_Escrita_Leitura_Strings.Depois
 {
-    class StringWriter1 : IAulaItem
+    internal class StringWriter1 : IAulaItem
     {
         public void Executar()
         {
@@ -47,4 +47,3 @@ namespace _05_04_XX_Concatenacao_Escrita_Leitura_Strings.Depois
         }
     }
 }
-

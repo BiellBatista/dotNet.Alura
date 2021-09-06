@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net5.0</TargetFramework>
+		<RootNamespace>_08_06_XX_Lendo_Atualizando_Banco_Dados</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Antes\Diretores.txt" />
+		<None Remove="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\Diretores.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Antes\Diretores.txt" />
+		<Content Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\Diretores.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+	</ItemGroup>
+</Project>

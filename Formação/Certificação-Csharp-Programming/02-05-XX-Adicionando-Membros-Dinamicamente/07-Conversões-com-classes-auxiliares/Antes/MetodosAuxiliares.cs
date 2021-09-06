@@ -1,6 +1,6 @@
 ﻿namespace _02_05_XX_Adicionando_Membros_Dinamicamente.Antes
 {
-    class MetodosAuxiliares : IAulaItem
+    internal class MetodosAuxiliares : IAulaItem
     {
         public void Executar()
         {

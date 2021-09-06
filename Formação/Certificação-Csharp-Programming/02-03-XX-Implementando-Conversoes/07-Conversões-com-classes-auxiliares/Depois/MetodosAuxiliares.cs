@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace _02_03_XX_Implementando_Conversoes.Depois
 {
-    class MetodosAuxiliares : IAulaItem
+    internal class MetodosAuxiliares : IAulaItem
     {
         public void Executar()
         {

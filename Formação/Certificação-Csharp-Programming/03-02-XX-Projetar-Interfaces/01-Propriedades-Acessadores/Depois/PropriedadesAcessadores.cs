@@ -2,7 +2,7 @@
 
 namespace _03_02_XX_Projetar_Interfaces.Depois
 {
-    class PropriedadesAcessadores : IAulaItem
+    internal class PropriedadesAcessadores : IAulaItem
     {
         public void Executar()
         {
@@ -11,7 +11,7 @@ namespace _03_02_XX_Projetar_Interfaces.Depois
         }
     }
 
-    class Funcionario
+    internal class Funcionario
     {
         //aula 4
         //decimal salario;
@@ -37,7 +37,7 @@ namespace _03_02_XX_Projetar_Interfaces.Depois
         //propriedade autoimplementada
         //public decimal Salario { get; set; }
 
-        decimal salario;
+        private decimal salario;
 
         public decimal Salario //encapsulamento do campo salario
         {

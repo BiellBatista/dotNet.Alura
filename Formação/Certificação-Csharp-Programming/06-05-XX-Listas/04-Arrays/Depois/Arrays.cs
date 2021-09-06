@@ -106,6 +106,7 @@ namespace _06_05_XX_Listas.Depois
             Console.WriteLine();
         }
     }
+
     ///<image url="$(ProjectDir)\img1.png"/>
     ///<image url="$(ProjectDir)\img2.png"/>
 }

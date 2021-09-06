@@ -2,7 +2,7 @@
 
 namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
 {
-    class Metodos : IAulaItem
+    internal class Metodos : IAulaItem
     {
         public void Executar()
         {
@@ -19,7 +19,7 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
         }
     }
 
-    class Retangulo
+    internal class Retangulo
     {
         public double Altura { get; set; }
         public double Largura { get; set; }

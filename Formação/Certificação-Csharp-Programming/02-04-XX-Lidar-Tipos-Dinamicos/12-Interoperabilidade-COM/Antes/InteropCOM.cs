@@ -2,7 +2,7 @@
 
 namespace _02_04_XX_Lidar_Tipos_Dinamicos.Antes
 {
-    class InteropCOM : IAulaItem
+    internal class InteropCOM : IAulaItem
     {
         public void Executar()
         {

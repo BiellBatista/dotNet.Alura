@@ -19,6 +19,7 @@ namespace _06_06_XX_Conjuntos_Dicionarios_Filas.Antes
     public class Director2
     {
         public string Name { get; set; }
+
         [XmlIgnore]
         public int NumberOfMovies;
     }

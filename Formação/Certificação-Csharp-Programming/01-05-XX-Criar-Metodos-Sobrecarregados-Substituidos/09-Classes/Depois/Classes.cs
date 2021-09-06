@@ -2,7 +2,7 @@
 
 namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
 {
-    class Classes : IAulaItem
+    internal class Classes : IAulaItem
     {
         public void Executar()
         {
@@ -21,7 +21,6 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
 
         public ClassePosicaoGPS()
         {
-
         }
 
         public ClassePosicaoGPS(double latitude, double longitude)
@@ -33,7 +32,6 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
         public bool EstaNoHemisferioNorte()
         {
             return Latitude > 0;
-
         }
 
         public override string ToString()

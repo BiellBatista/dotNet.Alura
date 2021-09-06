@@ -5,7 +5,7 @@ namespace _05_04_XX_Concatenacao_Escrita_Leitura_Strings.Depois
 {
     public class Disposable2 : IAulaItem
     {
-	/// <summary>
+        /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]

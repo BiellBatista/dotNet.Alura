@@ -1,6 +1,6 @@
 ﻿namespace _01_04_XX_Classes_Metodos_Extensao.Antes
 {
-    class Strings : IAulaItem
+    internal class Strings : IAulaItem
     {
         public void Executar()
         {

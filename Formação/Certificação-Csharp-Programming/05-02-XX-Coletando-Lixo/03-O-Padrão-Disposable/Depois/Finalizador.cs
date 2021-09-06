@@ -2,7 +2,7 @@
 
 namespace _05_02_XX_Coletando_Lixo.Depois
 {
-    class Finalizador2 : IAulaItem
+    internal class Finalizador2 : IAulaItem
     {
         public void Executar()
         {
@@ -17,9 +17,9 @@ namespace _05_02_XX_Coletando_Lixo.Depois
         }
     }
 
-    class Livro2
+    internal class Livro2
     {
-        static int UltimoId = 0;
+        private static int UltimoId = 0;
         public string Introducao { get; set; }
         public string Texto { get; set; }
         public string Conclusao { get; set; }
@@ -31,6 +31,7 @@ namespace _05_02_XX_Coletando_Lixo.Depois
             Id = UltimoId;
             //Trace.WriteLine("Livro " + Id + " está sendo criado");
         }
+
         //finalizador da classe. Devo colocar o tio (~) para indicar que isso é um finalizador
         //nunca devo criar um finalizador vázio ou um que eu não tenha recursos não gerenciados pelo .net
         //só devo declarar um finalizador, quando eu tiver um recurso não gerenciado pelo .net

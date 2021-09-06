@@ -2,7 +2,7 @@
 
 namespace _05_04_XX_Concatenacao_Escrita_Leitura_Strings.Antes
 {
-    class TiposDeValor : IAulaItem
+    internal class TiposDeValor : IAulaItem
     {
         public void Executar()
         {
@@ -10,14 +10,14 @@ namespace _05_04_XX_Concatenacao_Escrita_Leitura_Strings.Antes
             Console.ReadKey();
         }
 
-        void Metodo1()
+        private void Metodo1()
         {
             Metodo2(12);
             ///< image url="$(ProjectDir)\img1.png"/>
             Console.WriteLine("Saindo do método 1...");
         }
 
-        void Metodo2(int dados)
+        private void Metodo2(int dados)
         {
             int multiplicador = 2;
             Console.WriteLine("O valor é: " + dados.ToString());
@@ -27,7 +27,7 @@ namespace _05_04_XX_Concatenacao_Escrita_Leitura_Strings.Antes
             ///< image url="$(ProjectDir)\img4.png"/>
         }
 
-        void Metodo3(int dados)
+        private void Metodo3(int dados)
         {
             Console.WriteLine("O dobro é: " + dados.ToString());
             ///< image url="$(ProjectDir)\img3.png"/>

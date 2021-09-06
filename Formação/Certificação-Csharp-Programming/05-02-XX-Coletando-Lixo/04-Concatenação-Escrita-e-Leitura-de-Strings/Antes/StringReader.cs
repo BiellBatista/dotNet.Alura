@@ -2,7 +2,7 @@
 
 namespace _05_02_XX_Coletando_Lixo.Antes
 {
-    class StringReader1 : IAulaItem
+    internal class StringReader1 : IAulaItem
     {
         public void Executar()
         {

@@ -2,17 +2,17 @@
 
 namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Antes
 {
-    class ParametrosOpcionais : IAulaItem
+    internal class ParametrosOpcionais : IAulaItem
     {
         public void Executar()
         {
-
         }
     }
 
-    class ClienteEspecial
+    internal class ClienteEspecial
     {
         private readonly string nome;
+
         public ClienteEspecial(string nome)
         {
             this.nome = nome;

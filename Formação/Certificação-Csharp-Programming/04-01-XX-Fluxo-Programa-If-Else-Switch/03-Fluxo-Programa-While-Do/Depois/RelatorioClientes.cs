@@ -3,7 +3,7 @@ using System.IO;
 
 namespace _04_01_XX_Fluxo_Programa_If_Else_Switch.Depois
 {
-    class RelatorioClientes
+    internal class RelatorioClientes
     {
         public static void ImprimirListagemClientes()
         {

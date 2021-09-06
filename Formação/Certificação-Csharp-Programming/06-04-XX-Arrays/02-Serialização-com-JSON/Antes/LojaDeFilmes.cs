@@ -6,6 +6,7 @@ namespace _06_04_XX_Arrays.Antes
     {
         public List<Diretor> Diretores = new List<Diretor>();
         public List<Filme> Filmes = new List<Filme>();
+
         public static void AdicionarFilme(Filme filme)
         {
             // Aqui vai a lógica de inserção de filme...

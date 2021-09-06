@@ -1,6 +1,6 @@
 ﻿namespace _03_03_XX_Interfaces_Explicitas.Antes
 {
-    class PropriedadesAcessadores : IAulaItem
+    internal class PropriedadesAcessadores : IAulaItem
     {
         public void Executar()
         {

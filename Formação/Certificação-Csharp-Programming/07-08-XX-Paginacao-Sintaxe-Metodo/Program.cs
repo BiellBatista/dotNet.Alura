@@ -1,14 +1,14 @@
-﻿using System;
+﻿using _07_08_XX_Paginacao_Sintaxe_Metodo.Depois;
+using System;
 using System.Collections.Generic;
-using _07_08_XX_Paginacao_Sintaxe_Metodo.Depois;
 
 namespace _07_08_XX_Paginacao_Sintaxe_Metodo
 {
-    class Program
+    internal class Program
     {
-        static IList<MenuItem> menuItems;
+        private static IList<MenuItem> menuItems;
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             IAulaItem itemSelecionado;
 
@@ -88,7 +88,7 @@ namespace _07_08_XX_Paginacao_Sintaxe_Metodo
         }
     }
 
-    class MenuItem
+    internal class MenuItem
     {
         public MenuItem(string titulo, Type tipoClasse)
         {

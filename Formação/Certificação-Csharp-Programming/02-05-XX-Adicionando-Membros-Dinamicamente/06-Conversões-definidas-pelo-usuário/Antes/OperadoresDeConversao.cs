@@ -2,7 +2,7 @@
 
 namespace _02_05_XX_Adicionando_Membros_Dinamicamente.Antes
 {
-    class OperadoresDeConversao : IAulaItem
+    internal class OperadoresDeConversao : IAulaItem
     {
         public void Executar()
         {
@@ -57,7 +57,10 @@ namespace _02_05_XX_Adicionando_Membros_Dinamicamente.Antes
     {
         public double Graus { get; }
 
-        public AnguloEmGraus(double graus) { this.Graus = graus; }
+        public AnguloEmGraus(double graus)
+        {
+            this.Graus = graus;
+        }
 
         public static AnguloEmGraus Converte(AnguloEmRadianos radianos)
         {

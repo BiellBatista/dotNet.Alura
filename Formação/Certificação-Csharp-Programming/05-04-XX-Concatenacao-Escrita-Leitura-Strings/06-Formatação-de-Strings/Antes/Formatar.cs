@@ -21,14 +21,12 @@ namespace _05_04_XX_Concatenacao_Escrita_Leitura_Strings.Antes
                 string.Format(
                 @"                                             CONTRATO INDIVIDUAL DE TRABALHO TEMPORÁRIO
 
-
             EMPREGADOR: " + contrato.Empresa + @"
 
             EMPREGADO: " + contrato.Funcionario + @"
 
-
 Pelo presente instrumento particular de contrato individual de trabalho, fica justo e contratado o seguinte:
- 
+
 Cláusula 1ª - O EMPREGADO prestará ao EMPREGADOR, a partir de " + contrato.Inicio + @" e assinatura deste instrumento, seus trabalhos exercendo a função de " + contrato.Cargo + @", prestando pessoalmente o labor diário no período compreendido entre " + contrato.InicioJornada + @" e " + contrato.FimJornada + @", e intervalo de 1 hora para almoço;
 
             Cláusula 2ª - Não haverá expediente nos dias de sábado, sendo prestado a compensação de horário semanal;
@@ -41,25 +39,18 @@ Cláusula 1ª - O EMPREGADO prestará ao EMPREGADOR, a partir de " + contrato.In
 
             Cláusula 6ª - O EMPREGADO obedecerá o regulamento interno da empresa, e filosofia de trabalho da mesma.
 
-
 Como prova do acordado, assinam instrumento, afirmado e respeitando seu teor por inteiro, e firmam conjuntamente a este duas testemunhas, comprovando as razões descritas.
 
-
 São Paulo, " + DateTime.Today + @"
-
-
 
 _______________________________________________________
 " + contrato.Empresa + @"
 
-
 _______________________________________________________
 " + contrato.Funcionario + @"
 
-
 _______________________________________________________
 (Nome, R.G, Testemunha)
-
 
 _______________________________________________________
 (Nome, R.G, Testemunha)

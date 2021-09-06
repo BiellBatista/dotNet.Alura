@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace _02_04_XX_Lidar_Tipos_Dinamicos.Depois
 {
-    class ConversoesDeDynamic : IAulaItem
+    internal class ConversoesDeDynamic : IAulaItem
     {
         public void Executar()
         {

@@ -7,6 +7,7 @@ namespace _06_04_XX_Arrays.Depois
     {
         public List<Director> Directors = new List<Director>();
         public List<Movie> Movies = new List<Movie>();
+
         public static MovieStore AddMovie(Movie movie)
         {
             MovieStore store = new MovieStore();
@@ -18,6 +19,7 @@ namespace _06_04_XX_Arrays.Depois
     public class Director2
     {
         public string Name { get; set; }
+
         [XmlIgnore]
         public int NumberOfMovies;
     }

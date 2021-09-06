@@ -3,7 +3,7 @@ using System.IO;
 
 namespace _05_03_XX_O_Padrao_Disposable.Antes
 {
-    class StringWriter1 : IAulaItem
+    internal class StringWriter1 : IAulaItem
     {
         public void Executar()
         {

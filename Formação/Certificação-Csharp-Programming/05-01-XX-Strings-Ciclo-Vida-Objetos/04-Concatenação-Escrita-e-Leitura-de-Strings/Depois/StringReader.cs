@@ -3,7 +3,7 @@ using System.IO;
 
 namespace _05_01_XX_Strings_Ciclo_Vida_Objetos.Depois
 {
-    class StringReader1 : IAulaItem
+    internal class StringReader1 : IAulaItem
     {
         public void Executar()
         {

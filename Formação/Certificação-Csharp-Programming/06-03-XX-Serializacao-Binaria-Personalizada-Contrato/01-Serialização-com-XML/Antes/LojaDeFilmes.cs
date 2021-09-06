@@ -8,6 +8,7 @@ namespace _06_03_XX_Serializacao_Binaria_Personalizada_Contrato.Antes
     {
         [XmlArray("Directors")]
         public List<Diretor> Diretores = new List<Diretor>();
+
         [XmlArray("Movies")]
         public List<Filme> Filmes = new List<Filme>();
 
@@ -22,6 +23,7 @@ namespace _06_03_XX_Serializacao_Binaria_Personalizada_Contrato.Antes
     {
         [XmlElement("Name")]
         public string Nome { get; set; }
+
         [XmlIgnore]
         public int NumeroFilmes;
     }
@@ -31,8 +33,10 @@ namespace _06_03_XX_Serializacao_Binaria_Personalizada_Contrato.Antes
     {
         [XmlElement("Director")]
         public Diretor Diretor { get; set; }
+
         [XmlElement("Title")]
         public string Titulo { get; set; }
+
         [XmlElement("Year")]
         public string Ano { get; set; }
     }

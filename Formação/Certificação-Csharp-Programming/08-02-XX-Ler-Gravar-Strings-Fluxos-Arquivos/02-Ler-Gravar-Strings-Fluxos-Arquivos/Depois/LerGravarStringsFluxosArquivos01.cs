@@ -19,7 +19,6 @@ namespace _08_02_XX_Ler_Gravar_Strings_Fluxos_Arquivos.Depois
                 fluxoSaida.Write(array, posicao, tamanho);
             }
 
-
             using (FileStream fluxoEntrada = new FileStream("ArquivoSaida.txt", FileMode.Open, FileAccess.Read))
             {
                 byte[] bytesLidos = new byte[fluxoEntrada.Length];

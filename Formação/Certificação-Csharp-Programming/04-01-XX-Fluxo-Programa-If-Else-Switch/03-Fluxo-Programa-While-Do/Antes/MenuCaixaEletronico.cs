@@ -4,9 +4,9 @@ using System.Text.RegularExpressions;
 
 namespace _04_01_XX_Fluxo_Programa_If_Else_Switch.Antes
 {
-    class MenuCaixaEletronico
+    internal class MenuCaixaEletronico
     {
-        delegate void ItemMenu();
+        private delegate void ItemMenu();
 
         public void Executar()
         {

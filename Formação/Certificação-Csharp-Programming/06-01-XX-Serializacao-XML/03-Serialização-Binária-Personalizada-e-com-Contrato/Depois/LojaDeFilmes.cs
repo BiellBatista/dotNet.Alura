@@ -8,6 +8,7 @@ namespace _06_01_XX_Serializacao_XML.Depois
     {
         public List<Diretor3> Diretores = new List<Diretor3>();
         public List<Filme3> Filmes = new List<Filme3>();
+
         public static void AdicionarFilme(Filme3 filme)
         {
             // Aqui vai a lógica de inserção de filme...
@@ -18,6 +19,7 @@ namespace _06_01_XX_Serializacao_XML.Depois
     public class Diretor3
     {
         public string Nome { get; set; }
+
         [NonSerialized]
         public int NumeroFilmes;
     }

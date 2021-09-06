@@ -1,6 +1,6 @@
 ﻿namespace _02_03_XX_Implementando_Conversoes
 {
-    interface IAulaItem
+    internal interface IAulaItem
     {
         void Executar();
     }

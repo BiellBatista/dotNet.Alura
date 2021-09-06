@@ -2,7 +2,7 @@
 
 namespace _02_02_XX_Cast_Tipos.Depois
 {
-    class ConversoesImplicitas : IAulaItem
+    internal class ConversoesImplicitas : IAulaItem
     {
         public void Executar()
         {
@@ -13,15 +13,16 @@ namespace _02_02_XX_Cast_Tipos.Depois
             Gato gato = new Gato();
             Animal animal = gato;
             Console.WriteLine(animal.GetType()); //o tipo é gato, pois animal armazena referencia para tipo gato
-         
+
             IAnimal Ianimal = gato;
             Console.WriteLine(Ianimal.GetType()); //o tipo é gato, pois ianimal armazena referencia para tipo gato
         }
     }
 
-    interface IAnimal { }
+    internal interface IAnimal
+    { }
 
-    class Animal : IAnimal
+    internal class Animal : IAnimal
     {
         public string Nome { get; set; }
 
@@ -41,7 +42,7 @@ namespace _02_02_XX_Cast_Tipos.Depois
         }
     }
 
-    class Gato : Animal
+    internal class Gato : Animal
     {
         public new void Beber()
         {

@@ -4,7 +4,7 @@ using System.Dynamic;
 
 namespace _02_05_XX_Adicionando_Membros_Dinamicamente.Depois
 {
-    class UsandoExpandObject : IAulaItem
+    internal class UsandoExpandObject : IAulaItem
     {
         public void Executar()
         {

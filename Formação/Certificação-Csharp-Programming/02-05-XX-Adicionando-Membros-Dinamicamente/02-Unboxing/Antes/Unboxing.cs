@@ -1,6 +1,6 @@
 ﻿namespace _02_05_XX_Adicionando_Membros_Dinamicamente.Antes
 {
-    class Unboxing : IAulaItem
+    internal class Unboxing : IAulaItem
     {
         public void Executar()
         {

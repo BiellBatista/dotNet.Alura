@@ -1,6 +1,6 @@
 ﻿namespace _06_04_XX_Arrays.Antes
 {
-    class SerializacaoPersonalizada : IAulaItem
+    internal class SerializacaoPersonalizada : IAulaItem
     {
         public void Executar()
         {

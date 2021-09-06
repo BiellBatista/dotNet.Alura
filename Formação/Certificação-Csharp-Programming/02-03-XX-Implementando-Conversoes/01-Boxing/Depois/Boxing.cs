@@ -2,7 +2,7 @@
 
 namespace _02_03_XX_Implementando_Conversoes.Depois
 {
-    class Boxing : IAulaItem
+    internal class Boxing : IAulaItem
     {
         public void Executar()
         {

@@ -1,13 +1,14 @@
-﻿using System;
+﻿using _02_04_XX_Lidar_Tipos_Dinamicos.Depois;
+using System;
 using System.Collections.Generic;
-using _02_04_XX_Lidar_Tipos_Dinamicos.Depois;
 
 namespace _02_04_XX_Lidar_Tipos_Dinamicos
 {
-    class Program
+    internal class Program
     {
-        static IList<MenuItem> menuItems;
-        static void Main(string[] args)
+        private static IList<MenuItem> menuItems;
+
+        private static void Main(string[] args)
         {
             IAulaItem itemSelecionado;
             menuItems = GetMenuItems();
@@ -79,12 +80,12 @@ namespace _02_04_XX_Lidar_Tipos_Dinamicos
                 new MenuItem("Conversões de Dynamic", typeof(ConversoesDeDynamic)),
                 new MenuItem("Resolucão de Sobrecarga", typeof(ResolucaoSobrecarga)),
                 //new MenuItem("Usando ExpandObject", typeof(UsandoExpandObject)),
-                //new MenuItem("Interoperabilidade COM", typeof(InteropCOM))                
+                //new MenuItem("Interoperabilidade COM", typeof(InteropCOM))
             };
         }
     }
 
-    class MenuItem
+    internal class MenuItem
     {
         public MenuItem(string titulo, Type tipoClasse)
         {

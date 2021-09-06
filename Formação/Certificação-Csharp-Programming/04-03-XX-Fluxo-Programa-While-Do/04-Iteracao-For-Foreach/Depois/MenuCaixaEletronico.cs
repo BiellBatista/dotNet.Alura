@@ -4,9 +4,10 @@ using System.Text.RegularExpressions;
 
 namespace _04_03_XX_Fluxo_Programa_While_Do.Depois
 {
-    class MenuCaixaEletronico4
+    internal class MenuCaixaEletronico4
     {
-        delegate void ItemMenu();
+        private delegate void ItemMenu();
+
         public void Executar()
         {
             var itensMenu = new ItemMenu[]
@@ -25,7 +26,6 @@ namespace _04_03_XX_Fluxo_Programa_While_Do.Depois
             {
                 opcao = GerarMenu(itensMenu);
             } while (opcao != 0);
-
         }
 
         private static int GerarMenu(ItemMenu[] itensMenu)

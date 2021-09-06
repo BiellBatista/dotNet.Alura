@@ -112,19 +112,19 @@ namespace _06_01_XX_Serializacao_XML.Antes
                 }
             };
         }
-
     }
 
     [Serializable]
-    class Diretor3
+    internal class Diretor3
     {
         public string Nome { get; set; }
+
         [NonSerialized]
         public int NumeroFilmes;
     }
 
     [Serializable]
-    class Filme3
+    internal class Filme3
     {
         public Diretor3 Diretor { get; set; }
         public string Titulo { get; set; }
@@ -132,10 +132,11 @@ namespace _06_01_XX_Serializacao_XML.Antes
     }
 
     [Serializable]
-    class LojaDeFilmes3
+    internal class LojaDeFilmes3
     {
         public List<Diretor3> Diretores = new List<Diretor3>();
         public List<Filme3> Filmes = new List<Filme3>();
+
         public static LojaDeFilmes3 TestData()
         {
             LojaDeFilmes3 result = new LojaDeFilmes3();

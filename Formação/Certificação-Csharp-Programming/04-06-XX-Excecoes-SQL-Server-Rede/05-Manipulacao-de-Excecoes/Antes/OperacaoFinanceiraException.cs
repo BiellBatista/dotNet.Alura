@@ -6,19 +6,16 @@ namespace _04_06_XX_Excecoes_SQL_Server_Rede.Antes
     {
         public OperacaoFinanceiraException()
         {
-
         }
 
         public OperacaoFinanceiraException(string mensagem)
             : base(mensagem)
         {
-
         }
 
         public OperacaoFinanceiraException(string mensagem, Exception excecaoInterna)
             : base(mensagem, excecaoInterna)
         {
-
         }
     }
 }

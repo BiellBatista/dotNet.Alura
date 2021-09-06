@@ -3,9 +3,9 @@ using System.Text.RegularExpressions;
 
 namespace _04_05_XX_Manipulacao_Excecoes.Depois
 {
-    class CompilacaoCondicional : IAulaItem
+    internal class CompilacaoCondicional : IAulaItem
     {
-        delegate void ItemMenu();
+        private delegate void ItemMenu();
 
         public void Executar()
         {

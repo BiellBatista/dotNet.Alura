@@ -1,13 +1,14 @@
-﻿using System;
+﻿using _04_04_XX_Iteracao_For_Foreach.Depois;
+using System;
 using System.Collections.Generic;
-using _04_04_XX_Iteracao_For_Foreach.Depois;
 
 namespace _04_04_XX_Iteracao_For_Foreach
 {
-    class Program
+    internal class Program
     {
-        static IList<MenuItem> menuItems;
-        static void Main(string[] args)
+        private static IList<MenuItem> menuItems;
+
+        private static void Main(string[] args)
         {
             IAulaItem itemSelecionado;
             menuItems = GetMenuItems();
@@ -77,7 +78,7 @@ namespace _04_04_XX_Iteracao_For_Foreach
         }
     }
 
-    class MenuItem
+    internal class MenuItem
     {
         public MenuItem(string titulo, Type tipoClasse)
         {

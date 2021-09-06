@@ -2,7 +2,7 @@
 
 namespace _02_04_XX_Lidar_Tipos_Dinamicos.Depois
 {
-    class ResolucaoSobrecarga : IAulaItem
+    internal class ResolucaoSobrecarga : IAulaItem
     {
         public void Executar()
         {
@@ -36,7 +36,7 @@ namespace _02_04_XX_Lidar_Tipos_Dinamicos.Depois
         //}
 
         //em tempo de execução, o dynamic é tratado como um object. Com isso, o compilador não consegue diferenciá-los
-        dynamic Somar(dynamic parcela1, dynamic parcela2)
+        private dynamic Somar(dynamic parcela1, dynamic parcela2)
         {
             return parcela1 + parcela2;
         }

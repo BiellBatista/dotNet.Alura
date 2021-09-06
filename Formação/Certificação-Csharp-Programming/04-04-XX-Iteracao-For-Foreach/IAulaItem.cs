@@ -1,6 +1,6 @@
 ﻿namespace _04_04_XX_Iteracao_For_Foreach
 {
-    interface IAulaItem
+    internal interface IAulaItem
     {
         void Executar();
     }

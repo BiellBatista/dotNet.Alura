@@ -2,7 +2,7 @@
 
 namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
 {
-    class Sobrecargas : IAulaItem
+    internal class Sobrecargas : IAulaItem
     {
         public void Executar()
         {
@@ -22,17 +22,17 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
             Console.WriteLine("VolumeDoPrisma: " + Volume(largura, profundidade, altura));
         }
 
-        double Volume(double lado)
+        private double Volume(double lado)
         {
             return Math.Pow(lado, 3);
         }
 
-        double Volume(double altura, double raio)
+        private double Volume(double altura, double raio)
         {
             return altura * Math.PI * Math.Pow(raio, 2);
         }
 
-        double Volume(double largura, double profundidade, double altura)
+        private double Volume(double largura, double profundidade, double altura)
         {
             return largura * profundidade * altura;
         }

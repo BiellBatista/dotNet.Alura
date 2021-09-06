@@ -3,9 +3,9 @@ using System.Text.RegularExpressions;
 
 namespace _04_04_XX_Iteracao_For_Foreach.Depois
 {
-    class FluxoProgramaIfElseSwitch : IAulaItem
+    internal class FluxoProgramaIfElseSwitch : IAulaItem
     {
-        delegate void ItemMenu();
+        private delegate void ItemMenu();
 
         public void Executar()
         {

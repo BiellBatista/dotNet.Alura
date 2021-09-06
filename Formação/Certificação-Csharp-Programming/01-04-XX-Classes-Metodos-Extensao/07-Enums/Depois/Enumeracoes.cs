@@ -2,7 +2,7 @@
 
 namespace _01_04_XX_Classes_Metodos_Extensao.Depois
 {
-    class Enumeracoes : IAulaItem
+    internal class Enumeracoes : IAulaItem
     {
         public void Executar()
         {
@@ -17,8 +17,10 @@ namespace _01_04_XX_Classes_Metodos_Extensao.Depois
         }
     }
 
-    enum DiasDaSemana : long { Seg = 3, Ter = 10, Qua = 15, Qui, Sex, Sab, Dom }
+    internal enum DiasDaSemana : long
+    { Seg = 3, Ter = 10, Qua = 15, Qui, Sex, Sab, Dom }
 
     [Flags]
-    enum DiasDeTrabalho { Seg = 0, Ter = 1, Qua = 2, Qui = 4, Sex = 8, Sab = 16, Dom = 32 }
+    internal enum DiasDeTrabalho
+    { Seg = 0, Ter = 1, Qua = 2, Qui = 4, Sex = 8, Sab = 16, Dom = 32 }
 }

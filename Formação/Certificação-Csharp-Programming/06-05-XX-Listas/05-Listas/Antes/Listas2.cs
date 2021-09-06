@@ -9,6 +9,7 @@ namespace _06_05_XX_Listas.Antes
         {
             throw new NotImplementedException();
         }
+
         private LojaDeFilmes7 GetLoja()
         {
             return new LojaDeFilmes7

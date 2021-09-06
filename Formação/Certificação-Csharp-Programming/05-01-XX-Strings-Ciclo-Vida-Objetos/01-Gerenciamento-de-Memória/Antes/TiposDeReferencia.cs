@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace _05_01_XX_Strings_Ciclo_Vida_Objetos.Antes
 {
-    class TiposDeReferencia : IAulaItem
+    internal class TiposDeReferencia : IAulaItem
     {
         public async void Executar()
         {
@@ -39,12 +39,12 @@ namespace _05_01_XX_Strings_Ciclo_Vida_Objetos.Antes
         }
     }
 
-    struct EstruturaLivro
+    internal struct EstruturaLivro
     {
         public double NumeroPaginas { get; set; }
     }
 
-    class ClasseLivro
+    internal class ClasseLivro
     {
         public string Introducao { get; set; }
         public string Texto { get; set; }

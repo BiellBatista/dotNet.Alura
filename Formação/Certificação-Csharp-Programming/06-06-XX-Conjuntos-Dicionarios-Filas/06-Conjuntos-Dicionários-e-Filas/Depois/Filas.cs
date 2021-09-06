@@ -33,7 +33,7 @@ namespace _06_06_XX_Conjuntos_Dicionarios_Filas.Depois
 
     public class Pedagio
     {
-        Queue<string> fila = new Queue<string>();
+        private Queue<string> fila = new Queue<string>();
 
         public void Enfileirar(string veiculo)
         {

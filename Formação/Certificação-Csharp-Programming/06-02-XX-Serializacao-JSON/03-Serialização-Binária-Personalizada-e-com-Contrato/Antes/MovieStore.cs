@@ -19,6 +19,7 @@ namespace _06_02_XX_Serializacao_JSON.Antes
     public class Director4
     {
         public string Name { get; set; }
+
         [XmlIgnore]
         public int NumberOfMovies;
     }

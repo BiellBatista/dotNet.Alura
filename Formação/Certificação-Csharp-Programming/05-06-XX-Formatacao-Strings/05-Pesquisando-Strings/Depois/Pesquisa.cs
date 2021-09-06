@@ -28,16 +28,22 @@ namespace _05_06_XX_Formatacao_Strings.Depois
             {
                 case "Contem":
                     return Contem();
+
                 case "ComecaCom":
                     return ComecaCom();
+
                 case "TerminaCom":
                     return TerminaCom();
+
                 case "IndiceDe":
                     return IndiceDe();
+
                 case "Trecho":
                     return Trecho();
+
                 case "Substituir":
                     return Substituir();
+
                 default:
                     return string.Empty;
             }

@@ -83,4 +83,5 @@ namespace _07_04_XX_Func_Action_Predicate.Depois
         public string Apartamento { get; }
     }
 }
+
 /// <image url="$(ProjectDir)/img2.png"/>

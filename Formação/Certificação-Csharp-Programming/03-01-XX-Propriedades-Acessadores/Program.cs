@@ -1,13 +1,14 @@
-﻿using System;
+﻿using _03_01_XX_Propriedades_Acessadores.Depois;
+using System;
 using System.Collections.Generic;
-using _03_01_XX_Propriedades_Acessadores.Depois;
 
 namespace _03_01_XX_Propriedades_Acessadores
 {
-    class Program
+    internal class Program
     {
-        static IList<MenuItem> menuItems;
-        static void Main(string[] args)
+        private static IList<MenuItem> menuItems;
+
+        private static void Main(string[] args)
         {
             IAulaItem itemSelecionado;
             menuItems = GetMenuItems();
@@ -73,7 +74,7 @@ namespace _03_01_XX_Propriedades_Acessadores
         }
     }
 
-    class MenuItem
+    internal class MenuItem
     {
         public MenuItem(string titulo, Type tipoClasse)
         {

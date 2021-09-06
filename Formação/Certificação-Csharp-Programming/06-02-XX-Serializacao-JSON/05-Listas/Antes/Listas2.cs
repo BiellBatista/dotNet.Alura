@@ -9,6 +9,7 @@ namespace _06_02_XX_Serializacao_JSON.Antes
         {
             throw new NotImplementedException();
         }
+
         private LojaDeFilmes7 GetLoja()
         {
             return new LojaDeFilmes7

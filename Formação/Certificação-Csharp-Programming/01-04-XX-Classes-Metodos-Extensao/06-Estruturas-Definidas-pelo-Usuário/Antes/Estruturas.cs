@@ -2,7 +2,7 @@
 
 namespace _01_04_XX_Classes_Metodos_Extensao.Antes
 {
-    class Estruturas : IAulaItem
+    internal class Estruturas : IAulaItem
     {
         public void Executar()
         {

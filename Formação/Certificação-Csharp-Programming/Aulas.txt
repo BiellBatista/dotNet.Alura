@@ -548,6 +548,7 @@ Certificação C# Programming parte 8: Entrada e Saída de Dados
 		10 - Faça como eu fiz na aula
 		11 - O que aprendemos?
 	06 - Lendo e Atualizando Banco de Dados
+		01 - Criando a Consulta SQL Server
 	07 - Consumindo Serviços e Interpretando Dados
 Certificação C# Programming parte 9: Depurar Aplicativos
 	01 - Gerenciando Assemblies

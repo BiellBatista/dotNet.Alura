@@ -1,13 +1,14 @@
-﻿using System;
+﻿using _04_06_XX_Excecoes_SQL_Server_Rede.Depois;
+using System;
 using System.Collections.Generic;
-using _04_06_XX_Excecoes_SQL_Server_Rede.Depois;
 
 namespace _04_06_XX_Excecoes_SQL_Server_Rede
 {
-    class Program
+    internal class Program
     {
-        static IList<MenuItem> menuItems;
-        static void Main(string[] args)
+        private static IList<MenuItem> menuItems;
+
+        private static void Main(string[] args)
         {
             IAulaItem itemSelecionado;
             menuItems = GetMenuItems();
@@ -78,7 +79,7 @@ namespace _04_06_XX_Excecoes_SQL_Server_Rede
         }
     }
 
-    class MenuItem
+    internal class MenuItem
     {
         public MenuItem(string titulo, Type tipoClasse)
         {

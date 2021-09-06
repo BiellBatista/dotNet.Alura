@@ -2,7 +2,7 @@
 
 namespace _01_03_XX_Criar_Tipos_Referencia.Depois
 {
-    class Decimal : IAulaItem
+    internal class Decimal : IAulaItem
     {
         public void Executar()
         {

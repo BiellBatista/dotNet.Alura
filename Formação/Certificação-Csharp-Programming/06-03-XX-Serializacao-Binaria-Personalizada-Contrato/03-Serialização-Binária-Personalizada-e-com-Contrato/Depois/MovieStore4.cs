@@ -19,6 +19,7 @@ namespace _06_03_XX_Serializacao_Binaria_Personalizada_Contrato.Depois
     public class Director4
     {
         public string Name { get; set; }
+
         [XmlIgnore]
         public int NumberOfMovies;
     }

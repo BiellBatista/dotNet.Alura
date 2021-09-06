@@ -2,7 +2,7 @@
 
 namespace _04_02_XX_Compilacao_Condicional.Antes
 {
-    class ContaBancaria2
+    internal class ContaBancaria2
     {
         private decimal saldo = 0m;
 

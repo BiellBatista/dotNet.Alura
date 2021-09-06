@@ -5,6 +5,7 @@ namespace _06_06_XX_Conjuntos_Dicionarios_Filas.Antes
     public class LojaDeFilmes7
     {
         private List<Diretor7> diretores;
+
         public List<Diretor7> Diretores
         {
             get { return diretores; }
@@ -15,6 +16,7 @@ namespace _06_06_XX_Conjuntos_Dicionarios_Filas.Antes
         }
 
         private List<Filme7> filmes;
+
         public List<Filme7> Filmes
         {
             get { return filmes; }

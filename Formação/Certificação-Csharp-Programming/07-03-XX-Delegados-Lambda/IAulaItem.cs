@@ -1,6 +1,6 @@
 ﻿namespace _07_03_XX_Delegados_Lambda
 {
-    interface IAulaItem
+    internal interface IAulaItem
     {
         void Executar();
     }

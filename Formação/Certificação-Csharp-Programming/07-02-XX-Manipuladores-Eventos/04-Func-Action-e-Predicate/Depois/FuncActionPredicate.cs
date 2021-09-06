@@ -4,7 +4,7 @@ namespace _07_02_XX_Manipuladores_Eventos.Depois
 {
     public class FuncActionPredicate : IAulaItem
     {
-        delegate int Operacao(int a, int b);
+        private delegate int Operacao(int a, int b);
 
         public void Executar()
         {

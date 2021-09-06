@@ -83,4 +83,5 @@ namespace _07_08_XX_Paginacao_Sintaxe_Metodo.Depois
         public string Apartamento { get; }
     }
 }
+
 /// <image url="$(ProjectDir)/img2.png"/>

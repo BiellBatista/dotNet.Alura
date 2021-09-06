@@ -2,7 +2,7 @@
 
 namespace _01_04_XX_Classes_Metodos_Extensao.Depois
 {
-    class Objetos : IAulaItem
+    internal class Objetos : IAulaItem
     {
         public void Executar()
         {
@@ -26,7 +26,7 @@ namespace _01_04_XX_Classes_Metodos_Extensao.Depois
         }
     }
 
-    class Jogador
+    internal class Jogador
     {
         public int Pontuacao { get; set; } = 10;
     }

@@ -2,7 +2,7 @@
 
 namespace _01_02_XX_Ponto_Flutuante_Booleanos_Structs_Enums.Depois
 {
-    class Booleanos : IAulaItem
+    internal class Booleanos : IAulaItem
     {
         public void Executar()
         {

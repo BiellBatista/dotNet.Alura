@@ -1,6 +1,6 @@
 ﻿namespace _03_05_XX_Comparacoes_Objetos
 {
-    interface IAulaItem
+    internal interface IAulaItem
     {
         void Executar();
     }

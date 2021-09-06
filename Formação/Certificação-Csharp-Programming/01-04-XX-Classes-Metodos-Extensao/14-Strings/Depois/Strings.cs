@@ -2,7 +2,7 @@
 
 namespace _01_04_XX_Classes_Metodos_Extensao.Depois
 {
-    class Strings : IAulaItem
+    internal class Strings : IAulaItem
     {
         public void Executar()
         {

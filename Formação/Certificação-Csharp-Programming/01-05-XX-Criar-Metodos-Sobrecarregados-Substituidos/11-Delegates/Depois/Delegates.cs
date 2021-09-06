@@ -2,7 +2,7 @@
 
 namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
 {
-    class Delegates : IAulaItem
+    internal class Delegates : IAulaItem
     {
         public void Executar()
         {
@@ -10,23 +10,22 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
         }
     }
 
-    delegate double MetodoMultiplicacao(double input);
+    internal delegate double MetodoMultiplicacao(double input);
 
-    class Calculadora
+    internal class Calculadora
     {
-        static double Duplicar(double input)
+        private static double Duplicar(double input)
         {
             return input * 2;
         }
 
-        static double Triplicar(double input)
+        private static double Triplicar(double input)
         {
             return input * 3;
         }
 
         public static void Executar()
         {
-
             //Executa diretamente o método
             Console.WriteLine($"Duplicar(7.5): {Duplicar(7.5)}");
 
@@ -39,7 +38,6 @@ namespace _01_05_XX_Criar_Metodos_Sobrecarregados_Substituidos.Depois
 
             metodoMultiplicacao = Triplicar;
             Console.WriteLine($"Triplicar(7.5): {metodoMultiplicacao(7.5)}");
-
 
             //delegate como metodo anonimo
             MetodoMultiplicacao metodoQuadrado = delegate (double input)

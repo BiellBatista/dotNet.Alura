@@ -4,7 +4,7 @@ namespace _07_08_XX_Paginacao_Sintaxe_Metodo.Depois
 {
     public class FuncActionPredicate : IAulaItem
     {
-        delegate int Operacao(int a, int b);
+        private delegate int Operacao(int a, int b);
 
         public void Executar()
         {

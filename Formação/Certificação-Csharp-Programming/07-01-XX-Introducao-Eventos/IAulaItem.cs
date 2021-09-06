@@ -1,6 +1,6 @@
 ﻿namespace _07_01_XX_Introducao_Eventos
 {
-    interface IAulaItem
+    internal interface IAulaItem
     {
         void Executar();
     }

@@ -3,7 +3,7 @@ using System.IO;
 
 namespace _04_03_XX_Fluxo_Programa_While_Do.Antes
 {
-    class RelatorioClientes
+    internal class RelatorioClientes
     {
         public static void ImprimirListagemClientes()
         {

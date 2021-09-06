@@ -8,6 +8,7 @@ namespace _06_06_XX_Conjuntos_Dicionarios_Filas.Depois
     {
         [DataMember]
         public List<Diretor4> Diretores = new List<Diretor4>();
+
         [DataMember] public List<Filme4> Filmes = new List<Filme4>();
 
         public static void AdicionarFilme(Filme4 filme)
@@ -21,6 +22,7 @@ namespace _06_06_XX_Conjuntos_Dicionarios_Filas.Depois
     {
         [DataMember]
         public string Nome { get; set; }
+
         [IgnoreDataMember]
         public int NumeroFilmes;
     }
@@ -30,8 +32,10 @@ namespace _06_06_XX_Conjuntos_Dicionarios_Filas.Depois
     {
         [DataMember]
         public Diretor4 Diretor { get; set; }
+
         [DataMember]
         public string Titulo { get; set; }
+
         [DataMember]
         public string Ano { get; set; }
     }

@@ -3,9 +3,9 @@ using System.Text.RegularExpressions;
 
 namespace _04_01_XX_Fluxo_Programa_If_Else_Switch.Depois
 {
-    class CompilacaoCondicional : IAulaItem
+    internal class CompilacaoCondicional : IAulaItem
     {
-        delegate void ItemMenu();
+        private delegate void ItemMenu();
 
         public void Executar()
         {

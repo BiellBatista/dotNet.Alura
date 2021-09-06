@@ -51,7 +51,6 @@ namespace _07_03_XX_Delegados_Lambda.Depois
             }
             Console.WriteLine();
 
-
             filmesSelecionados2 =
             from filme in documentoFilmes.Descendants("Filme")
             .Where(elemento => (string)elemento.Element("Diretor")

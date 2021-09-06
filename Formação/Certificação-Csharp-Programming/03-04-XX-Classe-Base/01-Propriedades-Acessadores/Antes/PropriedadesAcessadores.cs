@@ -1,6 +1,6 @@
 ﻿namespace _03_04_XX_Classe_Base.Antes
 {
-    class PropriedadesAcessadores : IAulaItem
+    internal class PropriedadesAcessadores : IAulaItem
     {
         public void Executar()
         {

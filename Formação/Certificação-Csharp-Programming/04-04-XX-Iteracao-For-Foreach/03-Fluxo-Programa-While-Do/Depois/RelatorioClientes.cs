@@ -3,7 +3,7 @@ using System.IO;
 
 namespace _04_04_XX_Iteracao_For_Foreach.Depois
 {
-    class RelatorioClientes
+    internal class RelatorioClientes
     {
         public static void ImprimirListagemClientes()
         {

@@ -2,7 +2,7 @@
 
 namespace _02_04_XX_Lidar_Tipos_Dinamicos.Depois
 {
-    class Unboxing : IAulaItem
+    internal class Unboxing : IAulaItem
     {
         public void Executar()
         {
@@ -14,12 +14,10 @@ namespace _02_04_XX_Lidar_Tipos_Dinamicos.Depois
                 int unboxed = (int)caixa; //o casting deve ser do mesmo tipo. Ou seja, não posso fazer int x = (short) y;
 
                 Console.WriteLine("Unboxing Ok.");
-
             }
             catch (Exception e)
             {
                 Console.WriteLine("{0} Erro: unboxing incorreto.", e);
-
             }
         }
     }

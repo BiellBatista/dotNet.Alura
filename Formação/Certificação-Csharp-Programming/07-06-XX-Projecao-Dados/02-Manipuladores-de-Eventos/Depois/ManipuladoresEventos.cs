@@ -83,4 +83,5 @@ namespace _07_06_XX_Projecao_Dados.Depois
         public string Apartamento { get; }
     }
 }
+
 /// <image url="$(ProjectDir)/img2.png"/>

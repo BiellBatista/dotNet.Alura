@@ -2,7 +2,7 @@
 
 namespace _01_03_XX_Criar_Tipos_Referencia.Depois
 {
-    class PontoFlutuante
+    internal class PontoFlutuante
     {
         public void Executar()
         {

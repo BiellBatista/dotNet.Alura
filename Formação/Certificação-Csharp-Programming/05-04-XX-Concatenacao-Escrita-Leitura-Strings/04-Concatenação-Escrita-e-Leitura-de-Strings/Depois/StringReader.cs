@@ -3,7 +3,7 @@ using System.IO;
 
 namespace _05_04_XX_Concatenacao_Escrita_Leitura_Strings.Depois
 {
-    class StringReader1 : IAulaItem
+    internal class StringReader1 : IAulaItem
     {
         public void Executar()
         {

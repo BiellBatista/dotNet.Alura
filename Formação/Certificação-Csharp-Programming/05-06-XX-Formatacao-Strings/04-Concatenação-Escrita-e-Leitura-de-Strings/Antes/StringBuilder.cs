@@ -2,7 +2,7 @@
 
 namespace _05_06_XX_Formatacao_Strings.Antes
 {
-    class StringBuilder1 : IAulaItem
+    internal class StringBuilder1 : IAulaItem
     {
         public void Executar()
         {

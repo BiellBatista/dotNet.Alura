@@ -4,9 +4,9 @@ using System.Text.RegularExpressions;
 
 namespace _04_02_XX_Compilacao_Condicional.Antes
 {
-    class MenuCaixaEletronico4
+    internal class MenuCaixaEletronico4
     {
-        delegate void ItemMenu();
+        private delegate void ItemMenu();
 
         public void Executar()
         {
@@ -26,7 +26,6 @@ namespace _04_02_XX_Compilacao_Condicional.Antes
             {
                 opcao = GerarMenu(itensMenu);
             } while (opcao != 0);
-
         }
 
         private static int GerarMenu(ItemMenu[] itensMenu)

@@ -51,7 +51,6 @@ namespace _07_08_XX_Paginacao_Sintaxe_Metodo.Depois
             }
             Console.WriteLine();
 
-
             filmesSelecionados2 =
             from filme in documentoFilmes.Descendants("Filme")
             .Where(elemento => (string)elemento.Element("Diretor")

@@ -2,7 +2,7 @@
 
 namespace _01_02_XX_Ponto_Flutuante_Booleanos_Structs_Enums.Depois
 {
-    class PontoFlutuante
+    internal class PontoFlutuante
     {
         public void Executar()
         {

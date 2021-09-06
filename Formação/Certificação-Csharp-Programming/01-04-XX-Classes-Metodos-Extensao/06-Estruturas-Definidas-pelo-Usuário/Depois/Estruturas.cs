@@ -2,7 +2,7 @@
 
 namespace _01_04_XX_Classes_Metodos_Extensao.Depois
 {
-    class Estruturas : IAulaItem
+    internal class Estruturas : IAulaItem
     {
         public void Executar()
         {
@@ -26,12 +26,12 @@ namespace _01_04_XX_Classes_Metodos_Extensao.Depois
         }
     }
 
-    interface IGPS
+    internal interface IGPS
     {
         bool EstaNoHemisferioNorte();
     }
 
-    struct PosicaoGPS : IGPS
+    internal struct PosicaoGPS : IGPS
     {
         public double Latitude;
         public double Longitude;

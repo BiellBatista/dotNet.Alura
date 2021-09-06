@@ -5,6 +5,7 @@ namespace _06_01_XX_Serializacao_XML.Antes
     public class LojaDeFilmes7
     {
         private List<Diretor7> diretores;
+
         public List<Diretor7> Diretores
         {
             get { return diretores; }
@@ -15,6 +16,7 @@ namespace _06_01_XX_Serializacao_XML.Antes
         }
 
         private List<Filme7> filmes;
+
         public List<Filme7> Filmes
         {
             get { return filmes; }

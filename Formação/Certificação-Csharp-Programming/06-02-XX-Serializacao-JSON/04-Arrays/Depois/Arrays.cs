@@ -106,6 +106,7 @@ namespace _06_02_XX_Serializacao_JSON.Depois
             Console.WriteLine();
         }
     }
+
     ///<image url="$(ProjectDir)\img1.png"/>
     ///<image url="$(ProjectDir)\img2.png"/>
 }

@@ -16,7 +16,6 @@ namespace _06_05_XX_Listas.Depois
             {
                 serializer.WriteObject(fileStream, loja);
             }
-
         }
 
         private static LojaDeFilmes5 ObterDados()

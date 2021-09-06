@@ -1,6 +1,6 @@
 ﻿namespace _03_04_XX_Classe_Base
 {
-    interface IAulaItem
+    internal interface IAulaItem
     {
         void Executar();
     }

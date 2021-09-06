@@ -2,7 +2,7 @@
 
 namespace _02_04_XX_Lidar_Tipos_Dinamicos.Depois
 {
-    class OperadoresISeAS : IAulaItem
+    internal class OperadoresISeAS : IAulaItem
     {
         public void Executar()
         {
@@ -44,7 +44,7 @@ namespace _02_04_XX_Lidar_Tipos_Dinamicos.Depois
         }
     }
 
-    class Cliente
+    internal class Cliente
     {
         public Cliente(string nome, int idade)
         {

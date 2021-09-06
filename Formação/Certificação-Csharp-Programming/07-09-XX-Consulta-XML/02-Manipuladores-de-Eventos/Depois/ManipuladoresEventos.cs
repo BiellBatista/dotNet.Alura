@@ -83,4 +83,5 @@ namespace _07_09_XX_Consulta_XML.Depois
         public string Apartamento { get; }
     }
 }
+
 /// <image url="$(ProjectDir)/img2.png"/>

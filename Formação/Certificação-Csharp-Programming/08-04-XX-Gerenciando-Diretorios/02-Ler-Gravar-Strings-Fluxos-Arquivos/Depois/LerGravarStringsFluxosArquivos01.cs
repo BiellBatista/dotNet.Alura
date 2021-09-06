@@ -19,7 +19,6 @@ namespace _08_04_XX_Gerenciando_Diretorios.Depois
                 fluxoSaida.Write(array, posicao, tamanho);
             }
 
-
             using (FileStream fluxoEntrada = new FileStream("ArquivoSaida.txt", FileMode.Open, FileAccess.Read))
             {
                 byte[] bytesLidos = new byte[fluxoEntrada.Length];

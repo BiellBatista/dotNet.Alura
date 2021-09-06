@@ -2,7 +2,7 @@
 
 namespace _01_03_XX_Criar_Tipos_Referencia.Antes
 {
-    class Delegates : IAulaItem
+    internal class Delegates : IAulaItem
     {
         public void Executar()
         {
@@ -10,21 +10,20 @@ namespace _01_03_XX_Criar_Tipos_Referencia.Antes
         }
     }
 
-    class Calculadora
+    internal class Calculadora
     {
-        static double Duplicar(double input)
+        private static double Duplicar(double input)
         {
             return input * 2;
         }
 
-        static double Triplicar(double input)
+        private static double Triplicar(double input)
         {
             return input * 3;
         }
 
         public static void Executar()
         {
-
             //Executa diretamente o método
             Console.WriteLine($"Duplicar(7.5): {Duplicar(7.5)}");
 

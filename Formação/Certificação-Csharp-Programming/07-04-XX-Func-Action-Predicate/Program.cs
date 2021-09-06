@@ -1,14 +1,14 @@
-﻿using System;
+﻿using _07_04_XX_Func_Action_Predicate.Depois;
+using System;
 using System.Collections.Generic;
-using _07_04_XX_Func_Action_Predicate.Depois;
 
 namespace _07_04_XX_Func_Action_Predicate
 {
-    class Program
+    internal class Program
     {
-        static IList<MenuItem> menuItems;
+        private static IList<MenuItem> menuItems;
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             IAulaItem itemSelecionado;
 
@@ -88,7 +88,7 @@ namespace _07_04_XX_Func_Action_Predicate
         }
     }
 
-    class MenuItem
+    internal class MenuItem
     {
         public MenuItem(string titulo, Type tipoClasse)
         {

@@ -6,6 +6,7 @@ namespace _06_02_XX_Serializacao_JSON.Antes
     {
         public List<Diretor> Diretores = new List<Diretor>();
         public List<Filme> Filmes = new List<Filme>();
+
         public static void AdicionarFilme(Filme filme)
         {
             // Aqui vai a lógica de inserção de filme...

@@ -2,7 +2,7 @@
 
 namespace _03_05_XX_Comparacoes_Objetos.Depois
 {
-    class InterfacesExplicitas : IAulaItem
+    internal class InterfacesExplicitas : IAulaItem
     {
         public void Executar()
         {
@@ -29,7 +29,7 @@ namespace _03_05_XX_Comparacoes_Objetos.Depois
         }
     }
 
-    interface IFuncionario
+    internal interface IFuncionario
     {
         string CPF { get; set; }
         string Nome { get; set; }
@@ -45,13 +45,14 @@ namespace _03_05_XX_Comparacoes_Objetos.Depois
         void EfeturarPagamento();
     }
 
-    interface IPlantonista
+    internal interface IPlantonista
     {
         int CargaHorariaMensal { get; set; }
+
         void GerarCracha();
     }
 
-    class Funcionario2 : IFuncionario, IPlantonista
+    internal class Funcionario2 : IFuncionario, IPlantonista
     {
         public string CPF { get; set; }
         public string Nome { get; set; }

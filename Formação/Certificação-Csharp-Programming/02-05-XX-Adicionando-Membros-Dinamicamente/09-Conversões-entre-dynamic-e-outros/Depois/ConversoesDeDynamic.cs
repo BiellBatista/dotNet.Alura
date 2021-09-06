@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace _02_05_XX_Adicionando_Membros_Dinamicamente.Depois
 {
-    class ConversoesDeDynamic : IAulaItem
+    internal class ConversoesDeDynamic : IAulaItem
     {
         public void Executar()
         {

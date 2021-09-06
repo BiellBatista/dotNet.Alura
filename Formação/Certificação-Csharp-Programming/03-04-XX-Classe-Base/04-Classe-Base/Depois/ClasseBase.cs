@@ -2,7 +2,7 @@
 
 namespace _03_04_XX_Classe_Base.Depois
 {
-    class ClasseBase : IAulaItem
+    internal class ClasseBase : IAulaItem
     {
         public void Executar()
         {
@@ -41,7 +41,7 @@ namespace _03_04_XX_Classe_Base.Depois
         }
     }
 
-    interface IFuncionario2
+    internal interface IFuncionario2
     {
         string CPF { get; set; }
         string Nome { get; set; }
@@ -57,13 +57,14 @@ namespace _03_04_XX_Classe_Base.Depois
         void EfeturarPagamento();
     }
 
-    interface IPlantonista2
+    internal interface IPlantonista2
     {
         int CargaHorariaMensal { get; set; }
+
         void GerarCracha();
     }
 
-    class Funcionario3 : Pessoa, IFuncionario2, IPlantonista2
+    internal class Funcionario3 : Pessoa, IFuncionario2, IPlantonista2
     {
         public event EventHandler CrachaGerado;
 
@@ -100,7 +101,7 @@ namespace _03_04_XX_Classe_Base.Depois
         }
     }
 
-    class Cliente : Pessoa
+    internal class Cliente : Pessoa
     {
         public DateTime? DataUltimaCompra { get; set; }
         public decimal? ValorUltimaCompra { get; set; }
@@ -111,17 +112,15 @@ namespace _03_04_XX_Classe_Base.Depois
         }
     }
 
-    class ClienteFilha : Cliente
+    internal class ClienteFilha : Cliente
     {
-
     }
 
-    class ClienteNeta : ClienteFilha
+    internal class ClienteNeta : ClienteFilha
     {
-
     }
 
-    abstract class Pessoa
+    internal abstract class Pessoa
     {
         public string CPF { get; set; }
         public string Nome { get; set; }

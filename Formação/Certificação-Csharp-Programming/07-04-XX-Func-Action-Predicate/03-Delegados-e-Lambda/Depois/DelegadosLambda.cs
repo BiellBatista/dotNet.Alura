@@ -4,7 +4,7 @@ namespace _07_04_XX_Func_Action_Predicate.Depois
 {
     public class DelegadosLambda : IAulaItem
     {
-        delegate int Operacao(int a, int b);
+        private delegate int Operacao(int a, int b);
 
         public void Executar()
         {

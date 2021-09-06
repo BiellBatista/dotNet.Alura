@@ -2,7 +2,7 @@
 
 namespace _02_02_XX_Cast_Tipos.Antes
 {
-    class OperadoresISeAS : IAulaItem
+    internal class OperadoresISeAS : IAulaItem
     {
         public void Executar()
         {
@@ -19,7 +19,7 @@ namespace _02_02_XX_Cast_Tipos.Antes
         }
     }
 
-    class Cliente
+    internal class Cliente
     {
         public Cliente(string nome, int idade)
         {
@@ -36,9 +36,10 @@ namespace _02_02_XX_Cast_Tipos.Antes
         }
     }
 
-    interface IAnimal { }
+    internal interface IAnimal
+    { }
 
-    class Animal : IAnimal
+    internal class Animal : IAnimal
     {
         public string Nome { get; set; }
 
@@ -58,7 +59,7 @@ namespace _02_02_XX_Cast_Tipos.Antes
         }
     }
 
-    class Gato : Animal
+    internal class Gato : Animal
     {
         public new void Beber()
         {

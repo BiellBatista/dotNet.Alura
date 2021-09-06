@@ -2,7 +2,7 @@
 
 namespace _03_04_XX_Classe_Base.Antes
 {
-    class ClasseBase : IAulaItem
+    internal class ClasseBase : IAulaItem
     {
         public void Executar()
         {
@@ -23,7 +23,7 @@ namespace _03_04_XX_Classe_Base.Antes
         }
     }
 
-    interface IFuncionario2
+    internal interface IFuncionario2
     {
         string CPF { get; set; }
         string Nome { get; set; }
@@ -39,13 +39,14 @@ namespace _03_04_XX_Classe_Base.Antes
         void EfeturarPagamento();
     }
 
-    interface IPlantonista2
+    internal interface IPlantonista2
     {
         int CargaHorariaMensal { get; set; }
+
         void GerarCracha();
     }
 
-    class Funcionario3 : IFuncionario2, IPlantonista2
+    internal class Funcionario3 : IFuncionario2, IPlantonista2
     {
         public string CPF { get; set; }
         public string Nome { get; set; }

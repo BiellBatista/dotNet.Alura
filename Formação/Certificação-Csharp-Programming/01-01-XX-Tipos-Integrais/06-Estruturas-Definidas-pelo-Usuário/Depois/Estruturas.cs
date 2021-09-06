@@ -2,7 +2,7 @@
 
 namespace _01_01_XX_Tipos_Integrais.Depois
 {
-    class Estruturas : IAulaItem
+    internal class Estruturas : IAulaItem
     {
         public void Executar()
         {

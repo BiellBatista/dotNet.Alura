@@ -6,6 +6,7 @@ namespace _06_04_XX_Arrays.Depois
     public class LojaDeFilmes7
     {
         private List<Diretor7> diretores;
+
         public List<Diretor7> Diretores
         {
             get { return diretores; }
@@ -16,6 +17,7 @@ namespace _06_04_XX_Arrays.Depois
         }
 
         private List<Filme7> filmes;
+
         public IReadOnlyCollection<Filme7> Filmes
         {
             get { return new ReadOnlyCollection<Filme7>(filmes); }

@@ -4,9 +4,9 @@ using System.Text.RegularExpressions;
 
 namespace _04_06_XX_Excecoes_SQL_Server_Rede.Antes
 {
-    class MenuCaixaEletronico
+    internal class MenuCaixaEletronico
     {
-        delegate void ItemMenu();
+        private delegate void ItemMenu();
 
         public void Executar()
         {

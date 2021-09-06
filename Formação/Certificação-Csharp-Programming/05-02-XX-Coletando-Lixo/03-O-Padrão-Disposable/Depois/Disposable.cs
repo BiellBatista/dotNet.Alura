@@ -5,7 +5,7 @@ namespace _05_02_XX_Coletando_Lixo.Depois
 {
     public class Disposable2 : IAulaItem
     {
-	/// <summary>
+        /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]

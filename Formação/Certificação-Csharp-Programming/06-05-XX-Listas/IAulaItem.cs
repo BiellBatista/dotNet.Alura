@@ -1,6 +1,6 @@
 ﻿namespace _06_05_XX_Listas
 {
-    interface IAulaItem
+    internal interface IAulaItem
     {
         void Executar();
     }
