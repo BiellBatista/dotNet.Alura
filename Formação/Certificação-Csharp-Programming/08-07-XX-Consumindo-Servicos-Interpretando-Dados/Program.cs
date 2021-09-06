@@ -96,6 +96,8 @@ namespace _08_07_XX_Consumindo_Servicos_Interpretando_Dados
                 new MenuItem("Lendo e Atualizando Banco de Dados", typeof(LendoAtualizandoBancoDados01)),
                 new MenuItem("Criando Comando e Lendo Dados da Consulta", typeof(LendoAtualizandoBancoDados02)),
                 new MenuItem("Parametrizando Comandos Contra SQL Injection", typeof(LendoAtualizandoBancoDados03)),
+                new MenuItem("Consumindo Serviços e Interpretando Dados", typeof(ConsumindoServicosInterpretandoDados01)),
+                new MenuItem("Interpretando um Documento XML", typeof(ConsumindoServicosInterpretandoDados02)),
             };
         }
     }
