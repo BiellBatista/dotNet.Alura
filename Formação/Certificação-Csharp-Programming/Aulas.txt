@@ -561,6 +561,10 @@ Certificação C# Programming parte 8: Entrada e Saída de Dados
 		02 - Serializando objeto no formato JSON (B)
 		03 - Interpretando um Documento XML
 		04 - Consumindo Serviço WCF
+		05 - Conclusão
+		06 - Faça como eu fiz na aula
+		07 - Projeto do Curso
+		08 - O que aprendemos?
 Certificação C# Programming parte 9: Depurar Aplicativos
 	01 - Gerenciando Assemblies
 	02 - Assinando Assemblies com Nome Forte
