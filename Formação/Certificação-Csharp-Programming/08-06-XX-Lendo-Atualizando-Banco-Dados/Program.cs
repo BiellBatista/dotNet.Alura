@@ -95,6 +95,7 @@ namespace _08_06_XX_Lendo_Atualizando_Banco_Dados
                 new MenuItem("Capturando Exceções em Métodos Assíncronos", typeof(AcessandoWebFormaAssincrona06)),
                 new MenuItem("Lendo e Atualizando Banco de Dados", typeof(LendoAtualizandoBancoDados01)),
                 new MenuItem("Criando Comando e Lendo Dados da Consulta", typeof(LendoAtualizandoBancoDados02)),
+                new MenuItem("Parametrizando Comandos Contra SQL Injection", typeof(LendoAtualizandoBancoDados03)),
             };
         }
     }

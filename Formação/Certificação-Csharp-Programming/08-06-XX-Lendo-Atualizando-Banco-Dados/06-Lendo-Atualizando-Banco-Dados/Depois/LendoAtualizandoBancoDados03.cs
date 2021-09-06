@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace _08_06_XX_Lendo_Atualizando_Banco_Dados.Depois
 {
-    public class LendoAtualizandoBancoDados02 : IAulaItem //Update With SQL
+    public class LendoAtualizandoBancoDados03 : IAulaItem //SQL injection
     {
         private const string DatabaseServer = "(LocalDB)\\MSSQLLocalDB";
         private const string MasterDatabase = "master";
@@ -20,19 +20,27 @@ namespace _08_06_XX_Lendo_Atualizando_Banco_Dados.Depois
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
+                ListarFilmes(connection).Wait();
 
-                //TAREFA:
-                //1. Mudar o nome do primeiro diretor para "Quentin Tarantino"
-                //2. Contar quantas linhas foram atualizadas
+                //TAREFA: EVITAR A TÉCNICA DE SQL INJECTION
 
-                var sql = "UPDATE Diretores SET Nome = 'Quentin Tarantino' WHERE Id = 1";
+                Console.Write("Digite o Id do filme a ser alterado: ");
 
-                using (var comando = new SqlCommand(sql, connection))
-                {
-                    var linhas = comando.ExecuteNonQueryAsync().Result;
+                string filmeId = Console.ReadLine();
 
-                    Console.WriteLine("Número de linhas atualizadas: {0}", linhas);
-                }
+                Console.Write("Digite o novo título do filme: ");
+
+                string novoTitulo = Console.ReadLine();
+                string textoComando = "UPDATE Filmes SET Titulo=@novoTitulo WHERE Id = @filmeId";
+
+                SqlCommand command = new SqlCommand(textoComando, connection);
+
+                command.Parameters.AddWithValue("@novoTitulo", novoTitulo);
+                command.Parameters.AddWithValue("@filmeId", filmeId);
+
+                int result = command.ExecuteNonQuery();
+
+                Console.WriteLine("Número de linhas atualizadas: {0}", result);
 
                 ListarFilmes(connection).Wait();
             }
@@ -40,10 +48,10 @@ namespace _08_06_XX_Lendo_Atualizando_Banco_Dados.Depois
             Console.ReadKey();
         }
 
-        private async Task ListarFilmes(SqlConnection connection)
+        private static async Task ListarFilmes(SqlConnection connection)
         {
             SqlCommand command = new SqlCommand(
-                " SELECT d.Id AS DiretorId, d.Nome AS Diretor, f.Titulo AS Titulo" +
+                " SELECT d.Nome AS Diretor, f.Id, f.Titulo AS Titulo" +
                 " FROM Filmes AS f" +
                 " INNER JOIN Diretores AS d" +
                 "   ON d.Id = f.DiretorId"
@@ -52,24 +60,25 @@ namespace _08_06_XX_Lendo_Atualizando_Banco_Dados.Depois
 
             while (await reader.ReadAsync())
             {
-                string diretorId = reader["DiretorId"].ToString();
                 string diretor = reader["Diretor"].ToString();
+                string filmeId = reader["Id"].ToString();
                 string titulo = reader["Titulo"].ToString();
-                Console.WriteLine("DiretorId: {0}, Nome: {1}, Título: {2}", diretorId, diretor, titulo);
+                Console.WriteLine("Diretor: {0}, Titulo: {1}-{2}", diretor, filmeId, titulo);
             }
+
             reader.Close();
         }
 
         #region Banco de dados
 
-        private async Task CriarBancoDeDadosAsync()
+        private static async Task CriarBancoDeDadosAsync()
         {
             await CriarBancoAsync();
             await CriarTabelasAsync();
             await InserirRegistrosAsync();
         }
 
-        private async Task CriarBancoAsync()
+        private static async Task CriarBancoAsync()
         {
             string sql = $@"IF EXISTS (SELECT * FROM sys.databases WHERE name = N'{DatabaseName}')
                     BEGIN
@@ -80,7 +89,7 @@ namespace _08_06_XX_Lendo_Atualizando_Banco_Dados.Depois
             await ExecutarComandoAsync(sql, MasterDatabase);
         }
 
-        private async Task CriarTabelasAsync()
+        private static async Task CriarTabelasAsync()
         {
             string sql = $@"CREATE TABLE [dbo].[Diretores] (
                         [Id]   INT           IDENTITY (1, 1) NOT NULL,
@@ -93,13 +102,14 @@ namespace _08_06_XX_Lendo_Atualizando_Banco_Dados.Depois
                         [Ano]       INT           NOT NULL,
                         [Minutos]   INT           NOT NULL
                     );";
+
             await ExecutarComandoAsync(sql, DatabaseName);
         }
 
-        private async Task InserirRegistrosAsync()
+        private static async Task InserirRegistrosAsync()
         {
             string sql = @"
-                    INSERT Diretores (Nome) VALUES ('Quentin Jerome Tarantino');
+                    INSERT Diretores (Nome) VALUES ('Quentin Tarantino');
                     INSERT Diretores (Nome) VALUES ('James Cameron');
                     INSERT Diretores (Nome) VALUES ('Tim Burton');
 
@@ -108,16 +118,16 @@ namespace _08_06_XX_Lendo_Atualizando_Banco_Dados.Depois
                     INSERT Filmes (DiretorId, Titulo, Ano, Minutos) VALUES (1, 'Kill Bill Volume 1', 2003,	111);
                     INSERT Filmes (DiretorId, Titulo, Ano, Minutos) VALUES (2, 'Avatar', 2009,	162);
                     INSERT Filmes (DiretorId, Titulo, Ano, Minutos) VALUES (2, 'Titanic', 1997,	194);
-                    INSERT Filmes (DiretorId, Titulo, Ano, Minutos) VALUES (2, 'O Exterminador do Futuro', 1984,	107);
+                    INSERT Filmes (DiretorId, Titulo, Ano, Minutos) VALUES (2, 'O Exterminador', 1984,	107);
                     INSERT Filmes (DiretorId, Titulo, Ano, Minutos) VALUES (3, 'O Estranho Mundo de Jack', 1993,	76);
-                    INSERT Filmes (DiretorId, Titulo, Ano, Minutos) VALUES (3, 'Alice no País das Maravilhas', 2010,	108);
+                    INSERT Filmes (DiretorId, Titulo, Ano, Minutos) VALUES (3, 'Alice', 2010,	108);
                     INSERT Filmes (DiretorId, Titulo, Ano, Minutos) VALUES (3, 'A Noiva Cadáver', 2005,	77);
                     INSERT Filmes (DiretorId, Titulo, Ano, Minutos) VALUES (3, 'A Fantástica Fábrica de Chocolate', 2005,	115);";
 
             await ExecutarComandoAsync(sql, DatabaseName);
         }
 
-        private async Task ExecutarComandoAsync(string sql, string banco)
+        private static async Task ExecutarComandoAsync(string sql, string banco)
         {
             SqlConnection conexao = new SqlConnection($"Server={DatabaseServer};Integrated security=SSPI;database={banco}");
             SqlCommand comando = new SqlCommand(sql, conexao);
