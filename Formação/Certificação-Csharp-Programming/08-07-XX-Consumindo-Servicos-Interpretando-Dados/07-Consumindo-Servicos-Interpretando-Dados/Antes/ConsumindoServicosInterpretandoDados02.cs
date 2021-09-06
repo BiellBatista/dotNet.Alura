@@ -1,6 +1,6 @@
 ﻿namespace _08_07_XX_Consumindo_Servicos_Interpretando_Dados.Antes
 {
-    public class ConsumindoServicosInterpretandoDados02 : IAulaItem
+    public class ConsumindoServicosInterpretandoDados02 : IAulaItem // XML elements
     {
         public void Executar()
         {
