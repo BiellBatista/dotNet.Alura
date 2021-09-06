@@ -93,6 +93,8 @@ namespace _08_06_XX_Lendo_Atualizando_Banco_Dados
                 new MenuItem("Acessando a Web em Aplicativos Móveis, Windows, Web, etc", typeof(AcessandoWebFormaAssincrona04)),
                 new MenuItem("Gravando e Lendo de Forma Assíncrona", typeof(AcessandoWebFormaAssincrona05)),
                 new MenuItem("Capturando Exceções em Métodos Assíncronos", typeof(AcessandoWebFormaAssincrona06)),
+                new MenuItem("Lendo e Atualizando Banco de Dados", typeof(LendoAtualizandoBancoDados01)),
+                new MenuItem("Criando Comando e Lendo Dados da Consulta", typeof(LendoAtualizandoBancoDados02)),
             };
         }
     }

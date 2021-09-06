@@ -1,6 +1,6 @@
 ﻿namespace _08_06_XX_Lendo_Atualizando_Banco_Dados.Antes
 {
-    public class LendoAtualizandoBancoDados1 : IAulaItem //Ler Dados com SQL
+    public class LendoAtualizandoBancoDados01 : IAulaItem //Ler Dados com SQL
     {
         public void Executar()
         {

@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace _08_06_XX_Lendo_Atualizando_Banco_Dados.Depois
 {
-    public class LendoAtualizandoBancoDados1 : IAulaItem //Ler Dados com SQL
+    public class LendoAtualizandoBancoDados02 : IAulaItem //Update With SQL
     {
-        private const string DatabaseServer = @"(localdb)\MSSQLLocalDB";
+        private const string DatabaseServer = "(LocalDB)\\MSSQLLocalDB";
         private const string MasterDatabase = "master";
         private const string DatabaseName = "Cinema";
 
@@ -15,36 +15,48 @@ namespace _08_06_XX_Lendo_Atualizando_Banco_Dados.Depois
         {
             CriarBancoDeDadosAsync().Wait();
 
-            //TAREFAS:
-            //1. ABRIR UMA CONEXÃO COM O BANCO DE DADOS
-            //2. CRIAR UMA CONSULTA PARA TRAZER DIRETOR E TÍTULO DO FILME
-            //3. LER E EXIBIR OS RESULTADOS DA CONSULTA
+            string connectionString = $"Server={DatabaseServer};Integrated security=SSPI;database={DatabaseName}";
 
-            const string ConnectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Cinema;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-
-            using (var conexao = new SqlConnection(ConnectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                conexao.OpenAsync().Wait();
+                connection.Open();
 
-                using (var comando =
-                    new SqlCommand(@"SELECT d.Nome AS Diretor, f.Titulo AS Titulo
-                                FROM Filmes AS f
-                                INNER JOIN Diretores AS d
-                                    ON d.Id = f.DiretorId", conexao))
+                //TAREFA:
+                //1. Mudar o nome do primeiro diretor para "Quentin Tarantino"
+                //2. Contar quantas linhas foram atualizadas
+
+                var sql = "UPDATE Diretores SET Nome = 'Quentin Tarantino' WHERE Id = 1";
+                using (var comando = new SqlCommand(sql, connection))
                 {
-                    var leitor = comando.ExecuteReaderAsync().Result;
+                    var linhas = comando.ExecuteNonQueryAsync().Result;
 
-                    while (leitor.ReadAsync().Result)
-                    {
-                        var diretor = leitor["Diretor"];
-                        var titulo = leitor["Titulo"];
-
-                        Console.WriteLine($"Diretor: {diretor} - Título: {titulo}");
-                    }
+                    Console.WriteLine("Número de linhas atualizadas: {0}", linhas);
                 }
+
+                ListarFilmes(connection).Wait();
             }
 
             Console.ReadKey();
+        }
+
+        private async Task ListarFilmes(SqlConnection connection)
+        {
+            SqlCommand command = new SqlCommand(
+                " SELECT d.Id AS DiretorId, d.Nome AS Diretor, f.Titulo AS Titulo" +
+                " FROM Filmes AS f" +
+                " INNER JOIN Diretores AS d" +
+                "   ON d.Id = f.DiretorId"
+                , connection);
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (await reader.ReadAsync())
+            {
+                string diretorId = reader["DiretorId"].ToString();
+                string diretor = reader["Diretor"].ToString();
+                string titulo = reader["Titulo"].ToString();
+                Console.WriteLine("DiretorId: {0}, Nome: {1}, Título: {2}", diretorId, diretor, titulo);
+            }
+            reader.Close();
         }
 
         #region Banco de dados
@@ -80,14 +92,13 @@ namespace _08_06_XX_Lendo_Atualizando_Banco_Dados.Depois
                         [Ano]       INT           NOT NULL,
                         [Minutos]   INT           NOT NULL
                     );";
-
             await ExecutarComandoAsync(sql, DatabaseName);
         }
 
         private async Task InserirRegistrosAsync()
         {
             string sql = @"
-                    INSERT Diretores (Nome) VALUES ('Quentin Tarantino');
+                    INSERT Diretores (Nome) VALUES ('Quentin Jerome Tarantino');
                     INSERT Diretores (Nome) VALUES ('James Cameron');
                     INSERT Diretores (Nome) VALUES ('Tim Burton');
 
@@ -107,18 +118,15 @@ namespace _08_06_XX_Lendo_Atualizando_Banco_Dados.Depois
 
         private async Task ExecutarComandoAsync(string sql, string banco)
         {
-            if (string.IsNullOrWhiteSpace(DatabaseServer))
-            {
-                throw new Exception("DatabaseServer precisa ser definido!");
-            }
-
             SqlConnection conexao = new SqlConnection($"Server={DatabaseServer};Integrated security=SSPI;database={banco}");
             SqlCommand comando = new SqlCommand(sql, conexao);
 
             try
             {
                 conexao.Open();
+
                 await comando.ExecuteNonQueryAsync();
+
                 Console.WriteLine("Script executado com sucesso.");
             }
             catch (System.Exception ex)
