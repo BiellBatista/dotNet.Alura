@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _09_01_XX_Gerenciando_Assemblies.Depois;
+using System;
 using System.Collections.Generic;
 
 namespace _09_01_XX_Gerenciando_Assemblies
@@ -74,6 +75,7 @@ namespace _09_01_XX_Gerenciando_Assemblies
         {
             return new List<MenuItem>
             {
+                new MenuItem("Gerenciando Assemblies", typeof(Startup)),
             };
         }
     }
