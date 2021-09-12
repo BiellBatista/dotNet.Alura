@@ -95,13 +95,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-03-XX-Gerenciando-Arquiv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-04-XX-Gerenciando-Diretorios", "08-04-XX-Gerenciando-Diretorios\08-04-XX-Gerenciando-Diretorios.csproj", "{00378AD6-0228-421A-995E-550D9E6FBED9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-05-XX-Acessando-Web-Forma-Assincrona", "08-05-XX-Acessando-Web-Forma-Assincrona\08-05-XX-Acessando-Web-Forma-Assincrona.csproj", "{3B35B434-AB2F-4735-AB5B-12E103EEE6B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-05-XX-Acessando-Web-Forma-Assincrona", "08-05-XX-Acessando-Web-Forma-Assincrona\08-05-XX-Acessando-Web-Forma-Assincrona.csproj", "{3B35B434-AB2F-4735-AB5B-12E103EEE6B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-06-XX-Lendo-Atualizando-Banco-Dados", "08-06-XX-Lendo-Atualizando-Banco-Dados\08-06-XX-Lendo-Atualizando-Banco-Dados.csproj", "{F11833DD-CEC4-4BD0-B12E-1FCC4E7D0882}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-06-XX-Lendo-Atualizando-Banco-Dados", "08-06-XX-Lendo-Atualizando-Banco-Dados\08-06-XX-Lendo-Atualizando-Banco-Dados.csproj", "{F11833DD-CEC4-4BD0-B12E-1FCC4E7D0882}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-07-XX-Consumindo-Servicos-Interpretando-Dados", "08-07-XX-Consumindo-Servicos-Interpretando-Dados\08-07-XX-Consumindo-Servicos-Interpretando-Dados.csproj", "{DF88FB06-5AEE-49EF-97AA-B69E8D87E8EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-07-XX-Consumindo-Servicos-Interpretando-Dados", "08-07-XX-Consumindo-Servicos-Interpretando-Dados\08-07-XX-Consumindo-Servicos-Interpretando-Dados.csproj", "{DF88FB06-5AEE-49EF-97AA-B69E8D87E8EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-01-XX-Gerenciando-Assemblies", "09-01-XX-Gerenciando-Assemblies\09-01-XX-Gerenciando-Assemblies.csproj", "{A1F9B8A0-828F-4089-B179-02A4EB95BA04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-01-XX-Gerenciando-Assemblies", "09-01-XX-Gerenciando-Assemblies\09-01-XX-Gerenciando-Assemblies.csproj", "{A1F9B8A0-828F-4089-B179-02A4EB95BA04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-02-XX-Assinando-Assemblies-Nome-Forte", "09-02-XX-Assinando-Assemblies-Nome-Forte\09-02-XX-Assinando-Assemblies-Nome-Forte.csproj", "{CEF1ED8D-EBA1-4EFF-91BD-A01129F4EBE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -309,6 +311,10 @@ Global
 		{A1F9B8A0-828F-4089-B179-02A4EB95BA04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1F9B8A0-828F-4089-B179-02A4EB95BA04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1F9B8A0-828F-4089-B179-02A4EB95BA04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEF1ED8D-EBA1-4EFF-91BD-A01129F4EBE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEF1ED8D-EBA1-4EFF-91BD-A01129F4EBE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEF1ED8D-EBA1-4EFF-91BD-A01129F4EBE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEF1ED8D-EBA1-4EFF-91BD-A01129F4EBE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

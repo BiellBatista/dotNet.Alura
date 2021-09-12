@@ -9,9 +9,9 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _09_01_XX_Gerenciando_Assemblies.Depois
+namespace _09_02_XX_Assinando_Assemblies_Nome_Forte.Depois
 {
-    public class CinemaDB
+    public class CinemaDB02
     {
         //bool ModoDebug = false;
 
@@ -19,7 +19,7 @@ namespace _09_01_XX_Gerenciando_Assemblies.Depois
         private readonly string masterDatabase;
         private readonly string databaseName;
 
-        public CinemaDB(string databaseServer, string masterDatabase, string databaseName)
+        public CinemaDB02(string databaseServer, string masterDatabase, string databaseName)
         {
             this.databaseServer = databaseServer;
             this.masterDatabase = masterDatabase;
@@ -145,12 +145,12 @@ namespace _09_01_XX_Gerenciando_Assemblies.Depois
             }
         }
 
-        public async Task<IList<Filme>> GetFilmes()
+        public async Task<IList<Filme02>> GetFilmes()
         {
             Trace.WriteLine("Entrando no método GetFilmes", "MÉTODO");
             Trace.Indent();
 
-            IList<Filme> filmes = new List<Filme>();
+            IList<Filme02> filmes = new List<Filme02>();
             string connectionString = $"Server={databaseServer};Integrated security=SSPI;database={databaseName}";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -171,7 +171,7 @@ namespace _09_01_XX_Gerenciando_Assemblies.Depois
                     string diretor = reader["Diretor"].ToString();
                     string titulo = reader["Titulo"].ToString();
 
-                    filmes.Add(new Filme(diretor, titulo));
+                    filmes.Add(new Filme02(diretor, titulo));
                 }
 #line default
             }
@@ -200,13 +200,13 @@ namespace _09_01_XX_Gerenciando_Assemblies.Depois
         [Conditional("MODO_DEBUG_DETALHADO")]
         [Obsolete("Este método está obsoleto. Utilize o novo método ExibirFilmesJsonFormatado")]
         [DebuggerStepThrough]
-        private void ExibirFilmesJson(IList<Filme> filmes)
+        private void ExibirFilmesJson(IList<Filme02> filmes)
         {
             Trace.WriteLine("O método GetFilmes() foi executado com sucesso. {0}", JsonConvert.SerializeObject(filmes));
         }
 
         [Conditional("MODO_DEBUG_DETALHADO")]
-        private void ExibirFilmesJsonFormatado(IList<Filme> filmes)
+        private void ExibirFilmesJsonFormatado(IList<Filme02> filmes)
         {
             Trace.WriteLine("O método GetFilmes() foi executado com sucesso. {0}", JsonConvert.SerializeObject(filmes, Formatting.Indented));
         }

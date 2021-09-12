@@ -9,7 +9,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _09_01_XX_Gerenciando_Assemblies.Depois
+namespace _09_02_XX_Assinando_Assemblies_Nome_Forte.Depois
 {
     public class CinemaDB
     {

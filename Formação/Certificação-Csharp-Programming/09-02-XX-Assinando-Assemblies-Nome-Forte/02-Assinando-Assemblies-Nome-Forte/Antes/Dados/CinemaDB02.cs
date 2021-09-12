@@ -1,25 +1,21 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _09_01_XX_Gerenciando_Assemblies.Depois
+namespace _09_02_XX_Assinando_Assemblies_Nome_Forte.Antes
 {
-    public class CinemaDB
+    public class CinemaDB02
     {
-        //bool ModoDebug = false;
-
         private readonly string databaseServer;
         private readonly string masterDatabase;
         private readonly string databaseName;
 
-        public CinemaDB(string databaseServer, string masterDatabase, string databaseName)
+        public CinemaDB02(string databaseServer, string masterDatabase, string databaseName)
         {
             this.databaseServer = databaseServer;
             this.masterDatabase = masterDatabase;
@@ -28,29 +24,9 @@ namespace _09_01_XX_Gerenciando_Assemblies.Depois
 
         public async Task CriarBancoDeDadosAsync()
         {
-            Trace.WriteLine("Entrando no método CriarBancoDeDadosAsync", "MÉTODO");
-            Trace.Indent();
-
-            Stopwatch stopwatch = new Stopwatch();
-            stopwatch.Start();
-
             await CriarBancoAsync();
             await CriarTabelasAsync();
-
-            stopwatch.Stop();
-
-            Console.WriteLine("Criação do banco e tabelas: {0} milissegundos", stopwatch.ElapsedMilliseconds);
-
-            stopwatch.Restart();
-
             await InserirRegistrosAsync();
-
-            stopwatch.Stop();
-
-            Console.WriteLine("Inserção no banco de dados: {0} milissegundos", stopwatch.ElapsedMilliseconds);
-
-            Trace.Unindent();
-            Trace.WriteLine("Saindo do método CriarBancoDeDadosAsync", "MÉTODO");
         }
 
         private async Task CriarBancoAsync()
@@ -60,7 +36,6 @@ namespace _09_01_XX_Gerenciando_Assemblies.Depois
                         DROP DATABASE [{databaseName}]
                     END;
                     CREATE DATABASE [{databaseName}];";
-
             await ExecutarComandoAsync(sql, masterDatabase);
         }
 
@@ -77,20 +52,19 @@ namespace _09_01_XX_Gerenciando_Assemblies.Depois
                         [Ano]       INT           NOT NULL,
                         [Minutos]   INT           NOT NULL
                     );";
-
             await ExecutarComandoAsync(sql, databaseName);
         }
 
         private async Task InserirRegistrosAsync()
         {
             var assembly = Assembly.GetExecutingAssembly();
+
             var sql = new StringBuilder();
 
             using (Stream stream = assembly.GetManifestResourceStream("Cinema.Dados.Diretores.txt"))
             using (StreamReader reader = new StreamReader(stream))
             {
                 string line;
-
                 while ((line = await reader.ReadLineAsync()) != null)
                 {
                     sql.AppendLine($"INSERT Diretores (Nome) VALUES ('{line}');");
@@ -101,7 +75,6 @@ namespace _09_01_XX_Gerenciando_Assemblies.Depois
             using (StreamReader reader = new StreamReader(stream))
             {
                 string line;
-
                 while ((line = await reader.ReadLineAsync()) != null)
                 {
                     string[] fields = line.Split(',');
@@ -109,7 +82,6 @@ namespace _09_01_XX_Gerenciando_Assemblies.Depois
                     string titulo = fields[1];
                     string ano = fields[2];
                     string minutos = fields[3];
-
                     sql.AppendLine($"INSERT Filmes (DiretorId, Titulo, Ano, Minutos) VALUES ({diretorId},'{titulo}',{ano},{minutos})");
                 }
             }
@@ -121,20 +93,15 @@ namespace _09_01_XX_Gerenciando_Assemblies.Depois
         {
             SqlConnection conexao = new SqlConnection($"Server={databaseServer};Integrated security=SSPI;database={banco}");
             SqlCommand comando = new SqlCommand(sql, conexao);
-
             try
             {
                 conexao.Open();
-
                 await comando.ExecuteNonQueryAsync();
-
-                Trace.WriteLine($"Script executado com sucesso: {sql}", "SCRIPT");
+                Console.WriteLine("Script executado com sucesso.");
             }
             catch (System.Exception ex)
             {
-                Trace.TraceError(ex.ToString());
-
-                throw;
+                Console.WriteLine(ex.ToString());
             }
             finally
             {
@@ -145,18 +112,13 @@ namespace _09_01_XX_Gerenciando_Assemblies.Depois
             }
         }
 
-        public async Task<IList<Filme>> GetFilmes()
+        public async Task<IList<Filme02>> GetFilmes()
         {
-            Trace.WriteLine("Entrando no método GetFilmes", "MÉTODO");
-            Trace.Indent();
-
-            IList<Filme> filmes = new List<Filme>();
+            IList<Filme02> filmes = new List<Filme02>();
             string connectionString = $"Server={databaseServer};Integrated security=SSPI;database={databaseName}";
-
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-
                 SqlCommand command = new SqlCommand(
                     " SELECT d.Nome AS Diretor, f.Titulo AS Titulo" +
                     " FROM Filmes AS f" +
@@ -165,50 +127,15 @@ namespace _09_01_XX_Gerenciando_Assemblies.Depois
                     , connection);
                 SqlDataReader reader = await command.ExecuteReaderAsync();
 
-#line hidden
                 while (reader.Read())
                 {
                     string diretor = reader["Diretor"].ToString();
                     string titulo = reader["Titulo"].ToString();
-
-                    filmes.Add(new Filme(diretor, titulo));
+                    filmes.Add(new Filme02(diretor, titulo));
                 }
-#line default
             }
 
-#if MODO_DEBUG && MODO_DEBUG_DETALHADO
-#error Você não pode usar mais de um modo de debug!
-#endif
-
-#if MODO_DEBUG
-            Trace.WriteLine("O método GetFilmes() foi executado com sucesso.");
-#elif MODO_DEBUG_QUANTIDADE
-                Trace.WriteLine("O método GetFilmes() foi executado com sucesso. {0} filmes retornados.", filmes.Count);
-//#elif MODO_DEBUG_DETALHADO
-//            ExibirFilmesJson(filmes);
-#endif
-
-#pragma warning disable CS0618 // Type or member is obsolete
-            ExibirFilmesJson(filmes);
-#pragma warning restore CS0618 // Type or member is obsolete
-            Trace.Unindent();
-            Trace.WriteLine("Saindo do método GetFilmes", "MÉTODO");
-
             return filmes;
-        }
-
-        [Conditional("MODO_DEBUG_DETALHADO")]
-        [Obsolete("Este método está obsoleto. Utilize o novo método ExibirFilmesJsonFormatado")]
-        [DebuggerStepThrough]
-        private void ExibirFilmesJson(IList<Filme> filmes)
-        {
-            Trace.WriteLine("O método GetFilmes() foi executado com sucesso. {0}", JsonConvert.SerializeObject(filmes));
-        }
-
-        [Conditional("MODO_DEBUG_DETALHADO")]
-        private void ExibirFilmesJsonFormatado(IList<Filme> filmes)
-        {
-            Trace.WriteLine("O método GetFilmes() foi executado com sucesso. {0}", JsonConvert.SerializeObject(filmes, Formatting.Indented));
         }
     }
 }

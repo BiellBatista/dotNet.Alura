@@ -5,11 +5,11 @@
 		<RootNamespace>_08_05_XX_Acessando_Web_Forma_Assincrona</RootNamespace>
 	</PropertyGroup>
 	<ItemGroup>
-	  <None Remove="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Antes\Diretores.txt" />
-	  <None Remove="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\Diretores.txt" />
+		<None Remove="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Antes\Diretores.txt" />
+		<None Remove="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\Diretores.txt" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Content Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Antes\Diretores.txt" />
-	  <Content Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\Diretores.txt" />
+		<Content Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Antes\Diretores.txt" />
+		<Content Include="01-Ler-Gravar-Bytes-Fluxos-Arquivos\Depois\Diretores.txt" />
 	</ItemGroup>
 </Project>
