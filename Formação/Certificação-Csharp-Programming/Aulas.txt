@@ -578,6 +578,14 @@ Certificação C# Programming parte 9: Depurar Aplicativos
 		09 - O que aprendemos?
 	02 - Assinando Assemblies com Nome Forte
 		01 - Assinando Assemblies com Nome Forte
+		02 - Assinatura Atrasada
+		03 - Assembly não-totalmente assinado (B / C)
+		04 - Arquivos de Chaves e Atributos de Assinatura em AssemblyInfo cs
+		05 - Definindo assembly com assinatura atrasada (B / D)
+		06 - O Cache de Assembly Global
+		07 - Implantando no cache global de assemblies (B)
+		08 - Faça como eu fiz na aula
+		09 - O que aprendemos?
 	03 - Depurando Aplicações
 	04 - Compilação Condicional
 	05 - Compilação em Modo Debug e Release

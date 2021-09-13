@@ -4,6 +4,7 @@
 		<TargetFramework>net5.0</TargetFramework>
 		<RootNamespace>_09_02_XX_Assinando_Assemblies_Nome_Forte</RootNamespace>
 	</PropertyGroup>
+
 	<ItemGroup>
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 		<PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
