@@ -4,10 +4,11 @@
 		<TargetFramework>net5.0</TargetFramework>
 		<RootNamespace>_09_06_XX_Rastreamento_Aplicacoes</RootNamespace>
 	</PropertyGroup>
+
 	<ItemGroup>
-	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-	  <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
-	  <PackageReference Include="System.Diagnostics.EventLog" Version="5.0.1" />
-	  <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="5.0.1" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+		<PackageReference Include="System.Diagnostics.EventLog" Version="5.0.1" />
+		<PackageReference Include="System.Diagnostics.PerformanceCounter" Version="5.0.1" />
 	</ItemGroup>
 </Project>
