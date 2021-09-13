@@ -605,6 +605,15 @@ Certificação C# Programming parte 9: Depurar Aplicativos
 		08 - O que aprendemos?
 	05 - Compilação em Modo Debug e Release
 		01 - Escolhendo entre Debug e Release
+		02 - Detectando os Modos Debug e Release (D)
+		03 - Definindo código para os modos DEBUG e RELEASE (C)
+		04 - Trabalhando com Arquivos de Símbolos de Depuração
+		05 - Melhorando o Relatório de Filmes
+		06 - Usando a Classe Debug e Janela Output
+		07 - Estruturando as Informações de Debug
+		08 - Atributos X diretivas de compilação condicional
+		09 - Faça como eu fiz na aula
+		10 - O que aprendemos?
 	06 - Rastreamento de Aplicações
 	07 - Gravando Mensagens no Event Log
 	08 - Contadores de Desempenho
