@@ -595,6 +595,7 @@ Certificação C# Programming parte 9: Depurar Aplicativos
 		06 - Faça como eu fiz na aula
 		07 - O que aprendemos?
 	04 - Compilação Condicional
+		01 - Atributo de Compilação Condicional
 	05 - Compilação em Modo Debug e Release
 	06 - Rastreamento de Aplicações
 	07 - Gravando Mensagens no Event Log
