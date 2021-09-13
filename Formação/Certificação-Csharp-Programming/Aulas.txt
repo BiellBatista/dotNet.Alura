@@ -615,6 +615,7 @@ Certificação C# Programming parte 9: Depurar Aplicativos
 		09 - Faça como eu fiz na aula
 		10 - O que aprendemos?
 	06 - Rastreamento de Aplicações
+		01 - A Classe Trace
 	07 - Gravando Mensagens no Event Log
 	08 - Contadores de Desempenho
 Certificação C# Programming parte 10: Reflection

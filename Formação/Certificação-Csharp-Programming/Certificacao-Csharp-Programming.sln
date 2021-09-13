@@ -103,13 +103,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-07-XX-Consumindo-Servico
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-01-XX-Gerenciando-Assemblies", "09-01-XX-Gerenciando-Assemblies\09-01-XX-Gerenciando-Assemblies.csproj", "{A1F9B8A0-828F-4089-B179-02A4EB95BA04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-02-XX-Assinando-Assemblies-Nome-Forte", "09-02-XX-Assinando-Assemblies-Nome-Forte\09-02-XX-Assinando-Assemblies-Nome-Forte.csproj", "{CEF1ED8D-EBA1-4EFF-91BD-A01129F4EBE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-02-XX-Assinando-Assemblies-Nome-Forte", "09-02-XX-Assinando-Assemblies-Nome-Forte\09-02-XX-Assinando-Assemblies-Nome-Forte.csproj", "{CEF1ED8D-EBA1-4EFF-91BD-A01129F4EBE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-03-XX-Depurando-Aplicacoes", "09-03-XX-Depurando-Aplicacoes\09-03-XX-Depurando-Aplicacoes.csproj", "{599707AB-8076-4F6A-A25A-5165228FA45A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-03-XX-Depurando-Aplicacoes", "09-03-XX-Depurando-Aplicacoes\09-03-XX-Depurando-Aplicacoes.csproj", "{599707AB-8076-4F6A-A25A-5165228FA45A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-04-XX-Compilacao-Condicional", "09-04-XX-Compilacao-Condicional\09-04-XX-Compilacao-Condicional.csproj", "{37AFDBA4-702B-42D6-AAA5-F3C75921065E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-04-XX-Compilacao-Condicional", "09-04-XX-Compilacao-Condicional\09-04-XX-Compilacao-Condicional.csproj", "{37AFDBA4-702B-42D6-AAA5-F3C75921065E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-05-XX-Compilacao-Modo-Debug-Release", "09-05-XX-Compilacao-Modo-Debug-Release\09-05-XX-Compilacao-Modo-Debug-Release.csproj", "{93B6EE1D-EE2B-4473-9CB0-B73948E937ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-05-XX-Compilacao-Modo-Debug-Release", "09-05-XX-Compilacao-Modo-Debug-Release\09-05-XX-Compilacao-Modo-Debug-Release.csproj", "{93B6EE1D-EE2B-4473-9CB0-B73948E937ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-06-XX-Rastreamento-Aplicacoes", "09-06-XX-Rastreamento-Aplicacoes\09-06-XX-Rastreamento-Aplicacoes.csproj", "{9DDFB806-C428-4DD5-91FC-1CD4BF7933BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -333,6 +335,10 @@ Global
 		{93B6EE1D-EE2B-4473-9CB0-B73948E937ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93B6EE1D-EE2B-4473-9CB0-B73948E937ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93B6EE1D-EE2B-4473-9CB0-B73948E937ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DDFB806-C428-4DD5-91FC-1CD4BF7933BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DDFB806-C428-4DD5-91FC-1CD4BF7933BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DDFB806-C428-4DD5-91FC-1CD4BF7933BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DDFB806-C428-4DD5-91FC-1CD4BF7933BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
