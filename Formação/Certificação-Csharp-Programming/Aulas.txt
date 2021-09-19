@@ -636,6 +636,15 @@ Certificação C# Programming parte 9: Depurar Aplicativos
 		09 - O que aprendemos?
 	08 - Contadores de Desempenho
 		01 - Preparando a Aplicação Para Monitorar Desempenho
+		02 - Adicionando Projeto CinemaPerformance
+		03 - Incrementando Contadores de Desempenho
+		04 - Entendendo a Criação de Categoria e Contadores de Desempenho
+		05 - Escolhendo Contadores de Performance (B)
+		06 - Definindo e criando contador de desempenho
+		07 - Projeto do Curso
+		08 - Conclusão
+		09 - Faça como eu fiz na aula
+		10 - O que aprendemos?
 Certificação C# Programming parte 10: Reflection
 	01 - Criar e aplicar atributos
 	02 - Ler os atributos
