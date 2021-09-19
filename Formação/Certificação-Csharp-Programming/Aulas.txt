@@ -647,6 +647,7 @@ Certificação C# Programming parte 9: Depurar Aplicativos
 		10 - O que aprendemos?
 Certificação C# Programming parte 10: Reflection
 	01 - Criar e aplicar atributos
+		01 - Introdução
 	02 - Ler os atributos
 	03 - Usar reflection
 	04 - Geração de código
