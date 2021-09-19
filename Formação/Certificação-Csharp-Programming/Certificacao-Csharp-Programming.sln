@@ -121,6 +121,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-01-XX-Criar-aplicar-atri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-02-XX-Ler-atributos", "10-02-XX-Ler-atributos\10-02-XX-Ler-atributos.csproj", "{65DE73ED-176D-43FF-A75A-E2EE957C04A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-03-XX-Usar-reflection", "10-03-XX-Usar-reflection\10-03-XX-Usar-reflection.csproj", "{802DF093-E655-4353-909D-E087F9F0BFA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -363,6 +365,10 @@ Global
 		{65DE73ED-176D-43FF-A75A-E2EE957C04A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65DE73ED-176D-43FF-A75A-E2EE957C04A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65DE73ED-176D-43FF-A75A-E2EE957C04A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{802DF093-E655-4353-909D-E087F9F0BFA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{802DF093-E655-4353-909D-E087F9F0BFA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{802DF093-E655-4353-909D-E087F9F0BFA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{802DF093-E655-4353-909D-E087F9F0BFA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
