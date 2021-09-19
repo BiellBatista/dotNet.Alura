@@ -40,7 +40,7 @@ namespace _10_01_XX_Criar_aplicar_atributos.Depois
             Conditional("RELATORIO_DETALHADO")]
         private void Cabecalho()
         {
-            Console.WriteLine(this.Nome);
+            Console.WriteLine(Nome);
             Console.WriteLine("=============================");
         }
 
