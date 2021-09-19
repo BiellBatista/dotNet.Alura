@@ -664,10 +664,15 @@ Certificação C# Programming parte 10: Reflection
 		04 - O que aprendemos?
 	03 - Usar reflection
 		01 - Acessando Membros Via Reflection
+		02 - Altere esta propriedade via reflection (A / D)
+		03 - Chamando um método via reflection (A)
+		04 - Acessando Classes e Interfaces Via Reflection
+		05 - Faça como eu fiz na aula
+		06 - O que aprendemos?
 	04 - Geração de código
 	05 - Tipos do System Reflection
 Certificação C# Programming parte 11: Multithreading
-	01 - Introdução ao Task Parallel Library Ver primeiro vídeo
+	01 - Introdução ao Task Parallel Library
 	02 - Consultas LINQ com Paralelismo
 	03 - Espera, Continuação e Hierarquia de Tarefas
 	04 - Threads
