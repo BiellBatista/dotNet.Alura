@@ -699,6 +699,7 @@ Certificação C# Programming parte 11: Multithreading
 		09 - Faça como eu fiz na aula
 		10 - O que aprendemos?
 	02 - Consultas LINQ com Paralelismo
+		01 - Apresentando PLINQ
 	03 - Espera, Continuação e Hierarquia de Tarefas
 	04 - Threads
 	05 - Desbloqueando a Interface do Usuário
