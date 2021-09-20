@@ -688,6 +688,9 @@ Certificação C# Programming parte 10: Reflection
 		07 - O que aprendemos?
 Certificação C# Programming parte 11: Multithreading
 	01 - Introdução ao Task Parallel Library
+		01 - Introdução
+		02 - Projeto do Curso
+		03 - Tarefas em Série e em Paralelo
 	02 - Consultas LINQ com Paralelismo
 	03 - Espera, Continuação e Hierarquia de Tarefas
 	04 - Threads
