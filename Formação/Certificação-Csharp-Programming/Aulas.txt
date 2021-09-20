@@ -707,6 +707,15 @@ Certificação C# Programming parte 11: Multithreading
 		06 - O que aprendemos?
 	03 - Espera, Continuação e Hierarquia de Tarefas
 		01 - Gerenciando Tarefas
+		02 - Aguardando o fim de Várias Tarefas
+		03 - Aguarde as tarefas terminarem (B)
+		04 - Tarefas de Continuação
+		05 - Criando tarefas a partir de métodos (C / D)
+		06 - Tarefa Mãe e Tarefas Filhas
+		07 - Condicionando execução de uma tarefa ao resultado da tarefa anterior (C)
+		08 - Execução em caso de sucesso e falha (B)
+		09 - Faça como eu fiz na aula
+		10 - O que aprendemos?
 	04 - Threads
 	05 - Desbloqueando a Interface do Usuário
 	06 - Async, Await, Coleções Simultâneas e Bloqueios
