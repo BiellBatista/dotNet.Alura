@@ -1,8 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net5.0</TargetFramework>
-		<RootNamespace>_11_02_XX_Consultas_LINQ_Paralelismo</RootNamespace>
+		<RootNamespace>_11_03_XX_Espera_Continuacao_Hierarquia_Tarefas</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>

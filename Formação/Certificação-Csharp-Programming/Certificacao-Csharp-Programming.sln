@@ -131,6 +131,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-01-XX-Introducao-Task-Pa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-02-XX-Consultas-LINQ-Paralelismo", "11-02-XX-Consultas-LINQ-Paralelismo\11-02-XX-Consultas-LINQ-Paralelismo.csproj", "{16E47811-A9E9-4243-8375-F101CBD79D43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-03-XX-Espera-Continuacao-Hierarquia-Tarefas", "11-03-XX-Espera-Continuacao-Hierarquia-Tarefas\11-03-XX-Espera-Continuacao-Hierarquia-Tarefas.csproj", "{B54199BD-8F1A-4F1B-ACAC-9CEE2C015C40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -393,6 +395,10 @@ Global
 		{16E47811-A9E9-4243-8375-F101CBD79D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16E47811-A9E9-4243-8375-F101CBD79D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16E47811-A9E9-4243-8375-F101CBD79D43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B54199BD-8F1A-4F1B-ACAC-9CEE2C015C40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B54199BD-8F1A-4F1B-ACAC-9CEE2C015C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B54199BD-8F1A-4F1B-ACAC-9CEE2C015C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B54199BD-8F1A-4F1B-ACAC-9CEE2C015C40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
