@@ -718,6 +718,12 @@ Certificação C# Programming parte 11: Multithreading
 		10 - O que aprendemos?
 	04 - Threads
 		01 - Trabalhando com Threads
+		02 - Interrompendo e Sincronizando Threads
+		03 - Interrompa este relógio (A / D)
+		04 - Obtendo Informações Sobre a Thread
+		05 - Trabalhando Com Pool de Threads
+		06 - Faça como eu fiz na aula
+		07 - O que aprendemos?
 	05 - Desbloqueando a Interface do Usuário
 	06 - Async, Await, Coleções Simultâneas e Bloqueios
 	07 - Cancelamento de Tarefas e Métodos Thread Safe

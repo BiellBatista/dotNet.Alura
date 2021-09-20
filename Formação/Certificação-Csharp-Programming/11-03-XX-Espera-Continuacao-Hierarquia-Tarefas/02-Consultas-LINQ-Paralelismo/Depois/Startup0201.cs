@@ -57,9 +57,9 @@ namespace _11_03_XX_Espera_Continuacao_Hierarquia_Tarefas.Depois
             Console.ReadKey();
 
             relogioFuncionando = false;
-            thread4.Join();
 
             //5. Sincronizando uma thread
+            thread4.Join();
 
             //6. Dados da Thread: Nome, cultura, prioridade, contexto, background, pool
 

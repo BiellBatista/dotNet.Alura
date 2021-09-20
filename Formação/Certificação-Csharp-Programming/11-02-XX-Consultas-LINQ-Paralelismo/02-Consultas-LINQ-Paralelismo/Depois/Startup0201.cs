@@ -57,9 +57,9 @@ namespace _11_02_XX_Consultas_LINQ_Paralelismo.Depois
             Console.ReadKey();
 
             relogioFuncionando = false;
-            thread4.Join();
 
             //5. Sincronizando uma thread
+            thread4.Join();
 
             //6. Dados da Thread: Nome, cultura, prioridade, contexto, background, pool
 
