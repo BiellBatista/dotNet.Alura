@@ -680,6 +680,12 @@ Certificação C# Programming parte 10: Reflection
 		08 - O que aprendemos?
 	05 - Tipos do System Reflection
 		01 - Usando Reflection Para Obter Módulos, Tipos e Membros
+		02 - Descobrindo Propriedades de Uma Classe
+		03 - Descubra se uma propriedade pode ser lida ou escrita (A)
+		04 - Projeto do curso
+		05 - Conclusão
+		06 - Faça como eu fiz na aula
+		07 - O que aprendemos?
 Certificação C# Programming parte 11: Multithreading
 	01 - Introdução ao Task Parallel Library
 	02 - Consultas LINQ com Paralelismo
