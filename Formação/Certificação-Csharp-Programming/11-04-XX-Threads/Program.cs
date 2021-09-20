@@ -1,8 +1,8 @@
-﻿using _11_03_XX_Espera_Continuacao_Hierarquia_Tarefas.Depois;
+﻿using _11_04_XX_Threads.Depois;
 using System;
 using System.Collections.Generic;
 
-namespace _11_03_XX_Espera_Continuacao_Hierarquia_Tarefas
+namespace _11_04_XX_Threads
 {
     public class Program
     {
@@ -85,6 +85,7 @@ namespace _11_03_XX_Espera_Continuacao_Hierarquia_Tarefas
                 new MenuItem("Introdução ao Task Parallel Library", typeof(Startup0108)),
                 new MenuItem("Consultas LINQ com Paralelismo", typeof(Startup0201)),
                 new MenuItem("Espera, Continuação e Hierarquia de Tarefas", typeof(Startup0301)),
+                new MenuItem("Threads", typeof(Startup0401)),
             };
         }
     }

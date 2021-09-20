@@ -133,6 +133,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-02-XX-Consultas-LINQ-Par
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-03-XX-Espera-Continuacao-Hierarquia-Tarefas", "11-03-XX-Espera-Continuacao-Hierarquia-Tarefas\11-03-XX-Espera-Continuacao-Hierarquia-Tarefas.csproj", "{B54199BD-8F1A-4F1B-ACAC-9CEE2C015C40}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-04-XX-Threads", "11-04-XX-Threads\11-04-XX-Threads.csproj", "{95FC8DEE-A957-4701-B1FD-AFEA437BADCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -399,6 +401,10 @@ Global
 		{B54199BD-8F1A-4F1B-ACAC-9CEE2C015C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B54199BD-8F1A-4F1B-ACAC-9CEE2C015C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B54199BD-8F1A-4F1B-ACAC-9CEE2C015C40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95FC8DEE-A957-4701-B1FD-AFEA437BADCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95FC8DEE-A957-4701-B1FD-AFEA437BADCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95FC8DEE-A957-4701-B1FD-AFEA437BADCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95FC8DEE-A957-4701-B1FD-AFEA437BADCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -717,6 +717,7 @@ Certificação C# Programming parte 11: Multithreading
 		09 - Faça como eu fiz na aula
 		10 - O que aprendemos?
 	04 - Threads
+		01 - Trabalhando com Threads
 	05 - Desbloqueando a Interface do Usuário
 	06 - Async, Await, Coleções Simultâneas e Bloqueios
 	07 - Cancelamento de Tarefas e Métodos Thread Safe
