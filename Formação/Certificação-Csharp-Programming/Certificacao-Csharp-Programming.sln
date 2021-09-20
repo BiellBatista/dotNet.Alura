@@ -135,6 +135,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-03-XX-Espera-Continuacao
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-04-XX-Threads", "11-04-XX-Threads\11-04-XX-Threads.csproj", "{95FC8DEE-A957-4701-B1FD-AFEA437BADCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-05-XX-Desbloqueando-Interface-Usuario", "11-05-XX-Desbloqueando-Interface-Usuario\11-05-XX-Desbloqueando-Interface-Usuario.csproj", "{C2209EA8-4486-4980-8038-51B9E8EB6236}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -405,6 +407,10 @@ Global
 		{95FC8DEE-A957-4701-B1FD-AFEA437BADCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95FC8DEE-A957-4701-B1FD-AFEA437BADCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95FC8DEE-A957-4701-B1FD-AFEA437BADCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2209EA8-4486-4980-8038-51B9E8EB6236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2209EA8-4486-4980-8038-51B9E8EB6236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2209EA8-4486-4980-8038-51B9E8EB6236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2209EA8-4486-4980-8038-51B9E8EB6236}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
