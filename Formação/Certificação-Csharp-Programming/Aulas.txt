@@ -691,6 +691,13 @@ Certificação C# Programming parte 11: Multithreading
 		01 - Introdução
 		02 - Projeto do Curso
 		03 - Tarefas em Série e em Paralelo
+		04 - Tempo em Série e em Paralelo
+		05 - Muitos Itens em Paralelo
+		06 - Itens de uma Coleção em Paralelo
+		07 - Interrompendo Loop em Paralelo
+		08 - Executando tarefas numa determinada ordem (B)
+		09 - Faça como eu fiz na aula
+		10 - O que aprendemos?
 	02 - Consultas LINQ com Paralelismo
 	03 - Espera, Continuação e Hierarquia de Tarefas
 	04 - Threads
