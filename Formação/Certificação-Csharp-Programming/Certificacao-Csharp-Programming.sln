@@ -143,6 +143,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-07-XX-Cancelamento-Taref
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-01-XX-Validar-Dados-JSON", "12-01-XX-Validar-Dados-JSON\12-01-XX-Validar-Dados-JSON.csproj", "{47BD5EB6-9CD6-4D97-BAE0-4AA1712B1EAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-02-XX-Escolher-Tipo-Colecao-Adequada", "12-02-XX-Escolher-Tipo-Colecao-Adequada\12-02-XX-Escolher-Tipo-Colecao-Adequada.csproj", "{501BEA6F-86B8-4C0A-A1FA-275350CEF2DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -429,6 +431,10 @@ Global
 		{47BD5EB6-9CD6-4D97-BAE0-4AA1712B1EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47BD5EB6-9CD6-4D97-BAE0-4AA1712B1EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47BD5EB6-9CD6-4D97-BAE0-4AA1712B1EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{501BEA6F-86B8-4C0A-A1FA-275350CEF2DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{501BEA6F-86B8-4C0A-A1FA-275350CEF2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{501BEA6F-86B8-4C0A-A1FA-275350CEF2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{501BEA6F-86B8-4C0A-A1FA-275350CEF2DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

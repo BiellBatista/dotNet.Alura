@@ -763,6 +763,7 @@ Certificação C# Programming parte 12: Validar Segurança
 		08 - Faça como eu fiz na aula
 		09 - O que aprendemos?
 	02 - Escolher o Tipo de Coleção Adequada
+		01 - Escolhendo coleções - fila, pilha e lista
 	03 - Validando com Expressão Regular
 	04 - Funções Internas para Validar Tipos e Conteúdos
 	05 - Criptografia Simétrica e Assimétrica
