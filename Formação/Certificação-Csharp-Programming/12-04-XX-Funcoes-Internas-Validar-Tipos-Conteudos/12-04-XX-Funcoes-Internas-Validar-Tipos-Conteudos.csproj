@@ -1,13 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net5.0</TargetFramework>
+		<RootNamespace>_12_04_XX_Funcoes_Internas_Validar_Tipos_Conteudos</RootNamespace>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>_12_04_XX_Funcoes_Internas_Validar_Tipos_Conteudos</RootNamespace>
-  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-  </ItemGroup>
-
+	<ItemGroup>
+		<Folder Include="04-Funcoes-Internas-Validar-Tipos-Conteudos\Antes\" />
+		<Folder Include="04-Funcoes-Internas-Validar-Tipos-Conteudos\Depois\" />
+	</ItemGroup>
 </Project>
