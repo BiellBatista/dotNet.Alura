@@ -733,6 +733,14 @@ Certificação C# Programming parte 11: Multithreading
 		06 - O que aprendemos?
 	06 - Async, Await, Coleções Simultâneas e Bloqueios
 		01 - Tratamento de Exceção com Async e Task
+		02 - Trabalhando num Dicionário com Concorrência
+		03 - Usando um ConcurrentDictionary (A)
+		04 - Implementando Bloqueio
+		05 - Implementando o método AtualizarPontos() (D)
+		06 - Inicializando _catalogo apenas uma vez (C)
+		07 - Bloqueio Inteligente com Lock e Monitor
+		08 - Faça como eu fiz na aula
+		09 - O que aprendemos?
 	07 - Cancelamento de Tarefas e Métodos Thread Safe
 Certificação C# Programming parte 12: Validar Segurança
 	01 - Validar Dados JSON

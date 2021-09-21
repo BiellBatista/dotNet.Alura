@@ -29,10 +29,12 @@ namespace _11_06_XX_Async_Await_Colecoes_Simultaneas_Bloqueios.Depois
                 for (int i = 0; i < NUMERO_ITENS; i++)
                 {
                     int valor;
+
                     do
                     {
                         valor = dicionario[i];
                     } while (!dicionario.TryUpdate(i, valor + 1, valor));
+
                     Thread.Sleep(i);
                 }
             });
@@ -44,10 +46,12 @@ namespace _11_06_XX_Async_Await_Colecoes_Simultaneas_Bloqueios.Depois
                 for (int i = 0; i < NUMERO_ITENS; i++)
                 {
                     int valor;
+
                     do
                     {
                         valor = dicionario[i];
                     } while (!dicionario.TryUpdate(i, valor + 1, valor));
+
                     Thread.Sleep(i);
                 }
             });
