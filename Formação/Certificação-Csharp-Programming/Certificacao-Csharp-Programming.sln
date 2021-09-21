@@ -141,6 +141,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-06-XX-Async-Await-Coleco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-07-XX-Cancelamento-Tarefas-Metodos-Thread-Safe", "11-07-XX-Cancelamento-Tarefas-Metodos-Thread-Safe\11-07-XX-Cancelamento-Tarefas-Metodos-Thread-Safe.csproj", "{F337A585-2A17-4F8C-A790-ECA0462E51DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-01-XX-Validar-Dados-JSON", "12-01-XX-Validar-Dados-JSON\12-01-XX-Validar-Dados-JSON.csproj", "{47BD5EB6-9CD6-4D97-BAE0-4AA1712B1EAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -423,6 +425,10 @@ Global
 		{F337A585-2A17-4F8C-A790-ECA0462E51DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F337A585-2A17-4F8C-A790-ECA0462E51DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F337A585-2A17-4F8C-A790-ECA0462E51DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47BD5EB6-9CD6-4D97-BAE0-4AA1712B1EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47BD5EB6-9CD6-4D97-BAE0-4AA1712B1EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47BD5EB6-9CD6-4D97-BAE0-4AA1712B1EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47BD5EB6-9CD6-4D97-BAE0-4AA1712B1EAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
