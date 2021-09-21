@@ -769,6 +769,7 @@ Certificação C# Programming parte 12: Validar Segurança
 		04 - Faça como eu fiz na aula
 		05 - O que aprendemos?
 	03 - Validando com Expressão Regular
+		01 - Gerenciar Integridade de Dados
 	04 - Funções Internas para Validar Tipos e Conteúdos
 	05 - Criptografia Simétrica e Assimétrica
 	06 - Gerenciamento de Chave

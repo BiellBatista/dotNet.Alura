@@ -145,6 +145,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-01-XX-Validar-Dados-JSON
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-02-XX-Escolher-Tipo-Colecao-Adequada", "12-02-XX-Escolher-Tipo-Colecao-Adequada\12-02-XX-Escolher-Tipo-Colecao-Adequada.csproj", "{501BEA6F-86B8-4C0A-A1FA-275350CEF2DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-03-XX-Validando com Expressão Regular", "12-03-XX-Validando com Expressão Regular\12-03-XX-Validando com Expressão Regular.csproj", "{7B6B6099-A8BE-43E1-B929-70E5498AEBE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -435,6 +437,10 @@ Global
 		{501BEA6F-86B8-4C0A-A1FA-275350CEF2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{501BEA6F-86B8-4C0A-A1FA-275350CEF2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{501BEA6F-86B8-4C0A-A1FA-275350CEF2DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B6B6099-A8BE-43E1-B929-70E5498AEBE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B6B6099-A8BE-43E1-B929-70E5498AEBE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B6B6099-A8BE-43E1-B929-70E5498AEBE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B6B6099-A8BE-43E1-B929-70E5498AEBE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
