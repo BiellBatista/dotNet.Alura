@@ -732,6 +732,7 @@ Certificação C# Programming parte 11: Multithreading
 		05 - Faça como eu fiz na aula
 		06 - O que aprendemos?
 	06 - Async, Await, Coleções Simultâneas e Bloqueios
+		01 - Tratamento de Exceção com Async e Task
 	07 - Cancelamento de Tarefas e Métodos Thread Safe
 Certificação C# Programming parte 12: Validar Segurança
 	01 - Validar Dados JSON
