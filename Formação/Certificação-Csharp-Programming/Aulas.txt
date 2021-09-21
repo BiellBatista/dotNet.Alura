@@ -754,6 +754,14 @@ Certificação C# Programming parte 11: Multithreading
 Certificação C# Programming parte 12: Validar Segurança
 	01 - Validar Dados JSON
 		01 - Introdução
+		02 - Projeto do Curso
+		03 - O formato JSON
+		04 - O formato XML
+		05 - Validando JSON Através de Exceções de Conversão
+		06 - Valide a classe Produto (A)
+		07 - Valide os dados JSON (A)
+		08 - Faça como eu fiz na aula
+		09 - O que aprendemos?
 	02 - Escolher o Tipo de Coleção Adequada
 	03 - Validando com Expressão Regular
 	04 - Funções Internas para Validar Tipos e Conteúdos
