@@ -1,8 +1,8 @@
-﻿using _12_03_XX_Validando_com_Expressão_Regular.Depois;
+﻿using _12_04_XX_Funcoes_Internas_Validar_Tipos_Conteudos.Depois;
 using System;
 using System.Collections.Generic;
 
-namespace _12_03_XX_Validando_com_Expressão_Regular
+namespace _12_04_XX_Funcoes_Internas_Validar_Tipos_Conteudos
 {
     public class Program
     {
@@ -81,6 +81,7 @@ namespace _12_03_XX_Validando_com_Expressão_Regular
                 new MenuItem("Escolher o Tipo de Coleção Adequada", typeof(Startup0201)),
                 new MenuItem("Validando com Expressão Regular", typeof(Startup0301)),
                 new MenuItem("Validando com Expressão Regular", typeof(Startup0302)),
+                new MenuItem("Funções Internas para Validar Tipos e Conteúdos", typeof(void)),
             };
         }
     }
