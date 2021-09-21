@@ -743,6 +743,14 @@ Certificação C# Programming parte 11: Multithreading
 		09 - O que aprendemos?
 	07 - Cancelamento de Tarefas e Métodos Thread Safe
 		01 - Cancelando Tarefas
+		02 - Notificando Cancelamento de Tarefas
+		03 - Cancele esta tarefa (D)
+		04 - Solicitando cancelamento (D)
+		05 - Condição de Corrida e Métodos Thread Safe
+		06 - Conclusão
+		07 - Faça como eu fiz na aula
+		08 - Projeto do Curso
+		09 - O que aprendemos?
 Certificação C# Programming parte 12: Validar Segurança
 	01 - Validar Dados JSON
 	02 - Escolher o Tipo de Coleção Adequada
