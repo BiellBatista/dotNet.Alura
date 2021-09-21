@@ -764,6 +764,10 @@ Certificação C# Programming parte 12: Validar Segurança
 		09 - O que aprendemos?
 	02 - Escolher o Tipo de Coleção Adequada
 		01 - Escolhendo coleções - fila, pilha e lista
+		02 - Escolhendo Coleções - Matriz, Lista Ligada, Conjunto, Dicionário
+		03 - Qual tipo de coleção você deve usar? (A)
+		04 - Faça como eu fiz na aula
+		05 - O que aprendemos?
 	03 - Validando com Expressão Regular
 	04 - Funções Internas para Validar Tipos e Conteúdos
 	05 - Criptografia Simétrica e Assimétrica
