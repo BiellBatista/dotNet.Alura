@@ -807,3 +807,4 @@ Certificação C# Programming parte 12: Validar Segurança
 		06 - Faça como eu fiz na aula
 		07 - O que aprendemos?
 	08 - Fazendo Hash de Dados
+		01 - Criando Algoritmo de Checksum

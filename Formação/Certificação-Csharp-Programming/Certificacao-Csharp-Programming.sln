@@ -155,6 +155,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-06-XX-Gerenciamento-Chav
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-07-XX-Gerenciar-Criar-Certificados", "12-07-XX-Gerenciar-Criar-Certificados\12-07-XX-Gerenciar-Criar-Certificados.csproj", "{C179C84A-8EF4-4D7F-9217-E73A7612F8FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-08-XX-Fazendo-Hash-Dados", "12-08-XX-Fazendo-Hash-Dados\12-08-XX-Fazendo-Hash-Dados.csproj", "{B1C3C579-D425-40F0-91DA-1C1AA494CAEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -465,6 +467,10 @@ Global
 		{C179C84A-8EF4-4D7F-9217-E73A7612F8FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C179C84A-8EF4-4D7F-9217-E73A7612F8FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C179C84A-8EF4-4D7F-9217-E73A7612F8FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1C3C579-D425-40F0-91DA-1C1AA494CAEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C3C579-D425-40F0-91DA-1C1AA494CAEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C3C579-D425-40F0-91DA-1C1AA494CAEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C3C579-D425-40F0-91DA-1C1AA494CAEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
