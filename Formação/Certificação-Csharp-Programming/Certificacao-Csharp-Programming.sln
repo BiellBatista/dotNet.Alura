@@ -153,6 +153,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-05-XX-Criptografia-Simet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-06-XX-Gerenciamento-Chave", "12-06-XX-Gerenciamento-Chave\12-06-XX-Gerenciamento-Chave.csproj", "{A604A54B-66F9-41EC-87F4-3E1B5D0CBE1E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-07-XX-Gerenciar-Criar-Certificados", "12-07-XX-Gerenciar-Criar-Certificados\12-07-XX-Gerenciar-Criar-Certificados.csproj", "{C179C84A-8EF4-4D7F-9217-E73A7612F8FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -459,6 +461,10 @@ Global
 		{A604A54B-66F9-41EC-87F4-3E1B5D0CBE1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A604A54B-66F9-41EC-87F4-3E1B5D0CBE1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A604A54B-66F9-41EC-87F4-3E1B5D0CBE1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C179C84A-8EF4-4D7F-9217-E73A7612F8FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C179C84A-8EF4-4D7F-9217-E73A7612F8FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C179C84A-8EF4-4D7F-9217-E73A7612F8FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C179C84A-8EF4-4D7F-9217-E73A7612F8FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -799,4 +799,5 @@ Certificação C# Programming parte 12: Validar Segurança
 		04 - Faça como eu fiz na aula
 		05 - O que aprendemos?
 	07 - Gerenciar e Criar Certificados
+		01 - Por Que Usar Certificados
 	08 - Fazendo Hash de Dados
