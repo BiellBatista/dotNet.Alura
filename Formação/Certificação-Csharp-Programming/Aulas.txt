@@ -808,3 +808,14 @@ Certificação C# Programming parte 12: Validar Segurança
 		07 - O que aprendemos?
 	08 - Fazendo Hash de Dados
 		01 - Criando Algoritmo de Checksum
+		02 - Trabalhando com HashCodes
+		03 - Algoritmo de Hash do Namespace System Security
+		04 - Qual algoritmo você deve usar? (A)
+		05 - Calcule o hash (B)
+		06 - Qual algoritmo criptográfico você deve usar? (A)
+		07 - Criptografia com Fluxos
+		08 - Dados confidenciais: qual classe você deve usar? (C)
+		09 - Conclusão
+		10 - Projeto do Curso
+		11 - Faça como eu fiz na aula
+		12 - O que aprendemos?
