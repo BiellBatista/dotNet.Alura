@@ -137,17 +137,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11-04-XX-Threads", "11-04-X
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11-05-XX-Desbloqueando-Interface-Usuario", "11-05-XX-Desbloqueando-Interface-Usuario\11-05-XX-Desbloqueando-Interface-Usuario.csproj", "{C2209EA8-4486-4980-8038-51B9E8EB6236}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-06-XX-Async-Await-Colecoes-Simultaneas-Bloqueios", "11-06-XX-Async-Await-Colecoes-Simultaneas-Bloqueios\11-06-XX-Async-Await-Colecoes-Simultaneas-Bloqueios.csproj", "{DF31A569-AE60-49A8-A425-AB17A16C7BE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11-06-XX-Async-Await-Colecoes-Simultaneas-Bloqueios", "11-06-XX-Async-Await-Colecoes-Simultaneas-Bloqueios\11-06-XX-Async-Await-Colecoes-Simultaneas-Bloqueios.csproj", "{DF31A569-AE60-49A8-A425-AB17A16C7BE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-07-XX-Cancelamento-Tarefas-Metodos-Thread-Safe", "11-07-XX-Cancelamento-Tarefas-Metodos-Thread-Safe\11-07-XX-Cancelamento-Tarefas-Metodos-Thread-Safe.csproj", "{F337A585-2A17-4F8C-A790-ECA0462E51DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11-07-XX-Cancelamento-Tarefas-Metodos-Thread-Safe", "11-07-XX-Cancelamento-Tarefas-Metodos-Thread-Safe\11-07-XX-Cancelamento-Tarefas-Metodos-Thread-Safe.csproj", "{F337A585-2A17-4F8C-A790-ECA0462E51DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-01-XX-Validar-Dados-JSON", "12-01-XX-Validar-Dados-JSON\12-01-XX-Validar-Dados-JSON.csproj", "{47BD5EB6-9CD6-4D97-BAE0-4AA1712B1EAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12-01-XX-Validar-Dados-JSON", "12-01-XX-Validar-Dados-JSON\12-01-XX-Validar-Dados-JSON.csproj", "{47BD5EB6-9CD6-4D97-BAE0-4AA1712B1EAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-02-XX-Escolher-Tipo-Colecao-Adequada", "12-02-XX-Escolher-Tipo-Colecao-Adequada\12-02-XX-Escolher-Tipo-Colecao-Adequada.csproj", "{501BEA6F-86B8-4C0A-A1FA-275350CEF2DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12-02-XX-Escolher-Tipo-Colecao-Adequada", "12-02-XX-Escolher-Tipo-Colecao-Adequada\12-02-XX-Escolher-Tipo-Colecao-Adequada.csproj", "{501BEA6F-86B8-4C0A-A1FA-275350CEF2DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-03-XX-Validando com Expressão Regular", "12-03-XX-Validando com Expressão Regular\12-03-XX-Validando com Expressão Regular.csproj", "{7B6B6099-A8BE-43E1-B929-70E5498AEBE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12-03-XX-Validando com Expressão Regular", "12-03-XX-Validando com Expressão Regular\12-03-XX-Validando com Expressão Regular.csproj", "{7B6B6099-A8BE-43E1-B929-70E5498AEBE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-04-XX-Funcoes-Internas-Validar-Tipos-Conteudos", "12-04-XX-Funcoes-Internas-Validar-Tipos-Conteudos\12-04-XX-Funcoes-Internas-Validar-Tipos-Conteudos.csproj", "{34259A64-9F99-4721-8D1E-D48B1F64D630}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12-04-XX-Funcoes-Internas-Validar-Tipos-Conteudos", "12-04-XX-Funcoes-Internas-Validar-Tipos-Conteudos\12-04-XX-Funcoes-Internas-Validar-Tipos-Conteudos.csproj", "{34259A64-9F99-4721-8D1E-D48B1F64D630}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-05-XX-Criptografia-Simetrica-Assimetrica", "12-05-XX-Criptografia-Simetrica-Assimetrica\12-05-XX-Criptografia-Simetrica-Assimetrica.csproj", "{67F47047-704D-4BD6-9A6D-4CB2778426DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -447,6 +449,10 @@ Global
 		{34259A64-9F99-4721-8D1E-D48B1F64D630}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34259A64-9F99-4721-8D1E-D48B1F64D630}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34259A64-9F99-4721-8D1E-D48B1F64D630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67F47047-704D-4BD6-9A6D-4CB2778426DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67F47047-704D-4BD6-9A6D-4CB2778426DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67F47047-704D-4BD6-9A6D-4CB2778426DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67F47047-704D-4BD6-9A6D-4CB2778426DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

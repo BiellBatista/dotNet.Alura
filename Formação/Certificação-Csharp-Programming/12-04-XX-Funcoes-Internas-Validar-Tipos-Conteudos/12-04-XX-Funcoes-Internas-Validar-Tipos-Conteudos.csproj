@@ -8,9 +8,4 @@
 	<ItemGroup>
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	</ItemGroup>
-
-	<ItemGroup>
-		<Folder Include="04-Funcoes-Internas-Validar-Tipos-Conteudos\Antes\" />
-		<Folder Include="04-Funcoes-Internas-Validar-Tipos-Conteudos\Depois\" />
-	</ItemGroup>
 </Project>

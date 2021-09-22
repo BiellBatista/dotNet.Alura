@@ -82,6 +82,7 @@ namespace _12_04_XX_Funcoes_Internas_Validar_Tipos_Conteudos
                 new MenuItem("Validando com Expressão Regular", typeof(Startup0301)),
                 new MenuItem("Validando com Expressão Regular", typeof(Startup0302)),
                 new MenuItem("Funções Internas para Validar Tipos e Conteúdos", typeof(void)),
+                new MenuItem("Funções Internas para Validar Tipos e Conteúdos", typeof(Startup0402)),
             };
         }
     }
