@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-XX-Retornando-dados", "0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-XX-Conexao-Banco-API", "04-XX-Conexao-Banco-API\04-XX-Conexao-Banco-API.csproj", "{B435AFD8-BF44-4804-8A93-574CCC2064E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-XX-Melhorando-codigo", "05-XX-Melhorando-codigo\05-XX-Melhorando-codigo.csproj", "{72FB732D-0217-4BDF-95BD-3B94027FC7C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B435AFD8-BF44-4804-8A93-574CCC2064E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B435AFD8-BF44-4804-8A93-574CCC2064E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B435AFD8-BF44-4804-8A93-574CCC2064E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72FB732D-0217-4BDF-95BD-3B94027FC7C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72FB732D-0217-4BDF-95BD-3B94027FC7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72FB732D-0217-4BDF-95BD-3B94027FC7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72FB732D-0217-4BDF-95BD-3B94027FC7C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

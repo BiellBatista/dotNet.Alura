@@ -40,3 +40,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		11 - Faça como eu fiz: Atualização e remoção
 		12 - Retorno da atualização de dados (B)
 		13 - O que aprendemos?
+	05 - Melhorando o código
+		01 - Projeto da aula anterior
+		02 - Usando Data Transfer Objects
