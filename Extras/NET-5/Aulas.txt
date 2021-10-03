@@ -15,3 +15,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		06 - Faça como eu fiz: Adicionando restrições
 		07 - Praticando o uso de annotations (A)
 		08 - O que aprendemos?
+	03 - Retornando dados
+		01 - Projeto da aula anterior
+		02 - Retornando informações da API

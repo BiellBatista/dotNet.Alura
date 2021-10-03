@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Por-que-APIs", "01-XX
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-XX-Construindo-API", "02-XX-Construindo-API\02-XX-Construindo-API.csproj", "{421E0FB8-3A91-4A3E-81B9-9A5C898746E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-XX-Retornando-dados", "03-XX-Retornando-dados\03-XX-Retornando-dados.csproj", "{B4A99A92-056D-4439-BA85-8313AF9003B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{421E0FB8-3A91-4A3E-81B9-9A5C898746E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{421E0FB8-3A91-4A3E-81B9-9A5C898746E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{421E0FB8-3A91-4A3E-81B9-9A5C898746E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4A99A92-056D-4439-BA85-8313AF9003B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4A99A92-056D-4439-BA85-8313AF9003B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4A99A92-056D-4439-BA85-8313AF9003B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4A99A92-056D-4439-BA85-8313AF9003B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
