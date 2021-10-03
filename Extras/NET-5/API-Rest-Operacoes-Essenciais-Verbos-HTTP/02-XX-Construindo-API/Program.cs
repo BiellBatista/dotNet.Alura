@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace _01_XX_Por_que_APIs
+namespace _02_XX_Construindo_API
 {
     public class Program
     {

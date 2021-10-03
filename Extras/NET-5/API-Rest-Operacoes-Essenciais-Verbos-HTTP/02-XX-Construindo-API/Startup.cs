@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
-namespace _01_XX_Por_que_APIs
+namespace _02_XX_Construindo_API
 {
     public class Startup
     {
@@ -22,7 +22,7 @@ namespace _01_XX_Por_que_APIs
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "_01_XX_Por_que_APIs", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "_02_XX_Construindo_API", Version = "v1" });
             });
         }
 
@@ -33,7 +33,7 @@ namespace _01_XX_Por_que_APIs
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "_01_XX_Por_que_APIs v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "_02_XX_Construindo_API v1"));
             }
 
             app.UseHttpsRedirection();
