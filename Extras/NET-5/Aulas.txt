@@ -35,3 +35,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		06 - Para saber mais: Gerando migrations no Linux
 		07 - A importância das migrations (A / B)
 		08 - Escrevendo e lendo dados no banco
+		09 - Utilizando o DbContext para escrita (D)
+		10 - Atualizando e removendo dados
