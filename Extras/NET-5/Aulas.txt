@@ -8,3 +8,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		06 - O que aprendemos?
 	02 - Construindo a API
 		01 - Criando a primeira rota
+		02 - O papel do controlador (B)
+		03 - Recebendo os dados de um filme
+		04 - Enviando requisições para a API (B)
