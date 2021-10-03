@@ -19,3 +19,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		01 - Projeto da aula anterior
 		02 - Retornando informações da API
 		03 - Validando o retorno (A)
+		04 - Recuperando dados por id
+		05 - Faça como eu fiz: Implementando a lógica
+		06 - Recebendo parâmetros na requisição (C)
