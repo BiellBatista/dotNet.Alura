@@ -1,0 +1,6 @@
+API Rest com .NET 5: Operações essenciais com verbos HTTP
+	01 - Por que APIs?
+		01 - Apresentação
+		02 - Preparando o ambiente
+		03 - Faça como eu fiz: Configurações iniciais
+		04 - O que é uma API
