@@ -11,3 +11,7 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		02 - O papel do controlador (B)
 		03 - Recebendo os dados de um filme
 		04 - Enviando requisições para a API (B)
+		05 - Validando parâmetros recebidos
+		06 - Faça como eu fiz: Adicionando restrições
+		07 - Praticando o uso de annotations (A)
+		08 - O que aprendemos?
