@@ -37,3 +37,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		08 - Escrevendo e lendo dados no banco
 		09 - Utilizando o DbContext para escrita (D)
 		10 - Atualizando e removendo dados
+		11 - Faça como eu fiz: Atualização e remoção
+		12 - Retorno da atualização de dados (B)
+		13 - O que aprendemos?

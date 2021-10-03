@@ -41,5 +41,35 @@ namespace _04_XX_Conexao_Banco_API.Controllers
 
             return NotFound();
         }
+
+        [HttpPut("{id}")]
+        public IActionResult AtualizaFilme(int id, [FromBody] Filme filmeNovo)
+        {
+            var filme = _context.Filmes.FirstOrDefault(f => f.Id == id);
+
+            if (filme is null) return NotFound();
+
+            filme.Titulo = filmeNovo.Titulo;
+            filme.Genero = filmeNovo.Genero;
+            filme.Duracao = filmeNovo.Duracao;
+            filme.Diretor = filmeNovo.Diretor;
+
+            _context.SaveChanges();
+
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeletaFilme(int id)
+        {
+            var filme = _context.Filmes.FirstOrDefault(f => f.Id == id);
+
+            if (filme is null) return NotFound();
+
+            _context.Remove(filme);
+            _context.SaveChanges();
+
+            return NoContent();
+        }
     }
 }
