@@ -26,3 +26,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		08 - Qual deve ser o retorno? (B)
 		09 - Seguindo as boas práticas (B)
 		10 - O que aprendemos?
+	04 - Conexão entre Banco e API
+		01 - Projeto da aula anterior
+		02 - Conectando ao Banco de Dados

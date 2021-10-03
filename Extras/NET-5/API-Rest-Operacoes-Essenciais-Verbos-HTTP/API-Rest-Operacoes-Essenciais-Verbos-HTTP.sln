@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-XX-Construindo-API", "02
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-XX-Retornando-dados", "03-XX-Retornando-dados\03-XX-Retornando-dados.csproj", "{B4A99A92-056D-4439-BA85-8313AF9003B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-XX-Conexao-Banco-API", "04-XX-Conexao-Banco-API\04-XX-Conexao-Banco-API.csproj", "{B435AFD8-BF44-4804-8A93-574CCC2064E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B4A99A92-056D-4439-BA85-8313AF9003B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4A99A92-056D-4439-BA85-8313AF9003B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4A99A92-056D-4439-BA85-8313AF9003B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B435AFD8-BF44-4804-8A93-574CCC2064E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B435AFD8-BF44-4804-8A93-574CCC2064E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B435AFD8-BF44-4804-8A93-574CCC2064E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B435AFD8-BF44-4804-8A93-574CCC2064E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
