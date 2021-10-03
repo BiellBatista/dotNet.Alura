@@ -22,3 +22,7 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		04 - Recuperando dados por id
 		05 - Faça como eu fiz: Implementando a lógica
 		06 - Recebendo parâmetros na requisição (C)
+		07 - Definindo o retorno das rotas
+		08 - Qual deve ser o retorno? (B)
+		09 - Seguindo as boas práticas (B)
+		10 - O que aprendemos?
