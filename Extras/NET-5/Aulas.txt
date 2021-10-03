@@ -29,3 +29,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 	04 - Conexão entre Banco e API
 		01 - Projeto da aula anterior
 		02 - Conectando ao Banco de Dados
+		03 - Para saber mais: Instalando pacotes Nuget no Linux
+		04 - Papel do DBContext (B)
+		05 - Gerando a primeira migration
