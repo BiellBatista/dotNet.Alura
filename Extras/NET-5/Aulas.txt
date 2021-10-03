@@ -32,3 +32,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		03 - Para saber mais: Instalando pacotes Nuget no Linux
 		04 - Papel do DBContext (B)
 		05 - Gerando a primeira migration
+		06 - Para saber mais: Gerando migrations no Linux
+		07 - A importância das migrations (A / B)
+		08 - Escrevendo e lendo dados no banco

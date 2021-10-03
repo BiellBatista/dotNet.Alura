@@ -332,6 +332,14 @@ Extra Integrações em .NET
 		05 - Consumindo um serviço
 		06 - Acessando o serviço pelo browser
 -------------------------------------------------------------------------------------------------------------------------
+Extra .NET 5
+	API Rest com .NET 5: Operações essenciais com verbos HTTP
+		01 - Por que APIs?
+		02 - Construindo a API
+		03 - Retornando dados
+		04 - Conexão entre Banco e API
+		05 - Melhorando o código
+-------------------------------------------------------------------------------------------------------------------------
 Extra .NET para Web
 	ASP.NET: Razor
 		01 - Introdução ao Razor

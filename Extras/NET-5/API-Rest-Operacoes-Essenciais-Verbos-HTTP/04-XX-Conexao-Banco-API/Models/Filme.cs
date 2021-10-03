@@ -4,6 +4,8 @@ namespace _04_XX_Conexao_Banco_API.Models
 {
     public class Filme
     {
+        [Key]
+        [Required]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "O campo título é obrigatório")]
