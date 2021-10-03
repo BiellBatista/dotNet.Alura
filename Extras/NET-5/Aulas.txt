@@ -43,3 +43,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 	05 - Melhorando o código
 		01 - Projeto da aula anterior
 		02 - Usando Data Transfer Objects
+		03 - Por que DTOs? (A / B)
+		04 - Mapeando objetos com o AutoMapper
