@@ -4,3 +4,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		02 - Preparando o ambiente
 		03 - Faça como eu fiz: Configurações iniciais
 		04 - O que é uma API
+		05 - Sobre APIs (A / B)
+		06 - O que aprendemos?
