@@ -339,6 +339,12 @@ Extra .NET 5
 		03 - Retornando dados
 		04 - Conexão entre Banco e API
 		05 - Melhorando o código
+	.NET 5 e EF Core: Relacionando entidades
+		01 - Incrementando o projeto
+		02 - O relacionamento 1:1
+		03 - O relacionamento 1:n
+		04 - O relacionamento n:n
+		05 - Executando consultas
 -------------------------------------------------------------------------------------------------------------------------
 Extra .NET para Web
 	ASP.NET: Razor

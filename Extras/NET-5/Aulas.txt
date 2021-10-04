@@ -50,3 +50,8 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		07 - Projeto do curso
 		08 - O que aprendemos?
 		09 - Conclusão
+.NET 5 e EF Core: Relacionando entidades
+	01 - Incrementando o projeto
+		01 - Apresentação
+		02 - Projeto inicial do curso
+		03 - Adicionando o Endereço
