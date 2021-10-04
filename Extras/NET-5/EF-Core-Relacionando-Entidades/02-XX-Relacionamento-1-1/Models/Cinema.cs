@@ -14,6 +14,6 @@ namespace _02_XX_Relacionamento_1_1.Models
         //referência do endereço. Neste caso, o cinema é a entidade "fraca"
         public int EnderecoId { get; set; }
 
-        public Endereco Endereco { get; set; }
+        public virtual Endereco Endereco { get; set; }
     }
 }

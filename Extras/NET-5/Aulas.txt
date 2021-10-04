@@ -68,3 +68,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		04 - Definindo modelos (B)
 		05 - Definindo relacionamentos (A)
 		06 - Lazy Properties
+		07 - Faça como eu fiz: Carregando as propriedades
+		08 - Carregando em tempo de execução (B / C)
+		09 - O que aprendemos?

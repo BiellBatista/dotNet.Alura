@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace _02_XX_Relacionamento_1_1.Models
 {
@@ -12,6 +13,7 @@ namespace _02_XX_Relacionamento_1_1.Models
         public string Bairro { get; set; }
         public int Numero { get; set; }
 
-        public Cinema Cinema { get; set; }
+        [JsonIgnore]
+        public virtual Cinema Cinema { get; set; }
     }
 }

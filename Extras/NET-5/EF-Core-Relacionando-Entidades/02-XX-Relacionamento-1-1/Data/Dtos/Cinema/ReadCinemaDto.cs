@@ -11,6 +11,6 @@ namespace _02_XX_Relacionamento_1_1.Data.Dtos.Cinema
         [Required(ErrorMessage = "O campo de nome é obrigatório")]
         public string Nome { get; set; }
 
-        public object Endereco { get; set; }
+        public Models.Endereco Endereco { get; set; }
     }
 }
