@@ -65,3 +65,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		01 - Projeto da aula anterior
 		02 - Relacionando Endereço e Cinema
 		03 - Criando um cinema com endereço
+		04 - Definindo modelos (B)
+		05 - Definindo relacionamentos (A)
+		06 - Lazy Properties
