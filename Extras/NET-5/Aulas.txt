@@ -55,3 +55,9 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		01 - Apresentação
 		02 - Projeto inicial do curso
 		03 - Adicionando o Endereço
+		04 - Preparando o ambiente
+		05 - Faça como eu fiz: Criando o Endereço
+		06 - Conceitos do AutoMapper (C)
+		07 - Apresentando o problema
+		08 - Para saber mais: Novidades EF Core
+		09 - O que aprendemos?

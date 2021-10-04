@@ -6,7 +6,7 @@ using _01_XX_Incrementando_Projeto.Data;
 
 namespace _01_XX_Incrementando_Projeto.Migrations
 {
-    [DbContext(typeof(FilmeContext))]
+    [DbContext(typeof(AppDbContext))]
     partial class FilmeContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

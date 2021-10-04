@@ -1,5 +1,5 @@
 ﻿using _01_XX_Incrementando_Projeto.Data;
-using _01_XX_Incrementando_Projeto.Data.Dtos;
+using _01_XX_Incrementando_Projeto.Data.Dtos.Filme;
 using _01_XX_Incrementando_Projeto.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
@@ -12,13 +12,14 @@ namespace _01_XX_Incrementando_Projeto.Controllers
     [Route("[controller]")]
     public class FilmeController : ControllerBase
     {
-        private readonly FilmeContext _context;
-        private readonly IMapper _mapper;
+        private IMapper _mapper;
 
-        public FilmeController(FilmeContext context, IMapper mapper)
+        private AppDbContext _context;
+
+        public FilmeController(IMapper mapper, AppDbContext context)
         {
-            _context = context;
             _mapper = mapper;
+            _context = context;
         }
 
         [HttpPost]

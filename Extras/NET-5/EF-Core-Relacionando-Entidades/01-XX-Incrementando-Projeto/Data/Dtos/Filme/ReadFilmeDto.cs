@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace _01_XX_Incrementando_Projeto.Data.Dtos
+namespace _01_XX_Incrementando_Projeto.Data.Dtos.Filme
 {
     public class ReadFilmeDto
     {

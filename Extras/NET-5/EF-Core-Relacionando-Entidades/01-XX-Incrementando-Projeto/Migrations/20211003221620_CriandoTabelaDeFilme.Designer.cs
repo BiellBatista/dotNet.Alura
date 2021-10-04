@@ -7,7 +7,7 @@ using _01_XX_Incrementando_Projeto.Data;
 
 namespace _01_XX_Incrementando_Projeto.Migrations
 {
-    [DbContext(typeof(FilmeContext))]
+    [DbContext(typeof(AppDbContext))]
     [Migration("20211003221620_CriandoTabelaDeFilme")]
     partial class CriandoTabelaDeFilme
     {

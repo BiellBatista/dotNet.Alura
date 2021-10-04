@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace _01_XX_Incrementando_Projeto.Data.Dtos
+namespace _01_XX_Incrementando_Projeto.Data.Dtos.Filme
 {
-    public class CreateFilmeDto
+    public class UpdateFilmeDto
     {
         [Required(ErrorMessage = "O campo título é obrigatório")]
         public string Titulo { get; set; }

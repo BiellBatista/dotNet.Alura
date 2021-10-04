@@ -22,7 +22,7 @@ namespace _01_XX_Incrementando_Projeto
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<FilmeContext>(o => o.UseMySQL(Configuration.GetConnectionString("FilmeConnection")));
+            services.AddDbContext<AppDbContext>(o => o.UseMySQL(Configuration.GetConnectionString("FilmeConnection")));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

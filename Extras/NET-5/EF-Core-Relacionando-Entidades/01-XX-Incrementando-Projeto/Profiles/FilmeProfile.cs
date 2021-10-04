@@ -1,4 +1,4 @@
-﻿using _01_XX_Incrementando_Projeto.Data.Dtos;
+﻿using _01_XX_Incrementando_Projeto.Data.Dtos.Filme;
 using _01_XX_Incrementando_Projeto.Models;
 using AutoMapper;
 
