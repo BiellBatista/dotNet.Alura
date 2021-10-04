@@ -61,3 +61,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		07 - Apresentando o problema
 		08 - Para saber mais: Novidades EF Core
 		09 - O que aprendemos?
+	02 - O relacionamento 1:1
+		01 - Projeto da aula anterior
+		02 - Relacionando Endereço e Cinema
