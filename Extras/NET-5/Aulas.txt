@@ -71,3 +71,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		07 - Faça como eu fiz: Carregando as propriedades
 		08 - Carregando em tempo de execução (B / C)
 		09 - O que aprendemos?
+	03 - O relacionamento 1:n
+		01 - Projeto da aula anterior
+		02 - Criando a entidade Gerente
