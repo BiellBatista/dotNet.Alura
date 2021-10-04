@@ -64,3 +64,4 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 	02 - O relacionamento 1:1
 		01 - Projeto da aula anterior
 		02 - Relacionando Endereço e Cinema
+		03 - Criando um cinema com endereço
