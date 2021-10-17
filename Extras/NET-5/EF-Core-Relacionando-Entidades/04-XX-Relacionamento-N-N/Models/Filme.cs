@@ -21,6 +21,6 @@ namespace _04_XX_Relacionamento_N_N.Models
         [Range(1, 600, ErrorMessage = "A duração deve ter no mínimo 1 e no máximo 600 minutos")]
         public int Duracao { get; set; }
 
-        public virtual List<Cinema> Cinemas { get; set; }
+        public virtual List<Sessao> Sessoes { get; set; }
     }
 }

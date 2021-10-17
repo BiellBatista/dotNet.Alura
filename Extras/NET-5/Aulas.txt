@@ -89,3 +89,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		02 - Relacionando Filme e Cinema
 		03 - Muitos para muitos (B / C)
 		04 - Criando a entidade Sessão
+		05 - Faça como eu fiz: Relacionamentos nomeados
+		06 - Cadastrando uma Sessão

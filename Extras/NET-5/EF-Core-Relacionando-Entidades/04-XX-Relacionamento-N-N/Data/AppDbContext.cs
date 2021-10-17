@@ -9,6 +9,7 @@ namespace _04_XX_Relacionamento_N_N.Data
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<Filme> Filmes { get; set; }
         public DbSet<Gerente> Gerentes { get; set; }
+        public DbSet<Sessao> Sessoes { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> option) : base(option)
         {
@@ -28,6 +29,18 @@ namespace _04_XX_Relacionamento_N_N.Data
                 .WithMany(gerente => gerente.Cinemas)
                 .HasForeignKey(cinema => cinema.GerenteId)
                 .OnDelete(DeleteBehavior.Restrict); //removendo a deleção em cascata
+
+            builder
+                .Entity<Sessao>()
+                .HasOne(sessao => sessao.Filme)
+                .WithMany(filme => filme.Sessoes)
+                .HasForeignKey(sessao => sessao.FilmeId);
+
+            builder
+                .Entity<Sessao>()
+                .HasOne(sessao => sessao.Cinema)
+                .WithMany(cinema => cinema.Sessoes)
+                .HasForeignKey(sessao => sessao.CinemaId);
         }
     }
 }
