@@ -91,3 +91,4 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		04 - Criando a entidade Sessão
 		05 - Faça como eu fiz: Relacionamentos nomeados
 		06 - Cadastrando uma Sessão
+		07 - Trazendo informações adicionais
