@@ -94,3 +94,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		07 - Trazendo informações adicionais
 		08 - Obtendo dados extras (B / C)
 		09 - O que aprendemos?
+	05 - Executando consultas
+		01 - Projeto da aula anterior
+		02 - Relacionando Filme e Cinema
