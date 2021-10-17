@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace _04_XX_Relacionamento_N_N.Models
 {
@@ -18,5 +19,6 @@ namespace _04_XX_Relacionamento_N_N.Models
 
         public int GerenteId { get; set; }
         public virtual Gerente Gerente { get; set; }
+        public virtual List<Filme> Filmes { get; set; }
     }
 }

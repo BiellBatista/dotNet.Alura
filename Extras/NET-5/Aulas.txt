@@ -87,3 +87,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 	04 - O relacionamento n:n
 		01 - Projeto da aula anterior
 		02 - Relacionando Filme e Cinema
+		03 - Muitos para muitos (B / C)
+		04 - Criando a entidade Sessão
