@@ -53,5 +53,18 @@ namespace _03_XX_Relacionamento_1_N.Controllers
 
             return NotFound();
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeletaFilme(int id)
+        {
+            var gerente = _context.Gerentes.FirstOrDefault(g => g.Id == id);
+
+            if (gerente is null) return NotFound();
+
+            _context.Remove(gerente);
+            _context.SaveChanges();
+
+            return NoContent();
+        }
     }
 }

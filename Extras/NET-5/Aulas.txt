@@ -81,3 +81,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		07 - Evitando ciclos (A)
 		08 - Resolvendo loops em definitivo
 		09 - Qual deve ser o retorno? (B)
+		10 - Deleção em Cascata
+		11 - Diferenças entre deleções (C)
+		12 - O que aprendemos?
