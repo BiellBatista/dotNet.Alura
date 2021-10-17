@@ -92,3 +92,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		05 - Faça como eu fiz: Relacionamentos nomeados
 		06 - Cadastrando uma Sessão
 		07 - Trazendo informações adicionais
+		08 - Obtendo dados extras (B / C)
+		09 - O que aprendemos?
