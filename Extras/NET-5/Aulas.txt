@@ -97,3 +97,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 	05 - Executando consultas
 		01 - Projeto da aula anterior
 		02 - Relacionando Filme e Cinema
+		03 - Query parameters (A)
+		04 - Buscando Filmes
