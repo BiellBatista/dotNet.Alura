@@ -21,6 +21,12 @@ namespace _03_XX_Relacionamento_1_N.Data
                 .HasOne(endereco => endereco.Cinema) //o endereço tem um cinema
                 .WithOne(cinema => cinema.Endereco) //um cinema possui um endereço
                 .HasForeignKey<Cinema>(cinema => cinema.EnderecoId); //chave de referencia do endereço está no cinema e é o EnderecoId
+
+            builder
+                .Entity<Cinema>()
+                .HasOne(cinema => cinema.Gerente)
+                .WithMany(gerente => gerente.Cinemas)
+                .HasForeignKey(cinema => cinema.GerenteId);
         }
     }
 }

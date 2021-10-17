@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace _03_XX_Relacionamento_1_N.Models
 {
@@ -9,5 +10,7 @@ namespace _03_XX_Relacionamento_1_N.Models
         public int Id { get; set; }
 
         public string Nome { get; set; }
+
+        public virtual List<Cinema> Cinemas { get; set; }
     }
 }
