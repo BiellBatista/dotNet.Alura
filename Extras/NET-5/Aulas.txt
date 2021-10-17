@@ -84,3 +84,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		10 - Deleção em Cascata
 		11 - Diferenças entre deleções (C)
 		12 - O que aprendemos?
+	04 - O relacionamento n:n
+		01 - Projeto da aula anterior
+		02 - Relacionando Filme e Cinema
