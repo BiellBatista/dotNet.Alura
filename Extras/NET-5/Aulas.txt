@@ -79,3 +79,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		05 - Faça como eu fiz: Gerando o relacionamento um para muitos
 		06 - Criando o Gerente para o Cinema
 		07 - Evitando ciclos (A)
+		08 - Resolvendo loops em definitivo
+		09 - Qual deve ser o retorno? (B)
