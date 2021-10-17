@@ -77,4 +77,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		03 - Relacionando Gerente e Cinema
 		04 - ModelBuilder 1:n (B)
 		05 - Faça como eu fiz: Gerando o relacionamento um para muitos
-		
+		06 - Criando o Gerente para o Cinema
+		07 - Evitando ciclos (A)

@@ -12,5 +12,6 @@ namespace _03_XX_Relacionamento_1_N.Data.Dtos.Cinema
         public string Nome { get; set; }
 
         public Models.Endereco Endereco { get; set; }
+        public Models.Gerente Gerente { get; set; }
     }
 }
