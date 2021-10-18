@@ -99,3 +99,8 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		02 - Relacionando Filme e Cinema
 		03 - Query parameters (A)
 		04 - Buscando Filmes
+		05 - Faça como eu fiz: Consultas relacionadas
+		06 - Consultas com LINQ (C)
+		07 - Projeto do curso
+		08 - O que aprendemos?
+		09 - Conclusão

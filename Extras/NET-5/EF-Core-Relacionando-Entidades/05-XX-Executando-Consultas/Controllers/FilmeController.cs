@@ -34,7 +34,7 @@ namespace _05_XX_Executando_Consultas.Controllers
         }
 
         [HttpGet]
-        public IActionResult RecuperaFilmes([FromQuery] int? classificacaoEtaria)
+        public IActionResult RecuperaFilmes([FromQuery] int? classificacaoEtaria = null)
         {
             List<Filme> filmes;
 
