@@ -104,3 +104,11 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		07 - Projeto do curso
 		08 - O que aprendemos?
 		09 - Conclusão
+.NET 5 e Identity: Implementando controle de usuário
+	01 - Arrumando o código
+		01 - Apresentação
+		02 - Projeto inicial do curso
+		03 - Analisando o projeto atual
+		04 - Preparando o ambiente
+		05 - Controladores lotados (B)
+		06 - Começando a refatoração

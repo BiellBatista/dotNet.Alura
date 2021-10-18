@@ -345,6 +345,12 @@ Extra .NET 5
 		03 - O relacionamento 1:n
 		04 - O relacionamento n:n
 		05 - Executando consultas
+	.NET 5 e Identity: Implementando controle de usuário
+		01 - Arrumando o código
+		02 - Conhecendo o Identity
+		03 - Logando um usuário
+		04 - Tornando o cadastro sofisticado
+		05 - Disparando e-mails
 -------------------------------------------------------------------------------------------------------------------------
 Extra .NET para Web
 	ASP.NET: Razor
