@@ -1,10 +1,7 @@
-﻿using _01_XX_Arrumando_Codigo.Data;
-using _01_XX_Arrumando_Codigo.Data.Dtos.Filme;
-using _01_XX_Arrumando_Codigo.Models;
-using AutoMapper;
+﻿using _01_XX_Arrumando_Codigo.Data.Dtos.Filme;
+using _01_XX_Arrumando_Codigo.Services;
+using FluentResults;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace _01_XX_Arrumando_Codigo.Controllers
 {
@@ -12,23 +9,17 @@ namespace _01_XX_Arrumando_Codigo.Controllers
     [Route("[controller]")]
     public class FilmeController : ControllerBase
     {
-        private IMapper _mapper;
+        private FilmeService _filmeService;
 
-        private AppDbContext _context;
-
-        public FilmeController(IMapper mapper, AppDbContext context)
+        public FilmeController(FilmeService filmeService)
         {
-            _mapper = mapper;
-            _context = context;
+            _filmeService = filmeService;
         }
 
         [HttpPost]
         public IActionResult AdicionaFilme([FromBody] CreateFilmeDto filmeDto)
         {
-            var filme = _mapper.Map<Filme>(filmeDto);
-
-            _context.Filmes.Add(filme);
-            _context.SaveChanges();
+            var filme = _filmeService.AdicionaFilme(filmeDto);
 
             return CreatedAtAction(nameof(RecuperaFilmesPorId), new { Id = filme.Id }, filme);
         }
@@ -36,17 +27,10 @@ namespace _01_XX_Arrumando_Codigo.Controllers
         [HttpGet]
         public IActionResult RecuperaFilmes([FromQuery] int? classificacaoEtaria = null)
         {
-            List<Filme> filmes;
+            var readDto = _filmeService.RecuperaFilmes(classificacaoEtaria);
 
-            if (classificacaoEtaria is null)
-                filmes = _context.Filmes.ToList();
-
-            filmes = _context.Filmes
-                                    .Where(filme => filme.ClassificacaoEtaria <= classificacaoEtaria)
-                                    .ToList();
-
-            if (filmes is not null)
-                return Ok(_mapper.Map<List<ReadFilmeDto>>(filmes));
+            if (readDto is not null)
+                return Ok(readDto);
 
             return NotFound();
         }
@@ -54,14 +38,10 @@ namespace _01_XX_Arrumando_Codigo.Controllers
         [HttpGet("{id}")]
         public IActionResult RecuperaFilmesPorId(int id)
         {
-            var filme = _context.Filmes.FirstOrDefault(f => f.Id == id);
+            var readDto = _filmeService.RecuperaFilmesPorId(id);
 
-            if (filme is not null)
-            {
-                var filmeDto = _mapper.Map<ReadFilmeDto>(filme);
-
-                return Ok(filmeDto);
-            }
+            if (readDto is not null)
+                return Ok(readDto);
 
             return NotFound();
         }
@@ -69,12 +49,10 @@ namespace _01_XX_Arrumando_Codigo.Controllers
         [HttpPut("{id}")]
         public IActionResult AtualizaFilme(int id, [FromBody] UpdateFilmeDto filmeDto)
         {
-            var filme = _context.Filmes.FirstOrDefault(f => f.Id == id);
+            Result resultado = _filmeService.AtualizaFilme(id, filmeDto);
 
-            if (filme is null) return NotFound();
-
-            _mapper.Map(filmeDto, filme);
-            _context.SaveChanges();
+            if (resultado.IsFailed)
+                return NotFound();
 
             return NoContent();
         }
@@ -82,12 +60,10 @@ namespace _01_XX_Arrumando_Codigo.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeletaFilme(int id)
         {
-            var filme = _context.Filmes.FirstOrDefault(f => f.Id == id);
+            Result resultado = _filmeService.DeletaFilme(id);
 
-            if (filme is null) return NotFound();
-
-            _context.Remove(filme);
-            _context.SaveChanges();
+            if (resultado.IsFailed)
+                return NotFound();
 
             return NoContent();
         }

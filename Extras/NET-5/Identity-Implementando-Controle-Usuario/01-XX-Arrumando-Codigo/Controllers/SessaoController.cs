@@ -1,9 +1,6 @@
-﻿using _01_XX_Arrumando_Codigo.Data;
-using _01_XX_Arrumando_Codigo.Data.Dtos.Sessao;
-using _01_XX_Arrumando_Codigo.Models;
-using AutoMapper;
+﻿using _01_XX_Arrumando_Codigo.Data.Dtos.Sessao;
+using _01_XX_Arrumando_Codigo.Services;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
 
 namespace _01_XX_Arrumando_Codigo.Controllers
 {
@@ -11,40 +8,29 @@ namespace _01_XX_Arrumando_Codigo.Controllers
     [Route("[controller]")]
     public class SessaoController : ControllerBase
     {
-        private IMapper _mapper;
+        private SessaoService _sessaoService;
 
-        private AppDbContext _context;
-
-        public SessaoController(IMapper mapper, AppDbContext context)
+        public SessaoController(SessaoService sessaoService)
         {
-            _mapper = mapper;
-            _context = context;
+            _sessaoService = sessaoService;
         }
 
         [HttpPost]
-        public IActionResult AdicionaSessao([FromBody] CreateSessaoDto sessaoDto)
+        public IActionResult AdicionaSessao(CreateSessaoDto dto)
         {
-            Sessao sessao = _mapper.Map<Sessao>(sessaoDto);
+            ReadSessaoDto readDto = _sessaoService.AdicionaSessao(dto);
 
-            _context.Sessoes.Add(sessao);
-            _context.SaveChanges();
-
-            return CreatedAtAction(nameof(RecuperaSessoesPorId), new { Id = sessao.Id }, sessao);
+            return CreatedAtAction(nameof(RecuperaSessoesPorId), new { Id = readDto.SessaoId }, readDto);
         }
 
         [HttpGet("{id}")]
         public IActionResult RecuperaSessoesPorId(int id)
         {
-            var sessao = _context.Sessoes.FirstOrDefault(f => f.Id == id);
+            ReadSessaoDto readDto = _sessaoService.RecuperaSessoesPorId(id);
 
-            if (sessao is not null)
-            {
-                var sessaoDto = _mapper.Map<ReadSessaoDto>(sessao);
+            if (readDto is null) return NotFound();
 
-                return Ok(sessaoDto);
-            }
-
-            return NotFound();
+            return Ok(readDto);
         }
     }
 }

@@ -112,3 +112,7 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		04 - Preparando o ambiente
 		05 - Controladores lotados (B)
 		06 - Começando a refatoração
+		07 - Terminando a refatoração
+		08 - Faça como eu fiz: Refatorando os controladores
+		09 - Desafio: O controlador de Gerente
+		10 - O que aprendemos?
