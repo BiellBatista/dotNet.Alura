@@ -121,3 +121,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		02 - O que é o Identity
 		03 - Benefícios do Identity (A / B)
 		04 - Recebendo um usuário
+		05 - Projetos apartados (C)
+		06 - Configurando o Identity
