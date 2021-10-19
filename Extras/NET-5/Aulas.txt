@@ -116,3 +116,8 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		08 - Faça como eu fiz: Refatorando os controladores
 		09 - Desafio: O controlador de Gerente
 		10 - O que aprendemos?
+	02 - Conhecendo o Identity
+		01 - Projeto da aula anterior
+		02 - O que é o Identity
+		03 - Benefícios do Identity (A / B)
+		04 - Recebendo um usuário
