@@ -6,16 +6,20 @@ using FluentResults;
 using Microsoft.AspNetCore.Identity;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace _05_XX_Usuario.API.Services
 {
     public class CadastroService
     {
         private IMapper _mapper;
+
+        private EmailService _emailService;
         private UserManager<IdentityUser<int>> _userManager;
 
-        public CadastroService(IMapper mapper, UserManager<IdentityUser<int>> userManager)
+        public CadastroService(IMapper mapper, EmailService emailService, UserManager<IdentityUser<int>> userManager)
         {
+            _emailService = emailService;
             _mapper = mapper;
             _userManager = userManager;
         }
@@ -29,6 +33,9 @@ namespace _05_XX_Usuario.API.Services
             if (resultadoIdentity.Result.Succeeded)
             {
                 string code = _userManager.GenerateEmailConfirmationTokenAsync(usuarioIdentity).Result;
+                var encodedCode = HttpUtility.UrlEncode(code);
+
+                _emailService.EnviarEmail(new[] { usuarioIdentity.Email }, "Link de Ativação", usuarioIdentity.Id, encodedCode);
 
                 return Result.Ok().WithSuccess(code).WithSuccess(code);
             }
