@@ -123,3 +123,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		04 - Recebendo um usuário
 		05 - Projetos apartados (C)
 		06 - Configurando o Identity
+		07 - Para saber mais: Pacotes necessários
+		08 - Identity e Banco de Dados (C)
+		09 - Cadastrando um usuário
