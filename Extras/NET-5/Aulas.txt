@@ -145,3 +145,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		01 - Projeto da aula anterior
 		02 - Indo além no cadastro
 		03 - Exigindo confirmação de e-mail
+		04 - Tornando confirmação necessária (A)
+		05 - Faça como eu fiz: Exigindo e-mail confirmado
+		06 - Gerando código de ativação

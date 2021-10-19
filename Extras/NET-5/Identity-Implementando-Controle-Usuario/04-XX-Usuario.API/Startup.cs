@@ -31,8 +31,12 @@ namespace _04_XX_Usuario.API
                             .UseMySQL(Configuration.GetConnectionString("UsuarioConnection")));
 
             services
-                .AddIdentity<IdentityUser<int>, IdentityRole<int>>()
-                .AddEntityFrameworkStores<UserDbContext>();
+                .AddIdentity<IdentityUser<int>, IdentityRole<int>>(opt =>
+                {
+                    opt.SignIn.RequireConfirmedEmail = true;
+                })
+                .AddEntityFrameworkStores<UserDbContext>()
+                .AddDefaultTokenProviders();
 
             services.AddScoped<CadastroService, CadastroService>();
             services.AddScoped<LoginService, LoginService>();
