@@ -137,3 +137,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		04 - Gerando o token
 		05 - A importância de tokens (A)
 		06 - Retornando o token
+		07 - Resultados com sucesso (A)
+		08 - Efetuando o logout
