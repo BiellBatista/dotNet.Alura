@@ -141,3 +141,7 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		08 - Efetuando o logout
 		09 - Faça como eu fiz: Logout de usuários
 		10 - O que aprendemos?
+	04 - Tornando o cadastro sofisticado
+		01 - Projeto da aula anterior
+		02 - Indo além no cadastro
+		03 - Exigindo confirmação de e-mail
