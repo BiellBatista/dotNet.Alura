@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using MimeKit;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace _05_XX_Usuario.API.Models

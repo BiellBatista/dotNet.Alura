@@ -1,7 +1,7 @@
 ﻿using _05_XX_Usuario.API.Models;
+using MailKit.Net.Smtp;
 using Microsoft.Extensions.Configuration;
-using System.Collections.Generic;
-using System.Net.Mail;
+using MimeKit;
 
 namespace _05_XX_Usuario.API.Services
 {

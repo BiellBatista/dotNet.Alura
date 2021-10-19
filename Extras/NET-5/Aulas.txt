@@ -158,3 +158,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		03 - Criando o serviço de envio
 		04 - Faça como eu fiz: Exigindo e-mail confirmado
 		05 - Compondo o e-mail
+		06 - Preparando a conexão (B)
+		07 - Enviando o e-mail
