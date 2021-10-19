@@ -133,3 +133,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 	03 - Logando um usuário
 		01 - Projeto da aula anterior
 		02 - Efetuando o login
+		03 - Login com Identity (B)
+		04 - Gerando o token
