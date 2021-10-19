@@ -23,7 +23,7 @@ namespace _04_XX_Usuario.API.Controllers
 
             if (resultado.IsFailed) return StatusCode(500);
 
-            return Ok();
+            return Ok(resultado.Successes);
         }
     }
 }
