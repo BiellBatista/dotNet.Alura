@@ -1,4 +1,5 @@
 ﻿using _03_XX_Usuario.API.Data.Requests;
+using _03_XX_Usuario.API.Models;
 using FluentResults;
 using Microsoft.AspNetCore.Identity;
 using System.Linq;

@@ -36,6 +36,7 @@ namespace _03_XX_Usuario.API
 
             services.AddScoped<CadastroService, CadastroService>();
             services.AddScoped<LoginService, LoginService>();
+            services.AddScoped<TokenService, TokenService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
