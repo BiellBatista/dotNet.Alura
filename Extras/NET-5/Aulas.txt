@@ -152,3 +152,7 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		08 - Confirmando o cadastro
 		09 - E-mails confirmados (B)
 		10 - O que aprendemos?
+	05 - Disparando e-mails
+		01 - Projeto da aula anterior
+		02 - Processo de confirmação
+		03 - Criando o serviço de envio
