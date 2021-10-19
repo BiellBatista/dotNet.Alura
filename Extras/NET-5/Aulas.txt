@@ -139,3 +139,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		06 - Retornando o token
 		07 - Resultados com sucesso (A)
 		08 - Efetuando o logout
+		09 - Faça como eu fiz: Logout de usuários
+		10 - O que aprendemos?
