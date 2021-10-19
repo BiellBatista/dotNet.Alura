@@ -150,3 +150,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		06 - Gerando código de ativação
 		07 - Token de confirmação (B)
 		08 - Confirmando o cadastro
+		09 - E-mails confirmados (B)
+		10 - O que aprendemos?
