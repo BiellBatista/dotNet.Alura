@@ -1,4 +1,5 @@
 using _02_XX_Usuario.API.Data;
+using _02_XX_Usuario.API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -32,6 +33,8 @@ namespace _02_XX_Usuario.API
             services
                 .AddIdentity<IdentityUser<int>, IdentityRole<int>>()
                 .AddEntityFrameworkStores<UserDbContext>();
+
+            services.AddScoped<CadastroService, CadastroService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
