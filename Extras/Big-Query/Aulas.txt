@@ -47,3 +47,5 @@ C# e Big Query: Manipulando dados
 	04 - Primeiros acessos
 		01 - Download do material da aula
 		02 - Adicionando componente BigQuery.NET
+		03 - Instalando pacotes no Visual Studio (A)
+		04 - Adicionando as referências ao programa
