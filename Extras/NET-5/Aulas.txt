@@ -160,3 +160,7 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		05 - Compondo o e-mail
 		06 - Preparando a conexão (B)
 		07 - Enviando o e-mail
+		08 - Carregando configurações (B)
+		09 - Projeto final do curso
+		10 - O que aprendemos?
+		11 - Conclusão
