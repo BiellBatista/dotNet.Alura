@@ -1,0 +1,17 @@
+C# e Big Query: Manipulando dados
+	01 - Configurando Big Query
+		01 - Apresentação
+		02 - Download do material da aula
+		03 - O que é Big Query
+		04 - Google BigQuery (A)
+		05 - Vantagens do Google Big Query
+		06 - Outras vantagens do BigQuery (C)
+		07 - Criando a conta Google
+		08 - Acessando a Google Cloud
+		09 - Criar um projeto no Google Cloud
+		10 - Acessando o Big Query
+		11 - Ativando a API do Big Query
+		12 - Ativando a cobrança
+		13 - Faça como eu fiz
+		14 - O que aprendemos?
+

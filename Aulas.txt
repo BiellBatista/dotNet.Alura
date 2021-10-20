@@ -323,6 +323,41 @@ Extra ASP.NET Identity
 		04 - Continuando logado com autenticação de 2 fatores
 		05 - SecurityStamp
 -------------------------------------------------------------------------------------------------------------------------
+Extra Big Query
+	C# e Big Query: Manipulando dados
+		01 - Configurando Big Query
+		02 - Manipulando o Big Query
+		03 - Instalando e configurando o C#
+		04 - Primeiros acessos
+	C# e Big Query: Mais funções e manipulações
+		01 - Criando conjunto de dados
+		02 - Manipulando tabelas
+		03 - StreamingBuffer
+		04 - Usando SQL na classe
+		05 - Lendo CSV
+		06 - Datatable
+		07 - Finalizando a classe
+-------------------------------------------------------------------------------------------------------------------------
+Extra Cursos
+	C#: Paralelismo no mundo real
+		01 - Usando Threads
+		02 - Usando Tasks
+		03 - Usando o AsyncAwait do C#
+		04 - Padrões de notificação de progresso de tarefas
+		05 - Criando tarefas canceláveis
+	C#: Eventos, Delegates e Lambda
+		01 - Comportamentos e Eventos
+		02 - Delegates
+		03 - Manipulando Delegates
+		04 - Funções e nosso próprio evento
+		05 - Avançando em Eventos
+	C# Brasil: Formate datas, cpf e números nacionais
+		01 - Validação e Formatação de CPF, CNPJ, Título de Eleitor
+		02 - Trabalhando com Datas e Números por Extenso
+		03 - Trabalhando com Dinheiro
+		04 - Buscando CEP na internet
+		05 - Aplicando o que aprendemos
+-------------------------------------------------------------------------------------------------------------------------
 Extra Integrações em .NET
 	WCF : Distribua seus sistemas em .NET
 		01 - O que é WCF
@@ -419,26 +454,6 @@ Extra Testes em C#
 		04 - Esperando para as verificações
 		05 - Melhorando o código de testes
 		06 - Outros recursos
--------------------------------------------------------------------------------------------------------------------------
-Extra Cursos
-	C#: Paralelismo no mundo real
-		01 - Usando Threads
-		02 - Usando Tasks
-		03 - Usando o AsyncAwait do C#
-		04 - Padrões de notificação de progresso de tarefas
-		05 - Criando tarefas canceláveis
-	C#: Eventos, Delegates e Lambda
-		01 - Comportamentos e Eventos
-		02 - Delegates
-		03 - Manipulando Delegates
-		04 - Funções e nosso próprio evento
-		05 - Avançando em Eventos
-	C# Brasil: Formate datas, cpf e números nacionais
-		01 - Validação e Formatação de CPF, CNPJ, Título de Eleitor
-		02 - Trabalhando com Datas e Números por Extenso
-		03 - Trabalhando com Dinheiro
-		04 - Buscando CEP na internet
-		05 - Aplicando o que aprendemos
 -------------------------------------------------------------------------------------------------------------------------
 Formação Desenvolvedor .NET
 	Curso C# Parte 1: Primeiros Passos
