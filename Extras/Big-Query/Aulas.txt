@@ -37,3 +37,10 @@ C# e Big Query: Manipulando dados
 		06 - Criando um projeto
 		07 - Criando o projeto (A)
 		08 - Verificando API ativa
+		09 - API BigQuery (A)
+		10 - Baixando a chave privada
+		11 - Chave privada (B)
+		12 - Criando variável de ambiente
+		13 - Variável de ambiente no Windows (B)
+		14 - Faça como eu fiz
+		15 - O que aprendemos?
