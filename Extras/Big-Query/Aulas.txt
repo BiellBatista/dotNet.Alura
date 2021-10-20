@@ -53,3 +53,5 @@ C# e Big Query: Manipulando dados
 		06 - Acessando o projeto do Google Cloud
 		07 - Conectando o projeto no BigQuery (C)
 		08 - Consultando uma tabela
+		09 - Acessando a tabela (A)
+		10 - Incluindo dados na tabela
