@@ -55,3 +55,5 @@ C# e Big Query: Manipulando dados
 		08 - Consultando uma tabela
 		09 - Acessando a tabela (A)
 		10 - Incluindo dados na tabela
+		11 - Incluindo dados na tabela (B)
+		12 - Alterando e excluindo dados da tabela
