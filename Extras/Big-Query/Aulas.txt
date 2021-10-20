@@ -14,4 +14,17 @@ C# e Big Query: Manipulando dados
 		12 - Ativando a cobrança
 		13 - Faça como eu fiz
 		14 - O que aprendemos?
-
+	02 - Manipulando o Big Query
+		01 - Download do material da aula
+		02 - Criando um conjunto de dados
+		03 - Criando conjunto de dados (C)
+		04 - Criando uma tabela
+		05 - Criando tabelas pelo console (C)
+		06 - Nome da tabela no comando SQL
+		07 - Nome das tabelas (B)
+		08 - Incluindo dados na tabela
+		09 - Incluir uma linha na tabela (B)
+		10 - Incluindo vários dados na tabela
+		11 - Inserindo linhas na tabela (C)
+		12 - Faça como eu fiz
+		13 - O que aprendemos?
