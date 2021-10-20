@@ -9,7 +9,9 @@ namespace _04_XX_Primeiros_Acessos
         {
             //CursoBQCSharp001();
             //CursoBQCSharp002();
-            CursoBQCSharp003();
+            //CursoBQCSharp003();
+            //CursoBQCSharp004A();
+            CursoBQCSharp004B();
         }
 
         // Acesso ao projeto do BigQuery
@@ -47,6 +49,40 @@ namespace _04_XX_Primeiros_Acessos
             Console.WriteLine("Conexão ao projeto " + projetoId + " realizado com sucesso.");
 
             string comandoSQL = "INSERT INTO `NOME-DO-PROJETO.CONJUNTO-DE-DADOS.TABELA` VALUES ();";
+
+            // o ExecuteQuery serve para executar qualquer comando de SQL
+            cliente.ExecuteQuery(comandoSQL, null);
+
+            Console.WriteLine("Comando efetuado com sucesso.");
+            Console.ReadLine();
+        }
+
+        // Atualizando dados em uma tabela
+        private static void CursoBQCSharp004A()
+        {
+            string projetoId = "nome-do-projeto";
+            var cliente = BigQueryClient.Create(projetoId);
+
+            Console.WriteLine("Conexão ao projeto " + projetoId + " realizado com sucesso.");
+
+            string comandoSQL = "UPDATE `NOME-DO-PROJETO.CONJUNTO-DE-DADOS.TABELA` SET CAMPO = 'NOVO-VALOR' WHERE ID = X;";
+
+            // o ExecuteQuery serve para executar qualquer comando de SQL
+            cliente.ExecuteQuery(comandoSQL, null);
+
+            Console.WriteLine("Comando efetuado com sucesso.");
+            Console.ReadLine();
+        }
+
+        // Excluindo dados em uma tabela
+        private static void CursoBQCSharp004B()
+        {
+            string projetoId = "nome-do-projeto";
+            var cliente = BigQueryClient.Create(projetoId);
+
+            Console.WriteLine("Conexão ao projeto " + projetoId + " realizado com sucesso.");
+
+            string comandoSQL = "DELETE FROM `NOME-DO-PROJETO.CONJUNTO-DE-DADOS.TABELA` WHERE ID = X;";
 
             // o ExecuteQuery serve para executar qualquer comando de SQL
             cliente.ExecuteQuery(comandoSQL, null);

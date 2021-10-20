@@ -57,3 +57,8 @@ C# e Big Query: Manipulando dados
 		10 - Incluindo dados na tabela
 		11 - Incluindo dados na tabela (B)
 		12 - Alterando e excluindo dados da tabela
+		13 - Modificando uma tabela (C)
+		14 - Faça como eu fiz
+		15 - Projeto final do curso
+		16 - O que aprendemos?
+		17 - Conclusão
