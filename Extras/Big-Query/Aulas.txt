@@ -62,3 +62,50 @@ C# e Big Query: Manipulando dados
 		15 - Projeto final do curso
 		16 - O que aprendemos?
 		17 - Conclusão
+C# e Big Query: Mais funções e manipulações
+	01 - Criando conjunto de dados
+		01 - Apresentação
+		02 - Projeto do curso
+		03 - Verificando o ambiente de trabalho
+		04 - Google BigQuery (A / B)
+		05 - Acesso ao projeto BigQuery
+		06 - Acesso ao projeto no BigQuery (C)
+		07 - Criando um conjunto de dados
+		08 - Criando conjunto de dados (B)
+		09 - Considerações sobre o conjunto de dados
+		10 - Conjunto de dados (A)
+		11 - Faça como eu fiz
+		12 - O que aprendemos?
+	02 - Manipulando tabelas
+		01 - Criando a classe BigQuery
+		02 - Criando classe no BigQuery no Visual Studio (B / C)
+		03 - Criando conjunto de dados por classe
+		04 - Criando um conjunto de dados usando classe (B)
+		05 - Criando a tabela
+		06 - Criando tabelas (A)
+		07 - Criando a tabela usando esquema
+		08 - Criando tabelas usando esquema (A)
+		09 - Criando a tabela usando classe
+		10 - Criando a tabela usando classe
+		11 - Apagando tabela
+		12 - Apagando tabelas (A)
+		13 - Apagando tabela por classe
+		14 - Apagando tabelas usando classe (A)
+		15 - Faça como eu fiz
+		16 - O que aprendemos?
+	03 - StreamingBuffer
+		01 - Inserindo linha por StreamingBuffer
+		02 - Representando a linha (C)
+		03 - Inserindo multiplas linhas por StreamingBuffer
+		04 - Representando múltiplas linhas (C)
+		05 - Conceitos do StreamingBuffer
+		06 - Alterar e excluir uma linha na tabela (B)
+		07 - Obtendo data limite de atualização
+		08 - Obtendo a data para realizar a atualização (C)
+		09 - Fim da validade do StreamingBuffer
+		10 - Fim da validade do StreamingBuffer (B)
+		11 - Faça como eu fiz
+		12 - O que aprendemos?
+	04 - Usando SQL na classe
+		01 - Download do material da aula
+		02 - Usando SQL através de classe
