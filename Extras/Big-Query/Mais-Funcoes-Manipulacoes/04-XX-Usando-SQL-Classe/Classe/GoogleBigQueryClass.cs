@@ -15,6 +15,8 @@ namespace _04_XX_Usando_SQL_Classe.Classe
         public BigQueryClient Cliente { get; set; }
         public BigQueryDataset DataSet { get; set; }
         public BigQueryTable Tabela { get; set; }
+        public BigQueryResults Resultado { get; set; }
+        public JobStatistics Stats { get; set; }
 
         public GoogleBigQueryClass(string projetoId)
         {
@@ -119,6 +121,15 @@ namespace _04_XX_Usando_SQL_Classe.Classe
             dtDateTime = dtDateTime.AddSeconds(unixTimeStamp).ToLocalTime();
 
             return dtDateTime;
+        }
+
+        public void SQLCommand(string sql)
+        {
+            Resultado = Cliente.ExecuteQuery(sql, null);
+
+            var job = Cliente.GetJob(Resultado.JobReference);
+
+            Stats = job.Statistics;
         }
     }
 }

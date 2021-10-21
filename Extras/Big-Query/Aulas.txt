@@ -109,3 +109,5 @@ C# e Big Query: Mais funções e manipulações
 	04 - Usando SQL na classe
 		01 - Download do material da aula
 		02 - Usando SQL através de classe
+		03 - Usando comandos SQL através da classe
+		04 - Exibindo estatísticas

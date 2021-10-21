@@ -22,7 +22,8 @@ namespace _04_XX_Usando_SQL_Classe
             //CursoBQCSharp010();
             //CursoBQCSharp011();
             //CursoBQCSharp012();
-            CursoBQCSharp013();
+            //CursoBQCSharp013();
+            CursoBQCSharp014();
         }
 
         // Conectando ao projeto
@@ -432,6 +433,35 @@ namespace _04_XX_Usando_SQL_Classe
                 string x = googleBigQueryClass.GetStreamingBufferTime();
 
                 Console.WriteLine("Streaming Buffer time é igual a {0}.", x.ToString());
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Erro: {0}.", e.Message);
+            }
+        }
+
+        // Inserindo linha com SQL
+        private static void CursoBQCSharp014()
+        {
+            try
+            {
+                string projetoId = "nome-do-projeto";
+
+                GoogleBigQueryClass googleBigQueryClass = new GoogleBigQueryClass(projetoId);
+
+                Console.WriteLine("Conexão ao projeto {0} realizado com sucesso.", googleBigQueryClass.ProjetoId);
+
+                string consultaSQL = "INSERT INTO `curso-big-query-09652.Suco_de_Frutas_C_Sharp.FABRICA` VALUES (1, '001', 'Fábrica de Rio de Janeiro');";
+                googleBigQueryClass.SQLCommand(consultaSQL);
+
+                consultaSQL = "INSERT INTO `curso-big-query-09652.Suco_de_Frutas_C_Sharp.FABRICA` VALUES (2, '002', 'Fábrica de São Paulo');";
+                googleBigQueryClass.SQLCommand(consultaSQL);
+
+                consultaSQL = "INSERT INTO `curso-big-query-09652.Suco_de_Frutas_C_Sharp.FABRICA` VALUES (3, '003', 'Fábrica de Minas Gerais');";
+                googleBigQueryClass.SQLCommand(consultaSQL);
+
+                Console.WriteLine("Comando efetuado com sucesso.");
                 Console.ReadLine();
             }
             catch (Exception e)
