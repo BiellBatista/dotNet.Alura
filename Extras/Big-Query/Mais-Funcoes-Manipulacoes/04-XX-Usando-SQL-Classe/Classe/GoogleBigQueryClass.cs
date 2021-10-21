@@ -127,6 +127,7 @@ namespace _04_XX_Usando_SQL_Classe.Classe
         {
             Resultado = Cliente.ExecuteQuery(sql, null);
 
+            // Verificando as estatísticas do BigQuery
             var job = Cliente.GetJob(Resultado.JobReference);
 
             Stats = job.Statistics;

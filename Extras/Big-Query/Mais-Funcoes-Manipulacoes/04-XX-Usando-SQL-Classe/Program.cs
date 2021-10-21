@@ -24,6 +24,7 @@ namespace _04_XX_Usando_SQL_Classe
             //CursoBQCSharp012();
             //CursoBQCSharp013();
             CursoBQCSharp014();
+            CursoBQCSharp015();
         }
 
         // Conectando ao projeto
@@ -460,6 +461,59 @@ namespace _04_XX_Usando_SQL_Classe
 
                 consultaSQL = "INSERT INTO `curso-big-query-09652.Suco_de_Frutas_C_Sharp.FABRICA` VALUES (3, '003', 'Fábrica de Minas Gerais');";
                 googleBigQueryClass.SQLCommand(consultaSQL);
+
+                Console.WriteLine("Comando efetuado com sucesso.");
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Erro: {0}.", e.Message);
+            }
+        }
+
+        // Verificando as estatísticas do BigQuery
+        private static void CursoBQCSharp015()
+        {
+            try
+            {
+                string projetoId = "nome-do-projeto";
+
+                GoogleBigQueryClass googleBigQueryClass = new GoogleBigQueryClass(projetoId);
+
+                Console.WriteLine("Conexão ao projeto {0} realizado com sucesso.", googleBigQueryClass.ProjetoId);
+
+                string consultaSQL = "INSERT INTO `curso-big-query-09652.Suco_de_Frutas_C_Sharp.FABRICA` VALUES (1, '001', 'Fábrica de Rio de Janeiro');";
+                googleBigQueryClass.SQLCommand(consultaSQL);
+
+                var dataCriacao = googleBigQueryClass.UnixTimeStampToDateTime(Convert.ToDouble(googleBigQueryClass.Stats.CreationTime / 1000)).ToString();
+                var dataFinalizacao = googleBigQueryClass.UnixTimeStampToDateTime(Convert.ToDouble(googleBigQueryClass.Stats.EndTime / 1000)).ToString();
+                var numeroBytes = googleBigQueryClass.Stats.TotalBytesProcessed.ToString();
+
+                Console.WriteLine("Data da criação do JOB: {0}.", dataCriacao);
+                Console.WriteLine("Data da finalziação do JOB: {0}.", dataFinalizacao);
+                Console.WriteLine("Número bytes processados: {0}.", numeroBytes);
+
+                consultaSQL = "INSERT INTO `curso-big-query-09652.Suco_de_Frutas_C_Sharp.FABRICA` VALUES (2, '002', 'Fábrica de São Paulo');";
+                googleBigQueryClass.SQLCommand(consultaSQL);
+
+                dataCriacao = googleBigQueryClass.UnixTimeStampToDateTime(Convert.ToDouble(googleBigQueryClass.Stats.CreationTime / 1000)).ToString();
+                dataFinalizacao = googleBigQueryClass.UnixTimeStampToDateTime(Convert.ToDouble(googleBigQueryClass.Stats.EndTime / 1000)).ToString();
+                numeroBytes = googleBigQueryClass.Stats.TotalBytesProcessed.ToString();
+
+                Console.WriteLine("Data da criação do JOB: {0}.", dataCriacao);
+                Console.WriteLine("Data da finalziação do JOB: {0}.", dataFinalizacao);
+                Console.WriteLine("Número bytes processados: {0}.", numeroBytes);
+
+                consultaSQL = "INSERT INTO `curso-big-query-09652.Suco_de_Frutas_C_Sharp.FABRICA` VALUES (3, '003', 'Fábrica de Minas Gerais');";
+                googleBigQueryClass.SQLCommand(consultaSQL);
+
+                dataCriacao = googleBigQueryClass.UnixTimeStampToDateTime(Convert.ToDouble(googleBigQueryClass.Stats.CreationTime / 1000)).ToString();
+                dataFinalizacao = googleBigQueryClass.UnixTimeStampToDateTime(Convert.ToDouble(googleBigQueryClass.Stats.EndTime / 1000)).ToString();
+                numeroBytes = googleBigQueryClass.Stats.TotalBytesProcessed.ToString();
+
+                Console.WriteLine("Data da criação do JOB: {0}.", dataCriacao);
+                Console.WriteLine("Data da finalziação do JOB: {0}.", dataFinalizacao);
+                Console.WriteLine("Número bytes processados: {0}.", numeroBytes);
 
                 Console.WriteLine("Comando efetuado com sucesso.");
                 Console.ReadLine();

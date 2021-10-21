@@ -111,3 +111,5 @@ C# e Big Query: Mais funções e manipulações
 		02 - Usando SQL através de classe
 		03 - Usando comandos SQL através da classe
 		04 - Exibindo estatísticas
+		05 - Data UNIX (C)
+		06 - Alterando dados da tabela
