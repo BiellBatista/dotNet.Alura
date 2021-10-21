@@ -113,3 +113,5 @@ C# e Big Query: Mais funções e manipulações
 		04 - Exibindo estatísticas
 		05 - Data UNIX (C)
 		06 - Alterando dados da tabela
+		07 - Modificando dados (A)
+		08 - Criando a tabela de clientes
