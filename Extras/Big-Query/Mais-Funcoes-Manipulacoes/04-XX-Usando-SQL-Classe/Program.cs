@@ -25,7 +25,8 @@ namespace _04_XX_Usando_SQL_Classe
             //CursoBQCSharp013();
             //CursoBQCSharp014();
             //CursoBQCSharp015();
-            CursoBQCSharp016();
+            //CursoBQCSharp016();
+            CursoBQCSharp017();
         }
 
         // Conectando ao projeto
@@ -557,6 +558,50 @@ namespace _04_XX_Usando_SQL_Classe
                 Console.WriteLine("Data da criação do JOB: {0}.", dataCriacao);
                 Console.WriteLine("Data da finalziação do JOB: {0}.", dataFinalizacao);
                 Console.WriteLine("Número bytes processados: {0}.", numeroBytes);
+
+                Console.WriteLine("Comando efetuado com sucesso.");
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Erro: {0}.", e.Message);
+            }
+        }
+
+        private static void CursoBQCSharp017()
+        {
+            try
+            {
+                string projetoId = "nome-do-projeto";
+                string datasetId = "identificador-conjunto-dados";
+                string tableId = "nome-da-tabela";
+
+                GoogleBigQueryClass googleBigQueryClass = new GoogleBigQueryClass(projetoId);
+
+                Console.WriteLine("Conexão ao projeto {0} realizado com sucesso.", googleBigQueryClass.ProjetoId);
+
+                googleBigQueryClass.AbrirConjuntoDados(datasetId);
+
+                Console.WriteLine("Conexão com o conjunto de dados {0} feita com sucesso.", googleBigQueryClass.DataSetId);
+
+                string[,] fields = new string[,]
+                {
+                    {"ID_CLIENTE", "Campo Identificador do Cliente", "INTEGER", "NULLABLE" },
+                    {"COD_CLIENTE", "Código do Cliente", "STRING", "NULLABLE" },
+                    {"DESC_CLIENTE", "Descritor do Cliente", "STRING", "NULLABLE" },
+                    {"COD_CIDADE", "Cidade do Cliente", "STRING", "NULLABLE" },
+                    {"DESC_CIDADE", "Descritor da Cidade do Cliente", "STRING", "NULLABLE" },
+                    {"COD_ESTADO", "Estado do Cliente", "STRING", "NULLABLE" },
+                    {"DESC_ESTADO", "Descritor do Estado do Cliente", "STRING", "NULLABLE" },
+                    {"COD_REGIAO", "Região do Cliente", "STRING","NULLABLE" },
+                    {"DESC_REGIAO", "Descritor da Região do Cliente", "STRING", "NULLABLE" },
+                    {"COD_SEGMENTO", "Segmento do Cliente", "STRING", "NULLABLE" },
+                    {"DESC_SEGMENTO", "Descritor do Segmento do Cliente", "STRING", "NULLABLE" }
+                };
+
+                googleBigQueryClass.CriarTabela(tableId, fields);
+
+                Console.WriteLine("Tabela {0} criada com sucesso.", tableId);
 
                 Console.WriteLine("Comando efetuado com sucesso.");
                 Console.ReadLine();
