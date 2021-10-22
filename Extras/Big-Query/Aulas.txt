@@ -132,3 +132,5 @@ C# e Big Query: Mais funções e manipulações
 		01 - Consultando dados de uma tabela através de SQL
 		02 - Consultando dados (B)
 		03 - Obtendo o laytout da tabela
+		04 - Buscando o LAYOUT da Tabela
+		05 - Criando um Datatable

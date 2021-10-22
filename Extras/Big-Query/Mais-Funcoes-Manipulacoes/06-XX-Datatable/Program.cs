@@ -31,7 +31,8 @@ namespace _06_XX_Datatable
             //CursoBQCSharp018();
             //CursoBQCSharp019();
             //CursoBQCSharp020();
-            CursoBQCSharp021();
+            //CursoBQCSharp021();
+            CursoBQCSharp022();
         }
 
         // Conectando ao projeto
@@ -836,6 +837,38 @@ namespace _06_XX_Datatable
                     var desc = linha["DESC_CLIENTE"];
 
                     Console.WriteLine($"{id} : {cod} : {desc}");
+                }
+
+                Console.WriteLine("Consula efetuada com sucesso.");
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Erro: {0}.", e.Message);
+            }
+        }
+
+        // Consultando dados de uma tabela através de SQL
+        private static void CursoBQCSharp022()
+        {
+            try
+            {
+                string projetoId = "nome-do-projeto";
+                var cliente = BigQueryClient.Create(projetoId);
+
+                Console.WriteLine("Conexão ao projeto {0} realizado com sucesso.", projetoId);
+
+                string consultaSQL = "SELECT * FROM `curso-big-query-09652.Suco_de_Frutas_C_Sharp.CLIENTE`;";
+                var resultadoSQL = cliente.ExecuteQuery(consultaSQL, null);
+
+                int i = 0;
+
+                for (i = 0; i <= resultadoSQL.Schema.Fields.Count - 1; i++)
+                {
+                    var nome = resultadoSQL.Schema.Fields[i].Name;
+                    var tipo = resultadoSQL.Schema.Fields[i].Type;
+
+                    Console.WriteLine($"{nome} : {tipo}");
                 }
 
                 Console.WriteLine("Consula efetuada com sucesso.");
