@@ -35,7 +35,9 @@ namespace _07_XX_Finalizando_Classe
             //CursoBQCSharp021();
             //CursoBQCSharp022();
             //CursoBQCSharp023();
-            CursoBQCSharp024();
+            //CursoBQCSharp024();
+            //CursoBQCSharp025();
+            CursoBQCSharp026();
         }
 
         // Conectando ao projeto
@@ -977,6 +979,114 @@ namespace _07_XX_Finalizando_Classe
                 }
 
                 Console.WriteLine("Consula efetuada com sucesso.");
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Erro: {0}.", e.Message);
+            }
+        }
+
+        // Passagem de parâmetros
+        private static void CursoBQCSharp025()
+        {
+            try
+            {
+                string projetoId = "nome-do-projeto";
+                string estado = "RJ";
+
+                var cliente = BigQueryClient.Create(projetoId);
+
+                Console.WriteLine("Conexão ao projeto {0} realizado com sucesso.", projetoId);
+
+                string consultaSQL = "SELECT * FROM `curso-big-query-09652.Suco_de_Frutas_C_Sharp.CLIENTE` WHERE COD_ESTADO = @ESTADO;";
+                BigQueryParameter[] parametros = new[]
+                {
+                    new BigQueryParameter("ESTADO", BigQueryDbType.String, estado)
+                };
+                var resultadoSQL = cliente.ExecuteQuery(consultaSQL, parametros);
+
+                DataTable dt = new DataTable();
+                int i = 0;
+
+                for (i = 0; i <= resultadoSQL.Schema.Fields.Count - 1; i++)
+                {
+                    var vField = resultadoSQL.Schema.Fields[i];
+
+                    if (vField.Type == "STRING")
+                    {
+                        DataColumn colStr32 = new DataColumn(vField.Name);
+
+                        colStr32.DataType = System.Type.GetType("System.String");
+                        dt.Columns.Add(colStr32);
+                    }
+                    else if (vField.Type == "INTEGER")
+                    {
+                        DataColumn colInt32 = new DataColumn(vField.Name);
+
+                        colInt32.DataType = System.Type.GetType("System.Int32");
+                        dt.Columns.Add(colInt32);
+                    }
+                }
+
+                foreach (var linha in resultadoSQL)
+                {
+                    DataRow dr = dt.NewRow();
+
+                    for (i = 0; i <= resultadoSQL.Schema.Fields.Count - 1; i++)
+                    {
+                        dr[i] = linha[i];
+                    }
+
+                    dt.Rows.Add(dr);
+                }
+
+                Console.WriteLine("Consula efetuada com sucesso.");
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Erro: {0}.", e.Message);
+            }
+        }
+
+        // Passagem de parâmetros
+        private static void CursoBQCSharp026()
+        {
+            try
+            {
+                string projetoId = "nome-do-projeto";
+                string datasetId = "identificador-conjunto-dados";
+                string tableId = "nome-da-tabela";
+
+                GoogleBigQueryClass googleBigQueryClass = new GoogleBigQueryClass(projetoId);
+
+                Console.WriteLine("Conexão ao projeto {0} realizado com sucesso.", googleBigQueryClass.ProjetoId);
+
+                googleBigQueryClass.AbrirConjuntoDados(datasetId);
+
+                Console.WriteLine("Conexão com o conjunto de dados {0} feita com sucesso.", googleBigQueryClass.DataSetId);
+
+                string estado = "RJ";
+                string consultaSQL = "SELECT * FROM `curso-big-query-09652.Suco_de_Frutas_C_Sharp.CLIENTE` WHERE COD_ESTADO = @ESTADO;";
+                BigQueryParameter[] parametros = new[]
+                {
+                    new BigQueryParameter("ESTADO", BigQueryDbType.String, estado)
+                };
+
+                //googleBigQueryClass.SQLCommandParamDt(consultaSQL, parametros);
+
+                var dataCriacao = googleBigQueryClass.UnixTimeStampToDateTime(Convert.ToDouble(googleBigQueryClass.Stats.CreationTime / 1000)).ToString();
+                var dataFinalizacao = googleBigQueryClass.UnixTimeStampToDateTime(Convert.ToDouble(googleBigQueryClass.Stats.EndTime / 1000)).ToString();
+                var numeroBytes = googleBigQueryClass.Stats.TotalBytesProcessed.ToString();
+
+                Console.WriteLine("Data da criação do JOB: {0}.", dataCriacao);
+                Console.WriteLine("Data da finalziação do JOB: {0}.", dataFinalizacao);
+                Console.WriteLine("Número bytes processados: {0}.", numeroBytes);
+
+                var dtResultado = googleBigQueryClass.DataTable;
+
+                Console.WriteLine("Comando efetuado com sucesso.");
                 Console.ReadLine();
             }
             catch (Exception e)

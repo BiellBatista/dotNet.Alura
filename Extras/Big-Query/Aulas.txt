@@ -142,3 +142,5 @@ C# e Big Query: Mais funções e manipulações
 	07 - Finalizando a classe
 		01 - Download do material da aula
 		02 - Passagem de parâmetros
+		03 - Parâmetros como variáveis em consultas
+		04 - Implementando a consulta na classe
