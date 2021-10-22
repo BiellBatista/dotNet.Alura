@@ -29,7 +29,8 @@ namespace _05_XX_Lendo_CSV
             //CursoBQCSharp016();
             //CursoBQCSharp017();
             //CursoBQCSharp018();
-            CursoBQCSharp019();
+            //CursoBQCSharp019();
+            CursoBQCSharp020();
         }
 
         // Conectando ao projeto
@@ -760,6 +761,52 @@ namespace _05_XX_Lendo_CSV
                 }
 
                 Console.WriteLine("Comando efetuado com sucesso.");
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Erro: {0}.", e.Message);
+            }
+        }
+
+        // Lendo um CSV
+        private static void CursoBQCSharp020()
+        {
+            try
+            {
+                string projetoId = "nome-do-projeto";
+                string datasetId = "identificador-conjunto-dados";
+                string tableId = "nome-da-tabela";
+
+                GoogleBigQueryClass googleBigQueryClass = new GoogleBigQueryClass(projetoId);
+
+                Console.WriteLine("Conexão ao projeto {0} realizado com sucesso.", googleBigQueryClass.ProjetoId);
+
+                googleBigQueryClass.AbrirConjuntoDados(datasetId);
+
+                Console.WriteLine("Conexão com o conjunto de dados {0} feita com sucesso.", googleBigQueryClass.DataSetId);
+
+                // O array multidimensional que representa o esquema tem que ter os campos declarados na mesma ordem que as colunas do CSV.
+                string[,] fields = new string[,]
+                {
+                    {"ID_PRODUTO", "Campo Identificador do Produto", "INTEGER", "NULLABLE"},
+                    {"COD_PRODUTO", "Campo com o código do Produto", "STRING", "NULLABLE"},
+                    {"DESC_PRODUTO", "Descritor do Produto", "STRING", "NULLABLE"},
+                    {"COD_MARCA", "Campo com o código da marca", "STRING", "NULLABLE"},
+                    {"DESC_MARCA", "Descritor da marca", "STRING", "NULLABLE"},
+                    {"COD_SEGMENTO", "Campo com o código do segmento", "STRING", "NULLABLE"},
+                    {"DESC_SEGMENTO", "Descritor do segmento", "STRING", "NULLABLE"},
+                    {"ATR_TAMANHO", "Tamanho da embalagem", "STRING", "NULLABLE"},
+                    {"ATR_SABOR", "Sabor do produto", "STRING", "NULLABLE"}
+                };
+
+                googleBigQueryClass.AbrirTabela(tableId);
+
+                Console.WriteLine("Tabela {0} aberta com sucesso.", tableId);
+
+                googleBigQueryClass.LoadCSV("C:\\CursoBQCSharp\\CursoBQCSharp\\CSV\\produto.csv", fields);
+
+                Console.WriteLine("Leitura efetuada com sucesso.");
                 Console.ReadLine();
             }
             catch (Exception e)

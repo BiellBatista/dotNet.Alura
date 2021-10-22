@@ -125,3 +125,6 @@ C# e Big Query: Mais funções e manipulações
 		04 - Passagem de parâmetros
 		05 - Representação do parâmetro (C)
 		06 - Lendo de arquivo texto por classe
+		07 - Usando o esquema (B)
+		08 - Faça como eu fiz
+		09 - O que aprendemos?
