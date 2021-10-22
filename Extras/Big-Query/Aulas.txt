@@ -134,3 +134,5 @@ C# e Big Query: Mais funções e manipulações
 		03 - Obtendo o laytout da tabela
 		04 - Buscando o LAYOUT da Tabela
 		05 - Criando um Datatable
+		06 - Acessando a tabela e criando um DataTable
+		07 - Escrevendo o resultado num Datatable
