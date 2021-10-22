@@ -148,3 +148,7 @@ C# e Big Query: Mais funções e manipulações
 		06 - Ajustando a passagem de parâmetros
 		07 - Ajustando mais ainda a classe
 		08 - Ajustando o programa
+		09 - Exemplo de uma aplicação
+		10 - Faça como eu fiz
+		11 - O que aprendemos?
+		12 - Conclusão
