@@ -37,7 +37,8 @@ namespace _07_XX_Finalizando_Classe
             //CursoBQCSharp023();
             //CursoBQCSharp024();
             //CursoBQCSharp025();
-            CursoBQCSharp026();
+            //CursoBQCSharp026();
+            CursoBQCSharp027();
         }
 
         // Conectando ao projeto
@@ -1075,6 +1076,51 @@ namespace _07_XX_Finalizando_Classe
                 };
 
                 //googleBigQueryClass.SQLCommandParamDt(consultaSQL, parametros);
+
+                var dataCriacao = googleBigQueryClass.UnixTimeStampToDateTime(Convert.ToDouble(googleBigQueryClass.Stats.CreationTime / 1000)).ToString();
+                var dataFinalizacao = googleBigQueryClass.UnixTimeStampToDateTime(Convert.ToDouble(googleBigQueryClass.Stats.EndTime / 1000)).ToString();
+                var numeroBytes = googleBigQueryClass.Stats.TotalBytesProcessed.ToString();
+
+                Console.WriteLine("Data da criação do JOB: {0}.", dataCriacao);
+                Console.WriteLine("Data da finalziação do JOB: {0}.", dataFinalizacao);
+                Console.WriteLine("Número bytes processados: {0}.", numeroBytes);
+
+                var dtResultado = googleBigQueryClass.DataTable;
+
+                Console.WriteLine("Comando efetuado com sucesso.");
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Erro: {0}.", e.Message);
+            }
+        }
+
+        // Passagem de parâmetros
+        private static void CursoBQCSharp027()
+        {
+            try
+            {
+                string projetoId = "nome-do-projeto";
+                string datasetId = "identificador-conjunto-dados";
+                string tableId = "nome-da-tabela";
+
+                GoogleBigQueryClass googleBigQueryClass = new GoogleBigQueryClass(projetoId);
+
+                Console.WriteLine("Conexão ao projeto {0} realizado com sucesso.", googleBigQueryClass.ProjetoId);
+
+                googleBigQueryClass.AbrirConjuntoDados(datasetId);
+
+                Console.WriteLine("Conexão com o conjunto de dados {0} feita com sucesso.", googleBigQueryClass.DataSetId);
+
+                string estado = "RJ";
+                string consultaSQL = "SELECT * FROM `curso-big-query-09652.Suco_de_Frutas_C_Sharp.CLIENTE` WHERE COD_ESTADO = @ESTADO;";
+                string[,] parametros = new string[,]
+                {
+                    {"ESTADO","STRING", estado}
+                };
+
+                googleBigQueryClass.SQLCommandParamDt(consultaSQL, parametros);
 
                 var dataCriacao = googleBigQueryClass.UnixTimeStampToDateTime(Convert.ToDouble(googleBigQueryClass.Stats.CreationTime / 1000)).ToString();
                 var dataFinalizacao = googleBigQueryClass.UnixTimeStampToDateTime(Convert.ToDouble(googleBigQueryClass.Stats.EndTime / 1000)).ToString();
