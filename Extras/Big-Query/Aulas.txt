@@ -128,3 +128,5 @@ C# e Big Query: Mais funções e manipulações
 		07 - Usando o esquema (B)
 		08 - Faça como eu fiz
 		09 - O que aprendemos?
+	06 - Datatable
+		01 - Consultando dados de uma tabela através de SQL
