@@ -136,3 +136,6 @@ C# e Big Query: Mais funções e manipulações
 		05 - Criando um Datatable
 		06 - Acessando a tabela e criando um DataTable
 		07 - Escrevendo o resultado num Datatable
+		08 - Acessando a tabela e escrevendo em um DataTable (C)
+		09 - Faça como eu fiz
+		10 - O que aprendemos?
