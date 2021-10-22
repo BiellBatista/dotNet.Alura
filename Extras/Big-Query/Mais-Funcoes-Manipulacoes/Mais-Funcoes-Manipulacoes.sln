@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-XX-StreamingBuffer", "03
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-XX-Usando-SQL-Classe", "04-XX-Usando-SQL-Classe\04-XX-Usando-SQL-Classe.csproj", "{9882489C-5D60-42EA-A0C6-CE5FD02FB314}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-XX-Lendo-CSV", "05-XX-Lendo-CSV\05-XX-Lendo-CSV.csproj", "{C9F559A6-1E65-4E4A-8273-5F382B6DB884}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9882489C-5D60-42EA-A0C6-CE5FD02FB314}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9882489C-5D60-42EA-A0C6-CE5FD02FB314}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9882489C-5D60-42EA-A0C6-CE5FD02FB314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9F559A6-1E65-4E4A-8273-5F382B6DB884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F559A6-1E65-4E4A-8273-5F382B6DB884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9F559A6-1E65-4E4A-8273-5F382B6DB884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9F559A6-1E65-4E4A-8273-5F382B6DB884}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

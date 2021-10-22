@@ -118,3 +118,6 @@ C# e Big Query: Mais funções e manipulações
 		09 - Campo Lógico
 		10 - Faça como eu fiz
 		11 - O que aprendemos?
+	05 - Lendo CSV
+		01 - Download do material da aula
+		02 - Lendo de arquivo CSV

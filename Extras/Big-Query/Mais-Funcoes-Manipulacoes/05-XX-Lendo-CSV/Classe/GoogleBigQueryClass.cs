@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.IO;
 
-namespace _04_XX_Usando_SQL_Classe.Classe
+namespace _05_XX_Lendo_CSV.Classe
 {
     public class GoogleBigQueryClass
     {

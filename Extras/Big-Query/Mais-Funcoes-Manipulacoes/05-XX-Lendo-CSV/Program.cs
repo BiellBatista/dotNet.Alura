@@ -1,10 +1,10 @@
-﻿using _04_XX_Usando_SQL_Classe.Classe;
+﻿using _05_XX_Lendo_CSV.Classe;
 using Google.Apis.Bigquery.v2.Data;
 using Google.Cloud.BigQuery.V2;
 using System;
 using System.Collections.Generic;
 
-namespace _04_XX_Usando_SQL_Classe
+namespace _05_XX_Lendo_CSV
 {
     public class Program
     {
