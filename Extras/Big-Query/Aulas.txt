@@ -121,3 +121,5 @@ C# e Big Query: Mais funções e manipulações
 	05 - Lendo CSV
 		01 - Download do material da aula
 		02 - Lendo de arquivo CSV
+		03 - Lendo dados da agência
+		04 - Passagem de parâmetros

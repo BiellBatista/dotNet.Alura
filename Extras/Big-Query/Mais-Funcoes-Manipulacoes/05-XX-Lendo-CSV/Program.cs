@@ -3,6 +3,7 @@ using Google.Apis.Bigquery.v2.Data;
 using Google.Cloud.BigQuery.V2;
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace _05_XX_Lendo_CSV
 {
@@ -26,7 +27,8 @@ namespace _05_XX_Lendo_CSV
             //CursoBQCSharp014();
             //CursoBQCSharp015();
             //CursoBQCSharp016();
-            CursoBQCSharp017();
+            //CursoBQCSharp017();
+            CursoBQCSharp018();
         }
 
         // Conectando ao projeto
@@ -603,6 +605,81 @@ namespace _05_XX_Lendo_CSV
                 googleBigQueryClass.CriarTabela(tableId, fields);
 
                 Console.WriteLine("Tabela {0} criada com sucesso.", tableId);
+
+                Console.WriteLine("Comando efetuado com sucesso.");
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Erro: {0}.", e.Message);
+            }
+        }
+
+        // Lendo um CSV
+        private static void CursoBQCSharp018()
+        {
+            try
+            {
+                string projetoId = "nome-do-projeto";
+                string datasetId = "identificador-conjunto-dados";
+                string tableId = "nome-da-tabela";
+
+                GoogleBigQueryClass googleBigQueryClass = new GoogleBigQueryClass(projetoId);
+
+                Console.WriteLine("Conexão ao projeto {0} realizado com sucesso.", googleBigQueryClass.ProjetoId);
+
+                googleBigQueryClass.AbrirConjuntoDados(datasetId);
+
+                Console.WriteLine("Conexão com o conjunto de dados {0} feita com sucesso.", googleBigQueryClass.DataSetId);
+
+                googleBigQueryClass.AbrirTabela(tableId);
+
+                Console.WriteLine("Conexão com a Tabela {0} feita com sucesso.", tableId);
+
+                using (StreamReader sr = new StreamReader("C:\\CursoBQCSharp\\CursoBQCSharp\\CSV\\cliente.csv"))
+                {
+                    string linhaCabecario;
+                    string linha;
+
+                    linhaCabecario = sr.ReadLine();
+
+                    string[] vetLinhaCabecario = linhaCabecario.Split(',');
+
+                    while ((linha = sr.ReadLine()) != null)
+                    {
+                        string[] vetLinha = linha.Split(',');
+                        string consultaSQL;
+
+                        consultaSQL = " INSERT INTO " + googleBigQueryClass.TableName + " ";
+                        consultaSQL += $" ({vetLinhaCabecario[0]}, ";
+                        consultaSQL += $" {vetLinhaCabecario[1]}, ";
+                        consultaSQL += $" {vetLinhaCabecario[2]}, ";
+                        consultaSQL += $" {vetLinhaCabecario[3]}, ";
+                        consultaSQL += $" {vetLinhaCabecario[4]}, ";
+                        consultaSQL += $" {vetLinhaCabecario[5]}, ";
+                        consultaSQL += $" {vetLinhaCabecario[6]}, ";
+                        consultaSQL += $" {vetLinhaCabecario[7]}, ";
+                        consultaSQL += $" {vetLinhaCabecario[8]}, ";
+                        consultaSQL += $" {vetLinhaCabecario[9]}, ";
+                        consultaSQL += $" {vetLinhaCabecario[10]}) ";
+                        consultaSQL += " VALUES ";
+                        consultaSQL += $" ({vetLinha[0]}, ";
+                        consultaSQL += $" '{vetLinha[1]}', ";
+                        consultaSQL += $" '{vetLinha[2]}', ";
+                        consultaSQL += $" '{vetLinha[3]}', ";
+                        consultaSQL += $" '{vetLinha[4]}', ";
+                        consultaSQL += $" '{vetLinha[5]}', ";
+                        consultaSQL += $" '{vetLinha[6]}', ";
+                        consultaSQL += $" '{vetLinha[7]}', ";
+                        consultaSQL += $" '{vetLinha[8]}', ";
+                        consultaSQL += $" '{vetLinha[9]}', ";
+                        consultaSQL += $" '{vetLinha[10]}'); ";
+
+                        googleBigQueryClass.SQLCommand(consultaSQL);
+
+                        Console.WriteLine("Foi incluido dados do cliente {0}.", vetLinha[2]);
+                    }
+                }
 
                 Console.WriteLine("Comando efetuado com sucesso.");
                 Console.ReadLine();
