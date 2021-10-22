@@ -123,3 +123,5 @@ C# e Big Query: Mais funções e manipulações
 		02 - Lendo de arquivo CSV
 		03 - Lendo dados da agência
 		04 - Passagem de parâmetros
+		05 - Representação do parâmetro (C)
+		06 - Lendo de arquivo texto por classe

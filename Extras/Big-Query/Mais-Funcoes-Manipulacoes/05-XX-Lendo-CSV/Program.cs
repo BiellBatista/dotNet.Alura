@@ -28,7 +28,8 @@ namespace _05_XX_Lendo_CSV
             //CursoBQCSharp015();
             //CursoBQCSharp016();
             //CursoBQCSharp017();
-            CursoBQCSharp018();
+            //CursoBQCSharp018();
+            CursoBQCSharp019();
         }
 
         // Conectando ao projeto
@@ -676,6 +677,83 @@ namespace _05_XX_Lendo_CSV
                         consultaSQL += $" '{vetLinha[10]}'); ";
 
                         googleBigQueryClass.SQLCommand(consultaSQL);
+
+                        Console.WriteLine("Foi incluido dados do cliente {0}.", vetLinha[2]);
+                    }
+                }
+
+                Console.WriteLine("Comando efetuado com sucesso.");
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Erro: {0}.", e.Message);
+            }
+        }
+
+        // Lendo um CSV
+        private static void CursoBQCSharp019()
+        {
+            try
+            {
+                string projetoId = "nome-do-projeto";
+                string datasetId = "identificador-conjunto-dados";
+                string tableId = "nome-da-tabela";
+
+                GoogleBigQueryClass googleBigQueryClass = new GoogleBigQueryClass(projetoId);
+
+                Console.WriteLine("Conexão ao projeto {0} realizado com sucesso.", googleBigQueryClass.ProjetoId);
+
+                googleBigQueryClass.AbrirConjuntoDados(datasetId);
+
+                Console.WriteLine("Conexão com o conjunto de dados {0} feita com sucesso.", googleBigQueryClass.DataSetId);
+
+                googleBigQueryClass.AbrirTabela(tableId);
+
+                Console.WriteLine("Conexão com a Tabela {0} feita com sucesso.", tableId);
+
+                using (StreamReader sr = new StreamReader("C:\\CursoBQCSharp\\CursoBQCSharp\\CSV\\cliente.csv"))
+                {
+                    string linhaCabecario;
+                    string linha;
+
+                    linhaCabecario = sr.ReadLine();
+
+                    string[] vetLinhaCabecario = linhaCabecario.Split(',');
+
+                    while ((linha = sr.ReadLine()) != null)
+                    {
+                        string[] vetLinha = linha.Split(',');
+                        List<BigQueryParameter> listParam = new List<BigQueryParameter>();
+
+                        listParam.Add(new BigQueryParameter(vetLinhaCabecario[0], BigQueryDbType.Int64, vetLinha[0]));
+                        listParam.Add(new BigQueryParameter(vetLinhaCabecario[1], BigQueryDbType.String, vetLinha[1]));
+                        listParam.Add(new BigQueryParameter(vetLinhaCabecario[2], BigQueryDbType.String, vetLinha[2]));
+                        listParam.Add(new BigQueryParameter(vetLinhaCabecario[3], BigQueryDbType.String, vetLinha[3]));
+                        listParam.Add(new BigQueryParameter(vetLinhaCabecario[4], BigQueryDbType.String, vetLinha[4]));
+                        listParam.Add(new BigQueryParameter(vetLinhaCabecario[5], BigQueryDbType.String, vetLinha[5]));
+                        listParam.Add(new BigQueryParameter(vetLinhaCabecario[6], BigQueryDbType.String, vetLinha[6]));
+                        listParam.Add(new BigQueryParameter(vetLinhaCabecario[7], BigQueryDbType.String, vetLinha[7]));
+                        listParam.Add(new BigQueryParameter(vetLinhaCabecario[8], BigQueryDbType.String, vetLinha[8]));
+                        listParam.Add(new BigQueryParameter(vetLinhaCabecario[9], BigQueryDbType.String, vetLinha[9]));
+                        listParam.Add(new BigQueryParameter(vetLinhaCabecario[10], BigQueryDbType.String, vetLinha[10]));
+
+                        string consultaSQL;
+
+                        consultaSQL = @"INSERT INTO " + googleBigQueryClass.TableName + " VALUES ";
+                        consultaSQL += $"(@{vetLinhaCabecario[0]},";
+                        consultaSQL += $"@{vetLinhaCabecario[1]},";
+                        consultaSQL += $"@{vetLinhaCabecario[2]},";
+                        consultaSQL += $"@{vetLinhaCabecario[3]},";
+                        consultaSQL += $"@{vetLinhaCabecario[4]},";
+                        consultaSQL += $"@{vetLinhaCabecario[5]},";
+                        consultaSQL += $"@{vetLinhaCabecario[6]},";
+                        consultaSQL += $"@{vetLinhaCabecario[7]},";
+                        consultaSQL += $"@{vetLinhaCabecario[8]},";
+                        consultaSQL += $"@{vetLinhaCabecario[9]},";
+                        consultaSQL += $"@{vetLinhaCabecario[10]}); ";
+
+                        //googleBigQueryClass.SQLCommandParam(consultaSQL, listParam.ToArray());
 
                         Console.WriteLine("Foi incluido dados do cliente {0}.", vetLinha[2]);
                     }
