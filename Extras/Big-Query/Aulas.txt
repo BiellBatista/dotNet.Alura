@@ -130,3 +130,5 @@ C# e Big Query: Mais funções e manipulações
 		09 - O que aprendemos?
 	06 - Datatable
 		01 - Consultando dados de uma tabela através de SQL
+		02 - Consultando dados (B)
+		03 - Obtendo o laytout da tabela

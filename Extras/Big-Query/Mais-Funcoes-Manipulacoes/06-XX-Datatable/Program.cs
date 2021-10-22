@@ -30,7 +30,8 @@ namespace _06_XX_Datatable
             //CursoBQCSharp017();
             //CursoBQCSharp018();
             //CursoBQCSharp019();
-            CursoBQCSharp020();
+            //CursoBQCSharp020();
+            CursoBQCSharp021();
         }
 
         // Conectando ao projeto
@@ -807,6 +808,37 @@ namespace _06_XX_Datatable
                 googleBigQueryClass.LoadCSV("C:\\CursoBQCSharp\\CursoBQCSharp\\CSV\\produto.csv", fields);
 
                 Console.WriteLine("Leitura efetuada com sucesso.");
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Erro: {0}.", e.Message);
+            }
+        }
+
+        // Consultando dados de uma tabela através de SQL
+        private static void CursoBQCSharp021()
+        {
+            try
+            {
+                string projetoId = "nome-do-projeto";
+                var cliente = BigQueryClient.Create(projetoId);
+
+                Console.WriteLine("Conexão ao projeto {0} realizado com sucesso.", projetoId);
+
+                string consultaSQL = "SELECT * FROM `curso-big-query-09652.Suco_de_Frutas_C_Sharp.CLIENTE`;";
+                var resultadoSQL = cliente.ExecuteQuery(consultaSQL, null);
+
+                foreach (var linha in resultadoSQL)
+                {
+                    var id = linha["ID_CLIENTE"];
+                    var cod = linha["COD_CLIENTE"];
+                    var desc = linha["DESC_CLIENTE"];
+
+                    Console.WriteLine($"{id} : {cod} : {desc}");
+                }
+
+                Console.WriteLine("Consula efetuada com sucesso.");
                 Console.ReadLine();
             }
             catch (Exception e)
