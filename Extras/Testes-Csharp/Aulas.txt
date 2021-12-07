@@ -264,3 +264,6 @@ Testes em .NET: Fundamentos do Teste de Software
 		07 - Para saber mais: Criando um projeto de Testes pelo CLI
 		08 - Faça como eu fiz: Teste unitários
 		09 - O que aprendemos?
+	02 - Automação dos testes
+		01 - Projeto da aula anterior
+		02 - Utilizando xUnit
