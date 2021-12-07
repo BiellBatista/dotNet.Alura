@@ -454,6 +454,13 @@ Extra Testes em C#
 		04 - Esperando para as verificações
 		05 - Melhorando o código de testes
 		06 - Outros recursos
+	Testes em .NET: Fundamentos do Teste de Software
+		01 - Testes
+		02 - Automação dos testes
+		03 - O TDD
+		04 - Padronizando os testes
+		05 - Testando exceções
+		06 - Mais recursos
 -------------------------------------------------------------------------------------------------------------------------
 Formação Desenvolvedor .NET
 	Curso C# Parte 1: Primeiros Passos

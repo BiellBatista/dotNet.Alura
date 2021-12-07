@@ -253,3 +253,8 @@ Selenium WebDriver e C# parte 2: Outros recursos
 		08 - Projeto final
 		09 - Referências Utilizadas
 		10 - O que aprendemos?
+Testes em .NET: Fundamentos do Teste de Software
+	01 - Testes
+		01 - Apresentação
+		02 - Projeto da aula
+		03 - Configuração do ambiente
