@@ -1,6 +1,6 @@
 ﻿namespace _01_XX_Fundamentos_Teste_Software.Modelos
 {
-    internal class Patio
+    public class Patio
     {
         private double faturado;
         public double Faturado { get => faturado; set => faturado = value; }

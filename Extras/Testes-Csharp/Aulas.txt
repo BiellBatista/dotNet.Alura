@@ -258,3 +258,4 @@ Testes em .NET: Fundamentos do Teste de Software
 		01 - Apresentação
 		02 - Projeto da aula
 		03 - Configuração do ambiente
+		04 - Criando um projeto com testes
