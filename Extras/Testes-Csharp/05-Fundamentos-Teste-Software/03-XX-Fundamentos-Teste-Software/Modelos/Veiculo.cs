@@ -64,6 +64,7 @@ namespace _03_XX_Fundamentos_Teste_Software.Modelos
 
         public double Largura { get; set; }
         public double VelocidadeAtual { get; set; }
+
         public string Modelo { get; set; }
 
         public string Proprietario
@@ -117,6 +118,11 @@ namespace _03_XX_Fundamentos_Teste_Software.Modelos
             Proprietario = veiculoAlterado.Proprietario;
             Modelo = veiculoAlterado.Modelo;
             Cor = veiculoAlterado.Cor;
+        }
+
+        public override string ToString()
+        {
+            return $"Ficha Veículo:\nTipo do Veículo: {Tipo}\nProprietário: {Proprietario}\nModelo: {Modelo}\nCor: {Cor}\nPlaca: {Placa}";
         }
     }
 }

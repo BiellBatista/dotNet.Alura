@@ -66,5 +66,24 @@ namespace _03_XX_Fundamentos_Teste_Software.Testes
             //Assert
             Assert.Equal(modelo.VelocidadeAtual, veiculo.VelocidadeAtual);
         }
+
+        [Fact]
+        public void DadosVeiculo()
+        {
+            //Arrange
+            var veiculo = new Veiculo();
+
+            veiculo.Proprietario = "Gabriel Batista";
+            veiculo.Tipo = TipoVeiculo.Automovel;
+            veiculo.Cor = "Verde";
+            veiculo.Modelo = "Fusca";
+            veiculo.Placa = "ASD-9999";
+
+            //Act
+            var dados = veiculo.ToString();
+
+            //Assert
+            Assert.Contains("Tipo do Veículo: Automovel", dados);
+        }
     }
 }
