@@ -282,3 +282,6 @@ Testes em .NET: Fundamentos do Teste de Software
 		05 - Melhorando o design de nossas classes
 		06 - Faça como eu fiz: Refatorando a classe Veículo
 		07 - O que aprendemos?
+	04 - Padronizando os testes
+		01 - Projeto da aula anterior
+		02 - Nomenclatura dos testes
