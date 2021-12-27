@@ -8,10 +8,15 @@ namespace _05_XX_Fundamentos_Teste_Software.Modelos
         private string _placa;
 
         private string _proprietario;
+        private string _ticket;
 
         private TipoVeiculo _tipo;
 
         //Propriedades
+        public string Ticket
+        { get { return _ticket; } set { _ticket = value; } }
+
+        public string IdTicket { get; set; }
 
         public string Placa
         {

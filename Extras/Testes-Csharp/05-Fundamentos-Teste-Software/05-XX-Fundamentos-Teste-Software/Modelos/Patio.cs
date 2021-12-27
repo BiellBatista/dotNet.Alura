@@ -29,6 +29,7 @@
         public void RegistrarEntradaVeiculo(Veiculo veiculo)
         {
             veiculo.HoraEntrada = DateTime.Now;
+            veiculo.Ticket = GerarTicket(veiculo);
 
             Veiculos.Add(veiculo);
         }
@@ -81,40 +82,42 @@
             return informacao;
         }
 
-        public Veiculo PesquisaVeiculo(string placa)
+        public Veiculo PesquisaVeiculo(string idTicket)
         {
-            IEnumerable<Veiculo> enumerable()
-            {
-                foreach (var veiculo in Veiculos)
-                {
-                    if (veiculo.Placa == placa)
-                    {
-                        yield return veiculo;
-                    }
-                }
-            }
+            // Como estamos trabalhando com array de objetos,
+            // Podemos utilizar os recursos do `Linq to Objetcs` do .NET
+            var encontrado = (from veiculo in Veiculos
+                              where veiculo.IdTicket == idTicket
+                              select veiculo).SingleOrDefault();
 
-            return enumerable().SingleOrDefault();
+            return encontrado;
         }
 
         public Veiculo AlterarDadosVeiculo(Veiculo veiculoAlterado)
         {
-            IEnumerable<Veiculo> enumerable()
-            {
-                foreach (var veiculo in Veiculos)
-                {
-                    if (veiculo.Placa == veiculoAlterado.Placa)
-                    {
-                        yield return veiculo;
-                    }
-                }
-            }
+            // Como estamos trabalhando com array de objetos,
+            // Podemos utilizar os recursos do `Linq to Objetcs` do .NET
+            var veiculoTemp = (from veiculo in this.Veiculos
+                               where veiculo.Placa == veiculoAlterado.Placa
+                               select veiculo).SingleOrDefault();
 
-            var veiculoTempo = enumerable().SingleOrDefault();
+            veiculoTemp.AlterarDados(veiculoAlterado);
 
-            veiculoTempo.AlterarDados(veiculoAlterado);
+            return veiculoTemp;
+        }
 
-            return veiculoTempo;
+        private string GerarTicket(Veiculo veiculo)
+        {
+            string identificador = new Guid().ToString().Substring(0, 5);
+            string ticket = "###Ticket Estacionamento Alura###" +
+                            $"Identifcador: {identificador}" +
+                            $"Data/Hora de entrada: {DateTime.Now}" +
+                            $"Placa do Veículo:{veiculo.Placa}";
+
+            veiculo.IdTicket = identificador;
+            veiculo.Ticket = ticket;
+
+            return ticket;
         }
     }
 }

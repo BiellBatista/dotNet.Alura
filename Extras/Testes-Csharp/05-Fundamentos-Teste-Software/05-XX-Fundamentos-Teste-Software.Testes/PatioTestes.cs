@@ -69,7 +69,7 @@ namespace _05_XX_Fundamentos_Teste_Software.Testes
 
         [Theory]
         [InlineData("Gabriel Batista", "ASD-9999", "Preto", "Gol")]
-        public void LocalicaVeiculoNoPatioComBaseNaPlaca(string proprietario, string placa, string cor, string modelo)
+        public void LocalicaVeiculoNoPatioComBaseNaIdDoTicket(string proprietario, string placa, string cor, string modelo)
         {
             //Arrange
             var estacionamento = new Patio();
@@ -83,10 +83,10 @@ namespace _05_XX_Fundamentos_Teste_Software.Testes
             estacionamento.RegistrarEntradaVeiculo(_veiculo);
 
             //Act
-            var consultado = estacionamento.PesquisaVeiculo(_veiculo.Placa);
+            var consultado = estacionamento.PesquisaVeiculo(_veiculo.IdTicket);
 
             //Assert
-            Assert.Equal(placa, consultado.Placa);
+            Assert.Contains("###Ticket Estacionamento Alura###", consultado.Ticket);
         }
 
         [Fact]
