@@ -6,7 +6,7 @@ namespace _04_XX_Fundamentos_Teste_Software.Testes
     public class PatioTestes
     {
         [Fact]
-        public void ValidaFaturamento()
+        public void ValidaFaturamentoDoEstacionamentoComUmVeiculo()
         {
             //Arrange
             var estacionamento = new Patio();
@@ -33,7 +33,7 @@ namespace _04_XX_Fundamentos_Teste_Software.Testes
         [InlineData("Gabriel Almeida", "EFG-0000", "Prata", "Golf")]
         [InlineData("Letícia Baraldi", "CVF-4567", "Vermelho", "Honda Civic")]
         [InlineData("Jose Silva", "QDC-4215", "Branco", "HB20")]
-        public void ValidaFaturamentoComVariosVeiculos(string proprietario, string placa, string cor, string modelo)
+        public void ValidaFaturamentoDoEstacionamentoComVariosVeiculos(string proprietario, string placa, string cor, string modelo)
         {
             //Arrange
             var estacionamento = new Patio();
@@ -57,7 +57,7 @@ namespace _04_XX_Fundamentos_Teste_Software.Testes
 
         [Theory]
         [InlineData("Gabriel Batista", "ASD-9999", "Preto", "Gol")]
-        public void LocalicaVeiculoNoPatio(string proprietario, string placa, string cor, string modelo)
+        public void LocalicaVeiculoNoPatioComBaseNaPlaca(string proprietario, string placa, string cor, string modelo)
         {
             //Arrange
             var estacionamento = new Patio();
@@ -79,7 +79,7 @@ namespace _04_XX_Fundamentos_Teste_Software.Testes
         }
 
         [Fact]
-        public void AlterarDadosVeiculo()
+        public void AlterarDadosDoProprioVeiculo()
         {
             //Arrange
             var estacionamento = new Patio();
