@@ -287,3 +287,5 @@ Testes em .NET: Fundamentos do Teste de Software
 		02 - Nomenclatura dos testes
 		03 - Boas Práticas com Testes (B / C)
 		04 - Setup e Cleanup
+		05 - Faça como eu fiz: Reaproveitando códigos nos testes
+		06 - O que aprendemos?

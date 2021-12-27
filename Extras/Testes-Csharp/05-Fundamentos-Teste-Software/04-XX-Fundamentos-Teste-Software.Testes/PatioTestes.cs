@@ -1,25 +1,38 @@
 ﻿using _04_XX_Fundamentos_Teste_Software.Modelos;
+using System;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace _04_XX_Fundamentos_Teste_Software.Testes
 {
-    public class PatioTestes
+    public class PatioTestes : IDisposable
     {
+        private readonly ITestOutputHelper _saidaConoleTeste;
+
+        private readonly Veiculo _veiculo;
+
+        public PatioTestes(ITestOutputHelper saidaConoleTeste)
+        {
+            _saidaConoleTeste = saidaConoleTeste;
+            _veiculo = new Veiculo();
+
+            _saidaConoleTeste.WriteLine("Construtor invocado.");
+        }
+
         [Fact]
         public void ValidaFaturamentoDoEstacionamentoComUmVeiculo()
         {
             //Arrange
             var estacionamento = new Patio();
-            var veiculo = new Veiculo();
 
-            veiculo.Proprietario = "Gabriel Batista";
-            veiculo.Tipo = TipoVeiculo.Automovel;
-            veiculo.Cor = "Verde";
-            veiculo.Modelo = "Fusca";
-            veiculo.Placa = "ASD-9999";
+            _veiculo.Proprietario = "Gabriel Batista";
+            _veiculo.Tipo = TipoVeiculo.Automovel;
+            _veiculo.Cor = "Verde";
+            _veiculo.Modelo = "Fusca";
+            _veiculo.Placa = "ASD-9999";
 
-            estacionamento.RegistrarEntradaVeiculo(veiculo);
-            estacionamento.RegistrarSaidaVeiculo(veiculo.Placa);
+            estacionamento.RegistrarEntradaVeiculo(_veiculo);
+            estacionamento.RegistrarSaidaVeiculo(_veiculo.Placa);
 
             //Act
             var faturamento = estacionamento.TotalFaturado();
@@ -37,16 +50,15 @@ namespace _04_XX_Fundamentos_Teste_Software.Testes
         {
             //Arrange
             var estacionamento = new Patio();
-            var veiculo = new Veiculo();
 
-            veiculo.Proprietario = proprietario;
-            veiculo.Tipo = TipoVeiculo.Automovel;
-            veiculo.Placa = placa;
-            veiculo.Modelo = modelo;
-            veiculo.Cor = cor;
+            _veiculo.Proprietario = proprietario;
+            _veiculo.Tipo = TipoVeiculo.Automovel;
+            _veiculo.Placa = placa;
+            _veiculo.Modelo = modelo;
+            _veiculo.Cor = cor;
 
-            estacionamento.RegistrarEntradaVeiculo(veiculo);
-            estacionamento.RegistrarSaidaVeiculo(veiculo.Placa);
+            estacionamento.RegistrarEntradaVeiculo(_veiculo);
+            estacionamento.RegistrarSaidaVeiculo(_veiculo.Placa);
 
             //Act
             var faturamento = estacionamento.TotalFaturado();
@@ -61,18 +73,17 @@ namespace _04_XX_Fundamentos_Teste_Software.Testes
         {
             //Arrange
             var estacionamento = new Patio();
-            var veiculo = new Veiculo();
 
-            veiculo.Proprietario = proprietario;
-            veiculo.Tipo = TipoVeiculo.Automovel;
-            veiculo.Placa = placa;
-            veiculo.Modelo = modelo;
-            veiculo.Cor = cor;
+            _veiculo.Proprietario = proprietario;
+            _veiculo.Tipo = TipoVeiculo.Automovel;
+            _veiculo.Placa = placa;
+            _veiculo.Modelo = modelo;
+            _veiculo.Cor = cor;
 
-            estacionamento.RegistrarEntradaVeiculo(veiculo);
+            estacionamento.RegistrarEntradaVeiculo(_veiculo);
 
             //Act
-            var consultado = estacionamento.PesquisaVeiculo(veiculo.Placa);
+            var consultado = estacionamento.PesquisaVeiculo(_veiculo.Placa);
 
             //Assert
             Assert.Equal(placa, consultado.Placa);
@@ -83,16 +94,15 @@ namespace _04_XX_Fundamentos_Teste_Software.Testes
         {
             //Arrange
             var estacionamento = new Patio();
-            var veiculo = new Veiculo();
             var veiculoAlterado = new Veiculo();
 
-            veiculo.Proprietario = "Gabriel Batista";
-            veiculo.Tipo = TipoVeiculo.Automovel;
-            veiculo.Cor = "Verde";
-            veiculo.Modelo = "Fusca";
-            veiculo.Placa = "ASD-9999";
+            _veiculo.Proprietario = "Gabriel Batista";
+            _veiculo.Tipo = TipoVeiculo.Automovel;
+            _veiculo.Cor = "Verde";
+            _veiculo.Modelo = "Fusca";
+            _veiculo.Placa = "ASD-9999";
 
-            estacionamento.RegistrarEntradaVeiculo(veiculo);
+            estacionamento.RegistrarEntradaVeiculo(_veiculo);
 
             veiculoAlterado.Proprietario = "Gabriel Almeida";
             veiculoAlterado.Tipo = TipoVeiculo.Automovel;
@@ -105,6 +115,11 @@ namespace _04_XX_Fundamentos_Teste_Software.Testes
 
             //Assert
             Assert.Equal(alterado.Cor, veiculoAlterado.Cor);
+        }
+
+        public void Dispose()
+        {
+            _saidaConoleTeste.WriteLine("Dispose invocado.");
         }
     }
 }

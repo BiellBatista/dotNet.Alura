@@ -1,47 +1,58 @@
 using _04_XX_Fundamentos_Teste_Software.Modelos;
+using System;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace _04_XX_Fundamentos_Teste_Software.Testes
 {
-    public class VeiculoTestes
+    public class VeiculoTestes : IDisposable
     {
+        private readonly ITestOutputHelper _saidaConoleTeste;
+
+        private readonly Veiculo _veiculo;
+
+        public VeiculoTestes(ITestOutputHelper saidaConoleTeste)
+        {
+            _saidaConoleTeste = saidaConoleTeste;
+            _veiculo = new Veiculo();
+
+            _saidaConoleTeste.WriteLine("Construtor invocado.");
+        }
+
         //alterando o nome que ficará visível no gerenciador de testes
         [Fact]
         public void TestaVeiculoAcelerarComParametro10()
         {
             //Arrange
-            var veiculo = new Veiculo();
 
             //Act
-            veiculo.Acelerar(10);
+            _veiculo.Acelerar(10);
 
             //Assert
-            Assert.Equal(100, veiculo.VelocidadeAtual);
+            Assert.Equal(100, _veiculo.VelocidadeAtual);
         }
 
         [Fact]
         public void TestaVeiculoFrearComParametro10()
         {
             //Arrange
-            var veiculo = new Veiculo();
 
             //Act
-            veiculo.Frear(10);
+            _veiculo.Frear(10);
 
             //Assert
-            Assert.Equal(-150, veiculo.VelocidadeAtual);
+            Assert.Equal(-150, _veiculo.VelocidadeAtual);
         }
 
         [Fact]
         public void TestaTipoVeiculo()
         {
             //Arrange
-            var veiculo = new Veiculo();
 
             //Act
 
             //Assert
-            Assert.Equal(TipoVeiculo.Automovel, veiculo.Tipo);
+            Assert.Equal(TipoVeiculo.Automovel, _veiculo.Tipo);
         }
 
         //ignorando o teste de unidade
@@ -55,33 +66,35 @@ namespace _04_XX_Fundamentos_Teste_Software.Testes
         public void FichaDeInformacaoDoVeiculo(Veiculo modelo)
         {
             //Arrange
-            var veiculo = new Veiculo();
 
             //Act
-            veiculo.Acelerar(10);
+            _veiculo.Acelerar(10);
             modelo.Acelerar(10);
 
             //Assert
-            Assert.Equal(modelo.VelocidadeAtual, veiculo.VelocidadeAtual);
+            Assert.Equal(modelo.VelocidadeAtual, _veiculo.VelocidadeAtual);
         }
 
         [Fact]
         public void DadosVeiculo()
         {
             //Arrange
-            var veiculo = new Veiculo();
-
-            veiculo.Proprietario = "Gabriel Batista";
-            veiculo.Tipo = TipoVeiculo.Automovel;
-            veiculo.Cor = "Verde";
-            veiculo.Modelo = "Fusca";
-            veiculo.Placa = "ASD-9999";
+            _veiculo.Proprietario = "Gabriel Batista";
+            _veiculo.Tipo = TipoVeiculo.Automovel;
+            _veiculo.Cor = "Verde";
+            _veiculo.Modelo = "Fusca";
+            _veiculo.Placa = "ASD-9999";
 
             //Act
-            var dados = veiculo.ToString();
+            var dados = _veiculo.ToString();
 
             //Assert
             Assert.Contains("Tipo do Veículo: Automovel", dados);
+        }
+
+        public void Dispose()
+        {
+            _saidaConoleTeste.WriteLine("Dispose invocado.");
         }
     }
 }
