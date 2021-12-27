@@ -2,11 +2,15 @@
 {
     public class Patio
     {
+        private Operador _operadorPatio;
+
         private double faturado;
         public double Faturado { get => faturado; set => faturado = value; }
 
         private List<Veiculo> veiculos;
         public List<Veiculo> Veiculos { get => veiculos; set => veiculos = value; }
+
+        public Operador OperadorPatio { get => _operadorPatio; set => _operadorPatio = value; }
 
         public Patio()
         {
@@ -108,11 +112,13 @@
 
         private string GerarTicket(Veiculo veiculo)
         {
+            // Vamos criar um Id aletório para o Ticket usando a Classe GUID e vamos padronizar com o tamanho de 6 caracteres.
             string identificador = new Guid().ToString().Substring(0, 5);
-            string ticket = "###Ticket Estacionamento Alura###" +
-                            $"Identifcador: {identificador}" +
-                            $"Data/Hora de entrada: {DateTime.Now}" +
-                            $"Placa do Veículo:{veiculo.Placa}";
+            string ticket = "### Ticket Estacionamento Alura ###" +
+                           $">>> Identificador: {identificador}" +
+                           $">>> Data/Hora de Entrada: {DateTime.Now}" +
+                           $">>> Placa Veículo: {veiculo.Placa}" +
+                           $">>> Operador: {_operadorPatio.Matricula}";
 
             veiculo.IdTicket = identificador;
             veiculo.Ticket = ticket;

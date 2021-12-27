@@ -9,12 +9,16 @@ namespace _06_XX_Fundamentos_Teste_Software.Testes
     {
         private readonly ITestOutputHelper _saidaConoleTeste;
 
+        private readonly Operador _operador;
         private readonly Veiculo _veiculo;
 
         public PatioTestes(ITestOutputHelper saidaConoleTeste)
         {
             _saidaConoleTeste = saidaConoleTeste;
+            _operador = new Operador();
             _veiculo = new Veiculo();
+
+            _operador.Nome = "Operador do Pátio";
 
             _saidaConoleTeste.WriteLine("Construtor invocado.");
         }
@@ -30,6 +34,8 @@ namespace _06_XX_Fundamentos_Teste_Software.Testes
             _veiculo.Cor = "Verde";
             _veiculo.Modelo = "Fusca";
             _veiculo.Placa = "ASD-9999";
+
+            estacionamento.OperadorPatio = _operador;
 
             estacionamento.RegistrarEntradaVeiculo(_veiculo);
             estacionamento.RegistrarSaidaVeiculo(_veiculo.Placa);
@@ -57,6 +63,8 @@ namespace _06_XX_Fundamentos_Teste_Software.Testes
             _veiculo.Modelo = modelo;
             _veiculo.Cor = cor;
 
+            estacionamento.OperadorPatio = _operador;
+
             estacionamento.RegistrarEntradaVeiculo(_veiculo);
             estacionamento.RegistrarSaidaVeiculo(_veiculo.Placa);
 
@@ -80,13 +88,15 @@ namespace _06_XX_Fundamentos_Teste_Software.Testes
             _veiculo.Modelo = modelo;
             _veiculo.Cor = cor;
 
+            estacionamento.OperadorPatio = _operador;
+
             estacionamento.RegistrarEntradaVeiculo(_veiculo);
 
             //Act
             var consultado = estacionamento.PesquisaVeiculo(_veiculo.IdTicket);
 
             //Assert
-            Assert.Contains("###Ticket Estacionamento Alura###", consultado.Ticket);
+            Assert.Contains("### Ticket Estacionamento Alura ###", consultado.Ticket);
         }
 
         [Fact]
@@ -101,6 +111,8 @@ namespace _06_XX_Fundamentos_Teste_Software.Testes
             _veiculo.Cor = "Verde";
             _veiculo.Modelo = "Fusca";
             _veiculo.Placa = "ASD-9999";
+
+            estacionamento.OperadorPatio = _operador;
 
             estacionamento.RegistrarEntradaVeiculo(_veiculo);
 

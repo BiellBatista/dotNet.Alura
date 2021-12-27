@@ -301,3 +301,6 @@ Testes em .NET: Fundamentos do Teste de Software
 		02 - Testando métodos privados
 		03 - Faça como eu fiz: Testando métodos privados
 		04 - O que testar?
+		05 - O que testar? (A / B)
+		06 - O que aprendemos?
+		07 - Conclusão
