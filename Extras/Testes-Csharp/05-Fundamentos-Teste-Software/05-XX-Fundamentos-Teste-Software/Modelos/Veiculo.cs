@@ -69,7 +69,18 @@ namespace _05_XX_Fundamentos_Teste_Software.Modelos
 
         public string Proprietario
         {
-            get; set;
+            get
+            {
+                return _proprietario;
+            }
+            set
+            {
+                if (value.Length < 3)
+                {
+                    throw new System.FormatException(" Nome de proprietário deve ter no mínimo 3 caracteres.");
+                }
+                _proprietario = value;
+            }
         }
 
         public DateTime HoraEntrada { get; set; }
