@@ -83,9 +83,38 @@
 
         public Veiculo PesquisaVeiculo(string placa)
         {
-            return (from veiculo in Veiculos
-                    where veiculo.Placa == placa
-                    select veiculo).SingleOrDefault();
+            IEnumerable<Veiculo> enumerable()
+            {
+                foreach (var veiculo in Veiculos)
+                {
+                    if (veiculo.Placa == placa)
+                    {
+                        yield return veiculo;
+                    }
+                }
+            }
+
+            return enumerable().SingleOrDefault();
+        }
+
+        public Veiculo AlterarDadosVeiculo(Veiculo veiculoAlterado)
+        {
+            IEnumerable<Veiculo> enumerable()
+            {
+                foreach (var veiculo in Veiculos)
+                {
+                    if (veiculo.Placa == veiculoAlterado.Placa)
+                    {
+                        yield return veiculo;
+                    }
+                }
+            }
+
+            var veiculoTempo = enumerable().SingleOrDefault();
+
+            veiculoTempo.AlterarDados(veiculoAlterado);
+
+            return veiculoTempo;
         }
     }
 }

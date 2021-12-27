@@ -111,5 +111,12 @@ namespace _03_XX_Fundamentos_Teste_Software.Modelos
         }
 
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+
+        internal void AlterarDados(Veiculo veiculoAlterado)
+        {
+            Proprietario = veiculoAlterado.Proprietario;
+            Modelo = veiculoAlterado.Modelo;
+            Cor = veiculoAlterado.Cor;
+        }
     }
 }
