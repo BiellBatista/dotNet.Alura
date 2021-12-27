@@ -277,3 +277,4 @@ Testes em .NET: Fundamentos do Teste de Software
 	03 - O TDD
 		01 - Projeto da aula anterior
 		02 - Testando antes da implementação
+		03 - O que é TDD?

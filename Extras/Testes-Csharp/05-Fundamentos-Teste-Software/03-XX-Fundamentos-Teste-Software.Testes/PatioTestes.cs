@@ -54,5 +54,28 @@ namespace _03_XX_Fundamentos_Teste_Software.Testes
             //Assert
             Assert.Equal(2, faturamento);
         }
+
+        [Theory]
+        [InlineData("Gabriel Batista", "ASD-9999", "Preto", "Gol")]
+        public void LocalicaVeiculoNoPatio(string proprietario, string placa, string cor, string modelo)
+        {
+            //Arrange
+            var estacionamento = new Patio();
+            var veiculo = new Veiculo();
+
+            veiculo.Proprietario = proprietario;
+            veiculo.Tipo = TipoVeiculo.Automovel;
+            veiculo.Placa = placa;
+            veiculo.Modelo = modelo;
+            veiculo.Cor = cor;
+
+            estacionamento.RegistrarEntradaVeiculo(veiculo);
+
+            //Act
+            var consultado = estacionamento.PesquisaVeiculo(veiculo.Placa);
+
+            //Assert
+            Assert.Equal(placa, consultado.Placa);
+        }
     }
 }

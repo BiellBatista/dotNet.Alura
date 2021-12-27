@@ -80,5 +80,12 @@
 
             return informacao;
         }
+
+        public Veiculo PesquisaVeiculo(string placa)
+        {
+            return (from veiculo in Veiculos
+                    where veiculo.Placa == placa
+                    select veiculo).SingleOrDefault();
+        }
     }
 }
