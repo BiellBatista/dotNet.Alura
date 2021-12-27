@@ -274,3 +274,6 @@ Testes em .NET: Fundamentos do Teste de Software
  		07 - Para saber mais: Utilizando ClassData ao InlineData
 		08 - Faça como eu fiz: Depurando os métodos de testes
 		09 - O que aprendemos?
+	03 - O TDD
+		01 - Projeto da aula anterior
+		02 - Testando antes da implementação

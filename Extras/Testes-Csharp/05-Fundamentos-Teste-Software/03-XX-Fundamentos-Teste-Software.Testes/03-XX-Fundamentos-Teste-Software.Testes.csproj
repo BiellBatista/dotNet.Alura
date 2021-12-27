@@ -1,7 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>_01_XX_Fundamentos_Teste_Software.Testes</RootNamespace>
+    <RootNamespace>_03_XX_Fundamentos_Teste_Software.Testes</RootNamespace>
     <Nullable>enable</Nullable>
 
     <IsPackable>false</IsPackable>
@@ -21,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\01-XX-Fundamentos-Teste-Software\01-XX-Fundamentos-Teste-Software.csproj" />
+    <ProjectReference Include="..\03-XX-Fundamentos-Teste-Software\03-XX-Fundamentos-Teste-Software.csproj" />
   </ItemGroup>
+
 </Project>
