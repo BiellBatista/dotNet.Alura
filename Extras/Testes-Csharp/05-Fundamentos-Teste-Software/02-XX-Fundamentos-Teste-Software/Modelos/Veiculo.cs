@@ -1,6 +1,8 @@
-﻿namespace _02_XX_Fundamentos_Teste_Software.Modelos
+﻿using System.Collections;
+
+namespace _02_XX_Fundamentos_Teste_Software.Modelos
 {
-    public class Veiculo
+    public class Veiculo : IEnumerable<object[]>
     {
         //Campos
         private string _placa;
@@ -93,5 +95,21 @@
         {
             Proprietario = proprietario;
         }
+
+        public IEnumerator<object[]> GetEnumerator()
+        {
+            yield return new object[]
+            {
+                new Veiculo
+                {
+                    Proprietario = "André Silva",
+                    Placa = "ASD-9999",
+                    Cor="Verde",
+                    Modelo="Fusca"
+                }
+            };
+        }
+
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
     }
 }

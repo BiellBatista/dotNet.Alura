@@ -269,3 +269,6 @@ Testes em .NET: Fundamentos do Teste de Software
 		02 - Utilizando xUnit
 		03 - Anotações do xUnit
 		04 - Gerenciador de testes
+		05 - Executando mais testes
+		06 - Anotações do xUnit (A / C / D)
+ 		07 - Para saber mais: Utilizando ClassData ao InlineData

@@ -5,7 +5,9 @@ namespace _02_XX_Fundamentos_Teste_Software.Testes
 {
     public class VeiculoTestes
     {
-        [Fact]
+        //alterando o nome que ficará visível no gerenciador de testes
+        [Fact(DisplayName = "Teste nº1")]
+        [Trait("Funcionalidade", "Acelerar")]
         public void TestaVeiculoAcelerar()
         {
             //Arrange
@@ -18,7 +20,8 @@ namespace _02_XX_Fundamentos_Teste_Software.Testes
             Assert.Equal(100, veiculo.VelocidadeAtual);
         }
 
-        [Fact]
+        [Fact(DisplayName = "Teste nº2")]
+        [Trait("Funcionalidade", "Frear")]
         public void TestaVeiculoFrear()
         {
             //Arrange
@@ -31,7 +34,7 @@ namespace _02_XX_Fundamentos_Teste_Software.Testes
             Assert.Equal(-150, veiculo.VelocidadeAtual);
         }
 
-        [Fact]
+        [Fact(DisplayName = "Teste nº3")]
         public void TestaTipoVeiculo()
         {
             //Arrange
@@ -41,6 +44,27 @@ namespace _02_XX_Fundamentos_Teste_Software.Testes
 
             //Assert
             Assert.Equal(TipoVeiculo.Automovel, veiculo.Tipo);
+        }
+
+        //ignorando o teste de unidade
+        [Fact(DisplayName = "Teste nº4", Skip = "Teste ainda não implementado. Ignorar")]
+        public void ValidaNomeProprietario()
+        {
+        }
+
+        [Theory]
+        [ClassData(typeof(Veiculo))]
+        public void TestaVeiculoClass(Veiculo modelo)
+        {
+            //Arrange
+            var veiculo = new Veiculo();
+
+            //Act
+            veiculo.Acelerar(10);
+            modelo.Acelerar(10);
+
+            //Assert
+            Assert.Equal(modelo.VelocidadeAtual, veiculo.VelocidadeAtual);
         }
     }
 }
