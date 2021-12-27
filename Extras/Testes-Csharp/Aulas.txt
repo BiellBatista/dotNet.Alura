@@ -289,3 +289,6 @@ Testes em .NET: Fundamentos do Teste de Software
 		04 - Setup e Cleanup
 		05 - Faça como eu fiz: Reaproveitando códigos nos testes
 		06 - O que aprendemos?
+	05 - Testando exceções
+		01 - Projeto da aula anterior
+		02 - Testando exceções
