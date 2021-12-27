@@ -296,3 +296,8 @@ Testes em .NET: Fundamentos do Teste de Software
 		04 - Faça como eu fiz: Testando exceções
 		05 - Testando regressões
 		06 - O que aprendemos?
+	06 - Mais recursos
+		01 - Projeto da aula anterior
+		02 - Testando métodos privados
+		03 - Faça como eu fiz: Testando métodos privados
+		04 - O que testar?
