@@ -179,3 +179,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		02 - O fluxo de redefinição
 		03 - Para saber mais: Bloqueando tentativas de acesso
 		04 - Token de redefinição
+		05 - Solicitando redefinição (A)
+		06 - Alterando a senha
