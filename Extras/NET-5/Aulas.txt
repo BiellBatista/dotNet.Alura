@@ -171,3 +171,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		03 - O problema de dados expostos
 		04 - Preparando o ambiente
 		05 - Aplicando secrets ao projeto
+		06 - Faça como eu fiz: O primeiro secret
+		07 - Aplicando secrets ao projeto (B)
+		08 - O que aprendemos?

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
 namespace _01_XX_Usuario.API
@@ -15,6 +16,10 @@ namespace _01_XX_Usuario.API
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                });
+                })
+            .ConfigureAppConfiguration((context, builder) =>
+            {
+                builder.AddUserSecrets<Program>();
+            });
     }
 }
