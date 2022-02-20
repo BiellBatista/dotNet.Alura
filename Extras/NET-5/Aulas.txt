@@ -181,3 +181,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		04 - Token de redefinição
 		05 - Solicitando redefinição (A)
 		06 - Alterando a senha
+		07 - Resetando com o Identity (B)
+		08 - Faça como eu fiz: Criando a lógica de redefinição
+		09 - O que aprendemos?
