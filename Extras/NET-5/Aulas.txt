@@ -174,3 +174,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		06 - Faça como eu fiz: O primeiro secret
 		07 - Aplicando secrets ao projeto (B)
 		08 - O que aprendemos?
+	02 - Redefinindo senhas
+		01 - Projeto da aula anterior
+		02 - O fluxo de redefinição
