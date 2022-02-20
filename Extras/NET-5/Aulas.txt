@@ -164,3 +164,10 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		09 - Projeto final do curso
 		10 - O que aprendemos?
 		11 - Conclusão
+.NET 5 e Identity: Autenticando e autorizando usuários
+	01 - Conhecendo secrets
+		01 - Apresentação
+		02 - Projeto inicial do curso
+		03 - O problema de dados expostos
+		04 - Preparando o ambiente
+		05 - Aplicando secrets ao projeto
