@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using _05_XX_Usuario.API.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -6,7 +7,7 @@ using System;
 
 namespace _05_XX_Usuario.API.Data
 {
-    public class UserDbContext : IdentityDbContext<IdentityUser<int>, IdentityRole<int>, int>
+    public class UserDbContext : IdentityDbContext<CustomIdentityUser, IdentityRole<int>, int>
     {
         public readonly IConfiguration _configuration;
 
@@ -19,7 +20,7 @@ namespace _05_XX_Usuario.API.Data
         {
             base.OnModelCreating(builder);
 
-            IdentityUser<int> admin = new IdentityUser<int>
+            CustomIdentityUser admin = new CustomIdentityUser
             {
                 Id = 999999,
                 UserName = "admin",
@@ -29,12 +30,12 @@ namespace _05_XX_Usuario.API.Data
                 EmailConfirmed = true,
                 SecurityStamp = Guid.NewGuid().ToString()
             };
-            PasswordHasher<IdentityUser<int>> hasher = new PasswordHasher<IdentityUser<int>>();
+            PasswordHasher<CustomIdentityUser> hasher = new PasswordHasher<CustomIdentityUser>();
 
             admin.PasswordHash = hasher.HashPassword(admin, _configuration.GetValue<string>("adminInfo:password"));
 
             builder
-                .Entity<IdentityUser<int>>()
+                .Entity<CustomIdentityUser>()
                 .HasData(admin);
             builder
                 .Entity<IdentityRole<int>>()

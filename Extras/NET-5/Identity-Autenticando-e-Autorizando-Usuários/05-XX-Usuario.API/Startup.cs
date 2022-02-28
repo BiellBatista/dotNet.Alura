@@ -1,4 +1,5 @@
 using _05_XX_Usuario.API.Data;
+using _05_XX_Usuario.API.Models;
 using _05_XX_Usuario.API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,7 +27,7 @@ namespace _05_XX_Usuario.API
         {
             services.AddDbContext<UserDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("UsuarioConnection")));
             services
-                .AddIdentity<IdentityUser<int>, IdentityRole<int>>(opt =>
+                .AddIdentity<CustomIdentityUser, IdentityRole<int>>(opt =>
                 {
                     opt.SignIn.RequireConfirmedEmail = true;
                 })

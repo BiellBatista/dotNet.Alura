@@ -207,3 +207,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		01 - Projeto da aula anterior
 		02 - Conhecendo políticas de acesso
 		03 - Adicionando propriedades novas
+		04 - Identity e data de nascimento (A)
+		05 - Criando a regra de acesso

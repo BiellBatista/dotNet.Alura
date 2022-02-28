@@ -1,5 +1,4 @@
 using _05_XX_Usuario.API.Models;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.IdentityModel.Tokens.Jwt;
@@ -10,7 +9,7 @@ namespace _05_XX_Usuario.API.Services
 {
     public class TokenService
     {
-        public Token CreateToken(IdentityUser<int> usuario, string role)
+        public Token CreateToken(CustomIdentityUser usuario, string role)
         {
             Claim[] direitosUsuario = new Claim[]
             {
