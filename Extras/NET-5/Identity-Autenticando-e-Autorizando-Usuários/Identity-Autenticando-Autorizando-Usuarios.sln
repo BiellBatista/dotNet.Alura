@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Implementando-roles",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Usuario.API", "03-XX-Usuario.API\03-XX-Usuario.API.csproj", "{E6ADF4DC-DCEF-400E-830C-47A823186A2B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-XX-Separando-roles", "04-XX-Separando-roles\04-XX-Separando-roles.csproj", "{CCFF7015-52A9-4A2D-8ED4-F0008C342EE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-XX-Usuario.API", "04-XX-Usuario.API\04-XX-Usuario.API.csproj", "{2338BDCD-C7CF-4BA1-BC95-BB7C6062BBF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{E6ADF4DC-DCEF-400E-830C-47A823186A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6ADF4DC-DCEF-400E-830C-47A823186A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6ADF4DC-DCEF-400E-830C-47A823186A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCFF7015-52A9-4A2D-8ED4-F0008C342EE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFF7015-52A9-4A2D-8ED4-F0008C342EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFF7015-52A9-4A2D-8ED4-F0008C342EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFF7015-52A9-4A2D-8ED4-F0008C342EE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2338BDCD-C7CF-4BA1-BC95-BB7C6062BBF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2338BDCD-C7CF-4BA1-BC95-BB7C6062BBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2338BDCD-C7CF-4BA1-BC95-BB7C6062BBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2338BDCD-C7CF-4BA1-BC95-BB7C6062BBF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
