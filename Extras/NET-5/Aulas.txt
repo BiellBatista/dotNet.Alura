@@ -187,3 +187,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 	03 - Implementando roles
 		01 - Projeto da aula anterior
 		02 - Restringindo o acesso
+		03 - Criando a role admin
+		04 - Criando e vinculando roles (C)
+		05 - Autenticando via token
