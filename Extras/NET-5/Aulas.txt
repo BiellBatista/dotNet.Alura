@@ -203,3 +203,7 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		07 - Adicionando a role ao token (A)
 		08 - Faça como eu fiz: Adicionando novas roles
 		09 - O que aprendemos?
+	05 - Políticas customizadas
+		01 - Projeto da aula anterior
+		02 - Conhecendo políticas de acesso
+		03 - Adicionando propriedades novas
