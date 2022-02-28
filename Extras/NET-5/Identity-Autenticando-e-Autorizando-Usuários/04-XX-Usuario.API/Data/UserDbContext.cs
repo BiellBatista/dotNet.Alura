@@ -1,14 +1,18 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 
 namespace _04_XX_Usuario.API.Data
 {
     public class UserDbContext : IdentityDbContext<IdentityUser<int>, IdentityRole<int>, int>
     {
-        public UserDbContext(DbContextOptions<UserDbContext> opt) : base(opt)
+        public readonly IConfiguration _configuration;
+
+        public UserDbContext(IConfiguration configuration, DbContextOptions<UserDbContext> opt) : base(opt)
         {
+            _configuration = configuration;
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -27,7 +31,7 @@ namespace _04_XX_Usuario.API.Data
             };
             PasswordHasher<IdentityUser<int>> hasher = new PasswordHasher<IdentityUser<int>>();
 
-            admin.PasswordHash = hasher.HashPassword(admin, "Admin123!");
+            admin.PasswordHash = hasher.HashPassword(admin, _configuration.GetValue<string>("adminInfo:password"));
 
             builder
                 .Entity<IdentityUser<int>>()
@@ -47,6 +51,15 @@ namespace _04_XX_Usuario.API.Data
                     UserId = admin.Id,
                     RoleId = 99999
                 });
+
+            builder
+               .Entity<IdentityRole<int>>()
+               .HasData(new IdentityRole<int>
+               {
+                   Id = 99997,
+                   Name = "regular",
+                   NormalizedName = "REGULAR"
+               });
         }
     }
 }

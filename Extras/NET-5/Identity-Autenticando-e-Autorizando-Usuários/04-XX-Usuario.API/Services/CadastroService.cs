@@ -35,6 +35,8 @@ namespace _04_XX_Usuario.API.Services
             Task<IdentityResult> resultadoIdentity = _userManager
                 .CreateAsync(usuarioIdentity, createDto.Password);
 
+            _userManager.AddToRoleAsync(usuarioIdentity, "regular");
+
             if (resultadoIdentity.Result.Succeeded)
             {
                 var code = _userManager

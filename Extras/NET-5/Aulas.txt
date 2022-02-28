@@ -200,3 +200,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		04 - Criando roles sem excessos
 		05 - Isolando o usuário admin (A)
 		06 - Role regular e secrets
+		07 - Adicionando a role ao token (A)
+		08 - Faça como eu fiz: Adicionando novas roles
+		09 - O que aprendemos?
