@@ -198,3 +198,5 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		02 - Visualizando o problema
 		03 - Adicionando autenticação e tokens (B / C)
 		04 - Criando roles sem excessos
+		05 - Isolando o usuário admin (A)
+		06 - Role regular e secrets
