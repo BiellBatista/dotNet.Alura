@@ -184,3 +184,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		07 - Resetando com o Identity (B)
 		08 - Faça como eu fiz: Criando a lógica de redefinição
 		09 - O que aprendemos?
+	03 - Implementando roles
+		01 - Projeto da aula anterior
+		02 - Restringindo o acesso

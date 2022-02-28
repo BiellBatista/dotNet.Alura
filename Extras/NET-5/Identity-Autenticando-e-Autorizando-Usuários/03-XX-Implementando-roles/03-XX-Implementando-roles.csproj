@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-	<RootNamespace>_02_XX_Redefinindo_senhas</RootNamespace>
+	<RootNamespace>_03_XX_Implementando_roles</RootNamespace>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 

@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Redefinindo-senhas", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Usuario.API", "02-XX-Usuario.API\02-XX-Usuario.API.csproj", "{3CB82F9B-10E9-4C30-ADD0-31C4698B377A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Implementando-roles", "03-XX-Implementando-roles\03-XX-Implementando-roles.csproj", "{7EF22361-2855-4F92-A091-711B008188FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Usuario.API", "03-XX-Usuario.API\03-XX-Usuario.API.csproj", "{E6ADF4DC-DCEF-400E-830C-47A823186A2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{3CB82F9B-10E9-4C30-ADD0-31C4698B377A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CB82F9B-10E9-4C30-ADD0-31C4698B377A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CB82F9B-10E9-4C30-ADD0-31C4698B377A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EF22361-2855-4F92-A091-711B008188FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF22361-2855-4F92-A091-711B008188FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF22361-2855-4F92-A091-711B008188FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF22361-2855-4F92-A091-711B008188FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6ADF4DC-DCEF-400E-830C-47A823186A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6ADF4DC-DCEF-400E-830C-47A823186A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6ADF4DC-DCEF-400E-830C-47A823186A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6ADF4DC-DCEF-400E-830C-47A823186A2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
