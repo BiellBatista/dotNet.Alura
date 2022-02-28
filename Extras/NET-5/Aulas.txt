@@ -209,3 +209,8 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		03 - Adicionando propriedades novas
 		04 - Identity e data de nascimento (A)
 		05 - Criando a regra de acesso
+		06 - Utilizando handlers (A)
+		07 - Faça como eu fiz: Restringindo por idade
+		08 - Projeto do curso
+		09 - O que aprendemos?
+		10 - Conclusão

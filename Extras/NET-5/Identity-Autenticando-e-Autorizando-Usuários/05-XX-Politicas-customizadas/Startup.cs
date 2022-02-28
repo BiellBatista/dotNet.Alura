@@ -1,6 +1,8 @@
+using _05_XX_Politicas_customizadas.Authorization;
 using _05_XX_Politicas_customizadas.Data;
 using _05_XX_Politicas_customizadas.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -28,11 +30,12 @@ namespace _05_XX_Politicas_customizadas
         {
             services.AddDbContext<AppDbContext>(opts => opts.UseLazyLoadingProxies().UseMySQL(Configuration.GetConnectionString("CinemaConnection")));
 
-            services.AddAuthentication(auth =>
-            {
-                auth.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                auth.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            })
+            services
+                .AddAuthentication(auth =>
+                {
+                    auth.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                    auth.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                })
                 .AddJwtBearer(token =>
                 {
                     token.RequireHttpsMetadata = false;
@@ -46,6 +49,16 @@ namespace _05_XX_Politicas_customizadas
                         ClockSkew = TimeSpan.Zero,
                     };
                 });
+
+            services.AddAuthorization(option =>
+            {
+                option.AddPolicy("IdadeMinima", policy =>
+                {
+                    policy.Requirements.Add(new IdadeMinimaRequirement(18));
+                });
+            });
+
+            services.AddSingleton<IAuthorizationHandler, IdadeMinimaHandler>();
 
             services.AddControllers();
 
