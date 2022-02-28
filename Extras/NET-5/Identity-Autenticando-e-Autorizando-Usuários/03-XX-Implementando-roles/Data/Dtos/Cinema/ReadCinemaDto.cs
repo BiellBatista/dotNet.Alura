@@ -1,5 +1,4 @@
-﻿using _03_XX_Implementando_roles.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace _03_XX_Implementando_roles.Data.Dtos.Cinema
 {
@@ -12,7 +11,7 @@ namespace _03_XX_Implementando_roles.Data.Dtos.Cinema
         [Required(ErrorMessage = "O campo de nome é obrigatório")]
         public string Nome { get; set; }
 
-        public Endereco Endereco { get; set; }
-        public Gerente Gerente { get; set; }
+        public Models.Endereco Endereco { get; set; }
+        public Models.Gerente Gerente { get; set; }
     }
 }

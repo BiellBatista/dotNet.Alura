@@ -190,3 +190,6 @@ API Rest com .NET 5: Operações essenciais com verbos HTTP
 		03 - Criando a role admin
 		04 - Criando e vinculando roles (C)
 		05 - Autenticando via token
+		06 - Adicionando autenticação e tokens (A)
+		07 - Faça como eu fiz: Adicionando a autorização
+		08 - O que aprendemos?

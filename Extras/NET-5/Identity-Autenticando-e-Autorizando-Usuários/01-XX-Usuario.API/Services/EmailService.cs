@@ -52,7 +52,7 @@ namespace _01_XX_Usuario.API.Services
         {
             var mensagemDeEmail = new MimeMessage();
             mensagemDeEmail.From.Add(new MailboxAddress(
-                _configuration.GetValue<string>("EmailSettings:From")));
+                _configuration.GetValue<string>("EmailSettings:From"), default));
             mensagemDeEmail.To.AddRange(mensagem.Destinatario);
             mensagemDeEmail.Subject = mensagem.Assunto;
             mensagemDeEmail.Body = new TextPart(MimeKit.Text.TextFormat.Text)

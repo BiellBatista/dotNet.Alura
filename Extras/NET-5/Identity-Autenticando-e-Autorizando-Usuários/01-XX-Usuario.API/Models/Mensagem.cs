@@ -14,7 +14,7 @@ namespace _01_XX_Usuario.API.Models
             int usuarioId, string codigo)
         {
             Destinatario = new List<MailboxAddress>();
-            Destinatario.AddRange(destinatario.Select(d => new MailboxAddress(d)));
+            Destinatario.AddRange(destinatario.Select(d => new MailboxAddress(default, default)));
             Assunto = assunto;
             Conteudo = $"http://localhost:6000/ativa?UsuarioId={usuarioId}&CodigoDeAtivacao={codigo}";
         }

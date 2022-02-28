@@ -1,6 +1,7 @@
 ﻿using _03_XX_Implementando_roles.Data.Dtos.Filme;
 using _03_XX_Implementando_roles.Services;
 using FluentResults;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
@@ -18,6 +19,7 @@ namespace _03_XX_Implementando_roles.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public IActionResult AdicionaFilme([FromBody] CreateFilmeDto filmeDto)
         {
             ReadFilmeDto readDto = _filmeService.AdicionaFilme(filmeDto);
