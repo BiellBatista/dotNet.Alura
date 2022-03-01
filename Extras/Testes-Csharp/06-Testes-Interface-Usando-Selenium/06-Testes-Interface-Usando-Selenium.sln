@@ -57,6 +57,20 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Testes-Interface-Usan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Testes-Interface-Usando-Selenium", "03-XX-Testes-Interface-Usando-Selenium\03-XX-Testes-Interface-Usando-Selenium.csproj", "{3241EB39-803A-4089-A63F-C8DA5F5B3313}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-XX-Testes-Interface-Usando-Selenium", "04-XX-Testes-Interface-Usando-Selenium\04-XX-Testes-Interface-Usando-Selenium.csproj", "{FE259CA7-C019-43C8-A44B-1BF0B35C6472}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-XX-Testes-Interface-Usando-Selenium.Aplicacao", "04-XX-Testes-Interface-Usando-Selenium.Aplicacao\04-XX-Testes-Interface-Usando-Selenium.Aplicacao.csproj", "{DC5727A2-3E09-4D14-8975-7F7A8D33FCCE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-XX-Testes-Interface-Usando-Selenium.Dominio", "04-XX-Testes-Interface-Usando-Selenium.Dominio\04-XX-Testes-Interface-Usando-Selenium.Dominio.csproj", "{A73E0031-32AD-45FB-9C2B-1D034B553267}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-XX-Testes-Interface-Usando-Selenium.Dados", "04-XX-Testes-Interface-Usando-Selenium.Dados\04-XX-Testes-Interface-Usando-Selenium.Dados.csproj", "{5526DF4C-0DC9-4285-B3E6-E558073A5CDE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-XX-Testes-Interface-Usando-Selenium.Apresentacao", "04-XX-Testes-Interface-Usando-Selenium.Apresentacao\04-XX-Testes-Interface-Usando-Selenium.Apresentacao.csproj", "{C6B6446F-0296-4A4D-B3DE-00D3593F5F38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-XX-Testes-Interface-Usando-Selenium.Dominio.Testes", "04-XX-Testes-Interface-Usando-Selenium.Dominio.Testes\04-XX-Testes-Interface-Usando-Selenium.Dominio.Testes.csproj", "{DC39C7B0-5686-45DF-A2AC-9A129ED395AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-XX-Testes-Interface-Usando-Selenium.Infraestrutura.Testes", "04-XX-Testes-Interface-Usando-Selenium.Infraestrutura.Testes\04-XX-Testes-Interface-Usando-Selenium.Infraestrutura.Testes.csproj", "{1949076D-4A29-4B8D-8B22-FA53516FE6E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +161,34 @@ Global
 		{3241EB39-803A-4089-A63F-C8DA5F5B3313}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3241EB39-803A-4089-A63F-C8DA5F5B3313}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3241EB39-803A-4089-A63F-C8DA5F5B3313}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE259CA7-C019-43C8-A44B-1BF0B35C6472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE259CA7-C019-43C8-A44B-1BF0B35C6472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE259CA7-C019-43C8-A44B-1BF0B35C6472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE259CA7-C019-43C8-A44B-1BF0B35C6472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC5727A2-3E09-4D14-8975-7F7A8D33FCCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC5727A2-3E09-4D14-8975-7F7A8D33FCCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC5727A2-3E09-4D14-8975-7F7A8D33FCCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC5727A2-3E09-4D14-8975-7F7A8D33FCCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A73E0031-32AD-45FB-9C2B-1D034B553267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73E0031-32AD-45FB-9C2B-1D034B553267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A73E0031-32AD-45FB-9C2B-1D034B553267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A73E0031-32AD-45FB-9C2B-1D034B553267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5526DF4C-0DC9-4285-B3E6-E558073A5CDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5526DF4C-0DC9-4285-B3E6-E558073A5CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5526DF4C-0DC9-4285-B3E6-E558073A5CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5526DF4C-0DC9-4285-B3E6-E558073A5CDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6B6446F-0296-4A4D-B3DE-00D3593F5F38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6B6446F-0296-4A4D-B3DE-00D3593F5F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6B6446F-0296-4A4D-B3DE-00D3593F5F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6B6446F-0296-4A4D-B3DE-00D3593F5F38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC39C7B0-5686-45DF-A2AC-9A129ED395AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC39C7B0-5686-45DF-A2AC-9A129ED395AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC39C7B0-5686-45DF-A2AC-9A129ED395AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC39C7B0-5686-45DF-A2AC-9A129ED395AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1949076D-4A29-4B8D-8B22-FA53516FE6E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1949076D-4A29-4B8D-8B22-FA53516FE6E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1949076D-4A29-4B8D-8B22-FA53516FE6E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1949076D-4A29-4B8D-8B22-FA53516FE6E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -171,6 +213,12 @@ Global
 		{5E20566D-0648-4246-BE74-43C2FCD66384} = {77071A19-C621-47A4-AEE8-583DDB974DA9}
 		{63AB9237-FBF4-45FA-B740-B6916C9C2F0D} = {54BAF328-B750-47BF-BC21-716224ABE658}
 		{C786F1CF-1440-48CC-91E6-941DA9F8A10B} = {4C7F6D33-472F-4999-99CD-9D8750987622}
+		{DC5727A2-3E09-4D14-8975-7F7A8D33FCCE} = {4C7F6D33-472F-4999-99CD-9D8750987622}
+		{A73E0031-32AD-45FB-9C2B-1D034B553267} = {71296326-A879-40E2-B1A3-2EB91A3DA77B}
+		{5526DF4C-0DC9-4285-B3E6-E558073A5CDE} = {77071A19-C621-47A4-AEE8-583DDB974DA9}
+		{C6B6446F-0296-4A4D-B3DE-00D3593F5F38} = {54BAF328-B750-47BF-BC21-716224ABE658}
+		{DC39C7B0-5686-45DF-A2AC-9A129ED395AF} = {5AB7E153-89B1-48A5-B135-0E272E529F26}
+		{1949076D-4A29-4B8D-8B22-FA53516FE6E3} = {5AB7E153-89B1-48A5-B135-0E272E529F26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC630269-3D2A-42CD-AC75-46DA5FE84190}
