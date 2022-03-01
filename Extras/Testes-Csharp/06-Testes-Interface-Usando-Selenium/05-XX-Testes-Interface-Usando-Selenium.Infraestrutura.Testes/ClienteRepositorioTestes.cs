@@ -6,28 +6,33 @@ using Moq;
 using System;
 using System.Collections.Generic;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace _05_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 {
     public class ClienteRepositorioTestes
     {
+        public ITestOutputHelper SaidaConsoleTeste;
         private readonly IClienteRepositorio _repositorio;
 
-        public ClienteRepositorioTestes()
+        public ClienteRepositorioTestes(ITestOutputHelper _saidaConsoleTeste)
         {
+            SaidaConsoleTeste = _saidaConsoleTeste;
+            SaidaConsoleTeste.WriteLine("Construtor invocado.");
+            //Injetando dependências no construtor;
             var servico = new ServiceCollection();
-
             servico.AddTransient<IClienteRepositorio, ClienteRepositorio>();
 
-            var provider = servico.BuildServiceProvider();
-
-            _repositorio = provider.GetService<IClienteRepositorio>();
+            var provedor = servico.BuildServiceProvider();
+            _repositorio = provedor.GetService<IClienteRepositorio>();
         }
 
         [Fact]
         public void TestaObterTodosClientes()
         {
             //Arrange
+            //_repositorio = new ClienteRepositorio();
+
             //Act
             List<Cliente> lista = _repositorio.ObterTodos();
 
@@ -39,6 +44,8 @@ namespace _05_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         public void TestaObterClientesPorId()
         {
             //Arrange
+            //_repositorio = new ClienteRepositorio();
+
             //Act
             var cliente = _repositorio.ObterPorId(1);
 
@@ -52,6 +59,8 @@ namespace _05_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         public void TestaObterClientesPorVariosId(int id)
         {
             //Arrange
+            // _repositorio = new ClienteRepositorio();
+
             //Act
             var cliente = _repositorio.ObterPorId(id);
 
@@ -87,6 +96,7 @@ namespace _05_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         public void TestaAtualizacaoInformacaoDeterminadoCliente()
         {
             //Arrange
+            //_repositorio = new ClienteRepositorio();
             var cliente = _repositorio.ObterPorId(2);
             var nomeNovo = "João Pedro";
             cliente.Nome = nomeNovo;
@@ -111,6 +121,11 @@ namespace _05_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 
             //Assert
             bytebankRepositorioMock.Verify(b => b.BuscarClientes());
+        }
+
+        public void Dispose()
+        {
+            SaidaConsoleTeste.WriteLine("Destrutor invocado.");
         }
     }
 }

@@ -7,22 +7,26 @@ using Moq;
 using System;
 using System.Collections.Generic;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace _05_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 {
     public class ContaCorrenteRepositorioTestes
     {
+        public ITestOutputHelper SaidaConsoleTeste;
         private readonly IContaCorrenteRepositorio _repositorio;
 
-        public ContaCorrenteRepositorioTestes()
+        public ContaCorrenteRepositorioTestes(ITestOutputHelper _saidaConsoleTeste)
         {
-            var servico = new ServiceCollection();
+            SaidaConsoleTeste = _saidaConsoleTeste;
+            SaidaConsoleTeste.WriteLine("Construtor invocado.");
 
+            //Injetando dependências no construtor;
+            var servico = new ServiceCollection();
             servico.AddTransient<IContaCorrenteRepositorio, ContaCorrenteRepositorio>();
 
-            var provider = servico.BuildServiceProvider();
-
-            _repositorio = provider.GetService<IContaCorrenteRepositorio>();
+            var provedor = servico.BuildServiceProvider();
+            _repositorio = provedor.GetService<IContaCorrenteRepositorio>();
         }
 
         [Fact]
@@ -125,7 +129,7 @@ namespace _05_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         }
 
         [Fact]
-        public void TestaConsultaPixMock()
+        public void TestaConsultaPixPorChaveMock()
         {
             //Arange
             var pixRepositorioMock = new Mock<IPixRepositorio>();
@@ -155,6 +159,11 @@ namespace _05_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 
             //Assert
             Assert.Equal(10, saldo);
+        }
+
+        public void Dispose()
+        {
+            SaidaConsoleTeste.WriteLine("Destrutor invocado.");
         }
     }
 }

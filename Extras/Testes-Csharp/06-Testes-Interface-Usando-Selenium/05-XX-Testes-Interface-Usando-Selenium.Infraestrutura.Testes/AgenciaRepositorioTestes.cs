@@ -6,26 +6,28 @@ using Moq;
 using System;
 using System.Collections.Generic;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace _05_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 {
     public class AgenciaRepositorioTestes
     {
         private readonly IAgenciaRepositorio _repositorio;
+        public ITestOutputHelper SaidaConsoleTeste;
 
-        public AgenciaRepositorioTestes()
+        public AgenciaRepositorioTestes(ITestOutputHelper _saidaConsoleTeste)
         {
+            SaidaConsoleTeste = _saidaConsoleTeste;
+            SaidaConsoleTeste.WriteLine("Construtor invocado.");
+            //Injetando dependências no construtor;
             var servico = new ServiceCollection();
-
             servico.AddTransient<IAgenciaRepositorio, AgenciaRepositorio>();
-
-            var provider = servico.BuildServiceProvider();
-
-            _repositorio = provider.GetService<IAgenciaRepositorio>();
+            var provedor = servico.BuildServiceProvider();
+            _repositorio = provedor.GetService<IAgenciaRepositorio>();
         }
 
         [Fact]
-        public void TestaObterTodasAgencias()
+        public void TestaObterTodasAgenciasRepositorio()
         {
             //Arrange
 
@@ -37,7 +39,7 @@ namespace _05_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         }
 
         [Fact]
-        public void TestaObterAgenciaPorId()
+        public void TestaObterAgenciaPorIdRepositorio()
         {
             //Arrange
 
@@ -51,7 +53,7 @@ namespace _05_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         [Theory]
         [InlineData(1)]
         [InlineData(2)]
-        public void TestaObterAgenciasPorVariosId(int id)
+        public void TestaObterAgenciasPorVariosIdRepositorio(int id)
         {
             //Arrange
 
@@ -63,7 +65,7 @@ namespace _05_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         }
 
         [Fact]
-        public void TesteInsereUmaNovaAgenciaNaBaseDeDados()
+        public void TesteInsereUmaNovaAgenciaNaBaseDeDadosRepositorio()
         {
             //Arrange
             string nome = "Agencia Guarapari";
@@ -87,7 +89,7 @@ namespace _05_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         }
 
         [Fact]
-        public void TestaAtualizacaoInformacaoDeterminadaAgencia()
+        public void TestaAtualizacaoInformacaoDeterminadaAgenciaRepositorio()
         {
             //Arrange
             var agencia = _repositorio.ObterPorId(2);
@@ -106,7 +108,7 @@ namespace _05_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         {
             //Arrange
             //Act
-            var atualizado = _repositorio.Excluir(3);
+            var atualizado = _repositorio.Excluir(5);
 
             //Assert
             Assert.True(atualizado);
@@ -158,6 +160,11 @@ namespace _05_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 
             //Assert
             Assert.True(adicionado);
+        }
+
+        public void Dispose()
+        {
+            SaidaConsoleTeste.WriteLine("Destrutor invocado.");
         }
     }
 }
