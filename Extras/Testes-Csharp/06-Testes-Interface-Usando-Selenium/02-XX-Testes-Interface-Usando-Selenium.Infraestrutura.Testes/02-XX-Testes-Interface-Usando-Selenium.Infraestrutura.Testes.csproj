@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-	<RootNamespace>_01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes</RootNamespace>
+	<RootNamespace>_02_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes</RootNamespace>
 	<IsPackable>false</IsPackable>
   </PropertyGroup>
 
@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\01-XX-Testes-Interface-Usando-Selenium.Dados\01-XX-Testes-Interface-Usando-Selenium.Dados.csproj" />
-    <ProjectReference Include="..\01-XX-Testes-Interface-Usando-Selenium.Dominio\01-XX-Testes-Interface-Usando-Selenium.Dominio.csproj" />
+    <ProjectReference Include="..\02-XX-Testes-Interface-Usando-Selenium.Dados\02-XX-Testes-Interface-Usando-Selenium.Dados.csproj" />
+    <ProjectReference Include="..\02-XX-Testes-Interface-Usando-Selenium.Dominio\02-XX-Testes-Interface-Usando-Selenium.Dominio.csproj" />
   </ItemGroup>
 
 </Project>

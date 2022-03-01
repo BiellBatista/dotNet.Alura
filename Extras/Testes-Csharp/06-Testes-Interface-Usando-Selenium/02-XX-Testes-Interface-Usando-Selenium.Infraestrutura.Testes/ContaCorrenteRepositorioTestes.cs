@@ -1,11 +1,11 @@
-﻿using _01_XX_Testes_Interface_Usando_Selenium.Dados.Repositorio;
-using _01_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades;
+﻿using _02_XX_Testes_Interface_Usando_Selenium.Dados.Repositorio;
+using _02_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades;
 using Moq;
 using System;
 using System.Collections.Generic;
 using Xunit; 
 
-namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
+namespace _02_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 {
     public class ContaCorrenteRepositorioTestes
     {

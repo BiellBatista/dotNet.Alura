@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes.DTO
+namespace _02_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes.DTO
 {
     public class PixDTO
     {
