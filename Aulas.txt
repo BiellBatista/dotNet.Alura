@@ -467,6 +467,18 @@ Extra Testes em C#
 		04 - Padronizando os testes
 		05 - Testando exceções
 		06 - Mais recursos
+	Testes em .NET: Integrando a aplicação com um banco de dados
+		01 - Começando a integração
+		02 - Teste de integração
+		03 - Testando operações de CRUD
+		04 - Comportamentos do sistema
+		05 - Padronizando os testes
+	Testes em .NET: Testes de interface usando Selenium
+		01 - Configuração do projeto
+		02 - Iniciando com Selenium WebDriver
+		03 - Testando o WebApp
+		04 - Testando com localizadores
+		05 - Page Objects
 -------------------------------------------------------------------------------------------------------------------------
 Formação Desenvolvedor .NET
 	Curso C# Parte 1: Primeiros Passos
