@@ -2,6 +2,7 @@
 using _04_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades;
 using _04_XX_Testes_Interface_Usando_Selenium.Dominio.Interfaces.Repositorios;
 using Microsoft.Extensions.DependencyInjection;
+using Moq;
 using System;
 using System.Collections.Generic;
 using Xunit;
@@ -95,6 +96,21 @@ namespace _04_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 
             //Assert
             Assert.True(atualizado);
+        }
+
+        // Testes com Mock
+        [Fact]
+        public void TestaObterClientesMock()
+        {
+            //Arange
+            var bytebankRepositorioMock = new Mock<IByteBankRepositorio>();
+            var mock = bytebankRepositorioMock.Object;
+
+            //Act
+            var lista = mock.BuscarClientes();
+
+            //Assert
+            bytebankRepositorioMock.Verify(b => b.BuscarClientes());
         }
     }
 }

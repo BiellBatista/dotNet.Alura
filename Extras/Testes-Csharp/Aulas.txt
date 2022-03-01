@@ -335,3 +335,4 @@ Testes em .NET: Testes de interface usando Selenium
 	04 - Comportamentos do sistema
 		01 - Projeto da aula anterior
 		02 - Mocks
+		03 - Stubs
