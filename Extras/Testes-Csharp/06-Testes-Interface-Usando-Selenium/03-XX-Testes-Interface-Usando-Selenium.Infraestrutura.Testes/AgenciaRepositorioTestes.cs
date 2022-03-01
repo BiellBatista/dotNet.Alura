@@ -2,7 +2,6 @@
 using _03_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades;
 using _03_XX_Testes_Interface_Usando_Selenium.Dominio.Interfaces.Repositorios;
 using Microsoft.Extensions.DependencyInjection;
-using Moq;
 using System;
 using System.Collections.Generic;
 using Xunit;
@@ -28,6 +27,7 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         public void TestaObterTodasAgencias()
         {
             //Arrange
+
             //Act
             List<Agencia> lista = _repositorio.ObterTodos();
 
@@ -39,6 +39,7 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         public void TestaObterAgenciaPorId()
         {
             //Arrange
+
             //Act
             var agencia = _repositorio.ObterPorId(1);
 
@@ -49,15 +50,39 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         [Theory]
         [InlineData(1)]
         [InlineData(2)]
-        [InlineData(3)]
         public void TestaObterAgenciasPorVariosId(int id)
         {
             //Arrange
+
             //Act
             var agencia = _repositorio.ObterPorId(id);
 
             //Assert
             Assert.NotNull(agencia);
+        }
+
+        [Fact]
+        public void TesteInsereUmaNovaAgenciaNaBaseDeDados()
+        {
+            //Arrange
+            string nome = "Agencia Guarapari";
+            int numero = 125982;
+            Guid identificador = Guid.NewGuid();
+            string endereco = "Rua: 7 de Setembro - Centro";
+
+            var agencia = new Agencia()
+            {
+                Nome = nome,
+                Identificador = identificador,
+                Endereco = endereco,
+                Numero = numero
+            };
+
+            //Act
+            var retorno = _repositorio.Adicionar(agencia);
+
+            //Assert
+            Assert.True(retorno);
         }
 
         [Fact]
@@ -75,41 +100,26 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
             Assert.True(atualizado);
         }
 
-        // Testes com Mock
         [Fact]
-        public void TestaObterAgenciasMock()
+        public void TestaRemoverInformacaoDeterminadaAgencia()
         {
-            //Arange
-            var bytebankRepositorioMock = new Mock<IByteBankRepositorio>();
-            var mock = bytebankRepositorioMock.Object;
-
+            //Arrange
             //Act
-            var lista = mock.BuscarAgencias();
+            var atualizado = _repositorio.Excluir(3);
 
             //Assert
-            bytebankRepositorioMock.Verify(b => b.BuscarAgencias());
+            Assert.True(atualizado);
         }
 
+        //Exceções
         [Fact]
-        public void TestaAdiconarAgenciaMock()
+        public void TestaExcecaoConsultaPorAgenciaPorId()
         {
-            // Arrange
-            var agencia = new Agencia()
-            {
-                Nome = "Agência Amaral",
-                Identificador = Guid.NewGuid(),
-                Id = 4,
-                Endereco = "Rua Arthur Costa",
-                Numero = 6497
-            };
-
-            var repositorioMock = new ByteBankRepositorio();
-
             //Act
-            var adicionado = repositorioMock.AdicionarAgencia(agencia);
-
             //Assert
-            Assert.True(adicionado);
+            Assert.Throws<FormatException>(
+                () => _repositorio.ObterPorId(33)
+             );
         }
     }
 }

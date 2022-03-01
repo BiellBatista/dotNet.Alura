@@ -2,7 +2,7 @@
 using _03_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades;
 using _03_XX_Testes_Interface_Usando_Selenium.Dominio.Interfaces.Repositorios;
 using Microsoft.Extensions.DependencyInjection;
-using Moq;
+using System;
 using System.Collections.Generic;
 using Xunit;
 
@@ -32,7 +32,6 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 
             //Assert
             Assert.NotNull(lista);
-            Assert.NotEmpty(lista);
         }
 
         [Fact]
@@ -49,8 +48,6 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         [Theory]
         [InlineData(1)]
         [InlineData(2)]
-        [InlineData(3)]
-        [InlineData(4)]
         public void TestaObterClientesPorVariosId(int id)
         {
             //Arrange
@@ -59,6 +56,30 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 
             //Assert
             Assert.NotNull(cliente);
+        }
+
+        [Fact]
+        public void TesteInsereUmNovoClienteNaBaseDeDados()
+        {
+            //Arrange
+            string nome = "Alberto Roberto";
+            string cpf = "088.157.930-03";
+            Guid identificador = Guid.NewGuid();
+            string profissao = "Administrador de Empresas";
+
+            var cliente = new Cliente()
+            {
+                Nome = nome,
+                CPF = cpf,
+                Identificador = identificador,
+                Profissao = profissao
+            };
+
+            //Act
+            var retorno = _repositorio.Adicionar(cliente);
+
+            //Assert
+            Assert.True(retorno);
         }
 
         [Fact]
@@ -74,21 +95,6 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 
             //Assert
             Assert.True(atualizado);
-        }
-
-        // Testes com Mock
-        [Fact]
-        public void TestaObterClientesMock()
-        {
-            //Arange
-            var bytebankRepositorioMock = new Mock<IByteBankRepositorio>();
-            var mock = bytebankRepositorioMock.Object;
-
-            //Act
-            var lista = mock.BuscarClientes();
-
-            //Assert
-            bytebankRepositorioMock.Verify(b => b.BuscarClientes());
         }
     }
 }
