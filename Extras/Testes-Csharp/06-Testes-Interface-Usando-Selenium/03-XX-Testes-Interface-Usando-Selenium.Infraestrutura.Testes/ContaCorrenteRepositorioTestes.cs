@@ -1,5 +1,7 @@
 ﻿using _03_XX_Testes_Interface_Usando_Selenium.Dados.Repositorio;
 using _03_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades;
+using _03_XX_Testes_Interface_Usando_Selenium.Dominio.Interfaces.Repositorios;
+using Microsoft.Extensions.DependencyInjection;
 using Moq;
 using System;
 using System.Collections.Generic;
@@ -9,14 +11,23 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 {
     public class ContaCorrenteRepositorioTestes
     {
-        private ContaCorrenteRepositorio _repositorio;
+        private readonly IContaCorrenteRepositorio _repositorio;
+
+        public ContaCorrenteRepositorioTestes()
+        {
+            var servico = new ServiceCollection();
+
+            servico.AddTransient<IContaCorrenteRepositorio, ContaCorrenteRepositorio>();
+
+            var provider = servico.BuildServiceProvider();
+
+            _repositorio = provider.GetService<IContaCorrenteRepositorio>();
+        }
 
         [Fact]
         public void TestaObterTodasContasCorrentes()
         {
             //Arrange
-            _repositorio = new ContaCorrenteRepositorio();
-
             //Act
             List<ContaCorrente> lista = _repositorio.ObterTodos();
 
@@ -28,8 +39,6 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         public void TestaObterContaCorrentePorId()
         {
             //Arrange
-            _repositorio = new ContaCorrenteRepositorio();
-
             //Act
             var conta = _repositorio.ObterPorId(1);
 
@@ -44,8 +53,6 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         public void TestaObterContasCorrentesPorVariosId(int id)
         {
             //Arrange
-            _repositorio = new ContaCorrenteRepositorio();
-
             //Act
             var conta = _repositorio.ObterPorId(id);
 
@@ -57,7 +64,6 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         public void TestaAtualizaSaldoDeterminadaConta()
         {
             //Arrange
-            _repositorio = new ContaCorrenteRepositorio();
             var conta = _repositorio.ObterPorId(2);
             double saldoNovo = 15;
             conta.Saldo = saldoNovo;
@@ -67,6 +73,40 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 
             //Assert
             Assert.True(atualizado);
+        }
+
+        [Fact]
+        public void TestaInsereUmaNovaContaCorrenteNoBancoDeDados()
+        {
+            //Arrange
+            var conta = new ContaCorrente()
+            {
+                Saldo = 10,
+                Id = 1,
+                Identificador = Guid.NewGuid(),
+                Cliente = new Cliente()
+                {
+                    Nome = "Bruce Kent",
+                    CPF = "486.074.980-45",
+                    Identificador = Guid.NewGuid(),
+                    Profissao = "Empresário",
+                    Id = 1
+                },
+                Agencia = new Agencia()
+                {
+                    Nome = "Agencia Central 1",
+                    Identificador = Guid.NewGuid(),
+                    Id = 1,
+                    Endereco = "Rua das Flores,25",
+                    Numero = 147
+                }
+            };
+
+            //Act
+            var adicionado = _repositorio.Adicionar(conta);
+
+            //Assert
+            Assert.True(adicionado);
         }
 
         // Testes com Mock

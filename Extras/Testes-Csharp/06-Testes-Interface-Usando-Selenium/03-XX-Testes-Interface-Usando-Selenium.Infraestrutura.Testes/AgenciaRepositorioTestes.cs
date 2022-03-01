@@ -1,5 +1,7 @@
 ﻿using _03_XX_Testes_Interface_Usando_Selenium.Dados.Repositorio;
 using _03_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades;
+using _03_XX_Testes_Interface_Usando_Selenium.Dominio.Interfaces.Repositorios;
+using Microsoft.Extensions.DependencyInjection;
 using Moq;
 using System;
 using System.Collections.Generic;
@@ -9,14 +11,23 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 {
     public class AgenciaRepositorioTestes
     {
-        private AgenciaRepositorio _repositorio;
+        private readonly IAgenciaRepositorio _repositorio;
+
+        public AgenciaRepositorioTestes()
+        {
+            var servico = new ServiceCollection();
+
+            servico.AddTransient<IAgenciaRepositorio, AgenciaRepositorio>();
+
+            var provider = servico.BuildServiceProvider();
+
+            _repositorio = provider.GetService<IAgenciaRepositorio>();
+        }
 
         [Fact]
         public void TestaObterTodasAgencias()
         {
             //Arrange
-            _repositorio = new AgenciaRepositorio();
-
             //Act
             List<Agencia> lista = _repositorio.ObterTodos();
 
@@ -28,8 +39,6 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         public void TestaObterAgenciaPorId()
         {
             //Arrange
-            _repositorio = new AgenciaRepositorio();
-
             //Act
             var agencia = _repositorio.ObterPorId(1);
 
@@ -44,8 +53,6 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         public void TestaObterAgenciasPorVariosId(int id)
         {
             //Arrange
-            _repositorio = new AgenciaRepositorio();
-
             //Act
             var agencia = _repositorio.ObterPorId(id);
 
@@ -57,7 +64,6 @@ namespace _03_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         public void TestaAtualizacaoInformacaoDeterminadaAgencia()
         {
             //Arrange
-            _repositorio = new AgenciaRepositorio();
             var agencia = _repositorio.ObterPorId(2);
             var nomeNovo = "Agencia Nova";
             agencia.Nome = nomeNovo;
