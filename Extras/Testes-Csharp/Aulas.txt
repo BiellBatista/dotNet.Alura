@@ -336,3 +336,6 @@ Testes em .NET: Testes de interface usando Selenium
 		01 - Projeto da aula anterior
 		02 - Mocks
 		03 - Stubs
+		04 - Usando Mocks, Stubs e Fakes (A / B)
+		05 - Faça como eu fiz: Criando um Mock Object
+		06 - O que aprendemos?
