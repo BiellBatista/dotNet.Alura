@@ -318,3 +318,6 @@ Testes em .NET: Testes de interface usando Selenium
 	02 - Teste de integração
 		01 - Projeto da aula anterior
 		02 - Criando o primeiro teste
+		03 - Ajustes no projeto
+		04 - Faça como eu fiz: Criando uma migração que insere dados
+		05 - Injeção de dependências

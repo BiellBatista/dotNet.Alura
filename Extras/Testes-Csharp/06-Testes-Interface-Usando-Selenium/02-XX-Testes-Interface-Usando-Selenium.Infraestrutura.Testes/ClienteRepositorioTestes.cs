@@ -21,6 +21,7 @@ namespace _02_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 
             //Assert
             Assert.NotNull(lista);
+            Assert.NotEmpty(lista);
         }
 
         [Fact]
@@ -34,6 +35,7 @@ namespace _02_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 
             //Assert
             Assert.NotNull(cliente);
+            Assert.NotEmpty(lista);
         }
 
         [Theory]
