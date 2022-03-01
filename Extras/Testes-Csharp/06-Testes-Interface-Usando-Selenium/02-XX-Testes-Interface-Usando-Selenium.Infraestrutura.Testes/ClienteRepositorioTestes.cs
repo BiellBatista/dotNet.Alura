@@ -1,5 +1,7 @@
 ﻿using _02_XX_Testes_Interface_Usando_Selenium.Dados.Repositorio;
 using _02_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades;
+using _02_XX_Testes_Interface_Usando_Selenium.Dominio.Interfaces.Repositorios;
+using Microsoft.Extensions.DependencyInjection;
 using Moq;
 using System.Collections.Generic;
 using Xunit;
@@ -8,14 +10,23 @@ namespace _02_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 {
     public class ClienteRepositorioTestes
     {
-        private ClienteRepositorio _repositorio;
+        private readonly IClienteRepositorio _repositorio;
+
+        public ClienteRepositorioTestes()
+        {
+            var servico = new ServiceCollection();
+
+            servico.AddTransient<IClienteRepositorio, ClienteRepositorio>();
+
+            var provider = servico.BuildServiceProvider();
+
+            _repositorio = provider.GetService<IClienteRepositorio>();
+        }
 
         [Fact]
         public void TestaObterTodosClientes()
         {
             //Arrange
-            _repositorio = new ClienteRepositorio();
-
             //Act
             List<Cliente> lista = _repositorio.ObterTodos();
 
@@ -28,14 +39,11 @@ namespace _02_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         public void TestaObterClientesPorId()
         {
             //Arrange
-            _repositorio = new ClienteRepositorio();
-
             //Act
             var cliente = _repositorio.ObterPorId(1);
 
             //Assert
             Assert.NotNull(cliente);
-            Assert.NotEmpty(lista);
         }
 
         [Theory]
@@ -46,8 +54,6 @@ namespace _02_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         public void TestaObterClientesPorVariosId(int id)
         {
             //Arrange
-            _repositorio = new ClienteRepositorio();
-
             //Act
             var cliente = _repositorio.ObterPorId(id);
 
@@ -59,7 +65,6 @@ namespace _02_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         public void TestaAtualizacaoInformacaoDeterminadoCliente()
         {
             //Arrange
-            _repositorio = new ClienteRepositorio();
             var cliente = _repositorio.ObterPorId(2);
             var nomeNovo = "João Pedro";
             cliente.Nome = nomeNovo;

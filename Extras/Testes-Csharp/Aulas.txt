@@ -321,3 +321,6 @@ Testes em .NET: Testes de interface usando Selenium
 		03 - Ajustes no projeto
 		04 - Faça como eu fiz: Criando uma migração que insere dados
 		05 - Injeção de dependências
+		06 - Para saber mais: Injeção de dependências
+		07 - Injeção de dependência (A / C)
+		08 - O que aprendemos?
