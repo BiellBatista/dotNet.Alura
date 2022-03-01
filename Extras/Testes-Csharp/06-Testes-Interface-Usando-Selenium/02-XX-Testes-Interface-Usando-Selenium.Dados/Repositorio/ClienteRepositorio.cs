@@ -1,6 +1,6 @@
-﻿using _02_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades;
+﻿using _02_XX_Testes_Interface_Usando_Selenium.Dados.Contexto;
+using _02_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades;
 using _02_XX_Testes_Interface_Usando_Selenium.Dominio.Interfaces.Repositorios;
-using _02_XX_Testes_Interface_Usando_Selenium.Dados.Contexto;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

@@ -3,7 +3,7 @@ using _02_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades;
 using Moq;
 using System;
 using System.Collections.Generic;
-using Xunit; 
+using Xunit;
 
 namespace _02_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 {
@@ -97,6 +97,5 @@ namespace _02_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
             //Assert - Verificando o comportamento
             pixRepositorioMock.Verify(b => b.consultaPix(new Guid("a0b80d53-c0dd-4897-ab90-c0615ad80d5a")));
         }
-
     }
 }

@@ -3,9 +3,6 @@ using _01_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades;
 using Moq;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
@@ -38,7 +35,6 @@ namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 
             //Assert
             Assert.NotNull(agencia);
-
         }
 
         [Theory]
@@ -55,7 +51,6 @@ namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 
             //Assert
             Assert.NotNull(agencia);
-
         }
 
         [Fact]
@@ -73,7 +68,6 @@ namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
             //Assert
             Assert.True(atualizado);
         }
-
 
         // Testes com Mock
         [Fact]

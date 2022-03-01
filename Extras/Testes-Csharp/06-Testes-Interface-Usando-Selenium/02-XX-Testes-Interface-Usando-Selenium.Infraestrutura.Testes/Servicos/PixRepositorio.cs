@@ -2,14 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 {
-    public class PixRepositorio:IPixRepositorio
+    public class PixRepositorio : IPixRepositorio
     {
-        
         public List<PixDTO> Pixs { get; set; }
 
         public PixRepositorio()
@@ -36,6 +33,5 @@ namespace _02_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
                           select pix).SingleOrDefault();
             return dto;
         }
-
     }
 }

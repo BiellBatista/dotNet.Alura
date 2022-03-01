@@ -1,7 +1,7 @@
-﻿using _02_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades;
-using _02_XX_Testes_Interface_Usando_Selenium.Dominio.Interfaces.Servicos;
-using _02_XX_Testes_Interface_Usando_Selenium.Aplicacao.DTO;
+﻿using _02_XX_Testes_Interface_Usando_Selenium.Aplicacao.DTO;
 using _02_XX_Testes_Interface_Usando_Selenium.Aplicacao.Interfaces;
+using _02_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades;
+using _02_XX_Testes_Interface_Usando_Selenium.Dominio.Interfaces.Servicos;
 using AutoMapper;
 using System;
 using System.Collections.Generic;

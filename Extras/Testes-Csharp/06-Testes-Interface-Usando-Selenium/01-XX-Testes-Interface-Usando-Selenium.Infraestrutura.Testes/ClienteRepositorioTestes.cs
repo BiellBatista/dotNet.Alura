@@ -1,21 +1,17 @@
 ﻿using _01_XX_Testes_Interface_Usando_Selenium.Dados.Repositorio;
 using _01_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades;
 using Moq;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 {
     public class ClienteRepositorioTestes
     {
-         private ClienteRepositorio _repositorio;
+        private ClienteRepositorio _repositorio;
 
-         [Fact]
-         public void TestaObterTodosClientes()
+        [Fact]
+        public void TestaObterTodosClientes()
         {
             //Arrange
             _repositorio = new ClienteRepositorio();
@@ -25,7 +21,6 @@ namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 
             //Assert
             Assert.NotNull(lista);
-
         }
 
         [Fact]
@@ -39,7 +34,6 @@ namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 
             //Assert
             Assert.NotNull(cliente);
-
         }
 
         [Theory]
@@ -57,7 +51,6 @@ namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 
             //Assert
             Assert.NotNull(cliente);
-
         }
 
         [Fact]
@@ -70,7 +63,7 @@ namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
             cliente.Nome = nomeNovo;
 
             //Act
-            var atualizado = _repositorio.Atualizar(2,cliente);
+            var atualizado = _repositorio.Atualizar(2, cliente);
 
             //Assert
             Assert.True(atualizado);
@@ -90,7 +83,5 @@ namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
             //Assert
             bytebankRepositorioMock.Verify(b => b.BuscarClientes());
         }
-
-
     }
 }

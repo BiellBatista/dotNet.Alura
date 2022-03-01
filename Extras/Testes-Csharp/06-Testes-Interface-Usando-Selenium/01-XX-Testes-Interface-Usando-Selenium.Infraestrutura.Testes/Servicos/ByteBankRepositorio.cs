@@ -1,13 +1,10 @@
 ﻿using _01_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
 {
-    class ByteBankRepositorio : IByteBankRepositorio
+    internal class ByteBankRepositorio : IByteBankRepositorio
     {
         private List<Cliente> clientes = new List<Cliente>()
         {
@@ -37,7 +34,8 @@ namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
             }
         };
 
-        public List<Cliente> Clientes { get { return clientes; } }
+        public List<Cliente> Clientes
+        { get { return clientes; } }
 
         private List<Agencia> agencias = new List<Agencia>()
         {
@@ -66,7 +64,9 @@ namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
                 Numero=349
             }
         };
-        public List<Agencia> Agencias { get { return agencias; } }
+
+        public List<Agencia> Agencias
+        { get { return agencias; } }
 
         private List<ContaCorrente> contas = new List<ContaCorrente>()
         {
@@ -112,7 +112,8 @@ namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
             }
         };
 
-        public List<ContaCorrente> Contas{get { return contas; }}
+        public List<ContaCorrente> Contas
+        { get { return contas; } }
 
         public bool AdicionarConta(ContaCorrente conta)
         {
@@ -123,10 +124,8 @@ namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
             }
             catch (Exception)
             {
-
                 return false;
             }
-            
         }
 
         public bool AdicionarAgencia(Agencia agencia)
@@ -138,10 +137,8 @@ namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
             }
             catch (Exception)
             {
-
                 return false;
             }
-            
         }
 
         public bool AdicionarCliente(Cliente cliente)
@@ -153,10 +150,8 @@ namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
             }
             catch (Exception)
             {
-
                 return false;
             }
-            
         }
 
         public List<Agencia> BuscarAgencias()
@@ -173,6 +168,5 @@ namespace _01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes
         {
             return this.Contas;
         }
-      
     }
 }
