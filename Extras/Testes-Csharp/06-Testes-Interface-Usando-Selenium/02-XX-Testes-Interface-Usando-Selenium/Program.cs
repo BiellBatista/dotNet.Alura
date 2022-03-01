@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Alura.ByteBank
+namespace _02_XX_Testes_Interface_Usando_Selenium
 {
     class Program
     {

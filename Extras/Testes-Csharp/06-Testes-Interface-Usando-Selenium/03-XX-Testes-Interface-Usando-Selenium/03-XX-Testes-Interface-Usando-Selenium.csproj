@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-	<RootNamespace>_02_XX_Testes_Interface_Usando_Selenium</RootNamespace>
+	<RootNamespace>_03_XX_Testes_Interface_Usando_Selenium</RootNamespace>
 	<TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 

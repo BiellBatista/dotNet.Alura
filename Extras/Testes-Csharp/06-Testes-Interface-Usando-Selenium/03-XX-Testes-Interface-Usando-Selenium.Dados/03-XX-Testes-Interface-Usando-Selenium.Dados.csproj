@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <RootNamespace>_02_XX_Testes_Interface_Usando_Selenium.Dados</RootNamespace>
+	  <RootNamespace>_03_XX_Testes_Interface_Usando_Selenium.Dados</RootNamespace>
 	  <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\02-XX-Testes-Interface-Usando-Selenium.Dominio\02-XX-Testes-Interface-Usando-Selenium.Dominio.csproj" />
+    <ProjectReference Include="..\03-XX-Testes-Interface-Usando-Selenium.Dominio\03-XX-Testes-Interface-Usando-Selenium.Dominio.csproj" />
   </ItemGroup>
 
 </Project>

@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-	<RootNamespace>_01_XX_Testes_Interface_Usando_Selenium.Infraestrutura.Testes</RootNamespace>
-	<IsPackable>false</IsPackable>
+	  <RootNamespace>_03_XX_Testes_Interface_Usando_Selenium.Dominio.Testes</RootNamespace>
+	  <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ExpectedObjects" Version="3.5.4" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
-    <PackageReference Include="Moq" Version="4.17.1" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -21,8 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\01-XX-Testes-Interface-Usando-Selenium.Dados\01-XX-Testes-Interface-Usando-Selenium.Dados.csproj" />
-    <ProjectReference Include="..\01-XX-Testes-Interface-Usando-Selenium.Dominio\01-XX-Testes-Interface-Usando-Selenium.Dominio.csproj" />
+    <ProjectReference Include="..\03-XX-Testes-Interface-Usando-Selenium.Dominio\03-XX-Testes-Interface-Usando-Selenium.Dominio.csproj" />
   </ItemGroup>
 
 </Project>
