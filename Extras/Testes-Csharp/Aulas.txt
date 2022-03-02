@@ -362,3 +362,5 @@ Testes em .NET: Testes de interface usando Selenium
 		04 - Para saber mais: O que é HTML e tags?
 		05 - Para saber mais: O que é Selenium WebDriver?
 		06 - Criando primeiro teste
+		07 - Selenium WebDriver (C)
+		08 - Recuperando um script
