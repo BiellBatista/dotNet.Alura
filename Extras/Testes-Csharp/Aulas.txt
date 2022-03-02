@@ -375,3 +375,6 @@ Testes em .NET: Testes de interface usando Selenium
 		07 - Para saber mais: Códigos de status HTTP
 		08 - Faça como eu fiz: Trabalhando com URLs
 		09 - O que aprendemos?
+	04 - Testando com localizadores
+		01 - Projeto da aula anterior
+		02 - Usando localizadores
