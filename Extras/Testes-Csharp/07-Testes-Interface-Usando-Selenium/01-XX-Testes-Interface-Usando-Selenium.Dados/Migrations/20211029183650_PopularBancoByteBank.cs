@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Alura.ByteBank.Dados.Migrations
+namespace _01_XX_Testes_Interface_Usando_Selenium.Dados.Migrations
 {
     public partial class PopularBancoByteBank : Migration
     {

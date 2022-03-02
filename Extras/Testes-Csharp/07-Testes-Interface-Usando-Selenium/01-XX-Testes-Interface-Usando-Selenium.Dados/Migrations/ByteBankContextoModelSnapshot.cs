@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace Alura.ByteBank.Dados.Migrations
+namespace _01_XX_Testes_Interface_Usando_Selenium.Dados.Migrations
 {
     [DbContext(typeof(ByteBankContexto))]
     partial class ByteBankContextoModelSnapshot : ModelSnapshot
@@ -17,7 +17,7 @@ namespace Alura.ByteBank.Dados.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
                 .HasAnnotation("ProductVersion", "5.0.11");
 
-            modelBuilder.Entity("Alura.ByteBank.Dominio.Entidades.Agencia", b =>
+            modelBuilder.Entity("_01_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades.Agencia", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -41,7 +41,7 @@ namespace Alura.ByteBank.Dados.Migrations
                     b.ToTable("agencia");
                 });
 
-            modelBuilder.Entity("Alura.ByteBank.Dominio.Entidades.Cliente", b =>
+            modelBuilder.Entity("_01_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades.Cliente", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -67,7 +67,7 @@ namespace Alura.ByteBank.Dados.Migrations
                     b.ToTable("cliente");
                 });
 
-            modelBuilder.Entity("Alura.ByteBank.Dominio.Entidades.ContaCorrente", b =>
+            modelBuilder.Entity("_01_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades.ContaCorrente", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -100,7 +100,7 @@ namespace Alura.ByteBank.Dados.Migrations
                     b.ToTable("conta_corrente");
                 });
 
-            modelBuilder.Entity("Alura.ByteBank.Dominio.Entidades.UsuarioApp", b =>
+            modelBuilder.Entity("_01_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades.UsuarioApp", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -123,13 +123,13 @@ namespace Alura.ByteBank.Dados.Migrations
                     b.ToTable("usuario");
                 });
 
-            modelBuilder.Entity("Alura.ByteBank.Dominio.Entidades.ContaCorrente", b =>
+            modelBuilder.Entity("_01_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades.ContaCorrente", b =>
                 {
-                    b.HasOne("Alura.ByteBank.Dominio.Entidades.Agencia", "Agencia")
+                    b.HasOne("_01_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades.Agencia", "Agencia")
                         .WithMany("Contas")
                         .HasForeignKey("AgenciaId");
 
-                    b.HasOne("Alura.ByteBank.Dominio.Entidades.Cliente", "Cliente")
+                    b.HasOne("_01_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades.Cliente", "Cliente")
                         .WithMany("Contas")
                         .HasForeignKey("ClienteId");
 
@@ -138,12 +138,12 @@ namespace Alura.ByteBank.Dados.Migrations
                     b.Navigation("Cliente");
                 });
 
-            modelBuilder.Entity("Alura.ByteBank.Dominio.Entidades.Agencia", b =>
+            modelBuilder.Entity("_01_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades.Agencia", b =>
                 {
                     b.Navigation("Contas");
                 });
 
-            modelBuilder.Entity("Alura.ByteBank.Dominio.Entidades.Cliente", b =>
+            modelBuilder.Entity("_01_XX_Testes_Interface_Usando_Selenium.Dominio.Entidades.Cliente", b =>
                 {
                     b.Navigation("Contas");
                 });

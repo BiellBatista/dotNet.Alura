@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-
-    <IsPackable>false</IsPackable>
+	<RootNamespace>_01_XX_Testes_Interface_Usando_Selenium.WebApp.Testes</RootNamespace>
+	<IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>

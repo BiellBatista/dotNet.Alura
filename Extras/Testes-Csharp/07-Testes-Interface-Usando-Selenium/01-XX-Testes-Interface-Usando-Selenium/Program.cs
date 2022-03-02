@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Alura.ByteBank
+namespace _01_XX_Testes_Interface_Usando_Selenium
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
