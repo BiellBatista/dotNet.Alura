@@ -365,3 +365,6 @@ Testes em .NET: Testes de interface usando Selenium
 		07 - Selenium WebDriver (C)
 		08 - Recuperando um script
 		09 - O que aprendemos?
+	03 - Testando o WebApp
+		01 - Projeto da aula anterior
+		02 - Capturando elementos da página
