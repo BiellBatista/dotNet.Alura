@@ -383,3 +383,6 @@ Testes em .NET: Testes de interface usando Selenium
 		05 - Capturando mais elementos
 		06 - Faça como eu fiz: Lista de elementos de página
 		07 - O que aprendemos?
+	05 - Page Objects
+		01 - Projeto da aula anterior
+		02 - O que são Page Objects?
