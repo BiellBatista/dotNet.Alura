@@ -368,3 +368,5 @@ Testes em .NET: Testes de interface usando Selenium
 	03 - Testando o WebApp
 		01 - Projeto da aula anterior
 		02 - Capturando elementos da página
+		03 - Capturando um elementos da página (A)
+		04 - Testando o login da aplicação
