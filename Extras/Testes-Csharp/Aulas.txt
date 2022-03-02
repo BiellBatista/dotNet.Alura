@@ -381,3 +381,5 @@ Testes em .NET: Testes de interface usando Selenium
 		03 - Outros localizadores (B)
 		04 - Para saber mais: O que é Css?
 		05 - Capturando mais elementos
+		06 - Faça como eu fiz: Lista de elementos de página
+		07 - O que aprendemos?
