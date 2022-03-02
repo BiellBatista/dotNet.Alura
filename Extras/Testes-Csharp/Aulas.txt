@@ -390,3 +390,7 @@ Testes em .NET: Testes de interface usando Selenium
 		04 - Para saber mais: Padrões de projeto
 		05 - Testando com Page Objects
 		06 - Boas práticas
+		07 - Faça como eu fiz: Gerenciando o navegador
+		08 - Projeto final do curso
+		09 - O que aprendemos?
+		10 - Conclusão
