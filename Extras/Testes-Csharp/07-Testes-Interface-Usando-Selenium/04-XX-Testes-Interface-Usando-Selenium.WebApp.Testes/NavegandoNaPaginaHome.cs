@@ -1,24 +1,27 @@
-﻿using _04_XX_Testes_Interface_Usando_Selenium.WebApp.Testes.Util;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System.IO;
+using System.Reflection;
 using Xunit;
 
 namespace _04_XX_Testes_Interface_Usando_Selenium.WebApp.Testes
 {
-    public class NavegandoNaPaginaHome : IClassFixture<Fixture>
+    public class NavegandoNaPaginaHome
     {
         private IWebDriver driver;
 
-        //Setup
-        public NavegandoNaPaginaHome(Fixture fixture)
+        public NavegandoNaPaginaHome()
         {
-            driver = fixture.Driver;
+            driver = new ChromeDriver(Path.GetDirectoryName(
+            Assembly.GetExecutingAssembly().Location));
         }
 
         [Fact]
         public void CarregaPaginaHomeEVerificaTituloDaPagina()
         {
             //Arrange
-            //driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+            //IWebDriver driver = new ChromeDriver(Path.GetDirectoryName(
+            //    Assembly.GetExecutingAssembly().Location));
             //Act
             driver.Navigate().GoToUrl("https://localhost:44309");
             //Assert
@@ -29,7 +32,8 @@ namespace _04_XX_Testes_Interface_Usando_Selenium.WebApp.Testes
         public void CarregadaPaginaHomeVerificaExistenciaLinkLoginEHome()
         {
             //Arrange
-            //IWebDriver driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)); ;
+            //IWebDriver driver = new ChromeDriver(Path.GetDirectoryName(
+            //      Assembly.GetExecutingAssembly().Location)); ;
             //Act
             driver.Navigate().GoToUrl("https://localhost:44309");
             //Assert
@@ -38,11 +42,32 @@ namespace _04_XX_Testes_Interface_Usando_Selenium.WebApp.Testes
         }
 
         [Fact]
-        public void ValidaLinkDeLoginNaHome()
+        public void LogandoNoSistema()
+        {
+            //IWebDriver driver = new ChromeDriver(Path.GetDirectoryName(
+            //    Assembly.GetExecutingAssembly().Location));
+            driver.Navigate().GoToUrl("https://localhost:44309/");
+            driver.Manage().Window.Size = new System.Drawing.Size(1252, 652);
+            driver.FindElement(By.LinkText("Login")).Click();
+            driver.FindElement(By.Id("Email")).Click();
+            driver.FindElement(By.Id("Email")).SendKeys("andre@email.com");
+            driver.FindElement(By.Id("Senha")).Click();
+            driver.FindElement(By.Id("Senha")).SendKeys("senha01");
+            driver.FindElement(By.Id("btn-logar")).Click();
+            driver.FindElement(By.Id("agencia")).Click();
+            driver.FindElement(By.Id("home")).Click();
+        }
+
+        [Fact]
+        public void ValidaLinKDeLoginNaHome()
         {
             //Arrange
-            driver.Navigate().GoToUrl("https://localhost:44309");
+            //IWebDriver driver = new ChromeDriver(Path.GetDirectoryName(
+            //    Assembly.GetExecutingAssembly().Location));
+            driver.Navigate().GoToUrl("https://localhost:44309/");
+
             var linkLogin = driver.FindElement(By.LinkText("Login"));
+
             //Act
             linkLogin.Click();
 
@@ -51,7 +76,7 @@ namespace _04_XX_Testes_Interface_Usando_Selenium.WebApp.Testes
         }
 
         [Fact]
-        public void AcessaPaginaSemEstarLogado()
+        public void TentaAcessarPaginaSemEstarLogado()
         {
             //Arrange
             //Act

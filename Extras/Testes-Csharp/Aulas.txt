@@ -378,3 +378,6 @@ Testes em .NET: Testes de interface usando Selenium
 	04 - Testando com localizadores
 		01 - Projeto da aula anterior
 		02 - Usando localizadores
+		03 - Outros localizadores (B)
+		04 - Para saber mais: O que é Css?
+		05 - Capturando mais elementos
