@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <RootNamespace>_04_XX_Integrando_Aplicacao_Banco_Dados.Apresentacao</RootNamespace>
+	  <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\04-XX-Integrando-Aplicacao-Banco-Dados.Aplicacao\04-XX-Integrando-Aplicacao-Banco-Dados.Aplicacao.csproj" />
+    <ProjectReference Include="..\04-XX-Integrando-Aplicacao-Banco-Dados.Dados\04-XX-Integrando-Aplicacao-Banco-Dados.Dados.csproj" />
+    <ProjectReference Include="..\04-XX-Integrando-Aplicacao-Banco-Dados.Dominio\04-XX-Integrando-Aplicacao-Banco-Dados.Dominio.csproj" />
+  </ItemGroup>
+
+</Project>

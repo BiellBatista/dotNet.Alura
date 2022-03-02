@@ -304,7 +304,7 @@ Testes em .NET: Fundamentos do Teste de Software
 		05 - O que testar? (A / B)
 		06 - O que aprendemos?
 		07 - Conclusão
-Testes em .NET: Testes de interface usando Selenium
+Testes em .NET: Integrando a aplicação com um banco de dados
 	01 - Configuração do projeto
 		01 - Apresentação
 		02 - Projeto inicial do curso
@@ -343,3 +343,9 @@ Testes em .NET: Testes de interface usando Selenium
 		01 - Projeto da aula anterior
 		02 - Organizando os testes
 		03 - Boas práticas
+		04 - Padronizando os testes (B / C)
+		05 - Faça como eu fiz: Setup
+		06 - O que aprendemos?
+		07 - Conclusão
+Testes em .NET: Testes de interface usando Selenium
+	01 - 
