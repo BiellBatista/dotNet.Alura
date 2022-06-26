@@ -423,3 +423,6 @@ Testes em .NET: integração e entrega contínua com Azure DevOps
 		05 - Faça como eu fiz: criar um servidor MySQL no Azure
 		06 - Criando o banco de dados
 		07 - O que aprendemos?
+	04 - Pipelines: integração contínua
+		01 - Projeto da aula anterior
+		02 - Criando uma Build Pipeline
