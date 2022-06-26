@@ -436,3 +436,11 @@ Testes em .NET: integração e entrega contínua com Azure DevOps
 	05 - Pipelines: entrega contínua
 		01 - Projeto da aula anterior
 		02 - Implantando a solução no Azure
+		03 - Entrega contínua
+		04 - Faça como eu fiz: entregando a solução para o cliente
+		05 - CD - por que é importante?
+		06 - Entrega contínua (A / C)
+		07 - Para saber mais: o que é CI/CD?
+		08 - Projeto final do curso
+		09 - O que aprendemos?
+		10 - Conclusão
