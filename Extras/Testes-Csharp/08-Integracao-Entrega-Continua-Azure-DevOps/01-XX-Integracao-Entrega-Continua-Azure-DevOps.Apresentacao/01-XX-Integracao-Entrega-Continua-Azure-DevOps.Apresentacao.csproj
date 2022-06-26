@@ -1,14 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<LangVersion>latest</LangVersion>
+		<RootNamespace>_01_XX_Integracao_Entrega_Continua_Azure_DevOps.Apresentacao</RootNamespace>
+		<TargetFramework>net6.0</TargetFramework>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<NeutralLanguage>en</NeutralLanguage>
+		<OutputType>Exe</OutputType>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Alura.ByteBank.Aplicacao\Alura.ByteBank.Aplicacao.csproj" />
-    <ProjectReference Include="..\Alura.ByteBank.Dados\Alura.ByteBank.Dados.csproj" />
-    <ProjectReference Include="..\Alura.ByteBank.Domain\Alura.ByteBank.Dominio.csproj" />
-  </ItemGroup>
-
+	<ItemGroup>
+		<ProjectReference Include="..\01-XX-Integracao-Entrega-Continua-Azure-DevOps.Aplicacao\01-XX-Integracao-Entrega-Continua-Azure-DevOps.Aplicacao.csproj" />
+		<ProjectReference Include="..\01-XX-Integracao-Entrega-Continua-Azure-DevOps.Dados\01-XX-Integracao-Entrega-Continua-Azure-DevOps.Dados.csproj" />
+		<ProjectReference Include="..\01-XX-Integracao-Entrega-Continua-Azure-DevOps.Domain\01-XX-Integracao-Entrega-Continua-Azure-DevOps.Domain.csproj" />
+	</ItemGroup>
 </Project>

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Alura.ByteBank.Aplicacao.DTO
+﻿namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Aplicacao.DTO
 {
     public class AgenciaDTO
     {

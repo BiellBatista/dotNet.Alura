@@ -1,16 +1,14 @@
-﻿using System;
-using Alura.ByteBank.Aplicacao.DTO;
-using Alura.ByteBank.Apresentacao.Comandos;
+﻿using _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Apresentacao.Comandos;
 
-namespace Alura.ByteBank.Apresentacao
+namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Apresentacao
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            //Console.BackgroundColor = ConsoleColor.DarkGreen;            
+            //Console.BackgroundColor = ConsoleColor.DarkGreen;
             //Console.ForegroundColor = ConsoleColor.Black;
-            
+
             string opcao;
             do
             {
@@ -19,10 +17,10 @@ namespace Alura.ByteBank.Apresentacao
                 Console.WriteLine(MostrarMenu());
                 opcao = LerOpcaoMenu();
                 ProcessarOpcaoMenu(opcao);
-            } while (opcao!="4");
-       }
+            } while (opcao != "4");
+        }
 
-        static string LerOpcaoMenu()
+        private static string LerOpcaoMenu()
         {
             string opcao;
             Console.Write("Opção desejada: ");
@@ -30,37 +28,41 @@ namespace Alura.ByteBank.Apresentacao
             return opcao;
         }
 
-        static string MostrarMenu()
+        private static string MostrarMenu()
         {
             string menu = "   Escolha uma opção:\n\n" +
                             "   1 - Cadastrar Agência\n" +
                             "   2 - Cadastrar Conta Corrente\n" +
-                            "   3 - Listar Contas Correntes\n" +                         
+                            "   3 - Listar Contas Correntes\n" +
                             "   4 - Sair do Programa \n";
             return menu;
         }
 
-        static string MostrarCabecalho()
+        private static string MostrarCabecalho()
         {
             return "[ CONTROLE DE CONTAS CORRENTES - BYTEBANK ]\n";
         }
 
-        static void ProcessarOpcaoMenu(string opcao)
+        private static void ProcessarOpcaoMenu(string opcao)
         {
             switch (opcao)
             {
                 case "1":
                     CadastarAgencia();
                     break;
+
                 case "2":
                     CadastarConta();
                     break;
+
                 case "3":
                     ListarContas();
                     break;
+
                 case "4":
                     Console.WriteLine("Obrigado por utilizar o programa.");
                     break;
+
                 default:
                     Console.WriteLine("Opção de menu inválida!");
                     break;
@@ -71,18 +73,18 @@ namespace Alura.ByteBank.Apresentacao
         {
             var comando = new ContaCorrenteComando();
             var contas = comando.ObterTodos();
-            if (contas!=null)
+            if (contas != null)
             {
                 foreach (var item in contas)
                 {
-                    Console.WriteLine("\n"+item.ToString());
+                    Console.WriteLine("\n" + item.ToString());
                 }
             }
             else
             {
-               Console.WriteLine("A consulta não retornou dados.");
+                Console.WriteLine("A consulta não retornou dados.");
             }
-            
+
             Console.ReadKey();
         }
 
@@ -99,7 +101,7 @@ namespace Alura.ByteBank.Apresentacao
             Console.WriteLine("\n[CADASTRO DE CONTAS CORRENTES]");
             Console.Write("\nVocê deseja cadastrar um novo cliente? [s - sim ou n - não] ");
             opcao = Console.ReadLine()[0];
-            if (opcao =='s')
+            if (opcao == 's')
             {
                 Console.WriteLine("\n\n[CADASTRO DE CLIENTE]");
                 Console.Write("Nome Cliente: ");
@@ -107,11 +109,11 @@ namespace Alura.ByteBank.Apresentacao
                 Console.Write("Profissão Cliente: ");
                 clienteDTO.Profissao = Console.ReadLine();
                 Console.Write("CPF Cliente: ");
-                clienteDTO.CPF = Console.ReadLine();                
-                if(clienteComando.Adicionar(clienteDTO))
+                clienteDTO.CPF = Console.ReadLine();
+                if (clienteComando.Adicionar(clienteDTO))
                 {
-                  Console.WriteLine("Cliente Cadastrada com sucesso!");
-                  Console.ReadKey();
+                    Console.WriteLine("Cliente Cadastrada com sucesso!");
+                    Console.ReadKey();
                 }
 
                 Console.Clear();
@@ -140,17 +142,15 @@ namespace Alura.ByteBank.Apresentacao
                 Console.Write("Informe Numero Agencia: ");
                 contaDTO.AgenciaId = int.Parse(Console.ReadLine());
                 contaDTO.Agencia = agenciaComando.ObterPorId(contaDTO.AgenciaId);
-
             }
 
-            comando.Adicionar(contaDTO);          
+            comando.Adicionar(contaDTO);
             Console.WriteLine(contaDTO.ToString());
             Console.ReadKey();
-
         }
 
         private static void CadastarAgencia()
-        {            
+        {
             var dto = new AgenciaDTO();
             var comando = new AgenciaComando();
             Console.Clear();
@@ -172,8 +172,6 @@ namespace Alura.ByteBank.Apresentacao
                 Console.WriteLine(dados);
                 Console.ReadKey();
             }
-
-
         }
     }
 }

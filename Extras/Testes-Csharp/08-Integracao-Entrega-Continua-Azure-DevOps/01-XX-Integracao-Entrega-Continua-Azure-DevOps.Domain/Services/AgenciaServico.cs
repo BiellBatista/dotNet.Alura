@@ -1,21 +1,18 @@
-﻿using Alura.ByteBank.Dominio.Entidades;
-using Alura.ByteBank.Dominio.Interfaces.Repositorios;
-using Alura.ByteBank.Dominio.Interfaces.Servicos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Domain.Entidades;
+using _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Domain.Interfaces.Repositorios;
+using _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Domain.Interfaces.Servicos;
 
-namespace Alura.ByteBank.Dominio.Services
+namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Domain.Services
 {
     public class AgenciaServico : IAgenciaServico
     {
         private readonly IAgenciaRepositorio _repositorio;
+
         public AgenciaServico(IAgenciaRepositorio repositorio)
         {
             _repositorio = repositorio;
         }
+
         public bool Adicionar(Agencia agencia)
         {
             return _repositorio.Adicionar(agencia);

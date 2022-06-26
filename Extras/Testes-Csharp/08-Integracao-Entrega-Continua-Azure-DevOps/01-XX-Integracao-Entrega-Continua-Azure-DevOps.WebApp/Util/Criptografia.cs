@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Alura.ByteBank.WebApp.Util
+﻿namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.WebApp.Util
 {
     public class Criptografia
     {
@@ -16,6 +9,7 @@ namespace Alura.ByteBank.WebApp.Util
             byte[] hashedDataBytes = md5hasher.ComputeHash(encoder.GetBytes(frase));
             return byteArrayToString(hashedDataBytes);
         }
+
         public static string sha1encrypt(string frase)
         {
             UTF8Encoding encoder = new UTF8Encoding();
@@ -23,6 +17,7 @@ namespace Alura.ByteBank.WebApp.Util
             byte[] hashedDataBytes = sha1hasher.ComputeHash(encoder.GetBytes(frase));
             return byteArrayToString(hashedDataBytes);
         }
+
         public static string sha256encrypt(string frase)
         {
             UTF8Encoding encoder = new UTF8Encoding();
@@ -30,6 +25,7 @@ namespace Alura.ByteBank.WebApp.Util
             byte[] hashedDataBytes = sha256hasher.ComputeHash(encoder.GetBytes(frase));
             return byteArrayToString(hashedDataBytes);
         }
+
         public static string sha384encrypt(string frase)
         {
             UTF8Encoding encoder = new UTF8Encoding();
@@ -37,6 +33,7 @@ namespace Alura.ByteBank.WebApp.Util
             byte[] hashedDataBytes = sha384hasher.ComputeHash(encoder.GetBytes(frase));
             return byteArrayToString(hashedDataBytes);
         }
+
         public static string sha512encrypt(string frase)
         {
             UTF8Encoding encoder = new UTF8Encoding();
@@ -44,6 +41,7 @@ namespace Alura.ByteBank.WebApp.Util
             byte[] hashedDataBytes = sha512hasher.ComputeHash(encoder.GetBytes(frase));
             return byteArrayToString(hashedDataBytes);
         }
+
         public static string byteArrayToString(byte[] inputArray)
         {
             StringBuilder output = new StringBuilder("");

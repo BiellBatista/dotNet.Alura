@@ -397,3 +397,11 @@ Testes em .NET: Testes de interface usando Selenium
 Testes em .NET: integração e entrega contínua com Azure DevOps
 	01 - DevOps
 		01 - Apresentação
+		02 - Preparação do ambiente
+		03 - Preparando o ambiente: download e instalação do projeto
+		04 - Criando uma conta no Azure
+		05 - Para saber mais: o que é Cloud Computing e seus benefícios?
+		06 - DevOps e Azure DevOps
+		07 - DevOps (C / D)
+		08 - Faça como eu fiz: criando uma conta no Azure
+		09 - O que aprendemos?

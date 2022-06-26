@@ -1,19 +1,19 @@
-﻿using Alura.ByteBank.Dominio.Entidades;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Domain.Entidades;
 
-namespace Alura.ByteBank.Dominio.Interfaces.Servicos
+namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Domain.Interfaces.Servicos
 {
-    public interface IClienteServico:IDisposable
+    public interface IClienteServico : IDisposable
     {
         public List<Cliente> ObterTodos();
+
         public Cliente ObterPorId(int id);
+
         public Cliente ObterPorGuid(Guid guid);
+
         public bool Adicionar(Cliente cliente);
+
         public bool Atualizar(int id, Cliente cliente);
+
         public bool Excluir(int id);
     }
 }

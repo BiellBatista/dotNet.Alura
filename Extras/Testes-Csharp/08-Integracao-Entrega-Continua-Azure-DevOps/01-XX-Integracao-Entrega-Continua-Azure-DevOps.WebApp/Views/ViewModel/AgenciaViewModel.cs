@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Alura.ByteBank.WebApp.Views.ViewModel
+﻿namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.WebApp.Views.ViewModel
 {
     public class AgenciaViewModel
     {

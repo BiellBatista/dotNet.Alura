@@ -1,15 +1,11 @@
-﻿using Alura.ByteBank.Dominio.Entidades;
-using System;
-using Xunit;
-
-namespace Alura.ByteBank.Dominio.Testes
+﻿namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Domain.Testes
 {
     public class AgenciaTestes
     {
         [Fact]
         public void CriarObjetoAgenciaValido()
         {
-            //Arrange            
+            //Arrange
             string nome = "Agencia Central";
             int numero = 125982;
             Guid identificador = Guid.NewGuid();
@@ -18,11 +14,11 @@ namespace Alura.ByteBank.Dominio.Testes
             //Act
             var agencia = new Agencia()
             {
-                Nome = nome,              
-                Identificador = identificador,              
+                Nome = nome,
+                Identificador = identificador,
                 Id = id,
-                Endereco= endereco,
-                Numero=numero
+                Endereco = endereco,
+                Numero = numero
             };
             //Assert
             Assert.Equal(nome, agencia.Nome);
@@ -35,7 +31,7 @@ namespace Alura.ByteBank.Dominio.Testes
         [Fact]
         public void TestaExcecaoComNumeroAgenciaInvalido()
         {
-            //Arrange        
+            //Arrange
             int numeroInvalido = -1230;
             //Act
             //Assert
@@ -55,7 +51,6 @@ namespace Alura.ByteBank.Dominio.Testes
                 () => new Agencia().Nome = nomeInvalido
 
              );
-
         }
 
         [Fact]

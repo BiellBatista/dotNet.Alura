@@ -1,29 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Alura.ByteBank.Dados.Contexto;
-using Alura.ByteBank.Dominio.Entidades;
-using Alura.ByteBank.Dados.Repositorio;
-using Microsoft.AspNetCore.Authorization;
-using Alura.ByteBank.Aplicacao.AplicacaoServico;
-using Alura.ByteBank.Dominio.Interfaces.Servicos;
-using Alura.ByteBank.Dominio.Interfaces.Repositorios;
-using Alura.ByteBank.Dominio.Services;
-using Alura.ByteBank.Aplicacao.DTO;
-
-namespace Alura.ByteBank.WebApp.Controllers
+﻿namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.WebApp.Controllers
 {
-
     public class ClientesController : Controller
     {
-
         private readonly IClienteRepositorio _repositorio;
         private readonly IClienteServico _servico;
         private readonly ClienteServicoApp clienteServicoApp;
+
         public ClientesController(IClienteRepositorio repositorio)
         {
             _repositorio = repositorio;

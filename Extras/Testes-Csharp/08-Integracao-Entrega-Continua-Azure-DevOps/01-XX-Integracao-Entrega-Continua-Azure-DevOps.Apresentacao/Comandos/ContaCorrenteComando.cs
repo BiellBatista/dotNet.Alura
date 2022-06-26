@@ -1,24 +1,13 @@
-﻿using Alura.ByteBank.Aplicacao.AplicacaoServico;
-using Alura.ByteBank.Aplicacao.DTO;
-using Alura.ByteBank.Dados.Repositorio;
-using Alura.ByteBank.Dominio.Interfaces.Repositorios;
-using Alura.ByteBank.Dominio.Interfaces.Servicos;
-using Alura.ByteBank.Dominio.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Alura.ByteBank.Apresentacao.Comandos
+﻿namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Apresentacao.Comandos
 {
     internal class ContaCorrenteComando
     {
-        IContaCorrenteRepositorio _repositorio;
-        IContaCorrenteServico _servico;
-        IClienteServico _cliente;
-        IAgenciaServico _agencia;
-        ContaCorrenteServicoApp contaCorrenteServicoApp;
+        private IContaCorrenteRepositorio _repositorio;
+        private IContaCorrenteServico _servico;
+        private IClienteServico _cliente;
+        private IAgenciaServico _agencia;
+        private ContaCorrenteServicoApp contaCorrenteServicoApp;
+
         public ContaCorrenteComando()
         {
             _repositorio = new ContaCorrenteRepositorio();
@@ -30,6 +19,7 @@ namespace Alura.ByteBank.Apresentacao.Comandos
         {
             return contaCorrenteServicoApp.Adicionar(conta);
         }
+
         public bool Atualizar(int id, ContaCorrenteDTO conta)
         {
             return contaCorrenteServicoApp.Atualizar(id, conta);
@@ -49,6 +39,5 @@ namespace Alura.ByteBank.Apresentacao.Comandos
         {
             return contaCorrenteServicoApp.ObterTodos();
         }
-
     }
 }

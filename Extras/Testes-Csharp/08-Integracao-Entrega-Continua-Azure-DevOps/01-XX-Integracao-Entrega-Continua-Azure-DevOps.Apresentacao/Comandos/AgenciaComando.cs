@@ -1,22 +1,11 @@
-﻿using Alura.ByteBank.Aplicacao.AplicacaoServico;
-using Alura.ByteBank.Aplicacao.DTO;
-using Alura.ByteBank.Dados.Repositorio;
-using Alura.ByteBank.Dominio.Interfaces.Repositorios;
-using Alura.ByteBank.Dominio.Interfaces.Servicos;
-using Alura.ByteBank.Dominio.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Alura.ByteBank.Apresentacao.Comandos
+﻿namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Apresentacao.Comandos
 {
     internal class AgenciaComando
     {
-        IAgenciaRepositorio _repositorio;
-        IAgenciaServico _servico;
-        AgenciaServicoApp agenciaServicoApp;
+        private IAgenciaRepositorio _repositorio;
+        private IAgenciaServico _servico;
+        private AgenciaServicoApp agenciaServicoApp;
+
         public AgenciaComando()
         {
             _repositorio = new AgenciaRepositorio();
@@ -28,9 +17,10 @@ namespace Alura.ByteBank.Apresentacao.Comandos
         {
             return agenciaServicoApp.Adicionar(agencia);
         }
+
         public bool Atualizar(int id, AgenciaDTO agencia)
         {
-            return agenciaServicoApp.Atualizar(id,agencia);
+            return agenciaServicoApp.Atualizar(id, agencia);
         }
 
         public bool Excluir(int id)
@@ -45,8 +35,7 @@ namespace Alura.ByteBank.Apresentacao.Comandos
 
         public List<AgenciaDTO> ObterTodos()
         {
-           return agenciaServicoApp.ObterTodos();
+            return agenciaServicoApp.ObterTodos();
         }
-
     }
 }

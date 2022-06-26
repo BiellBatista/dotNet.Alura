@@ -1,27 +1,18 @@
-﻿using Alura.ByteBank.WebApp.Models;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using _01_XX_Integracao_Entrega_Continua_Azure_DevOps.WebApp.Models;
 
-namespace Alura.ByteBank.WebApp.Controllers
+namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.WebApp.Controllers
 {
-    
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
 
-        
         public IActionResult Index()
-        {           
+        {
             return View();
         }
 

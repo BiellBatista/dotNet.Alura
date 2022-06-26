@@ -1,22 +1,16 @@
-﻿using Alura.ByteBank.Dados.Contexto;
-using Alura.ByteBank.Dominio.Entidades;
-using Alura.ByteBank.Dominio.Interfaces.Repositorios;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Dados.Contexto;
 
-namespace Alura.ByteBank.Dados.Repositorio
+namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Dados.Repositorio
 {
     public class AgenciaRepositorio : IAgenciaRepositorio
     {
         private readonly ByteBankContexto _contexto;
+
         public AgenciaRepositorio()
         {
             _contexto = new ByteBankContexto();
         }
+
         public bool Adicionar(Agencia agencia)
         {
             try
@@ -26,14 +20,14 @@ namespace Alura.ByteBank.Dados.Repositorio
 
                 return true;
             }
-            catch{
+            catch
+            {
                 return false;
             }
         }
 
         public bool Atualizar(int id, Agencia agencia)
         {
-            
             try
             {
                 if (id != agencia.Id)
@@ -44,7 +38,8 @@ namespace Alura.ByteBank.Dados.Repositorio
                 _contexto.SaveChanges();
                 return true;
             }
-            catch{
+            catch
+            {
                 return false;
             }
         }
@@ -63,7 +58,8 @@ namespace Alura.ByteBank.Dados.Repositorio
                 _contexto.SaveChanges();
                 return true;
             }
-            catch{
+            catch
+            {
                 return false;
             }
         }
@@ -73,15 +69,15 @@ namespace Alura.ByteBank.Dados.Repositorio
             try
             {
                 var agencia = _contexto.Agencias.FirstOrDefault(p => p.Id == id);
-                if(agencia == null)
+                if (agencia == null)
                 {
                     throw new Exception($"Erro ao obter agência com Id = {id}.");
                 }
                 return agencia;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-               throw new Exception( ex.Message) ;
+                throw new Exception(ex.Message);
             }
         }
 

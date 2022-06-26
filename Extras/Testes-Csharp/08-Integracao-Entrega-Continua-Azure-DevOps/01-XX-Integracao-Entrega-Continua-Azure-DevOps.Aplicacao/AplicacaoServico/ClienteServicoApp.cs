@@ -1,37 +1,30 @@
-﻿using Alura.ByteBank.Aplicacao.DTO;
-using Alura.ByteBank.Aplicacao.Interfaces;
-using Alura.ByteBank.Dominio.Entidades;
-using Alura.ByteBank.Dominio.Interfaces.Servicos;
-using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Aplicacao.DTO;
+using _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Aplicacao.Interfaces;
 
-namespace Alura.ByteBank.Aplicacao.AplicacaoServico
+namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Aplicacao.AplicacaoServico
 {
     public class ClienteServicoApp : IClienteServicoApp
     {
-        private readonly IClienteServico _servico;     
+        private readonly IClienteServico _servico;
         private readonly Mapper _mapper;
-      
+
         public ClienteServicoApp(IClienteServico servico)
         {
-            _servico = servico;            
+            _servico = servico;
             var config = new MapperConfiguration(cfg =>
                     cfg.CreateMap<Cliente, ClienteDTO>().ReverseMap());
             _mapper = new(config);
         }
+
         public void Dispose()
         {
             _servico.Dispose();
             GC.SuppressFinalize(this);
         }
+
         public bool Adicionar(ClienteDTO cliente)
         {
-            
-            return _servico.Adicionar(_mapper.Map<ClienteDTO,Cliente>(cliente));
+            return _servico.Adicionar(_mapper.Map<ClienteDTO, Cliente>(cliente));
         }
 
         public bool Atualizar(int id, ClienteDTO cliente)
@@ -53,6 +46,7 @@ namespace Alura.ByteBank.Aplicacao.AplicacaoServico
         {
             return _mapper.Map<Cliente, ClienteDTO>(_servico.ObterPorGuid(guid));
         }
+
         public List<ClienteDTO> ObterTodos()
         {
             var clientes = _servico.ObterTodos();

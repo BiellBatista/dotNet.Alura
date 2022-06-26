@@ -1,22 +1,16 @@
-﻿using Alura.ByteBank.Dados.Contexto;
-using Alura.ByteBank.Dominio.Entidades;
-using Alura.ByteBank.Dominio.Interfaces.Repositorios;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Dados.Contexto;
 
-namespace Alura.ByteBank.Dados.Repositorio
+namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Dados.Repositorio
 {
     public class UsuarioAppRepositorio : IUsuarioRepositorio
     {
         private readonly ByteBankContexto _contexto;
+
         public UsuarioAppRepositorio()
         {
             _contexto = new ByteBankContexto();
         }
+
         public bool Adicionar(UsuarioApp usuario)
         {
             try
@@ -26,14 +20,14 @@ namespace Alura.ByteBank.Dados.Repositorio
 
                 return true;
             }
-            catch{
+            catch
+            {
                 return false;
             }
         }
 
         public bool Atualizar(int id, UsuarioApp usuario)
         {
-            
             try
             {
                 if (id != usuario.Id)
@@ -44,7 +38,8 @@ namespace Alura.ByteBank.Dados.Repositorio
                 _contexto.SaveChanges();
                 return true;
             }
-            catch{
+            catch
+            {
                 return false;
             }
         }
@@ -63,7 +58,8 @@ namespace Alura.ByteBank.Dados.Repositorio
                 _contexto.SaveChanges();
                 return true;
             }
-            catch{
+            catch
+            {
                 return false;
             }
         }
@@ -73,15 +69,15 @@ namespace Alura.ByteBank.Dados.Repositorio
             try
             {
                 var usuario = _contexto.Usuarios.FirstOrDefault(p => p.Id == id);
-                if(usuario == null)
+                if (usuario == null)
                 {
                     throw new Exception($"Erro ao obter usuário com Id = {id}.");
                 }
                 return usuario;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-               throw new Exception( ex.Message) ;
+                throw new Exception(ex.Message);
             }
         }
 
@@ -101,8 +97,6 @@ namespace Alura.ByteBank.Dados.Repositorio
                 throw new Exception(ex.Message);
             }
         }
-
-
 
         public List<UsuarioApp> ObterTodos()
         {

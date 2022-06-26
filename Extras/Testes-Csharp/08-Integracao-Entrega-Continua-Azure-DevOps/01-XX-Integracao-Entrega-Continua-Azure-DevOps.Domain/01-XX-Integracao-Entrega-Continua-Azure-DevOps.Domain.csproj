@@ -1,7 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
-
+	<PropertyGroup>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<LangVersion>latest</LangVersion>
+		<RootNamespace>_01_XX_Integracao_Entrega_Continua_Azure_DevOps.Domain</RootNamespace>
+		<TargetFramework>net6.0</TargetFramework>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<NeutralLanguage>en</NeutralLanguage>
+	</PropertyGroup>
 </Project>

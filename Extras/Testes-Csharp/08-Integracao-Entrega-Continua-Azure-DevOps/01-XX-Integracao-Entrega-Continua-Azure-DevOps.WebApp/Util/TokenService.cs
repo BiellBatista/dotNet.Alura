@@ -1,14 +1,4 @@
-﻿using Alura.ByteBank.Dominio.Entidades;
-using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Alura.ByteBank.WebApp.Util
+﻿namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.WebApp.Util
 {
     public static class TokenService
     {

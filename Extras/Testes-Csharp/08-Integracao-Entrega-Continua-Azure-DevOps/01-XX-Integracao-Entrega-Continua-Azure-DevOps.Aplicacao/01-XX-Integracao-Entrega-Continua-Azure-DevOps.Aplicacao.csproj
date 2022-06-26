@@ -1,16 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<LangVersion>latest</LangVersion>
+		<RootNamespace>_01_XX_Integracao_Entrega_Continua_Azure_DevOps.Aplicacao</RootNamespace>
+		<TargetFramework>net6.0</TargetFramework>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<NeutralLanguage>en</NeutralLanguage>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Alura.ByteBank.Domain\Alura.ByteBank.Dominio.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="10.1.1" />
-    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
-  </ItemGroup>
-
+	<ItemGroup>
+	  <ProjectReference Include="..\01-XX-Integracao-Entrega-Continua-Azure-DevOps.Domain\01-XX-Integracao-Entrega-Continua-Azure-DevOps.Domain.csproj" />
+	</ItemGroup>
 </Project>

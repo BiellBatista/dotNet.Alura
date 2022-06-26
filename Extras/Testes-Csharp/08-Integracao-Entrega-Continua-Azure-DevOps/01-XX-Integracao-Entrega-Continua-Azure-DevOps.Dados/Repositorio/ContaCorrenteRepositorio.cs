@@ -1,38 +1,33 @@
-﻿using Alura.ByteBank.Dados.Contexto;
-using Alura.ByteBank.Dominio.Entidades;
-using Alura.ByteBank.Dominio.Interfaces.Repositorios;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Dados.Contexto;
 
-namespace Alura.ByteBank.Dados.Repositorio
+namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Dados.Repositorio
 {
-    public class ContaCorrenteRepositorio: IContaCorrenteRepositorio
+    public class ContaCorrenteRepositorio : IContaCorrenteRepositorio
     {
         private readonly ByteBankContexto _contexto;
+
         public ContaCorrenteRepositorio()
         {
             _contexto = new ByteBankContexto();
         }
+
         public bool Adicionar(ContaCorrente conta)
         {
             try
-            {    //https://docs.microsoft.com/pt-br/ef/core/change-tracking/identity-resolution            
+            {    //https://docs.microsoft.com/pt-br/ef/core/change-tracking/identity-resolution
                 _contexto.ContaCorrentes.Update(conta);
                 _contexto.SaveChanges();
 
                 return true;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                throw new Exception(ex.InnerException.Message);                
+                throw new Exception(ex.InnerException.Message);
             }
         }
 
         public bool Atualizar(int id, ContaCorrente conta)
         {
-
             try
             {
                 if (id != conta.Id)
@@ -91,8 +86,8 @@ namespace Alura.ByteBank.Dados.Repositorio
         {
             try
             {
-                var conta = _contexto.ContaCorrentes.Include(c=>c.Cliente)
-                                                    .Include(x=>x.Agencia).FirstOrDefault(p => p.Identificador == guid);
+                var conta = _contexto.ContaCorrentes.Include(c => c.Cliente)
+                                                    .Include(x => x.Agencia).FirstOrDefault(p => p.Identificador == guid);
                 if (conta == null)
                 {
                     return null;
@@ -104,6 +99,7 @@ namespace Alura.ByteBank.Dados.Repositorio
                 throw new Exception($"Erro ao obter conta com Guid = {guid}.");
             }
         }
+
         public List<ContaCorrente> ObterTodos()
         {
             try

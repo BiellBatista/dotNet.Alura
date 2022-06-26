@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Alura.ByteBank.Aplicacao.DTO
+﻿namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Aplicacao.DTO
 {
     public class ClienteDTO
     {
@@ -13,6 +7,7 @@ namespace Alura.ByteBank.Aplicacao.DTO
         public string Nome { get; set; }
         public string Profissao { get; set; }
         public Guid Identificador { get; set; }
+
         public ClienteDTO()
         {
             Identificador = Guid.NewGuid();

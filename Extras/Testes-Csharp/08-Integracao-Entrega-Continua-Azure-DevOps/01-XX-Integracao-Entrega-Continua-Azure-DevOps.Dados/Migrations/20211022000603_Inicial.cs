@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
-
-namespace Alura.ByteBank.Dados.Migrations
+﻿namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Dados.Migrations
 {
     public partial class Inicial : Migration
     {

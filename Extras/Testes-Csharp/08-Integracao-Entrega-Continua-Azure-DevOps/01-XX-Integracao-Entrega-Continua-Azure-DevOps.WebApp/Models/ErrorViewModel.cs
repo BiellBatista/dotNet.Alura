@@ -1,6 +1,4 @@
-using System;
-
-namespace Alura.ByteBank.WebApp.Models
+namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.WebApp.Models
 {
     public class ErrorViewModel
     {

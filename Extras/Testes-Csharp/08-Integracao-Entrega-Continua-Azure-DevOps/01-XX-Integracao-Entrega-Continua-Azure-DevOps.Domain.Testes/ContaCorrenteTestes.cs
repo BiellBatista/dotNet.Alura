@@ -1,8 +1,4 @@
-﻿using Alura.ByteBank.Dominio.Entidades;
-using System;
-using Xunit;
-
-namespace Alura.ByteBank.Dominio.Testes
+﻿namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Domain.Testes
 {
     public class ContaCorrenteTestes
     {
@@ -10,8 +6,8 @@ namespace Alura.ByteBank.Dominio.Testes
         public void CriarContaCorrenteValida()
         {
             //Arrange
-            float saldo = 50;            
-            Guid identificador = Guid.NewGuid();          
+            float saldo = 50;
+            Guid identificador = Guid.NewGuid();
             int id = 1;
             var cliente = new Cliente();
             var agencia = new Agencia();
@@ -32,13 +28,12 @@ namespace Alura.ByteBank.Dominio.Testes
             Assert.Equal(identificador, contacorrente.Identificador);
             Assert.NotNull(contacorrente.Agencia);
             Assert.NotNull(contacorrente.Cliente);
-
         }
 
         [Fact]
         public void TestaExceptionValorDeSaldoMenorIgualAzero()
         {
-            //Arrange        
+            //Arrange
             int numeroInvalido = -1230;
             //Act
             //Assert

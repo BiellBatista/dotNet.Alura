@@ -1,20 +1,13 @@
-﻿using Alura.ByteBank.Aplicacao.DTO;
-using Alura.ByteBank.Aplicacao.Interfaces;
-using Alura.ByteBank.Dominio.Entidades;
-using Alura.ByteBank.Dominio.Interfaces.Servicos;
-using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Aplicacao.DTO;
+using _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Aplicacao.Interfaces;
 
-namespace Alura.ByteBank.Aplicacao.AplicacaoServico
+namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Aplicacao.AplicacaoServico
 {
     public class AgenciaServicoApp : IAgenciaServicoApp
     {
         private readonly IAgenciaServico _servico;
         private readonly Mapper _mapper;
+
         public AgenciaServicoApp(IAgenciaServico servico)
         {
             _servico = servico;
@@ -28,9 +21,10 @@ namespace Alura.ByteBank.Aplicacao.AplicacaoServico
             _servico.Dispose();
             GC.SuppressFinalize(this);
         }
+
         public bool Adicionar(AgenciaDTO agencia)
         {
-            return _servico.Adicionar(_mapper.Map<AgenciaDTO,Agencia>(agencia));
+            return _servico.Adicionar(_mapper.Map<AgenciaDTO, Agencia>(agencia));
         }
 
         public bool Atualizar(int id, AgenciaDTO agencia)
@@ -45,7 +39,7 @@ namespace Alura.ByteBank.Aplicacao.AplicacaoServico
 
         public AgenciaDTO ObterPorId(int id)
         {
-            return _mapper.Map<Agencia,AgenciaDTO>(_servico.ObterPorId(id));
+            return _mapper.Map<Agencia, AgenciaDTO>(_servico.ObterPorId(id));
         }
 
         public AgenciaDTO ObterPorGuid(Guid guid)

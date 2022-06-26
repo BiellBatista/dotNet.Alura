@@ -1,27 +1,10 @@
-﻿using Alura.ByteBank.Aplicacao.AplicacaoServico;
-using Alura.ByteBank.Aplicacao.DTO;
-using Alura.ByteBank.Aplicacao.Interfaces;
-using Alura.ByteBank.Dados.Repositorio;
-using Alura.ByteBank.Dominio.Entidades;
-using Alura.ByteBank.Dominio.Interfaces.Repositorios;
-using Alura.ByteBank.Dominio.Interfaces.Servicos;
-using Alura.ByteBank.Dominio.Services;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Alura.ByteBank.WebApp.Controllers
+﻿namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.WebApp.Controllers
 {
     public class AgenciaController : Controller
     {
-        // GET: AgenciaController    
+        // GET: AgenciaController
         private readonly IAgenciaRepositorio _repositorio;
+
         private readonly IAgenciaServico _servico;
         private readonly IAgenciaServicoApp agenciaServicoApp;
 
@@ -74,7 +57,6 @@ namespace Alura.ByteBank.WebApp.Controllers
         [Authorize]
         public ActionResult Edit(int id)
         {
-
             if (id == null)
             {
                 return NotFound();
@@ -94,7 +76,6 @@ namespace Alura.ByteBank.WebApp.Controllers
         [Authorize]
         public ActionResult Edit(int id, [Bind("Id,Identificador,Numero,Nome,Endereco")] AgenciaDTO agencia)
         {
-
             if (id != agencia.Id)
             {
                 return NotFound();
@@ -126,7 +107,6 @@ namespace Alura.ByteBank.WebApp.Controllers
         [Authorize]
         public ActionResult Delete(int id)
         {
-
             var agencia = agenciaServicoApp.ObterPorId(id);
 
             if (agencia == null)

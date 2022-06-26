@@ -1,23 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Alura.ByteBank.Dados.Contexto;
-using Alura.ByteBank.Dominio.Entidades;
-using Alura.ByteBank.Dados.Repositorio;
-using Microsoft.AspNetCore.Authorization;
-using Alura.ByteBank.Dominio.Interfaces.Repositorios;
-using Alura.ByteBank.Dominio.Interfaces.Servicos;
-using Alura.ByteBank.Aplicacao.AplicacaoServico;
-using Alura.ByteBank.Dominio.Services;
-using Alura.ByteBank.Aplicacao.DTO;
-
-namespace Alura.ByteBank.WebApp.Controllers
+﻿namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.WebApp.Controllers
 {
-
     public class ContaCorrentesController : Controller
     {
         private readonly IContaCorrenteRepositorio _repositorio;
@@ -36,15 +18,14 @@ namespace Alura.ByteBank.WebApp.Controllers
             _servicoAgencia = new AgenciaServico(repositorioAgencia); ;
             contaCorrenteServicoApp = new ContaCorrenteServicoApp(_servico, _servicoAgencia, _servicoCliente);
         }
+
         [Authorize]
-        // GET: ContaCorrentes
         public ActionResult Index()
         {
             return View(contaCorrenteServicoApp.ObterTodos());
         }
 
         [Authorize]
-        // GET: ContaCorrentes/Details/5
         public IActionResult Details(int id)
         {
             if (id == null)
@@ -63,7 +44,6 @@ namespace Alura.ByteBank.WebApp.Controllers
         }
 
         [Authorize]
-        // GET: ContaCorrentes/Create
         public IActionResult Create()
         {
             return View();

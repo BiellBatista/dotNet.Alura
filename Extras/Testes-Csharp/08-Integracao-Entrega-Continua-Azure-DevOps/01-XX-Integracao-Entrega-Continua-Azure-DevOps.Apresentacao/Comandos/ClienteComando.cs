@@ -1,22 +1,11 @@
-﻿using Alura.ByteBank.Aplicacao.AplicacaoServico;
-using Alura.ByteBank.Aplicacao.DTO;
-using Alura.ByteBank.Dados.Repositorio;
-using Alura.ByteBank.Dominio.Interfaces.Repositorios;
-using Alura.ByteBank.Dominio.Interfaces.Servicos;
-using Alura.ByteBank.Dominio.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Alura.ByteBank.Apresentacao.Comandos
+﻿namespace _01_XX_Integracao_Entrega_Continua_Azure_DevOps.Apresentacao.Comandos
 {
     internal class ClienteComando
     {
-        IClienteRepositorio _repositorio;
-        IClienteServico _servico;
-        ClienteServicoApp clienteServicoApp;
+        private IClienteRepositorio _repositorio;
+        private IClienteServico _servico;
+        private ClienteServicoApp clienteServicoApp;
+
         public ClienteComando()
         {
             _repositorio = new ClienteRepositorio();
@@ -28,9 +17,10 @@ namespace Alura.ByteBank.Apresentacao.Comandos
         {
             return clienteServicoApp.Adicionar(cliente);
         }
-        public bool Atualizar(int id,ClienteDTO cliente)
+
+        public bool Atualizar(int id, ClienteDTO cliente)
         {
-            return clienteServicoApp.Atualizar(id,cliente);
+            return clienteServicoApp.Atualizar(id, cliente);
         }
 
         public bool Excluir(int id)
@@ -42,6 +32,7 @@ namespace Alura.ByteBank.Apresentacao.Comandos
         {
             return clienteServicoApp.ObterPorId(id);
         }
+
         public ClienteDTO ObterPorGuid(Guid guid)
         {
             return clienteServicoApp.ObterPorGuid(guid);
@@ -49,8 +40,7 @@ namespace Alura.ByteBank.Apresentacao.Comandos
 
         public List<ClienteDTO> ObterTodos()
         {
-           return clienteServicoApp.ObterTodos();
+            return clienteServicoApp.ObterTodos();
         }
-
     }
 }
