@@ -1,7 +1,7 @@
-﻿using _02_XX_CI_CD_Azure_DevOps.Domain.Entidades;
+﻿using _03_XX_CI_CD_Azure_DevOps.Domain.Entidades;
 using Xunit;
 
-namespace _02_XX_CI_CD_Azure_DevOps.Domain.Tests
+namespace _03_XX_CI_CD_Azure_DevOps.Domain.Tests
 {
     public class AgenciaTestes
     {

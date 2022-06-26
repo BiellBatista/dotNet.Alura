@@ -415,3 +415,6 @@ Testes em .NET: integração e entrega contínua com Azure DevOps
 		07 - Faça como eu fiz: conectando Azure DevOps com GitHub
 		08 - Azure Repos
 		09 - O que aprendemos?
+	03 - Banco de dados no Azure
+		01 - Projeto da aula anterior
+		02 - Banco de dados no Azure

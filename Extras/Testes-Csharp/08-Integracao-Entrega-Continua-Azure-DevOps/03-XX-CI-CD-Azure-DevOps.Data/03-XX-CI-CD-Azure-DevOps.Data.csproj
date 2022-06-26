@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<LangVersion>latest</LangVersion>
+		<RootNamespace>_03_XX_CI_CD_Azure_DevOps.Data</RootNamespace>
+		<TargetFramework>net6.0</TargetFramework>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<NeutralLanguage>en</NeutralLanguage>
+	</PropertyGroup>
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.6" />
+	  <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.1" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\03-XX-CI-CD-Azure-DevOps.Domain\03-XX-CI-CD-Azure-DevOps.Domain.csproj" />
+	</ItemGroup>
+</Project>
