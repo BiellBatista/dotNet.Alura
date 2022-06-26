@@ -405,3 +405,6 @@ Testes em .NET: integração e entrega contínua com Azure DevOps
 		07 - DevOps (C / D)
 		08 - Faça como eu fiz: criando uma conta no Azure
 		09 - O que aprendemos?
+	02 - Versionamento de código
+		01 - Projeto da aula anterior
+		02 - Gerenciamento de código

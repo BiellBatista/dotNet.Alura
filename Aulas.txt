@@ -479,6 +479,12 @@ Extra Testes em C#
 		03 - Testando o WebApp
 		04 - Testando com localizadores
 		05 - Page Objects
+	Testes em .NET: integração e entrega contínua com Azure DevOps
+		01 - DevOps
+		02 - Versionamento de código
+		03 - Banco de dados no Azure
+		04 - Pipelines: integração contínua
+		05 - Pipelines: entrega contínua
 -------------------------------------------------------------------------------------------------------------------------
 Formação Desenvolvedor .NET
 	Curso C# Parte 1: Primeiros Passos
