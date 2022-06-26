@@ -426,3 +426,10 @@ Testes em .NET: integração e entrega contínua com Azure DevOps
 	04 - Pipelines: integração contínua
 		01 - Projeto da aula anterior
 		02 - Criando uma Build Pipeline
+		03 - Faça como eu fiz: criando uma Build Pipeline
+		04 - Ajustando a Pipeline
+		05 - Executando a Pipeline
+		06 - Pipeline (C)
+		07 - Rodando os testes
+		08 - Para saber mais: o que é agilidade?
+		09 - O que aprendemos?
