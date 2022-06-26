@@ -433,3 +433,6 @@ Testes em .NET: integração e entrega contínua com Azure DevOps
 		07 - Rodando os testes
 		08 - Para saber mais: o que é agilidade?
 		09 - O que aprendemos?
+	05 - Pipelines: entrega contínua
+		01 - Projeto da aula anterior
+		02 - Implantando a solução no Azure
