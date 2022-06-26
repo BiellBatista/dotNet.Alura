@@ -408,3 +408,10 @@ Testes em .NET: integração e entrega contínua com Azure DevOps
 	02 - Versionamento de código
 		01 - Projeto da aula anterior
 		02 - Gerenciamento de código
+		03 - Versionamento de código (A / C)
+		04 - Para saber mais: Git e GitHub
+		05 - Para saber mais: TFVC
+		06 - Integrando com o GitHub
+		07 - Faça como eu fiz: conectando Azure DevOps com GitHub
+		08 - Azure Repos
+		09 - O que aprendemos?
