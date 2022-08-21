@@ -22,4 +22,13 @@ Microsserviços e .NET6: implementando a comunicação
 	03 - Otimizando e testando
 		01 - Projeto da aula anterior
 		02 - Aplicando multi-stage build
-	04 - Consumindo dados de filas
+		03 - Funcionamento do multi-stage build (B)
+		04 - Faça como eu fiz: reduzindo o tamanho
+		05 - Executando e testando a app
+		06 - Para saber mais: Docker e MySQL
+		07 - Subindo o container do banco
+		08 - Comunicando containers
+		09 - Comunicação e rede (C)
+		10 - O que aprendemos?
+	04 - Requisições assíncronas
+	05 - Consumindo dados de filas
