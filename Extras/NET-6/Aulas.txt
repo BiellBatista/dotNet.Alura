@@ -20,4 +20,6 @@ Microsserviços e .NET6: implementando a comunicação
 		08 - Faça como eu fiz: escrevendo o Dockerfile
 		09 - O que aprendemos?
 	03 - Otimizando e testando
+		01 - Projeto da aula anterior
+		02 - Aplicando multi-stage build
 	04 - Consumindo dados de filas
