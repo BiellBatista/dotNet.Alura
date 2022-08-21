@@ -393,6 +393,17 @@ Extra .NET 5
 		04 - Separando roles
 		05 - Políticas customizadas
 -------------------------------------------------------------------------------------------------------------------------
+Extra .NET 6
+	Microsserviços e .NET6: implementando a comunicação
+		01 - Requisições síncronas
+			01 - Apresentação
+			02 - Projeto inicial do curso
+			03 - Conhecendo o projeto
+			04 - Enviando requisições http
+		02 - Dockerizando apps .NET
+		03 - Otimizando e testando
+		04 - Consumindo dados de filas
+-------------------------------------------------------------------------------------------------------------------------
 Extra .NET para Web
 	ASP.NET: Razor
 		01 - Introdução ao Razor
