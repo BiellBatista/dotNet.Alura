@@ -6,6 +6,9 @@ Microsserviços e .NET6: implementando a comunicação
 		04 - Enviando requisições http
 		05 - Serializando dados (A)
 		06 - Recebendo requisições http
+		07 - O método PostAsync() (B / C)
+		08 - Faça como eu fiz: implementando o PostAsync
+		09 - O que aprendemos?
 	02 - Dockerizando apps .NET
 	03 - Otimizando e testando
 	04 - Consumindo dados de filas
