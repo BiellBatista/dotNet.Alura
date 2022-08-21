@@ -31,4 +31,6 @@ Microsserviços e .NET6: implementando a comunicação
 		09 - Comunicação e rede (C)
 		10 - O que aprendemos?
 	04 - Requisições assíncronas
+		01 - Projeto da aula anterior
+		02 - Problemas da requisição síncrona
 	05 - Consumindo dados de filas
