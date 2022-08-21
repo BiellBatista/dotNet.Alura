@@ -1,5 +1,6 @@
 using _01_XX_Restaurante.Service.Data;
 using _01_XX_Restaurante.Service.Dtos;
+using _01_XX_Restaurante.Service.ItemServiceHttpClient;
 using _01_XX_Restaurante.Service.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
@@ -16,7 +17,8 @@ public class RestauranteController : ControllerBase
 
     public RestauranteController(
         IRestauranteRepository repository,
-        IMapper mapper, IItemServiceHttpClient itemServiceHttpClient)
+        IMapper mapper,
+        IItemServiceHttpClient itemServiceHttpClient)
     {
         _repository = repository;
         _mapper = mapper;

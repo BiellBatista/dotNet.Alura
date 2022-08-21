@@ -1,4 +1,5 @@
 using _01_XX_Restaurante.Service.Data;
+using _01_XX_Restaurante.Service.ItemServiceHttpClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 

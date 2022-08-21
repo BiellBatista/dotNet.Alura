@@ -4,6 +4,8 @@ Microsserviços e .NET6: implementando a comunicação
 		02 - Projeto inicial do curso
 		03 - Conhecendo o projeto
 		04 - Enviando requisições http
+		05 - Serializando dados (A)
+		06 - Recebendo requisições http
 	02 - Dockerizando apps .NET
 	03 - Otimizando e testando
 	04 - Consumindo dados de filas
