@@ -12,5 +12,12 @@ Microsserviços e .NET6: implementando a comunicação
 	02 - Dockerizando apps .NET
 		01 - Projeto da aula anterior
 		02 - Por que usar o Docker?
+		03 - Benefícios da containerização (A / C)
+		04 - Preparando para containerizar
+		05 - Para saber mais: versões do .NET no Docker Hub
+		06 - Gerando a imagem da app
+		07 - Analisando Dockerfiles (C)
+		08 - Faça como eu fiz: escrevendo o Dockerfile
+		09 - O que aprendemos?
 	03 - Otimizando e testando
 	04 - Consumindo dados de filas
