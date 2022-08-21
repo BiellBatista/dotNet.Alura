@@ -10,5 +10,7 @@ Microsserviços e .NET6: implementando a comunicação
 		08 - Faça como eu fiz: implementando o PostAsync
 		09 - O que aprendemos?
 	02 - Dockerizando apps .NET
+		01 - Projeto da aula anterior
+		02 - Por que usar o Docker?
 	03 - Otimizando e testando
 	04 - Consumindo dados de filas
