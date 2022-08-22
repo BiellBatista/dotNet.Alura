@@ -42,3 +42,7 @@ Microsserviços e .NET6: implementando a comunicação
 	05 - Consumindo dados de filas
 		01 - Projeto da aula anterior
 		02 - Criando o consumidor
+		03 - Consumindo de uma fila (B)
+		04 - Para saber mais: serviços em segundo plano
+		05 - Faça como eu fiz: escrevendo o subscriber
+		06 - Processando eventos
