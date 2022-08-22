@@ -40,3 +40,5 @@ Microsserviços e .NET6: implementando a comunicação
 		07 - Faça como eu fiz: publicando o restaurante
 		08 - O que aprendemos?
 	05 - Consumindo dados de filas
+		01 - Projeto da aula anterior
+		02 - Criando o consumidor
