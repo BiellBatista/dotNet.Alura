@@ -33,4 +33,7 @@ Microsserviços e .NET6: implementando a comunicação
 	04 - Requisições assíncronas
 		01 - Projeto da aula anterior
 		02 - Problemas da requisição síncrona
+		03 - Como utilizar o RabbitMQ
+		04 - Abrindo conexão com o RabbitMQ (C)
+		05 - Finalizando as configurações
 	05 - Consumindo dados de filas
