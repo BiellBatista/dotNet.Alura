@@ -46,3 +46,9 @@ Microsserviços e .NET6: implementando a comunicação
 		04 - Para saber mais: serviços em segundo plano
 		05 - Faça como eu fiz: escrevendo o subscriber
 		06 - Processando eventos
+		07 - Serviços em segundo plano (A / B)
+		08 - Containerizando o RabbitMQ
+		09 - Fazendo o deploy e testando
+		10 - Projeto final do curso
+		11 - O que aprendemos?
+		12 - Conclusão

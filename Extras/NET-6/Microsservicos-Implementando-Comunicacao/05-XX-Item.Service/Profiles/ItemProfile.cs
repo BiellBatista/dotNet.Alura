@@ -8,6 +8,9 @@ public class ItemProfile : Profile
 {
     public ItemProfile()
     {
+        CreateMap<RestauranteReadDto, Restaurante>()
+            .ForMember(dest => dest.IdExterno, opt => opt.MapFrom(ori => ori.Id));
+
         CreateMap<Restaurante, RestauranteReadDto>();
         CreateMap<ItemCreateDto, Item>();
         CreateMap<Item, ItemCreateDto>();
