@@ -1,8 +1,0 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-	<RootNamespace>_05_XX_Integrando_Aplicacao_Banco_Dados.Dominio</RootNamespace>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
-
-</Project>
