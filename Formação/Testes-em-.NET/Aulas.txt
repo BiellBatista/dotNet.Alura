@@ -1,0 +1,322 @@
+Testes em .NET: Fundamentos do Teste de Software
+	01 - Testes
+		01 - Apresentação
+		02 - Projeto da aula
+		03 - Configuração do ambiente
+		04 - Criando um projeto com testes
+		05 - Testes unitários e o padrão AAA
+		06 - Padrão AAA (B)
+		07 - Para saber mais: Criando um projeto de Testes pelo CLI
+		08 - Faça como eu fiz: Teste unitários
+		09 - O que aprendemos?
+	02 - Automação dos testes
+		01 - Projeto da aula anterior
+		02 - Utilizando xUnit
+		03 - Anotações do xUnit
+		04 - Gerenciador de testes
+		05 - Executando mais testes
+		06 - Anotações do xUnit (A / C / D)
+ 		07 - Para saber mais: Utilizando ClassData ao InlineData
+		08 - Faça como eu fiz: Depurando os métodos de testes
+		09 - O que aprendemos?
+	03 - O TDD
+		01 - Projeto da aula anterior
+		02 - Testando antes da implementação
+		03 - O que é TDD?
+		04 - Sobre TDD (B)
+		05 - Melhorando o design de nossas classes
+		06 - Faça como eu fiz: Refatorando a classe Veículo
+		07 - O que aprendemos?
+	04 - Padronizando os testes
+		01 - Projeto da aula anterior
+		02 - Nomenclatura dos testes
+		03 - Boas Práticas com Testes (B / C)
+		04 - Setup e Cleanup
+		05 - Faça como eu fiz: Reaproveitando códigos nos testes
+		06 - O que aprendemos?
+	05 - Testando exceções
+		01 - Projeto da aula anterior
+		02 - Testando exceções
+		03 - Testando exceções (C)
+		04 - Faça como eu fiz: Testando exceções
+		05 - Testando regressões
+		06 - O que aprendemos?
+	06 - Mais recursos
+		01 - Projeto da aula anterior
+		02 - Testando métodos privados
+		03 - Faça como eu fiz: Testando métodos privados
+		04 - O que testar?
+		05 - O que testar? (A / B)
+		06 - O que aprendemos?
+		07 - Conclusão
+Testes em .NET: Integrando a aplicação com um banco de dados
+	01 - Configuração do projeto
+		01 - Apresentação
+		02 - Projeto inicial do curso
+		03 - Preparando o Ambiente: Instalação do MySQL e MySQL Workbench
+		04 - Configurando o projeto
+		05 - Para saber mais: O que é DDD?
+		06 - Recursos e dependências
+		07 - Testes de Integração (B)
+		08 - Faça como eu fiz: Executando uma migrações
+		09 - O que aprendemos?
+	02 - Teste de integração
+		01 - Projeto da aula anterior
+		02 - Criando o primeiro teste
+		03 - Ajustes no projeto
+		04 - Faça como eu fiz: Criando uma migração que insere dados
+		05 - Injeção de dependências
+		06 - Para saber mais: Injeção de dependências
+		07 - Injeção de dependência (A / C)
+		08 - O que aprendemos?
+	03 - Testando operações de CRUD
+		01 - Projeto da aula anterior
+		02 - Testando os selects
+		03 - Testando outras operações de CRUD
+		04 - Operações de CRUD (B / C)
+		05 - Testando as exceções
+		06 - Faça como eu fiz: Exceções
+		07 - O que aprendemos?
+	04 - Comportamentos do sistema
+		01 - Projeto da aula anterior
+		02 - Mocks
+		03 - Stubs
+		04 - Usando Mocks, Stubs e Fakes (A / B)
+		05 - Faça como eu fiz: Criando um Mock Object
+		06 - O que aprendemos?
+	05 - Padronizando os testes
+		01 - Projeto da aula anterior
+		02 - Organizando os testes
+		03 - Boas práticas
+		04 - Padronizando os testes (B / C)
+		05 - Faça como eu fiz: Setup
+		06 - O que aprendemos?
+		07 - Conclusão
+Testes em .NET: Testes de interface usando Selenium
+	01 - Configuração do projeto
+		01 - Apresentação
+		02 - Preparando o ambiente: Instalação do projeto
+		03 - Selenium IDE
+		04 - Selenium IDE (A / B)
+		05 - Faça como eu fiz: Salvando script do Selenium IDE
+		06 - O que aprendemos?
+	02 - Iniciando com Selenium WebDriver
+		01 - Projeto da aula anterior
+		02 - Selenium WebDriver
+		03 - Faça como eu fiz: Escolhendo o driver do navegador
+		04 - Para saber mais: O que é HTML e tags?
+		05 - Para saber mais: O que é Selenium WebDriver?
+		06 - Criando primeiro teste
+		07 - Selenium WebDriver (C)
+		08 - Recuperando um script
+		09 - O que aprendemos?
+	03 - Testando o WebApp
+		01 - Projeto da aula anterior
+		02 - Capturando elementos da página
+		03 - Capturando um elementos da página (A)
+		04 - Testando o login da aplicação
+		05 - Escrevendo um teste (D)
+		06 - Testando URLs
+		07 - Para saber mais: Códigos de status HTTP
+		08 - Faça como eu fiz: Trabalhando com URLs
+		09 - O que aprendemos?
+	04 - Testando com localizadores
+		01 - Projeto da aula anterior
+		02 - Usando localizadores
+		03 - Outros localizadores (B)
+		04 - Para saber mais: O que é Css?
+		05 - Capturando mais elementos
+		06 - Faça como eu fiz: Lista de elementos de página
+		07 - O que aprendemos?
+	05 - Page Objects
+		01 - Projeto da aula anterior
+		02 - O que são Page Objects?
+		03 - Usando Page Objects (B)
+		04 - Para saber mais: Padrões de projeto
+		05 - Testando com Page Objects
+		06 - Boas práticas
+		07 - Faça como eu fiz: Gerenciando o navegador
+		08 - Projeto final do curso
+		09 - O que aprendemos?
+		10 - Conclusão
+Selenium WebDriver e C# parte 1: Primeiros passos
+	01 - Iniciando o uso do Selenium
+		01 - Introdução
+		02 - Objetivos do curso
+		03 - Objetivos da aula
+		04 - Preparando o ambiente
+		05 - [OBRIGATÓRIO] Projeto inicial
+		06 - Selenium Webdriver
+		07 - Primeiros passos com WebDriver (B / C / D)
+		08 - Para saber mais: implementações de IWebDriver
+		09 - Conceitos
+		10 - UI Tests vs Unit Tests (C)
+		11 - Faça o que eu fiz na aula
+		12 - Referências Utilizadas
+		13 - Projeto atual
+		14 - O que aprendemos?
+	02 - Compartilhando recursos entre testes
+		01 - Iniciando os testes
+		02 - Objetivos da aula
+		03 - Nomenclatura e ajudantes
+		04 - Alinhado (A)
+		05 - Gerenciando o navegador
+		06 - Para saber mais: Setup e TearDown
+		07 - Compartilhando recursos
+		08 - Collection Fixtures
+		09 - Estratégias de compartilhamento do xUnit (C)
+		10 - Referências Utilizadas
+		11 - Faça o que eu fiz na aula
+		12 - Projeto atual
+		13 - O que aprendemos?
+	03 - Testando funcionalidades do leilão
+		01 - Testando o registro
+		02 - Objetivos da aula
+		03 - Obtendo elementos
+		04 - Procedimento típico (B / C / D)
+		05 - Registro inválido
+		06 - Ajude Marina! (C)
+		07 - Para saber mais: outras estratégias de localização
+		08 - Referências utilizadas
+		09 - Faça o que eu fiz na aula
+		10 - Projeto atual
+		11 - O que aprendemos?
+	04 - Encontrando elementos de outras maneiras
+		01 - Mensagens de erro
+		02 - Objetivos da aula
+		03 - Outros locators
+		04 - Pedro precisa de você (C)
+		05 - Resultado com vários elementos
+		06 - Faça o que eu fiz na aula
+		07 - Referências Utilizadas
+		08 - Projeto atual
+		09 - O que aprendemos?
+	05 - Blindando os testes de mudanças na UI
+		01 - Quando muda o HTML
+		02 - Objetivos da aula
+		03 - Page Objects
+		04 - Testando o login
+		05 - Conclusão
+		06 - Fixando os conhecimentos (C)
+		07 - Referências utilizadas
+		08 - Faça o que eu fiz na aula
+		09 - Projeto final
+		10 - O que aprendemos?
+Selenium WebDriver e C# parte 2: Outros recursos
+	01 - Elementos invisíveis
+		01 - Introdução
+		02 - Objetivos da segunda parte
+		03 - [OBRIGATÓRIO] Projeto Incial
+		04 - Objetivos da aula
+		05 - Fazendo logout
+		06 - Page Object do Dashboard
+		07 - [Errata] FindElement e Click
+		08 - Simulando ações
+		09 - Usando as Interactions (B / D / E)
+		10 - Referências Utilizadas
+		11 - Faça o que eu fiz na aula
+		12 - Projeto atual
+		13 - O que aprendemos?
+	02 - Formulários complexos
+		01 - Criando um leilão
+		02 - Objetivos da aula
+		03 - Concluindo o teste
+		04 - Testando categorias
+		05 - Recapitulando... (C)
+		06 - Referências Utilizadas
+		07 - Faça o que eu fiz na aula
+		08 - Projeto atual
+		09 - O que aprendemos?
+	03 - Frameworks que dificultam
+		01 - Filtrando leilões
+		02 - Objetivos da aula
+		03 - Dropdowns do Materialize CSS
+		04 - Estratégias de interação (C)
+		05 - Classe SelectMaterialize
+		06 - Concluindo o teste
+		07 - Referências Utilizadas
+		08 - Projeto atual
+		09 - Faça o que eu fiz na aula
+		10 - O que aprendemos?
+	04 - Esperando para as verificações
+		01 - [OBRIGATÓRIO] Projeto Modificado
+		02 - Dando lances
+		03 - [ERRATA] Propriedade LanceAtual
+		04 - Objetivos da aula
+		05 - Esperando com Selenium
+		06 - Mudando pra usar Waits (A)
+		07 - Faça o que eu fiz na aula
+		08 - Referências Utilizadas
+		09 - Projeto Atual
+		10 - O que aprendemos?
+	05 - Melhorando o código de testes
+		01 - Melhorando os page objects
+		02 - Objetivos da Aula
+		03 - Dividindo responsabilidades
+		04 - Jordana quer aplicar o padrão Facade (C)
+		05 - Linguagem fluente
+		06 - Faça o que eu fiz na aula
+		07 - Referências Utilizadas
+		08 - Projeto atual
+		09 - O que aprendemos?
+	06 - Outros recursos
+		01 - Xpath
+		02 - Objetivos da Aula
+		03 - Encontre a célula (C)
+		04 - Opções do navegador
+		05 - MenuMobileVisivel
+		06 - Conclusão
+		07 - Faça o que eu fiz na aula
+		08 - Projeto final
+		09 - Referências Utilizadas
+		10 - O que aprendemos?
+Testes em .NET: integração e entrega contínua com Azure DevOps
+	01 - DevOps
+		01 - Apresentação
+		02 - Preparação do ambiente
+		03 - Preparando o ambiente: download e instalação do projeto
+		04 - Criando uma conta no Azure
+		05 - Para saber mais: o que é Cloud Computing e seus benefícios?
+		06 - DevOps e Azure DevOps
+		07 - DevOps (C / D)
+		08 - Faça como eu fiz: criando uma conta no Azure
+		09 - O que aprendemos?
+	02 - Versionamento de código
+		01 - Projeto da aula anterior
+		02 - Gerenciamento de código
+		03 - Versionamento de código (A / C)
+		04 - Para saber mais: Git e GitHub
+		05 - Para saber mais: TFVC
+		06 - Integrando com o GitHub
+		07 - Faça como eu fiz: conectando Azure DevOps com GitHub
+		08 - Azure Repos
+		09 - O que aprendemos?
+	03 - Banco de dados no Azure
+		01 - Projeto da aula anterior
+		02 - Banco de dados no Azure
+		03 - Banco de dados no Azure (B)
+		04 - Para saber mais: o que é o Azure?
+		05 - Faça como eu fiz: criar um servidor MySQL no Azure
+		06 - Criando o banco de dados
+		07 - O que aprendemos?
+	04 - Pipelines: integração contínua
+		01 - Projeto da aula anterior
+		02 - Criando uma Build Pipeline
+		03 - Faça como eu fiz: criando uma Build Pipeline
+		04 - Ajustando a Pipeline
+		05 - Executando a Pipeline
+		06 - Pipeline (C)
+		07 - Rodando os testes
+		08 - Para saber mais: o que é agilidade?
+		09 - O que aprendemos?
+	05 - Pipelines: entrega contínua
+		01 - Projeto da aula anterior
+		02 - Implantando a solução no Azure
+		03 - Entrega contínua
+		04 - Faça como eu fiz: entregando a solução para o cliente
+		05 - CD - por que é importante?
+		06 - Entrega contínua (A / C)
+		07 - Para saber mais: o que é CI/CD?
+		08 - Projeto final do curso
+		09 - O que aprendemos?
+		10 - Conclusão
