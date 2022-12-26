@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <RootNamespace>_02_XX_Testes_Interface_Usando_Selenium.Apresentacao</RootNamespace>
+	  <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\02-XX-Testes-Interface-Usando-Selenium.Aplicacao\02-XX-Testes-Interface-Usando-Selenium.Aplicacao.csproj" />
+    <ProjectReference Include="..\02-XX-Testes-Interface-Usando-Selenium.Dados\02-XX-Testes-Interface-Usando-Selenium.Dados.csproj" />
+    <ProjectReference Include="..\02-XX-Testes-Interface-Usando-Selenium.Domain\02-XX-Testes-Interface-Usando-Selenium.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
