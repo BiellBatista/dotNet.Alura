@@ -455,44 +455,6 @@ Extra Testes em C#
 		04 - Testando o comportamento de seu sistema
 		05 - Verificando efeitos colaterais
 		06 - Aplicando em controladores AspNet Core
-	Selenium WebDriver e C# parte 1: Primeiros passos
-		01 - Iniciando o uso do Selenium
-		02 - Compartilhando recursos entre testes
-		03 - Testando funcionalidades do leilão
-		04 - Encontrando elementos de outras maneiras
-		05 - Blindando os testes de mudanças na UI
-	Selenium WebDriver e C# parte 2: Outros recursos
-		01 - Elementos invisíveis
-		02 - Formulários complexos
-		03 - Frameworks que dificultam
-		04 - Esperando para as verificações
-		05 - Melhorando o código de testes
-		06 - Outros recursos
-	Testes em .NET: Fundamentos do Teste de Software
-		01 - Testes
-		02 - Automação dos testes
-		03 - O TDD
-		04 - Padronizando os testes
-		05 - Testando exceções
-		06 - Mais recursos
-	Testes em .NET: Integrando a aplicação com um banco de dados
-		01 - Começando a integração
-		02 - Teste de integração
-		03 - Testando operações de CRUD
-		04 - Comportamentos do sistema
-		05 - Padronizando os testes
-	Testes em .NET: Testes de interface usando Selenium
-		01 - Configuração do projeto
-		02 - Iniciando com Selenium WebDriver
-		03 - Testando o WebApp
-		04 - Testando com localizadores
-		05 - Page Objects
-	Testes em .NET: integração e entrega contínua com Azure DevOps
-		01 - DevOps
-		02 - Versionamento de código
-		03 - Banco de dados no Azure
-		04 - Pipelines: integração contínua
-		05 - Pipelines: entrega contínua
 -------------------------------------------------------------------------------------------------------------------------
 Formação Desenvolvedor .NET
 	Curso C# Parte 1: Primeiros Passos
@@ -694,3 +656,43 @@ Formação Certificação C# Programming
 		06 - Gerenciamento de Chave
 		07 - Gerenciar e Criar Certificados
 		08 - Fazendo Hash de Dados
+-------------------------------------------------------------------------------------------------------------------------
+Formação Testes em .NET
+	Testes em .NET: Fundamentos do Teste de Software
+		01 - Testes
+		02 - Automação dos testes
+		03 - O TDD
+		04 - Padronizando os testes
+		05 - Testando exceções
+		06 - Mais recursos
+	Testes em .NET: Integrando a aplicação com um banco de dados
+		01 - Configuração do projeto
+		02 - Teste de integração
+		03 - Testando operações de CRUD
+		04 - Comportamentos do sistema
+		05 - Padronizando os testes
+	Testes em .NET: Testes de interface usando Selenium
+		01 - Configuração do projeto
+		02 - Iniciando com Selenium WebDriver
+		03 - Testando o WebApp
+		04 - Testando com localizadores
+		05 - Page Objects
+	Selenium WebDriver e C# parte 1: Primeiros passos
+		01 - Iniciando o uso do Selenium
+		02 - Compartilhando recursos entre testes
+		03 - Testando funcionalidades do leilão
+		04 - Encontrando elementos de outras maneiras
+		05 - Blindando os testes de mudanças na UI
+	Selenium WebDriver e C# parte 2: Outros recursos
+		01 - Elementos invisíveis
+		02 - Formulários complexos
+		03 - Frameworks que dificultam
+		04 - Esperando para as verificações
+		05 - Melhorando o código de testes
+		06 - Outros recursos
+	Testes em .NET: integração e entrega contínua com Azure DevOps
+		01 - DevOps
+		02 - Versionamento de código
+		03 - Banco de dados no Azure
+		04 - Pipelines: integração contínua
+		05 - Pipelines: entrega contínua
