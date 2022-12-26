@@ -1,8 +1,0 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
-    <RootNamespace>_06_XX_Selenium_WebDriver.Core</RootNamespace>
-  </PropertyGroup>
-
-</Project>
