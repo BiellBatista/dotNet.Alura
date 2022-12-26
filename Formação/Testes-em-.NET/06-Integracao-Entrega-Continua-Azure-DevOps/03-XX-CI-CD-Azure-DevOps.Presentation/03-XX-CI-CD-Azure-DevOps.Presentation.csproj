@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<LangVersion>latest</LangVersion>
+		<RootNamespace>_03_XX_CI_CD_Azure_DevOps.Presentation</RootNamespace>
+		<TargetFramework>net6.0</TargetFramework>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<NeutralLanguage>en</NeutralLanguage>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<ProjectReference Include="..\03-XX-CI-CD-Azure-DevOps.Application\03-XX-CI-CD-Azure-DevOps.Application.csproj" />
+		<ProjectReference Include="..\03-XX-CI-CD-Azure-DevOps.Data\03-XX-CI-CD-Azure-DevOps.Data.csproj" />
+	</ItemGroup>
+</Project>
