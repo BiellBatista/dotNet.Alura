@@ -1,0 +1,10 @@
+HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-NET-MVC5)
+	01 - O que é HTTP?
+	02 - A web segura - HTTPS
+	03 - Endereços sob seu domínio
+	04 - O cliente pede e o servidor responde
+	05 - Depurando a requisição HTTP
+	06 - Parâmetros da requisição
+	07 - Serviços na web com REST
+	08 - HTTP2 - Por uma web mais eficiente
+.NET 6: criando uma web API

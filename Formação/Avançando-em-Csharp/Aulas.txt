@@ -1,0 +1,17 @@
+C#: Trabalhando com Arrays e Coleções (Curso feito na carreira 01-Desenvolvedor-CSharp)
+	01 - Array
+	02 - Array de contas correntes
+	03 - ListT
+	04 - Manipulando a lista
+	05 - LINQ
+C#: trabalhando com arquivos (Curso feito na carreira 01-Desenvolvedor-CSharp)
+	01 - Lendo arquivos de texto
+	02 - FileStream e leitor StreamReader
+	03 - Fazendo parse e StreamWriter
+	04 - O Flush e os arquivos binários
+	05 - Streams da Console
+C#: criando e distribuindo bibliotecas em .NET (Curso feito na carreira 01-Desenvolvedor-CSharp)
+	01 - Projeto de biblioteca
+	02 - Nível de visibilidade
+	03 - Criando uma DLL
+	04 - Nuget

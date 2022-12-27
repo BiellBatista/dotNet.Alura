@@ -456,6 +456,212 @@ Extra Testes em C#
 		05 - Verificando efeitos colaterais
 		06 - Aplicando em controladores AspNet Core
 -------------------------------------------------------------------------------------------------------------------------
+Formação ASP.Net Core
+	HTTP: Entendendo a web por baixo dos panos
+		01 - O que é HTTP?
+		02 - A web segura - HTTPS
+		03 - Endereços sob seu domínio
+		04 - O cliente pede e o servidor responde
+		05 - Depurando a requisição HTTP
+		06 - Parâmetros da requisição
+		07 - Serviços na web com REST
+		08 - HTTP2 - Por uma web mais eficiente
+	.NET 6: criando uma web API
+		01 - Entendendo o conceito
+		02 - Iniciando o projeto .NET 6
+		03 - Consultando e paginando
+		04 - Utilizando banco de dados
+		05 - Atualizando e removendo
+		06 - Documentando com Swagger
+-------------------------------------------------------------------------------------------------------------------------
+Formação Avançando em C#
+	C#: Trabalhando com Arrays e Coleções
+		01 - Array
+		02 - Array de contas correntes
+		03 - ListT
+		04 - Manipulando a lista
+		05 - LINQ
+	C#: trabalhando com arquivos
+		01 - Lendo arquivos de texto
+		02 - FileStream e leitor StreamReader
+		03 - Fazendo parse e StreamWriter
+		04 - O Flush e os arquivos binários
+		05 - Streams da Console
+	C#: criando e distribuindo bibliotecas em .NET
+		01 - Projeto de biblioteca
+		02 - Nível de visibilidade
+		03 - Criando uma DLL
+		04 - Nuget
+-------------------------------------------------------------------------------------------------------------------------
+Formação Boas práticas em C#
+	SOLID com C#: princípios da programação orientada a objetos
+		01 - Qualidade de software
+		02 - Responsabilidade única
+		03 - Inversão de dependências
+		04 - Princípio do Aberto/Fechado
+		05 - Segregação de Interfaces e Liskov
+	Design Patterns C# I: boas práticas de programação
+		01 - A grande variedade de impostos e o padrão Strategy
+		02 - Muitos Descontos e o Chain of Responsibility
+		03 - Códigos parecidos e o Template Method
+		04 - Comportamentos compostos por outros comportamentos e o Decorator
+		05 - Estados que variam e o State
+		06 - Criação de objetos e o Builder
+		07 - Executando diferentes ações e o Observer
+		08 - Além dos padrões de projeto
+	Design Patterns C# II: boas práticas de programação
+		01 - Fábricas e o problema de criação de objetos
+		02 - Muitos objetos e o Flyweight
+		03 - Salvando estados anteriores e o Memento
+		04 - DSLs e o Interpreter
+		05 - Estruturas de dados e o Visitor
+		06 - Bridges
+		07 - Diferentes ações com Command
+		08 - Adapter
+		09 - Façades e Singletons
+	C# Refatoração Parte 1: praticando refatoração de código
+		01 - Extraindo métodos 
+		02 - Extraindo variáveis temporárias
+		03 - Quebrando Variáveis e Preservando Parâmetros
+		04 - Substituindo Método
+		05 - Movendo Método e Campo
+		06 - Extraindo e Incorporando Classe
+		07 - Delegação e Intermediários
+		08 - Estendendo Classes
+	C# Refatoração Parte 2: Refatorações baseadas em Orientação a Objetos
+		01 - Encapsulamento e Orientação a Objetos
+		02 - Lidando com Referências
+		03 - Dos Códigos às Classes
+		04 - Simplificando Expressões Condicionais
+		05 - Condições com Orientação a Objetos
+	C# Refatoração Parte 3: hierarquias de classes
+		01 - Ajustando Parâmetros e Métodos
+		02 - Criando parâmetros mais simples
+		03 - Trabalhando melhor com códigos de erro e exceções
+		04 - Descobrindo onde colocar campos e métodos
+		05 - Extraindo superclasse, subclasse e interfaces
+		06 - Aplicando herança e delegação
+-------------------------------------------------------------------------------------------------------------------------
+Formação Certificação C# Programming
+	Certificação C# Programming parte 1: Criar tipos
+		01 - Tipos integrais
+		02 - Ponto flutuante, booleanos, structs e enums
+		03 - Criar tipos de referência
+		04 - Classes, métodos, métodos de extensão
+		05 - Criar métodos sobrecarregados e substituídos
+	Certificação C# Programming parte 2: Consumir tipos
+		01 - Box ou unbox para converter entre tipos de valor
+		02 - Cast de tipos
+		03 - Implementando conversões
+		04 - Lidar com tipos dinâmicos
+		05 - Adicionando membros dinamicamente
+	Certificação C# Programming parte 3: Encapsulamento e Hierarquia de Classes
+		01 - Propriedades e Acessadores
+		02 - Projetar Interfaces
+		03 - Interfaces Explícitas
+		04 - Classe Base
+		05 - Comparações entre Objetos
+	Certificação C# Programming parte 4: Fluxo de programa e exceções
+		01 - Fluxo de Programa If, Else, Switch
+		02 - Compilação Condicional
+		03 - Fluxo de Programa While e Do
+		04 - Iteração com For e Foreach
+		05 - Manipulação de Exceções
+		06 - Exceções com SQL Server e Rede
+	Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
+		01 - Gerenciamento de Memória
+		02 - Coletando Lixo
+		03 - O Padrão Disposable
+		04 - Concatenação, Escrita e Leitura de Strings
+		05 - Pesquisando Strings
+		06 - Formatação de Strings
+	Certificação C# Programming parte 6: Coleções, XML e JSON
+		01 - Serialização com XML
+		02 - Serialização com JSON
+		03 - Serialização Binária, Personalizada e com Contrato
+		04 - Arrays
+		05 - Listas
+		06 - Conjuntos, Dicionários e Filas
+	Certificação C# Programming parte 7: Eventos e LINQ
+		01 - Introdução aos Eventos
+		02 - Manipuladores de Eventos
+		03 - Delegados e Lambda
+		04 - Func, Action e Predicate
+		05 - Consultando e Filtrando Dados com LINQ
+		06 - Projeção de Dados
+		07 - Agrupamento e Agregação
+		08 - Paginação e Sintaxe de Método
+		09 - Consulta com XML
+	Certificação C# Programming parte 8: Entrada e Saída de Dados
+		01 - Ler e Gravar Bytes em Fluxos de Arquivos
+		02 - Ler e Gravar Strings em Fluxos de Arquivos
+		03 - Gerenciando Arquivos
+		04 - Gerenciando Diretórios
+		05 - Acessando a Web de Forma Assíncrona
+		06 - Lendo e Atualizando Banco de Dados
+		07 - Consumindo Serviços e Interpretando Dados
+	Certificação C# Programming parte 9: Depurar Aplicativos
+		01 - Gerenciando Assemblies
+		02 - Assinando Assemblies com Nome Forte
+		03 - Depurando Aplicações
+		04 - Compilação Condicional
+		05 - Compilação em Modo Debug e Release
+		06 - Rastreamento de Aplicações
+		07 - Gravando Mensagens no Event Log
+		08 - Contadores de Desempenho
+	Certificação C# Programming parte 10: Reflection
+		01 - Criar e aplicar atributos
+		02 - Ler os atributos
+		03 - Usar reflection
+		04 - Geração de código
+		05 - Tipos do System Reflection
+	Certificação C# Programming parte 11: Multithreading
+		01 - Introdução ao Task Parallel Library Ver primeiro vídeo
+		02 - Consultas LINQ com Paralelismo
+		03 - Espera, Continuação e Hierarquia de Tarefas
+		04 - Threads
+		05 - Desbloqueando a Interface do Usuário
+		06 - Async, Await, Coleções Simultâneas e Bloqueios
+		07 - Cancelamento de Tarefas e Métodos Thread Safe
+	Certificação C# Programming parte 12: Validar Segurança
+		01 - Validar Dados JSON
+		02 - Escolher o Tipo de Coleção Adequada
+		03 - Validando com Expressão Regular
+		04 - Funções Internas para Validar Tipos e Conteúdos
+		05 - Criptografia Simétrica e Assimétrica
+		06 - Gerenciamento de Chave
+		07 - Gerenciar e Criar Certificados
+		08 - Fazendo Hash de Dados
+-------------------------------------------------------------------------------------------------------------------------
+Formação C# e Orientação a Objetos
+	C#: explorando a linguagem
+		01 - História e ecossistema da linguagem
+		02 - Nosso primeiro programa e o Visual Studio
+		03 - Variáveis numéricas
+		04 - Variáveis de texto
+		05 - Controle de fluxo com if
+		06 - Controle de fluxo com laços de repetição
+	C#: orientação a objetos
+		01 - Criando a primeira classe
+		02 - Entendendo tipos
+		03 - Comportamento de uma classe
+		04 - Namespace e compor classes
+		05 - Propriedades
+		06 - Construtor e membro estático
+	C#: usando herança e implementando interfaces
+		01 - Orientação a Objetos com C#
+		02 - Entendendo herança
+		03 - Usando classes abstratas
+		04 - Mais sobre herança
+		05 - Trabalhando com interfaces
+	C#: entendendo exceções
+		01 - Primeiros passos com exceções
+		02 - Tratamento de exceções
+		03 - ArgumentException
+		04 - Criando exceções ricas
+		05 - StackTrace e InnerException
+		06 - Bloco finally
+-------------------------------------------------------------------------------------------------------------------------
 Formação Desenvolvedor .NET
 	Curso C# Parte 1: Primeiros Passos
 		01 - História e ecossistema da linguagem
@@ -566,96 +772,26 @@ Formação Desenvolvedor .NET
 		04 - Isolando Contextos
 		05 - Modelos Delimitados
 -------------------------------------------------------------------------------------------------------------------------
-Formação Certificação C# Programming
-	Certificação C# Programming parte 1: Criar tipos
-		01 - Tipos integrais
-		02 - Ponto flutuante, booleanos, structs e enums
-		03 - Criar tipos de referência
-		04 - Classes, métodos, métodos de extensão
-		05 - Criar métodos sobrecarregados e substituídos
-	Certificação C# Programming parte 2: Consumir tipos
-		01 - Box ou unbox para converter entre tipos de valor
-		02 - Cast de tipos
-		03 - Implementando conversões
-		04 - Lidar com tipos dinâmicos
-		05 - Adicionando membros dinamicamente
-	Certificação C# Programming parte 3: Encapsulamento e Hierarquia de Classes
-		01 - Propriedades e Acessadores
-		02 - Projetar Interfaces
-		03 - Interfaces Explícitas
-		04 - Classe Base
-		05 - Comparações entre Objetos
-	Certificação C# Programming parte 4: Fluxo de programa e exceções
-		01 - Fluxo de Programa If, Else, Switch
-		02 - Compilação Condicional
-		03 - Fluxo de Programa While e Do
-		04 - Iteração com For e Foreach
-		05 - Manipulação de Exceções
-		06 - Exceções com SQL Server e Rede
-	Certificação C# Programming parte 5: Strings e Ciclo de Vida de Objetos
-		01 - Gerenciamento de Memória
-		02 - Coletando Lixo
-		03 - O Padrão Disposable
-		04 - Concatenação, Escrita e Leitura de Strings
-		05 - Pesquisando Strings
-		06 - Formatação de Strings
-	Certificação C# Programming parte 6: Coleções, XML e JSON
-		01 - Serialização com XML
-		02 - Serialização com JSON
-		03 - Serialização Binária, Personalizada e com Contrato
-		04 - Arrays
-		05 - Listas
-		06 - Conjuntos, Dicionários e Filas
-	Certificação C# Programming parte 7: Eventos e LINQ
-		01 - Introdução aos Eventos
-		02 - Manipuladores de Eventos
-		03 - Delegados e Lambda
-		04 - Func, Action e Predicate
-		05 - Consultando e Filtrando Dados com LINQ
-		06 - Projeção de Dados
-		07 - Agrupamento e Agregação
-		08 - Paginação e Sintaxe de Método
-		09 - Consulta com XML
-	Certificação C# Programming parte 8: Entrada e Saída de Dados
-		01 - Ler e Gravar Bytes em Fluxos de Arquivos
-		02 - Ler e Gravar Strings em Fluxos de Arquivos
-		03 - Gerenciando Arquivos
-		04 - Gerenciando Diretórios
-		05 - Acessando a Web de Forma Assíncrona
-		06 - Lendo e Atualizando Banco de Dados
-		07 - Consumindo Serviços e Interpretando Dados
-	Certificação C# Programming parte 9: Depurar Aplicativos
-		01 - Gerenciando Assemblies
-		02 - Assinando Assemblies com Nome Forte
-		03 - Depurando Aplicações
-		04 - Compilação Condicional
-		05 - Compilação em Modo Debug e Release
-		06 - Rastreamento de Aplicações
-		07 - Gravando Mensagens no Event Log
-		08 - Contadores de Desempenho
-	Certificação C# Programming parte 10: Reflection
-		01 - Criar e aplicar atributos
-		02 - Ler os atributos
-		03 - Usar reflection
-		04 - Geração de código
-		05 - Tipos do System Reflection
-	Certificação C# Programming parte 11: Multithreading
-		01 - Introdução ao Task Parallel Library Ver primeiro vídeo
-		02 - Consultas LINQ com Paralelismo
-		03 - Espera, Continuação e Hierarquia de Tarefas
-		04 - Threads
-		05 - Desbloqueando a Interface do Usuário
-		06 - Async, Await, Coleções Simultâneas e Bloqueios
-		07 - Cancelamento de Tarefas e Métodos Thread Safe
-	Certificação C# Programming parte 12: Validar Segurança
-		01 - Validar Dados JSON
-		02 - Escolher o Tipo de Coleção Adequada
-		03 - Validando com Expressão Regular
-		04 - Funções Internas para Validar Tipos e Conteúdos
-		05 - Criptografia Simétrica e Assimétrica
-		06 - Gerenciamento de Chave
-		07 - Gerenciar e Criar Certificados
-		08 - Fazendo Hash de Dados
+Formação Microsserviços em .NET com RabbitMQ
+	Microsserviços na prática: entendendo a tomada de decisões
+		01 - Boas-vindas à realidade
+		02 - O início de tudo
+		03 - Infraestrutura
+		04 - Build e Deploy
+		05 - Um pouco de código
+		06 - Front-end
+	Microsserviços e .NET6: implementando a comunicação
+		01 - Requisições síncronas
+		02 - Dockerizando apps .NET
+		03 - Otimizando e testando
+		04 - Requisições assíncronas
+		05 - Consumindo dados de filas
+	Microsserviços e .NET6: deploy na AWS
+		01 - Problemas dos containers
+		02 - Migrando para Cloud
+		03 - Criando os pods
+		04 - Subindo o banco
+		05 - Expondo a aplicação
 -------------------------------------------------------------------------------------------------------------------------
 Formação Testes em .NET
 	Testes em .NET: Fundamentos do Teste de Software

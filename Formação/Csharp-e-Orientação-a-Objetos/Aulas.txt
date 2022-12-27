@@ -1,0 +1,27 @@
+C#: explorando a linguagem (Curso feito na carreira 01-Desenvolvedor-CSharp)
+	01 - História e ecossistema da linguagem
+	02 - Nosso primeiro programa e o Visual Studio
+	03 - Variáveis numéricas
+	04 - Variáveis de texto
+	05 - Controle de fluxo com if
+	06 - Controle de fluxo com laços de repetição
+C#: orientação a objetos (Curso feito na carreira 01-Desenvolvedor-CSharp)
+	01 - Criando a primeira classe
+	02 - Entendendo tipos
+	03 - Comportamento de uma classe
+	04 - Namespace e compor classes
+	05 - Propriedades
+	06 - Construtor e membro estático
+C#: usando herança e implementando interfaces (Curso feito na carreira 01-Desenvolvedor-CSharp)
+	01 - Orientação a Objetos com C#
+	02 - Entendendo herança
+	03 - Usando classes abstratas
+	04 - Mais sobre herança
+	05 - Trabalhando com interfaces
+C#: entendendo exceções (Curso feito na carreira 01-Desenvolvedor-CSharp)
+	01 - Primeiros passos com exceções
+	02 - Tratamento de exceções
+	03 - ArgumentException
+	04 - Criando exceções ricas
+	05 - StackTrace e InnerException
+	06 - Bloco finally
