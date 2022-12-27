@@ -60,3 +60,4 @@ Microsserviços e .NET6: implementando a comunicação
 		11 - O que aprendemos?
 		12 - Conclusão
 Microsserviços e .NET6: deploy na AWS
+	01 - Problemas dos containers

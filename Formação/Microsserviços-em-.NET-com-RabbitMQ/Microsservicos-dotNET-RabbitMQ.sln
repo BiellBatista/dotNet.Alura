@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-XX-Item.Service", "02-Mi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-XX-Restaurante.Service", "02-Microsservicos-Implementando-Comunicacao\05-XX-Restaurante.Service\05-XX-Restaurante.Service.csproj", "{066DB6D5-3904-4BD5-81AE-A6B6767D132A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Microsserviços-deploy-AWS", "03-Microsserviços-deploy-AWS", "{54576F20-7A12-40AD-9065-38EF0C6DEFBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
