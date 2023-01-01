@@ -46,3 +46,6 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 		06 - Para saber mais: migrations no Linux
 		07 - A importância das migrations (B / D)
 		08 - Realizando operações no banco
+		09 - DbContext para escrita (A)
+		10 - Faça como eu fiz: utilizando o DbContext
+		11 - Utilizando DTOs
