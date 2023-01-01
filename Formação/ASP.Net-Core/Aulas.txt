@@ -32,3 +32,8 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 		05 - Faça como eu fiz: implementando a lógica
 		06 - Parâmetros na requisição (A)
 		07 - Paginando resultados
+		08 - Métodos de paginação (B)
+		09 - Padronizando o retorno
+		10 - Seguindo as boas práticas (A)
+		11 - Qual deve ser o retorno? (B)
+		12 - O que aprendemos?
