@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using ItemService.Models;
+using _01_XX_Item.Service.Models;
 
-namespace ItemService.Data;
+namespace _01_XX_Item.Service.Data;
 
 public interface IItemRepository
 {

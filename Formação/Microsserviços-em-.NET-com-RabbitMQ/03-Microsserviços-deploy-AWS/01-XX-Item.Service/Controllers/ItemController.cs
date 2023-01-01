@@ -1,10 +1,10 @@
+using _01_XX_Item.Service.Data;
+using _01_XX_Item.Service.Dtos;
+using _01_XX_Item.Service.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using ItemService.Dtos;
-using ItemService.Data;
-using ItemService.Models;
 
-namespace ItemService.Controllers;
+namespace _01_XX_Item.Service.Controllers;
 
 [Route("api/item/restaurante/{restauranteId}/[controller]")]
 [ApiController]
@@ -22,11 +22,7 @@ public class ItemController : ControllerBase
     [HttpGet]
     public ActionResult<IEnumerable<ItemReadDto>> GetItensForRestaurante(int restauranteId)
     {
-
-        if (!_repository.RestauranteExiste(restauranteId))
-        {
-            return NotFound();
-        }
+        if (!_repository.RestauranteExiste(restauranteId)) return NotFound();
 
         var itens = _repository.GetItensDeRestaurante(restauranteId);
 
@@ -36,17 +32,11 @@ public class ItemController : ControllerBase
     [HttpGet("{ItemId}", Name = "GetItemForRestaurante")]
     public ActionResult<ItemReadDto> GetItemForRestaurante(int restauranteId, int itemId)
     {
-        if (!_repository.RestauranteExiste(restauranteId))
-        {
-            return NotFound();
-        }
+        if (!_repository.RestauranteExiste(restauranteId)) return NotFound();
 
         var item = _repository.GetItem(restauranteId, itemId);
 
-        if (item == null)
-        {
-            return NotFound();
-        }
+        if (item is null) return NotFound();
 
         return Ok(_mapper.Map<ItemReadDto>(item));
     }
@@ -54,10 +44,7 @@ public class ItemController : ControllerBase
     [HttpPost]
     public ActionResult<ItemReadDto> CreateItemForRestaurante(int restauranteId, ItemCreateDto itemDto)
     {
-        if (!_repository.RestauranteExiste(restauranteId))
-        {
-            return NotFound();
-        }
+        if (!_repository.RestauranteExiste(restauranteId)) return NotFound();
 
         var item = _mapper.Map<Item>(itemDto);
 
@@ -69,5 +56,4 @@ public class ItemController : ControllerBase
         return CreatedAtRoute(nameof(GetItemForRestaurante),
             new { restauranteId, ItemId = itemReadDto.Id }, itemReadDto);
     }
-
 }

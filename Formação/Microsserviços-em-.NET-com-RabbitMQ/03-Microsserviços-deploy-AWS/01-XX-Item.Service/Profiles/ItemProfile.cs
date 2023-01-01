@@ -1,17 +1,16 @@
+using _01_XX_Item.Service.Dtos;
+using _01_XX_Item.Service.Models;
 using AutoMapper;
-using ItemService.Dtos;
-using ItemService.Models;
 
-namespace ItemService.Profiles
+namespace _01_XX_Item.Service.Profiles;
+
+public class ItemProfile : Profile
 {
-    public class ItemProfile : Profile
+    public ItemProfile()
     {
-        public ItemProfile()
-        {
-            CreateMap<RestauranteReadDto, Restaurante>().ForMember(dest => dest.IdExterno, opt => opt.MapFrom(src => src.Id));
-            CreateMap<Restaurante, RestauranteReadDto>();
-            CreateMap<ItemCreateDto, Item>();
-            CreateMap<Item, ItemCreateDto>();
-        }
+        CreateMap<RestauranteReadDto, Restaurante>().ForMember(dest => dest.IdExterno, opt => opt.MapFrom(src => src.Id));
+        CreateMap<Restaurante, RestauranteReadDto>();
+        CreateMap<ItemCreateDto, Item>();
+        CreateMap<Item, ItemCreateDto>();
     }
 }

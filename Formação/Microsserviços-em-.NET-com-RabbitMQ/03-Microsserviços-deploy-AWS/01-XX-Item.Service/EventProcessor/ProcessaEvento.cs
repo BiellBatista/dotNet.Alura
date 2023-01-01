@@ -1,38 +1,34 @@
-﻿using AutoMapper;
-using ItemService.Data;
-using ItemService.Dtos;
-using ItemService.Models;
+﻿using _01_XX_Item.Service.Data;
+using _01_XX_Item.Service.Dtos;
+using _01_XX_Item.Service.Models;
+using AutoMapper;
 using System.Text.Json;
 
-namespace ItemService.EventProcessor
+namespace _01_XX_Item.Service.EventProcessor;
+
+public class ProcessaEvento : IProcessaEvento
 {
-    public class ProcessaEvento : IProcessaEvento
+    private readonly IMapper _mapper;
+    private readonly IServiceScopeFactory _scopeFactory;
+
+    public ProcessaEvento(IMapper mapper, IServiceScopeFactory scopeFactory)
     {
-        private readonly IMapper _mapper;
-        private readonly IServiceScopeFactory _scopeFactory;
+        _mapper = mapper;
+        _scopeFactory = scopeFactory;
+    }
 
-        public ProcessaEvento(IMapper mapper, IServiceScopeFactory scopeFactory)
+    public void Processa(string mensagem)
+    {
+        using var scope = _scopeFactory.CreateScope();
+
+        var itemRepository = scope.ServiceProvider.GetRequiredService<IItemRepository>();
+        var restauranteReadDto = JsonSerializer.Deserialize<RestauranteReadDto>(mensagem);
+        var restaurante = _mapper.Map<Restaurante>(restauranteReadDto);
+
+        if (!itemRepository.ExisteRestauranteExterno(restaurante.Id))
         {
-            _mapper = mapper;
-            _scopeFactory = scopeFactory;
-        }
-
-        public void Processa(string mensagem)
-        {
-
-            using var scope = _scopeFactory.CreateScope();
-
-            var itemRepository = scope.ServiceProvider.GetRequiredService<IItemRepository>();
-
-            var restauranteReadDto = JsonSerializer.Deserialize<RestauranteReadDto>(mensagem);
-
-            var restaurante = _mapper.Map<Restaurante>(restauranteReadDto);
-
-            if (!itemRepository.ExisteRestauranteExterno(restaurante.Id))
-            {
-                itemRepository.CreateRestaurante(restaurante);
-                itemRepository.SaveChanges();
-            }
+            itemRepository.CreateRestaurante(restaurante);
+            itemRepository.SaveChanges();
         }
     }
 }

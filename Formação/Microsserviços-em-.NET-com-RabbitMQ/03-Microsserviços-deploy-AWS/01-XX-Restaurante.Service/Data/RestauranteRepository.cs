@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using RestauranteService.Models;
 
 namespace RestauranteService.Data
@@ -16,24 +13,15 @@ namespace RestauranteService.Data
 
         public void CreateRestaurante(Restaurante restaurante)
         {
-            if (restaurante == null)
-            {
-                throw new ArgumentNullException(nameof(restaurante));
-            }
+            if (restaurante is null) throw new ArgumentNullException(nameof(restaurante));
 
             _context.Restaurantes.Add(restaurante);
         }
 
-        public IEnumerable<Restaurante> GetAllRestaurantes()
-        {
-            return _context.Restaurantes.ToList();
-        }
+        public IEnumerable<Restaurante> GetAllRestaurantes() => _context.Restaurantes.ToList();
 
         public Restaurante GetRestauranteById(int id) => _context.Restaurantes.FirstOrDefault(c => c.Id == id);
 
-        public void SaveChanges()
-        {
-            _context.SaveChanges();
-        }
+        public void SaveChanges() => _context.SaveChanges();
     }
 }

@@ -16,5 +16,4 @@ public class Restaurante
 
     [Required]
     public string Site { get; set; }
-
 }

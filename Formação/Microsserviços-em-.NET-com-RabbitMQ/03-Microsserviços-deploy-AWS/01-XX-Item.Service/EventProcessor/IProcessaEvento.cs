@@ -1,7 +1,6 @@
-﻿namespace ItemService.EventProcessor
+﻿namespace _01_XX_Item.Service.EventProcessor;
+
+public interface IProcessaEvento
 {
-    public interface IProcessaEvento
-    {
-        void Processa(string mensagem);
-    }
+    void Processa(string mensagem);
 }

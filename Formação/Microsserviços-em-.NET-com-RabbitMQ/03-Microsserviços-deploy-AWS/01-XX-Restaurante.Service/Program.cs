@@ -19,7 +19,6 @@ builder.Services.AddDbContext<AppDbContext>(opt => opt.UseMySql(connectionString
 
 builder.Services.AddScoped<IRestauranteRepository, RestauranteRepository>();
 
-
 builder.Services.AddSingleton<IRabbitMqClient, RabbitMqClient>();
 builder.Services.AddHttpClient<IItemServiceHttpClient, ItemServiceHttpClient>();
 
@@ -30,15 +29,13 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "RestauranteService", Version = "v1" });
 });
 
-
 var app = builder.Build();
 
-app.UseSwagger();
-app.UseSwaggerUI();
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
+app
+    .UseSwagger()
+    .UseSwaggerUI()
+    .UseHttpsRedirection()
+    .UseAuthorization();
 
 app.MapControllers();
 

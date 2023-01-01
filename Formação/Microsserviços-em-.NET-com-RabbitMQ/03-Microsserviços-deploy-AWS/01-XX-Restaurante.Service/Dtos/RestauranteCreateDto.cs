@@ -1,14 +1,15 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace RestauranteService.Dtos
+namespace RestauranteService.Dtos;
+
+public class RestauranteCreateDto
 {
-    public class RestauranteCreateDto
-    {
-        [Required]
-        public string Nome { get; set; }
-        [Required]
-        public string Endereco { get; set; }
-        [Required]
-        public string Site { get; set; }
-    }
+    [Required]
+    public string Nome { get; set; }
+
+    [Required]
+    public string Endereco { get; set; }
+
+    [Required]
+    public string Site { get; set; }
 }
