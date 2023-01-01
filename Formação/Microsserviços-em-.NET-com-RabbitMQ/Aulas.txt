@@ -100,3 +100,11 @@ Microsserviços e .NET6: deploy na AWS
 		09 - O que aprendemos?
 	05 - Expondo a aplicação
 		01 - Aplicando correções
+		02 - Alterando imagens (C)
+		03 - Criando o load balancer
+		04 - Load balancer através do Kubernetes (C)
+		05 - Faça como eu fiz: criando o endereço
+		06 - Para saber mais: tipos de balancers
+		07 - Projeto do curso
+		08 - O que aprendemos?
+		09 - Conclusão
