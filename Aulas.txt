@@ -357,6 +357,13 @@ Extra Cursos
 		03 - Trabalhando com Dinheiro
 		04 - Buscando CEP na internet
 		05 - Aplicando o que aprendemos
+	Build de uma aplicação .NET: construindo seus projetos com MSBuild
+		01 - O arquivo CSPROJ
+		02 - Os 4 blocos fundamentais do MSBuild
+		03 - Reaproveitando projetos de build
+		04 - Compilando com diferentes objetivos
+		05 - .NET Command Line Interface
+		06 - Empacotando a aplicação com Docker
 -------------------------------------------------------------------------------------------------------------------------
 Extra Integrações em .NET
 	WCF : Distribua seus sistemas em .NET

@@ -143,3 +143,9 @@ Curso de C# Brasil: Formate datas, cpf e números nacionais
 		08 - Interpolando Campos do Endereço
 		09 - Projeto da Aula Atual
 		11 - Conclusão
+Build de uma aplicação .NET: construindo seus projetos com MSBuild
+	01 - O arquivo CSPROJ
+		01 - Introdução
+		02 - Objetivos do curso
+		03 - [Obrigatório] Download do projeto
+		04 - Sem Visual Studio
