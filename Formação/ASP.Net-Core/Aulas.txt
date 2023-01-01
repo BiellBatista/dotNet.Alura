@@ -40,3 +40,9 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 	04 - Utilizando banco de dados
 		01 - Projeto da aula anterior
 		02 - Conectando ao banco de dados
+		03 - Para saber mais: pacotes Nuget no Linux
+		04 - Papel do DbContext (C)
+		05 - Gerando a primeira migration
+		06 - Para saber mais: migrations no Linux
+		07 - A importância das migrations (B / D)
+		08 - Realizando operações no banco
