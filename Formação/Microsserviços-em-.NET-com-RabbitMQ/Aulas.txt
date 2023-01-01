@@ -98,3 +98,5 @@ Microsserviços e .NET6: deploy na AWS
 		07 - Para saber mais: grupos de segurança
 		08 - Faça como eu fiz: criando o endereço
 		09 - O que aprendemos?
+	05 - Expondo a aplicação
+		01 - Aplicando correções
