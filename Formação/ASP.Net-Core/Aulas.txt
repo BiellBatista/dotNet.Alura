@@ -51,3 +51,6 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 		11 - Utilizando DTOs
 		12 - Por que DTOs? (A)
 		13 - O que aprendemos?
+	05 - Atualizando e removendo
+		01 - Projeto da aula anterior
+		02 - Atualizando dados com PUT
