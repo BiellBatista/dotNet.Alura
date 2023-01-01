@@ -774,12 +774,12 @@ Formação Desenvolvedor .NET
 -------------------------------------------------------------------------------------------------------------------------
 Formação Microsserviços em .NET com RabbitMQ
 	Microsserviços na prática: entendendo a tomada de decisões
-		01 - Boas-vindas à realidade
-		02 - O início de tudo
-		03 - Infraestrutura
-		04 - Build e Deploy
-		05 - Um pouco de código
-		06 - Front-end
+		01 -
+		02 -
+		03 -
+		04 -
+		05 -
+		06 -
 	Microsserviços e .NET6: implementando a comunicação
 		01 - Requisições síncronas
 		02 - Dockerizando apps .NET
