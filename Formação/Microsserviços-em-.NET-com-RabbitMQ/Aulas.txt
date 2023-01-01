@@ -71,3 +71,11 @@ Microsserviços e .NET6: deploy na AWS
 		08 - O que aprendemos?
 	02 - Migrando para Cloud
 		01 - Utilizando o EKS
+		02 - Políticas para clusters (C)
+		03 - Políticas para node groups (A / C / D)
+		04 - Configurando o CLI
+		05 - Conectando ao cluster (B)
+		06 - Subindo imagens para o registry
+		07 - Serviço de registry (A)
+		08 - Faça como eu fiz: criando o endereço
+		09 - O que aprendemos?
