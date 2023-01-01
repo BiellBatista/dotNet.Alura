@@ -88,3 +88,6 @@ Microsserviços e .NET6: deploy na AWS
 		06 - Para saber mais: outros serviços
 		07 - Faça como eu fiz: criando o endereço
 		08 - O que aprendemos?
+	04 - Subindo o banco
+		01 - Projeto da aula anterior
+		02 - Analisando a situação do banco
