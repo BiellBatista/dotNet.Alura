@@ -1,11 +1,11 @@
-﻿using _05_XX_Filmes.API.Data;
-using _05_XX_Filmes.API.Data.Dtos;
-using _05_XX_Filmes.API.Models;
+﻿using _06_XX_Filmes.API.Data;
+using _06_XX_Filmes.API.Data.Dtos;
+using _06_XX_Filmes.API.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
-namespace _05_XX_Filmes.API.Controllers;
+namespace _06_XX_Filmes.API.Controllers;
 
 [ApiController]
 [Route("[controller]")]
