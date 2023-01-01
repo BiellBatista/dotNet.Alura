@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-NET-6-criando-uma-web-AP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-XX-Filmes.API", "02-NET-6-criando-uma-web-API\01-XX-Filmes.API\01-XX-Filmes.API.csproj", "{E366AE14-5A56-49B2-BD75-54263B29C0EA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Filmes.API", "02-NET-6-criando-uma-web-API\03-XX-Filmes.API\03-XX-Filmes.API.csproj", "{27F49533-34ED-4841-9DE0-792F8818AE53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{E366AE14-5A56-49B2-BD75-54263B29C0EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E366AE14-5A56-49B2-BD75-54263B29C0EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E366AE14-5A56-49B2-BD75-54263B29C0EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27F49533-34ED-4841-9DE0-792F8818AE53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F49533-34ED-4841-9DE0-792F8818AE53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27F49533-34ED-4841-9DE0-792F8818AE53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27F49533-34ED-4841-9DE0-792F8818AE53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6BDF2240-37AD-4991-9AF7-00ABF405F6BF} = {C82DF77A-DFAE-42D4-B224-7CA2EF608B68}
 		{E366AE14-5A56-49B2-BD75-54263B29C0EA} = {C82DF77A-DFAE-42D4-B224-7CA2EF608B68}
+		{27F49533-34ED-4841-9DE0-792F8818AE53} = {C82DF77A-DFAE-42D4-B224-7CA2EF608B68}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E974BF68-6E65-45D6-A77F-24225DE0E67E}
