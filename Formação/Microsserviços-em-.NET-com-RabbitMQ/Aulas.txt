@@ -81,3 +81,10 @@ Microsserviços e .NET6: deploy na AWS
 		09 - O que aprendemos?
 	03 - Criando os pods
 		01 - Gerando o pod das apps
+		02 - Declarativo vs Imperativo (B / C)
+		03 - Gerando o pod do RabbitMQ
+		04 - Port forward (B)
+		05 - Comunicando os pods
+		06 - Para saber mais: outros serviços
+		07 - Faça como eu fiz: criando o endereço
+		08 - O que aprendemos?
