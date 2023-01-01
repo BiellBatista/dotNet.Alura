@@ -1,7 +1,7 @@
-﻿using _01_Filmes.API.Models;
+﻿using _02_XX_Filmes.API.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace _01_Filmes.API.Controllers;
+namespace _02_XX_Filmes.API.Controllers;
 
 [ApiController]
 [Route("[controller]")]

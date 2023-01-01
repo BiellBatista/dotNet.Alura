@@ -24,3 +24,6 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 		06 - Faça como eu fiz: adicionando restrições
 		07 - Praticando o uso de annotations (D)
 		08 - O que aprendemos?
+	03 - Consultando e paginando
+		01 - Projeto da aula anterior
+		02 - Retornando filmes da API
