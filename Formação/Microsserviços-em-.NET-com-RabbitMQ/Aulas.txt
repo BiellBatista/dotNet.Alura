@@ -91,3 +91,10 @@ Microsserviços e .NET6: deploy na AWS
 	04 - Subindo o banco
 		01 - Projeto da aula anterior
 		02 - Analisando a situação do banco
+		03 - Bancos em pods (A / D)
+		04 - Subindo o RDS
+		05 - Possibilidades do RDS (C / D)
+		06 - Comunicando com o RDS
+		07 - Para saber mais: grupos de segurança
+		08 - Faça como eu fiz: criando o endereço
+		09 - O que aprendemos?
