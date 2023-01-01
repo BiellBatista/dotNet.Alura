@@ -49,3 +49,5 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 		09 - DbContext para escrita (A)
 		10 - Faça como eu fiz: utilizando o DbContext
 		11 - Utilizando DTOs
+		12 - Por que DTOs? (A)
+		13 - O que aprendemos?
