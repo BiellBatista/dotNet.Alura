@@ -117,7 +117,7 @@ Carreira Desenvolvedor ASP.NET MVC5
 		06 - Parâmetros da requisição
 		07 - Serviços na web com REST
 		08 - HTTP2 - Por uma web mais eficiente
-	HTML5 e CSS3 I: Suas primeiras páginas da Web
+	HTML5 e CSS3 parte 1: crie uma página da Web
 		01 - 
 		02 - 
 		03 - 

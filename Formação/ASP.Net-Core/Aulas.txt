@@ -8,3 +8,12 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 	07 - Serviços na web com REST
 	08 - HTTP2 - Por uma web mais eficiente
 .NET 6: criando uma web API
+	01 - Entendendo o conceito
+		01 - Apresentação
+		02 - Preparando o ambiente
+		03 - Faça como eu fiz: configurações iniciais
+		04 - O que é uma API
+		05 - Sobre APIs (A / B)
+		06 - O que aprendemos?
+	02 - Iniciando o projeto .NET 6
+		01 - Criando um projeto .NET 6

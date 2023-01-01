@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-NET-6-criando-uma-web-API", "02-NET-6-criando-uma-web-API\01-XX-NET-6-criando-uma-web-API\01-XX-NET-6-criando-uma-web-API.csproj", "{6BDF2240-37AD-4991-9AF7-00ABF405F6BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-NET-6-criando-uma-web-API", "02-NET-6-criando-uma-web-API", "{C82DF77A-DFAE-42D4-B224-7CA2EF608B68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BDF2240-37AD-4991-9AF7-00ABF405F6BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BDF2240-37AD-4991-9AF7-00ABF405F6BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BDF2240-37AD-4991-9AF7-00ABF405F6BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BDF2240-37AD-4991-9AF7-00ABF405F6BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6BDF2240-37AD-4991-9AF7-00ABF405F6BF} = {C82DF77A-DFAE-42D4-B224-7CA2EF608B68}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E974BF68-6E65-45D6-A77F-24225DE0E67E}
+	EndGlobalSection
+EndGlobal
