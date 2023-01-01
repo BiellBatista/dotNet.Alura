@@ -151,3 +151,9 @@ Build de uma aplicação .NET: construindo seus projetos com MSBuild
 		04 - Sem Visual Studio
 		05 - Objetivos da aula
 		06 - Script
+		07 - Arquivos .csproj
+		08 - Faça como eu fiz na aula
+		09 - Projeto da Luli (B)
+		10 - Referências Utilizadas
+		11 - Projeto atual
+		12 - O que aprendemos?

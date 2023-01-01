@@ -1,0 +1,8 @@
+<!--Automatizando o processo de compilação do C# para um script XML do csproj. Uso o comando msbuild para buildar o projeto. -->
+<Project>
+    <Target Name="Compile">
+        <MakeDir Directories="bin" />
+        <!--Passando o comando do csc com os arquivos que serão compilados e a saída do resultado-->
+        <Csc Sources="Listatarefas.cs;Tarefa.cs;Categoria.cs" OutputAssembly="bin\Tarefas.exe" />
+    </Target>
+</Project>
