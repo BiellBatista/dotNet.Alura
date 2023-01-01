@@ -31,6 +31,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Item.Service", "03-Mi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Restaurante.Service", "03-Microsserviços-deploy-AWS\01-XX-Restaurante.Service\01-XX-Restaurante.Service.csproj", "{6149B991-C814-4C19-BFE9-D04F7D2ED221}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Item.Service", "03-Microsserviços-deploy-AWS\02-XX-Item.Service\02-XX-Item.Service.csproj", "{5CAAA006-EF4A-44D4-8385-3825C395907E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Restaurante.Service", "03-Microsserviços-deploy-AWS\02-XX-Restaurante.Service\02-XX-Restaurante.Service.csproj", "{9BC10C6D-122D-49DB-861E-2D04B0A69174}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +89,14 @@ Global
 		{6149B991-C814-4C19-BFE9-D04F7D2ED221}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6149B991-C814-4C19-BFE9-D04F7D2ED221}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6149B991-C814-4C19-BFE9-D04F7D2ED221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CAAA006-EF4A-44D4-8385-3825C395907E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CAAA006-EF4A-44D4-8385-3825C395907E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CAAA006-EF4A-44D4-8385-3825C395907E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CAAA006-EF4A-44D4-8385-3825C395907E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BC10C6D-122D-49DB-861E-2D04B0A69174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BC10C6D-122D-49DB-861E-2D04B0A69174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BC10C6D-122D-49DB-861E-2D04B0A69174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BC10C6D-122D-49DB-861E-2D04B0A69174}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,6 +114,8 @@ Global
 		{066DB6D5-3904-4BD5-81AE-A6B6767D132A} = {8BAF348D-0B66-4E28-8CDE-3C63D7CB646F}
 		{360EEEFB-BE9B-4AEA-85BE-B27033E98C63} = {54576F20-7A12-40AD-9065-38EF0C6DEFBD}
 		{6149B991-C814-4C19-BFE9-D04F7D2ED221} = {54576F20-7A12-40AD-9065-38EF0C6DEFBD}
+		{5CAAA006-EF4A-44D4-8385-3825C395907E} = {54576F20-7A12-40AD-9065-38EF0C6DEFBD}
+		{9BC10C6D-122D-49DB-861E-2D04B0A69174} = {54576F20-7A12-40AD-9065-38EF0C6DEFBD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5403617C-F185-410F-8DF1-E0885146DFCC}

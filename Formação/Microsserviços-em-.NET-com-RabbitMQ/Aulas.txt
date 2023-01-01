@@ -69,3 +69,5 @@ Microsserviços e .NET6: deploy na AWS
 		06 - Por que usar o Kubernetes?
 		07 - Benefícios do Kubernetes (C / D)
 		08 - O que aprendemos?
+	02 - Migrando para Cloud
+		01 - Utilizando o EKS
