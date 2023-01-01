@@ -79,3 +79,5 @@ Microsserviços e .NET6: deploy na AWS
 		07 - Serviço de registry (A)
 		08 - Faça como eu fiz: criando o endereço
 		09 - O que aprendemos?
+	03 - Criando os pods
+		01 - Gerando o pod das apps
