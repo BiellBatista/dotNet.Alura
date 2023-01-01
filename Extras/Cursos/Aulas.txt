@@ -149,3 +149,5 @@ Build de uma aplicação .NET: construindo seus projetos com MSBuild
 		02 - Objetivos do curso
 		03 - [Obrigatório] Download do projeto
 		04 - Sem Visual Studio
+		05 - Objetivos da aula
+		06 - Script
