@@ -1,0 +1,4 @@
+##Comandos:
+   csc Program.cs -> criar a IL (linguagem intermediária) do arquivo Program.cs
+   csc -out:bin\Program.exe Program.cs -> cria a IL do arquivo Program.cs no diretório bin com o nome Program.exe
+   csc -out:bin\Tarefas.exe Listatarefas.cs Tarefa.cs Categoria.cs -> cria a IL dos 3 arquivos .cs dentro do Tarefas.exe

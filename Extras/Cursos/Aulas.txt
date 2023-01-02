@@ -169,3 +169,6 @@ Build de uma aplicação .NET: construindo seus projetos com MSBuild
 		09 - Referências Utilizadas
 		10 - Projeto atual
 		11 - O que aprendemos?
+	03 - Reaproveitando projetos de build
+		01 - Projeto inicial da aula
+		02 - Reaproveitando projetos de build
