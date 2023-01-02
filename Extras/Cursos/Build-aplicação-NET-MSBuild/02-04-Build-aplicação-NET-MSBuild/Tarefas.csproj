@@ -1,0 +1,38 @@
+<!-- <Project DefaultTargets="Inicio;Compile;Fim"> --><!-- DefaultTargets indica uma lista de target padrão de executação, a execução será na ordem -->
+<Project DefaultTargets="Compile">
+    <PropertyGroup>
+        <FileExit>bin\Tarefas.exe</FileExit>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Files Include="Listatarefas.cs" />
+        <Files Include="Tarefa.cs" />
+        <Files Include="Categoria.cs" />
+    </ItemGroup>
+    <!-- Por padrão, o msbuild irá executar o primeiro TARGET que aparecer -->
+    <!-- BeforeTargets indica que o Inicio será executando antes do Compile -->
+    <Target Name="Inicio" BeforeTargets="Compile">
+        <Message Text="Início da execução do script de compilação" />
+    </Target>
+
+    <Target Name="Clean">
+        <Message Text="Executando script de limpeza" />
+        <Delete Files="$(FileExit)" />
+        <RemoveDir Directories="bin" />
+    </Target>
+
+    <Target Name="Compile">
+        <Message Text="Executando script de compilação" />
+        <MakeDir Directories="bin" />
+        <Csc Sources="@(Files)" OutputAssembly="$(FileExit)" />
+    </Target>
+
+    <!-- DependOnTargets indica que o Recompile será executando, mas primeiro o Clean e o Compile serão executados-->
+    <Target Name="Recompile" DependsOnTargets="Clean;Compile">
+    </Target>
+
+    <!-- AfterTargets indica que o Fim será executando depois do Compile -->
+    <Target Name="Fim" AfterTargets="Compile">
+        <Message Text="Fim da execução do script de compilação" />
+    </Target>
+</Project>

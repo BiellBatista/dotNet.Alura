@@ -1,6 +1,6 @@
 <!--Automatizando o processo de compilação do C# para um script XML do csproj. Uso o comando msbuild para buildar o projeto. -->
-<Project xmlns="https://schemas.microsoft.com/developer/msbuild/2003">
-    <PropertyGroup> <!--propriedade para reutilização ao decorrer do xml-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>        <!--propriedade para reutilização ao decorrer do xml-->
         <FileExit>bin\Tarefas.exe</FileExit>
     </PropertyGroup>
 
@@ -11,7 +11,7 @@
     </ItemGroup>
 
     <Target Name="Compile">        <!--O Target é um conjunto de tarefas-->
-        <MakeDir Directories="exe" />
+        <MakeDir Directories="bin" />
         <!--Tarefa em si-->
         <!--Passando o comando do csc com os arquivos que serão compilados e a saída do resultado-->
         <!--O @ faz referência a uma coleção, o $ faz referência ao valor de uma propriedade -->
