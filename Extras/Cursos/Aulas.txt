@@ -163,3 +163,9 @@ Build de uma aplicação .NET: construindo seus projetos com MSBuild
 		03 - Tasks
 		04 - Targets
 		05 - Itens
+		06 - Properties
+		07 - Faça como eu fiz na aula
+		08 - Fixando os blocos (B)
+		09 - Referências Utilizadas
+		10 - Projeto atual
+		11 - O que aprendemos?
