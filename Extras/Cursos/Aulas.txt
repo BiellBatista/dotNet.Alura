@@ -162,3 +162,4 @@ Build de uma aplicação .NET: construindo seus projetos com MSBuild
 		02 - Objetivos da aula
 		03 - Tasks
 		04 - Targets
+		05 - Itens
