@@ -159,3 +159,4 @@ Build de uma aplicação .NET: construindo seus projetos com MSBuild
 		12 - O que aprendemos?
 	02 - Os 4 blocos fundamentais do MSBuild
 		01 - Quatro blocos do MSBuild
+		02 - Objetivos da aula
