@@ -175,3 +175,10 @@ Build de uma aplicação .NET: construindo seus projetos com MSBuild
 		03 - Objetivos da aula
 		04 - Importando projetos comuns
 		05 - Convenções
+		06 - Visual Studio e SDK do NET
+		07 - Migrando para o SDK (A)
+		08 - Referências Utilizadas
+		09 - Faça como eu fiz na aula
+		10 - Projeto atual
+		11 - Antes de ir para a próxima aula...
+		12 - O que aprendemos?
