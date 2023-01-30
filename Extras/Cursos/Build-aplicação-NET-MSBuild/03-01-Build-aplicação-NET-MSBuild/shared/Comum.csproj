@@ -1,29 +1,13 @@
 <!-- <Project DefaultTargets="Inicio;Compile;Fim"> --><!-- DefaultTargets indica uma lista de target padrão de executação, a execução será na ordem -->
 <Project DefaultTargets="Compile">
     <PropertyGroup>
-        <FileExit>bin\Tarefas.exe</FileExit>
-    </PropertyGroup>
-
-    <!-- Propriedades podem sofrer sobrinscrção, neste caso estou sobrescendo tarefas.exe por program.exe.
-Elas são sobrescrita pela ordem de declaração. -->
-    <PropertyGroup>
-        <FileExit>bin\Program.exe</FileExit>
+        <FileExit>bin\ConsoleApp.exe</FileExit>
     </PropertyGroup>
 
     <!-- Itens são coleções, geralmente de arquivos, que disponibiliza os valores via @(NomeDaColeção) -->
     <ItemGroup>
-        <Files Include="**\*.cs" Exclude="**\Program.cs" />
+        <Files Include="**\*.cs" />
     </ItemGroup>
-
-    <!-- PropriedadesReservadas não podem sofrer alterações -->
-    <Target Name="PropriedadesReservadas">
-        <Message Text="$(MsBuildProjectFile)" />
-        <Message Text="$(MsBuildStartupDirectory)" />
-    </Target>
-
-    <Target Name="ArquivosParaCompilar">
-        <Message Text="@(Files)" />
-    </Target>
 
     <!-- Por padrão, o msbuild irá executar o primeiro TARGET que aparecer -->
     <!-- BeforeTargets indica que o Inicio será executando antes do Compile -->

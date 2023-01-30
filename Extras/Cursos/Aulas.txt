@@ -172,3 +172,5 @@ Build de uma aplicação .NET: construindo seus projetos com MSBuild
 	03 - Reaproveitando projetos de build
 		01 - Projeto inicial da aula
 		02 - Reaproveitando projetos de build
+		03 - Objetivos da aula
+		04 - Importando projetos comuns
