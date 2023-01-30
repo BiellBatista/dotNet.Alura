@@ -1,0 +1,9 @@
+<!-- Este arquivo contem as propriedades comuns -->
+<!-- <Project DefaultTargets="Inicio;Compile;Fim"> --><!-- DefaultTargets indica uma lista de target padrão de executação, a execução será na ordem -->
+<Project DefaultTargets="Compile">
+    <PropertyGroup>
+        <DirectoryExit>bin\</DirectoryExit>
+        <!-- $(MsBuildProjectName) pega o nome do projeto (sem o csproj) -->
+        <FileExit>$(MsBuildProjectName).exe</FileExit>
+    </PropertyGroup>
+</Project>

@@ -1,9 +1,8 @@
-<!-- Este arquivo é usado para armazenar o script comum entre os csproj -->
+<!-- Este arquivo contem os targets e os itens comum -->
 <!-- <Project DefaultTargets="Inicio;Compile;Fim"> --><!-- DefaultTargets indica uma lista de target padrão de executação, a execução será na ordem -->
 <Project DefaultTargets="Compile">
-    <PropertyGroup>
-        <FileExit>bin\ConsoleApp.exe</FileExit>
-    </PropertyGroup>
+
+    <Import Project="Comum.props" />
 
     <!-- Itens são coleções, geralmente de arquivos, que disponibiliza os valores via @(NomeDaColeção) -->
     <ItemGroup>
@@ -25,7 +24,7 @@
     <Target Name="Compile">
         <Message Text="Executando script de compilação" />
         <MakeDir Directories="bin" />
-        <Csc Sources="@(Files)" OutputAssembly="$(FileExit)" />
+        <Csc Sources="@(Files)" OutputAssembly="$(DirectoryExit)$(FileExit)" />
     </Target>
 
     <!-- DependOnTargets indica que o Recompile será executando, mas primeiro o Clean e o Compile serão executados-->
