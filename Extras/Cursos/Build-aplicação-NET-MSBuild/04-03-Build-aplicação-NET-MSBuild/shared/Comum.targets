@@ -1,0 +1,47 @@
+<!-- Este arquivo contem os targets e os itens comum -->
+<!-- <Project DefaultTargets="Inicio;Compile;Fim"> --><!-- DefaultTargets indica uma lista de target padrão de executação, a execução será na ordem -->
+<Project DefaultTargets="Compile">
+
+    <Import Project="Comum.props" />
+
+    <!-- Itens são coleções, geralmente de arquivos, que disponibiliza os valores via @(NomeDaColeção) -->
+    <ItemGroup>
+        <Files Include="**\*.cs" />
+    </ItemGroup>
+
+    <!-- Por padrão, o msbuild irá executar o primeiro TARGET que aparecer -->
+    <!-- BeforeTargets indica que o Inicio será executando antes do Compile -->
+    <Target Name="Inicio" BeforeTargets="Compile">
+        <Message Text="Início da execução do script de compilação" />
+    </Target>
+
+    <Target Name="Clean">
+        <Message Text="Executando script de limpeza" />
+        <Delete Files="$(FileExit)" />
+        <RemoveDir Directories="bin" />
+    </Target>
+
+    <Target Name="Compile">
+        <Message Text="Executando script de compilação" />
+        <MakeDir Directories="bin" />
+        <Csc Sources="@(Files)" OutputAssembly="$(DirectoryExit)$(FileExit)" />
+    </Target>
+
+    <!-- DependOnTargets indica que o Recompile será executando, mas primeiro o Clean e o Compile serão executados-->
+    <Target Name="Recompile" DependsOnTargets="Clean;Compile">
+    </Target>
+
+    <!-- AfterTargets indica que o Fim será executando depois do Compile -->
+    <Target Name="Fim" AfterTargets="Compile">
+        <Message Text="Fim da execução do script de compilação" />
+    </Target>
+</Project>
+
+<!-- O formato MsBuild é baseado em um schema que indica a estrutura de elementos XML.
+
+Existem 4 conceitos fundamentais para a construção de um script do MsBuild:
+
+Tasks: unidade de execução
+Targets: conjunto de tarefas
+Items: coleção de elementos (em geral arquivos) que serão utilizados pelas tarefas do script.
+Properties: permitem reutilizarmos valores em várias partes do script -->

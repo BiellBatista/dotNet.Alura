@@ -182,3 +182,7 @@ Build de uma aplicação .NET: construindo seus projetos com MSBuild
 		10 - Projeto atual
 		11 - Antes de ir para a próxima aula...
 		12 - O que aprendemos?
+	04 - Compilando com diferentes objetivos
+		01 - Objetivos da aula
+		02 - Build incremental
+		03 - Compilando para objetivos diferentes
