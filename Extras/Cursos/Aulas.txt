@@ -190,3 +190,7 @@ Build de uma aplicação .NET: construindo seus projetos com MSBuild
 		05 - Associe os conceitos (B)
 		06 - Faça como eu fiz na aula
 		07 - O que aprendemos?
+	05 - .NET Command Line Interface
+		01 - Projeto inicial da aula
+		02 - Objetivos da aula
+		03 - Projeto AspNetCore
