@@ -187,3 +187,6 @@ Build de uma aplicação .NET: construindo seus projetos com MSBuild
 		02 - Build incremental
 		03 - Compilando para objetivos diferentes
 		04 - Compilando para frameworks NET específicos
+		05 - Associe os conceitos (B)
+		06 - Faça como eu fiz na aula
+		07 - O que aprendemos?
