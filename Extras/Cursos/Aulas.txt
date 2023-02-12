@@ -201,3 +201,14 @@ Build de uma aplicação .NET: construindo seus projetos com MSBuild
 		08 - Projeto atual
 		09 - Faça como eu fiz na aula
 		10 - O que aprendemos?
+	06 - Empacotando a aplicação com Docker
+		01 - [Pré-requisito] Conceitos de Docker
+		02 - Compilando em uma máquina zerada
+		03 - Componentes obrigatórios (A / C / D / E)
+		04 - Objetivos da aula
+		05 - Imagens .NET para Docker
+		06 - Dockerfile
+		07 - Faça como eu fiz na aula
+		08 - Projeto final
+		09 - O que aprendemos?
+		10 - Conclusão
