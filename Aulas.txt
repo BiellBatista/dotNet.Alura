@@ -480,6 +480,12 @@ Formação ASP.Net Core
 		04 - Utilizando banco de dados
 		05 - Atualizando e removendo
 		06 - Documentando com Swagger
+	.NET 6: relacionando entidades
+		01 - Crescendo o projeto
+		02 - Relacionamento 1:1
+		03 - Relacionamento 1:n
+		04 - Relacionamento n:n
+		05 - Efetuando consultas
 -------------------------------------------------------------------------------------------------------------------------
 Formação Avançando em C#
 	C#: Trabalhando com Arrays e Coleções

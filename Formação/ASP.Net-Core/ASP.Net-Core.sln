@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-XX-Filmes.API", "02-NET-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06-XX-Filmes.API", "02-NET-6-criando-uma-web-API\06-XX-Filmes.API\06-XX-Filmes.API.csproj", "{D0425F22-93DA-4232-9780-CC0376F273FF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-NET-6-relacionando-entidades", "03-NET-6-relacionando-entidades", "{2F6423E4-E70C-43C8-9515-58450E6CF219}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Filmes.API", "03-NET-6-relacionando-entidades\01-XX-Filmes.API\01-XX-Filmes.API.csproj", "{882D596C-8D26-4E76-84C4-F728B4C1BE20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,10 @@ Global
 		{D0425F22-93DA-4232-9780-CC0376F273FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0425F22-93DA-4232-9780-CC0376F273FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0425F22-93DA-4232-9780-CC0376F273FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{882D596C-8D26-4E76-84C4-F728B4C1BE20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{882D596C-8D26-4E76-84C4-F728B4C1BE20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{882D596C-8D26-4E76-84C4-F728B4C1BE20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{882D596C-8D26-4E76-84C4-F728B4C1BE20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +66,7 @@ Global
 		{04F818AE-6987-4FEA-A417-7AC74EC49587} = {C82DF77A-DFAE-42D4-B224-7CA2EF608B68}
 		{C6D644BE-D211-4B38-9103-9B6659F142ED} = {C82DF77A-DFAE-42D4-B224-7CA2EF608B68}
 		{D0425F22-93DA-4232-9780-CC0376F273FF} = {C82DF77A-DFAE-42D4-B224-7CA2EF608B68}
+		{882D596C-8D26-4E76-84C4-F728B4C1BE20} = {2F6423E4-E70C-43C8-9515-58450E6CF219}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E974BF68-6E65-45D6-A77F-24225DE0E67E}
