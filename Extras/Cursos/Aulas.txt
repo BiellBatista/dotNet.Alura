@@ -194,3 +194,4 @@ Build de uma aplicação .NET: construindo seus projetos com MSBuild
 		01 - Projeto inicial da aula
 		02 - Objetivos da aula
 		03 - Projeto AspNetCore
+		04 - .NET CLI
