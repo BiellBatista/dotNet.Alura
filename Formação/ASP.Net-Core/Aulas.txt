@@ -97,3 +97,4 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 		05 - Faça como eu fiz: modificando os modelos
 		06 - Características do relacionamento (B)
 		07 - Características do relacionamento
+		08 - O que aprendemos?
