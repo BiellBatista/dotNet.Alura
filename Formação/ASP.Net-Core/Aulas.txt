@@ -98,3 +98,8 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 		06 - Características do relacionamento (B)
 		07 - Características do relacionamento
 		08 - O que aprendemos?
+	04 - Relacionamento n:n
+		01 - Projeto da aula anterior
+		02 - Relacionando Filme e Cinema
+		03 - Características do relacionamento (A)
+		04 - Relacionando com ModelBuilder
