@@ -85,3 +85,7 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 		03 - Relacionando Endereço e Cinema
 		04 - Faça como eu fiz: modificando os modelos
 		05 - Cadastrando recursos
+		06 - Características do relacionamento (A)
+		07 - Lazy Properties
+		08 - Carregando em tempo de execução (C)
+		09 - O que aprendemos?
