@@ -92,3 +92,5 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 	03 - Relacionamento 1:n
 		01 - Projeto da aula anterior
 		02 - Criando a Sessão
+		03 - Revisando o AutoMapper (A)
+		04 - Relacionando Filme e Sessão
