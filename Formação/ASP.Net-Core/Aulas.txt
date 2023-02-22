@@ -105,3 +105,7 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 		04 - Relacionando com ModelBuilder
 		05 - Sobrescrevendo o OnModelCreating (C)
 		06 - Tipos de deleção
+		07 - Desabilitando o cascade (B)
+		08 - Faça como eu fiz: removendo o cascade
+		09 - Para saber mais: outros tipos de deleção
+		10 - O que aprendemos?
