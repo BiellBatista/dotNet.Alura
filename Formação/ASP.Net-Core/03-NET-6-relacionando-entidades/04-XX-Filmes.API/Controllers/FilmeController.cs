@@ -32,10 +32,8 @@ public class FilmeController : ControllerBase
         [FromBody] CreateFilmeDto filmeDto)
     {
         Filme filme = _mapper.Map<Filme>(filmeDto);
-
         _context.Filmes.Add(filme);
         _context.SaveChanges();
-
         return CreatedAtAction(nameof(RecuperaFilmePorId),
             new { id = filme.Id },
             filme);
@@ -45,7 +43,7 @@ public class FilmeController : ControllerBase
     public IEnumerable<ReadFilmeDto> RecuperaFilmes([FromQuery] int skip = 0,
         [FromQuery] int take = 50)
     {
-        return _mapper.Map<List<ReadFilmeDto>>(_context.Filmes.Skip(skip).Take(take));
+        return _mapper.Map<List<ReadFilmeDto>>(_context.Filmes.Skip(skip).Take(take).ToList());
     }
 
     [HttpGet("{id}")]
@@ -77,17 +75,20 @@ public class FilmeController : ControllerBase
     }
 
     [HttpPatch("{id}")]
-    public IActionResult AtualizaFilmeParcial(int id, JsonPatchDocument<UpdateFilmeDto> patch)
+    public IActionResult AtualizaFilmeParcial(int id,
+        JsonPatchDocument<UpdateFilmeDto> patch)
     {
         var filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
 
-        if (filme is null) return NotFound();
+        if (filme is null)
+            return NotFound();
 
         var filmeParaAtualizar = _mapper.Map<UpdateFilmeDto>(filme);
 
         patch.ApplyTo(filmeParaAtualizar, ModelState);
 
-        if (!TryValidateModel(filmeParaAtualizar)) return ValidationProblem(ModelState);
+        if (!TryValidateModel(filmeParaAtualizar))
+            return ValidationProblem(ModelState);
 
         _mapper.Map(filmeParaAtualizar, filme);
         _context.SaveChanges();
@@ -100,7 +101,8 @@ public class FilmeController : ControllerBase
     {
         var filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
 
-        if (filme is null) return NotFound();
+        if (filme is null)
+            return NotFound();
 
         _context.Remove(filme);
         _context.SaveChanges();

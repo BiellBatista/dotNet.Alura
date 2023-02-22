@@ -103,3 +103,5 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 		02 - Relacionando Filme e Cinema
 		03 - Características do relacionamento (A)
 		04 - Relacionando com ModelBuilder
+		05 - Sobrescrevendo o OnModelCreating (C)
+		06 - Tipos de deleção
