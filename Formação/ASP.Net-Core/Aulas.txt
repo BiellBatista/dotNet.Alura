@@ -74,3 +74,6 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 		01 - Apresentação
 		02 - Projeto inicial do curso
 		03 - Adicionando o Cinema
+		04 - Faça como eu fiz: expandindo o sistema
+		05 - Convertendo tipos (B)
+		06 - Apresentando o problema
