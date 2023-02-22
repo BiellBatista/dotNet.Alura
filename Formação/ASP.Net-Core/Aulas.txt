@@ -83,3 +83,5 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 		01 - Adicionando o Endereço
 		02 - Projeto da aula anterior
 		03 - Relacionando Endereço e Cinema
+		04 - Faça como eu fiz: modificando os modelos
+		05 - Cadastrando recursos
