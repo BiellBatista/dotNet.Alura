@@ -129,5 +129,5 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 		06 - Comparando parâmetros (C)
 		07 - O que aprendemos?
 	02 - Configurando o Identity
-		01 - O que aprendemos?
+		01 - Projeto da aula anterior
 		02 - Configurando o banco
