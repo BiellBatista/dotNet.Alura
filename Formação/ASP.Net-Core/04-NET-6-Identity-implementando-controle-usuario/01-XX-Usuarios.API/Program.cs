@@ -16,7 +16,7 @@ builder.Services
         var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
         var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
 
-        c.SwaggerDoc("v1", new OpenApiInfo { Title = "FilmesAPI", Version = "v1" });
+        c.SwaggerDoc("v1", new OpenApiInfo { Title = "Usuarios API", Version = "v1" });
         c.IncludeXmlComments(xmlPath);
     });
 
