@@ -1,0 +1,12 @@
+C#: criando sua primeira aplicação (Curso feito na carreira 01-Desenvolvedor-CSharp)
+	01 - Criando o primeiro programa
+	02 - Criando o primeiro programa
+	03 - Listas e loops no C#
+	04 - Dicionários e avaliação de bandas
+	05 - Desafio
+C#: aplicando a Orientação a Objetos
+	01 - Classe e método no C#
+	02 - Métodos de acesso e propriedades
+	03 - Integrando classes e definindo relacionamentos
+	04 - Integrando classes e definindo relacionamentos
+	05 - Desafio

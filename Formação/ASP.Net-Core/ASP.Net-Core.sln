@@ -29,6 +29,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-XX-Filmes.API", "03-NET-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-XX-Filmes.API", "03-NET-6-relacionando-entidades\05-XX-Filmes.API\05-XX-Filmes.API.csproj", "{E2D4DDFD-724E-4D65-84A2-98DC95F896B2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-NET-6-Identity-implementando-controle-usuario", "04-NET-6-Identity-implementando-controle-usuario", "{7B174F32-24BC-4F4F-8452-B65D3AC50787}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Usuarios.API", "04-NET-6-Identity-implementando-controle-usuario\01-XX-Usuarios.API\01-XX-Usuarios.API.csproj", "{F62F1E2F-9EC9-4CEC-90F0-3E1A007B61E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +83,10 @@ Global
 		{E2D4DDFD-724E-4D65-84A2-98DC95F896B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2D4DDFD-724E-4D65-84A2-98DC95F896B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2D4DDFD-724E-4D65-84A2-98DC95F896B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F62F1E2F-9EC9-4CEC-90F0-3E1A007B61E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F62F1E2F-9EC9-4CEC-90F0-3E1A007B61E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F62F1E2F-9EC9-4CEC-90F0-3E1A007B61E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F62F1E2F-9EC9-4CEC-90F0-3E1A007B61E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +103,7 @@ Global
 		{383D5A3F-C9FB-4E8D-8014-03DD0C60A587} = {2F6423E4-E70C-43C8-9515-58450E6CF219}
 		{4FBA2F90-67C8-4025-9132-64A7479586FC} = {2F6423E4-E70C-43C8-9515-58450E6CF219}
 		{E2D4DDFD-724E-4D65-84A2-98DC95F896B2} = {2F6423E4-E70C-43C8-9515-58450E6CF219}
+		{F62F1E2F-9EC9-4CEC-90F0-3E1A007B61E9} = {7B174F32-24BC-4F4F-8452-B65D3AC50787}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E974BF68-6E65-45D6-A77F-24225DE0E67E}
