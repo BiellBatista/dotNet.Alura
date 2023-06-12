@@ -152,3 +152,11 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 	04 - Controle de acesso
 		01 - Projeto da aula anterior
 		02 - Analisando o token
+		03 - Criando a política de acesso
+		04 - Faça como eu fiz: idade mínima
+		05 - Adicionando autorização (D)
+		06 - Validando a idade
+		07 - Utilizando handlers (B)
+		08 - Autenticando via token
+		09 - Adicionando autenticação (C)
+		10 - O que aprendemos?
