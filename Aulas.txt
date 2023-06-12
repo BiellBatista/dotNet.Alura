@@ -500,6 +500,12 @@ Formação ASP.Net Core
 		03 - Relacionamento 1:n
 		04 - Relacionamento n:n
 		05 - Efetuando consultas
+	.NET 6 e Identity: implementando controle de usuário
+		01 - Conhecendo o Identity
+		02 - Configurando o Identity
+		03 - Logando um usuário
+		04 - Controle de acesso
+		05 - Utilizando secrets
 -------------------------------------------------------------------------------------------------------------------------
 Formação Avançando em C#
 	C#: Trabalhando com Arrays e Coleções

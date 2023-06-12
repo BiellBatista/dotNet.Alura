@@ -61,6 +61,12 @@ builder.Services
         };
     });
 
+builder.Services
+    .AddAuthorization(options =>
+    {
+        options.AddPolicy("IdadeMinima", policy => policy.AddRequirements(new IdadeMinima(18)));
+    });
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
