@@ -39,6 +39,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Usuarios.API", "04-NE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-XX-Usuarios.API", "04-NET-6-Identity-implementando-controle-usuario\04-XX-Usuarios.API\04-XX-Usuarios.API.csproj", "{7136A6D3-1958-498B-A312-FED58F16B26E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-XX-Usuarios.API", "04-NET-6-Identity-implementando-controle-usuario\05-XX-Usuarios.API\05-XX-Usuarios.API.csproj", "{F569EDDB-3EBB-4CB5-9953-179BF181EB21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{7136A6D3-1958-498B-A312-FED58F16B26E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7136A6D3-1958-498B-A312-FED58F16B26E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7136A6D3-1958-498B-A312-FED58F16B26E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F569EDDB-3EBB-4CB5-9953-179BF181EB21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F569EDDB-3EBB-4CB5-9953-179BF181EB21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F569EDDB-3EBB-4CB5-9953-179BF181EB21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F569EDDB-3EBB-4CB5-9953-179BF181EB21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,6 +131,7 @@ Global
 		{8F6CB7AB-6985-4B47-9461-31F44B8FE28A} = {7B174F32-24BC-4F4F-8452-B65D3AC50787}
 		{E209AFCE-4FB3-4054-96E5-6E50A9ADBF64} = {7B174F32-24BC-4F4F-8452-B65D3AC50787}
 		{7136A6D3-1958-498B-A312-FED58F16B26E} = {7B174F32-24BC-4F4F-8452-B65D3AC50787}
+		{F569EDDB-3EBB-4CB5-9953-179BF181EB21} = {7B174F32-24BC-4F4F-8452-B65D3AC50787}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E974BF68-6E65-45D6-A77F-24225DE0E67E}

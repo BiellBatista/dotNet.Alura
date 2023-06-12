@@ -8,7 +8,7 @@ using _04_XX_Usuarios.API.Data;
 
 #nullable disable
 
-namespace _03_XX_Usuarios.API.Migrations
+namespace _04_XX_Usuarios.API.Migrations
 {
     [DbContext(typeof(UsuarioDbContext))]
     [Migration("20230222004652_Criando Usuario")]
@@ -149,7 +149,7 @@ namespace _03_XX_Usuarios.API.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("_03_XX_Usuarios.API.Models.Usuario", b =>
+            modelBuilder.Entity("_04_XX_Usuarios.API.Models.Usuario", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("varchar(255)");
@@ -227,7 +227,7 @@ namespace _03_XX_Usuarios.API.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("_03_XX_Usuarios.API.Models.Usuario", null)
+                    b.HasOne("_04_XX_Usuarios.API.Models.Usuario", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -236,7 +236,7 @@ namespace _03_XX_Usuarios.API.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("_03_XX_Usuarios.API.Models.Usuario", null)
+                    b.HasOne("_04_XX_Usuarios.API.Models.Usuario", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -251,7 +251,7 @@ namespace _03_XX_Usuarios.API.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("_03_XX_Usuarios.API.Models.Usuario", null)
+                    b.HasOne("_04_XX_Usuarios.API.Models.Usuario", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -260,7 +260,7 @@ namespace _03_XX_Usuarios.API.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("_03_XX_Usuarios.API.Models.Usuario", null)
+                    b.HasOne("_04_XX_Usuarios.API.Models.Usuario", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

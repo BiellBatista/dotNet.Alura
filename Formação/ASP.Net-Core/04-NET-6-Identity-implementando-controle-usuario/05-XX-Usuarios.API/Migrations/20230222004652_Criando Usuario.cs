@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace _04_XX_Usuarios.API.Migrations
+namespace _05_XX_Usuarios.API.Migrations
 {
     public partial class CriandoUsuario : Migration
     {
