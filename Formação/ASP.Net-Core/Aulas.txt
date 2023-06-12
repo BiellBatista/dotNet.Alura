@@ -149,3 +149,6 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 		07 - Faça como eu fiz: preparando o retorno
 		08 - Recuperando um usuário (B)
 		09 - O que aprendemos?
+	04 - Controle de acesso
+		01 - Projeto da aula anterior
+		02 - Analisando o token
