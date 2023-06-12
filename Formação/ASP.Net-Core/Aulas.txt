@@ -142,3 +142,10 @@ HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-
 	03 - Logando um usuário
 		01 - Projeto da aula anterior
 		02 - Efetuando o login
+		03 - Login com Identity (B)
+		04 - Gerando o token
+		05 - A importância de tokens (B)
+		06 - Gerando o token
+		07 - Faça como eu fiz: preparando o retorno
+		08 - Recuperando um usuário (B)
+		09 - O que aprendemos?
