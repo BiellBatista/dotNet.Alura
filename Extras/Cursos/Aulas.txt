@@ -241,3 +241,19 @@ C#: aplique boas práticas de refatoração e torne seu código mais legível
 		11 - Recuperando com Reflection
 		12 - Estudo de caso: uso de atributos em projetos reais
 		13 - O que aprendemos?
+	03 - Padrões de Projeto e Command
+		01 - Projeto da aula anterior
+		02 - Objetivos da aula
+		03 - Organizando o projeto em pastas
+		04 - Faça como eu fiz: organizando o projeto em pastas
+		05 - Para saber mais: hierarquia de pastas muito complexa
+		06 - Identificando comportamentos comuns
+		07 - Para saber mais: programação assíncrona com C#
+		08 - Métodos síncronos e assíncronos (C)
+		09 - Para saber mais: o que são padrões de projeto (design patterns)
+		10 - Definindo comportamentos comuns (A / E)
+		11 - Eliminando o Switch
+		12 - Para saber mais: dicionário em C#
+		13 - Desafio: classe ComandosDoSistema para encapsular a coleção de comandos do sistema
+		14 - Estudo de caso: padrão Command em bibliotecas famosas
+		15 - O que aprendemos?

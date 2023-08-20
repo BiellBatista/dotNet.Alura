@@ -1,7 +1,7 @@
-﻿using _02_XX_Melhorando_Legibilidade.API.Dados.Context;
-using _02_XX_Melhorando_Legibilidade.API.Dominio;
+﻿using _03_XX_Melhorando_Legibilidade.API.Dados.Context;
+using _03_XX_Melhorando_Legibilidade.API.Dominio;
 
-namespace _02_XX_Melhorando_Legibilidade.API.Service;
+namespace _03_XX_Melhorando_Legibilidade.API.Service;
 
 internal class EventoService : IEventoService
 {

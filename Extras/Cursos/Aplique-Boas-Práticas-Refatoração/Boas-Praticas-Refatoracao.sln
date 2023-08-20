@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Melhorando-Legibilida
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Melhorando-Legibilidade.Console", "02-XX-Melhorando-Legibilidade.Console\02-XX-Melhorando-Legibilidade.Console.csproj", "{2CFC0978-B6CA-43CE-AB89-C811D6E62AE9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Melhorando-Legibilidade.API", "03-XX-Melhorando-Legibilidade.API\03-XX-Melhorando-Legibilidade.API.csproj", "{DCBD3153-8887-4F6C-A766-A8103D7D26A6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Melhorando-Legibilidade.Console", "03-XX-Melhorando-Legibilidade.Console\03-XX-Melhorando-Legibilidade.Console.csproj", "{7350F44B-16A9-44C5-AF4B-1A617061445C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{2CFC0978-B6CA-43CE-AB89-C811D6E62AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CFC0978-B6CA-43CE-AB89-C811D6E62AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CFC0978-B6CA-43CE-AB89-C811D6E62AE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCBD3153-8887-4F6C-A766-A8103D7D26A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCBD3153-8887-4F6C-A766-A8103D7D26A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCBD3153-8887-4F6C-A766-A8103D7D26A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCBD3153-8887-4F6C-A766-A8103D7D26A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7350F44B-16A9-44C5-AF4B-1A617061445C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7350F44B-16A9-44C5-AF4B-1A617061445C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7350F44B-16A9-44C5-AF4B-1A617061445C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7350F44B-16A9-44C5-AF4B-1A617061445C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
