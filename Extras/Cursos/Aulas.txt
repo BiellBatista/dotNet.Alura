@@ -212,3 +212,18 @@ Build de uma aplicação .NET: construindo seus projetos com MSBuild
 		08 - Projeto final
 		09 - O que aprendemos?
 		10 - Conclusão
+C#: aplique boas práticas de refatoração e torne seu código mais legível
+	01 - Melhorando a legibilidade do código
+		01 - Apresentação
+		02 - Objetivos da aula
+		03 - Apresentação do ambiente
+		04 - Projeto inicial
+		05 - Para saber mais: zoom no terminal embutido no Visual Studio Community 2022
+		06 - Para saber mais: API - Documentação
+		07 - Faça como eu fiz: extração de métodos
+		08 - Nomes significativos
+		09 - Parâmetro nomeado (A)
+		10 - Para saber mais: parâmetros opcionais
+		11 - Extração de classes
+		12 - Faça como eu fiz: testes e refatoração
+		13 - O que aprendemos?

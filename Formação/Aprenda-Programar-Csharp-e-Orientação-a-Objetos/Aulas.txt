@@ -4,9 +4,21 @@ C#: criando sua primeira aplicação (Curso feito na carreira 01-Desenvolvedor-CSh
 	03 - Listas e loops no C#
 	04 - Dicionários e avaliação de bandas
 	05 - Desafio
-C#: aplicando a Orientação a Objetos
+C#: aplicando a Orientação a Objetos (Curso feito na carreira 01-Desenvolvedor-CSharp)
 	01 - Classe e método no C#
 	02 - Métodos de acesso e propriedades
 	03 - Integrando classes e definindo relacionamentos
 	04 - Integrando classes e definindo relacionamentos
+	05 - Desafio
+C#: dominando Orientação a Objetos (Curso feito na carreira 01-Desenvolvedor-CSharp)
+	01 - Organizando o projeto
+	02 - Nova classe Avaliacao
+	03 - Comportamentos comuns aos menus
+	04 - Alternativa para anexar semelhanças
+	05 - Desafio
+C#: consumindo API, gravando arquivos e utilizando o LINQ (Curso feito na carreira 01-Desenvolvedor-CSharp)
+	01 - Integrando uma API externa
+	02 - Linq e ordenação
+	03 - Linq
+	04 - Criando arquivos com C#
 	05 - Desafio
