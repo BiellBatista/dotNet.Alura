@@ -5,15 +5,21 @@ VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Melhorando-Legibilidade.Console", "01-XX-Melhorando-Legibilidade.Console\01-XX-Melhorando-Legibilidade.Console.csproj", "{C8E8DFF3-5E9A-4EFC-BFC5-7F4AEDA8F1A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-XX-Melhorando-Legibilidade.API", "01-XX-Melhorando-Legibilidade.API\01-XX-Melhorando-Legibilidade.API.csproj", "{4B1B7A97-DB5C-479C-9EB4-11139B33E9EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Melhorando-Legibilidade.API", "01-XX-Melhorando-Legibilidade.API\01-XX-Melhorando-Legibilidade.API.csproj", "{4B1B7A97-DB5C-479C-9EB4-11139B33E9EA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Melhorando-Legibilidade.API", "02-XX-Melhorando-Legibilidade.API\02-XX-Melhorando-Legibilidade.API.csproj", "{2D2E1748-672E-4208-9B7C-43F79A15965A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Evitando-Codigo-Duplicado.API", "02-XX-Evitando-Codigo-Duplicado.API\02-XX-Evitando-Codigo-Duplicado.API.csproj", "{2D2E1748-672E-4208-9B7C-43F79A15965A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Melhorando-Legibilidade.Console", "02-XX-Melhorando-Legibilidade.Console\02-XX-Melhorando-Legibilidade.Console.csproj", "{2CFC0978-B6CA-43CE-AB89-C811D6E62AE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Evitando-Codigo-Duplicado.Console", "02-XX-Evitando-Codigo-Duplicado.Console\02-XX-Evitando-Codigo-Duplicado.Console.csproj", "{2CFC0978-B6CA-43CE-AB89-C811D6E62AE9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Melhorando-Legibilidade.API", "03-XX-Melhorando-Legibilidade.API\03-XX-Melhorando-Legibilidade.API.csproj", "{DCBD3153-8887-4F6C-A766-A8103D7D26A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Padroes-Projeto-Command.API", "03-XX-Padroes-Projeto-Command.API\03-XX-Padroes-Projeto-Command.API.csproj", "{DCBD3153-8887-4F6C-A766-A8103D7D26A6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Melhorando-Legibilidade.Console", "03-XX-Melhorando-Legibilidade.Console\03-XX-Melhorando-Legibilidade.Console.csproj", "{7350F44B-16A9-44C5-AF4B-1A617061445C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Padroes-Projeto-Command.Console", "03-XX-Padroes-Projeto-Command.Console\03-XX-Padroes-Projeto-Command.Console.csproj", "{7350F44B-16A9-44C5-AF4B-1A617061445C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-XX-Testes-Automatizados.API", "04-XX-Testes-Automatizados.API\04-XX-Testes-Automatizados.API.csproj", "{49610BAB-FAF8-4DCF-BB54-5A818D90B30D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-XX-Testes-Automatizados.Console", "04-XX-Testes-Automatizados.Console\04-XX-Testes-Automatizados.Console.csproj", "{41741EA9-F77A-4D1A-AE5D-29E94C02D4CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-XX-Testes-Automatizados.Testes", "04-XX-Testes-Automatizados.Testes\04-XX-Testes-Automatizados.Testes.csproj", "{9E3A256A-729B-4058-8811-51CE4514DC3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{7350F44B-16A9-44C5-AF4B-1A617061445C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7350F44B-16A9-44C5-AF4B-1A617061445C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7350F44B-16A9-44C5-AF4B-1A617061445C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49610BAB-FAF8-4DCF-BB54-5A818D90B30D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49610BAB-FAF8-4DCF-BB54-5A818D90B30D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49610BAB-FAF8-4DCF-BB54-5A818D90B30D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49610BAB-FAF8-4DCF-BB54-5A818D90B30D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41741EA9-F77A-4D1A-AE5D-29E94C02D4CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41741EA9-F77A-4D1A-AE5D-29E94C02D4CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41741EA9-F77A-4D1A-AE5D-29E94C02D4CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41741EA9-F77A-4D1A-AE5D-29E94C02D4CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E3A256A-729B-4058-8811-51CE4514DC3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3A256A-729B-4058-8811-51CE4514DC3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3A256A-729B-4058-8811-51CE4514DC3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3A256A-729B-4058-8811-51CE4514DC3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

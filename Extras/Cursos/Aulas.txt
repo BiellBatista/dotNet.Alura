@@ -257,3 +257,16 @@ C#: aplique boas práticas de refatoração e torne seu código mais legível
 		13 - Desafio: classe ComandosDoSistema para encapsular a coleção de comandos do sistema
 		14 - Estudo de caso: padrão Command em bibliotecas famosas
 		15 - O que aprendemos?
+	04 - Testes automatizados
+		01 - Projeto da aula anterior
+		02 - Objetivos da aula
+		03 - Automatizando testes
+		04 - Faça como eu fiz: adicionando projeto de testes a solução
+		05 - Testando o HttpClientPet
+		06 - Faça como eu fiz: testes unitários
+		07 - Testando exceções
+		08 - Teste uma exceção (B)
+		09 - Nova refatoração com testes
+		10 - Estudo de caso: bibliotecas realizam muitos testes!
+		11 - Projeto da aula
+		12 - O que aprendemos?

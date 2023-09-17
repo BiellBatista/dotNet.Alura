@@ -1,10 +1,14 @@
-﻿namespace _01_XX_Melhorando_Legibilidade.Console;
+﻿using _04_XX_Testes_Automatizados.Console.Modelos;
 
-internal class Show
+namespace _04_XX_Testes_Automatizados.Console.Util;
+
+internal class LeitorDeArquivo
 {
-    public void ExibeConteudoArquivo(string caminhoDoArquivoASerExibido)
+    public List<Pet> RealizaLeitura(string caminhoDoArquivoASerLido)
     {
-        using (StreamReader sr = new StreamReader(caminhoDoArquivoASerExibido))
+        List<Pet> listaDePet = new List<Pet>();
+
+        using (StreamReader sr = new StreamReader(caminhoDoArquivoASerLido))
         {
             System.Console.WriteLine("----- Dados a serem importados -----");
 
@@ -14,9 +18,10 @@ internal class Show
                 string[]? propriedades = sr.ReadLine().Split(';');
                 // cria objeto Pet a partir da separação
                 Pet pet = new Pet(Guid.Parse(propriedades[0]), propriedades[1], int.Parse(propriedades[2]) == 1 ? TipoPet.Gato : TipoPet.Cachorro);
-
-                System.Console.WriteLine(pet);
+                listaDePet.Add(pet);
             }
         }
+
+        return listaDePet;
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace _01_XX_Melhorando_Legibilidade.Console;
+﻿namespace _04_XX_Testes_Automatizados.Console.Modelos;
 
 public class Pet
 {

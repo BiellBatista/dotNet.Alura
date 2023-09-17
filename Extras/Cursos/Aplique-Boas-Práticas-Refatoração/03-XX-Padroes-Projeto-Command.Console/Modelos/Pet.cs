@@ -1,4 +1,4 @@
-﻿namespace _01_XX_Melhorando_Legibilidade.Console;
+﻿namespace _03_XX_Padroes_Projeto_Command.Console.Modelos;
 
 public class Pet
 {

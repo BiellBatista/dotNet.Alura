@@ -1,27 +1,21 @@
-﻿using System.Net.Http.Headers;
+﻿using _04_XX_Testes_Automatizados.Console.Modelos;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 
-namespace _01_XX_Melhorando_Legibilidade.Console;
+namespace _04_XX_Testes_Automatizados.Console.Servicos;
 
-internal class List
+public class HttpClientPet
 {
     private HttpClient client;
 
-    public List()
+    public HttpClientPet()
     {
         client = ConfiguraHttpClient("http://localhost:5057");
     }
 
-    public async Task ListaDadosPetsDaAPIAsync()
+    public HttpClientPet(string uri)
     {
-        IEnumerable<Pet>? pets = await ListPetsAsync();
-
-        System.Console.WriteLine("----- Lista de Pets importados no sistema -----");
-
-        foreach (var pet in pets)
-        {
-            System.Console.WriteLine(pet);
-        }
+        client = ConfiguraHttpClient(uri);
     }
 
     private HttpClient ConfiguraHttpClient(string url)
@@ -35,7 +29,12 @@ internal class List
         return _client;
     }
 
-    private async Task<IEnumerable<Pet>?> ListPetsAsync()
+    public Task CreatePetAsync(Pet pet)
+    {
+        return client.PostAsJsonAsync("pet/add", pet);
+    }
+
+    public async Task<IEnumerable<Pet>?> ListPetsAsync()
     {
         HttpResponseMessage response = await client.GetAsync("pet/list");
 
