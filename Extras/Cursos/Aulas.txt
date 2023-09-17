@@ -303,3 +303,14 @@ C#: aprenda a criar testes limpos com boas práticas
 		08 - Desafio: criar testes de unidade para a importação de arquivo inexistente e criar o Data Builder para HttpClientPet
 		09 - Faça como eu fiz: modificar o comando show para receber o leitor de arquivos
 		10 - O que aprendemos?
+	03 - Extraindo resultados
+		01 - Projeto da aula anterior
+		02 - Testes autoverificáveis
+		03 - Testando resultados (B)
+		04 - Biblioteca FluentResult
+		05 - Faça como eu fiz: adicionando a biblioteca FluentResult
+		06 - Representando sucesso de forma estruturada
+		07 - Representando falhas
+		08 - Faça como eu fiz: representando falhas nos outros comandos
+		09 - Para saber mais: o padrão Result
+		10 - O que aprendemos?
