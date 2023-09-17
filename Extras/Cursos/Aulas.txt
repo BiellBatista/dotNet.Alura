@@ -292,3 +292,14 @@ C#: aprenda a criar testes limpos com boas práticas
 		11 - Testando API Fora do Ar
 		12 - Desafio: criar testes de unidade para o leitor de arquivos
 		13 - O que aprendemos?
+	02 - Boas práticas em testes
+		01 - Projeto da aula anterior
+		02 - Problemas ao testar comandos
+		03 - Um teste rápido
+		04 - Para saber mais: testes limpos e o tal de F.I.R.S.T.
+		05 - Leitor de arquivos no construtor
+		06 - Teste de unidade no comando import
+		07 - Data Builders
+		08 - Desafio: criar testes de unidade para a importação de arquivo inexistente e criar o Data Builder para HttpClientPet
+		09 - Faça como eu fiz: modificar o comando show para receber o leitor de arquivos
+		10 - O que aprendemos?
