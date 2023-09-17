@@ -277,3 +277,18 @@ C#: aplique boas práticas de refatoração e torne seu código mais legível
 		04 - Resolução desafio 2
 		05 - Desafio 2
 		06 - Conclusão
+C#: aprenda a criar testes limpos com boas práticas
+	01 - Declarando dependências
+		01 - Apresentação
+		02 - Projeto inicial
+		03 - Identificando dependência de classes
+		04 - IHttpClientFactory
+		05 - Sobre HttpClient (B)
+		06 - Para saber mais: Microsoft recomenda IHttpClientFactory
+		07 - Faça como eu fiz: instalando a biblioteca Moq via CLI
+		08 - Simulando objetos com Moq
+		09 - Usando a biblioteca Moq (A)
+		10 - Testando API Fora do Ar
+		11 - Testando API Fora do Ar
+		12 - Desafio: criar testes de unidade para o leitor de arquivos
+		13 - O que aprendemos?
