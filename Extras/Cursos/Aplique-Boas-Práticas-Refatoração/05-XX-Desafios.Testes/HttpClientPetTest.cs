@@ -1,6 +1,6 @@
 using _04_XX_Testes_Automatizados.Console.Servicos;
 
-namespace _04_XX_Testes_Automatizados.Testes;
+namespace _05_XX_Desafios.Testes;
 
 public class HttpClientPetTest
 {

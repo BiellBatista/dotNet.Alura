@@ -2,7 +2,7 @@
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>_01_XX_Melhorando_Legibilidade.API</RootNamespace>
+    <RootNamespace>_05_XX_Desafios.API</RootNamespace>
     <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
 

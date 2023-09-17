@@ -270,3 +270,10 @@ C#: aplique boas práticas de refatoração e torne seu código mais legível
 		10 - Estudo de caso: bibliotecas realizam muitos testes!
 		11 - Projeto da aula
 		12 - O que aprendemos?
+	05 - Desafios
+		01 - Apresentando os desafios
+		02 - Apresentando os desafios
+		03 - Desafio 1
+		04 - Resolução desafio 2
+		05 - Desafio 2
+		06 - Conclusão

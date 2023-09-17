@@ -1,7 +1,7 @@
 ﻿using _04_XX_Testes_Automatizados.Console.Modelos;
 using _04_XX_Testes_Automatizados.Console.Util;
 
-namespace Alura.Adopet.Testes;
+namespace _04_XX_Testes_Automatizados.Testes;
 
 public class PetAPartirDoCsvTest
 {
