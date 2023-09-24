@@ -324,3 +324,17 @@ C#: aprenda a criar testes limpos com boas práticas
 		07 - Faça como eu fiz: refatorando a exibição da documentação do sistema
 		08 - Para saber mais: C# Pattern Matching em expressões switch
 		09 - O que aprendemos?
+	05 - Fábrica de comandos
+		01 - Projeto da aula anterior
+		02 - A dependência com o array de argumentos
+		03 - Faça como eu fiz: removendo o array de arquivos do ExecutarAsync
+		04 - Resolvendo a string de argumentos
+		05 - Para saber mais: o padrão Factory Method
+		06 - Factory Method (E)
+		07 - Desafio: criar testes para os comandos Show, List e Help
+		08 - Resolução do desafio #1
+		09 - Resolução do desafio #2
+		10 - Resolução do desafio #3
+		11 - Projeto final
+		12 - O que aprendemos?
+		13 - Conclusão
