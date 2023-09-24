@@ -314,3 +314,13 @@ C#: aprenda a criar testes limpos com boas práticas
 		08 - Faça como eu fiz: representando falhas nos outros comandos
 		09 - Para saber mais: o padrão Result
 		10 - O que aprendemos?
+	04 - Isolando exibição
+		01 - Projeto da aula anterior
+		02 - Responsabilidade única
+		03 - Princípio da Responsabilidade Única (SRP) (C / D)
+		04 - Definindo a classe ConsoleUI
+		05 - Exibindo os pets a partir do ConsoleUI
+		06 - ConsoleUI para exibir a documentação dos comandos
+		07 - Faça como eu fiz: refatorando a exibição da documentação do sistema
+		08 - Para saber mais: C# Pattern Matching em expressões switch
+		09 - O que aprendemos?

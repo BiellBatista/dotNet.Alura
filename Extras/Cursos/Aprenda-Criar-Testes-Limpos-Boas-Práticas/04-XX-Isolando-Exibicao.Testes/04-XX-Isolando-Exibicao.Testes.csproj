@@ -1,11 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
     <Nullable>enable</Nullable>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_02_XX_Boas_Praticas_Testes.Testes</RootNamespace>
+    <RootNamespace>_04_XX_Isolando_Exibicao.Testes</RootNamespace>
     <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
 
@@ -24,6 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\02-XX-Boas-Praticas-Testes.Console\02-XX-Boas-Praticas-Testes.Console.csproj" />
+    <ProjectReference Include="..\04-XX-Isolando-Exibicao.Console\04-XX-Isolando-Exibicao.Console.csproj" />
   </ItemGroup>
 </Project>

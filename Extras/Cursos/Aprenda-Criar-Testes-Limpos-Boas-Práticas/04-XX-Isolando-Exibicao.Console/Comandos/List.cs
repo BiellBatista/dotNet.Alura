@@ -1,8 +1,9 @@
-﻿using _03_XX_Extraindo_Resultados.Console.Modelos;
-using _03_XX_Extraindo_Resultados.Console.Servicos;
+﻿using _04_XX_Isolando_Exibicao.Console.Modelos;
+using _04_XX_Isolando_Exibicao.Console.Servicos;
+using _04_XX_Isolando_Exibicao.Console.Util;
 using FluentResults;
 
-namespace _03_XX_Extraindo_Resultados.Console.Comandos
+namespace _04_XX_Isolando_Exibicao.Console.Comandos
 {
     [DocComando(instrucao: "list",
       documentacao: "adopet list comando que exibe no terminal o conteúdo cadastrado na base de dados da AdoPet.")]
@@ -25,12 +26,7 @@ namespace _03_XX_Extraindo_Resultados.Console.Comandos
             try
             {
                 IEnumerable<Pet>? pets = await clientPet.ListPetsAsync();
-                System.Console.WriteLine("----- Lista de Pets importados no sistema -----");
-                foreach (var pet in pets)
-                {
-                    System.Console.WriteLine(pet);
-                }
-                return Result.Ok();
+                return Result.Ok().WithSuccess(new SuccessWithPets(pets, "Listagem de Pet's realizada com sucesso!"));
             }
             catch (Exception exception)
             {

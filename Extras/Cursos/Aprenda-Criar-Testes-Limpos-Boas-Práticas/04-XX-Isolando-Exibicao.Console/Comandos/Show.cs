@@ -1,7 +1,7 @@
-﻿using _03_XX_Extraindo_Resultados.Console.Util;
+﻿using _04_XX_Isolando_Exibicao.Console.Util;
 using FluentResults;
 
-namespace _03_XX_Extraindo_Resultados.Console.Comandos
+namespace _04_XX_Isolando_Exibicao.Console.Comandos
 {
     [DocComando(instrucao: "show",
        documentacao: "adopet show <ARQUIVO> comando que exibe no terminal o conteúdo do arquivo importado.")]
@@ -18,8 +18,7 @@ namespace _03_XX_Extraindo_Resultados.Console.Comandos
         {
             try
             {
-                ExibeConteudoArquivo(caminhoDoArquivoASerExibido: args[1]);
-                return Task.FromResult(Result.Ok());
+                return ExibeConteudoArquivo(caminhoDoArquivoASerExibido: args[1]);
             }
             catch (Exception exception)
             {
@@ -27,13 +26,10 @@ namespace _03_XX_Extraindo_Resultados.Console.Comandos
             }
         }
 
-        private void ExibeConteudoArquivo(string caminhoDoArquivoASerExibido)
+        private Task<Result> ExibeConteudoArquivo(string caminhoDoArquivoASerExibido)
         {
             var listaDepets = leitor.RealizaLeitura();
-            foreach (var pet in listaDepets)
-            {
-                System.Console.WriteLine(pet);
-            }
+            return Task.FromResult(Result.Ok().WithSuccess(new SuccessWithPets(listaDepets, "Exibição do arquivo realizada com sucesso!")));
         }
     }
 }

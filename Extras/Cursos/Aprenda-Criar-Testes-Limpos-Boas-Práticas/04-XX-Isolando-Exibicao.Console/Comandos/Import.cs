@@ -1,9 +1,9 @@
-﻿using _03_XX_Extraindo_Resultados.Console.Modelos;
-using _03_XX_Extraindo_Resultados.Console.Servicos;
-using _03_XX_Extraindo_Resultados.Console.Util;
+﻿using _04_XX_Isolando_Exibicao.Console.Modelos;
+using _04_XX_Isolando_Exibicao.Console.Servicos;
+using _04_XX_Isolando_Exibicao.Console.Util;
 using FluentResults;
 
-namespace _03_XX_Extraindo_Resultados.Console.Comandos
+namespace _04_XX_Isolando_Exibicao.Console.Comandos
 {
     [DocComando(instrucao: "import",
         documentacao: "adopet import <ARQUIVO> comando que realiza a importação do arquivo de pets.")]
@@ -31,11 +31,9 @@ namespace _03_XX_Extraindo_Resultados.Console.Comandos
                 List<Pet> listaDePet = leitor.RealizaLeitura();
                 foreach (var pet in listaDePet)
                 {
-                    System.Console.WriteLine(pet);
                     await clientPet.CreatePetAsync(pet);
                 }
-                System.Console.WriteLine("Importação concluída!");
-                return Result.Ok().WithSuccess(new SuccessWithPets(listaDePet));
+                return Result.Ok().WithSuccess(new SuccessWithPets(listaDePet, "Importação Realizada com Sucesso!"));
             }
             catch (Exception exception)
             {

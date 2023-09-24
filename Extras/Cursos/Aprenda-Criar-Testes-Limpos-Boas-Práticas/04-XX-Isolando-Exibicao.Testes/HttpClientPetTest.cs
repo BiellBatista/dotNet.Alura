@@ -1,10 +1,10 @@
-using _03_XX_Extraindo_Resultados.Console.Servicos;
+using _04_XX_Isolando_Exibicao.Console.Servicos;
 using Moq;
 using Moq.Protected;
 using System.Net;
 using System.Net.Sockets;
 
-namespace _03_XX_Extraindo_Resultados.Testes
+namespace _04_XX_Isolando_Exibicao.Testes
 {
     public class HttpClientPetTest
     {

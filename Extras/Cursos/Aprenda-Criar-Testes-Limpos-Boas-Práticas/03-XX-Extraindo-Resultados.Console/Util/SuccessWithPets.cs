@@ -1,4 +1,5 @@
 ﻿using _03_XX_Extraindo_Resultados.Console.Modelos;
+using FluentResults;
 
 namespace _03_XX_Extraindo_Resultados.Console.Util
 {

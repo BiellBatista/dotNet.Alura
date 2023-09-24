@@ -1,4 +1,6 @@
 ﻿using _03_XX_Extraindo_Resultados.Console.Comandos;
+using _03_XX_Extraindo_Resultados.Console.Servicos;
+using _03_XX_Extraindo_Resultados.Console.Util;
 
 var httpClientPet = new HttpClientPet(new AdopetAPIClientFactory().CreateClient("adopet"));
 var leitorDeArquivos = new LeitorDeArquivo(caminhoDoArquivoASerLido: args[1]);
