@@ -343,3 +343,8 @@ C#: aprenda a criar testes limpos com boas práticas
 		01 - Apresentação
 		02 - Projeto inicial do curso
 		03 - Atribuição de valores
+		04 - Faça como eu fiz: atribuindo os retornos de métodos
+		05 - Retorno de métodos (B)
+		06 - Stack e Heap
+		07 - Onde fica armazenado? (A)
+		08 - O que aprendemos?
