@@ -348,3 +348,6 @@ C#: aprenda a criar testes limpos com boas práticas
 		06 - Stack e Heap
 		07 - Onde fica armazenado? (A)
 		08 - O que aprendemos?
+	02 - Lists e LinkedLists
+		01 - Projeto da aula anterior
+		02 - Inserções em Lists
