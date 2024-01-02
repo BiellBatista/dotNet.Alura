@@ -338,3 +338,8 @@ C#: aprenda a criar testes limpos com boas práticas
 		11 - Projeto final
 		12 - O que aprendemos?
 		13 - Conclusão
+.NET: gerenciamento de memória para otimização de performance
+	01 - Entendendo referências
+		01 - Apresentação
+		02 - Projeto inicial do curso
+		03 - Atribuição de valores
