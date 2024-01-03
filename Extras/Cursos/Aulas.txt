@@ -380,3 +380,11 @@ C#: aprenda a criar testes limpos com boas práticas
 	05 - Conhecendo Record Structs
 		01 - Projeto da aula anterior
 		02 - O primeiro Record Struct
+		03 - Benefícios das Record Structs (A, B & D)
+		04 - Desempenho de Record Structs (C)
+		05 - Imutabilidade e performance
+		06 - Record Structs e imutabilidade (C)
+		07 - Faça como eu fiz: avaliando a performance geral
+		08 - Projeto final do curso
+		09 - O que aprendemos?
+		10 - Conclusão
