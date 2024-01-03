@@ -2,8 +2,12 @@
 
 namespace _03_XX_Conhecendo_Structs.UsuarioLib;
 
-public class Coordenada
+public struct Coordenada
 {
+    public Coordenada()
+    {
+    }
+
     public Coordenada(double latitude, double longitude)
     {
         Latitude = latitude;

@@ -361,3 +361,9 @@ C#: aprenda a criar testes limpos com boas práticas
 	03 - Conhecendo Structs
 		01 - Projeto da aula anterior
 		02 - A primeira Struct
+		03 - Faça como eu fiz: criando a primeira Struct
+		04 - Structs e suas características
+		05 - Otimização de memória: Struct vs Classe (A)
+		06 - Avaliando Structs
+		07 - Limitações das Structs (C)
+		08 - O que aprendemos?
