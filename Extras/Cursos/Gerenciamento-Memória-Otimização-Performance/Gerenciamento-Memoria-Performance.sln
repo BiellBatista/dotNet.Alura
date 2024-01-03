@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-XX-Lists-LinkedLists", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-XX-Conhecendo-Structs", "03-XX-Conhecendo-Structs\03-XX-Conhecendo-Structs.csproj", "{582620D8-7CD4-473D-918E-AE6E037AB31F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-XX-Conhecendo-Records", "04-XX-Conhecendo-Records\04-XX-Conhecendo-Records.csproj", "{D8CD415E-1B7A-475D-B5B4-683B15F1EDF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{582620D8-7CD4-473D-918E-AE6E037AB31F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{582620D8-7CD4-473D-918E-AE6E037AB31F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{582620D8-7CD4-473D-918E-AE6E037AB31F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8CD415E-1B7A-475D-B5B4-683B15F1EDF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8CD415E-1B7A-475D-B5B4-683B15F1EDF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8CD415E-1B7A-475D-B5B4-683B15F1EDF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8CD415E-1B7A-475D-B5B4-683B15F1EDF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
