@@ -358,3 +358,6 @@ C#: aprenda a criar testes limpos com boas práticas
 		07 - Lists vs LinkedLists
 		08 - Apontamentos na memória (A & D)
 		09 - O que aprendemos?
+	03 - Conhecendo Structs
+		01 - Projeto da aula anterior
+		02 - A primeira Struct

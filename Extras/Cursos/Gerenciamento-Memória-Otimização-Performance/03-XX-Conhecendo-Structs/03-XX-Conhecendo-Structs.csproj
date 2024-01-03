@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Authors>Gabriel Batista</Authors>
+    <Company>ARB Tech Ltda.</Company>
+    <Description>Memory and Performance Management Studies in .NET.</Description>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+    <PackageVersion>0.0.1</PackageVersion>
+    <Product>Triumph Action</Product>
+    <RootNamespace>_03_XX_Conhecendo_Structs</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+</Project>
