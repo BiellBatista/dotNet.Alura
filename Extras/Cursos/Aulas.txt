@@ -370,3 +370,10 @@ C#: aprenda a criar testes limpos com boas práticas
 	04 - Conhecendo Records
 		01 - Projeto da aula anterior
 		02 - O primeiro Record
+		03 - Faça como eu fiz: criando o primeiro Record
+		04 - Características de Records (C & D)
+		05 - Records e imutabilidade
+		06 - Averiguando a imutabilidade (B)
+		07 - Records e equalidade
+		08 - Records e seus métodos (B)
+		09 - O que aprendemos?
