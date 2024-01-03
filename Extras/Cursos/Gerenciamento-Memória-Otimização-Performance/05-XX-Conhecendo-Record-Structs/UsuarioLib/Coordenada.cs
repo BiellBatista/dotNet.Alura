@@ -1,8 +1,8 @@
 ﻿using System.Globalization;
 
-namespace UsuarioLib;
+namespace _05_XX_Conhecendo_Record_Structs.UsuarioLib;
 
-public struct Coordenada
+public record struct Coordenada
 {
     public Coordenada(double latitude, double longitude)
     {

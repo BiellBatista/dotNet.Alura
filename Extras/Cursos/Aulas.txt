@@ -377,3 +377,6 @@ C#: aprenda a criar testes limpos com boas práticas
 		07 - Records e equalidade
 		08 - Records e seus métodos (B)
 		09 - O que aprendemos?
+	05 - Conhecendo Record Structs
+		01 - Projeto da aula anterior
+		02 - O primeiro Record Struct

@@ -1,4 +1,4 @@
-﻿namespace UsuarioLib;
+﻿namespace _05_XX_Conhecendo_Record_Structs.UsuarioLib;
 
 public record UsuarioDto
 {
@@ -8,7 +8,7 @@ public record UsuarioDto
 
     public virtual bool Equals(UsuarioDto? outroDto)
     {
-        if(this.Nome == outroDto.Nome && this.Email == outroDto.Email)
+        if (this.Nome == outroDto.Nome && this.Email == outroDto.Email)
         {
             return true;
         }
