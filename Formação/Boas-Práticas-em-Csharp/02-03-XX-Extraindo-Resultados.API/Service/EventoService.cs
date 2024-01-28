@@ -1,7 +1,8 @@
-﻿using _03_XX_Extraindo_Resultados.API.Dados.Context;
+﻿using _02_03_XX_Extraindo_Resultados.API.Dados.Context;
+using _02_03_XX_Extraindo_Resultados.API.Dominio;
 using _03_XX_Extraindo_Resultados.API.Dominio;
 
-namespace _03_XX_Extraindo_Resultados.API.Service
+namespace _02_03_XX_Extraindo_Resultados.API.Service
 {
     internal class EventoService : IEventoService
     {

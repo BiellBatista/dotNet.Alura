@@ -1,7 +1,7 @@
-﻿using _04_XX_Isolando_Exibicao.Console.Servicos;
+﻿using _02_04_XX_Isolando_Exibicao.Console.Servicos;
 using Moq;
 
-namespace _04_XX_Isolando_Exibicao.Testes.Builder
+namespace _02_04_XX_Isolando_Exibicao.Testes.Builder
 {
     internal static class HttpClientPetMockBuilder
     {

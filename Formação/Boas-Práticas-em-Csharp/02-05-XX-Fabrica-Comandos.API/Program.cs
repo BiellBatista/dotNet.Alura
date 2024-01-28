@@ -1,5 +1,5 @@
-using _05_XX_Fabrica_Comandos.API.Dados.Context;
-using _05_XX_Fabrica_Comandos.API.Service;
+using _02_05_XX_Fabrica_Comandos.API.Dados.Context;
+using _02_05_XX_Fabrica_Comandos.API.Service;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 

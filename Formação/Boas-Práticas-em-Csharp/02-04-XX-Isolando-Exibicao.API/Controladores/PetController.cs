@@ -1,11 +1,11 @@
-﻿using _04_XX_Isolando_Exibicao.API.Dados.Context;
-using _04_XX_Isolando_Exibicao.API.Dominio;
+﻿using _02_04_XX_Isolando_Exibicao.API.Dados.Context;
+using _02_04_XX_Isolando_Exibicao.API.Dominio;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Serilog.Events;
 
-namespace _04_XX_Isolando_Exibicao.API.Controladores
+namespace _02_04_XX_Isolando_Exibicao.API.Controladores
 {
     [ApiController]
     [Route("/pet/")]

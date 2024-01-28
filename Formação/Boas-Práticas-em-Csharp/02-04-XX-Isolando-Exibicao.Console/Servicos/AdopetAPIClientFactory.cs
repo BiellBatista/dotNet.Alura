@@ -1,6 +1,6 @@
 ﻿using System.Net.Http.Headers;
 
-namespace _04_XX_Isolando_Exibicao.Console.Servicos
+namespace _02_04_XX_Isolando_Exibicao.Console.Servicos
 {
     public class AdopetAPIClientFactory : IHttpClientFactory
     {

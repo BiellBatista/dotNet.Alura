@@ -1,11 +1,11 @@
-﻿using _05_XX_Fabrica_Comandos.API.Dados.Context;
-using _05_XX_Fabrica_Comandos.API.Dominio;
+﻿using _02_05_XX_Fabrica_Comandos.API.Dados.Context;
+using _02_05_XX_Fabrica_Comandos.API.Dominio;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Serilog.Events;
 
-namespace _05_XX_Fabrica_Comandos.API.Controladores
+namespace _02_05_XX_Fabrica_Comandos.API.Controladores
 {
     [ApiController]
     [Route("/pet/")]

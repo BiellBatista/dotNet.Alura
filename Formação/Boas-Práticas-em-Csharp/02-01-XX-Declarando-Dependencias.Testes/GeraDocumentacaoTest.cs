@@ -1,8 +1,8 @@
-﻿using _01_XX_Declarando_Dependencias.Console.Comandos;
-using _01_XX_Declarando_Dependencias.Console.Util;
+﻿using _02_01_XX_Declarando_Dependencias.Console.Comandos;
+using _02_01_XX_Declarando_Dependencias.Console.Util;
 using System.Reflection;
 
-namespace _01_XX_Declarando_Dependencias.Testes
+namespace _02_01_XX_Declarando_Dependencias.Testes
 {
     public class GeraDocumentacaoTest
     {

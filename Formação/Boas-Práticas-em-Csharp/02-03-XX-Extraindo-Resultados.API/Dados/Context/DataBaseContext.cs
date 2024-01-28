@@ -1,7 +1,7 @@
-﻿using _03_XX_Extraindo_Resultados.API.Dominio;
+﻿using _02_03_XX_Extraindo_Resultados.API.Dominio;
 using Microsoft.EntityFrameworkCore;
 
-namespace _03_XX_Extraindo_Resultados.API.Dados.Context
+namespace _02_03_XX_Extraindo_Resultados.API.Dados.Context
 {
     public class DataBaseContext : DbContext
     {

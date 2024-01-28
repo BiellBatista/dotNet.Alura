@@ -1,7 +1,8 @@
-﻿using _01_XX_Declarando_Dependencias.API.Dados.Context;
-using _01_XX_Declarando_Dependencias.API.Dominio;
+﻿using _01_XX_Declarando_Dependencias.API.Dominio;
+using _02_01_XX_Declarando_Dependencias.API.Dados.Context;
+using _02_01_XX_Declarando_Dependencias.API.Dominio;
 
-namespace _01_XX_Declarando_Dependencias.API.Service
+namespace _02_01_XX_Declarando_Dependencias.API.Service
 {
     internal class EventoService : IEventoService
     {

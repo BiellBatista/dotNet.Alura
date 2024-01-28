@@ -1,7 +1,7 @@
-﻿using _01_XX_Declarando_Dependencias.API.Dominio;
+﻿using _02_01_XX_Declarando_Dependencias.API.Dominio;
 using Microsoft.EntityFrameworkCore;
 
-namespace _01_XX_Declarando_Dependencias.API.Dados.Context
+namespace _02_01_XX_Declarando_Dependencias.API.Dados.Context
 {
     public class DataBaseContext : DbContext
     {

@@ -1,11 +1,11 @@
-﻿using _02_XX_Boas_Praticas_Testes.API.Dados.Context;
-using _02_XX_Boas_Praticas_Testes.API.Dominio;
+﻿using _02_02_XX_Boas_Praticas_Testes.API.Dados.Context;
+using _02_02_XX_Boas_Praticas_Testes.API.Dominio;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Serilog.Events;
 
-namespace _02_XX_Boas_Praticas_Testes.API.Controladores
+namespace _02_02_XX_Boas_Praticas_Testes.API.Controladores
 {
     [ApiController]
     [Route("/pet/")]

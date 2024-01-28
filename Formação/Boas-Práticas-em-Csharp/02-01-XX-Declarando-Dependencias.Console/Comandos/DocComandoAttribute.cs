@@ -1,4 +1,4 @@
-﻿namespace _01_XX_Declarando_Dependencias.Console.Comandos
+﻿namespace _02_01_XX_Declarando_Dependencias.Console.Comandos
 {
     [AttributeUsage(AttributeTargets.Class)]
     public sealed class DocComandoAttribute : Attribute

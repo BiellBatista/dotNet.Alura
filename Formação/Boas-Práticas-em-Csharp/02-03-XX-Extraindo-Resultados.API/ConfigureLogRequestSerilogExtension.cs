@@ -1,7 +1,7 @@
 ﻿using Serilog;
 using Serilog.Events;
 
-namespace _03_XX_Extraindo_Resultados.API
+namespace _02_03_XX_Extraindo_Resultados.API
 {
     public static class ConfigureLogRequestSerilogExtension
     {

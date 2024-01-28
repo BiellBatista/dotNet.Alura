@@ -1,9 +1,11 @@
-﻿using _05_XX_Fabrica_Comandos.Console.Modelos;
-using _05_XX_Fabrica_Comandos.Console.Servicos;
+﻿using _02_05_XX_Fabrica_Comandos.Console.Modelos;
+using _02_05_XX_Fabrica_Comandos.Console.Servicos;
+using _02_05_XX_Fabrica_Comandos.Console.Util;
+using _05_XX_Fabrica_Comandos.Console.Comandos;
 using _05_XX_Fabrica_Comandos.Console.Util;
 using FluentResults;
 
-namespace _05_XX_Fabrica_Comandos.Console.Comandos
+namespace _02_05_XX_Fabrica_Comandos.Console.Comandos
 {
     [DocComando(instrucao: "import",
         documentacao: "adopet import <ARQUIVO> comando que realiza a importação do arquivo de pets.")]

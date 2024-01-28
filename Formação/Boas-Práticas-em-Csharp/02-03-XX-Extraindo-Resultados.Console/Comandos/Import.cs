@@ -1,9 +1,11 @@
-﻿using _03_XX_Extraindo_Resultados.Console.Modelos;
-using _03_XX_Extraindo_Resultados.Console.Servicos;
+﻿using _02_03_XX_Extraindo_Resultados.Console.Modelos;
+using _02_03_XX_Extraindo_Resultados.Console.Servicos;
+using _02_03_XX_Extraindo_Resultados.Console.Util;
+using _03_XX_Extraindo_Resultados.Console.Comandos;
 using _03_XX_Extraindo_Resultados.Console.Util;
 using FluentResults;
 
-namespace _03_XX_Extraindo_Resultados.Console.Comandos
+namespace _02_03_XX_Extraindo_Resultados.Console.Comandos
 {
     [DocComando(instrucao: "import",
         documentacao: "adopet import <ARQUIVO> comando que realiza a importação do arquivo de pets.")]

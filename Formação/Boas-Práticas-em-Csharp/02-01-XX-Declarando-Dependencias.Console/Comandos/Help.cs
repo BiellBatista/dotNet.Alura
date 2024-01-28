@@ -1,7 +1,7 @@
-﻿using _01_XX_Declarando_Dependencias.Console.Util;
+﻿using _02_01_XX_Declarando_Dependencias.Console.Util;
 using System.Reflection;
 
-namespace _01_XX_Declarando_Dependencias.Console.Comandos
+namespace _02_01_XX_Declarando_Dependencias.Console.Comandos
 {
     [DocComando(instrucao: "help",
      documentacao: "adopet help comando que exibe informações da ajuda. \n" +

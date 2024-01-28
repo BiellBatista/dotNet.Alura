@@ -1,8 +1,9 @@
-﻿using _01_XX_Declarando_Dependencias.Console.Modelos;
-using _01_XX_Declarando_Dependencias.Console.Servicos;
+﻿using _01_XX_Declarando_Dependencias.Console.Comandos;
 using _01_XX_Declarando_Dependencias.Console.Util;
+using _02_01_XX_Declarando_Dependencias.Console.Modelos;
+using _02_01_XX_Declarando_Dependencias.Console.Servicos;
 
-namespace _01_XX_Declarando_Dependencias.Console.Comandos
+namespace _02_01_XX_Declarando_Dependencias.Console.Comandos
 {
     [DocComando(instrucao: "import",
         documentacao: "adopet import <ARQUIVO> comando que realiza a importação do arquivo de pets.")]

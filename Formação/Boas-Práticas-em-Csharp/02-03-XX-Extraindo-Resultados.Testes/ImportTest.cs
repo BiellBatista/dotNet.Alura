@@ -1,10 +1,10 @@
-﻿using _03_XX_Extraindo_Resultados.Console.Comandos;
-using _03_XX_Extraindo_Resultados.Console.Modelos;
-using _03_XX_Extraindo_Resultados.Console.Util;
-using _03_XX_Extraindo_Resultados.Testes.Builder;
+﻿using _02_03_XX_Extraindo_Resultados.Console.Modelos;
+using _02_03_XX_Extraindo_Resultados.Console.Util;
+using _02_03_XX_Extraindo_Resultados.Testes.Builder;
+using _03_XX_Extraindo_Resultados.Console.Comandos;
 using Moq;
 
-namespace _03_XX_Extraindo_Resultados.Testes
+namespace _02_03_XX_Extraindo_Resultados.Testes
 {
     public class ImportTest
     {

@@ -1,6 +1,6 @@
 ﻿using System.Net.Http.Headers;
 
-namespace _02_XX_Boas_Praticas_Testes.Console.Servicos
+namespace _02_02_XX_Boas_Praticas_Testes.Console.Servicos
 {
     public class AdopetAPIClientFactory : IHttpClientFactory
     {

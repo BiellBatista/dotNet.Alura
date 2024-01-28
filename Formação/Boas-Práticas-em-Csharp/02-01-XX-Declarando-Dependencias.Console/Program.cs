@@ -1,5 +1,6 @@
 ﻿using _01_XX_Declarando_Dependencias.Console.Comandos;
 using _01_XX_Declarando_Dependencias.Console.Servicos;
+using _02_01_XX_Declarando_Dependencias.Console.Comandos;
 
 var httpClientPet = new HttpClientPet(new AdopetAPIClientFactory().CreateClient("adopet"));
 Dictionary<string, IComando> comandosDoSistema = new()

@@ -1,7 +1,7 @@
 ﻿using Serilog;
 using Serilog.Events;
 
-namespace _02_XX_Boas_Praticas_Testes.API
+namespace _02_02_XX_Boas_Praticas_Testes.API
 {
     public static class ConfigureLogRequestSerilogExtension
     {

@@ -1,7 +1,7 @@
 ﻿using Serilog;
 using Serilog.Events;
 
-namespace _01_XX_Declarando_Dependencias.API
+namespace _02_01_XX_Declarando_Dependencias.API
 {
     public static class ConfigureLogRequestSerilogExtension
     {

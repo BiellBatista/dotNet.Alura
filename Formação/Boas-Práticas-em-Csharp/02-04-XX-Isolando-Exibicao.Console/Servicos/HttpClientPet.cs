@@ -1,7 +1,7 @@
-﻿using _04_XX_Isolando_Exibicao.Console.Modelos;
+﻿using _02_04_XX_Isolando_Exibicao.Console.Modelos;
 using System.Net.Http.Json;
 
-namespace _04_XX_Isolando_Exibicao.Console.Servicos
+namespace _02_04_XX_Isolando_Exibicao.Console.Servicos
 {
     public class HttpClientPet
     {

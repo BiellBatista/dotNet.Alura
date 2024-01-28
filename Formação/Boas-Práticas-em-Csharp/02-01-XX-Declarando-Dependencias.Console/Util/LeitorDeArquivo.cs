@@ -1,6 +1,6 @@
-﻿using _01_XX_Declarando_Dependencias.Console.Modelos;
+﻿using _02_01_XX_Declarando_Dependencias.Console.Modelos;
 
-namespace _01_XX_Declarando_Dependencias.Console.Util
+namespace _02_01_XX_Declarando_Dependencias.Console.Util
 {
     internal class LeitorDeArquivo
     {

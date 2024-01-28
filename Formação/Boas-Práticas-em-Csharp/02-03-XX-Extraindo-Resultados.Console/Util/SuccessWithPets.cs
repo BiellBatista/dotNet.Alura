@@ -1,7 +1,7 @@
-﻿using _03_XX_Extraindo_Resultados.Console.Modelos;
+﻿using _02_03_XX_Extraindo_Resultados.Console.Modelos;
 using FluentResults;
 
-namespace _03_XX_Extraindo_Resultados.Console.Util
+namespace _02_03_XX_Extraindo_Resultados.Console.Util
 {
     public class SuccessWithPets : Success
     {

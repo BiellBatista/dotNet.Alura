@@ -1,7 +1,7 @@
-﻿using _05_XX_Fabrica_Comandos.Console.Servicos;
+﻿using _02_05_XX_Fabrica_Comandos.Console.Servicos;
 using Moq;
 
-namespace _05_XX_Fabrica_Comandos.Testes.Builder
+namespace _02_05_XX_Fabrica_Comandos.Testes.Builder
 {
     internal static class HttpClientPetMockBuilder
     {

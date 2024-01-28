@@ -1,7 +1,7 @@
 ﻿using Serilog;
 using Serilog.Events;
 
-namespace _05_XX_Fabrica_Comandos.API
+namespace _02_05_XX_Fabrica_Comandos.API
 {
     public static class ConfigureLogRequestSerilogExtension
     {

@@ -1,8 +1,8 @@
-﻿using _04_XX_Isolando_Exibicao.Console.Comandos;
-using _04_XX_Isolando_Exibicao.Console.Util;
+﻿using _02_04_XX_Isolando_Exibicao.Console.Comandos;
+using _02_04_XX_Isolando_Exibicao.Console.Util;
 using System.Reflection;
 
-namespace _04_XX_Isolando_Exibicao.Testes
+namespace _02_04_XX_Isolando_Exibicao.Testes
 {
     public class GeraDocumentacaoTest
     {

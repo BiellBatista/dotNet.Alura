@@ -1,7 +1,7 @@
-﻿using _05_XX_Fabrica_Comandos.Console.Modelos;
+﻿using _02_05_XX_Fabrica_Comandos.Console.Modelos;
 using System.Net.Http.Json;
 
-namespace _05_XX_Fabrica_Comandos.Console.Servicos
+namespace _02_05_XX_Fabrica_Comandos.Console.Servicos
 {
     public class HttpClientPet
     {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace _02_XX_Boas_Praticas_Testes.API.Dominio
+namespace _02_02_XX_Boas_Praticas_Testes.API.Dominio
 {
     public class Pet
     {

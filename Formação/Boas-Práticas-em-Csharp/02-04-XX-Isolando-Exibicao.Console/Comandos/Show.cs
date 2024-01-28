@@ -1,7 +1,8 @@
-﻿using _04_XX_Isolando_Exibicao.Console.Util;
+﻿using _02_04_XX_Isolando_Exibicao.Console.Util;
+using _04_XX_Isolando_Exibicao.Console.Util;
 using FluentResults;
 
-namespace _04_XX_Isolando_Exibicao.Console.Comandos
+namespace _02_04_XX_Isolando_Exibicao.Console.Comandos
 {
     [DocComando(instrucao: "show",
        documentacao: "adopet show <ARQUIVO> comando que exibe no terminal o conteúdo do arquivo importado.")]

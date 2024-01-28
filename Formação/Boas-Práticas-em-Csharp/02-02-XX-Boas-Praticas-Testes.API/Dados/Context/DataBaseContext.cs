@@ -1,7 +1,7 @@
-﻿using _02_XX_Boas_Praticas_Testes.API.Dominio;
+﻿using _02_02_XX_Boas_Praticas_Testes.API.Dominio;
 using Microsoft.EntityFrameworkCore;
 
-namespace _02_XX_Boas_Praticas_Testes.API.Dados.Context
+namespace _02_02_XX_Boas_Praticas_Testes.API.Dados.Context
 {
     public class DataBaseContext : DbContext
     {

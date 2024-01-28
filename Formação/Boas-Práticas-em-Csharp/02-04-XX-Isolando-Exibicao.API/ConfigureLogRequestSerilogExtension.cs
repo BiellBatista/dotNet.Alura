@@ -1,7 +1,7 @@
 ﻿using Serilog;
 using Serilog.Events;
 
-namespace _04_XX_Isolando_Exibicao.API
+namespace _02_04_XX_Isolando_Exibicao.API
 {
     public static class ConfigureLogRequestSerilogExtension
     {

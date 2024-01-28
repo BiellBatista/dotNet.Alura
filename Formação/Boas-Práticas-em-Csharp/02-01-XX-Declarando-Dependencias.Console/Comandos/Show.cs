@@ -1,6 +1,6 @@
-﻿using _01_XX_Declarando_Dependencias.Console.Util;
+﻿using _02_01_XX_Declarando_Dependencias.Console.Util;
 
-namespace _01_XX_Declarando_Dependencias.Console.Comandos
+namespace _02_01_XX_Declarando_Dependencias.Console.Comandos
 {
     [DocComando(instrucao: "show",
        documentacao: "adopet show <ARQUIVO> comando que exibe no terminal o conteúdo do arquivo importado.")]

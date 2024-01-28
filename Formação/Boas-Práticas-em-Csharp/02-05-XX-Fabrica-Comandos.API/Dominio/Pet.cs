@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace _05_XX_Fabrica_Comandos.API.Dominio
+namespace _02_05_XX_Fabrica_Comandos.API.Dominio
 {
     public class Pet
     {

@@ -1,7 +1,7 @@
-﻿using _04_XX_Isolando_Exibicao.Console.Util;
+﻿using _02_04_XX_Isolando_Exibicao.Console.Util;
 using FluentResults;
 
-namespace _04_XX_Isolando_Exibicao.Console.UI
+namespace _02_04_XX_Isolando_Exibicao.Console.UI
 {
     internal static class ConsoleUI
     {

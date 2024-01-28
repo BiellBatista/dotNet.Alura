@@ -1,6 +1,6 @@
-﻿using _05_XX_Fabrica_Comandos.Console.Modelos;
+﻿using _02_05_XX_Fabrica_Comandos.Console.Modelos;
 
-namespace _05_XX_Fabrica_Comandos.Console.Util
+namespace _02_05_XX_Fabrica_Comandos.Console.Util
 {
     public static class PetAPartirDoCsv
     {

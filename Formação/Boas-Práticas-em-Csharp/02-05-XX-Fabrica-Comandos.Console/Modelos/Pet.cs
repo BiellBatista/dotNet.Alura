@@ -1,4 +1,4 @@
-﻿namespace _05_XX_Fabrica_Comandos.Console.Modelos
+﻿namespace _02_05_XX_Fabrica_Comandos.Console.Modelos
 {
     public class Pet
     {

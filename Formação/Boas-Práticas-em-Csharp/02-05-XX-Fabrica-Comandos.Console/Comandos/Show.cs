@@ -1,7 +1,8 @@
-﻿using _05_XX_Fabrica_Comandos.Console.Util;
+﻿using _02_05_XX_Fabrica_Comandos.Console.Util;
+using _05_XX_Fabrica_Comandos.Console.Util;
 using FluentResults;
 
-namespace _05_XX_Fabrica_Comandos.Console.Comandos
+namespace _02_05_XX_Fabrica_Comandos.Console.Comandos
 {
     [DocComando(instrucao: "show",
        documentacao: "adopet show <ARQUIVO> comando que exibe no terminal o conteúdo do arquivo importado.")]

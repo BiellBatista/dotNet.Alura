@@ -1,6 +1,6 @@
-﻿using _03_XX_Extraindo_Resultados.Console.Modelos;
+﻿using _02_03_XX_Extraindo_Resultados.Console.Modelos;
 
-namespace _03_XX_Extraindo_Resultados.Console.Util
+namespace _02_03_XX_Extraindo_Resultados.Console.Util
 {
     public static class PetAPartirDoCsv
     {

@@ -4,7 +4,7 @@ using Moq.Protected;
 using System.Net;
 using System.Net.Sockets;
 
-namespace _01_XX_Declarando_Dependencias.Testes
+namespace _02_01_XX_Declarando_Dependencias.Testes
 {
     public class HttpClientPetTest
     {

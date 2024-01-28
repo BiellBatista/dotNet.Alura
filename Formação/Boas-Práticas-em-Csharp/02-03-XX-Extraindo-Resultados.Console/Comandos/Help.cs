@@ -1,8 +1,8 @@
-﻿using _03_XX_Extraindo_Resultados.Console.Util;
+﻿using _02_03_XX_Extraindo_Resultados.Console.Util;
 using FluentResults;
 using System.Reflection;
 
-namespace _03_XX_Extraindo_Resultados.Console.Comandos
+namespace _02_03_XX_Extraindo_Resultados.Console.Comandos
 {
     [DocComando(instrucao: "help",
      documentacao: "adopet help comando que exibe informações da ajuda. \n" +

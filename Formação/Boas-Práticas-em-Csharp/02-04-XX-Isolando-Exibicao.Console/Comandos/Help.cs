@@ -1,8 +1,9 @@
-﻿using _04_XX_Isolando_Exibicao.Console.Util;
+﻿using _02_04_XX_Isolando_Exibicao.Console.Util;
+using _04_XX_Isolando_Exibicao.Console.Util;
 using FluentResults;
 using System.Reflection;
 
-namespace _04_XX_Isolando_Exibicao.Console.Comandos
+namespace _02_04_XX_Isolando_Exibicao.Console.Comandos
 {
     [DocComando(instrucao: "help",
      documentacao: "adopet help comando que exibe informações da ajuda. \n" +

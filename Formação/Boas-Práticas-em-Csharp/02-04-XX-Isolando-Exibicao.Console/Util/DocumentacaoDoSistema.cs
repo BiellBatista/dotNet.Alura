@@ -1,7 +1,7 @@
-﻿using _04_XX_Isolando_Exibicao.Console.Comandos;
+﻿using _02_04_XX_Isolando_Exibicao.Console.Comandos;
 using System.Reflection;
 
-namespace _04_XX_Isolando_Exibicao.Console.Util
+namespace _02_04_XX_Isolando_Exibicao.Console.Util
 {
     public class DocumentacaoDoSistema
     {

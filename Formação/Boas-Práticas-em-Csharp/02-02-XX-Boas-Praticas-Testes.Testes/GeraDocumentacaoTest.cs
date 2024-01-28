@@ -1,8 +1,8 @@
-﻿using _02_XX_Boas_Praticas_Testes.Console.Comandos;
-using _02_XX_Boas_Praticas_Testes.Console.Util;
+﻿using _02_02_XX_Boas_Praticas_Testes.Console.Comandos;
+using _02_02_XX_Boas_Praticas_Testes.Console.Util;
 using System.Reflection;
 
-namespace _02_XX_Boas_Praticas_Testes.Testes
+namespace _02_02_XX_Boas_Praticas_Testes.Testes
 {
     public class GeraDocumentacaoTest
     {

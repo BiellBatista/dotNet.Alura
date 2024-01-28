@@ -1,7 +1,8 @@
-﻿using _02_XX_Boas_Praticas_Testes.API.Dados.Context;
+﻿using _02_02_XX_Boas_Praticas_Testes.API.Dados.Context;
+using _02_02_XX_Boas_Praticas_Testes.API.Dominio;
 using _02_XX_Boas_Praticas_Testes.API.Dominio;
 
-namespace _02_XX_Boas_Praticas_Testes.API.Service
+namespace _02_02_XX_Boas_Praticas_Testes.API.Service
 {
     internal class EventoService : IEventoService
     {

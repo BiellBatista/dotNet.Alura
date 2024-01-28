@@ -1,6 +1,6 @@
 ﻿using FluentResults;
 
-namespace _04_XX_Isolando_Exibicao.Console.Util
+namespace _02_04_XX_Isolando_Exibicao.Console.Util
 {
     internal class SuccessWithDocs : Success
     {

@@ -1,8 +1,8 @@
-﻿using _05_XX_Fabrica_Comandos.Console.Comandos;
-using _05_XX_Fabrica_Comandos.Console.Util;
+﻿using _02_05_XX_Fabrica_Comandos.Console.Comandos;
+using _02_05_XX_Fabrica_Comandos.Console.Util;
 using System.Reflection;
 
-namespace _05_XX_Fabrica_Comandos.Testes
+namespace _02_05_XX_Fabrica_Comandos.Testes
 {
     public class GeraDocumentacaoTest
     {

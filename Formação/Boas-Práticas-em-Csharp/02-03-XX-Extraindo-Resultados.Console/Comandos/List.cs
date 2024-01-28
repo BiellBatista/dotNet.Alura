@@ -1,8 +1,9 @@
-﻿using _03_XX_Extraindo_Resultados.Console.Modelos;
-using _03_XX_Extraindo_Resultados.Console.Servicos;
+﻿using _02_03_XX_Extraindo_Resultados.Console.Modelos;
+using _02_03_XX_Extraindo_Resultados.Console.Servicos;
+using _03_XX_Extraindo_Resultados.Console.Comandos;
 using FluentResults;
 
-namespace _03_XX_Extraindo_Resultados.Console.Comandos
+namespace _02_03_XX_Extraindo_Resultados.Console.Comandos
 {
     [DocComando(instrucao: "list",
       documentacao: "adopet list comando que exibe no terminal o conteúdo cadastrado na base de dados da AdoPet.")]

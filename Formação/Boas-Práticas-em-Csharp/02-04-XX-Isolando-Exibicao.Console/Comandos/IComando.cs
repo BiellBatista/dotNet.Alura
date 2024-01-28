@@ -1,6 +1,6 @@
 ﻿using FluentResults;
 
-namespace _04_XX_Isolando_Exibicao.Console.Comandos
+namespace _02_04_XX_Isolando_Exibicao.Console.Comandos
 {
     internal interface IComando
     {

@@ -124,3 +124,8 @@ C#: aprenda a criar testes limpos com boas práticas
 		11 - Projeto final
 		12 - O que aprendemos?
 		13 - Conclusão
+C#: aplique princípios SOLID
+	01 - Importando Json
+		01 - Apresentação
+		02 - Preparando o ambiente
+		03 - Testes para Json

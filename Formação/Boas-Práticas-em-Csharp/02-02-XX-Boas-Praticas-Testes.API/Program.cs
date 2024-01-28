@@ -1,5 +1,5 @@
-using _02_XX_Boas_Praticas_Testes.API.Dados.Context;
-using _02_XX_Boas_Praticas_Testes.API.Service;
+using _02_02_XX_Boas_Praticas_Testes.API.Dados.Context;
+using _02_02_XX_Boas_Praticas_Testes.API.Service;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 

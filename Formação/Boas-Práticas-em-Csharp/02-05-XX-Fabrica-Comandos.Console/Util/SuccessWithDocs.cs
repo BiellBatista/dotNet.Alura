@@ -1,6 +1,6 @@
 ﻿using FluentResults;
 
-namespace _05_XX_Fabrica_Comandos.Console.Util
+namespace _02_05_XX_Fabrica_Comandos.Console.Util
 {
     internal class SuccessWithDocs : Success
     {

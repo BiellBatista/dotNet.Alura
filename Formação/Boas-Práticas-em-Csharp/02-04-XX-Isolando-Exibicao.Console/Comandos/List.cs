@@ -1,9 +1,10 @@
-﻿using _04_XX_Isolando_Exibicao.Console.Modelos;
-using _04_XX_Isolando_Exibicao.Console.Servicos;
+﻿using _02_04_XX_Isolando_Exibicao.Console.Modelos;
+using _02_04_XX_Isolando_Exibicao.Console.Servicos;
+using _04_XX_Isolando_Exibicao.Console.Comandos;
 using _04_XX_Isolando_Exibicao.Console.Util;
 using FluentResults;
 
-namespace _04_XX_Isolando_Exibicao.Console.Comandos
+namespace _02_04_XX_Isolando_Exibicao.Console.Comandos
 {
     [DocComando(instrucao: "list",
       documentacao: "adopet list comando que exibe no terminal o conteúdo cadastrado na base de dados da AdoPet.")]

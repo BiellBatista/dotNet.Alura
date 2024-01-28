@@ -1,7 +1,7 @@
-﻿using _04_XX_Isolando_Exibicao.API.Dominio;
+﻿using _02_04_XX_Isolando_Exibicao.API.Dominio;
 using Microsoft.EntityFrameworkCore;
 
-namespace _04_XX_Isolando_Exibicao.API.Dados.Context
+namespace _02_04_XX_Isolando_Exibicao.API.Dados.Context
 {
     public class DataBaseContext : DbContext
     {

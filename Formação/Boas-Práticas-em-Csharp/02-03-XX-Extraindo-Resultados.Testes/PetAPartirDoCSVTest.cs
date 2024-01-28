@@ -1,7 +1,7 @@
-﻿using _03_XX_Extraindo_Resultados.Console.Modelos;
-using _03_XX_Extraindo_Resultados.Console.Util;
+﻿using _02_03_XX_Extraindo_Resultados.Console.Modelos;
+using _02_03_XX_Extraindo_Resultados.Console.Util;
 
-namespace _03_XX_Extraindo_Resultados.Testes
+namespace _02_03_XX_Extraindo_Resultados.Testes
 {
     public class PetAPartirDoCsvTest
     {

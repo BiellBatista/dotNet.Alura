@@ -1,7 +1,7 @@
-﻿using _01_XX_Declarando_Dependencias.Console.Modelos;
+﻿using _02_01_XX_Declarando_Dependencias.Console.Modelos;
 using System.Net.Http.Json;
 
-namespace _01_XX_Declarando_Dependencias.Console.Servicos
+namespace _02_01_XX_Declarando_Dependencias.Console.Servicos
 {
     public class HttpClientPet
     {

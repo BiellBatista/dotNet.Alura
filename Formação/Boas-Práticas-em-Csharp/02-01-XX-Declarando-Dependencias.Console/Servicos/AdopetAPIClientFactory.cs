@@ -1,6 +1,6 @@
 ﻿using System.Net.Http.Headers;
 
-namespace _01_XX_Declarando_Dependencias.Console.Servicos
+namespace _02_01_XX_Declarando_Dependencias.Console.Servicos
 {
     internal class AdopetAPIClientFactory : IHttpClientFactory
     {

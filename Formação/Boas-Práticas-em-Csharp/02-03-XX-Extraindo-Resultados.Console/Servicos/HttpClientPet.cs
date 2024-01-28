@@ -1,7 +1,7 @@
-﻿using _03_XX_Extraindo_Resultados.Console.Modelos;
+﻿using _02_03_XX_Extraindo_Resultados.Console.Modelos;
 using System.Net.Http.Json;
 
-namespace _03_XX_Extraindo_Resultados.Console.Servicos
+namespace _02_03_XX_Extraindo_Resultados.Console.Servicos
 {
     public class HttpClientPet
     {

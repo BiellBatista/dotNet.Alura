@@ -1,7 +1,7 @@
-﻿using _05_XX_Fabrica_Comandos.Console.Util;
+﻿using _02_05_XX_Fabrica_Comandos.Console.Util;
 using FluentResults;
 
-namespace _05_XX_Fabrica_Comandos.Console.UI
+namespace _02_05_XX_Fabrica_Comandos.Console.UI
 {
     internal static class ConsoleUI
     {

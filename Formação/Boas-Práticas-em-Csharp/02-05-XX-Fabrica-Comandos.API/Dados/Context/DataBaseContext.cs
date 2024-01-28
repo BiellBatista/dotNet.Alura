@@ -1,7 +1,7 @@
-﻿using _05_XX_Fabrica_Comandos.API.Dominio;
+﻿using _02_05_XX_Fabrica_Comandos.API.Dominio;
 using Microsoft.EntityFrameworkCore;
 
-namespace _05_XX_Fabrica_Comandos.API.Dados.Context
+namespace _02_05_XX_Fabrica_Comandos.API.Dados.Context
 {
     public class DataBaseContext : DbContext
     {

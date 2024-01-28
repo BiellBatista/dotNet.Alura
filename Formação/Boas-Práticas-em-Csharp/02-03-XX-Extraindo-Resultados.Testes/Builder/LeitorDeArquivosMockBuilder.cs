@@ -1,8 +1,8 @@
-﻿using _03_XX_Extraindo_Resultados.Console.Modelos;
-using _03_XX_Extraindo_Resultados.Console.Util;
+﻿using _02_03_XX_Extraindo_Resultados.Console.Modelos;
+using _02_03_XX_Extraindo_Resultados.Console.Util;
 using Moq;
 
-namespace _03_XX_Extraindo_Resultados.Testes.Builder
+namespace _02_03_XX_Extraindo_Resultados.Testes.Builder
 {
     internal static class LeitorDeArquivosMockBuilder
     {
