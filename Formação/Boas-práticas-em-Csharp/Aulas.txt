@@ -140,3 +140,14 @@ C#: aplique princípios SOLID
 		01 - Projeto da aula anterior
 		02 - Preparando o ambiente: modelo de clientes
 		03 - Uma nova demanda
+		04 - Para saber mais: Generics
+		05 - Preparando a importação
+		06 - Desafio: classe de testes para ClienteService
+		07 - Leitor de clientes
+		08 - O padrão Template Method
+		09 - Para saber mais: Template Method
+		10 - Faça como eu fiz: criar leitor de clientes Json
+		11 - Desafio: criando mais testes e realizando ajustes
+		12 - Reaproveitamento de código
+		13 - Trabalhando o reaproveitamento de código (A)
+		14 - O que aprendemos?
