@@ -539,6 +539,13 @@ Formação Boas práticas em C#
 		03 - Extraindo resultados
 		04 - Isolando exibição
 		05 - Fábrica de comandos
+	C#: aplique princípios SOLID
+		01 - Importando Json
+		02 - Preparando a importação de clientes
+		03 - Importação de clientes
+		04 - Entendendo OCP
+		05 - Boas práticas de configurações
+		06 - Enviando e-mail
 -------------------------------------------------------------------------------------------------------------------------
 Formação Certificação C# Programming
 	Certificação C# Programming parte 1: Criar tipos

@@ -129,3 +129,10 @@ C#: aplique princípios SOLID
 		01 - Apresentação
 		02 - Preparando o ambiente
 		03 - Testes para Json
+		04 - Princípio da Inversão de Dependências (DIP)
+		05 - Utilizando o padrão Strategy
+		06 - Príncipio da substituição
+		07 - Desafio: criar testes para o LeitorDeArquivosFactory
+		08 - Onde estamos ferindo o DIP? (B)
+		09 - Para saber mais: os princípios DIP e LSP no ADO.NET
+		10 - O que aprendemos?
