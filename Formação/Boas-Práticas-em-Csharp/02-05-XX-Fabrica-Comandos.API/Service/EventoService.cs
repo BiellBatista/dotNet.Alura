@@ -1,6 +1,5 @@
 ﻿using _02_05_XX_Fabrica_Comandos.API.Dados.Context;
 using _02_05_XX_Fabrica_Comandos.API.Dominio;
-using _05_XX_Fabrica_Comandos.API.Dominio;
 
 namespace _02_05_XX_Fabrica_Comandos.API.Service
 {

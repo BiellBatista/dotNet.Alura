@@ -1,7 +1,6 @@
 ﻿using _02_05_XX_Fabrica_Comandos.Console.Modelos;
 using _02_05_XX_Fabrica_Comandos.Console.Servicos;
-using _05_XX_Fabrica_Comandos.Console.Comandos;
-using _05_XX_Fabrica_Comandos.Console.Util;
+using _02_05_XX_Fabrica_Comandos.Console.Util;
 using FluentResults;
 
 namespace _02_05_XX_Fabrica_Comandos.Console.Comandos

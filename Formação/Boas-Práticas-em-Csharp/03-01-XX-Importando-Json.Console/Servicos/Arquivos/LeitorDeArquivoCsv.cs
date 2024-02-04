@@ -6,6 +6,7 @@ namespace _03_01_XX_Importando_Json.Console.Servicos.Arquivos;
 public class LeitorDeArquivoCsv : ILeitorDeArquivos
 {
     private string caminhoDoArquivoASerLido;
+
     public LeitorDeArquivoCsv(string caminhoDoArquivoASerLido)
     {
         this.caminhoDoArquivoASerLido = caminhoDoArquivoASerLido;

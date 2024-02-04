@@ -1,5 +1,4 @@
-﻿using _01_XX_Declarando_Dependencias.API.Dominio;
-using _02_01_XX_Declarando_Dependencias.API.Dados.Context;
+﻿using _02_01_XX_Declarando_Dependencias.API.Dados.Context;
 using _02_01_XX_Declarando_Dependencias.API.Dominio;
 
 namespace _02_01_XX_Declarando_Dependencias.API.Service

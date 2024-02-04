@@ -1,7 +1,7 @@
-﻿using _02_04_XX_Isolando_Exibicao.Console.Modelos;
+﻿using _02_04_XX_Isolando_Exibicao.Console.Comandos;
+using _02_04_XX_Isolando_Exibicao.Console.Modelos;
+using _02_04_XX_Isolando_Exibicao.Console.Servicos;
 using _02_04_XX_Isolando_Exibicao.Testes.Builder;
-using _04_XX_Isolando_Exibicao.Console.Comandos;
-using _04_XX_Isolando_Exibicao.Console.Servicos;
 
 namespace _02_04_XX_Isolando_Exibicao.Testes
 {

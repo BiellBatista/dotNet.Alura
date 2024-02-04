@@ -1,6 +1,5 @@
-﻿using Alura.Adopet.Console.Servicos.Http;
-using Alura.Adopet.Console.Comandos;
-using _03_01_XX_Importando_Json.Console.Servicos.Arquivos;
+﻿using _03_01_XX_Importando_Json.Console.Servicos.Arquivos;
+using _03_01_XX_Importando_Json.Console.Servicos.Http;
 
 namespace _03_01_XX_Importando_Json.Console.Comandos;
 

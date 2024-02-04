@@ -5,6 +5,7 @@ namespace _03_01_XX_Importando_Json.Console.Servicos.Http;
 public class AdopetAPIClientFactory : IHttpClientFactory
 {
     private string url = "http://localhost:5057";
+
     public HttpClient CreateClient(string name)
     {
         HttpClient _client = new HttpClient();

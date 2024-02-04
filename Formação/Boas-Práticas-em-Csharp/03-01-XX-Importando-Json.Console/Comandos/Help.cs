@@ -1,8 +1,8 @@
-﻿using Alura.Adopet.Console.Results;
+﻿using _03_01_XX_Importando_Json.Console.Atributos;
+using _03_01_XX_Importando_Json.Console.Results;
+using _03_01_XX_Importando_Json.Console.Util;
 using FluentResults;
 using System.Reflection;
-using _03_01_XX_Importando_Json.Console.Util;
-using _03_01_XX_Importando_Json.Console.Atributos;
 
 namespace _03_01_XX_Importando_Json.Console.Comandos
 {
@@ -13,6 +13,7 @@ namespace _03_01_XX_Importando_Json.Console.Comandos
     {
         private Dictionary<string, DocComandoAttribute> docs;
         private string? comando;
+
         public Help(string? comando)
         {
             docs = DocumentacaoDoSistema.ToDictionary(Assembly.GetExecutingAssembly());
@@ -56,7 +57,6 @@ namespace _03_01_XX_Importando_Json.Console.Comandos
                     resultado.Add("Comando não encontrado!");
                     throw new ArgumentException();
                 }
-
             }
             return resultado;
         }

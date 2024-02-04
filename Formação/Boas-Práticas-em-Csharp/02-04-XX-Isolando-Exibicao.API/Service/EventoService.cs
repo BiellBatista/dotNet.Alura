@@ -1,6 +1,5 @@
 ﻿using _02_04_XX_Isolando_Exibicao.API.Dados.Context;
 using _02_04_XX_Isolando_Exibicao.API.Dominio;
-using _04_XX_Isolando_Exibicao.API.Dominio;
 
 namespace _02_04_XX_Isolando_Exibicao.API.Service
 {

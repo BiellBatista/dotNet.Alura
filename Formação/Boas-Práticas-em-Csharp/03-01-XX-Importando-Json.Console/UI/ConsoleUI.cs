@@ -1,5 +1,4 @@
 ﻿using _03_01_XX_Importando_Json.Console.Results;
-using Alura.Adopet.Console.Comandos;
 using FluentResults;
 
 namespace _03_01_XX_Importando_Json.Console.UI
@@ -24,7 +23,6 @@ namespace _03_01_XX_Importando_Json.Console.UI
             {
                 System.Console.ForegroundColor = ConsoleColor.White;
             }
-
         }
 
         private static void ExibeSucesso(Result result)
@@ -35,6 +33,7 @@ namespace _03_01_XX_Importando_Json.Console.UI
                 case SuccessWithPets s:
                     ExibirPets(s);
                     break;
+
                 case SuccessWithDocs d:
                     ExibeDocumentacao(d);
                     break;

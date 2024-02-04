@@ -1,7 +1,7 @@
-﻿using _02_05_XX_Fabrica_Comandos.Console.Modelos;
+﻿using _02_05_XX_Fabrica_Comandos.Console.Comandos;
+using _02_05_XX_Fabrica_Comandos.Console.Modelos;
 using _02_05_XX_Fabrica_Comandos.Console.Util;
 using _02_05_XX_Fabrica_Comandos.Testes.Builder;
-using _05_XX_Fabrica_Comandos.Console.Comandos;
 using Moq;
 
 namespace _02_05_XX_Fabrica_Comandos.Testes

@@ -1,8 +1,6 @@
 ﻿using _02_03_XX_Extraindo_Resultados.Console.Modelos;
 using _02_03_XX_Extraindo_Resultados.Console.Servicos;
 using _02_03_XX_Extraindo_Resultados.Console.Util;
-using _03_XX_Extraindo_Resultados.Console.Comandos;
-using _03_XX_Extraindo_Resultados.Console.Util;
 using FluentResults;
 
 namespace _02_03_XX_Extraindo_Resultados.Console.Comandos

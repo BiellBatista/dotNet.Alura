@@ -1,6 +1,6 @@
-﻿using System.Net.Http.Json;
-using _03_01_XX_Importando_Json.Console.Modelos;
+﻿using _03_01_XX_Importando_Json.Console.Modelos;
 using _03_01_XX_Importando_Json.Console.Servicos.Abstracoes;
+using System.Net.Http.Json;
 
 namespace _03_01_XX_Importando_Json.Console.Servicos.Http;
 

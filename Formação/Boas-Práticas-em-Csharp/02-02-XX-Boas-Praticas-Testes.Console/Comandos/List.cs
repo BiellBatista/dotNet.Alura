@@ -1,6 +1,5 @@
 ﻿using _02_02_XX_Boas_Praticas_Testes.Console.Modelos;
 using _02_02_XX_Boas_Praticas_Testes.Console.Servicos;
-using _02_XX_Boas_Praticas_Testes.Console.Comandos;
 
 namespace _02_02_XX_Boas_Praticas_Testes.Console.Comandos
 {

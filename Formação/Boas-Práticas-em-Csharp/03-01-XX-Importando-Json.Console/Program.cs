@@ -11,4 +11,4 @@ if (comando is not null)
 else
 {
     ConsoleUI.ExibeResultado(Result.Fail("Comando inválido!"));
-}         
+}

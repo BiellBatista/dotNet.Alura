@@ -1,5 +1,5 @@
 ﻿using _02_04_XX_Isolando_Exibicao.Console.Modelos;
-using _04_XX_Isolando_Exibicao.Console.Util;
+using _02_04_XX_Isolando_Exibicao.Console.Util;
 
 namespace _02_04_XX_Isolando_Exibicao.Testes
 {

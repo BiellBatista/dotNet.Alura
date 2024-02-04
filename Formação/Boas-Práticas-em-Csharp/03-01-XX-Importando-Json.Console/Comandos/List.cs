@@ -1,8 +1,8 @@
-﻿using Alura.Adopet.Console.Atributos;
-using Alura.Adopet.Console.Results;
-using FluentResults;
+﻿using _03_01_XX_Importando_Json.Console.Atributos;
 using _03_01_XX_Importando_Json.Console.Modelos;
+using _03_01_XX_Importando_Json.Console.Results;
 using _03_01_XX_Importando_Json.Console.Servicos.Abstracoes;
+using FluentResults;
 
 namespace _03_01_XX_Importando_Json.Console.Comandos
 {
@@ -31,11 +31,8 @@ namespace _03_01_XX_Importando_Json.Console.Comandos
             }
             catch (Exception exception)
             {
-
                 return Result.Fail(new Error("Listagem falhou!").CausedBy(exception));
             }
-
         }
-
     }
 }

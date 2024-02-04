@@ -1,8 +1,7 @@
-﻿using Alura.Adopet.Console.Servicos.Arquivos;
-using Alura.Adopet.Console.Atributos;
-using Alura.Adopet.Console.Results;
-using FluentResults;
+﻿using _03_01_XX_Importando_Json.Console.Atributos;
+using _03_01_XX_Importando_Json.Console.Results;
 using _03_01_XX_Importando_Json.Console.Servicos.Abstracoes;
+using FluentResults;
 
 namespace _03_01_XX_Importando_Json.Console.Comandos
 {
@@ -33,7 +32,6 @@ namespace _03_01_XX_Importando_Json.Console.Comandos
         {
             var listaDepets = leitor.RealizaLeitura();
             return Task.FromResult(Result.Ok().WithSuccess(new SuccessWithPets(listaDepets, "Exibição do arquivo realizada com sucesso!")));
-
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using _01_XX_Declarando_Dependencias.Console.Comandos;
-using _02_01_XX_Declarando_Dependencias.Console.Modelos;
+﻿using _02_01_XX_Declarando_Dependencias.Console.Modelos;
 using _02_01_XX_Declarando_Dependencias.Console.Servicos;
 
 namespace _02_01_XX_Declarando_Dependencias.Console.Comandos

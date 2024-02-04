@@ -2,10 +2,6 @@
 using _03_01_XX_Importando_Json.API.Dominio;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using Serilog;
-using Serilog.Events;
-using System.IO;
 
 namespace _03_01_XX_Importando_Json.API.Controladores
 {
@@ -13,7 +9,6 @@ namespace _03_01_XX_Importando_Json.API.Controladores
     [Route("/pet/")]
     public class PetController : ControllerBase
     {
-
         [HttpGet]
         [Route("list")]
         public async Task<IResult> ListaDePet()
@@ -23,7 +18,6 @@ namespace _03_01_XX_Importando_Json.API.Controladores
             //     .WriteTo.Console()
             //     .WriteTo.File("AdoPetAPI-Actions-logs.txt", rollingInterval: RollingInterval.Day)
             //     .CreateLogger();
-
 
             var options = new DbContextOptionsBuilder<DataBaseContext>()
             .UseInMemoryDatabase("AdopetDB")
@@ -63,7 +57,6 @@ namespace _03_01_XX_Importando_Json.API.Controladores
             //              .WriteTo.File(filename, outputTemplate: template)
             //              .CreateLogger();
 
-
             var options = new DbContextOptionsBuilder<DataBaseContext>()
             .UseInMemoryDatabase("AdopetDB")
             .Options;
@@ -86,9 +79,7 @@ namespace _03_01_XX_Importando_Json.API.Controladores
                 // Log.CloseAndFlush();
             }
 
-
             return Results.Ok();
-
         }
     }
 }

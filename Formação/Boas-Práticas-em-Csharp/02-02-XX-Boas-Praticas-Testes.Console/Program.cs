@@ -1,7 +1,6 @@
 ﻿using _02_02_XX_Boas_Praticas_Testes.Console.Comandos;
-using _02_XX_Boas_Praticas_Testes.Console.Comandos;
-using _02_XX_Boas_Praticas_Testes.Console.Servicos;
-using _02_XX_Boas_Praticas_Testes.Console.Util;
+using _02_02_XX_Boas_Praticas_Testes.Console.Servicos;
+using _02_02_XX_Boas_Praticas_Testes.Console.Util;
 
 var httpClientPet = new HttpClientPet(new AdopetAPIClientFactory().CreateClient("adopet"));
 var leitorDeArquivos = new LeitorDeArquivo(caminhoDoArquivoASerLido: args[1]);

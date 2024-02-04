@@ -1,6 +1,5 @@
-﻿using Serilog.Events;
-using Serilog;
-using Serilog.Filters;
+﻿using Serilog;
+using Serilog.Events;
 
 namespace _03_01_XX_Importando_Json.API
 {

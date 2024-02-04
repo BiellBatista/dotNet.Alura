@@ -1,5 +1,4 @@
 ﻿using _02_04_XX_Isolando_Exibicao.Console.Util;
-using _04_XX_Isolando_Exibicao.Console.Util;
 using FluentResults;
 
 namespace _02_04_XX_Isolando_Exibicao.Console.Comandos

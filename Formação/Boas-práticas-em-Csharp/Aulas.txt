@@ -136,3 +136,7 @@ C#: aplique princípios SOLID
 		08 - Onde estamos ferindo o DIP? (B)
 		09 - Para saber mais: os princípios DIP e LSP no ADO.NET
 		10 - O que aprendemos?
+	02 - Preparando a importação de clientes
+		01 - Projeto da aula anterior
+		02 - Preparando o ambiente: modelo de clientes
+		03 - Uma nova demanda

@@ -1,12 +1,12 @@
 ﻿using _03_01_XX_Importando_Json.API.Dados.Context;
 using _03_01_XX_Importando_Json.API.Dominio;
-using Alura.Adopet.API.Dominio;
 
 namespace _03_01_XX_Importando_Json.API.Service
 {
     internal class EventoService : IEventoService
     {
         private DataBaseContext _context;
+
         public EventoService(DataBaseContext context)
         {
             _context = context;
@@ -28,7 +28,6 @@ namespace _03_01_XX_Importando_Json.API.Service
             };
             _context.Add(pet);
             _context.SaveChanges();
-
         }
     }
 }

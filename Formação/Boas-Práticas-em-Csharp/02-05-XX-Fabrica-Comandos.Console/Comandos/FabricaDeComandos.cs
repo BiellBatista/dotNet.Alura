@@ -1,6 +1,5 @@
-﻿using _02_05_XX_Fabrica_Comandos.Console.Util;
-using _05_XX_Fabrica_Comandos.Console.Comandos;
-using _05_XX_Fabrica_Comandos.Console.Servicos;
+﻿using _02_05_XX_Fabrica_Comandos.Console.Servicos;
+using _02_05_XX_Fabrica_Comandos.Console.Util;
 
 namespace _02_05_XX_Fabrica_Comandos.Console.Comandos
 {

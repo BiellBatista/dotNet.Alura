@@ -1,9 +1,6 @@
 using _03_01_XX_Importando_Json.API.Dados.Context;
 using _03_01_XX_Importando_Json.API.Service;
-using Alura.Adopet.API;
-using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);// Criando uma aplicação Web.
@@ -17,8 +14,9 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
 );
 
-builder.Services.AddScoped<IEventoService,EventoService>()               
-                .AddDbContext<DataBaseContext>(opt => {
+builder.Services.AddScoped<IEventoService, EventoService>()
+                .AddDbContext<DataBaseContext>(opt =>
+                {
                     opt.UseInMemoryDatabase("AdopetDB");
                     opt.UseLoggerFactory(LoggerFactory.Create(builder =>
                     {
@@ -36,7 +34,7 @@ builder.Services.AddSwaggerGen();
 //    {
 //        opt.LoggingFields = HttpLoggingFields.RequestPropertiesAndHeaders|
 //                            HttpLoggingFields.ResponsePropertiesAndHeaders|
-//                            HttpLoggingFields.ResponseBody| 
+//                            HttpLoggingFields.ResponseBody|
 //                            HttpLoggingFields.ResponseBody;
 //    });
 
@@ -51,7 +49,6 @@ eventoService.GenerateFakeDate();
 
 // Ativando o Swagger
 app.UseSwagger();
-
 
 // Ativando a interface Swagger
 app.UseSwaggerUI(

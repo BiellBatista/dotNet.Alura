@@ -3,9 +3,11 @@ using _03_01_XX_Importando_Json.Console.Servicos.Abstracoes;
 using System.Text.Json;
 
 namespace _03_01_XX_Importando_Json.Console.Servicos.Arquivos;
+
 public class LeitorDeArquivosJson : ILeitorDeArquivos
 {
     private string caminhoArquivo;
+
     public LeitorDeArquivosJson(string caminhoArquivo)
     {
         this.caminhoArquivo = caminhoArquivo;
