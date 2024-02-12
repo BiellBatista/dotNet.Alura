@@ -151,3 +151,8 @@ C#: aplique princípios SOLID
 		12 - Reaproveitamento de código
 		13 - Trabalhando o reaproveitamento de código (A)
 		14 - O que aprendemos?
+	03 - Importação de clientes
+		01 - Projeto da aula anterior
+		02 - Preparando o ambiente
+		03 - Mão na massa: comando de importação de clientes
+		04 - Ajustando a importação de clientes
