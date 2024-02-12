@@ -156,3 +156,10 @@ C#: aplique princípios SOLID
 		02 - Preparando o ambiente
 		03 - Mão na massa: comando de importação de clientes
 		04 - Ajustando a importação de clientes
+		05 - Resolvendo a exibição
+		06 - Desafio: importação via Json com defeito
+		07 - Testes de mutação
+		08 - Para saber mais: biblioteca Stryker.NET
+		09 - Alerta! Mutantes na fábrica
+		10 - Desafio: reaproveitando os testes da fábrica
+		11 - O que aprendemos?
