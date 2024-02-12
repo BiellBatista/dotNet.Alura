@@ -163,3 +163,6 @@ C#: aplique princípios SOLID
 		09 - Alerta! Mutantes na fábrica
 		10 - Desafio: reaproveitando os testes da fábrica
 		11 - O que aprendemos?
+	04 - Entendendo OCP
+		01 - Projeto da aula anterior
+		02 - Extraindo um tipo
