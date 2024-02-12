@@ -166,3 +166,10 @@ C#: aplique princípios SOLID
 	04 - Entendendo OCP
 		01 - Projeto da aula anterior
 		02 - Extraindo um tipo
+		03 - Eliminando o switch
+		04 - Faça como eu fiz: fábrica dos outros comandos
+		05 - Cadeia de responsabilidades
+		06 - OCP é uma contradição?
+		07 - Para saber mais: aberto e fechado ao mesmo tempo
+		08 - Fixando o conceito de OCP (C / D)
+		09 - O que aprendemos?
