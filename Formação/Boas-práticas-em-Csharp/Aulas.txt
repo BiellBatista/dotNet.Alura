@@ -185,3 +185,16 @@ C#: aplique princípios SOLID
 		09 - Para saber mais: Estudo de caso - ISP em outros contextos
 		10 - Procedimento de configuração (A / B / D / E)
 		11 - O que aprendemos?
+	06 - Enviando e-mail
+		01 - Projeto da aula anterior
+		02 - Mais uma vez SRP
+		03 - Para saber mais: recapitulando o SRP
+		04 - Eventos e o padrão Observer
+		05 - Faça como eu fiz: outros eventos
+		06 - Delegate
+		07 - Para saber mais: delegates
+		08 - Eventos e delegates (C)
+		09 - Projeto final do curso
+		10 - Índice remissivo
+		11 - O que aprendemos?
+		12 - Conclusão
