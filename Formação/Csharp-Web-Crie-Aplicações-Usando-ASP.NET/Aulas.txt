@@ -5,3 +5,13 @@
 		03 - Preparando o ambiente: SQL Server
 		04 - Preparando o ambiente: scripts do banco de dados
 		05 - Usando banco de dados
+		06 - Conectando ao BD
+		07 - Para saber mais: using
+		08 - Consulta de Artistas
+		09 - Para saber mais: ADO.NET
+		10 - Incluindo Artista
+		11 - Para saber mais: DAL e DAO
+		12 - Estabelecendo conexão com ADO.NET (A)
+		13 - Faça como eu fiz: utilizando banco de dados
+		14 - Mão na massa: incluindo os métodos Atualizar e Deletar
+		15 - O que aprendemos?
