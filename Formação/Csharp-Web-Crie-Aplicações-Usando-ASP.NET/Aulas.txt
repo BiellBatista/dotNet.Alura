@@ -15,3 +15,7 @@
 		13 - Faça como eu fiz: utilizando banco de dados
 		14 - Mão na massa: incluindo os métodos Atualizar e Deletar
 		15 - O que aprendemos?
+	02 - Bibliotecas ORM
+		01 - Projeto da aula anterior
+		02 - Para saber mais: versão dos pacotes utilizados
+		03 - Instalando o Entity

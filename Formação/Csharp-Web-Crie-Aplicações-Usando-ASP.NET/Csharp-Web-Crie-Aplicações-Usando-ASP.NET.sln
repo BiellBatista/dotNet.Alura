@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Persistindo-Dados-Entity
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-01-XX-Uso-Banco-Dados", "01-01-XX-Uso-Banco-Dados\01-01-XX-Uso-Banco-Dados.csproj", "{27BC2104-38FB-40B3-B4D1-0CA29E3D3EA0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-02-XX-Bibliotecas-ORM", "01-02-XX-Bibliotecas-ORM\01-02-XX-Bibliotecas-ORM.csproj", "{80705542-693E-49EA-B539-B0AE3E2D2E9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{27BC2104-38FB-40B3-B4D1-0CA29E3D3EA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27BC2104-38FB-40B3-B4D1-0CA29E3D3EA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27BC2104-38FB-40B3-B4D1-0CA29E3D3EA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80705542-693E-49EA-B539-B0AE3E2D2E9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80705542-693E-49EA-B539-B0AE3E2D2E9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80705542-693E-49EA-B539-B0AE3E2D2E9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80705542-693E-49EA-B539-B0AE3E2D2E9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{27BC2104-38FB-40B3-B4D1-0CA29E3D3EA0} = {6E2D8163-CDBD-4F92-8A70-82A877E7250D}
+		{80705542-693E-49EA-B539-B0AE3E2D2E9A} = {6E2D8163-CDBD-4F92-8A70-82A877E7250D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {26E1FA4D-B457-4AAB-B400-A20A40B3895B}
