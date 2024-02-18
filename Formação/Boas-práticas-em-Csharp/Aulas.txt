@@ -173,3 +173,6 @@ C#: aplique princípios SOLID
 		07 - Para saber mais: aberto e fechado ao mesmo tempo
 		08 - Fixando o conceito de OCP (C / D)
 		09 - O que aprendemos?
+	05 - Boas práticas de configurações
+		01 - Projeto da aula anterior
+		02 - Configurações e Padrão Builder
