@@ -1,0 +1,7 @@
+.NET: persistindo dados com Entity Framework Core
+	01 - Uso de Banco de Dados
+		01 - Apresentação
+		02 - Projeto inicial do curso
+		03 - Preparando o ambiente: SQL Server
+		04 - Preparando o ambiente: scripts do banco de dados
+		05 - Usando banco de dados

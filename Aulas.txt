@@ -667,6 +667,33 @@ Formação C# e Orientação a Objetos
 		05 - StackTrace e InnerException
 		06 - Bloco finally
 -------------------------------------------------------------------------------------------------------------------------
+Formação C# Web: crie aplicações usando ASP.NET
+	.NET: persistindo dados com Entity Framework Core
+		01 - Uso de Banco de Dados
+		02 - Bibliotecas ORM
+		03 - Generics
+		04 - Migrations
+		05 - Relacionamento
+	.NET: criando uma API Web com ASP.NET Core
+		01 - Arquitetura mínima
+		02 - Montando uma API mínima
+		03 - Boas práticas na construção de uma API
+		04 - Relacionando gênero
+		05 - DevOps
+	.NET: desenvolvendo uma aplicação web com ASP.NET Core Blazor
+		01 - Web App com Blazor
+		02 - CRUD de artista
+		03 - Upload de imagens
+		04 - Trabalhando a música
+		05 - Deploy no Azure
+	ASP.NET: autenticação e autorização em APIs e aplicações web
+		01 - Autenticação e autorização na API
+		02 - Autenticação na app web
+		03 - Estado da autenticação
+		04 - Autorização na app web
+		05 - Classificação de artistas
+		06 - Projeto extra: lista de tarefas
+-------------------------------------------------------------------------------------------------------------------------
 Formação Desenvolvedor .NET
 	Curso C# Parte 1: Primeiros Passos
 		01 - História e ecossistema da linguagem
