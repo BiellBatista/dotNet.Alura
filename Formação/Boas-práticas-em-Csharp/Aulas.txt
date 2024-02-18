@@ -176,3 +176,12 @@ C#: aplique princípios SOLID
 	05 - Boas práticas de configurações
 		01 - Projeto da aula anterior
 		02 - Configurações e Padrão Builder
+		03 - Para saber mais: configuração de aplicações .NET
+		04 - System.Net.Mail
+		05 - Preparando o ambiente: serviço de e-mail
+		06 - Princípio da segregação de interfaces
+		07 - User Secrets
+		08 - Para saber mais: segredos de usuários
+		09 - Para saber mais: Estudo de caso - ISP em outros contextos
+		10 - Procedimento de configuração (A / B / D / E)
+		11 - O que aprendemos?
