@@ -1,4 +1,4 @@
-﻿namespace _02_01_XX_Arquitetura_Minima.Shared.Modelos.Modelos;
+﻿namespace _02_02_XX_Montando_API_Minima.Shared.Modelos.Modelos;
 
 public class Musica
 {

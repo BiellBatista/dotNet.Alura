@@ -2,7 +2,7 @@
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>_02_01_XX_Arquitetura_Minima.Shared.Modelos</RootNamespace>
+    <RootNamespace>_02_02_XX_Montando_API_Minima.Shared.Modelos</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 </Project>

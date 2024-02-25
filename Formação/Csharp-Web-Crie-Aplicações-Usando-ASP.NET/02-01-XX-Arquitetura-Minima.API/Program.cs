@@ -1,5 +1,5 @@
+using _02_01_XX_Arquitetura_Minima.Shared.Modelos.Modelos;
 using _02_01_XX_Arquitetura_Minima_Shared_Dados.Banco;
-using _02_01_XX_Arquitetura_Minima_Shared_Modelos.Modelos;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -78,3 +78,6 @@
 		10 - Organizando o projeto (A)
 		11 - Faça como eu fiz: organizando dados para utilizar API
 		12 - O que aprendemos?
+	02 - Montando uma API mínima
+		01 - Projeto da aula anterior
+		02 - Entendendo rotas e códigos de resposta

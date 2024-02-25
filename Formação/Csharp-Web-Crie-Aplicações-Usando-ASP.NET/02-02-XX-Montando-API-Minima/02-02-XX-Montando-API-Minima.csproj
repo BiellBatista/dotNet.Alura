@@ -2,10 +2,15 @@
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>_02_01_XX_Arquitetura_Minima.Shared.Dados</RootNamespace>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>_02_02_XX_Montando_API_Minima</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
-  
+
+  <ItemGroup>
+    <Compile Remove="Menus\MenuAvaliarAlbum.cs" />
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2">
@@ -19,8 +24,9 @@
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.2" />
   </ItemGroup>
-  
+
   <ItemGroup>
-    <ProjectReference Include="..\02-01-XX-Arquitetura-Minima.Shared.Modelos\02-01-XX-Arquitetura-Minima.Shared.Modelos.csproj" />
+    <ProjectReference Include="..\02-02-XX-Montando-API-Minima.Shared.Dados\02-02-XX-Montando-API-Minima.Shared.Dados.csproj" />
+    <ProjectReference Include="..\02-02-XX-Montando-API-Minima.Shared.Modelos\02-02-XX-Montando-API-Minima.Shared.Modelos.csproj" />
   </ItemGroup>
 </Project>

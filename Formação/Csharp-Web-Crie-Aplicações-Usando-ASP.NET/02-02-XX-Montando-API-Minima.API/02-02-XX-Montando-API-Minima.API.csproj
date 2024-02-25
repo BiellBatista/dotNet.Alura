@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>_02_02_XX_Montando_API_Minima.API</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\02-02-XX-Montando-API-Minima.Shared.Dados\02-02-XX-Montando-API-Minima.Shared.Dados.csproj" />
+    <ProjectReference Include="..\02-02-XX-Montando-API-Minima.Shared.Modelos\02-02-XX-Montando-API-Minima.Shared.Modelos.csproj" />
+  </ItemGroup>
+</Project>

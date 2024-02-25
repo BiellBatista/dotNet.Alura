@@ -2,7 +2,7 @@
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>_02_01_XX_Arquitetura_Minima_API</RootNamespace>
+    <RootNamespace>_02_01_XX_Arquitetura_Minima.API</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
