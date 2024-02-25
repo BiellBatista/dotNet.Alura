@@ -19,3 +19,13 @@
 		01 - Projeto da aula anterior
 		02 - Para saber mais: versão dos pacotes utilizados
 		03 - Instalando o Entity
+		04 - Para saber mais: bibliotecas ORM
+		05 - Mapeando Artistas
+		06 - Para saber mais: convenções de mapeamento do Entity
+		07 - Refatorando ArtistaDAL
+		08 - Mão na massa: criando o método recuperar pelo nome
+		09 - Ajustando o menu
+		10 - Refatorando DAL com EF (C)
+		11 - Faça como eu fiz: aplicando o Entity Framework
+		12 - Mão na massa: persistindo músicas
+		13 - O que aprendemos?
