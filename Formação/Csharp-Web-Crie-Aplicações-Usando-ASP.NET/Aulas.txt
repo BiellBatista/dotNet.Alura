@@ -43,3 +43,12 @@
 	04 - Migrations
 		01 - Projeto da aula anterior
 		02 - Utilizando Migrations
+		03 - Para saber mais: Migrations
+		04 - Update-Database
+		05 - Inserindo dados
+		06 - Adicionando uma nova coluna
+		07 - Para saber mais: utilização das Migrations no dia a dia
+		08 - Iniciando com Migrations (A)
+		09 - Faça como eu fiz: implementando Migrations
+		10 - Mão na massa: adicionando músicas na tabela
+		11 - O que aprendemos?
