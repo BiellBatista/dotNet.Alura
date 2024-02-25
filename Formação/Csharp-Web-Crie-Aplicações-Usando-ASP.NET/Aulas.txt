@@ -92,3 +92,6 @@
 		11 - Implementando endpoints (B)
 		12 - Mão na massa: criando os endpoints de música
 		13 - O que aprendemos?
+	03 - Boas práticas na construção de uma API
+		01 - Projeto da aula anterior
+		02 - Separando as responsabilidades
