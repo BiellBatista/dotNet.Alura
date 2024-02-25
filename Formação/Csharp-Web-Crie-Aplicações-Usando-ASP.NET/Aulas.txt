@@ -95,3 +95,14 @@
 	03 - Boas práticas na construção de uma API
 		01 - Projeto da aula anterior
 		02 - Separando as responsabilidades
+		03 - Para saber mais: Príncipio da Responsabilidade Única
+		04 - Faça como eu fiz: aplicando boas práticas ao projeto - Responsabilidade
+		05 - Preparando o ambiente: instalação do Swagger
+		06 - Adicionando o Swagger
+		07 - Request
+		08 - Para saber mais: padrão DTO
+		09 - Aplicando o padrão DTO (B)
+		10 - Mão na massa: request de música
+		11 - Mão na massa: implementando a atualização de artistas e músicas
+		12 - Mão na massa: response
+		13 - O que aprendemos?
