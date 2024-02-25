@@ -70,3 +70,11 @@
 		02 - Preparando o ambiente: projeto inicial do curso
 		03 - Preparando o ambiente: preparando o banco de dados
 		04 - Centralizando as informações através de uma API
+		05 - Para saber mais: ASP.NET Core
+		06 - Criação do projeto Shared.Modelos
+		07 - Criação do projeto Shared.Data
+		08 - Retornando artistas pela API
+		09 - Para saber mais: o que é uma API?
+		10 - Organizando o projeto (A)
+		11 - Faça como eu fiz: organizando dados para utilizar API
+		12 - O que aprendemos?
