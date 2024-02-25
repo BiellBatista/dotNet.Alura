@@ -81,3 +81,14 @@
 	02 - Montando uma API mínima
 		01 - Projeto da aula anterior
 		02 - Entendendo rotas e códigos de resposta
+		03 - Para saber mais: códigos de retorno HTTP
+		04 - Preparando o ambiente: download do Postman
+		05 - Adicionando o Artista
+		06 - Injeção de dependência
+		07 - Removendo Artistas
+		08 - Atualizando o Artista
+		09 - Para saber mais: API REST
+		10 - Faça como eu fiz: construindo os endpoints de artista
+		11 - Implementando endpoints (B)
+		12 - Mão na massa: criando os endpoints de música
+		13 - O que aprendemos?
