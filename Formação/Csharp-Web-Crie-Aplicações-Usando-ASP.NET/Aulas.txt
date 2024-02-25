@@ -52,3 +52,6 @@
 		09 - Faça como eu fiz: implementando Migrations
 		10 - Mão na massa: adicionando músicas na tabela
 		11 - O que aprendemos?
+	05 - Relacionamento
+		01 - Projeto da aula anterior
+		02 - Relacionando artista a música
