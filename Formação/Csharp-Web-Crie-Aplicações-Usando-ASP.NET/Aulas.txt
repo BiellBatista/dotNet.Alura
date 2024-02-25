@@ -106,3 +106,6 @@
 		11 - Mão na massa: implementando a atualização de artistas e músicas
 		12 - Mão na massa: response
 		13 - O que aprendemos?
+	04 - Relacionando gênero
+		01 - Projeto da aula anterior
+		02 - Criando uma entidade gênero

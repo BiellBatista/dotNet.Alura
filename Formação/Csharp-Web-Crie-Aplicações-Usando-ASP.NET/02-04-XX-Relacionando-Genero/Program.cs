@@ -1,6 +1,6 @@
-﻿using _02_01_XX_Arquitetura_Minima.Menus;
-using _02_01_XX_Arquitetura_Minima.Shared.Dados.Banco;
-using _02_01_XX_Arquitetura_Minima.Shared.Modelos.Modelos;
+﻿using _02_04_XX_Relacionando_Genero.Menus;
+using _02_04_XX_Relacionando_Genero.Shared.Dados.Banco;
+using _02_04_XX_Relacionando_Genero.Shared.Modelos.Modelos;
 
 var context = new ScreenSoundContext();
 var artistaDAL = new DAL<Artista>(context);

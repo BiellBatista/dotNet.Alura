@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>_02_04_XX_Relacionando_Genero.API</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\02-04-XX-Relacionando-Genero.Shared.Dados\02-04-XX-Relacionando-Genero.Shared.Dados.csproj" />
+    <ProjectReference Include="..\02-04-XX-Relacionando-Genero.Shared.Modelos\02-04-XX-Relacionando-Genero.Shared.Modelos.csproj" />
+  </ItemGroup>
+</Project>
