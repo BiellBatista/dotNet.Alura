@@ -55,3 +55,12 @@
 	05 - Relacionamento
 		01 - Projeto da aula anterior
 		02 - Relacionando artista a música
+		03 - Adicionando informações na nova coluna
+		04 - Exibindo no menu
+		05 - Para saber mais: Proxies
+		06 - Proxies em C# (A)
+		07 - Faça como eu fiz: relacionando tabelas
+		08 - Mão na massa: adicionando um novo menu
+		09 - Projeto final do curso
+		10 - O que aprendemos?
+		11 - Conclusão
