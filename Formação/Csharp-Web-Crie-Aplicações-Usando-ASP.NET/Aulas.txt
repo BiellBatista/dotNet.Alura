@@ -40,3 +40,6 @@
 		08 - Faça como eu fiz: implementando DAL genérico
 		09 - Mão na massa: atualizando os menus
 		10 - O que aprendemos?
+	04 - Migrations
+		01 - Projeto da aula anterior
+		02 - Utilizando Migrations
