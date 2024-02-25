@@ -64,3 +64,9 @@
 		09 - Projeto final do curso
 		10 - O que aprendemos?
 		11 - Conclusão
+.NET: criando uma API Web com ASP.NET Core
+	01 - Arquitetura mínima
+		01 - Apresentação
+		02 - Preparando o ambiente: projeto inicial do curso
+		03 - Preparando o ambiente: preparando o banco de dados
+		04 - Centralizando as informações através de uma API

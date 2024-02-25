@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_01_04_XX_Migrations</RootNamespace>
+    <RootNamespace>_02_01_XX_Arquitetura_Minima</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   
@@ -22,5 +22,11 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\02-01-XX-Arquitetura-Minima.Shared.Dados\02-01-XX-Arquitetura-Minima.Shared.Dados.csproj" />
+    <ProjectReference Include="..\02-01-XX-Arquitetura-Minima.Shared.Modelos\02-01-XX-Arquitetura-Minima.Shared.Modelos.csproj" />
   </ItemGroup>
 </Project>
