@@ -29,3 +29,6 @@
 		11 - Faça como eu fiz: aplicando o Entity Framework
 		12 - Mão na massa: persistindo músicas
 		13 - O que aprendemos?
+	03 - Generics
+		01 - Projeto da aula anterior
+		02 - Utilizando Generics
