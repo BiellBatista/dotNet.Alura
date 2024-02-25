@@ -32,3 +32,11 @@
 	03 - Generics
 		01 - Projeto da aula anterior
 		02 - Utilizando Generics
+		03 - Mão na massa: MusicaDAL com genérico
+		04 - Implementando métodos genéricos
+		05 - Utilizando Func
+		06 - Para saber mais: Func
+		07 - Otimizando o acesso ao banco com Generics (B)
+		08 - Faça como eu fiz: implementando DAL genérico
+		09 - Mão na massa: atualizando os menus
+		10 - O que aprendemos?
