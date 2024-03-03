@@ -116,3 +116,6 @@
 		07 - Compreendendo relacionamentos (C)
 		08 - Mão na massa: CRUD de gênero
 		09 - O que aprendemos?
+	05 - DevOps
+		01 - Projeto da aula anterior
+		02 - Preparando o ambiente: criando uma conta no Azure
