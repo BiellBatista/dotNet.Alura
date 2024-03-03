@@ -109,3 +109,10 @@
 	04 - Relacionando gênero
 		01 - Projeto da aula anterior
 		02 - Criando uma entidade gênero
+		03 - Relacionando gênero com música
+		04 - Ajustes nos projetos
+		05 - Salvando música com gênero
+		06 - Faça como eu fiz: adicionando gêneros
+		07 - Compreendendo relacionamentos (C)
+		08 - Mão na massa: CRUD de gênero
+		09 - O que aprendemos?
