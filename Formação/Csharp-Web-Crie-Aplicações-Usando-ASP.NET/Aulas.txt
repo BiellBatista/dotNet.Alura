@@ -119,3 +119,11 @@
 	05 - DevOps
 		01 - Projeto da aula anterior
 		02 - Preparando o ambiente: criando uma conta no Azure
+		03 - Criando e vinculando banco de dados
+		04 - Criando e publicando a aplicação
+		05 - Trabalhando as configurações da API
+		06 - Faça como eu fiz: criando um novo recurso no portal do Azure
+		07 - Configurando o acesso ao banco (C)
+		08 - Projeto final do curso
+		09 - O que aprendemos?
+		10 - Conclusão
