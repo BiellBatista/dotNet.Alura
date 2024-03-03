@@ -2,14 +2,9 @@
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>_03_01_XX_Web_App_Blazor</RootNamespace>
+    <RootNamespace>_03_02_XX_CRUD_Artista.Shared.Dados</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Menus\MenuAvaliarAlbum.cs" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
@@ -22,11 +17,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-	  <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\03-01-XX-Web-App-Blazor.Shared.Dados\03-01-XX-Web-App-Blazor.Shared.Dados.csproj" />
-    <ProjectReference Include="..\03-01-XX-Web-App-Blazor.Shared.Modelos\03-01-XX-Web-App-Blazor.Shared.Modelos.csproj" />
+    <ProjectReference Include="..\03-02-XX-CRUD-Artista.Shared.Modelos\03-02-XX-CRUD-Artista.Shared.Modelos.csproj" />
   </ItemGroup>
 </Project>

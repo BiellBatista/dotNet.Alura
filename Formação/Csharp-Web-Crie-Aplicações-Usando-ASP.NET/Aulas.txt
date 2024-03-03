@@ -142,3 +142,6 @@
 		11 - Listagem de artistas
 		12 - Mão na massa: criando componentes
 		13 - O que aprendemos?
+	02 - CRUD de artista
+		01 - Projeto da aula anterior
+		02 - Bibliotecas de componentes UI
