@@ -159,3 +159,9 @@
 	03 - Upload de imagens
 		01 - Projeto da aula anterior
 		02 - Criando o upload de imagens
+		03 - Preparando o ambiente: alterações nos records
+		04 - Enviar a imagem para a API
+		05 - Exibir a imagem no card
+		06 - Carregando uma foto para o perfil de usuário (C)
+		07 - Faça como eu fiz: exibindo a imagem no Card
+		08 - O que aprendemos?
