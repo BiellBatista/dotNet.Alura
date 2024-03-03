@@ -131,3 +131,14 @@
 	01 - Web App com Blazor
 		01 - Apresentação
 		02 - Preparando o ambiente: projeto inicial do curso
+		03 - Criando um projeto Blazor
+		04 - Para saber mais: tipos de projeto Web .NET
+		05 - Para saber mais: o que é o WebAssembly?
+		06 - Estrutura do projeto Blazor
+		07 - Para saber mais: ASP.NET Razor
+		08 - Definindo um projeto Blazor (C)
+		09 - Preparando o consumo da API
+		10 - Faça como eu fiz: consumindo uma API
+		11 - Listagem de artistas
+		12 - Mão na massa: criando componentes
+		13 - O que aprendemos?
