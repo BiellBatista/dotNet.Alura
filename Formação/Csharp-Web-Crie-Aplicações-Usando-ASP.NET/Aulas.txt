@@ -127,3 +127,7 @@
 		08 - Projeto final do curso
 		09 - O que aprendemos?
 		10 - Conclusão
+.NET: desenvolvendo uma aplicação web com ASP.NET Core Blazor
+	01 - Web App com Blazor
+		01 - Apresentação
+		02 - Preparando o ambiente: projeto inicial do curso
