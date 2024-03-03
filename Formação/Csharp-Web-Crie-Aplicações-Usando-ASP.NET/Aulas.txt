@@ -145,3 +145,14 @@
 	02 - CRUD de artista
 		01 - Projeto da aula anterior
 		02 - Bibliotecas de componentes UI
+		03 - Para saber mais: biblioteca MudBlazor
+		04 - Preparando o ambiente: aplicando tema personalizado
+		05 - Criar o card de artista
+		06 - Cadastrar artista
+		07 - Desafio: implementando o botão voltar
+		08 - Função de exclusão
+		09 - Paginação de artistas
+		10 - Um card para produtos (A)
+		11 - Faça como eu fiz: paginação com MudBlazor
+		12 - Mão na massa - Implementação da atualização de artista
+		13 - O que aprendemos?
