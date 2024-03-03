@@ -2,7 +2,7 @@
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>_03_02_XX_CRUD_Artista.Web</RootNamespace>
+    <RootNamespace>_03_03_XX_Upload_Imagens.Web</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 

@@ -156,3 +156,6 @@
 		11 - Faça como eu fiz: paginação com MudBlazor
 		12 - Mão na massa - Implementação da atualização de artista
 		13 - O que aprendemos?
+	03 - Upload de imagens
+		01 - Projeto da aula anterior
+		02 - Criando o upload de imagens
