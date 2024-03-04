@@ -1,8 +1,8 @@
+using _03_02_XX_CRUD_Artista.Web;
 using _03_02_XX_CRUD_Artista.Web.Services;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
-using _03_02_XX_CRUD_Artista.Web;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");

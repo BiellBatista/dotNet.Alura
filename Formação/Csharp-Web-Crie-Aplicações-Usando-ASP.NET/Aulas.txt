@@ -165,3 +165,7 @@
 		06 - Carregando uma foto para o perfil de usuário (C)
 		07 - Faça como eu fiz: exibindo a imagem no Card
 		08 - O que aprendemos?
+	04 - Trabalhando a música
+		01 - Projeto da aula anterior
+		02 - Preparando o ambiente: ajustes no projeto
+		03 - Página de cadastro de música

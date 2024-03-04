@@ -1,13 +1,12 @@
 ﻿using _03_02_XX_CRUD_Artista.Web.Requests;
 using _03_02_XX_CRUD_Artista.Web.Response;
-using System.Net.Http.Json;
-using System.Reflection.Metadata;
 
 namespace _03_02_XX_CRUD_Artista.Web.Services;
 
 public class ArtistasAPI
 {
     private readonly HttpClient _httpClient;
+
     public ArtistasAPI(IHttpClientFactory factory)
     {
         _httpClient = factory.CreateClient("API");
