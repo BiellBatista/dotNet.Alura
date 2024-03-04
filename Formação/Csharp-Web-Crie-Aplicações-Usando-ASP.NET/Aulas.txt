@@ -169,3 +169,10 @@
 		01 - Projeto da aula anterior
 		02 - Preparando o ambiente: ajustes no projeto
 		03 - Página de cadastro de música
+		04 - Carregando os selects
+		05 - Cadastrando a música
+		06 - Excluindo uma música
+		07 - Renderizando um select para formas de pagamento (D)
+		08 - Faça como eu fiz: excluindo uma música
+		09 - Desafio: implementando a atualização da música
+		10 - O que aprendemos?
