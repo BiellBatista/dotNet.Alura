@@ -2,9 +2,14 @@
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>_03_05_XX_Deploy_Azure.Shared.Dados</RootNamespace>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>_04_01_XX_Autenticacao_Autorizacao_API</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Menus\MenuAvaliarAlbum.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
@@ -21,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\03-05-XX-Deploy-Azure.Shared.Modelos\03-05-XX-Deploy-Azure.Shared.Modelos.csproj" />
+    <ProjectReference Include="..\04-01-XX-Autenticacao-Autorizacao-API.Shared.Dados\04-01-XX-Autenticacao-Autorizacao-API.Shared.Dados.csproj" />
+    <ProjectReference Include="..\04-01-XX-Autenticacao-Autorizacao-API.Shared.Modelos\04-01-XX-Autenticacao-Autorizacao-API.Shared.Modelos.csproj" />
   </ItemGroup>
 </Project>

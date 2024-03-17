@@ -186,3 +186,8 @@
 		07 - Projeto final do curso
 		08 - O que aprendemos?
 		09 - Conclusão
+ASP.NET: autenticação e autorização em APIs e aplicações web
+	01 - Autenticação e autorização na API
+		01 - Apresentação
+		02 - Projeto inicial
+		03 - ASP.NET Core Identity
