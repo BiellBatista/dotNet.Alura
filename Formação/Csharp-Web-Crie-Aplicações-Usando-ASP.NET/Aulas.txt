@@ -180,3 +180,9 @@
 		01 - Projeto da aula anterior
 		02 - Preparando o ambiente: banco de dados no Azure
 		03 - Publicando a API no Azure
+		04 - Publicando o ScreenSound.Web
+		05 - Faça como eu fiz: criando um novo recurso no portal do Azure
+		06 - Publicando uma aplicação Blazor (D)
+		07 - Projeto final do curso
+		08 - O que aprendemos?
+		09 - Conclusão
