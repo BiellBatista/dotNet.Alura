@@ -176,3 +176,7 @@
 		08 - Faça como eu fiz: excluindo uma música
 		09 - Desafio: implementando a atualização da música
 		10 - O que aprendemos?
+	05 - Deploy no Azure
+		01 - Projeto da aula anterior
+		02 - Preparando o ambiente: banco de dados no Azure
+		03 - Publicando a API no Azure

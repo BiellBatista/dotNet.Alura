@@ -1,3 +1,4 @@
+using _03_04_XX_Trabalhando_Musica.Web;
 using _03_04_XX_Trabalhando_Musica.Web.Services;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
