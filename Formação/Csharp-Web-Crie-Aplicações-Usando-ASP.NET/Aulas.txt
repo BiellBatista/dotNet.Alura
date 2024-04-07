@@ -200,3 +200,10 @@ ASP.NET: autenticação e autorização em APIs e aplicações web
 		10 - O que aprendemos?
 	02 - Autenticação na app web
 		01 - Projeto da aula anterior
+		02 - Preparando o ambiente: formulário de login
+		03 - Formulário de login
+		04 - Consumindo o endpoint de login
+		05 - Guardando o cookie
+		06 - Interceptando requisições HTTP (A / B / C)
+		07 - Faça como eu fiz: login na aplicação web
+		08 - O que aprendemos?
