@@ -207,3 +207,6 @@ ASP.NET: autenticação e autorização em APIs e aplicações web
 		06 - Interceptando requisições HTTP (A / B / C)
 		07 - Faça como eu fiz: login na aplicação web
 		08 - O que aprendemos?
+	03 - Estado da autenticação
+		01 - Projeto da aula anterior
+		02 - Fornecendo o estado
