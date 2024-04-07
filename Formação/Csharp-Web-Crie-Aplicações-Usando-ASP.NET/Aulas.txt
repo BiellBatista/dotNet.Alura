@@ -220,3 +220,8 @@ ASP.NET: autenticação e autorização em APIs e aplicações web
 	04 - Autorização na app web
 		01 - Projeto da aula anterior
 		02 - Protegendo rotas e páginas
+		03 - Proteção econômica (A)
+		04 - Direcionando para o login
+		05 - Retornando à origem
+		06 - Faça como eu fiz: protegendo páginas
+		07 - O que aprendemos?
