@@ -198,3 +198,5 @@ ASP.NET: autenticação e autorização em APIs e aplicações web
 		08 - Personalizando identidades (D)
 		09 - Faça como eu fiz: Identity no ScreenSound.API
 		10 - O que aprendemos?
+	02 - Autenticação na app web
+		01 - Projeto da aula anterior
