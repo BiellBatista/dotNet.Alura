@@ -191,3 +191,10 @@ ASP.NET: autenticação e autorização em APIs e aplicações web
 		01 - Apresentação
 		02 - Projeto inicial
 		03 - ASP.NET Core Identity
+		04 - Para saber mais: ASP.NET Core Identity e segurança
+		05 - Funções de controle de acesso (C / D)
+		06 - Endpoints de identidade
+		07 - Autorização
+		08 - Personalizando identidades (D)
+		09 - Faça como eu fiz: Identity no ScreenSound.API
+		10 - O que aprendemos?
