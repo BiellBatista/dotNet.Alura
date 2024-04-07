@@ -210,3 +210,10 @@ ASP.NET: autenticação e autorização em APIs e aplicações web
 	03 - Estado da autenticação
 		01 - Projeto da aula anterior
 		02 - Fornecendo o estado
+		03 - Para saber mais: identidade baseada em Claims
+		04 - Mudando de estado (A)
+		05 - Tags baseadas no estado
+		06 - Logout na API
+		07 - Usando o logout
+		08 - Faça como eu fiz: estado de autenticação
+		09 - O que aprendemos?
