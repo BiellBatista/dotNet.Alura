@@ -225,3 +225,6 @@ ASP.NET: autenticação e autorização em APIs e aplicações web
 		05 - Retornando à origem
 		06 - Faça como eu fiz: protegendo páginas
 		07 - O que aprendemos?
+	05 - Classificação de artistas
+		01 - Projeto da aula anterior
+		02 - Modelando a solução
