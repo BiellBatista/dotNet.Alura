@@ -243,3 +243,8 @@ ASP.NET: autenticação e autorização em APIs e aplicações web
 		15 - Ajustes na app web
 		16 - Faça como eu fiz: exibindo as classificações
 		17 - O que aprendemos?
+	06 - Projeto extra: lista de tarefas
+		01 - Apresentando o projeto
+		02 - Resolvendo a lista de tarefas
+		03 - Testando a solução no Swagger
+		04 - Conclusão
