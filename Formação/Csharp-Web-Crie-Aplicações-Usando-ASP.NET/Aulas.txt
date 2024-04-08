@@ -228,3 +228,18 @@ ASP.NET: autenticação e autorização em APIs e aplicações web
 	05 - Classificação de artistas
 		01 - Projeto da aula anterior
 		02 - Modelando a solução
+		03 - Faixa de valores
+		04 - Faça como eu fiz: modelo das classes
+		05 - Persistindo avaliações
+		06 - Faça como eu fiz: atualização do banco
+		07 - Endpoint para avaliar artista
+		08 - Faça como eu fiz: endpoint de avaliação
+		09 - Mão na massa: obtendo a nota do artista
+		10 - Testando os endpoints
+		11 - Faça como eu fiz: testes
+		12 - Retornos enxutos (C)
+		13 - Para saber mais: programação declarativa
+		14 - Preparando o ambiente: mudanças no cliente de artistas
+		15 - Ajustes na app web
+		16 - Faça como eu fiz: exibindo as classificações
+		17 - O que aprendemos?
