@@ -3,7 +3,7 @@
   <PropertyGroup>
 	  <RootNamespace>_05_XX_Integrando_Aplicacao_Banco_Dados.Apresentacao</RootNamespace>
 	  <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>

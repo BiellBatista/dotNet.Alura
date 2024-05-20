@@ -3,12 +3,12 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<LangVersion>latest</LangVersion>
 		<RootNamespace>_04_XX_CI_CD_Azure_DevOps.Application</RootNamespace>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<NeutralLanguage>en</NeutralLanguage>
 	</PropertyGroup>
 	<ItemGroup>
-	  <PackageReference Include="AutoMapper" Version="11.0.1" />
+	  <PackageReference Include="AutoMapper" Version="13.0.1" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\04-XX-CI-CD-Azure-DevOps.Domain\04-XX-CI-CD-Azure-DevOps.Domain.csproj" />

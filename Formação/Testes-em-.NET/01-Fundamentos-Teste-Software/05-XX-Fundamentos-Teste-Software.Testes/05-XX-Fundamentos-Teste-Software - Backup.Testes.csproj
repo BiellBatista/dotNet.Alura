@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>_04_XX_Fundamentos_Teste_Software.Testes</RootNamespace>
+    <RootNamespace>_05_XX_Fundamentos_Teste_Software.Testes</RootNamespace>
     <Nullable>enable</Nullable>
 
     <IsPackable>false</IsPackable>
@@ -10,19 +10,19 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
-    <PackageReference Include="xunit" Version="2.8.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.0">
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="coverlet.collector" Version="6.0.2">
+    <PackageReference Include="coverlet.collector" Version="3.1.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\04-XX-Fundamentos-Teste-Software\04-XX-Fundamentos-Teste-Software.csproj" />
+    <ProjectReference Include="..\05-XX-Fundamentos-Teste-Software\05-XX-Fundamentos-Teste-Software.csproj" />
   </ItemGroup>
 
 </Project>

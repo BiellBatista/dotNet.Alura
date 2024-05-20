@@ -3,7 +3,7 @@
   <PropertyGroup>
 	<RootNamespace>_04_XX_Testes_Interface_Usando_Selenium</RootNamespace>
 	<OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
 </Project>

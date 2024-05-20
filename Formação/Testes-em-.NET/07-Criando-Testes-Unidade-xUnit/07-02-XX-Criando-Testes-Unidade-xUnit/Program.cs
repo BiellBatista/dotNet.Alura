@@ -1,4 +1,5 @@
-﻿using _07_02_XX_Criando_Testes_Unidade_xUnit.Modelos;
+﻿using _07_02_XX_Criando_Testes_Unidade_xUnit.Gerencidor;
+using _07_02_XX_Criando_Testes_Unidade_xUnit.Modelos;
 
 List<OfertaViagem> listaOfertasViagem = new List<OfertaViagem>();
 var gerenciador = new GerenciadorDeOfertas(listaOfertasViagem);

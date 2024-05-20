@@ -2,7 +2,7 @@
 
   <PropertyGroup>
 	  <RootNamespace>_04_XX_Testes_Interface_Usando_Selenium.Dados</RootNamespace>
-	  <TargetFramework>net5.0</TargetFramework>
+	  <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>

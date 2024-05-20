@@ -338,3 +338,12 @@ Testes em .NET: criando testes de unidade com xUnit
 	02 - Validando ofertas
 		01 - Projeto da aula anterior
 		02 - Testando preço negativo
+		03 - Aplicando padrões de nomenclatura
+		04 - Para saber mais: nomenclatura
+		05 - Aplicando nomenclatura (C)
+		06 - Para saber mais: o que é um caso de teste
+		07 - Testando conjunto de dados
+		08 - Mão na massa: aplicando Theory
+		09 - Para saber mais: notações do XUnit
+		10 - Lista de exercícios: nomenclatura e Theory
+		11 - O que aprendemos?

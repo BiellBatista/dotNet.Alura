@@ -2,7 +2,7 @@
 
   <PropertyGroup>
 	  <RootNamespace>_05_XX_Integrando_Aplicacao_Banco_Dados.Aplicacao</RootNamespace>
-	  <TargetFramework>net5.0</TargetFramework>
+	  <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
   </ItemGroup>
 
