@@ -358,3 +358,6 @@ Testes em .NET: criando testes de unidade com xUnit
 		08 - Para saber mais: testando métodos privados
 		09 - Lista de exercícios: propriedades
 		10 - O que aprendemos?
+	04 - Cobertura de testes
+		01 - Projeto da aula anterior
+		02 - Cobertura de testes
