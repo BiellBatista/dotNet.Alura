@@ -3,13 +3,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_07_01_XX_Criando_Testes_Unidade_xUnit</RootNamespace>
+    <RootNamespace>_07_03_XX_Criando_Testes_Unidade_xUnit</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Modelos\ValidaInformacoes.cs" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.5" />

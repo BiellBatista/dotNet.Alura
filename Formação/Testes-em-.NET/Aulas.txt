@@ -347,3 +347,6 @@ Testes em .NET: criando testes de unidade com xUnit
 		09 - Para saber mais: notações do XUnit
 		10 - Lista de exercícios: nomenclatura e Theory
 		11 - O que aprendemos?
+	03 - TDD - Test-Driven Development
+		01 - Projeto da aula anterior
+		02 - Criando um teste para desconto
