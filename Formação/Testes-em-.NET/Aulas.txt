@@ -361,3 +361,11 @@ Testes em .NET: criando testes de unidade com xUnit
 	04 - Cobertura de testes
 		01 - Projeto da aula anterior
 		02 - Cobertura de testes
+		03 - Para saber mais: cobertura de testes
+		04 - Testes de mutação
+		05 - Corrigindo problemas
+		06 - Para saber mais: testes de mutação
+		07 - Faça como eu fiz: aplicando testes de mutação
+		08 - Testes de mutação (B)
+		09 - Lista de exercícios
+		10 - O que aprendemos?
