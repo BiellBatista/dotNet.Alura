@@ -350,3 +350,11 @@ Testes em .NET: criando testes de unidade com xUnit
 	03 - TDD - Test-Driven Development
 		01 - Projeto da aula anterior
 		02 - Criando um teste para desconto
+		03 - Preparando o desconto
+		04 - Para saber mais: TDD
+		05 - Testando outros cenários de desconto
+		06 - Mão na massa: testando desconto negativo
+		07 - TDD (Test-Driven Development) (B)
+		08 - Para saber mais: testando métodos privados
+		09 - Lista de exercícios: propriedades
+		10 - O que aprendemos?
