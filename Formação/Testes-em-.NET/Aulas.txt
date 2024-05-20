@@ -369,3 +369,7 @@ Testes em .NET: criando testes de unidade com xUnit
 		08 - Testes de mutação (B)
 		09 - Lista de exercícios
 		10 - O que aprendemos?
+	05 - Testando cenários complexos
+		01 - Projeto da aula anterior
+		02 - Preparando o ambiente
+		03 - Recuperando oferta por desconto
