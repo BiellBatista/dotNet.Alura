@@ -320,3 +320,8 @@ Testes em .NET: integração e entrega contínua com Azure DevOps
 		08 - Projeto final do curso
 		09 - O que aprendemos?
 		10 - Conclusão
+Testes em .NET: criando testes de unidade com xUnit
+	01 - Iniciando com testes
+		01 - Apresentação
+		02 - Preparando o ambiente: projeto inicial do curso
+		03 - Automatizando testes
