@@ -864,3 +864,9 @@ Formação Testes em .NET
 		03 - Banco de dados no Azure
 		04 - Pipelines: integração contínua
 		05 - Pipelines: entrega contínua
+	Testes em .NET: criando testes de unidade com xUnit
+		01 - Iniciando com testes
+		02 - Validando ofertas
+		03 - TDD - Test-Driven Development
+		04 - Cobertura de testes
+		05 - Testando cenários complexos

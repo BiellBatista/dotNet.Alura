@@ -325,3 +325,13 @@ Testes em .NET: criando testes de unidade com xUnit
 		01 - Apresentação
 		02 - Preparando o ambiente: projeto inicial do curso
 		03 - Automatizando testes
+		04 - Para saber mais: testes manuais
+		05 - Para saber mais: bibliotecas de testes no .NET
+		06 - Começando com XUnit
+		07 - Para saber mais: métodos comuns do tipo Assert
+		08 - Padrão AAA
+		09 - Para saber mais: padrão Given, Then, When
+		10 - Mão na massa: validação das rotas
+		11 - Entendendo testes de unidade (A)
+		12 - Lista de exercícios: testes e validação
+		13 - O que aprendemos?
