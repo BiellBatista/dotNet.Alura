@@ -335,3 +335,6 @@ Testes em .NET: criando testes de unidade com xUnit
 		11 - Entendendo testes de unidade (A)
 		12 - Lista de exercícios: testes e validação
 		13 - O que aprendemos?
+	02 - Validando ofertas
+		01 - Projeto da aula anterior
+		02 - Testando preço negativo
