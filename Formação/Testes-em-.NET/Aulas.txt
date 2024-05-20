@@ -373,3 +373,15 @@ Testes em .NET: criando testes de unidade com xUnit
 		01 - Projeto da aula anterior
 		02 - Preparando o ambiente
 		03 - Recuperando oferta por desconto
+		04 - Gerando valores de teste
+		05 - Para saber mais: biblioteca Bogus
+		06 - Mão na massa: implementando método
+		07 - Implementando filtro
+		08 - Para saber mais: boas práticas
+		09 - Utilizando a biblioteca Bogus (C)
+		10 - Projeto final do curso
+		11 - Lista de exercícios: biblioteca Bogus
+		12 - Desafio
+		13 - Referências
+		14 - O que aprendemos?
+		15 - Conclusão
