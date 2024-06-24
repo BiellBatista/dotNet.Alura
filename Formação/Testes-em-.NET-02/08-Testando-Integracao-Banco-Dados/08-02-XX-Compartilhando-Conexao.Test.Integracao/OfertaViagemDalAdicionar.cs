@@ -1,36 +1,29 @@
-using _08_01_XX_Definindo_Testes_Integracao.Dados;
-using _08_01_XX_Definindo_Testes_Integracao.Modelos;
-using Microsoft.EntityFrameworkCore;
+using _08_02_XX_Compartilhando_Conexao.Dados;
+using _08_02_XX_Compartilhando_Conexao.Modelos;
+using Xunit.Abstractions;
 
-namespace _08_01_XX_Definindo_Testes_Integracao_Integracao;
+namespace _08_02_XX_Compartilhando_Conexao.Test.Integracao;
 
+[Collection(nameof(ContextoCollection))]
 public class OfertaViagemDalAdicionar
 {
     private readonly JornadaMilhasContext context;
 
-    public OfertaViagemDalAdicionar()
+    public OfertaViagemDalAdicionar(ITestOutputHelper output, ContextoFixture fixture)
     {
-        var options = new DbContextOptionsBuilder<JornadaMilhasContext>()
-            .UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=JornadaMilhas;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False")
-            .Options;
-
-        context = new JornadaMilhasContext(options);
-    }
-
-    private OfertaViagem CriaOfertaViagem()
-    {
-        Rota rota = new Rota("São Paulo", "Fortaleza");
-        Periodo periodo = new Periodo(new DateTime(2024, 8, 20), new DateTime(2024, 8, 30));
-        double preco = 350;
-        return new OfertaViagem(rota, periodo, preco);
+        context = fixture.Context;
+        output.WriteLine(context.GetHashCode().ToString());
     }
 
     [Fact]
     public void RegistraOfertaNoBanco()
     {
         //arrange
+        Rota rota = new Rota("São Paulo", "Fortaleza");
+        Periodo periodo = new Periodo(new DateTime(2024, 8, 20), new DateTime(2024, 8, 30));
+        double preco = 350;
 
-        var oferta = CriaOfertaViagem();
+        var oferta = new OfertaViagem(rota, periodo, preco);
         var dal = new OfertaViagemDAL(context);
 
         //act
@@ -46,7 +39,11 @@ public class OfertaViagemDalAdicionar
     public void RegistraOfertaNoBancoComInformacoesCorretas()
     {
         //arrange
-        var oferta = CriaOfertaViagem();
+        Rota rota = new Rota("São Paulo", "Fortaleza");
+        Periodo periodo = new Periodo(new DateTime(2024, 8, 20), new DateTime(2024, 8, 30));
+        double preco = 350;
+
+        var oferta = new OfertaViagem(rota, periodo, preco);
         var dal = new OfertaViagemDAL(context);
 
         //act

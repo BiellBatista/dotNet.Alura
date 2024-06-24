@@ -10,3 +10,6 @@ Testes em .NET: testando integração com banco de dados
 		08 - Mão na massa: criando oferta no setup
 		09 - Entendendo testes de integração (B)
 		10 - O que aprendemos?
+	02 - Compartilhando a conexão
+		01 - Projeto da aula anterior
+		02 - Analisando conexões

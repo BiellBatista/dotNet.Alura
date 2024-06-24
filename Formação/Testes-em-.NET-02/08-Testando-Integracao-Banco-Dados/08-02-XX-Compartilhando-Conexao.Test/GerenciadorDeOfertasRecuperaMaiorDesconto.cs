@@ -1,8 +1,8 @@
-﻿using _08_01_XX_Definindo_Testes_Integracao.Gerenciador;
-using _08_01_XX_Definindo_Testes_Integracao.Modelos;
+﻿using _08_02_XX_Compartilhando_Conexao.Gerenciador;
+using _08_02_XX_Compartilhando_Conexao.Modelos;
 using Bogus;
 
-namespace _08_01_XX_Definindo_Testes_Integracao.Test;
+namespace _08_02_XX_Compartilhando_Conexao.Test;
 
 public class GerenciadorDeOfertasRecuperaMaiorDesconto
 {
