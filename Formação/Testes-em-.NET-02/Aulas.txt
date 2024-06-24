@@ -53,3 +53,11 @@ Testes em .NET: aplicando testes de integração em APIs
 		01 - Apresentação
 		02 - Preparando o ambiente: instalando Docker Desktop
 		03 - Projeto inicial do curso
+		04 - Configurando o projeto de testes
+		05 - Para saber mais: testes de integração no ASP.NET Core
+		06 - Configurando o serviço
+		07 - Faça como eu fiz: configurando o serviço em memória
+		08 - Primeiro método de teste
+		09 - Testando API (A / B)
+		10 - Desafio: teste um login inválido
+		11 - O que aprendemos?
