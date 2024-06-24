@@ -64,3 +64,8 @@ Testes em .NET: aplicando testes de integração em APIs
 	02 - Compartilhando contexto
 		01 - Projeto da aula anterior
 		02 - Testando a inclusão de ofertas
+		03 - Configurando a autenticação
+		04 - Faça como eu fiz: incluindo uma oferta
+		05 - Reaproveitando recursos com ClassFixture
+		06 - Testando endpoints protegidos (A)
+		07 - O que aprendemos?
