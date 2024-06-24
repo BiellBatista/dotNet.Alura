@@ -1,0 +1,22 @@
+﻿using _08_04_XX_Inserindo_Valores_Banco.Modelos;
+using Bogus;
+
+namespace _08_04_XX_Inserindo_Valores_Banco.Test.Integracao;
+
+internal class PeriodoDataBuilder : Faker<Periodo>
+{
+    public DateTime? DataInicial { get; set; }
+    public DateTime? DataFinal { get; set; }
+
+    public PeriodoDataBuilder()
+    {
+        CustomInstantiator(f =>
+            {
+                DateTime dataInicio = DataInicial ?? f.Date.Soon();
+                DateTime dataFinal = DataFinal ?? dataInicio.AddDays(30);
+                return new Periodo(dataInicio, dataFinal);
+            });
+    }
+
+    public Periodo Build() => Generate();
+}
