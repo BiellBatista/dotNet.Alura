@@ -40,3 +40,11 @@ Testes em .NET: testando integração com banco de dados
 	05 - Revertendo últimos testes
 		01 - Projeto da aula anterior
 		02 - Testes determinísticos
+		03 - Revertendo alterações
+		04 - Para saber mais: biblioteca Respawn
+		05 - Desafio: criando outro banco
+		06 - Revertendo dados após testes (C)
+		07 - Projeto final do curso
+		08 - Referências
+		09 - O que aprendemos?
+		10 - Conclusão
