@@ -48,3 +48,8 @@ Testes em .NET: testando integração com banco de dados
 		08 - Referências
 		09 - O que aprendemos?
 		10 - Conclusão
+Testes em .NET: aplicando testes de integração em APIs
+	01 - Preparando o ambiente para os testes
+		01 - Apresentação
+		02 - Preparando o ambiente: instalando Docker Desktop
+		03 - Projeto inicial do curso

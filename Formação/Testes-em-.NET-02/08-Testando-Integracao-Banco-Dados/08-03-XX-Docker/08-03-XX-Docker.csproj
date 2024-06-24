@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>false</IsPackable>
-    <IsTestProject>true</IsTestProject>
+    <IsTestProject>false</IsTestProject>
     <Nullable>enable</Nullable>
     <OutputType>Exe</OutputType>
     <RootNamespace>_08_03_XX_Docker</RootNamespace>

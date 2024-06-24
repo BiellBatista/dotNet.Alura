@@ -2,7 +2,7 @@
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>false</IsPackable>
-    <IsTestProject>true</IsTestProject>
+    <IsTestProject>false</IsTestProject>
     <Nullable>enable</Nullable>
     <OutputType>Exe</OutputType>
     <RootNamespace>_08_01_XX_Definindo_Testes_Integracao</RootNamespace>
