@@ -13,9 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-01-XX-Definindo-Testes-I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-02-XX-Compartilhando-Conexao", "08-Testando-Integracao-Banco-Dados\08-02-XX-Compartilhando-Conexao\08-02-XX-Compartilhando-Conexao.csproj", "{6494BFBE-D937-4349-99AD-31E0C7A5EC28}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JornadaMilhas.Test", "08-Testando-Integracao-Banco-Dados\08-02-XX-Compartilhando-Conexao.Test\08-02-XX-Compartilhando-Conexao.Test.csproj", "{B6D432AE-886C-406F-A42E-BF98511CD8E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-02-XX-Compartilhando-Conexao.Test", "08-Testando-Integracao-Banco-Dados\08-02-XX-Compartilhando-Conexao.Test\08-02-XX-Compartilhando-Conexao.Test.csproj", "{B6D432AE-886C-406F-A42E-BF98511CD8E0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-02-XX-Compartilhando-Conexao.Test.Integracao", "08-Testando-Integracao-Banco-Dados\08-02-XX-Compartilhando-Conexao.Test.Integracao\08-02-XX-Compartilhando-Conexao.Test.Integracao.csproj", "{AD648F40-FD81-4E9D-A391-A0E1E1043E9E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-03-XX-Docker", "08-Testando-Integracao-Banco-Dados\08-03-XX-Docker\08-03-XX-Docker.csproj", "{455310F9-AA4C-4462-9D35-FF59EF6088CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-03-XX-Docker.Test", "08-Testando-Integracao-Banco-Dados\08-03-XX-Docker.Test\08-03-XX-Docker.Test.csproj", "{C15698F9-F03F-4823-8596-D35A232B9A0E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-03-XX-Docker.Test.Integracao", "08-Testando-Integracao-Banco-Dados\08-03-XX-Docker.Test.Integracao\08-03-XX-Docker.Test.Integracao.csproj", "{4FA832EA-2A8D-4206-A74A-FDA7A0B376D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +53,18 @@ Global
 		{AD648F40-FD81-4E9D-A391-A0E1E1043E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD648F40-FD81-4E9D-A391-A0E1E1043E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD648F40-FD81-4E9D-A391-A0E1E1043E9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{455310F9-AA4C-4462-9D35-FF59EF6088CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{455310F9-AA4C-4462-9D35-FF59EF6088CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{455310F9-AA4C-4462-9D35-FF59EF6088CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{455310F9-AA4C-4462-9D35-FF59EF6088CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C15698F9-F03F-4823-8596-D35A232B9A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C15698F9-F03F-4823-8596-D35A232B9A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C15698F9-F03F-4823-8596-D35A232B9A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C15698F9-F03F-4823-8596-D35A232B9A0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FA832EA-2A8D-4206-A74A-FDA7A0B376D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA832EA-2A8D-4206-A74A-FDA7A0B376D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA832EA-2A8D-4206-A74A-FDA7A0B376D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA832EA-2A8D-4206-A74A-FDA7A0B376D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +76,9 @@ Global
 		{6494BFBE-D937-4349-99AD-31E0C7A5EC28} = {987F4358-15C0-4144-A9EE-EB455ABEE89D}
 		{B6D432AE-886C-406F-A42E-BF98511CD8E0} = {987F4358-15C0-4144-A9EE-EB455ABEE89D}
 		{AD648F40-FD81-4E9D-A391-A0E1E1043E9E} = {987F4358-15C0-4144-A9EE-EB455ABEE89D}
+		{455310F9-AA4C-4462-9D35-FF59EF6088CF} = {987F4358-15C0-4144-A9EE-EB455ABEE89D}
+		{C15698F9-F03F-4823-8596-D35A232B9A0E} = {987F4358-15C0-4144-A9EE-EB455ABEE89D}
+		{4FA832EA-2A8D-4206-A74A-FDA7A0B376D6} = {987F4358-15C0-4144-A9EE-EB455ABEE89D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {58C30F8B-E1F3-417F-8BC1-BE9A09CD4106}
