@@ -7,7 +7,7 @@
     <IsPackable>false</IsPackable>
     <IsTestProject>false</IsTestProject>
     <Nullable>enable</Nullable>
-    <RootNamespace>_09_01_XX_Preparando_Ambiente_Testes.API</RootNamespace>
+    <RootNamespace>_09_02_XX_Compartilhando_Contexto.API</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
     <UserSecretsId>0a5b1c12-fb2f-4d73-9648-f43e44674966</UserSecretsId>
   </PropertyGroup>
@@ -24,11 +24,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\09-01-XX-Preparando-Ambiente-Testes.Dados\09-01-XX-Preparando-Ambiente-Testes.Dados.csproj" />
-    <ProjectReference Include="..\09-01-XX-Preparando-Ambiente-Testes.Dominio\09-01-XX-Preparando-Ambiente-Testes.Dominio.csproj" />
+    <ProjectReference Include="..\09-02-XX-Compartilhando-Contexto.Dados\09-02-XX-Compartilhando-Contexto.Dados.csproj" />
+    <ProjectReference Include="..\09-02-XX-Compartilhando-Contexto.Dominio\09-02-XX-Compartilhando-Contexto.Dominio.csproj" />
   </ItemGroup>
-
+  
   <ItemGroup>
-    <InternalsVisibleTo Include="09-01-XX-Preparando-Ambiente-Testes.Integration.Test" />
+    <InternalsVisibleTo Include="09-02-XX-Compartilhando-Contexto.Integration.Test" />
   </ItemGroup>
 </Project>

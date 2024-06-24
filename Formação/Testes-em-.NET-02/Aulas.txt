@@ -61,3 +61,6 @@ Testes em .NET: aplicando testes de integração em APIs
 		09 - Testando API (A / B)
 		10 - Desafio: teste um login inválido
 		11 - O que aprendemos?
+	02 - Compartilhando contexto
+		01 - Projeto da aula anterior
+		02 - Testando a inclusão de ofertas

@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
     <Nullable>enable</Nullable>
-    <RootNamespace>_09_01_XX_Preparando_Ambiente_Testes.Integration.Test</RootNamespace>
+    <RootNamespace>_09_02_XX_Compartilhando_Contexto.Integration.Test</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\09-01-XX-Preparando-Ambiente-Testes.API\09-01-XX-Preparando-Ambiente-Testes.API.csproj" />
+    <ProjectReference Include="..\09-02-XX-Compartilhando-Contexto.API\09-02-XX-Compartilhando-Contexto.API.csproj" />
   </ItemGroup>
 
   <ItemGroup>

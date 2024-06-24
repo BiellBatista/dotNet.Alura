@@ -4,7 +4,7 @@
     <IsPackable>false</IsPackable>
     <IsTestProject>false</IsTestProject>
     <Nullable>enable</Nullable>
-    <RootNamespace>_09_01_XX_Preparando_Ambiente_Testes.Dados</RootNamespace>
+    <RootNamespace>_09_02_XX_Compartilhando_Contexto.Dados</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\09-01-XX-Preparando-Ambiente-Testes.Dominio\09-01-XX-Preparando-Ambiente-Testes.Dominio.csproj" />
+    <ProjectReference Include="..\09-02-XX-Compartilhando-Contexto.Dominio\09-02-XX-Compartilhando-Contexto.Dominio.csproj" />
   </ItemGroup>
 
   <ItemGroup>

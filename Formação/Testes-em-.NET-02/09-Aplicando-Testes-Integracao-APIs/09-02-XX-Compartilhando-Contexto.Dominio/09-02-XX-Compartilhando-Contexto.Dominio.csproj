@@ -4,7 +4,7 @@
     <IsPackable>false</IsPackable>
     <IsTestProject>false</IsTestProject>
     <Nullable>enable</Nullable>
-    <RootNamespace>_09_01_XX_Preparando_Ambiente_Testes.Dominio</RootNamespace>
+    <RootNamespace>_09_02_XX_Compartilhando_Contexto.Dominio</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
