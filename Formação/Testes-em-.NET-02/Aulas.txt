@@ -31,3 +31,9 @@ Testes em .NET: testando integração com banco de dados
 	04 - Inserindo valores no banco
 		01 - Projeto da aula anterior
 		02 - Adicionando dados ao banco
+		03 - Compartilhando massa de dados
+		04 - DataBuilder
+		05 - Para saber mais: padrão DataBuilder
+		06 - Mão na massa: Data Builders para rota e oferta viagem
+		07 - Utilizando massa de dados para testes (D)
+		08 - O que aprendemos?
