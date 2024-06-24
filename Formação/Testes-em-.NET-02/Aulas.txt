@@ -1,0 +1,5 @@
+Testes em .NET: testando integração com banco de dados
+	01 - Definindo testes de integração
+		01 - Apresentação
+		02 - Preparando o ambiente: projeto inicial do curso
+		03 - 
