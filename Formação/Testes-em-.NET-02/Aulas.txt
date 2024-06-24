@@ -13,3 +13,9 @@ Testes em .NET: testando integração com banco de dados
 	02 - Compartilhando a conexão
 		01 - Projeto da aula anterior
 		02 - Analisando conexões
+		03 - ClassFixture
+		04 - CollectionFixture
+		05 - Para saber mais: AssemblyFixture
+		06 - Mão na massa: compartilhando a conexão em outra classe de teste
+		07 - Entendendo Fixtures (D)
+		08 - O que aprendemos?
