@@ -2,4 +2,11 @@ Testes em .NET: testando integração com banco de dados
 	01 - Definindo testes de integração
 		01 - Apresentação
 		02 - Preparando o ambiente: projeto inicial do curso
-		03 - 
+		03 - Iniciando em testes de integração
+		04 - Baixo acoplamento
+		05 - Para saber mais: InMemoryDb
+		06 - Aproveitando recursos
+		07 - Para saber mais: Setup e Teardown
+		08 - Mão na massa: criando oferta no setup
+		09 - Entendendo testes de integração (B)
+		10 - O que aprendemos?
