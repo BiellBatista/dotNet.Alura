@@ -79,3 +79,7 @@ Testes em .NET: aplicando testes de integração em APIs
 		07 - Teste de integração (D)
 		08 - Mão na massa: implementando a classe de testes para rota
 		09 - O que aprendemos?
+	04 - Consultas
+		01 - Projeto da aula anterior
+		02 - Preparando o ambiente: configuração do Bogus e Data Builders
+		03 - Testando a consulta paginada
