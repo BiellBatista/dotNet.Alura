@@ -53,6 +53,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-02-XX-Compartilhando-Con
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-02-XX-Compartilhando-Contexto.Integration.Test", "09-Aplicando-Testes-Integracao-APIs\09-02-XX-Compartilhando-Contexto.Integration.Test\09-02-XX-Compartilhando-Contexto.Integration.Test.csproj", "{CDBBB1D7-A8B7-42AA-A0C9-3EB6E81F2B41}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-03-XX-Testes-Endpoints.HTTPS.API", "09-Aplicando-Testes-Integracao-APIs\09-03-XX-Testes-Endpoints.HTTPS.API\09-03-XX-Testes-Endpoints.HTTPS.API.csproj", "{EF9A7FB9-010F-4903-A500-94F07F8A12DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-03-XX-Testes-Endpoints.HTTPS.Dados", "09-Aplicando-Testes-Integracao-APIs\09-03-XX-Testes-Endpoints.HTTPS.Dados\09-03-XX-Testes-Endpoints.HTTPS.Dados.csproj", "{CA8F5D5D-CC81-41E6-BE43-83444E58D438}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-03-XX-Testes-Endpoints.HTTPS.Dominio", "09-Aplicando-Testes-Integracao-APIs\09-03-XX-Testes-Endpoints.HTTPS.Dominio\09-03-XX-Testes-Endpoints.HTTPS.Dominio.csproj", "{E1C69C5D-FCB3-4919-BEBB-25C34EDCAD61}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-03-XX-Testes-Endpoints.HTTPS.Integration.Test", "09-Aplicando-Testes-Integracao-APIs\09-03-XX-Testes-Endpoints.HTTPS.Integration.Test\09-03-XX-Testes-Endpoints.HTTPS.Integration.Test.csproj", "{6D59EDEE-ED83-421F-A189-786BFE670E75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +159,22 @@ Global
 		{CDBBB1D7-A8B7-42AA-A0C9-3EB6E81F2B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDBBB1D7-A8B7-42AA-A0C9-3EB6E81F2B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDBBB1D7-A8B7-42AA-A0C9-3EB6E81F2B41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF9A7FB9-010F-4903-A500-94F07F8A12DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF9A7FB9-010F-4903-A500-94F07F8A12DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF9A7FB9-010F-4903-A500-94F07F8A12DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF9A7FB9-010F-4903-A500-94F07F8A12DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA8F5D5D-CC81-41E6-BE43-83444E58D438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA8F5D5D-CC81-41E6-BE43-83444E58D438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA8F5D5D-CC81-41E6-BE43-83444E58D438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA8F5D5D-CC81-41E6-BE43-83444E58D438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1C69C5D-FCB3-4919-BEBB-25C34EDCAD61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1C69C5D-FCB3-4919-BEBB-25C34EDCAD61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1C69C5D-FCB3-4919-BEBB-25C34EDCAD61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1C69C5D-FCB3-4919-BEBB-25C34EDCAD61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D59EDEE-ED83-421F-A189-786BFE670E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D59EDEE-ED83-421F-A189-786BFE670E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D59EDEE-ED83-421F-A189-786BFE670E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D59EDEE-ED83-421F-A189-786BFE670E75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -179,6 +203,10 @@ Global
 		{152DBF18-153A-4B99-BCBD-EE8BC8291CE3} = {2D258B94-E533-423A-8CC2-C877BCD9614E}
 		{B90CEC61-6D13-4DAB-B905-B943CEE7CF53} = {2D258B94-E533-423A-8CC2-C877BCD9614E}
 		{CDBBB1D7-A8B7-42AA-A0C9-3EB6E81F2B41} = {2D258B94-E533-423A-8CC2-C877BCD9614E}
+		{EF9A7FB9-010F-4903-A500-94F07F8A12DC} = {2D258B94-E533-423A-8CC2-C877BCD9614E}
+		{CA8F5D5D-CC81-41E6-BE43-83444E58D438} = {2D258B94-E533-423A-8CC2-C877BCD9614E}
+		{E1C69C5D-FCB3-4919-BEBB-25C34EDCAD61} = {2D258B94-E533-423A-8CC2-C877BCD9614E}
+		{6D59EDEE-ED83-421F-A189-786BFE670E75} = {2D258B94-E533-423A-8CC2-C877BCD9614E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {58C30F8B-E1F3-417F-8BC1-BE9A09CD4106}

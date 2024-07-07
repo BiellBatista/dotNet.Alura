@@ -69,3 +69,6 @@ Testes em .NET: aplicando testes de integração em APIs
 		05 - Reaproveitando recursos com ClassFixture
 		06 - Testando endpoints protegidos (A)
 		07 - O que aprendemos?
+	03 - Testes para endpoints (HTTP)
+		01 - Projeto da aula anterior
+		02 - Expondo o contexto

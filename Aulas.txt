@@ -870,3 +870,21 @@ Formação Testes em .NET
 		03 - TDD - Test-Driven Development
 		04 - Cobertura de testes
 		05 - Testando cenários complexos
+	Testes em .NET: testando integração com banco de dados
+		01 - Definindo testes de integração
+		02 - Compartilhando a conexão
+		03 - Docker
+		04 - Inserindo valores no banco
+		05 - Revertendo últimos testes
+	Testes em .NET: aplicando testes de integração em APIs
+		01 - Preparando o ambiente para os testes
+		02 - Compartilhando contexto
+		03 - Testes para endpoints (HTTP)
+		04 - Consultas
+		05 - Desafio
+	Testes em .NET: integre seus testes nos pipelines de CI/CD
+		01 - Pipeline de testes no GitHub Action
+		02 - TestContainer
+		03 - Publicando pela pipeline
+		04 - Criando uma pipeline no Azure Devops
+		05 - Fluxo completo
