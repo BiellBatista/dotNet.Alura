@@ -72,3 +72,10 @@ Testes em .NET: aplicando testes de integração em APIs
 	03 - Testes para endpoints (HTTP)
 		01 - Projeto da aula anterior
 		02 - Expondo o contexto
+		03 - Faça como eu fiz: uma estratégia para acessar nossa base de dados
+		04 - Consultando oferta pelo ID
+		05 - Testando a deleção e atualização de um OfertaViagem
+		06 - Para saber mais: status HTTP
+		07 - Teste de integração (D)
+		08 - Mão na massa: implementando a classe de testes para rota
+		09 - O que aprendemos?
