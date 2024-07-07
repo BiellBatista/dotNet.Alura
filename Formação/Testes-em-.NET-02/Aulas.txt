@@ -83,3 +83,10 @@ Testes em .NET: aplicando testes de integração em APIs
 		01 - Projeto da aula anterior
 		02 - Preparando o ambiente: configuração do Bogus e Data Builders
 		03 - Testando a consulta paginada
+		04 - Dados na última página
+		05 - Página não existente
+		06 - Faça como eu fiz: quando a página não existe
+		07 - Página negativa
+		08 - Testando listas paginadas (D)
+		09 - Projeto final do curso
+		10 - O que aprendemos?
