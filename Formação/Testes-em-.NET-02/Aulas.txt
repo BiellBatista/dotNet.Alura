@@ -107,3 +107,10 @@ Testes em .NET: integre seus testes nos pipelines de CI/CD
 		01 - Apresentação
 		02 - Projeto inicial do curso
 		03 - Configurando o projeto de testes
+		04 - Criação do Workflow
+		05 - Faça como eu fiz: definindo nosso arquivo .YML
+		06 - Para saber mais: formato YML
+		07 - Executando a pipeline
+		08 - Para saber mais: GitHub Actions
+		09 - Automatizando testes com GitHub Actions (D)
+		10 - O que aprendemos?
