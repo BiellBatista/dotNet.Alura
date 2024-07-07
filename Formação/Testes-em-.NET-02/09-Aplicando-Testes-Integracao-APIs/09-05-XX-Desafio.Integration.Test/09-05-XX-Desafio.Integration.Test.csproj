@@ -4,12 +4,11 @@
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
     <Nullable>enable</Nullable>
-    <RootNamespace>_09_04_XX_Consultas.Integration.Test</RootNamespace>
+    <RootNamespace>_09_05_XX_Desafio.Integration.Test</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Bogus" Version="35.5.1" />
     <PackageReference Include="coverlet.collector" Version="6.0.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -24,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\09-04-XX-Consultas.API\09-04-XX-Consultas.API.csproj" />
+    <ProjectReference Include="..\09-05-XX-Desafio.API\09-05-XX-Desafio.API.csproj" />
   </ItemGroup>
 
   <ItemGroup>

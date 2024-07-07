@@ -90,3 +90,7 @@ Testes em .NET: aplicando testes de integração em APIs
 		08 - Testando listas paginadas (D)
 		09 - Projeto final do curso
 		10 - O que aprendemos?
+	05 - Desafio
+		01 - Projeto para desafio
+		02 - Preparando o ambiente: preparando o banco de dados
+		03 - Testando o ScreenSound API
