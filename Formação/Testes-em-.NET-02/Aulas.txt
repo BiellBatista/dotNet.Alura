@@ -94,3 +94,11 @@ Testes em .NET: aplicando testes de integração em APIs
 		01 - Projeto para desafio
 		02 - Preparando o ambiente: preparando o banco de dados
 		03 - Testando o ScreenSound API
+		04 - Testando o POST ScreenSound API
+		05 - Faça como eu fiz: testando a atualização de artista
+		06 - API SoundWave (A / E)
+		07 - Testando o GET ScreenSound API
+		08 - Projeto final desafio
+		09 - Referências
+		10 - O que aprendemos?
+		11 - Conclusão
