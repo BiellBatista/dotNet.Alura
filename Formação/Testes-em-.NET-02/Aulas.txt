@@ -102,3 +102,8 @@ Testes em .NET: aplicando testes de integração em APIs
 		09 - Referências
 		10 - O que aprendemos?
 		11 - Conclusão
+Testes em .NET: integre seus testes nos pipelines de CI/CD
+	01 - Pipeline de testes no GitHub Actions
+		01 - Apresentação
+		02 - Projeto inicial do curso
+		03 - Configurando o projeto de testes

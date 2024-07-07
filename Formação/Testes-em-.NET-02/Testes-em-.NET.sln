@@ -79,6 +79,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-05-XX-Desafio.Dominio", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-05-XX-Desafio.Integration.Test", "09-Aplicando-Testes-Integracao-APIs\09-05-XX-Desafio.Integration.Test\09-05-XX-Desafio.Integration.Test.csproj", "{9F3AF866-2127-4172-BE25-9B1855103FE7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10-Integre-Testes-Pipelines-CI-CD", "10-Integre-Testes-Pipelines-CI-CD", "{9BFDD097-BD91-4C05-B5AA-E3EE1BE1C43F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10-01-XX-Pipeline-Testes-GitHub-Actions.API", "10-Integre-Testes-Pipelines-CI-CD\10-01-XX-Pipeline-Testes-GitHub-Actions.API\10-01-XX-Pipeline-Testes-GitHub-Actions.API.csproj", "{94619D27-FA52-4165-BB94-60A8B3960559}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10-01-XX-Pipeline-Testes-GitHub-Actions.Dados", "10-Integre-Testes-Pipelines-CI-CD\10-01-XX-Pipeline-Testes-GitHub-Actions.Dados\10-01-XX-Pipeline-Testes-GitHub-Actions.Dados.csproj", "{AC66F9CA-5167-4B40-B6A1-72FB76EE089E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10-01-XX-Pipeline-Testes-GitHub-Actions.Dominio", "10-Integre-Testes-Pipelines-CI-CD\10-01-XX-Pipeline-Testes-GitHub-Actions.Dominio\10-01-XX-Pipeline-Testes-GitHub-Actions.Dominio.csproj", "{5AB2263F-F51D-48B3-8B42-64BFCA5C647A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10-01-XX-Pipeline-Testes-GitHub-Actions.Integration.Test", "10-Integre-Testes-Pipelines-CI-CD\10-01-XX-Pipeline-Testes-GitHub-Actions.Integration.Test\10-01-XX-Pipeline-Testes-GitHub-Actions.Integration.Test.csproj", "{2B2E5A8D-8052-496A-9509-91914C3E35B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10-01-XX-Pipeline-Testes-GitHub-Actions.Unit.Test", "10-Integre-Testes-Pipelines-CI-CD\10-01-XX-Pipeline-Testes-GitHub-Actions.Unit.Test\10-01-XX-Pipeline-Testes-GitHub-Actions.Unit.Test.csproj", "{C0ECD237-C657-479C-B7DD-BC8A436AF536}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -229,6 +241,26 @@ Global
 		{9F3AF866-2127-4172-BE25-9B1855103FE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F3AF866-2127-4172-BE25-9B1855103FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F3AF866-2127-4172-BE25-9B1855103FE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94619D27-FA52-4165-BB94-60A8B3960559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94619D27-FA52-4165-BB94-60A8B3960559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94619D27-FA52-4165-BB94-60A8B3960559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94619D27-FA52-4165-BB94-60A8B3960559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC66F9CA-5167-4B40-B6A1-72FB76EE089E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC66F9CA-5167-4B40-B6A1-72FB76EE089E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC66F9CA-5167-4B40-B6A1-72FB76EE089E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC66F9CA-5167-4B40-B6A1-72FB76EE089E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB2263F-F51D-48B3-8B42-64BFCA5C647A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB2263F-F51D-48B3-8B42-64BFCA5C647A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB2263F-F51D-48B3-8B42-64BFCA5C647A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB2263F-F51D-48B3-8B42-64BFCA5C647A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B2E5A8D-8052-496A-9509-91914C3E35B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B2E5A8D-8052-496A-9509-91914C3E35B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B2E5A8D-8052-496A-9509-91914C3E35B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B2E5A8D-8052-496A-9509-91914C3E35B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0ECD237-C657-479C-B7DD-BC8A436AF536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0ECD237-C657-479C-B7DD-BC8A436AF536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0ECD237-C657-479C-B7DD-BC8A436AF536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0ECD237-C657-479C-B7DD-BC8A436AF536}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -270,6 +302,11 @@ Global
 		{39199AAA-4348-47B7-AFA5-EA05E86753DD} = {2D258B94-E533-423A-8CC2-C877BCD9614E}
 		{BBF83E5D-DE35-4345-BAAF-7F77A81AB310} = {2D258B94-E533-423A-8CC2-C877BCD9614E}
 		{9F3AF866-2127-4172-BE25-9B1855103FE7} = {2D258B94-E533-423A-8CC2-C877BCD9614E}
+		{94619D27-FA52-4165-BB94-60A8B3960559} = {9BFDD097-BD91-4C05-B5AA-E3EE1BE1C43F}
+		{AC66F9CA-5167-4B40-B6A1-72FB76EE089E} = {9BFDD097-BD91-4C05-B5AA-E3EE1BE1C43F}
+		{5AB2263F-F51D-48B3-8B42-64BFCA5C647A} = {9BFDD097-BD91-4C05-B5AA-E3EE1BE1C43F}
+		{2B2E5A8D-8052-496A-9509-91914C3E35B8} = {9BFDD097-BD91-4C05-B5AA-E3EE1BE1C43F}
+		{C0ECD237-C657-479C-B7DD-BC8A436AF536} = {9BFDD097-BD91-4C05-B5AA-E3EE1BE1C43F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {58C30F8B-E1F3-417F-8BC1-BE9A09CD4106}
