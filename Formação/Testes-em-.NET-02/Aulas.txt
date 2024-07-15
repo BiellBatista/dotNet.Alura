@@ -149,3 +149,15 @@ Testes em .NET: integre seus testes nos pipelines de CI/CD
 	05 - Fluxo completo
 		01 - Projeto da aula anterior
 		02 - Criando um novo teste
+		03 - Executando o fluxo completo
+		04 - Faça como eu fiz: ciclo completo
+		05 - Mão na massa: uma nova implementação
+		06 - Para saber mais: o que é CI/CD ?
+		07 - Entrega Contínua (D)
+		08 - Automatizando o processo de entrega (B / D)
+		09 - Desafio: criar novos endpoints
+		10 - Projeto final do curso
+		11 - O que aprendemos?
+		12 - Referências
+		13 - Entrevista com especialista
+		14 - Conclusão
