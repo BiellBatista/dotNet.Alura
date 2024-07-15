@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>false</IsPackable>
     <IsTestProject>false</IsTestProject>
-    <RootNamespace>_10_03_XX_Publicando_Pipeline.API</RootNamespace>
+    <RootNamespace>_10_04_XX_Criando_Pipeline_Azure_Devops.API</RootNamespace>
     <Nullable>enable</Nullable>
     <TargetFramework>net8.0</TargetFramework>
     <UserSecretsId>0a5b1c12-fb2f-4d73-9648-f43e44674966</UserSecretsId>
@@ -24,11 +24,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\10-03-XX-Publicando-Pipeline.Dados\10-03-XX-Publicando-Pipeline.Dados.csproj" />
-    <ProjectReference Include="..\10-03-XX-Publicando-Pipeline.Dominio\10-03-XX-Publicando-Pipeline.Dominio.csproj" />
+    <ProjectReference Include="..\10-04-XX-Criando-Pipeline-Azure-Devops.Dados\10-04-XX-Criando-Pipeline-Azure-Devops.Dados.csproj" />
+    <ProjectReference Include="..\10-04-XX-Criando-Pipeline-Azure-Devops.Dominio\10-04-XX-Criando-Pipeline-Azure-Devops.Dominio.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <InternalsVisibleTo Include="10-03-XX-Publicando-Pipeline.Integration.Test" />
+    <InternalsVisibleTo Include="10-04-XX-Criando-Pipeline-Azure-Devops.Integration.Test" />
   </ItemGroup>
 </Project>

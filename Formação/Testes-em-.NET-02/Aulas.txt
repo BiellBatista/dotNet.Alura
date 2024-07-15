@@ -133,3 +133,7 @@ Testes em .NET: integre seus testes nos pipelines de CI/CD
 		07 - Finalizando a pipeline com Entrega Contínua
 		08 - Decidindo a melhor estratégia de testes (C)
 		09 - O que aprendemos?
+	04 - Criando uma pipeline no Azure Devops
+		01 - Projeto da aula anterior
+		02 - Preparando o ambiente: criando uma organização e projeto no Azure DevOps
+		03 - Criando a pipeline no Azure Devops
