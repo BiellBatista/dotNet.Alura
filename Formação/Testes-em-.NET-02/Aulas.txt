@@ -128,3 +128,8 @@ Testes em .NET: integre seus testes nos pipelines de CI/CD
 		02 - Para saber mais: portal do Azure
 		03 - Para saber mais: criação de conta no Azure
 		04 - Criar o recurso de banco no Azure
+		05 - Criando recurso de Web App no Azure
+		06 - Faça como eu fiz: publicando uma Web App no portal do Azure
+		07 - Finalizando a pipeline com Entrega Contínua
+		08 - Decidindo a melhor estratégia de testes (C)
+		09 - O que aprendemos?
