@@ -114,3 +114,6 @@ Testes em .NET: integre seus testes nos pipelines de CI/CD
 		08 - Para saber mais: GitHub Actions
 		09 - Automatizando testes com GitHub Actions (D)
 		10 - O que aprendemos?
+	02 - TestContainer
+		01 - Projeto da aula anterior
+		02 - Instalação do TestContainer
