@@ -146,3 +146,6 @@ Testes em .NET: integre seus testes nos pipelines de CI/CD
 		10 - Pipeline no Azure DevOps (D)
 		11 - Build e release (C)
 		12 - O que aprendemos?
+	05 - Fluxo completo
+		01 - Projeto da aula anterior
+		02 - Criando um novo teste

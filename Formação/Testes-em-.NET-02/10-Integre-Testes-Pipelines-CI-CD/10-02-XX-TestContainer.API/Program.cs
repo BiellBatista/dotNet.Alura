@@ -1,14 +1,14 @@
-using _10_02_XX_TestContainer.Dominio.ValueObjects;
+using _10_02_XX_TestContainer.API.Endpoint;
+using _10_02_XX_TestContainer.API.Service;
 using _10_02_XX_TestContainer.Dados;
 using _10_02_XX_TestContainer.Dados.Database;
 using _10_02_XX_TestContainer.Dominio.Entidades;
+using _10_02_XX_TestContainer.Dominio.ValueObjects;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using _10_02_XX_TestContainer.API.Service;
-using _10_02_XX_TestContainer.API.Endpoint;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -151,4 +151,6 @@ async Task AdicionaRegistrosTabela(IServiceProvider serviceProvider)
         }
     }
 }
-public partial class Program { }
+
+public partial class Program
+{ }

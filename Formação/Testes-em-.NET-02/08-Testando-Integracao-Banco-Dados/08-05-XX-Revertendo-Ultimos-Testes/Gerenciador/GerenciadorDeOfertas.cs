@@ -2,10 +2,11 @@
 using _08_05_XX_Revertendo_Ultimos_Testes.Modelos;
 
 namespace _08_05_XX_Revertendo_Ultimos_Testes.Gerenciador;
+
 public class GerenciadorDeOfertas
 {
     private List<OfertaViagem> ofertaViagem = new List<OfertaViagem>();
-    OfertaViagemDAL ofertaViagemDAL = new OfertaViagemDAL(new JornadaMilhasContext());
+    private OfertaViagemDAL ofertaViagemDAL = new OfertaViagemDAL(new JornadaMilhasContext());
 
     public GerenciadorDeOfertas(List<OfertaViagem> ofertaViagem)
     {

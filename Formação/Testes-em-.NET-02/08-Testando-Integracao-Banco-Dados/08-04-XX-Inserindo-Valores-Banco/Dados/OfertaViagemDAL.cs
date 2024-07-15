@@ -1,6 +1,7 @@
 ﻿using _08_04_XX_Inserindo_Valores_Banco.Modelos;
 
 namespace _08_04_XX_Inserindo_Valores_Banco.Dados;
+
 public class OfertaViagemDAL
 {
     private readonly JornadaMilhasContext context;

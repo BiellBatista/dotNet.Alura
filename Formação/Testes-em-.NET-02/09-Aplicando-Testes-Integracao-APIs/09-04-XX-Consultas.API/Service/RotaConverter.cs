@@ -1,7 +1,6 @@
 ﻿using _09_04_XX_Consultas.API.DTO.Request;
 using _09_04_XX_Consultas.API.DTO.Response;
 using _09_04_XX_Consultas.Dominio.Entidades;
-using Microsoft.IdentityModel.Tokens;
 
 namespace _09_04_XX_Consultas.API.Service;
 

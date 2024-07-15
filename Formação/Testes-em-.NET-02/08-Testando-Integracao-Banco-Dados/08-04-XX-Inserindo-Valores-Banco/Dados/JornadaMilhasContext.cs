@@ -2,14 +2,18 @@
 using Microsoft.EntityFrameworkCore;
 
 namespace _08_04_XX_Inserindo_Valores_Banco.Dados;
+
 public class JornadaMilhasContext : DbContext
 {
     public DbSet<OfertaViagem> OfertasViagem { get; set; }
     public DbSet<Rota> Rotas { get; set; }
 
-    public JornadaMilhasContext() { }
+    public JornadaMilhasContext()
+    { }
 
-    public JornadaMilhasContext(DbContextOptions<JornadaMilhasContext> options) : base(options) { }
+    public JornadaMilhasContext(DbContextOptions<JornadaMilhasContext> options) : base(options)
+    {
+    }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
