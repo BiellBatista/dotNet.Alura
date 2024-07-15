@@ -117,3 +117,9 @@ Testes em .NET: integre seus testes nos pipelines de CI/CD
 	02 - TestContainer
 		01 - Projeto da aula anterior
 		02 - Instalação do TestContainer
+		03 - Para saber mais: a biblioteca TestContainer
+		04 - Refatorando o projeto de testes de integração
+		05 - Faça como eu fiz: editando a classe WebApplicationFactory do projeto de teste de integração
+		06 - Executando a pipeline no Github Actions
+		07 - Implementando Testes Eficientes (D)
+		08 - O que aprendemos?
