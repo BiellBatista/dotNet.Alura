@@ -137,3 +137,12 @@ Testes em .NET: integre seus testes nos pipelines de CI/CD
 		01 - Projeto da aula anterior
 		02 - Preparando o ambiente: criando uma organização e projeto no Azure DevOps
 		03 - Criando a pipeline no Azure Devops
+		04 - Executando a pipeline de build
+		05 - Mão na massa: criando uma Service Connection
+		06 - Para saber mais: selecionado um YML existente
+		07 - Preparando o ambiente: liberação do recurso de paralelismo
+		08 - Release de implantação no Azure Portal
+		09 - Faça como eu fiz: criação da pipeline de release
+		10 - Pipeline no Azure DevOps (D)
+		11 - Build e release (C)
+		12 - O que aprendemos?
