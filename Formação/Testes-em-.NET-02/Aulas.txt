@@ -123,3 +123,8 @@ Testes em .NET: integre seus testes nos pipelines de CI/CD
 		06 - Executando a pipeline no Github Actions
 		07 - Implementando Testes Eficientes (D)
 		08 - O que aprendemos?
+	03 - Publicando pela pipeline
+		01 - Projeto da aula anterior
+		02 - Para saber mais: portal do Azure
+		03 - Para saber mais: criação de conta no Azure
+		04 - Criar o recurso de banco no Azure
