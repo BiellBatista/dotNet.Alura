@@ -24,7 +24,7 @@
                     string[] dados = linha.Split(',');
 
                     // carregar objeto Boleto
-                    var boleto = MapearTextoParaBoleto(cabecalho, dados);
+                    var boleto = MapearTextoParaObjeto<Boleto>(cabecalho, dados);
 
                     // adicionar boleto à lista
                     boletos.Add(boleto);
@@ -53,6 +53,28 @@
                 CodigoBarras = valoresPropriedades[11],
                 LinhaDigitavel = valoresPropriedades[12]
             };
+
+            return instancia;
+        }
+
+        private static T MapearTextoParaObjeto<T>(string[] nomesPropriedades, string[] valoresPropriedades)
+        {
+            // criando uma instância dinâmica de uma classe
+            T instancia = Activator.CreateInstance<T>();
+
+            //instancia.CedenteNome = valoresPropriedades[0];
+            //instancia.CedenteCpfCnpj = valoresPropriedades[1];
+            //instancia.CedenteAgencia = valoresPropriedades[2];
+            //instancia.CedenteConta = valoresPropriedades[3];
+            //instancia.SacadoNome = valoresPropriedades[4];
+            //instancia.SacadoCpfCnpj = valoresPropriedades[5];
+            //instancia.SacadoEndereco = valoresPropriedades[6];
+            //instancia.Valor = Convert.ToDecimal(valoresPropriedades[7]);
+            //instancia.DataVencimento = Convert.ToDateTime(valoresPropriedades[8]);
+            //instancia.NumeroDocumento = valoresPropriedades[9];
+            //instancia.NossoNumero = valoresPropriedades[10];
+            //instancia.CodigoBarras = valoresPropriedades[11];
+            //instancia.LinhaDigitavel = valoresPropriedades[12];
 
             return instancia;
         }

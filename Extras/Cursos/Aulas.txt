@@ -267,3 +267,5 @@ C# Reflection: manipule dinamicamente tipos e assemblies
 		01 - Apresentação
 		02 - Preparando o ambiente
 		03 - Lendo arquivo de boletos
+		04 - Para saber mais: Reflection - Olhando o código sob o capô
+		05 - Criando instância dinamicamente
