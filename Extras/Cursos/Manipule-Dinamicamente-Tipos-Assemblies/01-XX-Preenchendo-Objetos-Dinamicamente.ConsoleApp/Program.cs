@@ -58,7 +58,7 @@ static void LerArquivoBoletos()
     Console.WriteLine("Lendo arquivo de boletos...");
 
     var leitorDeBoleto = new LeitorDeBoleto();
-    List<Boleto> boletos = leitorDeBoleto.LerBoletos("Boletos.csv");
+    var boletos = leitorDeBoleto.LerBoletos("Boletos.csv");
 
     foreach (var boleto in boletos)
     {

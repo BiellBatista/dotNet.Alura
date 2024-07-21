@@ -13,15 +13,15 @@
             using (var reader = new StreamReader(caminhoArquivo))
             {
                 // ler cabeçalho do arquivo CSV
-                string linha = reader.ReadLine();
-                string[] cabecalho = linha.Split(',');
+                var linha = reader.ReadLine();
+                var cabecalho = linha.Split(',');
 
                 // para cada linha do arquivo CSV
                 while (!reader.EndOfStream)
                 {
                     // ler dados
                     linha = reader.ReadLine();
-                    string[] dados = linha.Split(',');
+                    var dados = linha.Split(',');
 
                     // carregar objeto Boleto
                     var boleto = MapearTextoParaObjeto<Boleto>(cabecalho, dados);
@@ -62,19 +62,29 @@
             // criando uma instância dinâmica de uma classe
             T instancia = Activator.CreateInstance<T>();
 
-            //instancia.CedenteNome = valoresPropriedades[0];
-            //instancia.CedenteCpfCnpj = valoresPropriedades[1];
-            //instancia.CedenteAgencia = valoresPropriedades[2];
-            //instancia.CedenteConta = valoresPropriedades[3];
-            //instancia.SacadoNome = valoresPropriedades[4];
-            //instancia.SacadoCpfCnpj = valoresPropriedades[5];
-            //instancia.SacadoEndereco = valoresPropriedades[6];
-            //instancia.Valor = Convert.ToDecimal(valoresPropriedades[7]);
-            //instancia.DataVencimento = Convert.ToDateTime(valoresPropriedades[8]);
-            //instancia.NumeroDocumento = valoresPropriedades[9];
-            //instancia.NossoNumero = valoresPropriedades[10];
-            //instancia.CodigoBarras = valoresPropriedades[11];
-            //instancia.LinhaDigitavel = valoresPropriedades[12];
+            // percorre os nomes de propriedades.
+            for (var i = 0; i < nomesPropriedades.Length; i++)
+            {
+                // obtém a propriedade atual através do nome.
+                var nomePropriedade = nomesPropriedades[i];
+                var propertyInfo = instancia.GetType().GetProperty(nomePropriedade);
+
+                // verifica se a propriedade foi encontrada.
+                if (propertyInfo != null)
+                {
+                    // obtém o tipo da propriedade.
+                    var propertyType = propertyInfo.PropertyType;
+
+                    // obtém o valor da propriedade.
+                    var valor = valoresPropriedades[i];
+
+                    // converte o valor da propriedade para o tipo correto.
+                    var valorConvertido = Convert.ChangeType(valor, propertyType);
+
+                    // guarda o valor convertido na propriedade.
+                    propertyInfo.SetValue(instancia, valorConvertido);
+                }
+            }
 
             return instancia;
         }
