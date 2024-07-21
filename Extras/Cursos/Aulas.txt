@@ -262,3 +262,8 @@ Build de uma aplicação .NET: construindo seus projetos com MSBuild
 		08 - Projeto final do curso
 		09 - O que aprendemos?
 		10 - Conclusão
+C# Reflection: manipule dinamicamente tipos e assemblies
+	01 - Preenchendo objetos dinamicamente
+		01 - Apresentação
+		02 - Preparando o ambiente
+		03 - Lendo arquivo de boletos
