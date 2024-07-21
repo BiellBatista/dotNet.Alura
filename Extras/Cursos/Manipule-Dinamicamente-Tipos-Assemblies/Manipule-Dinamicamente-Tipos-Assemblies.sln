@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-XX-Preenchendo-Objetos-Dinamicamente", "01-XX-Preenchendo-Objetos-Dinamicamente", "{86E26CE6-9266-47D8-B5C0-99C87C1494C4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Preenchendo-Objetos-Dinamicamente", "01-Preenchendo-Objetos-Dinamicamente", "{86E26CE6-9266-47D8-B5C0-99C87C1494C4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Preenchendo-Objetos-Dinamicamente.Common", "01-XX-Preenchendo-Objetos-Dinamicamente.Common\01-XX-Preenchendo-Objetos-Dinamicamente.Common.csproj", "{F6B10103-D233-4238-8F26-6B083F30DD3A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Preenchendo-Objetos-Dinamicamente.ConsoleApp", "01-XX-Preenchendo-Objetos-Dinamicamente.ConsoleApp\01-XX-Preenchendo-Objetos-Dinamicamente.ConsoleApp.csproj", "{1D5C8B63-D4DC-49F4-85A7-0AC18C32A13E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Lendo-Objetos-Dinamicamente", "02-Lendo-Objetos-Dinamicamente", "{8BF7EAB0-40D4-4C22-A9C6-0EDF5704CB07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Lendo-Objetos-Dinamicamente.Common", "02-XX-Lendo-Objetos-Dinamicamente.Common\02-XX-Lendo-Objetos-Dinamicamente.Common.csproj", "{85B0F89C-1B5D-456D-AE4E-A4489FCD3C04}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Lendo-Objetos-Dinamicamente.ConsoleApp", "02-XX-Lendo-Objetos-Dinamicamente.ConsoleApp\02-XX-Lendo-Objetos-Dinamicamente.ConsoleApp.csproj", "{A3061D2A-C2FE-44AF-80FB-994DD5314C69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +29,14 @@ Global
 		{1D5C8B63-D4DC-49F4-85A7-0AC18C32A13E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D5C8B63-D4DC-49F4-85A7-0AC18C32A13E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D5C8B63-D4DC-49F4-85A7-0AC18C32A13E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85B0F89C-1B5D-456D-AE4E-A4489FCD3C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B0F89C-1B5D-456D-AE4E-A4489FCD3C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B0F89C-1B5D-456D-AE4E-A4489FCD3C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B0F89C-1B5D-456D-AE4E-A4489FCD3C04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3061D2A-C2FE-44AF-80FB-994DD5314C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3061D2A-C2FE-44AF-80FB-994DD5314C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3061D2A-C2FE-44AF-80FB-994DD5314C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3061D2A-C2FE-44AF-80FB-994DD5314C69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +44,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F6B10103-D233-4238-8F26-6B083F30DD3A} = {86E26CE6-9266-47D8-B5C0-99C87C1494C4}
 		{1D5C8B63-D4DC-49F4-85A7-0AC18C32A13E} = {86E26CE6-9266-47D8-B5C0-99C87C1494C4}
+		{85B0F89C-1B5D-456D-AE4E-A4489FCD3C04} = {8BF7EAB0-40D4-4C22-A9C6-0EDF5704CB07}
+		{A3061D2A-C2FE-44AF-80FB-994DD5314C69} = {8BF7EAB0-40D4-4C22-A9C6-0EDF5704CB07}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5DCFE011-C710-4ED7-9C6F-D4D3146B9175}

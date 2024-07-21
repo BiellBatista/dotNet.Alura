@@ -273,3 +273,6 @@ C# Reflection: manipule dinamicamente tipos e assemblies
 		07 - Utilização de Reflection em C# (C)
 		08 - Faça como eu fiz: adicionando uma nova coluna no arquivo de boletos
 		09 - O que aprendemos?
+	02 - Lendo objetos dinamicamente
+		01 - Projeto da aula anterior
+		02 - Agrupando boletos
