@@ -286,3 +286,9 @@ C# Reflection: manipule dinamicamente tipos e assemblies
 	03 - Construtores e métodos
 		01 - Projeto da aula anterior
 		02 - Investigando construtores
+		03 - Parâmetros do construtor
+		04 - Executando métodos dinamicamente
+		05 - A finalidade de se utilizar Reflection (D)
+		06 - Faça como eu fiz: invocando construtor com 2 parâmetros
+		07 - Para saber mais: C# Reflection e performance
+		08 - O que aprendemos?
