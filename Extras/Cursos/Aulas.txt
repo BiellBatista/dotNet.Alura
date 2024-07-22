@@ -304,3 +304,11 @@ C# Reflection: manipule dinamicamente tipos e assemblies
 	05 - Arquitetura de plugins
 		01 - Projeto da aula anterior
 		02 - Implementando gerador de documentos
+		03 - A estrutura de plugins
+		04 - Executando método em Assembly externo
+		05 - Gerenciamento de plugins com Reflection (B)
+		06 - Para saber mais: a tecnologia de plugins em softwares populares
+		07 - Faça como eu fiz: adicionando novo plugin da consultoria XPTO
+		08 - Projeto final do curso
+		09 - O que aprendemos?
+		10 - Conclusão

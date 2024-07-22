@@ -364,6 +364,12 @@ Extra Cursos
 		04 - Compilando com diferentes objetivos
 		05 - .NET Command Line Interface
 		06 - Empacotando a aplicação com Docker
+	C# Reflection: manipule dinamicamente tipos e assemblies
+		01 - Preenchendo objetos dinamicamente
+		02 - Lendo objetos dinamicamente
+		03 - Construtores e métodos
+		04 - Investigando assemblies
+		05 - Arquitetura de plugins
 -------------------------------------------------------------------------------------------------------------------------
 Extra Integrações em .NET
 	WCF : Distribua seus sistemas em .NET

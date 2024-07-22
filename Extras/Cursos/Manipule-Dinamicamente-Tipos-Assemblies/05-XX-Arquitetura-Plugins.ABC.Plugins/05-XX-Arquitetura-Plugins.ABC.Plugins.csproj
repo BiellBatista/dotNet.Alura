@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <Nullable>enable</Nullable>
+    <RootNamespace>_05_XX_Arquitetura_Plugins.ABC.Plugins</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\05-XX-Arquitetura-Plugins.Common\05-XX-Arquitetura-Plugins.Common.csproj" />
+  </ItemGroup>
+</Project>
