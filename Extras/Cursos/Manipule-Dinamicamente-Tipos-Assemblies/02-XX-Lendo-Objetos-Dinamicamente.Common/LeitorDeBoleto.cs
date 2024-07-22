@@ -4,8 +4,6 @@
     {
         public List<Boleto> LerBoletos(string caminhoArquivo)
         {
-            //throw new NotImplementedException();
-
             // montar lista de boletos
             var boletos = new List<Boleto>();
 

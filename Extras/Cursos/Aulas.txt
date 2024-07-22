@@ -276,3 +276,10 @@ C# Reflection: manipule dinamicamente tipos e assemblies
 	02 - Lendo objetos dinamicamente
 		01 - Projeto da aula anterior
 		02 - Agrupando boletos
+		03 - Lendo valor de propriedade
+		04 - Atributos customizados
+		05 - Lendo atributos
+		06 - Utilização de atributos Custom em C# (C)
+		07 - Para saber mais: explorando atributos customizados em C#
+		08 - Faça como eu fiz: criando atributo para o relatório
+		09 - O que aprendemos?
