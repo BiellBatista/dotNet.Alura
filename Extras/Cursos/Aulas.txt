@@ -295,3 +295,9 @@ C# Reflection: manipule dinamicamente tipos e assemblies
 	04 - Investigando assemblies
 		01 - Projeto da aula anterior
 		02 - Obtendo Assembly
+		03 - Carregando tipos do Assembly
+		04 - Para saber mais: obtendo o tipo Assembly
+		05 - Filtrando tipos por metadados
+		06 - Arquitetura baseada em plugins com Reflection em C# (C)
+		07 - Faça como eu fiz: implementando novo relatório JSON
+		08 - O que aprendemos?
