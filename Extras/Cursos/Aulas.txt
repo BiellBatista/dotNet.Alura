@@ -283,3 +283,6 @@ C# Reflection: manipule dinamicamente tipos e assemblies
 		07 - Para saber mais: explorando atributos customizados em C#
 		08 - Faça como eu fiz: criando atributo para o relatório
 		09 - O que aprendemos?
+	03 - Construtores e métodos
+		01 - Projeto da aula anterior
+		02 - Investigando construtores
