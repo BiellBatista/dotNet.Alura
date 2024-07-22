@@ -1,4 +1,4 @@
-﻿namespace _03_XX_Construtores_Metodos.Common
+﻿namespace _04_XX_Investigando_Assemblies.Common
 {
     public class BoletosPorCedente
     {

@@ -292,3 +292,6 @@ C# Reflection: manipule dinamicamente tipos e assemblies
 		06 - Faça como eu fiz: invocando construtor com 2 parâmetros
 		07 - Para saber mais: C# Reflection e performance
 		08 - O que aprendemos?
+	04 - Investigando assemblies
+		01 - Projeto da aula anterior
+		02 - Obtendo Assembly
