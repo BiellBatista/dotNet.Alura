@@ -111,6 +111,8 @@ C# e Exceções: construa aplicações resilientes
 		09 - Faça como eu fiz: capturando uma NullReferenceException
 		10 - O que aprendemos?
 	02 - Exceções na ADOPET API
+		01 - Projeto da aula anterior
+		02 - Capturando exceções
 	03 - Lançando exceções
 	04 - Hierarquia de exceções
 	05 - Boas práticas
