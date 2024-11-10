@@ -121,5 +121,12 @@ C# e Exceções: construa aplicações resilientes
 		08 - O que aprendemos?
 	03 - Lançando exceções
 		01 - Projeto da aula anterior
+		02 - Adicionando novas regras
+		03 - Exceções customizadas
+		04 - Utilizando o operador when
+		05 - Tratando múltiplas exceções (A & C)
+		06 - Exceções na prática (A)
+		07 - Faça como eu fiz: lançando exceções na aplicação
+		08 - O que aprendemos?
 	04 - Hierarquia de exceções
 	05 - Boas práticas
