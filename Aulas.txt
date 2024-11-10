@@ -1,106 +1,106 @@
 Carreira Desenvolvedor C#
 	Curso C# Parte 1: Primeiros Passos
-		01 - HistÛria e ecossistema da linguagem
+		01 - Hist√≥ria e ecossistema da linguagem
 		02 - Nosso primeiro programa e o Visual Studio
-		03 - Vari·veis numÈricas
-		04 - Vari·veis de texto
+		03 - Vari√°veis num√©ricas
+		04 - Vari√°veis de texto
 		05 - Controle de fluxo com IF
-		06 - Controle de fluxo com laÁos de repetiÁ„o
-	Curso C# Parte 2: IntroduÁ„o ‡ OrientaÁ„o a Objetos
+		06 - Controle de fluxo com la√ßos de repeti√ß√£o
+	Curso C# Parte 2: Introdu√ß√£o √† Orienta√ß√£o a Objetos
 		01 - Nossa primeira classe
 		02 - Tipos
 		03 - Comportamentos de classes
-		04 - Namespace e composiÁ„o e null
+		04 - Namespace e composi√ß√£o e null
 		05 - Propriedades
-		06 - Construtores e membros est·ticos
-	Curso C# Parte 3 - Entendendo HeranÁa e Interface
+		06 - Construtores e membros est√°ticos
+	Curso C# Parte 3 - Entendendo Heran√ßa e Interface
 		01 - Conhecendo o problema do cliente
-		02 - HeranÁa
+		02 - Heran√ßa
 		03 - Construtores e protected
-		04 - Mais heranÁa e heranÁa m˙ltipla
+		04 - Mais heran√ßa e heran√ßa m√∫ltipla
 		05 - Interfaces
-	Curso C# Parte 4 - Entendendo exceÁıes
-		01 - Primeiros passos com exceÁıes
-		02 - Tratamento de exceÁıes
+	Curso C# Parte 4 - Entendendo exce√ß√µes
+		01 - Primeiros passos com exce√ß√µes
+		02 - Tratamento de exce√ß√µes
 		03 - ArgumentException ParamName e nameof
-		04 - Criando exceÁıes ricas
+		04 - Criando exce√ß√µes ricas
 		05 - StackTrace e InnerException
 		06 - Finally e using
-	Curso C# Parte 5 - Bibliotecas DLLs, documentaÁ„o e usando o NuGet
+	Curso C# Parte 5 - Bibliotecas DLLs, documenta√ß√£o e usando o NuGet
 		01 - Projeto de biblioteca
 		02 - Modificadores de acesso em bibliotecas
 		03 - Referencia de DLL
 		04 - Documentando
 		05 - NuGet
-	Curso C# Parte 6 - Strings, expressıes regulares e a classe Object
+	Curso C# Parte 6 - Strings, express√µes regulares e a classe Object
 		01 - Mais sobre a String
-		02 - MÈtodos e propriedades
-		03 - Mais mÈtodos de manipulaÁ„o
-		04 - Expressıes regulares
+		02 - M√©todos e propriedades
+		03 - Mais m√©todos de manipula√ß√£o
+		04 - Express√µes regulares
 		05 - Classe Object
-	Curso C# Parte 7 - Array e tipos genÈricos
+	Curso C# Parte 7 - Array e tipos gen√©ricos
 		01 - Conhecendo Array
 		02 - Criando nossa Lista
-		03 - Criando o mÈtodo Remover
+		03 - Criando o m√©todo Remover
 		04 - Indexadores e argumentos params
-		05 - ComeÁando com genÈricos
+		05 - Come√ßando com gen√©ricos
 	Curso C# Parte 8 - List<T>, lambda, linq
-		01 - ListT e mÈtodos de extens„o
-		02 - MÈtodo de extens„o genÈrico
-		03 - Usando VAR e mÈtodo Sort
+		01 - ListT e m√©todos de extens√£o
+		02 - M√©todo de extens√£o gen√©rico
+		03 - Usando VAR e m√©todo Sort
 		04 - IComparable e IComparer
-		05 - OrderBy e expressıes Lambda
+		05 - OrderBy e express√µes Lambda
 		06 - Linq e operador Where
-	Curso C# Parte 9 - Entrada e saÌda (I/O) com streams
+	Curso C# Parte 9 - Entrada e saida (I/O) com streams
 		01 - Lendo arquivos de texto
 		02 - Mais FileStream e leitor StreamReader
 		03 - Fazendo parse e StreamWriter
 		04 - O Flush e arquivos binarios
 		05 - Streams da Console
-	C# Collections parte 1 - Listas, arrays, listas ligadas, dicion·rios e conjuntos
-		01 - ComeÁando com Arrays
-		02 - Lista, a ColeÁ„o FlexÌvel
+	C# Collections parte 1 - Listas, arrays, listas ligadas, dicion√°rios e conjuntos
+		01 - Come√ßando com Arrays
+		02 - Lista, a Cole√ß√£o Flex√≠vel
 		03 - O Poder dos Sets
-		04 - Dicion·rios, Trabalhando com Chave e Valor
+		04 - Dicion√°rios, Trabalhando com Chave e Valor
 		05 - Lista Ligada, Pilha e Fila
-		06 - Qual ColeÁ„o Usar
-	C# Collections parte 2 - ColeÁıes ordenadas, arrays multidimensionais e LINQ
-		01 - ColeÁıes Ordenadas
+		06 - Qual Cole√ß√£o Usar
+	C# Collections parte 2 - Cole√ß√µes ordenadas, arrays multidimensionais e LINQ
+		01 - Cole√ß√µes Ordenadas
 		02 - Arrays Multidimensionais
 		03 - Consultando com LINQ
 		04 - Mais Operadores LINQ
-		05 - Convertendo e Enumerando ColeÁıes
+		05 - Convertendo e Enumerando Cole√ß√µes
 -------------------------------------------------------------------------------------------------------------------------
 Carreira Desenvolvedor ASP.NET MVC5
 	Curso C# Parte 1: Primeiros Passos
-		01 - HistÛria e ecossistema da linguagem
+		01 - Hist√≥ria e ecossistema da linguagem
 		02 - Nosso primeiro programa e o Visual Studio
-		03 - Vari·veis numÈricas
-		04 - Vari·veis de texto
+		03 - Vari√°veis num√©ricas
+		04 - Vari√°veis de texto
 		05 - Controle de fluxo com IF
-		06 - Controle de fluxo com laÁos de repetiÁ„o
-	Curso C# Parte 2: IntroduÁ„o ‡ OrientaÁ„o a Objetos
+		06 - Controle de fluxo com la√ßos de repeti√ß√£o
+	Curso C# Parte 2: Introdu√ß√£o √† Orienta√ß√£o a Objetos
 		01 - Nossa primeira classe
 		02 - Tipos
 		03 - Comportamentos de classes
-		04 - Namespace e composiÁ„o e null
+		04 - Namespace e composi√ß√£o e null
 		05 - Propriedades
-		06 - Construtores e membros est·ticos
-	Curso C# Parte 3 - Entendendo HeranÁa e Interface
+		06 - Construtores e membros est√°ticos
+	Curso C# Parte 3 - Entendendo Heran√ßa e Interface
 		01 - Conhecendo o problema do cliente
-		02 - HeranÁa
+		02 - Heran√ßa
 		03 - Construtores e protected
-		04 - Mais heranÁa e heranÁa m˙ltipla
+		04 - Mais heran√ßa e heran√ßa m√∫ltipla
 		05 - Interfaces
-	Curso C# Parte 4 - Entendendo exceÁıes
-		01 - Primeiros passos com exceÁıes
-		02 - Tratamento de exceÁıes
+	Curso C# Parte 4 - Entendendo exce√ß√µes
+		01 - Primeiros passos com exce√ß√µes
+		02 - Tratamento de exce√ß√µes
 		03 - ArgumentException ParamName e nameof
-		04 - Criando exceÁıes ricas
+		04 - Criando exce√ß√µes ricas
 		05 - StackTrace e InnerException
 		06 - Finally e using
 	Entity Framework Core: Banco de dados de forma eficiente
-		01 - IntroduÁ„o ao Entity Framework Core
+		01 - Introdu√ß√£o ao Entity Framework Core
 		02 - Manipulando objetos
 		03 - Como o Entity monta o SQL?
 		04 - Sincronizando o banco de dados com o modelo de classes
@@ -109,15 +109,15 @@ Carreira Desenvolvedor ASP.NET MVC5
 		07 - Relacionamentos Um para Um no Entity
 		08 - Recuperando objetos relacionados
 	HTTP: Entendendo a web por baixo dos panos
-		01 - O que È HTTP?
+		01 - O que √© HTTP?
 		02 - A web segura - HTTPS
-		03 - EndereÁos sob seu domÌnio
+		03 - Endere√ßos sob seu dom√≠nio
 		04 - O cliente pede e o servidor responde
-		05 - Depurando a requisiÁ„o HTTP
-		06 - Par‚metros da requisiÁ„o
-		07 - ServiÁos na web com REST
+		05 - Depurando a requisi√ß√£o HTTP
+		06 - Par√¢metros da requisi√ß√£o
+		07 - Servi√ßos na web com REST
 		08 - HTTP2 - Por uma web mais eficiente
-	HTML5 e CSS3 parte 1: crie uma p·gina da Web
+	HTML5 e CSS3 parte 1: crie uma p√°gina da Web
 		01 - 
 		02 - 
 		03 - 
@@ -131,103 +131,103 @@ Carreira Desenvolvedor ASP.NET MVC5
 		11 - 
 		12 - 
 	ASP.NET MVC 5: O framework pronto para a web
-		01 - IntroduÁ„o ao ASP.NET MVC
-		02 - O padr„o MVC
-		03 - Controlando RequisiÁıes e a Listagem de Produtos
-		04 - Lidando com Formul·rios e o Cadastro de Produtos
+		01 - Introdu√ß√£o ao ASP.NET MVC
+		02 - O padr√£o MVC
+		03 - Controlando Requisi√ß√µes e a Listagem de Produtos
+		04 - Lidando com Formul√°rios e o Cadastro de Produtos
 		05 - Validando um produto com Model Validation
 		06 - Trabalhando Melhor com as views
-		07 - Criando rotas na aplicaÁ„o
+		07 - Criando rotas na aplica√ß√£o
 		08 - Layouts com o Twitter Bootstrap
 		09 - Ajax
-		10 - Sessıes para autenticar usu·rios
-		11 - Filtro para autorizaÁ„o de usu·rios
+		10 - Sess√µes para autenticar usu√°rios
+		11 - Filtro para autoriza√ß√£o de usu√°rios
 -------------------------------------------------------------------------------------------------------------------------
 Carreira Desenvolvedor ASP.NET Core
 	APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API
-		01 - IntroduÁ„o a Web APIs
+		01 - Introdu√ß√£o a Web APIs
 		02 - CRUD de livros na API
 		03 - Padronizando a API
 		04 - Recursos de uma API
-		05 - Negociando conte˙dos
-		06 - SeguranÁa na API
-		07 - Separando as aplicaÁıes
+		05 - Negociando conte√∫dos
+		06 - Seguran√ßa na API
+		07 - Separando as aplica√ß√µes
 	APIs Rest com Asp.NET Core 2.1 Parte 2: Consumindo nossa API
 		01 - Consumindo nossa API
-		02 - RequisiÁıes para verbos HTTP diferentes
-		03 - RequisiÁıes de Upload
-		04 - Consumindo com autenticaÁ„o JWT
+		02 - Requisi√ß√µes para verbos HTTP diferentes
+		03 - Requisi√ß√µes de Upload
+		04 - Consumindo com autentica√ß√£o JWT
 		05 - Guardando o Token no Cookie
 	APIs Rest com Asp.NET Core 2.1 Parte 3: Padronizando a API
-		01 - ResiliÍncia ante mudanÁas
-		02 - Lidando com grandes coleÁıes
+		01 - Resili√™ncia ante mudan√ßas
+		02 - Lidando com grandes cole√ß√µes
 		03 - Erros uniformes
 		04 - Descobrindo a API
 -------------------------------------------------------------------------------------------------------------------------
 Carreira Desenvolvedor .Net Erudito
-	SOLID com C#: OrientaÁ„o a Objetos com C#
-		01 - Coes„o e o Single Responsibility Principle
+	SOLID com C#: Orienta√ß√£o a Objetos com C#
+		01 - Coes√£o e o Single Responsibility Principle
 		02 - Acoplamento e a estabilidade
 		03 - Classes abertas, Open Closed e Dependency Inversion Principles
 		04 - Entendendo o encapsulamento
-		05 - HeranÁa e o Liskov Substitutive Principle
-	SOLID com C#: OrientaÁ„o a Objetos com C# (novo)
+		05 - Heran√ßa e o Liskov Substitutive Principle
+	SOLID com C#: Orienta√ß√£o a Objetos com C# (novo)
 		01 - Qualidade de software
-		02 - Responsabilidade ˙nica
-		03 - Invers„o de dependÍncias
-		04 - PrincÌpio do Aberto/Fechado
-		05 - SegregaÁ„o de Interfaces e Liskov
-	Design Patterns C# I: Boas pr·ticas de programaÁ„o
-		01 - A grande variedade de impostos e o padr„o Strategy
+		02 - Responsabilidade √∫nica
+		03 - Invers√£o de depend√™ncias
+		04 - Princ√≠pio do Aberto/Fechado
+		05 - Segrega√ß√£o de Interfaces e Liskov
+	Design Patterns C# I: Boas pr√°ticas de programa√ß√£o
+		01 - A grande variedade de impostos e o padr√£o Strategy
 		02 - Muitos Descontos e o Chain of Responsibility
-		03 - CÛdigos parecidos e o Template Method
+		03 - C√≥digos parecidos e o Template Method
 		04 - Comportamentos compostos por outros comportamentos e o Decorator
 		05 - Estados que variam e o State
-		06 - CriaÁ„o de objetos e o Builder
-		07 - Executando diferentes aÁıes e o Observer
-		08 - AlÈm dos padrıes de projeto
-	Design Patterns C# II: Boas pr·ticas de programaÁ„o
-		01 - F·bricas e o problema de criaÁ„o de objetos
+		06 - Cria√ß√£o de objetos e o Builder
+		07 - Executando diferentes a√ß√µes e o Observer
+		08 - Al√©m dos padr√µes de projeto
+	Design Patterns C# II: Boas pr√°ticas de programa√ß√£o
+		01 - F√°bricas e o problema de cria√ß√£o de objetos
 		02 - Muitos objetos e o Flyweight
 		03 - Salvando estados anteriores e o Memento
 		04 - DSLs e o Interpreter
 		05 - Estruturas de dados e o Visitor
 		06 - Bridges
-		07 - Diferentes aÁıes com Command
+		07 - Diferentes a√ß√µes com Command
 		08 - Adapter
-		09 - FaÁades e Singletons
-	C# RefatoraÁ„o Parte 1: Praticando refatoraÁ„o de cÛdigo
-		01 - Extraindo mÈtodos
-		02 - Extraindo vari·veis tempor·rias
-		03 - Quebrando Vari·veis e Preservando Par‚metros
-		04 - Substituindo MÈtodo
-		05 - Movendo MÈtodo e Campo
+		09 - Fa√ßades e Singletons
+	C# Refatora√ß√£o Parte 1: Praticando refatora√ß√£o de c√≥digo
+		01 - Extraindo m√©todos
+		02 - Extraindo vari√°veis tempor√°rias
+		03 - Quebrando Vari√°veis e Preservando Par√¢metros
+		04 - Substituindo m√©todo
+		05 - Movendo m√©todo e Campo
 		06 - Extraindo e Incorporando Classe
-		07 - DelegaÁ„o e Intermedi·rios
+		07 - Delega√ß√£o e Intermedi√°rios
 		08 - Estendendo Classes
-	C# RefatoraÁ„o Parte 2: RefatoraÁıes baseadas em OrientaÁ„o a Objetos
-		01 - Encapsulamento e OrientaÁ„o a Objetos
-		02 - Lidando com ReferÍncias
-		03 - Dos CÛdigos ‡s Classes
-		04 - Simplificando Expressıes Condicionais
-		05 - CondiÁıes com OrientaÁ„o a Objetos
-	C# RefatoraÁ„o Parte 3: Hierarquias de classes
-		01 - Ajustando Par‚metros e MÈtodos
-		02 - Criando par‚metros mais simples
-		03 - Trabalhando melhor com cÛdigos de erro e exceÁıes
-		04 - Descobrindo onde colocar campos e mÈtodos
+	C# Refatora√ß√£o Parte 2: Refatora√ß√µes baseadas em Orienta√ß√£o a Objetos
+		01 - Encapsulamento e Orienta√ß√£o a Objetos
+		02 - Lidando com refer√™ncias
+		03 - Dos c√≥digos √†s classes
+		04 - Simplificando Express√µes Condicionais
+		05 - Condi√ß√µes com Orienta√ß√£o a Objetos
+	C# Refatora√ß√£o Parte 3: Hierarquias de classes
+		01 - Ajustando Par√¢metros e m√©todos
+		02 - Criando par√¢metros mais simples
+		03 - Trabalhando melhor com c√≥digos de erro e exce√ß√µes
+		04 - Descobrindo onde colocar campos e m√©todos
 		05 - Extraindo superclasse, subclasse e interfaces
-		06 - Aplicando heranÁa e delegaÁ„o
+		06 - Aplicando heran√ßa e delega√ß√£o
 -------------------------------------------------------------------------------------------------------------------------
 Carreira Desenvolvedor .Net com Entity Framework
-	SQL Server: IntroduÁ„o ao SQL com Microsoft SQL Server 2017
+	SQL Server: Introdu√ß√£o ao SQL com Microsoft SQL Server 2017
 		01 - Instalando e configurando o SQL Server
 		02 - Manipulando o banco de dados
 		03 - Gerenciando as tabelas do banco de dados
-		04 - ManutenÁ„o dos dados nas tabelas
+		04 - Manuten√ß√£o dos dados nas tabelas
 		05 - Consultando os dados
 	Entity Framework Core: Banco de dados de forma eficiente
-		01 - IntroduÁ„o ao Entity Framework Core
+		01 - Introdu√ß√£o ao Entity Framework Core
 		02 - Manipulando objetos
 		03 - Como o Entity monta o SQL?
 		04 - Sincronizando o banco de dados com o modelo de classes
@@ -242,85 +242,85 @@ Carreira Desenvolvedor .Net com Entity Framework
 		04 - Associando e Filtrando Entidades do Modelo
 		05 - Ordenando Consultas
 		06 - Contando e Totalizando Valores
-		07 - M·ximo, MÌnimo, MÈdia e FunÁıes Customizadas
+		07 - M√°ximo, M√≠nimo, M√©dia e Fun√ß√µes Customizadas
 	Entity LinQ parte 2: Store Procedures e consultas com o LinQPad
-		01 - Aprenda a criar relatÛrios com paginaÁ„o
-		02 - Aplique An·lise de Afinidade para sugerir compras de produtos
-		03 - Entenda execuÁ„o adiada e execuÁ„o imediata nas consultas LINQ
-		04 - Aproveite recursos de programaÁ„o paralela com Parallel LINQ
+		01 - Aprenda a criar relat√≥rios com pagina√ß√£o
+		02 - Aplique An√°lise de Afinidade para sugerir compras de produtos
+		03 - Entenda execu√ß√£o adiada e execu√ß√£o imediata nas consultas LINQ
+		04 - Aproveite recursos de programa√ß√£o paralela com Parallel LINQ
 		05 - Integre resultados de stored procedures em consultas LINQ
-		06 - Estude, analise e brinque com consultas atravÈs do LinqPad
-	Entity Framework Core parte 1: Mapeando um banco prÈ-existente
+		06 - Estude, analise e brinque com consultas atrav√©s do LinqPad
+	Entity Framework Core parte 1: Mapeando um banco pr√©-existente
 		01 - Configurando nomes de tabelas e colunas
 		02 - Refinando o mapeamento da tabela de atores
-		03 - Colunas que n„o existem na camada de negÛcio
+		03 - Colunas que n√£o existem na camada de neg√≥cio
 		04 - Mapeando filmes
 		05 - Relacionando filmes a atores
 		06 - Incluindo a tabela de idiomas no projeto
-	Entity Framework Core parte 2: Mapeando um banco prÈ-existente
+	Entity Framework Core parte 2: Mapeando um banco pr√©-existente
 		01 - Concluindo o mapeamento da tabelas de atores
-		02 - ClassificaÁ„o indicativa de filmes
+		02 - Classifica√ß√£o indicativa de filmes
 		03 - Lidando com enumerados
-		04 - Mapeando heranÁa
-		05 - Assumindo o controle da geraÁ„o do SQL
+		04 - Mapeando heran√ßa
+		05 - Assumindo o controle da gera√ß√£o do SQL
 		06 - Stored Procedures
 -------------------------------------------------------------------------------------------------------------------------
-Carreira AvanÁado na Plataforma.NET
-	C# 6: Melhorias em ColeÁıes, Propriedades, ExceÁıes e Strings
+Carreira Avan√ßado na Plataforma.NET
+	C# 6: Melhorias em Cole√ß√µes, Propriedades, Exce√ß√µes e Strings
 		01 - Propriedades Mais Simples
 		02 - Um Intelisense Mais Inteligente
 		03 - Strings Mais Inteligentes
-		04 - ExceÁıes Aprimoradas
-		05 - Melhorias em ColeÁıes
-	C# 7: Tuplas, par‚metros, condicionais, e estilo de cÛdigo
-		01 - Melhorias em Par‚metros
+		04 - Exce√ß√µes Aprimoradas
+		05 - Melhorias em Cole√ß√µes
+	C# 7: Tuplas, par√¢metros, condicionais, e estilo de c√≥digo
+		01 - Melhorias em Par√¢metros
 		02 - Tuplas
 		03 - Melhorias em Condicionais
-		04 - Literais e Valores Padr„o
-		05 - Estilo de CÛdigo
+		04 - Literais e Valores padr√£o
+		05 - Estilo de c√≥digo
 	C# 7.3: Igualdade em tuplas, expression variables e refs
 		01 - Tuples
 		02 - Expression variables
-		03 - ReatribuiÁ„o em Refs
+		03 - Reatribui√ß√£o em Refs
 		04 - Backfield attributes
-		05 - Melhorias em resoluÁ„o de sobrecarga
-	C# Reflection parte 1: Metadados do seu cÛdigo .NET
-		01 - O pontapÈ de nossa aplicaÁ„o Web
-		02 - Usando nosso Assembly dinamicamente e convenÁıes
-		03 - Invocando mÈtodos dinamicamente
-		04 - Trabalhando com sobrecargas de mÈtodos
-		05 - Invocando mÈtodos com assinaturas complexas dinamicamente
-	C# Reflection parte 2: Implementando injeÁ„o de dependÍncia do zero
+		05 - Melhorias em resolu√ß√£o de sobrecarga
+	C# Reflection parte 1: Metadados do seu c√≥digo .NET
+		01 - O pontap√© de nossa aplica√ß√£o Web
+		02 - Usando nosso Assembly dinamicamente e conven√ß√µes
+		03 - Invocando m√©todos dinamicamente
+		04 - Trabalhando com sobrecargas de m√©todos
+		05 - Invocando m√©todos com assinaturas complexas dinamicamente
+	C# Reflection parte 2: Implementando inje√ß√£o de depend√™ncia do zero
 		01 - Usando modelos em nossa View
 		02 - Usando atributos como filtros
 		03 - Conhecendo IoC
 		04 - Implementando IoC
-		05 - Ajustes finos e conclus„o
+		05 - Ajustes finos e conclus√£o
 -------------------------------------------------------------------------------------------------------------------------
 Extra ASP.NET Identity
-	 Parte 1: Gerencie contas de usu·rios
-		01 - ComeÁando com AspNet Identity
+	 Parte 1: Gerencie contas de usu√°rios
+		01 - Come√ßando com AspNet Identity
 		02 - Arquitetura do AspNet Identity
 		03 - Owin
-		04 - ValidaÁıes de usu·rio
-		05 - ServiÁos de email
-	Parte 2: AutenticaÁ„o, seguranÁa com lockout e recuperando a senha de forma segura
-		01 - Login e senha de usu·rio
+		04 - Valida√ß√µes de usu√°rio
+		05 - Servi√ßos de email
+	Parte 2: Autentica√ß√£o, seguran√ßa com lockout e recuperando a senha de forma segura
+		01 - Login e senha de usu√°rio
 		02 - Usando o SignInManager
-		03 - FunÁ„o de logoff
-		04 - FunÁ„o de Lockout
+		03 - Fun√ß√£o de logoff
+		04 - Fun√ß√£o de Lockout
 		05 - Recuperando a senha de forma segura
-	Parte 3: AutorizaÁ„o, autenticaÁ„o externa com redes sociais
-		01 - Conhecendo os mecanismos de autenticaÁ„o externa
-		02 - Implementando autenticaÁ„o externa
-		03 - Configurando autenticaÁ„o externa
-		04 - Roles e funÁıes
-		05 - Alterando as roles de um usu·rio
-	Parte 4: AutenticaÁ„o mais segura com 2 fatores
-		01 - O que s„o fatores de autenticaÁ„o
-		02 - ServiÁo de envio de SMS
-		03 - Implementando autenticaÁ„o de 2 fatores
-		04 - Continuando logado com autenticaÁ„o de 2 fatores
+	Parte 3: Autoriza√ß√£o, autentica√ß√£o externa com redes sociais
+		01 - Conhecendo os mecanismos de autentica√ß√£o externa
+		02 - Implementando autentica√ß√£o externa
+		03 - Configurando autentica√ß√£o externa
+		04 - Roles e fun√ß√µes
+		05 - Alterando as roles de um usu√°rio
+	Parte 4: Autentica√ß√£o mais segura com 2 fatores
+		01 - O que s√£o fatores de autentica√ß√£o
+		02 - Servi√ßo de envio de SMS
+		03 - Implementando autentica√ß√£o de 2 fatores
+		04 - Continuando logado com autentica√ß√£o de 2 fatores
 		05 - SecurityStamp
 -------------------------------------------------------------------------------------------------------------------------
 Extra Big Query
@@ -329,7 +329,7 @@ Extra Big Query
 		02 - Manipulando o Big Query
 		03 - Instalando e configurando o C#
 		04 - Primeiros acessos
-	C# e Big Query: Mais funÁıes e manipulaÁıes
+	C# e Big Query: Mais fun√ß√µes e manipula√ß√µes
 		01 - Criando conjunto de dados
 		02 - Manipulando tabelas
 		03 - StreamingBuffer
@@ -343,155 +343,149 @@ Extra Cursos
 		01 - Usando Threads
 		02 - Usando Tasks
 		03 - Usando o AsyncAwait do C#
-		04 - Padrıes de notificaÁ„o de progresso de tarefas
-		05 - Criando tarefas cancel·veis
+		04 - Padr√µes de notifica√ß√£o de progresso de tarefas
+		05 - Criando tarefas cancel√°veis
 	C#: Eventos, Delegates e Lambda
 		01 - Comportamentos e Eventos
 		02 - Delegates
 		03 - Manipulando Delegates
-		04 - FunÁıes e nosso prÛprio evento
-		05 - AvanÁando em Eventos
-	C# Brasil: Formate datas, cpf e n˙meros nacionais
-		01 - ValidaÁ„o e FormataÁ„o de CPF, CNPJ, TÌtulo de Eleitor
-		02 - Trabalhando com Datas e N˙meros por Extenso
+		04 - Fun√ß√µes e nosso pr√≥prio evento
+		05 - Avan√ßando em Eventos
+	C# Brasil: Formate datas, cpf e n√∫meros nacionais
+		01 - Valida√ß√£o e Formata√ß√£o de CPF, CNPJ, T√≠tulo de Eleitor
+		02 - Trabalhando com Datas e N√∫meros por Extenso
 		03 - Trabalhando com Dinheiro
 		04 - Buscando CEP na internet
 		05 - Aplicando o que aprendemos
-	Build de uma aplicaÁ„o .NET: construindo seus projetos com MSBuild
+	Build de uma aplica√ß√£o .NET: construindo seus projetos com MSBuild
 		01 - O arquivo CSPROJ
 		02 - Os 4 blocos fundamentais do MSBuild
 		03 - Reaproveitando projetos de build
 		04 - Compilando com diferentes objetivos
 		05 - .NET Command Line Interface
-		06 - Empacotando a aplicaÁ„o com Docker
-	C# Reflection: manipule dinamicamente tipos e assemblies
-		01 - Preenchendo objetos dinamicamente
-		02 - Lendo objetos dinamicamente
-		03 - Construtores e mÈtodos
-		04 - Investigando assemblies
-		05 - Arquitetura de plugins
+		06 - Empacotando a aplica√ß√£o com Docker
 -------------------------------------------------------------------------------------------------------------------------
-Extra IntegraÁıes em .NET
+Extra Integra√ß√µes em .NET
 	WCF : Distribua seus sistemas em .NET
-		01 - O que È WCF
-		02 - Criando o primeiro serviÁo
-		03 - Configurando um serviÁo
-		04 - Hosting do serviÁo
-		05 - Consumindo um serviÁo
-		06 - Acessando o serviÁo pelo browser
+		01 - O que √© WCF
+		02 - Criando o primeiro servi√ßo
+		03 - Configurando um servi√ßo
+		04 - Hosting do servi√ßo
+		05 - Consumindo um servi√ßo
+		06 - Acessando o servi√ßo pelo browser
 -------------------------------------------------------------------------------------------------------------------------
 Extra .NET 5
-	API Rest com .NET 5: OperaÁıes essenciais com verbos HTTP
+	API Rest com .NET 5: Opera√ß√µes essenciais com verbos HTTP
 		01 - Por que APIs?
 		02 - Construindo a API
 		03 - Retornando dados
-		04 - Conex„o entre Banco e API
-		05 - Melhorando o cÛdigo
+		04 - Conex√£o entre Banco e API
+		05 - Melhorando o c√≥digo
 	.NET 5 e EF Core: Relacionando entidades
 		01 - Incrementando o projeto
 		02 - O relacionamento 1:1
 		03 - O relacionamento 1:n
 		04 - O relacionamento n:n
 		05 - Executando consultas
-	.NET 5 e Identity: Implementando controle de usu·rio
-		01 - Arrumando o cÛdigo
+	.NET 5 e Identity: Implementando controle de usu√°rio
+		01 - Arrumando o c√≥digo
 		02 - Conhecendo o Identity
-		03 - Logando um usu·rio
+		03 - Logando um usu√°rio
 		04 - Tornando o cadastro sofisticado
 		05 - Disparando e-mails
-	.NET 5 e Identity: Autenticando e autorizando usu·rios
+	.NET 5 e Identity: Autenticando e autorizando usu√°rios
 		01 - Conhecendo secrets
 		02 - Redefinindo senhas
 		03 - Implementando roles
 		04 - Separando roles
-		05 - PolÌticas customizadas
+		05 - Pol√≠ticas customizadas
 -------------------------------------------------------------------------------------------------------------------------
 Extra .NET 6
-	MicrosserviÁos e .NET6: implementando a comunicaÁ„o
-		01 - RequisiÁıes sÌncronas
+	Microsservi√ßos e .NET6: implementando a comunica√ß√£o
+		01 - Requisi√ß√µes s√≠ncronas
 		02 - Dockerizando apps .NET
 		03 - Otimizando e testando
-		04 - RequisiÁıes assÌncronas
+		04 - Requisi√ß√µes ass√≠ncronas
 		05 - Consumindo dados de filas
 -------------------------------------------------------------------------------------------------------------------------
 Extra .NET para Web
 	ASP.NET: Razor
-		01 - IntroduÁ„o ao Razor
+		01 - Introdu√ß√£o ao Razor
 		02 - Utilizando templates
-		03 - Melhorando o cÛdigo do layout
-		04 - Formul·rios em views fortemente tipadas
-		05 - InternacionalizaÁ„o
-		06 - OtimizaÁ„o das views
+		03 - Melhorando o c√≥digo do layout
+		04 - Formul√°rios em views fortemente tipadas
+		05 - Internacionaliza√ß√£o
+		06 - Otimiza√ß√£o das views
 	Projeto Completo: Controle Financeiro com Asp.NET MVC 5
 		01 - Abertura
 		02 - Preparando o ambiente
-		03 - Layout e cadastro de usu·rios
-		04 - Cadastro de movimentaÁıes
-		05 - SeguranÁa com o Simple Membership
-		06 - Gerando RelatÛrios
+		03 - Layout e cadastro de usu√°rios
+		04 - Cadastro de movimenta√ß√µes
+		05 - Seguran√ßa com o Simple Membership
+		06 - Gerando Relat√≥rios
 		07 - Fechamento
 -------------------------------------------------------------------------------------------------------------------------
-Extra PersistÍncia com .NET
-	NHibernate: PersistÍncia de dados com C#
+Extra Persist√™ncia com .NET
+	NHibernate: Persist√™ncia de dados com C#
 		01 - Configurando e Entendendo o NHibernate
 		02 - Inserindo e Alterando Dados
 		03 - Relacionamento entre Entidades
 		04 - Recuperando dados
 		05 - Resolvendo o Problema do N+1
-		06 - Buscas din‚micas com criteria
+		06 - Buscas din√¢micas com criteria
 		07 - Cacheando dados
-		08 - HeranÁa e Polimorfismo
+		08 - Heran√ßa e Polimorfismo
 	.Net e MongoDB parte 1: Primeiros passos para usar esse famoso banco NoSQL
 		01 - Primeiros passos com MongoDB no .NET
 		02 - Inserindo um documento no MongoDB
-		03 - Listando e incluindo v·rios documentos
+		03 - Listando e incluindo v√°rios documentos
 		04 - Pesquisando documentos
-		05 - AlteraÁ„o e exclus„o de documentos
+		05 - Altera√ß√£o e exclus√£o de documentos
 	.Net e MongoDB parte 2: Integre uma webapp com o banco NoSQL
 		01 - Implementando as classes do Blog
-		02 - Implementando o acesso ao Blog atravÈs de usu·rios
+		02 - Implementando o acesso ao Blog atrav√©s de usu√°rios
 		03 - Interagindo com o Blog
 		04 - Utilizando coordenadas geoespaciais no MongoDB com .NET
-		05 - Implementando a aplicaÁ„o de busca de aeroportos
+		05 - Implementando a aplica√ß√£o de busca de aeroportos
 -------------------------------------------------------------------------------------------------------------------------
 Extra Testes em C#
 	C#: Testes de unidade e TDD com xUnit
-		01 - Promovendo r·pido feedback
+		01 - Promovendo r√°pido feedback
 		02 - Organizando seus testes
-		03 - N„o deixe o sistema regredir
+		03 - N√£o deixe o sistema regredir
 		04 - Testando todos os comportamentos
-		05 - Ajudando no design do cÛdigo
-	Mocks em C#: Testes de IntegraÁ„o com xUnit e Moq
-		01 - Testes de IntegraÁ„o
-		02 - DependÍncias mais leves e r·pidas
-		03 - Injetando dados para cen·rios complexos
+		05 - Ajudando no design do c√≥digo
+	Mocks em C#: Testes de integra√ß√£o com xUnit e Moq
+		01 - Testes de integra√ß√£o
+		02 - Depend√™ncias mais leves e r√°pidas
+		03 - Injetando dados para cen√°rios complexos
 		04 - Testando o comportamento de seu sistema
 		05 - Verificando efeitos colaterais
 		06 - Aplicando em controladores AspNet Core
 -------------------------------------------------------------------------------------------------------------------------
-FormaÁ„o Aprenda a programar em C# com OrientaÁ„o a Objetos
-	C#: criando sua primeira aplicaÁ„o (Curso feito na carreira 01-Desenvolvedor-CSharp)
+Forma√ß√£o Aprenda a programar em C# com Orienta√ß√£o a Objetos
+	C#: criando sua primeira aplica√ß√£o (Curso feito na carreira 01-Desenvolvedor-CSharp)
 		01 - Criando o primeiro programa
 		02 - Criando o primeiro programa
 		03 - Listas e loops no C#
-		04 - Dicion·rios e avaliaÁ„o de bandas
+		04 - Dicion√°rios e avalia√ß√£o de bandas
 		05 - Desafio
-	C#: aplicando a OrientaÁ„o a Objetos
-		01 - Classe e mÈtodo no C#
-		02 - MÈtodos de acesso e propriedades
+	C#: aplicando a Orienta√ß√£o a Objetos
+		01 - Classe e m√©todo no C#
+		02 - M√©todos de acesso e propriedades
 		03 - Integrando classes e definindo relacionamentos
 		04 - Integrando classes e definindo relacionamentos
 		05 - Desafio
 -------------------------------------------------------------------------------------------------------------------------
-FormaÁ„o ASP.Net Core
+Forma√ß√£o ASP.Net Core
 	HTTP: Entendendo a web por baixo dos panos
-		01 - O que È HTTP?
+		01 - O que √© HTTP?
 		02 - A web segura - HTTPS
-		03 - EndereÁos sob seu domÌnio
+		03 - Endere√ßos sob seu dom√≠nio
 		04 - O cliente pede e o servidor responde
-		05 - Depurando a requisiÁ„o HTTP
-		06 - Par‚metros da requisiÁ„o
-		07 - ServiÁos na web com REST
+		05 - Depurando a requisi√ß√£o HTTP
+		06 - Par√¢metros da requisi√ß√£o
+		07 - Servi√ßos na web com REST
 		08 - HTTP2 - Por uma web mais eficiente
 	.NET 6: criando uma web API
 		01 - Entendendo o conceito
@@ -506,15 +500,15 @@ FormaÁ„o ASP.Net Core
 		03 - Relacionamento 1:n
 		04 - Relacionamento n:n
 		05 - Efetuando consultas
-	.NET 6 e Identity: implementando controle de usu·rio
+	.NET 6 e Identity: implementando controle de usu√°rio
 		01 - Conhecendo o Identity
 		02 - Configurando o Identity
-		03 - Logando um usu·rio
+		03 - Logando um usu√°rio
 		04 - Controle de acesso
 		05 - Utilizando secrets
 -------------------------------------------------------------------------------------------------------------------------
-FormaÁ„o AvanÁando em C#
-	C#: Trabalhando com Arrays e ColeÁıes
+Forma√ß√£o Avan√ßando em C#
+	C#: Trabalhando com Arrays e Cole√ß√µes
 		01 - Array
 		02 - Array de contas correntes
 		03 - ListT
@@ -524,156 +518,156 @@ FormaÁ„o AvanÁando em C#
 		01 - Lendo arquivos de texto
 		02 - FileStream e leitor StreamReader
 		03 - Fazendo parse e StreamWriter
-		04 - O Flush e os arquivos bin·rios
+		04 - O Flush e os arquivos bin√°rios
 		05 - Streams da Console
 	C#: criando e distribuindo bibliotecas em .NET
 		01 - Projeto de biblioteca
-		02 - NÌvel de visibilidade
+		02 - N√≠vel de visibilidade
 		03 - Criando uma DLL
 		04 - Nuget
 -------------------------------------------------------------------------------------------------------------------------
-FormaÁ„o Boas pr·ticas em C#
-	C#: aplique boas pr·ticas de refatoraÁ„o e torne seu cÛdigo mais legÌvel
-		01 - Melhorando a legibilidade do cÛdigo
-		02 - Evitando cÛdigo duplicado
-		03 - Padrıes de Projeto e Command
+Forma√ß√£o Boas pr√°ticas em C#
+	C#: aplique boas pr√°ticas de refatora√ß√£o e torne seu c√≥digo mais leg√≠vel
+		01 - Melhorando a legibilidade do c√≥digo
+		02 - Evitando c√≥digo duplicado
+		03 - Padr√µes de Projeto e Command
 		04 - Testes automatizados
 		05 - Desafios
-	C#: aprenda a criar testes limpos com boas pr·ticas
-		01 - Declarando dependÍncias
-		02 - Boas pr·ticas em testes
+	C#: aprenda a criar testes limpos com boas pr√°ticas
+		01 - Declarando depend√™ncias
+		02 - Boas pr√°ticas em testes
 		03 - Extraindo resultados
-		04 - Isolando exibiÁ„o
-		05 - F·brica de comandos
-	C#: aplique princÌpios SOLID
+		04 - Isolando exibi√ß√£o
+		05 - F√°brica de comandos
+	C#: aplique princ√≠pios SOLID
 		01 - Importando Json
-		02 - Preparando a importaÁ„o de clientes
-		03 - ImportaÁ„o de clientes
+		02 - Preparando a importa√ß√£o de clientes
+		03 - Importa√ß√£o de clientes
 		04 - Entendendo OCP
-		05 - Boas pr·ticas de configuraÁıes
+		05 - Boas pr√°ticas de configura√ß√µes
 		06 - Enviando e-mail
 -------------------------------------------------------------------------------------------------------------------------
-FormaÁ„o CertificaÁ„o C# Programming
-	CertificaÁ„o C# Programming parte 1: Criar tipos
+Forma√ß√£o Certifica√ß√£o C# Programming
+	Certifica√ß√£o C# Programming parte 1: criar tipos
 		01 - Tipos integrais
 		02 - Ponto flutuante, booleanos, structs e enums
-		03 - Criar tipos de referÍncia
-		04 - Classes, mÈtodos, mÈtodos de extens„o
-		05 - Criar mÈtodos sobrecarregados e substituÌdos
-	CertificaÁ„o C# Programming parte 2: Consumir tipos
+		03 - Criar tipos de refer√™ncia
+		04 - Classes, m√©todos, m√©todos de extens√£o
+		05 - Criar m√©todos sobrecarregados e substitu√≠dos
+	Certifica√ß√£o C# Programming parte 2: consumir tipos
 		01 - Box ou unbox para converter entre tipos de valor
 		02 - Cast de tipos
-		03 - Implementando conversıes
-		04 - Lidar com tipos din‚micos
+		03 - Implementando convers√µes
+		04 - Lidar com tipos din√¢micos
 		05 - Adicionando membros dinamicamente
-	CertificaÁ„o C# Programming parte 3: Encapsulamento e Hierarquia de Classes
+	Certifica√ß√£o C# Programming parte 3: encapsulamento e Hierarquia de Classes
 		01 - Propriedades e Acessadores
 		02 - Projetar Interfaces
-		03 - Interfaces ExplÌcitas
+		03 - Interfaces Expl√≠citas
 		04 - Classe Base
-		05 - ComparaÁıes entre Objetos
-	CertificaÁ„o C# Programming parte 4: Fluxo de programa e exceÁıes
+		05 - Compara√ß√µes entre Objetos
+	Certifica√ß√£o C# Programming parte 4: fluxo de programa e exce√ß√µes
 		01 - Fluxo de Programa If, Else, Switch
-		02 - CompilaÁ„o Condicional
+		02 - Compila√ß√£o Condicional
 		03 - Fluxo de Programa While e Do
-		04 - IteraÁ„o com For e Foreach
-		05 - ManipulaÁ„o de ExceÁıes
-		06 - ExceÁıes com SQL Server e Rede
-	CertificaÁ„o C# Programming parte 5: Strings e Ciclo de Vida de Objetos
-		01 - Gerenciamento de MemÛria
+		04 - Itera√ß√£o com For e Foreach
+		05 - Manipula√ß√£o de exce√ß√µes
+		06 - Exce√ß√µes com SQL Server e Rede
+	Certifica√ß√£o C# Programming parte 5: strings e Ciclo de Vida de Objetos
+		01 - Gerenciamento de Mem√≥ria
 		02 - Coletando Lixo
-		03 - O Padr„o Disposable
-		04 - ConcatenaÁ„o, Escrita e Leitura de Strings
+		03 - O padr√£o Disposable
+		04 - Concatena√ß√£o, Escrita e Leitura de Strings
 		05 - Pesquisando Strings
-		06 - FormataÁ„o de Strings
-	CertificaÁ„o C# Programming parte 6: ColeÁıes, XML e JSON
-		01 - SerializaÁ„o com XML
-		02 - SerializaÁ„o com JSON
-		03 - SerializaÁ„o Bin·ria, Personalizada e com Contrato
+		06 - Formata√ß√£o de Strings
+	Certifica√ß√£o C# Programming parte 6: cole√ß√µes, XML e JSON
+		01 - Serializa√ß√£o com XML
+		02 - Serializa√ß√£o com JSON
+		03 - Serializa√ß√£o Bin√°ria, Personalizada e com Contrato
 		04 - Arrays
 		05 - Listas
-		06 - Conjuntos, Dicion·rios e Filas
-	CertificaÁ„o C# Programming parte 7: Eventos e LINQ
-		01 - IntroduÁ„o aos Eventos
+		06 - Conjuntos, Dicion√°rios e Filas
+	Certifica√ß√£o C# Programming parte 7: eventos e LINQ
+		01 - Introdu√ß√£o aos Eventos
 		02 - Manipuladores de Eventos
 		03 - Delegados e Lambda
 		04 - Func, Action e Predicate
 		05 - Consultando e Filtrando Dados com LINQ
-		06 - ProjeÁ„o de Dados
-		07 - Agrupamento e AgregaÁ„o
-		08 - PaginaÁ„o e Sintaxe de MÈtodo
+		06 - Proje√ß√£o de Dados
+		07 - Agrupamento e Agrega√ß√£o
+		08 - Pagina√ß√£o e Sintaxe de M√©todo
 		09 - Consulta com XML
-	CertificaÁ„o C# Programming parte 8: Entrada e SaÌda de Dados
+	Certifica√ß√£o C# Programming parte 8: entrada e saida de dados
 		01 - Ler e Gravar Bytes em Fluxos de Arquivos
 		02 - Ler e Gravar Strings em Fluxos de Arquivos
 		03 - Gerenciando Arquivos
-		04 - Gerenciando DiretÛrios
-		05 - Acessando a Web de Forma AssÌncrona
+		04 - Gerenciando Diret√≥rios
+		05 - Acessando a Web de Forma Ass√≠ncrona
 		06 - Lendo e Atualizando Banco de Dados
-		07 - Consumindo ServiÁos e Interpretando Dados
-	CertificaÁ„o C# Programming parte 9: Depurar Aplicativos
+		07 - Consumindo Servi√ßos e Interpretando Dados
+	Certifica√ß√£o C# Programming parte 9: depurar aplicativos
 		01 - Gerenciando Assemblies
 		02 - Assinando Assemblies com Nome Forte
-		03 - Depurando AplicaÁıes
-		04 - CompilaÁ„o Condicional
-		05 - CompilaÁ„o em Modo Debug e Release
-		06 - Rastreamento de AplicaÁıes
+		03 - Depurando Aplica√ß√µes
+		04 - Compila√ß√£o Condicional
+		05 - Compila√ß√£o em Modo Debug e Release
+		06 - Rastreamento de Aplica√ß√µes
 		07 - Gravando Mensagens no Event Log
 		08 - Contadores de Desempenho
-	CertificaÁ„o C# Programming parte 10: Reflection
+	Certifica√ß√£o C# Programming parte 10: reflection
 		01 - Criar e aplicar atributos
 		02 - Ler os atributos
 		03 - Usar reflection
-		04 - GeraÁ„o de cÛdigo
+		04 - Gera√ß√£o de c√≥digo
 		05 - Tipos do System Reflection
-	CertificaÁ„o C# Programming parte 11: Multithreading
-		01 - IntroduÁ„o ao Task Parallel Library Ver primeiro vÌdeo
+	Certifica√ß√£o C# Programming parte 11: multithreading
+		01 - Introdu√ß√£o ao Task Parallel Library Ver primeiro v√≠deo
 		02 - Consultas LINQ com Paralelismo
-		03 - Espera, ContinuaÁ„o e Hierarquia de Tarefas
+		03 - Espera, Continua√ß√£o e Hierarquia de Tarefas
 		04 - Threads
-		05 - Desbloqueando a Interface do Usu·rio
-		06 - Async, Await, ColeÁıes Simult‚neas e Bloqueios
-		07 - Cancelamento de Tarefas e MÈtodos Thread Safe
-	CertificaÁ„o C# Programming parte 12: Validar SeguranÁa
+		05 - Desbloqueando a Interface do usu√°rio
+		06 - Async, Await, Cole√ß√µes Simult√¢neas e Bloqueios
+		07 - Cancelamento de Tarefas e M√©todos Thread Safe
+	Certifica√ß√£o C# Programming parte 12: validar Seguran√ßa
 		01 - Validar Dados JSON
-		02 - Escolher o Tipo de ColeÁ„o Adequada
-		03 - Validando com Express„o Regular
-		04 - FunÁıes Internas para Validar Tipos e Conte˙dos
-		05 - Criptografia SimÈtrica e AssimÈtrica
+		02 - Escolher o Tipo de Cole√ß√£o Adequada
+		03 - Validando com Express√£o Regular
+		04 - Fun√ß√µes Internas para Validar Tipos e Conte√∫dos
+		05 - Criptografia Sim√©trica e Assim√©trica
 		06 - Gerenciamento de Chave
 		07 - Gerenciar e Criar Certificados
 		08 - Fazendo Hash de Dados
 -------------------------------------------------------------------------------------------------------------------------
-FormaÁ„o C# e OrientaÁ„o a Objetos
+Forma√ß√£o C# e Orienta√ß√£o a Objetos
 	C#: explorando a linguagem
-		01 - HistÛria e ecossistema da linguagem
+		01 - Hist√≥ria e ecossistema da linguagem
 		02 - Nosso primeiro programa e o Visual Studio
-		03 - Vari·veis numÈricas
-		04 - Vari·veis de texto
+		03 - Vari√°veis num√©ricas
+		04 - Vari√°veis de texto
 		05 - Controle de fluxo com if
-		06 - Controle de fluxo com laÁos de repetiÁ„o
-	C#: orientaÁ„o a objetos
+		06 - Controle de fluxo com la√ßos de repeti√ß√£o
+	C#: Orienta√ß√£o a objetos
 		01 - Criando a primeira classe
 		02 - Entendendo tipos
 		03 - Comportamento de uma classe
 		04 - Namespace e compor classes
 		05 - Propriedades
-		06 - Construtor e membro est·tico
-	C#: usando heranÁa e implementando interfaces
-		01 - OrientaÁ„o a Objetos com C#
-		02 - Entendendo heranÁa
+		06 - Construtor e membro est√°tico
+	C#: usando heran√ßa e implementando interfaces
+		01 - Orienta√ß√£o a Objetos com C#
+		02 - Entendendo heran√ßa
 		03 - Usando classes abstratas
-		04 - Mais sobre heranÁa
+		04 - Mais sobre heran√ßa
 		05 - Trabalhando com interfaces
-	C#: entendendo exceÁıes
-		01 - Primeiros passos com exceÁıes
-		02 - Tratamento de exceÁıes
+	C#: entendendo exce√ß√µes
+		01 - Primeiros passos com exce√ß√µes
+		02 - Tratamento de exce√ß√µes
 		03 - ArgumentException
-		04 - Criando exceÁıes ricas
+		04 - Criando exce√ß√µes ricas
 		05 - StackTrace e InnerException
 		06 - Bloco finally
 -------------------------------------------------------------------------------------------------------------------------
-FormaÁ„o C# Web: crie aplicaÁıes usando ASP.NET
+Forma√ß√£o C# Web: crie aplica√ß√µes usando ASP.NET
 	.NET: persistindo dados com Entity Framework Core
 		01 - Uso de Banco de Dados
 		02 - Bibliotecas ORM
@@ -681,86 +675,86 @@ FormaÁ„o C# Web: crie aplicaÁıes usando ASP.NET
 		04 - Migrations
 		05 - Relacionamento
 	.NET: criando uma API Web com ASP.NET Core
-		01 - Arquitetura mÌnima
-		02 - Montando uma API mÌnima
-		03 - Boas pr·ticas na construÁ„o de uma API
-		04 - Relacionando gÍnero
+		01 - Arquitetura m√≠nima
+		02 - Montando uma API m√≠nima
+		03 - Boas pr√°ticas na constru√ß√£o de uma API
+		04 - Relacionando g√™nero
 		05 - DevOps
-	.NET: desenvolvendo uma aplicaÁ„o web com ASP.NET Core Blazor
+	.NET: desenvolvendo uma aplica√ß√£o web com ASP.NET Core Blazor
 		01 - Web App com Blazor
 		02 - CRUD de artista
 		03 - Upload de imagens
-		04 - Trabalhando a m˙sica
+		04 - Trabalhando a m√∫sica
 		05 - Deploy no Azure
-	ASP.NET: autenticaÁ„o e autorizaÁ„o em APIs e aplicaÁıes web
-		01 - AutenticaÁ„o e autorizaÁ„o na API
-		02 - AutenticaÁ„o na app web
-		03 - Estado da autenticaÁ„o
-		04 - AutorizaÁ„o na app web
-		05 - ClassificaÁ„o de artistas
+	ASP.NET: autentica√ß√£o e autoriza√ß√£o em APIs e aplica√ß√µes web
+		01 - Autentica√ß√£o e autoriza√ß√£o na API
+		02 - Autentica√ß√£o na app web
+		03 - Estado da autentica√ß√£o
+		04 - Autoriza√ß√£o na app web
+		05 - Classifica√ß√£o de artistas
 		06 - Projeto extra: lista de tarefas
 -------------------------------------------------------------------------------------------------------------------------
-FormaÁ„o Desenvolvedor .NET
+Forma√ß√£o Desenvolvedor .NET
 	Curso C# Parte 1: Primeiros Passos
-		01 - HistÛria e ecossistema da linguagem
+		01 - Hist√≥ria e ecossistema da linguagem
 		02 - Nosso primeiro programa e o Visual Studio
-		03 - Vari·veis numÈricas
-		04 - Vari·veis de texto
+		03 - Vari√°veis num√©ricas
+		04 - Vari√°veis de texto
 		05 - Controle de fluxo com IF
-		06 - Controle de fluxo com laÁos de repetiÁ„o
-	Curso C# Parte 2: IntroduÁ„o ‡ OrientaÁ„o a Objetos
+		06 - Controle de fluxo com la√ßos de repeti√ß√£o
+	Curso C# Parte 2: Introdu√ß√£o √† Orienta√ß√£o a Objetos
 		01 - Nossa primeira classe
 		02 - Tipos
 		03 - Comportamentos de classes
-		04 - Namespace e composiÁ„o e null
+		04 - Namespace e composi√ß√£o e null
 		05 - Propriedades
-		06 - Construtores e membros est·ticos
-	Curso C# Parte 3 - Entendendo HeranÁa e Interface
+		06 - Construtores e membros est√°ticos
+	Curso C# Parte 3 - Entendendo Heran√ßa e Interface
 		01 - Conhecendo o problema do cliente
-		02 - HeranÁa
+		02 - Heran√ßa
 		03 - Construtores e protected
-		04 - Mais heranÁa e heranÁa m˙ltipla
+		04 - Mais heran√ßa e heran√ßa m√∫ltipla
 		05 - Interfaces
-	Curso C# Parte 4 - Entendendo exceÁıes
-		01 - Primeiros passos com exceÁıes
-		02 - Tratamento de exceÁıes
+	Curso C# Parte 4 - Entendendo exce√ß√µes
+		01 - Primeiros passos com exce√ß√µes
+		02 - Tratamento de exce√ß√µes
 		03 - ArgumentException ParamName e nameof
-		04 - Criando exceÁıes ricas
+		04 - Criando exce√ß√µes ricas
 		05 - StackTrace e InnerException
 		06 - Finally e using
-	Curso C# Parte 5 - Bibliotecas DLLs, documentaÁ„o e usando o NuGet
+	Curso C# Parte 5 - Bibliotecas DLLs, documenta√ß√£o e usando o NuGet
 		01 - Projeto de biblioteca
 		02 - Modificadores de acesso em bibliotecas
 		03 - Referencia de DLL
 		04 - Documentando
 		05 - NuGet
-	Curso C# Parte 6 - Strings, expressıes regulares e a classe Object
+	Curso C# Parte 6 - Strings, express√µes regulares e a classe Object
 		01 - Mais sobre a String
-		02 - MÈtodos e propriedades
-		03 - Mais mÈtodos de manipulaÁ„o
-		04 - Expressıes regulares
+		02 - M√©todos e propriedades
+		03 - Mais m√©todos de manipula√ß√£o
+		04 - Express√µes regulares
 		05 - Classe Object
-	Curso C# Parte 7 - Array e tipos genÈricos
+	Curso C# Parte 7 - Array e tipos gen√©ricos
 		01 - Conhecendo Array
 		02 - Criando nossa Lista
-		03 - Criando o mÈtodo Remover
+		03 - Criando o m√©todo Remover
 		04 - Indexadores e argumentos params
-		05 - ComeÁando com genÈricos
+		05 - Come√ßando com gen√©ricos
 	Curso C# Parte 8 - List<T>, lambda, linq
-		01 - ListT e mÈtodos de extens„o
-		02 - MÈtodo de extens„o genÈrico
-		03 - Usando VAR e mÈtodo Sort
+		01 - ListT e m√©todos de extens√£o
+		02 - M√©todo de extens√£o gen√©rico
+		03 - Usando VAR e m√©todo Sort
 		04 - IComparable e IComparer
-		05 - OrderBy e expressıes Lambda
+		05 - OrderBy e express√µes Lambda
 		06 - Linq e operador Where
-	Curso C# Parte 9 - Entrada e saÌda (I/O) com streams
+	Curso C# Parte 9 - Entrada e saida (I/O) com streams
 		01 - Lendo arquivos de texto
 		02 - Mais FileStream e leitor StreamReader
 		03 - Fazendo parse e StreamWriter
 		04 - O Flush e arquivos binarios
 		05 - Streams da Console
 	Entity Framework Core: Banco de dados de forma eficiente
-		01 - IntroduÁ„o ao Entity Framework Core
+		01 - Introdu√ß√£o ao Entity Framework Core
 		02 - Manipulando objetos
 		03 - Como o Entity monta o SQL?
 		04 - Sincronizando o banco de dados com o modelo de classes
@@ -768,85 +762,85 @@ FormaÁ„o Desenvolvedor .NET
 		06 - Relacionamentos Muitos para Muitos no Entity
 		07 - Relacionamentos Um para Um no Entity
 		08 - Recuperando objetos relacionados
-	Asp.NET Core: Uma webapp usando o padr„o MVC
-		01 - Transformando a aplicaÁ„o em um servidor web
-		02 - Atendendo requisiÁıes diferentes
-		03 - Usando o serviÁo de roteamento do AspNet Core
-		04 - Melhorando a experiÍncia do usu·rio com HTML
-		05 - Organizando a aplicaÁ„o
+	Asp.NET Core: Uma webapp usando o padr√£o MVC
+		01 - Transformando a aplica√ß√£o em um servidor web
+		02 - Atendendo requisi√ß√µes diferentes
+		03 - Usando o servi√ßo de roteamento do AspNet Core
+		04 - Melhorando a experi√™ncia do usu√°rio com HTML
+		05 - Organizando a aplica√ß√£o
 		06 - Introduzindo o AspNet Core MVC
-		07 - RenderizaÁ„o de views no AspNet Core MVC
+		07 - Renderiza√ß√£o de views no AspNet Core MVC
 	ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core
-		01 - Criando Uma AplicaÁ„o com ASP.NET Core
+		01 - Criando Uma aplica√ß√£o com ASP.NET Core
 		02 - Criando o Projeto ASP NET Core MVC
 		03 - Banco de Dados
-		04 - Exibindo o Cat·logo de Produtos
+		04 - Exibindo o Cat√°logo de Produtos
 		05 - Trabalhando com Session
 		06 - Carrinho e Resumo
 	ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core
 		01 - Implementando a Chamada AJAX
 		02 - Alterando a Quantidade de Itens
 		03 - Adicionando e Removendo Itens
-		04 - Validando e Enviando Formul·rio de Cadastro
+		04 - Validando e Enviando Formul√°rio de Cadastro
 		05 - Recebendo e Gravando Dados de Cadastro
 	ASP.NET Core Parte 3: Identity
 		01 - Instalando ASPNET Core Identity
 		02 - Integrando ao Projeto
 		03 - Razor Pages
-		04 - Obtendo Dados do Usu·rio Logado
-		05 - Usando Id do Usu·rio no Pedido
+		04 - Obtendo Dados do Usu√°rio Logado
+		05 - Usando Id do Usu√°rio no Pedido
 		06 - Fazendo Login Externo
 	ASP.NET Core Parte 4: IdentityServer
-		01 - Criando Web API de RelatÛrio
-		02 - Consumindo Web API de RelatÛrio
+		01 - Criando Web API de Relat√≥rio
+		02 - Consumindo Web API de Relat√≥rio
 		03 - Criando e Executando Projeto IdentityServer4
 		04 - Configurando IdentityServer + Cliente MVC
-		05 - Acessando Dados do Usu·rio
-		06 - Configurando IdentityServer4 + WebAPI de RelatÛrio
-	ASP.NET Core Parte 5: ModularizaÁ„o e ComponentizaÁ„o
-		01 - ¡reas
+		05 - Acessando Dados do Usu√°rio
+		06 - Configurando IdentityServer4 + WebAPI de Relat√≥rio
+	ASP.NET Core Parte 5: Modulariza√ß√£o e Componentiza√ß√£o
+		01 - √Åreas
 		02 - Partial Views
 		03 - ViewComponents
 		04 - Isolando Contextos
 		05 - Modelos Delimitados
 -------------------------------------------------------------------------------------------------------------------------
-FormaÁ„o MicrosserviÁos em .NET com RabbitMQ
-	MicrosserviÁos na pr·tica: entendendo a tomada de decisıes
+Forma√ß√£o Microsservi√ßos em .NET com RabbitMQ
+	Microsservi√ßos na pr√°tica: entendendo a tomada de decis√µes
 		01 -
 		02 -
 		03 -
 		04 -
 		05 -
 		06 -
-	MicrosserviÁos e .NET6: implementando a comunicaÁ„o
-		01 - RequisiÁıes sÌncronas
+	Microsservi√ßos e .NET6: implementando a comunica√ß√£o
+		01 - Requisi√ß√µes s√≠ncronas
 		02 - Dockerizando apps .NET
 		03 - Otimizando e testando
-		04 - RequisiÁıes assÌncronas
+		04 - Requisi√ß√µes ass√≠ncronas
 		05 - Consumindo dados de filas
-	MicrosserviÁos e .NET6: deploy na AWS
+	Microsservi√ßos e .NET6: deploy na AWS
 		01 - Problemas dos containers
 		02 - Migrando para Cloud
 		03 - Criando os pods
 		04 - Subindo o banco
-		05 - Expondo a aplicaÁ„o
+		05 - Expondo a aplica√ß√£o
 -------------------------------------------------------------------------------------------------------------------------
-FormaÁ„o Testes em .NET
+Forma√ß√£o Testes em .NET
 	Testes em .NET: Fundamentos do Teste de Software
 		01 - Testes
-		02 - AutomaÁ„o dos testes
+		02 - Automa√ß√£o dos testes
 		03 - O TDD
 		04 - Padronizando os testes
-		05 - Testando exceÁıes
+		05 - Testando exce√ß√µes
 		06 - Mais recursos
-	Testes em .NET: Integrando a aplicaÁ„o com um banco de dados
-		01 - ConfiguraÁ„o do projeto
-		02 - Teste de integraÁ„o
-		03 - Testando operaÁıes de CRUD
+	Testes em .NET: Integrando a aplica√ß√£o com um banco de dados
+		01 - Configura√ß√£o do projeto
+		02 - Teste de integra√ß√£o
+		03 - Testando opera√ß√µes de CRUD
 		04 - Comportamentos do sistema
 		05 - Padronizando os testes
 	Testes em .NET: Testes de interface usando Selenium
-		01 - ConfiguraÁ„o do projeto
+		01 - Configura√ß√£o do projeto
 		02 - Iniciando com Selenium WebDriver
 		03 - Testando o WebApp
 		04 - Testando com localizadores
@@ -854,35 +848,35 @@ FormaÁ„o Testes em .NET
 	Selenium WebDriver e C# parte 1: Primeiros passos
 		01 - Iniciando o uso do Selenium
 		02 - Compartilhando recursos entre testes
-		03 - Testando funcionalidades do leil„o
+		03 - Testando funcionalidades do leil√£o
 		04 - Encontrando elementos de outras maneiras
-		05 - Blindando os testes de mudanÁas na UI
+		05 - Blindando os testes de mudan√ßas na UI
 	Selenium WebDriver e C# parte 2: Outros recursos
-		01 - Elementos invisÌveis
-		02 - Formul·rios complexos
+		01 - Elementos invis√≠veis
+		02 - Formul√°rios complexos
 		03 - Frameworks que dificultam
-		04 - Esperando para as verificaÁıes
-		05 - Melhorando o cÛdigo de testes
+		04 - Esperando para as verifica√ß√µes
+		05 - Melhorando o c√≥digo de testes
 		06 - Outros recursos
-	Testes em .NET: integraÁ„o e entrega contÌnua com Azure DevOps
+	Testes em .NET: integra√ß√£o e entrega cont√≠nua com Azure DevOps
 		01 - DevOps
-		02 - Versionamento de cÛdigo
+		02 - Versionamento de c√≥digo
 		03 - Banco de dados no Azure
-		04 - Pipelines: integraÁ„o contÌnua
-		05 - Pipelines: entrega contÌnua
+		04 - Pipelines: integra√ß√£o cont√≠nua
+		05 - Pipelines: entrega cont√≠nua
 	Testes em .NET: criando testes de unidade com xUnit
 		01 - Iniciando com testes
 		02 - Validando ofertas
 		03 - TDD - Test-Driven Development
 		04 - Cobertura de testes
-		05 - Testando cen·rios complexos
-	Testes em .NET: testando integraÁ„o com banco de dados
-		01 - Definindo testes de integraÁ„o
-		02 - Compartilhando a conex„o
+		05 - Testando cen√°rios complexos
+	Testes em .NET: testando integra√ß√£o com banco de dados
+		01 - Definindo testes de integra√ß√£o
+		02 - Compartilhando a conex√£o
 		03 - Docker
 		04 - Inserindo valores no banco
-		05 - Revertendo ˙ltimos testes
-	Testes em .NET: aplicando testes de integraÁ„o em APIs
+		05 - Revertendo √∫ltimos testes
+	Testes em .NET: aplicando testes de integra√ß√£o em APIs
 		01 - Preparando o ambiente para os testes
 		02 - Compartilhando contexto
 		03 - Testes para endpoints (HTTP)
@@ -894,3 +888,23 @@ FormaÁ„o Testes em .NET
 		03 - Publicando pela pipeline
 		04 - Criando uma pipeline no Azure Devops
 		05 - Fluxo completo
+-------------------------------------------------------------------------------------------------------------------------
+Forma√ß√£o T√≥picos avan√ßados em .NET
+	.NET: gerenciamento de mem√≥ria para otimiza√ß√£o de performance
+		01 - Entendendo refer√™ncias
+		02 - Lists e LinkedLists
+		03 - Conhecendo Structs
+		04 - Conhecendo Records
+		05 - Conhecendo Record Structs
+	C# Reflection: manipule dinamicamente tipos e assemblies
+		01 - Preenchendo objetos dinamicamente
+		02 - Lendo objetos dinamicamente
+		03 - Construtores e m√©todos
+		04 - Investigando assemblies
+		05 - Arquitetura de plugins
+	C# e Exce√ß√µes: construa aplica√ß√µes resilientes
+		01 - Conhecendo exce√ß√µes
+		02 - Exce√ß√µes na ADOPET API
+		03 - Lan√ßando exce√ß√µes
+		04 - Hierarquia de exce√ß√µes
+		05 - Boas pr√°ticas

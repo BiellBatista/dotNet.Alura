@@ -1,0 +1,107 @@
+.NET: gerenciamento de memória para otimização de performance
+	01 - Entendendo referências
+		01 - Apresentação
+		02 - Projeto inicial do curso
+		03 - Atribuição de valores
+		04 - Faça como eu fiz: atribuindo os retornos de métodos
+		05 - Retorno de métodos (B)
+		06 - Stack e Heap
+		07 - Onde fica armazenado? (A)
+		08 - O que aprendemos?
+	02 - Lists e LinkedLists
+		01 - Projeto da aula anterior
+		02 - Inserções em Lists
+		03 - Custo de inserção em Lists (B)
+		04 - Faça como eu fiz: avaliando Lists
+		05 - Conhecendo LinkedLists
+		06 - Características de LinkedLists (C & D)
+		07 - Lists vs LinkedLists
+		08 - Apontamentos na memória (A & D)
+		09 - O que aprendemos?
+	03 - Conhecendo Structs
+		01 - Projeto da aula anterior
+		02 - A primeira Struct
+		03 - Faça como eu fiz: criando a primeira Struct
+		04 - Structs e suas características
+		05 - Otimização de memória: Struct vs Classe (A)
+		06 - Avaliando Structs
+		07 - Limitações das Structs (C)
+		08 - O que aprendemos?
+	04 - Conhecendo Records
+		01 - Projeto da aula anterior
+		02 - O primeiro Record
+		03 - Faça como eu fiz: criando o primeiro Record
+		04 - Características de Records (C & D)
+		05 - Records e imutabilidade
+		06 - Averiguando a imutabilidade (B)
+		07 - Records e equalidade
+		08 - Records e seus métodos (B)
+		09 - O que aprendemos?
+	05 - Conhecendo Record Structs
+		01 - Projeto da aula anterior
+		02 - O primeiro Record Struct
+		03 - Benefícios das Record Structs (A, B & D)
+		04 - Desempenho de Record Structs (C)
+		05 - Imutabilidade e performance
+		06 - Record Structs e imutabilidade (C)
+		07 - Faça como eu fiz: avaliando a performance geral
+		08 - Projeto final do curso
+		09 - O que aprendemos?
+		10 - Conclusão
+C# Reflection: manipule dinamicamente tipos e assemblies
+	01 - Preenchendo objetos dinamicamente
+		01 - Apresentação
+		02 - Preparando o ambiente
+		03 - Lendo arquivo de boletos
+		04 - Para saber mais: Reflection - Olhando o código sob o capô
+		05 - Criando instância dinamicamente
+		06 - Acessando propriedades dinamicamente
+		07 - Utilização de Reflection em C# (C)
+		08 - Faça como eu fiz: adicionando uma nova coluna no arquivo de boletos
+		09 - O que aprendemos?
+	02 - Lendo objetos dinamicamente
+		01 - Projeto da aula anterior
+		02 - Agrupando boletos
+		03 - Lendo valor de propriedade
+		04 - Atributos customizados
+		05 - Lendo atributos
+		06 - Utilização de atributos Custom em C# (C)
+		07 - Para saber mais: explorando atributos customizados em C#
+		08 - Faça como eu fiz: criando atributo para o relatório
+		09 - O que aprendemos?
+	03 - Construtores e métodos
+		01 - Projeto da aula anterior
+		02 - Investigando construtores
+		03 - Parâmetros do construtor
+		04 - Executando métodos dinamicamente
+		05 - A finalidade de se utilizar Reflection (D)
+		06 - Faça como eu fiz: invocando construtor com 2 parâmetros
+		07 - Para saber mais: C# Reflection e performance
+		08 - O que aprendemos?
+	04 - Investigando assemblies
+		01 - Projeto da aula anterior
+		02 - Obtendo Assembly
+		03 - Carregando tipos do Assembly
+		04 - Para saber mais: obtendo o tipo Assembly
+		05 - Filtrando tipos por metadados
+		06 - Arquitetura baseada em plugins com Reflection em C# (C)
+		07 - Faça como eu fiz: implementando novo relatório JSON
+		08 - O que aprendemos?
+	05 - Arquitetura de plugins
+		01 - Projeto da aula anterior
+		02 - Implementando gerador de documentos
+		03 - A estrutura de plugins
+		04 - Executando método em Assembly externo
+		05 - Gerenciamento de plugins com Reflection (B)
+		06 - Para saber mais: a tecnologia de plugins em softwares populares
+		07 - Faça como eu fiz: adicionando novo plugin da consultoria XPTO
+		08 - Projeto final do curso
+		09 - O que aprendemos?
+		10 - Conclusão
+C# e Exceções: construa aplicações resilientes
+	01 - Conhecendo exceções
+		01 - Apresentação
+	02 - Exceções na ADOPET API
+	03 - Lançando exceções
+	04 - Hierarquia de exceções
+	05 - Boas práticas
