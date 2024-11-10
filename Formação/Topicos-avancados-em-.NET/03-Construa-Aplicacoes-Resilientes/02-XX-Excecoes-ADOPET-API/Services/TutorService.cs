@@ -1,4 +1,5 @@
 ﻿using _02_XX_Excecoes_ADOPET_API.Dtos;
+using _02_XX_Excecoes_ADOPET_API.Models;
 using _02_XX_Excecoes_ADOPET_API.Repositories;
 
 namespace _02_XX_Excecoes_ADOPET_API.Services;
