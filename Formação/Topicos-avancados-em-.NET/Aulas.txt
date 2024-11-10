@@ -101,6 +101,15 @@ C# Reflection: manipule dinamicamente tipos e assemblies
 C# e Exceções: construa aplicações resilientes
 	01 - Conhecendo exceções
 		01 - Apresentação
+		02 - Projeto inicial do curso
+		03 - Provocando uma exceção
+		04 - Entendendo a pilha de execução
+		05 - Lidando com exceções
+		06 - Ordem de execução (A)
+		07 - Onde inserir o Try-Catch? (A)
+		08 - Capturando erros aritméticos (A & B)
+		09 - Faça como eu fiz: capturando uma NullReferenceException
+		10 - O que aprendemos?
 	02 - Exceções na ADOPET API
 	03 - Lançando exceções
 	04 - Hierarquia de exceções
