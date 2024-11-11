@@ -1,0 +1,11 @@
+﻿namespace _04_XX_Hierarquia_Excecoes.Exceptions;
+
+public class PetAdotadoException : AdocaoException
+{
+    public PetAdotadoException(string? mensagem) : base(mensagem)
+    {
+    }
+
+    public PetAdotadoException(string? mensagem, Exception? excecaoInterna)
+        : base(mensagem, excecaoInterna) { }
+}

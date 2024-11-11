@@ -51,6 +51,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Excecoes-ADOPET-API",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-XX-Lançando-Excecoes", "03-Construa-Aplicacoes-Resilientes\03-XX-Lançando-Excecoes\03-XX-Lançando-Excecoes.csproj", "{CD41EB61-52A8-4730-A5EF-2FACC029F0FD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-XX-Hierarquia-Excecoes", "03-Construa-Aplicacoes-Resilientes\04-XX-Hierarquia-Excecoes\04-XX-Hierarquia-Excecoes.csproj", "{37DBB5F4-FBF3-4201-90AA-671AF735FAA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{CD41EB61-52A8-4730-A5EF-2FACC029F0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD41EB61-52A8-4730-A5EF-2FACC029F0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD41EB61-52A8-4730-A5EF-2FACC029F0FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37DBB5F4-FBF3-4201-90AA-671AF735FAA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37DBB5F4-FBF3-4201-90AA-671AF735FAA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37DBB5F4-FBF3-4201-90AA-671AF735FAA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37DBB5F4-FBF3-4201-90AA-671AF735FAA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -167,6 +173,7 @@ Global
 		{A542EF44-27AE-4EC7-9250-E26B5CE50BA3} = {7B1865B6-484E-4526-93FB-397A23664651}
 		{5806B835-DDF3-4F9D-971C-2988FF46BC23} = {7B1865B6-484E-4526-93FB-397A23664651}
 		{CD41EB61-52A8-4730-A5EF-2FACC029F0FD} = {7B1865B6-484E-4526-93FB-397A23664651}
+		{37DBB5F4-FBF3-4201-90AA-671AF735FAA7} = {7B1865B6-484E-4526-93FB-397A23664651}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E1835593-35A2-4B4C-AE58-E3207B4C160F}

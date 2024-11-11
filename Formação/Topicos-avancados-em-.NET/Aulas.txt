@@ -129,4 +129,6 @@ C# e Exceções: construa aplicações resilientes
 		07 - Faça como eu fiz: lançando exceções na aplicação
 		08 - O que aprendemos?
 	04 - Hierarquia de exceções
+		01 - Projeto da aula anterior
+		02 - Exceções e suas hierarquias
 	05 - Boas práticas
