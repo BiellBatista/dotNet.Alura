@@ -131,4 +131,10 @@ C# e Exceções: construa aplicações resilientes
 	04 - Hierarquia de exceções
 		01 - Projeto da aula anterior
 		02 - Exceções e suas hierarquias
+		03 - Exceções e polimorfismo
+		04 - Exceções aninhadas
+		05 - Revisando o código de estoque (A)
+		06 - Validando saldo (B)
+		07 - Faça como eu fiz: criando nossa exceção aninhada
+		08 - O que aprendemos?
 	05 - Boas práticas
