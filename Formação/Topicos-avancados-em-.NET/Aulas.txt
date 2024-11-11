@@ -140,3 +140,11 @@ C# e Exceções: construa aplicações resilientes
 	05 - Boas práticas
 		01 - Projeto da aula anterior
 		02 - Criando um IExceptionHandler
+		03 - Lidando com exceções globalmente
+		04 - Tratando exceções de forma global (A)
+		05 - Tratando exceções de forma personalizada (B)
+		06 - Faça como eu fiz: usando um ExceptionHandler
+		07 - Projeto final do curso
+		08 - O que aprendemos?
+		09 - Conclusão
+		10 - Créditos
