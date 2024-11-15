@@ -26,6 +26,14 @@ Entity Framework: integre aplicações .NET com banco de dados
 	03 - Relacionamentos
 		01 - Projeto da aula anterior
 		02 - Relacionamentos entre entidades
+		03 - Carregando dados relacionados
+		04 - Para saber mais: carregando dados relacionados
+		05 - Relacionando projeto e especialidade
+		06 - Relacionando serviço e contrato
+		07 - Para saber mais: relacionamentos
+		08 - Mão na massa: fazendo os demais relacionamentos
+		09 - Entendendo mapeamentos com Fluent API (C)
+		10 - O que aprendemos?
 	04 - Salvando dados
 	05 - Consultas
 .NET: avance na persistência com EF Core
