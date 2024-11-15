@@ -12,6 +12,17 @@ Entity Framework: integre aplicações .NET com banco de dados
 		10 - O que aprendemos?
 	02 - Mapeamentos explícitos
 		01 - Projeto da aula anterior
+		02 - Utilizando FluentAPI
+		03 - Para saber mais: Fluent API
+		04 - Implementando IEntityTypeConfiguration
+		05 - Mão na massa: mapeando projetos
+		06 - Mapeando ENUM
+		07 - Para saber mais: conversões de valor
+		08 - Para saber mais: criando os converters
+		09 - Mão na massa: mapeando contrato
+		10 - Mão na massa: mapeando todas as entidades
+		11 - Estratégias de mapeamento com Fluent API (A)
+		12 - O que aprendemos?
 	03 - Relacionamentos
 	04 - Salvando dados
 	05 - Consultas
