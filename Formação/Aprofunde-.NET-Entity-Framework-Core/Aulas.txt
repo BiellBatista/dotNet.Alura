@@ -4,6 +4,12 @@ Entity Framework: integre aplicações .NET com banco de dados
 		02 - Projeto inicial
 		03 - Preparando o ambiente: instalação do Docker
 		04 - Iniciando com Entity
+		05 - Configurando a conexão
+		06 - Convenções do Entity
+		07 - Para saber mais: conhecendo as convenções do Entity Framework Core
+		08 - Faça como eu fiz: adicionando o Entity ao projeto
+		09 - Configurando a string de conexão no Entity Framework (B)
+		10 - O que aprendemos?
 	02 - Mapeamentos explícitos
 	03 - Relacionamentos
 	04 - Salvando dados
