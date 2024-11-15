@@ -1,0 +1,23 @@
+﻿namespace _02_XX_Mapeamentos_explicitos.Modelos;
+
+public class Candidatura
+{
+    public Candidatura()
+    {
+    }
+
+    public Candidatura(Guid id, double valorProposto, string? descricaoProposta, DuracaoEmDias duracaoProposta, StatusCandidatura status)
+    {
+        Id = id;
+        ValorProposto = valorProposto;
+        DescricaoProposta = descricaoProposta;
+        DuracaoProposta = duracaoProposta;
+        Status = status;
+    }
+
+    public Guid Id { get; set; }
+    public double ValorProposto { get; set; }
+    public string? DescricaoProposta { get; set; }
+    public DuracaoEmDias DuracaoProposta { get; set; }
+    public StatusCandidatura Status { get; set; }
+}

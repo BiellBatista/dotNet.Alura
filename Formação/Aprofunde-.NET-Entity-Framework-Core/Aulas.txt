@@ -11,6 +11,7 @@ Entity Framework: integre aplicações .NET com banco de dados
 		09 - Configurando a string de conexão no Entity Framework (B)
 		10 - O que aprendemos?
 	02 - Mapeamentos explícitos
+		01 - Projeto da aula anterior
 	03 - Relacionamentos
 	04 - Salvando dados
 	05 - Consultas
