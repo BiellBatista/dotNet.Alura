@@ -49,6 +49,16 @@ Entity Framework: integre aplicações .NET com banco de dados
 	05 - Consultas
 		01 - Projeto da aula anterior
 		02 - Verificações otimizadas
+		03 - Para saber mais: tracking
+		04 - Filtros otimizados
+		05 - Filtrando dados
+		06 - Relatórios
+		07 - Faça como eu fiz: realizando consultas e filtros
+		08 - Consultando dados (C)
+		09 - Projeto final do curso
+		10 - Para ir mais fundo
+		11 - O que aprendemos?
+		12 - Conclusão
 .NET: avance na persistência com EF Core
 	01 - Melhorando consultas
 	02 - Modelo rico
