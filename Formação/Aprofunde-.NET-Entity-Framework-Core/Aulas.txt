@@ -86,6 +86,15 @@ Entity Framework: integre aplicações .NET com banco de dados
 	03 - Tópicos sobre transações
 		01 - Projeto da aula anterior
 		02 - Ponto de salvamento
+		03 - Faça como eu fiz: Savepoints
+		04 - Ponto de salvamento (D)
+		05 - Para saber mais: operações atômicas
+		06 - Trabalhando escopos
+		07 - Atenção à concorrência
+		08 - Concorrência no EF Core (A)
+		09 - Para saber mais: resolvendo conflitos de maneira mais sofisticada
+		10 - Para saber mais: concorrência por Token
+		11 - O que aprendemos?
 	04 - Padrões e práticas
 	05 - Interceptando comandos
 Persistência de dados em .NET: use bancos relacionais e NoSQL
