@@ -74,6 +74,10 @@ Entity Framework: integre aplicações .NET com banco de dados
 		11 - Trabalhando índices
 		12 - O que aprendemos?
 	02 - Modelo rico
+		01 - Projeto da aula anterior
+		02 - Para saber mais: Modelo rico x Modelo anêmico
+		03 - Preparando o ambiente: criando colunas para representar endereço
+		04 - Alterando a entidade e o banco
 	03 - Tópicos sobre transações
 	04 - Padrões e práticas
 	05 - Interceptando comandos
