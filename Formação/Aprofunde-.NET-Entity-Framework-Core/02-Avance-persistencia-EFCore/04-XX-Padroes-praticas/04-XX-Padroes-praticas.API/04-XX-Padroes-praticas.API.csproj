@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>false</IsTestProject>
+    <Nullable>enable</Nullable>
+    <RootNamespace>_04_XX_Padroes_praticas.API</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\04-XX-Padroes-praticas.Dados\04-XX-Padroes-praticas.Dados.csproj" />
+    <ProjectReference Include="..\04-XX-Padroes-praticas.Modelos\04-XX-Padroes-praticas.Modelos.csproj" />
+  </ItemGroup>
+</Project>
