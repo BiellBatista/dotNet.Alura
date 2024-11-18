@@ -84,6 +84,8 @@ Entity Framework: integre aplicações .NET com banco de dados
 		08 - Faça como eu fiz: adicionando colunas em TB_Projetos
 		09 - O que aprendemos?
 	03 - Tópicos sobre transações
+		01 - Projeto da aula anterior
+		02 - Ponto de salvamento
 	04 - Padrões e práticas
 	05 - Interceptando comandos
 Persistência de dados em .NET: use bancos relacionais e NoSQL
