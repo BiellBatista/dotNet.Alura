@@ -1,0 +1,6 @@
+@_05_XX_Interceptando_comandos.API_HostAddress = http://localhost:5221
+
+GET {{_05_XX_Interceptando_comandos.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

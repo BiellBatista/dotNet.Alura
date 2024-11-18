@@ -107,6 +107,8 @@ Entity Framework: integre aplicações .NET com banco de dados
 		09 - Mão na massa: refatorando e adicionando os repositórios
 		10 - O que aprendemos?
 	05 - Interceptando comandos
+		01 - Projeto da aula anterior
+		02 - Interceptor
 Persistência de dados em .NET: use bancos relacionais e NoSQL
 	01 - Explorando stored procedure
 	02 - Operações em lote
