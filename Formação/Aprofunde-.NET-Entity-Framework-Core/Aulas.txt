@@ -109,6 +109,16 @@ Entity Framework: integre aplicações .NET com banco de dados
 	05 - Interceptando comandos
 		01 - Projeto da aula anterior
 		02 - Interceptor
+		03 - Interceptação no Entity Framework (A / B)
+		04 - Faça como eu fiz: interceptors
+		05 - Preparando o ambiente: novo recurso em nosso banco de dados
+		06 - Trabalhando Stored Procedures
+		07 - Para saber mais: Stored Procedure
+		08 - Utilização de Stored Procedure com o EF Core (A)
+		09 - Projeto final do curso
+		10 - O que aprendemos?
+		11 - Para ir mais fundo
+		12 - Conclusão
 Persistência de dados em .NET: use bancos relacionais e NoSQL
 	01 - Explorando stored procedure
 	02 - Operações em lote
