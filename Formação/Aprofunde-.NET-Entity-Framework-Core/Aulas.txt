@@ -78,6 +78,11 @@ Entity Framework: integre aplicações .NET com banco de dados
 		02 - Para saber mais: Modelo rico x Modelo anêmico
 		03 - Preparando o ambiente: criando colunas para representar endereço
 		04 - Alterando a entidade e o banco
+		05 - Reaproveitando endereço (A)
+		06 - Preparando o ambiente: adicionando colunas em TB_Projetos
+		07 - Utilizando ValueConverter
+		08 - Faça como eu fiz: adicionando colunas em TB_Projetos
+		09 - O que aprendemos?
 	03 - Tópicos sobre transações
 	04 - Padrões e práticas
 	05 - Interceptando comandos
