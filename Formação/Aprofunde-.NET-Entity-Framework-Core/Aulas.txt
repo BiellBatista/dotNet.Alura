@@ -61,6 +61,10 @@ Entity Framework: integre aplicações .NET com banco de dados
 		12 - Conclusão
 .NET: avance na persistência com EF Core
 	01 - Melhorando consultas
+		01 - Apresentação
+		02 - Projeto inicial do curso
+		03 - Preparando o ambiente: base de dados
+		04 - Otimizando consultas
 	02 - Modelo rico
 	03 - Tópicos sobre transações
 	04 - Padrões e práticas
