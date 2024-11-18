@@ -65,6 +65,14 @@ Entity Framework: integre aplicações .NET com banco de dados
 		02 - Projeto inicial do curso
 		03 - Preparando o ambiente: base de dados
 		04 - Otimizando consultas
+		05 - Otimização de consultas no Entity Framework (EF) Core (A)
+		06 - Consultas divididas
+		07 - Faça como eu fiz: usando AsSplitQuery
+		08 - Para saber mais: consultas eficientes [Documentação]
+		09 - Consultas mais eficientes (C)
+		10 - Preparando o ambiente: criando índice para e-mail
+		11 - Trabalhando índices
+		12 - O que aprendemos?
 	02 - Modelo rico
 	03 - Tópicos sobre transações
 	04 - Padrões e práticas
