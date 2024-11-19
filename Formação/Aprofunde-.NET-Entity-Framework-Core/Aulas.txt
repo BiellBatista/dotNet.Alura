@@ -151,5 +151,7 @@ Persistência de dados em .NET: use bancos relacionais e NoSQL
 		10 - Faça como eu fiz: invalidando o cache
 		11 - O que aprendemos?
 	04 - Segurança
+		01 - Projeto da aula anterior
+		02 - SQL Injection
 	05 - EF Tools
 	06 - EF Core e MongoDB
