@@ -1,0 +1,15 @@
+﻿using _01_XX_Explorando_procedure.Modelos;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace _01_XX_Explorando_procedure.Dados.Mapeamentos;
+
+internal class ProfissionalEspecialidadeTypeConfiguration : IEntityTypeConfiguration<ProfissionalEspecialidade>
+{
+    public void Configure(EntityTypeBuilder<ProfissionalEspecialidade> entity)
+    {
+        entity.ToTable("TB_Especialidade_Profissional");
+        entity.Property(e => e.ProfissionalId).HasColumnName("Id_Profissional");
+        entity.Property(e => e.EspecialidadeId).HasColumnName("Id_Especialidade");
+    }
+}

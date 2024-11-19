@@ -121,6 +121,8 @@ Entity Framework: integre aplicações .NET com banco de dados
 		12 - Conclusão
 Persistência de dados em .NET: use bancos relacionais e NoSQL
 	01 - Explorando stored procedure
+		01 - Apresentação
+		02 - Preparando o ambiente: projeto inicial do curso e configuração do banco
 	02 - Operações em lote
 	03 - Trabalhando com cache
 	04 - Segurança
