@@ -153,5 +153,11 @@ Persistência de dados em .NET: use bancos relacionais e NoSQL
 	04 - Segurança
 		01 - Projeto da aula anterior
 		02 - SQL Injection
+		03 - Faça como eu fiz: prevenindo ataques do tipo SQL Injection
+		04 - Para saber mais: usando ADO .NET para impedir SQL Injection
+		05 - Hashing
+		06 - Para saber mais: criptografia com Data Protection
+		07 - Hashing de senhas com bcrypt.net-next (C)
+		08 - O que aprendemos?
 	05 - EF Tools
 	06 - EF Core e MongoDB
