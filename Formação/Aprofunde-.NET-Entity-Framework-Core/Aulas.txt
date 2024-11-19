@@ -141,6 +141,15 @@ Persistência de dados em .NET: use bancos relacionais e NoSQL
 	03 - Trabalhando com cache
 		01 - Projeto da aula anterior
 		02 - Configurando cache
+		03 - MemoryCache (E)
+		04 - Preparando o ambiente: instalação do Redis/ utilização com Docker
+		05 - Configurando o Redis
+		06 - Para saber mais: Redis, o que é ? Como funciona?
+		07 - Guardando dados em cache
+		08 - Trabalhando com cache (B)
+		09 - Limpando cache
+		10 - Faça como eu fiz: invalidando o cache
+		11 - O que aprendemos?
 	04 - Segurança
 	05 - EF Tools
 	06 - EF Core e MongoDB
