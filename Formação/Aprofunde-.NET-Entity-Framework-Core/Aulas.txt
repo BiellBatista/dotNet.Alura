@@ -162,4 +162,11 @@ Persistência de dados em .NET: use bancos relacionais e NoSQL
 	05 - EF Tools
 		01 - Preparando o ambiente: projeto Click Bônus e EF Tools
 		02 - Estratégias de trabalho
+		03 - Faça como eu fiz: criando a primeira migração
+		04 - Criando uma migração para inserção de dados
+		05 - Gerenciamento de migrações com EF Tools (A / B)
+		06 - Mão na massa: editando o método Down
+		07 - Preparando o ambiente: criando a tabela ofertas
+		08 - Scaffolding
+		09 - O que aprendemos?
 	06 - EF Core e MongoDB
