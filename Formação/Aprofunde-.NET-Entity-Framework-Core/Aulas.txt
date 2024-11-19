@@ -132,6 +132,12 @@ Persistência de dados em .NET: use bancos relacionais e NoSQL
 	02 - Operações em lote
 		01 - Projeto da aula anterior
 		02 - Insert
+		03 - Para saber mais: UpdateRange e DeleteRange
+		04 - Update
+		05 - Faça como eu fiz: atualização de vários registros com ExecuteUpdate
+		06 - Delete
+		07 - Operações em lote com EF Core – Método ExecuteDelete (A / E)
+		08 - O que aprendemos?
 	03 - Trabalhando com cache
 	04 - Segurança
 	05 - EF Tools
