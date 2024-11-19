@@ -123,6 +123,12 @@ Persistência de dados em .NET: use bancos relacionais e NoSQL
 	01 - Explorando stored procedure
 		01 - Apresentação
 		02 - Preparando o ambiente: projeto inicial do curso e configuração do banco
+		03 - Chamando a Stored Procedure
+		04 - Passagem de parâmetros
+		05 - Projeção de consultas em SP
+		06 - Faça como eu fiz: Stored Procedure com parâmetros
+		07 - Selecionando campos específicos com select (B)
+		08 - O que aprendemos?
 	02 - Operações em lote
 	03 - Trabalhando com cache
 	04 - Segurança
