@@ -139,6 +139,8 @@ Persistência de dados em .NET: use bancos relacionais e NoSQL
 		07 - Operações em lote com EF Core – Método ExecuteDelete (A / E)
 		08 - O que aprendemos?
 	03 - Trabalhando com cache
+		01 - Projeto da aula anterior
+		02 - Configurando cache
 	04 - Segurança
 	05 - EF Tools
 	06 - EF Core e MongoDB
