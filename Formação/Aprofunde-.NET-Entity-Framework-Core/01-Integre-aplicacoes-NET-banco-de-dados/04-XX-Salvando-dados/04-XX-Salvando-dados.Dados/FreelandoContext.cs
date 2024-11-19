@@ -3,14 +3,16 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
 namespace _04_XX_Salvando_dados.Dados;
+
 public class FreelandoContext : DbContext
 {
     private readonly IConfiguration _configuration;
+
     public FreelandoContext(DbContextOptions<FreelandoContext> options) : base(options)
     {
     }
 
-    override protected void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
         {

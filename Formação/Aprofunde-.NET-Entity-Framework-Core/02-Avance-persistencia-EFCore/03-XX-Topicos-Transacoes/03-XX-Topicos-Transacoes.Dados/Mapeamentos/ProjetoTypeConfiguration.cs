@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace _03_XX_Topicos_Transacoes.Dados.Mapeamentos;
+
 internal class ProjetoTypeConfiguration : IEntityTypeConfiguration<Projeto>
 {
     public void Configure(EntityTypeBuilder<Projeto> entity)

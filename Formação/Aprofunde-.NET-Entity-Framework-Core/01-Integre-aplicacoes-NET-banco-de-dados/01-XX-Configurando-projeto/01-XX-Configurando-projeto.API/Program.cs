@@ -1,6 +1,4 @@
 using _01_XX_Configurando_projeto.API.Endpoints;
-using _01_XX_Configurando_projeto.Dados;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 

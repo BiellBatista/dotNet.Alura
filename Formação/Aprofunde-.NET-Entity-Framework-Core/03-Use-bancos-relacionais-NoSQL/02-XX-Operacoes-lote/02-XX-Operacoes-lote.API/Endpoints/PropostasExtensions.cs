@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 
 namespace _02_XX_Operacoes_lote.API.Endpoints;
+
 public static class PropostasExtensions
 {
     public static void AddEndPointPropostas(this WebApplication app)

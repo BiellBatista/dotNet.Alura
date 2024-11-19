@@ -1,6 +1,5 @@
 ﻿using _02_XX_Mapeamentos_explicitos.API.Requests;
 using _02_XX_Mapeamentos_explicitos.API.Responses;
-using _02_XX_Mapeamentos_explicitos.Modelos;
 
 namespace _02_XX_Mapeamentos_explicitos.API.Converters;
 

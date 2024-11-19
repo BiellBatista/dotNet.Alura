@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 
 namespace _04_XX_Seguranca.API.Endpoints;
+
 public static class PropostasExtensions
 {
     public static void AddEndPointPropostas(this WebApplication app)

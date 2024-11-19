@@ -1,4 +1,5 @@
 ﻿namespace _02_XX_Mapeamentos_explicitos.Dados.Mapeamentos;
+
 internal class ContratoTypeConfiguration : IEntityTypeConfiguration<Contrato>
 {
     public void Configure(EntityTypeBuilder<Contrato> entity)

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace _01_XX_Explorando_procedure.Dados.Mapeamentos;
+
 internal class CandidaturaTypeConfiguration : IEntityTypeConfiguration<Candidatura>
 {
     public void Configure(EntityTypeBuilder<Candidatura> entity)

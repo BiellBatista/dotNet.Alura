@@ -173,3 +173,11 @@ Persistência de dados em .NET: use bancos relacionais e NoSQL
 		01 - Projeto da aula anterior
 		02 - Preparando o ambiente: configurando o Mongo para executar no Docker, criando o banco e a coleção
 		03 - MongoDB e Entity Framework Core
+		04 - EF Core e MongoDB (B)
+		05 - Para saber mais: usando o MongoDB sem o EF Core
+		06 - Persistindo e consultando clientes
+		07 - Faça como eu fiz: salvando bonus no MongoDB
+		08 - Projeto final do curso
+		09 - Para ir mais fundo
+		10 - O que aprendemos?
+		11 - Conclusão

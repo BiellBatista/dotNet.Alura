@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace _04_XX_Padroes_praticas.Dados.Mapeamentos;
+
 internal class ProfissionalTypeConfiguration : IEntityTypeConfiguration<Profissional>
 {
     public void Configure(EntityTypeBuilder<Profissional> entity)
