@@ -69,11 +69,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-XX-Interceptando-comando
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Use-bancos-relacionais-NoSQL", "03-Use-bancos-relacionais-NoSQL", "{A7E5FC52-F79D-4872-B917-2AA5D4036BCC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Explorando-procedure.Modelos", "03-Use-bancos-relacionais-NoSQL\01-Explorando-procedure\01-XX-Explorando-procedure.Modelos\01-XX-Explorando-procedure.Modelos.csproj", "{3AB57D3C-C168-4D33-8AEB-90073BC69897}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Explorando-procedure.Modelos", "03-Use-bancos-relacionais-NoSQL\01-XX-Explorando-procedure\01-XX-Explorando-procedure.Modelos\01-XX-Explorando-procedure.Modelos.csproj", "{3AB57D3C-C168-4D33-8AEB-90073BC69897}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Explorando-procedure.Dados", "03-Use-bancos-relacionais-NoSQL\01-Explorando-procedure\01-XX-Explorando-procedure.Dados\01-XX-Explorando-procedure.Dados.csproj", "{AF3315B2-70D5-4536-A5C1-F178C5E6428C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Explorando-procedure.Dados", "03-Use-bancos-relacionais-NoSQL\01-XX-Explorando-procedure\01-XX-Explorando-procedure.Dados\01-XX-Explorando-procedure.Dados.csproj", "{AF3315B2-70D5-4536-A5C1-F178C5E6428C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Explorando-procedure.API", "03-Use-bancos-relacionais-NoSQL\01-Explorando-procedure\01-XX-Explorando-procedure.API\01-XX-Explorando-procedure.API.csproj", "{762F7B2E-D800-43CD-94B9-E3D8BF689144}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-XX-Explorando-procedure.API", "03-Use-bancos-relacionais-NoSQL\01-XX-Explorando-procedure\01-XX-Explorando-procedure.API\01-XX-Explorando-procedure.API.csproj", "{762F7B2E-D800-43CD-94B9-E3D8BF689144}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Operacoes-lote.Modelos", "03-Use-bancos-relacionais-NoSQL\02-XX-Operacoes-lote\02-XX-Operacoes-lote.Modelos\02-XX-Operacoes-lote.Modelos.csproj", "{E607D1EB-83DA-4D49-8E29-B13DBA056DBC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Operacoes-lote.Dados", "03-Use-bancos-relacionais-NoSQL\02-XX-Operacoes-lote\02-XX-Operacoes-lote.Dados\02-XX-Operacoes-lote.Dados.csproj", "{D8B2B7FE-417F-4661-97DA-D6E7817C36FD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-XX-Operacoes-lote.API", "03-Use-bancos-relacionais-NoSQL\02-XX-Operacoes-lote\02-XX-Operacoes-lote.API\02-XX-Operacoes-lote.API.csproj", "{3B41D4F2-D7BF-47D9-8F98-C9D1A07E6F01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -213,6 +219,18 @@ Global
 		{762F7B2E-D800-43CD-94B9-E3D8BF689144}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{762F7B2E-D800-43CD-94B9-E3D8BF689144}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{762F7B2E-D800-43CD-94B9-E3D8BF689144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E607D1EB-83DA-4D49-8E29-B13DBA056DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E607D1EB-83DA-4D49-8E29-B13DBA056DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E607D1EB-83DA-4D49-8E29-B13DBA056DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E607D1EB-83DA-4D49-8E29-B13DBA056DBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B2B7FE-417F-4661-97DA-D6E7817C36FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B2B7FE-417F-4661-97DA-D6E7817C36FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B2B7FE-417F-4661-97DA-D6E7817C36FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B2B7FE-417F-4661-97DA-D6E7817C36FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B41D4F2-D7BF-47D9-8F98-C9D1A07E6F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B41D4F2-D7BF-47D9-8F98-C9D1A07E6F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B41D4F2-D7BF-47D9-8F98-C9D1A07E6F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B41D4F2-D7BF-47D9-8F98-C9D1A07E6F01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -251,6 +269,9 @@ Global
 		{3AB57D3C-C168-4D33-8AEB-90073BC69897} = {A7E5FC52-F79D-4872-B917-2AA5D4036BCC}
 		{AF3315B2-70D5-4536-A5C1-F178C5E6428C} = {A7E5FC52-F79D-4872-B917-2AA5D4036BCC}
 		{762F7B2E-D800-43CD-94B9-E3D8BF689144} = {A7E5FC52-F79D-4872-B917-2AA5D4036BCC}
+		{E607D1EB-83DA-4D49-8E29-B13DBA056DBC} = {A7E5FC52-F79D-4872-B917-2AA5D4036BCC}
+		{D8B2B7FE-417F-4661-97DA-D6E7817C36FD} = {A7E5FC52-F79D-4872-B917-2AA5D4036BCC}
+		{3B41D4F2-D7BF-47D9-8F98-C9D1A07E6F01} = {A7E5FC52-F79D-4872-B917-2AA5D4036BCC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {50A9575E-3F8B-4711-9CF9-E14873EB321B}
