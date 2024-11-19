@@ -160,4 +160,6 @@ Persistência de dados em .NET: use bancos relacionais e NoSQL
 		07 - Hashing de senhas com bcrypt.net-next (C)
 		08 - O que aprendemos?
 	05 - EF Tools
+		01 - Preparando o ambiente: projeto Click Bônus e EF Tools
+		02 - Estratégias de trabalho
 	06 - EF Core e MongoDB
