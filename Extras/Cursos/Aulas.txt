@@ -245,4 +245,7 @@ C# Async: aplique recursos de programação assíncrona em seu projetos
 		09 - Mão na massa: Task para leitura de voos de um arquivo Json
 		10 - O que aprendemos?
 	04 - Consumindo uma API de forma assíncrona
+		01 - Projeto da aula anterior
+		02 - Preparando o ambiente: adicionando um projeto de API
+		03 - Acessando APIs externa de Forma Assíncrona
 	05 - Boas práticas e refatorações
