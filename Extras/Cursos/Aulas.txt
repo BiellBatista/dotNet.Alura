@@ -219,6 +219,7 @@ C# Async: aplique recursos de programação assíncrona em seu projetos
 		03 - Código síncrono
 		04 - Criando uma Thread
 		05 - Faça como eu fiz: criando uma Thread
+		06 - Múltiplas Threads
 	02 - Tasks
 	03 - Async e Await
 	04 - Consumindo uma API de forma assíncrona
