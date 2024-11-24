@@ -2,7 +2,7 @@
 {
     var conteudo = File.ReadAllText("voos.txt");
 
-    Thread.Sleep(new Random().Next(300, 8000));
+    Task.Delay(new Random().Next(300, 8000));
 
     Console.WriteLine($"Conteúdo: \n{conteudo}");
 }
@@ -11,27 +11,12 @@ static void ExibirRelatorio()
 {
     Console.WriteLine("Executando relatório de compra de passagens!");
 
-    Thread.Sleep(new Random().Next(300, 8000));
+    Task.Delay(new Random().Next(300, 8000));
 }
-
-// permite executar um trecho de código em paralelo
-var thread1 = new Thread(() => LerArquivo());
-// permite executar um trecho de código em paralelo
-var thread2 = new Thread(() => ExibirRelatorio());
-
-void InicializarThreads()
-{
-    //disparando a thread e executando o trecho
-    thread1.Start();
-
-    while (thread1.IsAlive)
-        Console.WriteLine("Thread1 em execução.");
-
-    //disparando a thread e executando o trecho
-    thread2.Start();
-}
-
-InicializarThreads();
+// executa uma tarefa em paralelo (encapsula toda complexidade de trabalhar com thread)
+var task1 = Task.Run(() => LerArquivo());
+// executa uma tarefa em paralelo (encapsula toda complexidade de trabalhar com thread)
+var task2 = Task.Run(() => ExibirRelatorio());
 
 Console.WriteLine("Outras operações.");
 Console.ReadKey();

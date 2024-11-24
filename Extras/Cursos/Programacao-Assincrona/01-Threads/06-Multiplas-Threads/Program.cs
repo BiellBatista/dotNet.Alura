@@ -13,7 +13,6 @@ static void ExibirRelatorio()
 
     Thread.Sleep(new Random().Next(300, 8000));
 }
-
 // permite executar um trecho de código em paralelo
 var thread1 = new Thread(() => LerArquivo());
 // permite executar um trecho de código em paralelo
