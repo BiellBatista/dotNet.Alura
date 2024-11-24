@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-Cancelando-tarefa", "03-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07-Sincronizando-tarefas", "03-Async-Await\07-Sincronizando-tarefas\07-Sincronizando-tarefas.csproj", "{ACD8D6DD-8FFA-4A27-B480-54BF84FA0124}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-Mao-massa", "03-Async-Await\09-Mao-massa\09-Mao-massa.csproj", "{B306BFE8-10FC-4A06-A246-721ACB79F8F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{ACD8D6DD-8FFA-4A27-B480-54BF84FA0124}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACD8D6DD-8FFA-4A27-B480-54BF84FA0124}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACD8D6DD-8FFA-4A27-B480-54BF84FA0124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B306BFE8-10FC-4A06-A246-721ACB79F8F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B306BFE8-10FC-4A06-A246-721ACB79F8F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B306BFE8-10FC-4A06-A246-721ACB79F8F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B306BFE8-10FC-4A06-A246-721ACB79F8F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +96,7 @@ Global
 		{9DDF409A-7F51-47AB-93DA-079A819A5E34} = {75436239-0F23-4AF1-9E65-7D97D32F37CF}
 		{A9E72F0D-BD9B-4F67-B664-01FE20C5CF58} = {75436239-0F23-4AF1-9E65-7D97D32F37CF}
 		{ACD8D6DD-8FFA-4A27-B480-54BF84FA0124} = {75436239-0F23-4AF1-9E65-7D97D32F37CF}
+		{B306BFE8-10FC-4A06-A246-721ACB79F8F4} = {75436239-0F23-4AF1-9E65-7D97D32F37CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98425CB4-8E46-429A-A6F4-B39BEDEA07F0}
