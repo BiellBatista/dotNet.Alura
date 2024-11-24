@@ -2,9 +2,16 @@
 
 void LerArquivo()
 {
-    Task.Delay(new Random().Next(300, 8000));
+    try
+    {
+        Task.Delay(new Random().Next(300, 8000));
 
-    Console.WriteLine($"Conteúdo: \n{conteudoTask.Result}");
+        Console.WriteLine($"Conteúdo: \n{conteudoTask.Result}");
+    }
+    catch (AggregateException ex)
+    {
+        Console.WriteLine($"Aconteceu o erro: {ex.InnerException?.Message}");
+    }
 }
 
 static void ExibirRelatorio()

@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-Definindo-Task", "02-Tas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-Tasks-retornam-valor", "02-Tasks\03-Tasks-retornam-valor\03-Tasks-retornam-valor.csproj", "{D6892C97-D78D-47B8-8268-869487D0DBAE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06-Tratando-excecoes", "02-Tasks\06-Tratando-excecoes\06-Tratando-excecoes.csproj", "{D70888B7-CB49-47CC-A601-A2A876DFD143}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{D6892C97-D78D-47B8-8268-869487D0DBAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6892C97-D78D-47B8-8268-869487D0DBAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6892C97-D78D-47B8-8268-869487D0DBAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70888B7-CB49-47CC-A601-A2A876DFD143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70888B7-CB49-47CC-A601-A2A876DFD143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70888B7-CB49-47CC-A601-A2A876DFD143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70888B7-CB49-47CC-A601-A2A876DFD143}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{7FA01213-5237-4129-8CF3-7A63D5CE57E9} = {86EF1870-72E2-49A3-8BE9-3F7A20221484}
 		{9C5E8DBE-7314-42F0-B8D2-06D0078BBDA0} = {46BDB9F5-54BF-4F3B-AD0F-9F99612F55BD}
 		{D6892C97-D78D-47B8-8268-869487D0DBAE} = {46BDB9F5-54BF-4F3B-AD0F-9F99612F55BD}
+		{D70888B7-CB49-47CC-A601-A2A876DFD143} = {46BDB9F5-54BF-4F3B-AD0F-9F99612F55BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98425CB4-8E46-429A-A6F4-B39BEDEA07F0}
