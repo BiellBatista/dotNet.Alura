@@ -1,53 +1,36 @@
-﻿var chave = new object();
-Task<string>? conteudoTask = null;
+﻿using _09_Mao_massa;
+using System.Text.Json;
 
-lock (chave)
+static async Task<List<Voo>?> LerVoosDoArquivoJsonAsync(string caminhoArquivo)
 {
-    conteudoTask = Task.Run(() => File.ReadAllTextAsync("voos.txt"));
+    using var stream = new FileStream(caminhoArquivo, FileMode.Open, FileAccess.Read);
+
+    return await JsonSerializer.DeserializeAsync<List<Voo>>(stream);
 }
 
-// uma função async sempre deve retornar uma Task<T>
-async Task LerArquivoAsync(CancellationToken token)
+static async Task ProcessarVooAsync(Voo voo)
 {
-    try
-    {
-        await Task.Delay(new Random().Next(300, 8000));
+    // Simulação de algum processamento assíncrono (ex: gravação em banco, envio de email, etc.)
+    await Task.Delay(1000); // Simula um atraso de 1 segundo para cada voo
 
-        Console.WriteLine($"Conteúdo: \n{conteudoTask.Result}");
-
-        token.ThrowIfCancellationRequested();
-    }
-    catch (OperationCanceledException ex)
-    {
-        Console.WriteLine($"Tarefa cancelada: {ex.Message}");
-    }
-    catch (AggregateException ex)
-    {
-        Console.WriteLine($"Aconteceu o erro: {ex.InnerException?.Message}");
-    }
+    Console.WriteLine($"Voo: {voo.Id}, Origem: {voo.Origem}, Destino: {voo.Destino}, Preço: {voo.Preco}, Milhas: {voo.MilhasNecessarias}");
 }
 
-// uma função async sempre deve retornar uma Task<T>
-static async Task ExibirRelatorioAsync(CancellationToken token)
+static async Task ProcessarVoosAsync()
 {
-    try
-    {
-        Console.WriteLine("Executando relatório de compra de passagens!");
+    var caminhoArquivo = "voos.json";
+    var voos = await LerVoosDoArquivoJsonAsync(caminhoArquivo);
+    var tarefas = new List<Task>();
 
-        await Task.Delay(new Random().Next(300, 8000));
+    if (voos is not null)
+        foreach (var voo in voos)
+            // Processa cada voo de forma assíncrona
+            tarefas.Add(ProcessarVooAsync(voo));
 
-        token.ThrowIfCancellationRequested();
-    }
-    catch (OperationCanceledException ex)
-    {
-        Console.WriteLine($"Tarefa cancelada: {ex.Message}");
-    }
+    // Aguarda todas as tarefas terminarem
+    await Task.WhenAll(tarefas);
 }
 
-var tokenDeCancelamento = new CancellationTokenSource();
-var tarefa = Task.WhenAll(LerArquivoAsync(tokenDeCancelamento.Token), ExibirRelatorioAsync(tokenDeCancelamento.Token));
+await ProcessarVoosAsync();
 
-await Task.Delay(1000).ContinueWith(_ => tokenDeCancelamento.Cancel());
-
-Console.WriteLine("Outras operações.");
 Console.ReadKey();
