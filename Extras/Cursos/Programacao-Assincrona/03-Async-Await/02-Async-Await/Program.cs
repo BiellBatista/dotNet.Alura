@@ -1,10 +1,10 @@
-﻿Task<string> conteudoTask = Task.Run(() => File.ReadAllText("voos.txt"));
+﻿Task<string> conteudoTask = Task.Run(() => File.ReadAllTextAsync("voos.txt"));
 
-void LerArquivo()
+async void LerArquivoAsync()
 {
     try
     {
-        Task.Delay(new Random().Next(300, 8000));
+        await Task.Delay(new Random().Next(300, 8000));
 
         Console.WriteLine($"Conteúdo: \n{conteudoTask.Result}");
     }
@@ -14,16 +14,15 @@ void LerArquivo()
     }
 }
 
-static void ExibirRelatorio()
+static async void ExibirRelatorioAsync()
 {
     Console.WriteLine("Executando relatório de compra de passagens!");
 
-    Task.Delay(new Random().Next(300, 8000));
+    await Task.Delay(new Random().Next(300, 8000));
 }
-// executa uma tarefa em paralelo (encapsula toda complexidade de trabalhar com thread)
-Task task1 = Task.Run(() => LerArquivo());
-// executa uma tarefa em paralelo (encapsula toda complexidade de trabalhar com thread)
-Task task2 = Task.Run(() => ExibirRelatorio());
+
+LerArquivoAsync();
+ExibirRelatorioAsync();
 
 Console.WriteLine("Outras operações.");
 Console.ReadKey();
