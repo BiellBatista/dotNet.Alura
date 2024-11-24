@@ -19,6 +19,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-Tasks-retornam-valor", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06-Tratando-excecoes", "02-Tasks\06-Tratando-excecoes\06-Tratando-excecoes.csproj", "{D70888B7-CB49-47CC-A601-A2A876DFD143}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Async-Await", "03-Async-Await", "{75436239-0F23-4AF1-9E65-7D97D32F37CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-Async-Await", "03-Async-Await\02-Async-Await\02-Async-Await.csproj", "{24C1D00E-D4D7-4D96-B31D-CA7D6343B67F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,10 @@ Global
 		{D70888B7-CB49-47CC-A601-A2A876DFD143}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D70888B7-CB49-47CC-A601-A2A876DFD143}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D70888B7-CB49-47CC-A601-A2A876DFD143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C1D00E-D4D7-4D96-B31D-CA7D6343B67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C1D00E-D4D7-4D96-B31D-CA7D6343B67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C1D00E-D4D7-4D96-B31D-CA7D6343B67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C1D00E-D4D7-4D96-B31D-CA7D6343B67F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +68,7 @@ Global
 		{9C5E8DBE-7314-42F0-B8D2-06D0078BBDA0} = {46BDB9F5-54BF-4F3B-AD0F-9F99612F55BD}
 		{D6892C97-D78D-47B8-8268-869487D0DBAE} = {46BDB9F5-54BF-4F3B-AD0F-9F99612F55BD}
 		{D70888B7-CB49-47CC-A601-A2A876DFD143} = {46BDB9F5-54BF-4F3B-AD0F-9F99612F55BD}
+		{24C1D00E-D4D7-4D96-B31D-CA7D6343B67F} = {75436239-0F23-4AF1-9E65-7D97D32F37CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98425CB4-8E46-429A-A6F4-B39BEDEA07F0}

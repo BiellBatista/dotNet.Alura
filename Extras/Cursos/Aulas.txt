@@ -234,5 +234,7 @@ C# Async: aplique recursos de programação assíncrona em seu projetos
 		07 - Faça como eu fiz: tratando exceções em tarefas
 		08 - O que aprendemos?
 	03 - Async e Await
+		01 - Projeto da aula anterior
+		02 - Async/Await
 	04 - Consumindo uma API de forma assíncrona
 	05 - Boas práticas e refatorações
