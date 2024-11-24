@@ -1,11 +1,13 @@
-﻿void LerArquivo()
+﻿static void LerArquivo()
 {
     var conteudo = File.ReadAllText("voos.txt");
 
     Console.WriteLine($"Conteúdo: \n{conteudo}");
 }
-
-LerArquivo();
+// permite executar um trecho de código em paralelo
+var thread = new Thread(() => LerArquivo());
+//disparando a thread e executando o trecho
+thread.Start();
 
 Console.WriteLine("Outras operações.");
 Console.ReadKey();

@@ -1,4 +1,4 @@
-﻿void LerArquivo()
+﻿static void LerArquivo()
 {
     var conteudo = File.ReadAllText("voos.txt");
 
