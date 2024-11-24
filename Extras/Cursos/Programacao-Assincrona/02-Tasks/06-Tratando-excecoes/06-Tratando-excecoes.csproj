@@ -5,7 +5,7 @@
     <NeutralLanguage>en</NeutralLanguage>
     <Nullable>enable</Nullable>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_03_Tasks_retornam_valor</RootNamespace>
+    <RootNamespace>_06_Tratando_excecoes</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>

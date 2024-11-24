@@ -230,6 +230,7 @@ C# Async: aplique recursos de programação assíncrona em seu projetos
 		03 - Tasks que retornam valor
 		04 - Tasks que retornam valor (A)
 		05 - Para saber mais: sincronizando tarefas com WaitAll e WhenAll
+		06 - Tratando exceções
 	03 - Async e Await
 	04 - Consumindo uma API de forma assíncrona
 	05 - Boas práticas e refatorações
