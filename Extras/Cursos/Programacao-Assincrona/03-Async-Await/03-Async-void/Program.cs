@@ -1,6 +1,7 @@
 ﻿Task<string> conteudoTask = Task.Run(() => File.ReadAllTextAsync("voos.txt"));
 
-async void LerArquivoAsync()
+// uma função async sempre deve retornar uma Task<T>
+async Task LerArquivoAsync()
 {
     try
     {
@@ -14,15 +15,15 @@ async void LerArquivoAsync()
     }
 }
 
-static async void ExibirRelatorioAsync()
+// uma função async sempre deve retornar uma Task<T>
+static async Task ExibirRelatorioAsync()
 {
     Console.WriteLine("Executando relatório de compra de passagens!");
 
     await Task.Delay(new Random().Next(300, 8000));
 }
 
-LerArquivoAsync();
-ExibirRelatorioAsync();
+await Task.WhenAll(LerArquivoAsync(), ExibirRelatorioAsync());
 
 Console.WriteLine("Outras operações.");
 Console.ReadKey();

@@ -237,5 +237,6 @@ C# Async: aplique recursos de programação assíncrona em seu projetos
 		01 - Projeto da aula anterior
 		02 - Async/Await
 		03 - Async void
+		04 - Utilizando async/await em Programação Assíncrona (C)
 	04 - Consumindo uma API de forma assíncrona
 	05 - Boas práticas e refatorações
