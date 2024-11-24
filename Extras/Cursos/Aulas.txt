@@ -212,3 +212,12 @@ Build de uma aplicação .NET: construindo seus projetos com MSBuild
 		08 - Projeto final
 		09 - O que aprendemos?
 		10 - Conclusão
+C# Async: aplique recursos de programação assíncrona em seu projetos
+	01 - Threads
+		01 - Apresentação
+		02 - Projeto inicial do curso
+		03 - Código síncrono
+	02 - Tasks
+	03 - Async e Await
+	04 - Consumindo uma API de forma assíncrona
+	05 - Boas práticas e refatorações

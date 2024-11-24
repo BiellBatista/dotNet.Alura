@@ -364,6 +364,12 @@ Extra Cursos
 		04 - Compilando com diferentes objetivos
 		05 - .NET Command Line Interface
 		06 - Empacotando a aplicação com Docker
+	C# Async: aplique recursos de programação assíncrona em seu projetos
+		01 - Threads
+		02 - Tasks
+		03 - Async e Await
+		04 - Consumindo uma API de forma assíncrona
+		05 - Boas práticas e refatorações
 -------------------------------------------------------------------------------------------------------------------------
 Extra Integrações em .NET
 	WCF : Distribua seus sistemas em .NET
