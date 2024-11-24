@@ -1,4 +1,10 @@
-﻿Task<string> conteudoTask = Task.Run(() => File.ReadAllTextAsync("voos.txt"));
+﻿var chave = new object();
+Task<string>? conteudoTask = null;
+
+lock (chave)
+{
+    conteudoTask = Task.Run(() => File.ReadAllTextAsync("voos.txt"));
+}
 
 // uma função async sempre deve retornar uma Task<T>
 async Task LerArquivoAsync(CancellationToken token)

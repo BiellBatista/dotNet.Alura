@@ -241,5 +241,7 @@ C# Async: aplique recursos de programação assíncrona em seu projetos
 		05 - Cancelando uma tarefa
 		06 - Faça como eu fiz: cancelando tarefas com CancellationToken
 		07 - Sincronizando tarefas
+		08 - Para saber mais: Lock e SemaphoreSlim
+		09 - Mão na massa: Task para leitura de voos de um arquivo Json
 	04 - Consumindo uma API de forma assíncrona
 	05 - Boas práticas e refatorações
