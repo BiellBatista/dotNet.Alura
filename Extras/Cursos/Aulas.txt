@@ -259,3 +259,4 @@ C# Async: aplique recursos de programação assíncrona em seu projetos
 	05 - Boas práticas e refatorações
 		01 - Projeto da aula anterior
 		02 - Conselhos e informações
+		03 - Para saber mais: boas práticas na programação assíncrona

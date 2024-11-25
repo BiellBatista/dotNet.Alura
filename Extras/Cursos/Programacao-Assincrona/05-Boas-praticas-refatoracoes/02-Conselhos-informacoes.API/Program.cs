@@ -36,18 +36,13 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app
-    .MapGet("/Hello", () => "Hello World! - API online.")
+    .MapGet("/Hello", async () => await Task.FromResult("Hello World! - API online."))
     .WithTags("Voos")
     .WithSummary("Verificação do status 'Online'")
     .WithOpenApi();
 
 app
-    .MapGet("/voos", async ([FromServices] JornadaMilhasContext context) =>
-    {
-        Task.Delay(5000).Wait();
-
-        return await context.Voos.ToListAsync();
-    })
+    .MapGet("/voos", async ([FromServices] JornadaMilhasContext context) => await context.Voos.ToListAsync())
     .WithTags("Voos")
     .WithSummary("Lista os vôos cadastrados.")
     .WithOpenApi();
