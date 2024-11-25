@@ -51,10 +51,10 @@ app
     .MapGet("/voos/{id}", async ([FromServices] JornadaMilhasContext context, int id) =>
     {
         var voo = await context.Voos.FindAsync(id);
-        
+
         if (voo is null)
             return Results.NotFound();
-        
+
         return Results.Ok(voo);
     });
 

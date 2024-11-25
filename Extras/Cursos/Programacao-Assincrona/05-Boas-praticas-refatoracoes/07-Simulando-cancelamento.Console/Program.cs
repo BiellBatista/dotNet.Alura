@@ -1,15 +1,26 @@
-﻿using _07_Consumindo_API.Console.Client;
-using _07_Consumindo_API.Console.Modelos;
+﻿using _07_Simulando_cancelamento.Console.Client;
+using _07_Simulando_cancelamento.Console.Modelos;
 
 var client = new JornadaMilhasClient(new JornadaMilhasClientFactory().CreateClient());
 
 async Task ProcessarConsultasDeVoosAsync()
 {
-    var voos = await client.ConsultarVoosAsync();
+    try
+    {
+        var tokenSource = new CancellationTokenSource();
 
-    if (voos is not null)
-        foreach (var voo in voos)
-            Console.WriteLine(voo);
+        tokenSource.Cancel();
+
+        var voos = await client.ConsultarVoosAsync(tokenSource.Token);
+
+        if (voos is not null)
+            foreach (var voo in voos)
+                Console.WriteLine(voo);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"tarefa cancelada: {ex.Message}");
+    }
 }
 
 await ProcessarConsultasDeVoosAsync();

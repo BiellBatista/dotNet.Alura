@@ -1,7 +1,4 @@
-﻿using _07_Consumindo_API.Console.Client;
-using _07_Consumindo_API.Console.Modelos;
-
-var client = new JornadaMilhasClient(new JornadaMilhasClientFactory().CreateClient());
+﻿var client = new JornadaMilhasClient(new JornadaMilhasClientFactory().CreateClient());
 
 async Task ProcessarConsultasDeVoosAsync()
 {
