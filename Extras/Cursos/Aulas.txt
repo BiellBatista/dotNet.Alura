@@ -248,4 +248,5 @@ C# Async: aplique recursos de programação assíncrona em seu projetos
 		01 - Projeto da aula anterior
 		02 - Preparando o ambiente: adicionando um projeto de API
 		03 - Acessando APIs externa de Forma Assíncrona
+		04 - Classe de consumo da API
 	05 - Boas práticas e refatorações
