@@ -52,15 +52,16 @@ app
     .WithSummary("Lista os vôos cadastrados.")
     .WithOpenApi();
 
-app.MapGet("/voos/{id}", async ([FromServices] JornadaMilhasContext context, int id) =>
-{
-    var voo = await context.Voos.FindAsync(id);
+app
+    .MapGet("/voos/{id}", async ([FromServices] JornadaMilhasContext context, int id) =>
+    {
+        var voo = await context.Voos.FindAsync(id);
 
-    if (voo is null)
-        return Results.NotFound();
+        if (voo is null)
+            return Results.NotFound();
 
-    return Results.Ok(voo);
-});
+        return Results.Ok(voo);
+    });
 
 app
     .MapPost("/voos/comprar", async ([FromServices] JornadaMilhasContext context, [FromBody] CompraPassagemRequest request) =>
