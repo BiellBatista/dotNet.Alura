@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>latest</LangVersion>
     <NoWarn>$(NoWarn);1591</NoWarn>
-    <RootNamespace>_04_Consumo_API.API</RootNamespace>
+    <RootNamespace>_02_Conselhos_informacoes.API</RootNamespace>
     <SonarQubeExclude>false</SonarQubeExclude>
     <SonarQubeTestProject>false</SonarQubeTestProject>
     <TargetFramework>net8.0</TargetFramework>
