@@ -252,4 +252,6 @@ C# Async: aplique recursos de programação assíncrona em seu projetos
 		05 - Para saber mais: o que é uma API?
 		06 - Para saber mais: API REST
 		07 - Consumindo a API
+		08 - Utilizando async/await em Programação Assíncrona (E)
+		09 - Programação async em aplicações Web
 	05 - Boas práticas e refatorações

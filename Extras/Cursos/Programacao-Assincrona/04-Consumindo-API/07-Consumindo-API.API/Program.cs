@@ -18,10 +18,11 @@ using (var scope = app.Services.CreateScope())
 
     // Carga de dados inicial
     context.Voos.AddRange(
-        new Voo { Id = 1, Origem = "Brasilia", Destino = "Recife", Preco = 2000, MilhasNecessarias = 10000 },
-            new Voo { Id = 2, Origem = "Vitória", Destino = "São Paulo", Preco = 2500, MilhasNecessarias = 15000 },
-            new Voo { Id = 3, Origem = "Salvador", Destino = "Florianópolis", Preco = 3000, MilhasNecessarias = 20000 }
+        new() { Id = 1, Origem = "Brasilia", Destino = "Recife", Preco = 2000, MilhasNecessarias = 10000 },
+        new() { Id = 2, Origem = "Vitória", Destino = "São Paulo", Preco = 2500, MilhasNecessarias = 15000 },
+        new() { Id = 3, Origem = "Salvador", Destino = "Florianópolis", Preco = 3000, MilhasNecessarias = 20000 }
     );
+
     context.SaveChanges();
 }
 
@@ -34,29 +35,32 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/Hello", () => "Hello World! - API online.").WithTags("Voos").WithSummary("Verificação do status 'Online'").WithOpenApi();
+app
+    .MapGet("/Hello", () => "Hello World! - API online.")
+    .WithTags("Voos")
+    .WithSummary("Verificação do status 'Online'")
+    .WithOpenApi();
 
-app.MapGet("/voos", async ([FromServices] JornadaMilhasContext context) =>
-{
-    Task.Delay(5000).Wait();
-    return await context.Voos.ToListAsync();
-}).WithTags("Voos").WithSummary("Lista os vôos cadastrados.").WithOpenApi();
-
-app.MapGet("/voos/{id}", async ([FromServices] JornadaMilhasContext context, int id) =>
-{
-    var voo = await context.Voos.FindAsync(id);
-    if (voo == null)
+app
+    .MapGet("/voos", async ([FromServices] JornadaMilhasContext context) =>
     {
-        return Results.NotFound();
-    }
+        Task.Delay(5000).Wait();
 
-    return Results.Ok(await Task.FromResult(voo));
-});
+        return await context.Voos.ToListAsync();
+    })
+    .WithTags("Voos")
+    .WithSummary("Lista os vôos cadastrados.")
+    .WithOpenApi();
 
-app.MapPost("/voos/comprar", async ([FromServices] JornadaMilhasContext context, [FromBody] CompraPassagemRequest request) =>
-{
-    var mensagemCompra = $"Passagem comprada origem: {request.Origem} com destino: {request.Destino} com milhas {request.Milhas}";
-    return Results.Ok(await Task.FromResult(mensagemCompra));
-}).WithTags("Voos").WithSummary("Simula a compra de passagem").WithOpenApi();
+app
+    .MapPost("/voos/comprar", async ([FromServices] JornadaMilhasContext context, [FromBody] CompraPassagemRequest request) =>
+    {
+        var mensagemCompra = $"Passagem comprada origem: {request.Origem} com destino: {request.Destino} com milhas {request.Milhas}";
+
+        return Results.Ok(await Task.FromResult(mensagemCompra));
+    })
+    .WithTags("Voos")
+    .WithSummary("Simula a compra de passagem")
+    .WithOpenApi();
 
 app.Run();

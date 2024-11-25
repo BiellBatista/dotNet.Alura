@@ -1,5 +1,5 @@
-using _04_Consumo_API.API.Context;
-using _04_Consumo_API.API.Modelos;
+using _09_Async_Aplicacoes_Web.API.Context;
+using _09_Async_Aplicacoes_Web.API.Modelos;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
