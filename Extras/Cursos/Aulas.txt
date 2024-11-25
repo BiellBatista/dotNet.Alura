@@ -263,3 +263,4 @@ C# Async: aplique recursos de programação assíncrona em seu projetos
 		04 - CancellationToken
 		05 - Faça como eu fiz: refatorando o Endpoint para suportar cancelamento com CancellationToken
 		06 - Cancelando funções assíncronas em uma Minimal API (A)
+		07 - Simulando o cancelamento
