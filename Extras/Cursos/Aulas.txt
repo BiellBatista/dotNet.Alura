@@ -254,4 +254,6 @@ C# Async: aplique recursos de programação assíncrona em seu projetos
 		07 - Consumindo a API
 		08 - Utilizando async/await em Programação Assíncrona (E)
 		09 - Programação async em aplicações Web
+		10 - Faça como eu fiz: criando um Endpoint Assíncrono em uma Minimal API para consulta por ID
+		11 - O que aprendemos?
 	05 - Boas práticas e refatorações
