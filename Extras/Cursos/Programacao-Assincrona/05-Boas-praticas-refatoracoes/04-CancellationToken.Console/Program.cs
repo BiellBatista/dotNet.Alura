@@ -1,4 +1,7 @@
-﻿var client = new JornadaMilhasClient(new JornadaMilhasClientFactory().CreateClient());
+﻿using _04_CancellationToken.Console.Client;
+using _04_CancellationToken.Console.Modelos;
+
+var client = new JornadaMilhasClient(new JornadaMilhasClientFactory().CreateClient());
 
 async Task ProcessarConsultasDeVoosAsync()
 {
