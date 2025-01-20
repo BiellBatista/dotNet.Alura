@@ -364,12 +364,6 @@ Extra Cursos
 		04 - Compilando com diferentes objetivos
 		05 - .NET Command Line Interface
 		06 - Empacotando a aplicação com Docker
-	C# Async: aplique recursos de programação assíncrona em seu projetos
-		01 - Threads
-		02 - Tasks
-		03 - Async e Await
-		04 - Consumindo uma API de forma assíncrona
-		05 - Boas práticas e refatorações
 -------------------------------------------------------------------------------------------------------------------------
 Extra Integrações em .NET
 	WCF : Distribua seus sistemas em .NET
@@ -935,3 +929,15 @@ Formação Tópicos avançados em .NET
 		03 - Lançando exceções
 		04 - Hierarquia de exceções
 		05 - Boas práticas
+	C# Async: aplique recursos de programação assíncrona em seu projetos
+		01 - Threads
+		02 - Tasks
+		03 - Async e Await
+		04 - Consumindo uma API de forma assíncrona
+		05 - Boas práticas e refatorações
+	C#: Eventos, Delegates e Lambdas
+		01 - Delegates
+		02 - Introdução a eventos
+		03 - Eventos em formulários e controles
+		04 - Introdução a Lambdas
+		05 - Lambdas assíncronos e LINQ
