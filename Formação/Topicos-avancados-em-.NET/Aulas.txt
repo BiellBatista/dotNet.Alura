@@ -209,3 +209,4 @@ C#: Eventos, Delegates e Lambdas
 		01 - Apresentação
 		02 - Preparando o ambiente: projeto inicial
 		03 - Criando e usando delegates
+		04 - Delegates vs Métodos anônimos
