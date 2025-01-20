@@ -215,3 +215,6 @@ C#: Eventos, Delegates e Lambdas
 		07 - Para saber mais: delegates padrão em C#
 		08 - Delegates multicast (C)
 		09 - O que aprendemos?
+	02 - Introdução a eventos
+		01 - Projeto da aula anterior
+		02 - Criando e invocando eventos
