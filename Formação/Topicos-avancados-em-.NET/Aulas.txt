@@ -210,3 +210,8 @@ C#: Eventos, Delegates e Lambdas
 		02 - Preparando o ambiente: projeto inicial
 		03 - Criando e usando delegates
 		04 - Delegates vs Métodos anônimos
+		05 - Delegates multicast
+		06 - Mão na massa: usando delegates multicast
+		07 - Para saber mais: delegates padrão em C#
+		08 - Delegates multicast (C)
+		09 - O que aprendemos?
