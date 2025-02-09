@@ -219,3 +219,8 @@ C#: Eventos, Delegates e Lambdas
 		01 - Projeto da aula anterior
 		02 - Criando e invocando eventos
 		03 - Eventos de interface
+		04 - Eventos personalizados
+		05 - Para saber mais: eventos e o Pattern Observer
+		06 - Faça como eu fiz: eventos personalizados
+		07 - Notificações de saldo insuficiente (C)
+		08 - O que aprendemos?
