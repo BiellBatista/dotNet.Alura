@@ -228,3 +228,8 @@ C#: Eventos, Delegates e Lambdas
 		01 - Projeto da aula anterior
 		02 - Eventos em Windows Forms
 		03 - Eventos de formulário
+		04 - Eventos de caixa eletrônico
+		05 - Para saber mais: argumentos de eventos
+		06 - Faça como eu fiz: adicionando eventos aos botões
+		07 - Eventos (B)
+		08 - O que aprendemos?

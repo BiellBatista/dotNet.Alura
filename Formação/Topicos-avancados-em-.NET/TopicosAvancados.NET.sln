@@ -141,6 +141,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-Eventos-Windows-Forms", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-Eventos-Windows-Forms.CaixaEletronico", "05-Eventos-Delegates-Lambdas\03-Eventos-formularios-controles\02-Eventos-Windows-Forms.CaixaEletronico\02-Eventos-Windows-Forms.CaixaEletronico.csproj", "{AA457519-498C-4FB4-9270-A5280101718F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-Eventos-formulario", "05-Eventos-Delegates-Lambdas\03-Eventos-formularios-controles\03-Eventos-formulario\03-Eventos-formulario.csproj", "{BCB307D1-5E43-4D48-BE96-71DAFAB1DB4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-Eventos-formulario.CaixaEletronico", "05-Eventos-Delegates-Lambdas\03-Eventos-formularios-controles\03-Eventos-formulario.CaixaEletronico\03-Eventos-formulario.CaixaEletronico.csproj", "{BEB64892-1B72-4970-972E-6F8E5844A235}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-Eventos-caixa-eletronico", "05-Eventos-Delegates-Lambdas\03-Eventos-formularios-controles\04-Eventos-caixa-eletronico\04-Eventos-caixa-eletronico.csproj", "{5EA7A385-97ED-41D1-9FC7-E4ED76C3B52B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -371,6 +377,18 @@ Global
 		{AA457519-498C-4FB4-9270-A5280101718F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA457519-498C-4FB4-9270-A5280101718F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA457519-498C-4FB4-9270-A5280101718F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCB307D1-5E43-4D48-BE96-71DAFAB1DB4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCB307D1-5E43-4D48-BE96-71DAFAB1DB4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCB307D1-5E43-4D48-BE96-71DAFAB1DB4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCB307D1-5E43-4D48-BE96-71DAFAB1DB4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEB64892-1B72-4970-972E-6F8E5844A235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEB64892-1B72-4970-972E-6F8E5844A235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEB64892-1B72-4970-972E-6F8E5844A235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEB64892-1B72-4970-972E-6F8E5844A235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EA7A385-97ED-41D1-9FC7-E4ED76C3B52B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EA7A385-97ED-41D1-9FC7-E4ED76C3B52B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EA7A385-97ED-41D1-9FC7-E4ED76C3B52B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EA7A385-97ED-41D1-9FC7-E4ED76C3B52B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -440,6 +458,9 @@ Global
 		{B7A64518-29FC-44E5-B058-59D51EEB24D4} = {AFFCD0AB-5933-444A-BAB8-81F7ECDF1192}
 		{0D1F13A8-8F2E-46ED-8A99-3A8EE66F6E78} = {B7A64518-29FC-44E5-B058-59D51EEB24D4}
 		{AA457519-498C-4FB4-9270-A5280101718F} = {B7A64518-29FC-44E5-B058-59D51EEB24D4}
+		{BCB307D1-5E43-4D48-BE96-71DAFAB1DB4C} = {B7A64518-29FC-44E5-B058-59D51EEB24D4}
+		{BEB64892-1B72-4970-972E-6F8E5844A235} = {B7A64518-29FC-44E5-B058-59D51EEB24D4}
+		{5EA7A385-97ED-41D1-9FC7-E4ED76C3B52B} = {B7A64518-29FC-44E5-B058-59D51EEB24D4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E1835593-35A2-4B4C-AE58-E3207B4C160F}

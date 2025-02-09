@@ -1,6 +1,4 @@
-using WinFormsApp1;
-
-namespace _03_Eventos_formulario
+namespace _02_Eventos_Windows_Forms.CaixaEletronico
 {
     internal static class Program
     {
@@ -13,7 +11,7 @@ namespace _03_Eventos_formulario
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new frmCaixaEletronico());
         }
     }
 }

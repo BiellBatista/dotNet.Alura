@@ -5,7 +5,7 @@
     <NeutralLanguage>en</NeutralLanguage>
     <Nullable>enable</Nullable>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_02_Eventos_Windows_Forms</RootNamespace>
+    <RootNamespace>_04_Eventos_caixa_eletronico</RootNamespace>
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
