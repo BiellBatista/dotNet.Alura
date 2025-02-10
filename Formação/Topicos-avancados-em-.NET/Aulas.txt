@@ -246,3 +246,11 @@ C#: Eventos, Delegates e Lambdas
 		01 - Projeto da aula anterior
 		02 - Lambdas assíncronos
 		03 - LINQ com sintaxe de consulta
+		04 - LINQ com sintaxe de método
+		05 - Consultas LINQ (A)
+		06 - Para saber mais: LINQ
+		07 - Faça como eu fiz: atualizando a lógica de busca de contas
+		08 - Projeto final do curso
+		09 - Para ir mais fundo
+		10 - O que aprendemos?
+		11 - Conclusão
