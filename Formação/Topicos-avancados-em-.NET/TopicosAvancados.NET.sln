@@ -151,6 +151,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Introducao-Lambdas", "04
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-Comparando-lambda-delegates", "05-Eventos-Delegates-Lambdas\04-Introducao-Lambdas\02-Comparando-lambda-delegates\02-Comparando-lambda-delegates.csproj", "{FB9D6750-C148-4609-8D08-053B9EE8EB86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-Lambdas-expressao-instrucao", "05-Eventos-Delegates-Lambdas\04-Introducao-Lambdas\03-Lambdas-expressao-instrucao\03-Lambdas-expressao-instrucao.csproj", "{056C98FD-EB2F-463C-9862-EF7F619A7EA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -397,6 +399,10 @@ Global
 		{FB9D6750-C148-4609-8D08-053B9EE8EB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB9D6750-C148-4609-8D08-053B9EE8EB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB9D6750-C148-4609-8D08-053B9EE8EB86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{056C98FD-EB2F-463C-9862-EF7F619A7EA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{056C98FD-EB2F-463C-9862-EF7F619A7EA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{056C98FD-EB2F-463C-9862-EF7F619A7EA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{056C98FD-EB2F-463C-9862-EF7F619A7EA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -471,6 +477,7 @@ Global
 		{5EA7A385-97ED-41D1-9FC7-E4ED76C3B52B} = {B7A64518-29FC-44E5-B058-59D51EEB24D4}
 		{ACABFBD4-5178-41AC-B44D-7971D3155E0E} = {AFFCD0AB-5933-444A-BAB8-81F7ECDF1192}
 		{FB9D6750-C148-4609-8D08-053B9EE8EB86} = {ACABFBD4-5178-41AC-B44D-7971D3155E0E}
+		{056C98FD-EB2F-463C-9862-EF7F619A7EA0} = {ACABFBD4-5178-41AC-B44D-7971D3155E0E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E1835593-35A2-4B4C-AE58-E3207B4C160F}
