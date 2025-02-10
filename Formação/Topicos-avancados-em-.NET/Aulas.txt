@@ -245,3 +245,4 @@ C#: Eventos, Delegates e Lambdas
 	05 - Lambdas assíncronos e LINQ
 		01 - Projeto da aula anterior
 		02 - Lambdas assíncronos
+		03 - LINQ com sintaxe de consulta
