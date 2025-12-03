@@ -1,97 +1,106 @@
-API Rest com .NET 5: OperaÁıes essenciais com verbos HTTP
+HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-NET-MVC5)
+	01 - O que √© HTTP?
+	02 - A web segura - HTTPS
+	03 - Endere√ßos sob seu dom√≠nio
+	04 - O cliente pede e o servidor responde
+	05 - Depurando a requisi√ß√£o HTTP
+	06 - Par√¢metros da requisi√ß√£o
+	07 - Servi√ßos na web com REST
+	08 - HTTP2 - Por uma web mais eficiente
+API Rest com .NET 5: Opera√ßes essenciais com verbos HTTP
 	01 - Por que APIs?
-		01 - ApresentaÁ„o
+		01 - Apresenta√ß√£o
 		02 - Preparando o ambiente
-		03 - FaÁa como eu fiz: ConfiguraÁıes iniciais
-		04 - O que È uma API
+		03 - Fa√ßa como eu fiz: Configura√ß√µes iniciais
+		04 - O que √© uma API
 		05 - Sobre APIs (A / B)
 		06 - O que aprendemos?
 	02 - Construindo a API
 		01 - Criando a primeira rota
 		02 - O papel do controlador (B)
 		03 - Recebendo os dados de um filme
-		04 - Enviando requisiÁıes para a API (B)
-		05 - Validando par‚metros recebidos
-		06 - FaÁa como eu fiz: Adicionando restriÁıes
+		04 - Enviando requisi√ß√µes para a API (B)
+		05 - Validando par√¢metros recebidos
+		06 - Fa√ßa como eu fiz: Adicionando restri√ß√µes
 		07 - Praticando o uso de annotations (A)
 		08 - O que aprendemos?
 	03 - Retornando dados
 		01 - Projeto da aula anterior
-		02 - Retornando informaÁıes da API
+		02 - Retornando informa√ß√µes da API
 		03 - Validando o retorno (A)
 		04 - Recuperando dados por id
-		05 - FaÁa como eu fiz: Implementando a lÛgica
-		06 - Recebendo par‚metros na requisiÁ„o (C)
+		05 - Fa√ßa como eu fiz: Implementando a l√≥gica
+		06 - Recebendo par√¢metros na requisi√ß√£o (C)
 		07 - Definindo o retorno das rotas
 		08 - Qual deve ser o retorno? (B)
-		09 - Seguindo as boas pr·ticas (B)
+		09 - Seguindo as boas pr√°ticas (B)
 		10 - O que aprendemos?
-	04 - Conex„o entre Banco e API
+	04 - Conex√£o entre Banco e API
 		01 - Projeto da aula anterior
 		02 - Conectando ao Banco de Dados
 		03 - Para saber mais: Instalando pacotes Nuget no Linux
 		04 - Papel do DBContext (B)
 		05 - Gerando a primeira migration
 		06 - Para saber mais: Gerando migrations no Linux
-		07 - A import‚ncia das migrations (A / B)
+		07 - A import√¢ncia das migrations (A / B)
 		08 - Escrevendo e lendo dados no banco
 		09 - Utilizando o DbContext para escrita (D)
 		10 - Atualizando e removendo dados
-		11 - FaÁa como eu fiz: AtualizaÁ„o e remoÁ„o
-		12 - Retorno da atualizaÁ„o de dados (B)
+		11 - Fa√ßa como eu fiz: Atualiza√ß√£o e remo√ß√£o
+		12 - Retorno da atualiza√ß√£o de dados (B)
 		13 - O que aprendemos?
-	05 - Melhorando o cÛdigo
+	05 - Melhorando o c√≥digo
 		01 - Projeto da aula anterior
 		02 - Usando Data Transfer Objects
 		03 - Por que DTOs? (A / B)
 		04 - Mapeando objetos com o AutoMapper
-		05 - FaÁa como eu fiz: Mapeamento
+		05 - Fa√ßa como eu fiz: Mapeamento
 		06 - Preparando o AutoMapper (B)
 		07 - Projeto do curso
 		08 - O que aprendemos?
-		09 - Conclus„o
+		09 - Conclus√£o
 .NET 5 e EF Core: Relacionando entidades
 	01 - Incrementando o projeto
-		01 - ApresentaÁ„o
+		01 - Apresenta√ß√£o
 		02 - Projeto inicial do curso
-		03 - Adicionando o EndereÁo
+		03 - Adicionando o Endere√ßo
 		04 - Preparando o ambiente
-		05 - FaÁa como eu fiz: Criando o EndereÁo
+		05 - Fa√ßa como eu fiz: Criando o Endere√ßo
 		06 - Conceitos do AutoMapper (C)
 		07 - Apresentando o problema
 		08 - Para saber mais: Novidades EF Core
 		09 - O que aprendemos?
 	02 - O relacionamento 1:1
 		01 - Projeto da aula anterior
-		02 - Relacionando EndereÁo e Cinema
-		03 - Criando um cinema com endereÁo
+		02 - Relacionando Endere√ßo e Cinema
+		03 - Criando um cinema com endere√ßo
 		04 - Definindo modelos (B)
 		05 - Definindo relacionamentos (A)
 		06 - Lazy Properties
-		07 - FaÁa como eu fiz: Carregando as propriedades
-		08 - Carregando em tempo de execuÁ„o (B / C)
+		07 - Fa√ßa como eu fiz: Carregando as propriedades
+		08 - Carregando em tempo de execu√ß√£o (B / C)
 		09 - O que aprendemos?
 	03 - O relacionamento 1:n
 		01 - Projeto da aula anterior
 		02 - Criando a entidade Gerente
 		03 - Relacionando Gerente e Cinema
 		04 - ModelBuilder 1:n (B)
-		05 - FaÁa como eu fiz: Gerando o relacionamento um para muitos
+		05 - Fa√ßa como eu fiz: Gerando o relacionamento um para muitos
 		06 - Criando o Gerente para o Cinema
 		07 - Evitando ciclos (A)
 		08 - Resolvendo loops em definitivo
 		09 - Qual deve ser o retorno? (B)
-		10 - DeleÁ„o em Cascata
-		11 - DiferenÁas entre deleÁıes (C)
+		10 - Dele√ß√£o em Cascata
+		11 - Diferen√ßas entre dele√ß√µes (C)
 		12 - O que aprendemos?
 	04 - O relacionamento n:n
 		01 - Projeto da aula anterior
 		02 - Relacionando Filme e Cinema
 		03 - Muitos para muitos (B / C)
-		04 - Criando a entidade Sess„o
-		05 - FaÁa como eu fiz: Relacionamentos nomeados
-		06 - Cadastrando uma Sess„o
-		07 - Trazendo informaÁıes adicionais
+		04 - Criando a entidade Sess√£o
+		05 - Fa√ßa como eu fiz: Relacionamentos nomeados
+		06 - Cadastrando uma Sess√£o
+		07 - Trazendo informa√ß√µes adicionais
 		08 - Obtendo dados extras (B / C)
 		09 - O que aprendemos?
 	05 - Executando consultas
@@ -99,90 +108,90 @@ API Rest com .NET 5: OperaÁıes essenciais com verbos HTTP
 		02 - Relacionando Filme e Cinema
 		03 - Query parameters (A)
 		04 - Buscando Filmes
-		05 - FaÁa como eu fiz: Consultas relacionadas
+		05 - Fa√ßa como eu fiz: Consultas relacionadas
 		06 - Consultas com LINQ (C)
 		07 - Projeto do curso
 		08 - O que aprendemos?
-		09 - Conclus„o
-.NET 5 e Identity: Implementando controle de usu·rio
-	01 - Arrumando o cÛdigo
-		01 - ApresentaÁ„o
+		09 - Conclus√£o
+.NET 5 e Identity: Implementando controle de usu√°rio
+	01 - Arrumando o c√≥digo
+		01 - Apresenta√ß√£o
 		02 - Projeto inicial do curso
 		03 - Analisando o projeto atual
 		04 - Preparando o ambiente
 		05 - Controladores lotados (B)
-		06 - ComeÁando a refatoraÁ„o
-		07 - Terminando a refatoraÁ„o
-		08 - FaÁa como eu fiz: Refatorando os controladores
+		06 - Come√ßando a refatora√ß√£o
+		07 - Terminando a refatora√ß√£o
+		08 - Fa√ßa como eu fiz: Refatorando os controladores
 		09 - Desafio: O controlador de Gerente
 		10 - O que aprendemos?
 	02 - Conhecendo o Identity
 		01 - Projeto da aula anterior
-		02 - O que È o Identity
-		03 - BenefÌcios do Identity (A / B)
-		04 - Recebendo um usu·rio
+		02 - O que √© o Identity
+		03 - Benef√≠cios do Identity (A / B)
+		04 - Recebendo um usu√°rio
 		05 - Projetos apartados (C)
 		06 - Configurando o Identity
-		07 - Para saber mais: Pacotes necess·rios
+		07 - Para saber mais: Pacotes necess√°rios
 		08 - Identity e Banco de Dados (C)
-		09 - Cadastrando um usu·rio
-		10 - Gerenciando usu·rios (B)
-		11 - FaÁa como eu fiz: Cadastro de usu·rios
-		12 - Para saber mais: ConfiguraÁıes de senha
+		09 - Cadastrando um usu√°rio
+		10 - Gerenciando usu√°rios (B)
+		11 - Fa√ßa como eu fiz: Cadastro de usu√°rios
+		12 - Para saber mais: Configura√ß√µes de senha
 		13 - O que aprendemos?
-	03 - Logando um usu·rio
+	03 - Logando um usu√°rio
 		01 - Projeto da aula anterior
 		02 - Efetuando o login
 		03 - Login com Identity (B)
 		04 - Gerando o token
-		05 - A import‚ncia de tokens (A)
+		05 - A import√¢ncia de tokens (A)
 		06 - Retornando o token
 		07 - Resultados com sucesso (A)
 		08 - Efetuando o logout
-		09 - FaÁa como eu fiz: Logout de usu·rios
+		09 - Fa√ßa como eu fiz: Logout de usuÔøΩrios
 		10 - O que aprendemos?
 	04 - Tornando o cadastro sofisticado
 		01 - Projeto da aula anterior
-		02 - Indo alÈm no cadastro
-		03 - Exigindo confirmaÁ„o de e-mail
-		04 - Tornando confirmaÁ„o necess·ria (A)
-		05 - FaÁa como eu fiz: Exigindo e-mail confirmado
-		06 - Gerando cÛdigo de ativaÁ„o
-		07 - Token de confirmaÁ„o (B)
+		02 - Indo al√©m no cadastro
+		03 - Exigindo confirma√ß√£o de e-mail
+		04 - Tornando confirma√ß√£o necess√°ria (A)
+		05 - Fa√ßa como eu fiz: Exigindo e-mail confirmado
+		06 - Gerando c√≥digo de ativa√ß√£o
+		07 - Token de confirma√ß√£o (B)
 		08 - Confirmando o cadastro
 		09 - E-mails confirmados (B)
 		10 - O que aprendemos?
 	05 - Disparando e-mails
 		01 - Projeto da aula anterior
-		02 - Processo de confirmaÁ„o
-		03 - Criando o serviÁo de envio
-		04 - FaÁa como eu fiz: Exigindo e-mail confirmado
+		02 - Processo de confirma√ß√£o
+		03 - Criando o servi√ßo de envio
+		04 - Fa√ßa como eu fiz: Exigindo e-mail confirmado
 		05 - Compondo o e-mail
-		06 - Preparando a conex„o (B)
+		06 - Preparando a conex√£o (B)
 		07 - Enviando o e-mail
-		08 - Carregando configuraÁıes (B)
+		08 - Carregando configura√ß√µes (B)
 		09 - Projeto final do curso
 		10 - O que aprendemos?
-		11 - Conclus„o
-.NET 5 e Identity: Autenticando e autorizando usu·rios
+		11 - Conclus√£o
+.NET 5 e Identity: Autenticando e autorizando usu√°rios
 	01 - Conhecendo secrets
-		01 - ApresentaÁ„o
+		01 - Apresenta√ß√£o
 		02 - Projeto inicial do curso
 		03 - O problema de dados expostos
 		04 - Preparando o ambiente
 		05 - Aplicando secrets ao projeto
-		06 - FaÁa como eu fiz: O primeiro secret
+		06 - Fa√ßa como eu fiz: O primeiro secret
 		07 - Aplicando secrets ao projeto (B)
 		08 - O que aprendemos?
 	02 - Redefinindo senhas
 		01 - Projeto da aula anterior
-		02 - O fluxo de redefiniÁ„o
+		02 - O fluxo de redefini√ß√£o
 		03 - Para saber mais: Bloqueando tentativas de acesso
-		04 - Token de redefiniÁ„o
-		05 - Solicitando redefiniÁ„o (A)
+		04 - Token de redefini√ß√£o
+		05 - Solicitando redefini√ß√£o (A)
 		06 - Alterando a senha
 		07 - Resetando com o Identity (B)
-		08 - FaÁa como eu fiz: Criando a lÛgica de redefiniÁ„o
+		08 - Fa√ßa como eu fiz: Criando a l√≥gica de redefini√ß√£o
 		09 - O que aprendemos?
 	03 - Implementando roles
 		01 - Projeto da aula anterior
@@ -190,27 +199,27 @@ API Rest com .NET 5: OperaÁıes essenciais com verbos HTTP
 		03 - Criando a role admin
 		04 - Criando e vinculando roles (C)
 		05 - Autenticando via token
-		06 - Adicionando autenticaÁ„o e tokens (A)
-		07 - FaÁa como eu fiz: Adicionando a autorizaÁ„o
+		06 - Adicionando autentica√ß√£o e tokens (A)
+		07 - Fa√ßa como eu fiz: Adicionando a autoriza√ß√£o
 		08 - O que aprendemos?
 	04 - Separando roles
 		01 - Projeto da aula anterior
 		02 - Visualizando o problema
-		03 - Adicionando autenticaÁ„o e tokens (B / C)
+		03 - Adicionando autentica√ß√£o e tokens (B / C)
 		04 - Criando roles sem excessos
-		05 - Isolando o usu·rio admin (A)
+		05 - Isolando o usu√°rio admin (A)
 		06 - Role regular e secrets
 		07 - Adicionando a role ao token (A)
-		08 - FaÁa como eu fiz: Adicionando novas roles
+		08 - Fa√ßa como eu fiz: Adicionando novas roles
 		09 - O que aprendemos?
-	05 - PolÌticas customizadas
+	05 - Pol√≠ticas customizadas
 		01 - Projeto da aula anterior
-		02 - Conhecendo polÌticas de acesso
+		02 - Conhecendo pol√≠ticas de acesso
 		03 - Adicionando propriedades novas
 		04 - Identity e data de nascimento (A)
 		05 - Criando a regra de acesso
 		06 - Utilizando handlers (A)
-		07 - FaÁa como eu fiz: Restringindo por idade
+		07 - Fa√ßa como eu fiz: Restringindo por idade
 		08 - Projeto do curso
 		09 - O que aprendemos?
-		10 - Conclus„o
+		10 - Conclus√£o
