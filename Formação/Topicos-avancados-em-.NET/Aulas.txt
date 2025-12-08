@@ -276,3 +276,13 @@ C# LINQ: explorando ferramentas de consulta
 		06 - Aplicando a transformação de dado (B)
 		07 - Mão na massa: clientes por nome e telefone
 		08 - O que aprendemos?
+	03 - Operações em conjuntos
+		01 - Projeto da aula anterior
+		02 - Operações com conjuntos
+		03 - Trabalhando com mais de um conjunto
+		04 - Para saber mais: DistinctBy, ExceptBy, IntersectBy e UnionBy
+		05 - Ordenando dados
+		06 - Para saber mais: outros operadores de ordenação
+		07 - Aplicando ordenação de dados (B)
+		08 - Mão na massa: clientes por nome e endereço
+		09 - O que aprendemos?
