@@ -295,3 +295,15 @@ C# LINQ: explorando ferramentas de consulta
 		06 - Aplicando método de agrupamento (A)
 		07 - Mão na massa: clientes por código de área
 		08 - O que aprendemos?
+	05 - Trabalhando com consultas no Entity
+		01 - Projeto da aula anterior
+		02 - Preparando o ambiente: scripts do banco de dados
+		03 - Trabalhando com Entity
+		04 - Alterando informações
+		05 - Para saber mais: outras aplicações do LINQ
+		06 - Aplicando gerenciamento de dados (C)
+		07 - Faça como eu fiz: gerenciando dados com o LINQ to Entities
+		08 - Projeto final do curso
+		09 - Para ir mais fundo
+		10 - O que aprendemos?
+		11 - Conclusão
