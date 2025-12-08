@@ -286,3 +286,12 @@ C# LINQ: explorando ferramentas de consulta
 		07 - Aplicando ordenação de dados (B)
 		08 - Mão na massa: clientes por nome e endereço
 		09 - O que aprendemos?
+	04 - Operadores de agregação e agrupamento
+		01 - Projeto da aula anterior
+		02 - Método Aggregate
+		03 - Agregando valores
+		04 - Método GroupBy
+		05 - Para saber mais: Agregação x Agrupamento
+		06 - Aplicando método de agrupamento (A)
+		07 - Mão na massa: clientes por código de área
+		08 - O que aprendemos?
