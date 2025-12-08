@@ -1,4 +1,4 @@
-﻿namespace _01_Sintaxes_LINQ.Modelos;
+﻿namespace _02_Projecoes_transformacoes.Modelos;
 
 public class Pagamento
 {

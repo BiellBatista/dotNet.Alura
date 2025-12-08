@@ -267,3 +267,12 @@ C# LINQ: explorando ferramentas de consulta
 		09 - Aplicando a sintaxe de consulta (A)
 		10 - Faça como eu fiz: consultando clientes
 		11 - O que aprendemos?
+	02 - Projeções e transformações
+		01 - Projeto da aula anterior
+		02 - Projeções
+		03 - Para saber mais: operadores de conversão
+		04 - Projeções anônimas
+		05 - Transformando dados
+		06 - Aplicando a transformação de dado (B)
+		07 - Mão na massa: clientes por nome e telefone
+		08 - O que aprendemos?

@@ -1,4 +1,4 @@
-﻿namespace _01_Sintaxes_LINQ.Dados;
+﻿namespace _02_Projecoes_transformacoes.Dados;
 
 public class DadosPedidos
 {

@@ -1,6 +1,6 @@
-﻿using _01_Sintaxes_LINQ.Modelos;
+﻿using _02_Projecoes_transformacoes.Modelos;
 
-namespace _01_Sintaxes_LINQ.Dados;
+namespace _02_Projecoes_transformacoes.Dados;
 
 public class DadosCarrinho
 {
