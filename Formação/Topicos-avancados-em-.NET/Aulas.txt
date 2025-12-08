@@ -254,3 +254,16 @@ C#: Eventos, Delegates e Lambdas
 		09 - Para ir mais fundo
 		10 - O que aprendemos?
 		11 - Conclusão
+C# LINQ: explorando ferramentas de consulta
+	01 - Sintaxes do LINQ
+		01 - Apresentação
+		02 - Projeto inicial
+		03 - Listando dados com LINQ
+		04 - Para saber mais: LINQ
+		05 - Sintaxe de consulta
+		06 - Sintaxe de método
+		07 - Para saber mais: operadores de consulta padrão
+		08 - Para saber mais: Sintaxe de consulta x Sintaxe de método
+		09 - Aplicando a sintaxe de consulta (A)
+		10 - Faça como eu fiz: consultando clientes
+		11 - O que aprendemos?
