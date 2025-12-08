@@ -950,3 +950,9 @@ Formação Tópicos avançados em .NET
 		03 - Eventos em formulários e controles
 		04 - Introdução a Lambdas
 		05 - Lambdas assíncronos e LINQ
+	C# LINQ: explorando ferramentas de consulta
+		01 - Sintaxes do LINQ
+		02 - Projeções e transformações
+		03 - Operações em conjuntos
+		04 - Operadores de agregação e agrupamento
+		05 - Trabalhando com consultas no Entity
