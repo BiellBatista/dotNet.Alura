@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 namespace _01_Arquitetura_projeto_ContainRs.WebApp.Controllers;
+
 public class CepController : Controller
 {
     private readonly IViaCepService _cepService;
@@ -21,8 +22,8 @@ public class CepController : Controller
             return Json(new { Error = "CEP não encontrado" });
         }
 
-        return Json(new 
-        { 
+        return Json(new
+        {
             response.Content!.CEP,
             Rua = response.Content.Logradouro,
             response.Content.Bairro,

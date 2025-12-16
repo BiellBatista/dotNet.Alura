@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace _01_Arquitetura_projeto_ContainRs.WebApp.Controllers;
+
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
