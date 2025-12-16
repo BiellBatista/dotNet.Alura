@@ -507,6 +507,32 @@ Formação Aprofunde em .NET com Entity Framework Core
 		05 - EF Tools
 		06 - EF Core e MongoDB
 -------------------------------------------------------------------------------------------------------------------------
+Formação Arquitetura .NET: da codificação ao deploy na nuvem
+	Arquitetura .NET: descomplicando a Clean Architecture
+		01 - A arquitetura do projeto ContainRs
+		02 - Conceitos e Testes
+		03 - Registrando clientes com um endpoint
+		04 - Comunicação entre os componentes
+		05 - Reforçando a arquitetura em novo caso de uso
+	Arquitetura .NET: modelando aplicações com Domain-Driven Design Estratégico
+		01 - Apresentando o projeto ContainRs
+		02 - As áreas funcionais da empresa
+		03 - Aprofundando subdomínios
+		04 - Delimitando fronteiras
+		05 - Relacionando contextos
+	Arquitetura .NET: modelando aplicações com Domain-Driven Design Tático
+		01 - A camada de aplicação
+		02 - Garantindo consistência de dados
+		03 - Blocos fundantes do Domain Model
+		04 - Integrando contextos assincronamente
+		05 - Concluindo o tratamento de eventos
+	Arquitetura em .NET: criando uma arquitetura de sistemas no Azure
+		01 - Infraestrutura local
+		02 - Redis
+		03 - Recursos no Azure
+		04 - Resolvendo DNS
+		05 - Balanceador de carga
+-------------------------------------------------------------------------------------------------------------------------
 Formação ASP.Net Core
 	HTTP: Entendendo a web por baixo dos panos
 		01 - O que é HTTP?

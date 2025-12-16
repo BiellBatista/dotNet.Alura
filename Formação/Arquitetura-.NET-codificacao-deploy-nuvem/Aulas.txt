@@ -1,0 +1,13 @@
+Arquitetura .NET: descomplicando a Clean Architecture
+	01 - A arquitetura do projeto ContainRs
+		01 - Apresentação
+		02 - Preparando o ambiente
+		03 - Conhecendo o projeto
+		04 - Garantindo que clientes tenham mais de 18 anos
+		05 - Mão na massa: validando idades
+		06 - Expondo dados via API
+		07 - Estruturando a plataforma Clickbonus para recompensas personalizadas (C)
+		08 - Integração de novas funcionalidades na Clickbonus (D)
+		09 - Para saber mais: o padrão arquitetural MVC
+		10 - Para saber mais: o contexto histórico da Arquitetura Limpa
+		11 - O que aprendemos?
