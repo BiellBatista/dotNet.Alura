@@ -14,3 +14,5 @@ Arquitetura .NET: descomplicando a Clean Architecture
 	02 - Conceitos e Testes
 		01 - Projeto da aula anterior
 		02 - Identificando conceitos do negócio
+		03 - Integrando Email na aplicação
+		04 - Para saber mais: a camada de Domínio

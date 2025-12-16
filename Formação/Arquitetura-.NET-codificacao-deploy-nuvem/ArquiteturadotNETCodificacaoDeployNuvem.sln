@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Conceitos-Testes", "02-C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-Identificando-conceitos-negocio.WebApp", "01-Descomplicando-Clean-Architecture\02-02-Identificando-conceitos-negocio.WebApp\02-02-Identificando-conceitos-negocio.WebApp.csproj", "{177CF47B-1826-7F5E-548E-65E56CA7C205}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-03-Integrando-Email-aplicacao.WebApp", "01-Descomplicando-Clean-Architecture\02-03-Integrando-Email-aplicacao.WebApp\02-03-Integrando-Email-aplicacao.WebApp.csproj", "{B8B9FA98-3273-593A-253D-24C23E7262AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{177CF47B-1826-7F5E-548E-65E56CA7C205}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{177CF47B-1826-7F5E-548E-65E56CA7C205}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{177CF47B-1826-7F5E-548E-65E56CA7C205}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8B9FA98-3273-593A-253D-24C23E7262AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8B9FA98-3273-593A-253D-24C23E7262AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8B9FA98-3273-593A-253D-24C23E7262AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8B9FA98-3273-593A-253D-24C23E7262AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 		{1A4037B6-55E0-3529-2B5E-CB8B333A47F2} = {FD4D3D6B-C48A-4D93-9875-CF4E21489332}
 		{2B5D2AC9-441E-4D2E-841D-A6B08FBAC938} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{177CF47B-1826-7F5E-548E-65E56CA7C205} = {2B5D2AC9-441E-4D2E-841D-A6B08FBAC938}
+		{B8B9FA98-3273-593A-253D-24C23E7262AA} = {2B5D2AC9-441E-4D2E-841D-A6B08FBAC938}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B2A40A8-73BE-423F-B01D-A96E9A657E29}
