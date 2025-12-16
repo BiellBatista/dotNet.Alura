@@ -4,14 +4,14 @@
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
     <LangVersion>latest</LangVersion>
-    <RootNamespace>_02_05_Testando_emails.Testes</RootNamespace>
+    <RootNamespace>_02_07_Traduzindo_informacoes_externas.Testes</RootNamespace>
     <SonarQubeExclude>true</SonarQubeExclude>
     <SonarQubeTestProject>true</SonarQubeTestProject>
     <TargetFramework>net8.0</TargetFramework>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
-  
+
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.4">
       <PrivateAssets>all</PrivateAssets>
@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\02-05-Testando-emails.WebApp\02-05-Testando-emails.WebApp.csproj" />
+    <ProjectReference Include="..\02-07-Traduzindo-informacoes-externas.WebApp\02-07-Traduzindo-informacoes-externas.WebApp.csproj" />
   </ItemGroup>
 
   <ItemGroup>

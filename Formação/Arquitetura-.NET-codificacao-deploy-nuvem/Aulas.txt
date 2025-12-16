@@ -18,3 +18,8 @@ Arquitetura .NET: descomplicando a Clean Architecture
 		04 - Para saber mais: a camada de Domínio
 		05 - Testando e-mails
 		06 - Validação de dados financeiros no SwiftBank (D)
+		07 - Traduzindo informações externas
+		08 - Para saber mais: a camada de Interface
+		09 - Faça como eu fiz: isolando o conceito de Email
+		10 - Protegendo dados de agendamentos no Gatito Petshop (A)
+		11 - O que aprendemos?
