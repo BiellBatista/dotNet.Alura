@@ -16,3 +16,5 @@ Arquitetura .NET: descomplicando a Clean Architecture
 		02 - Identificando conceitos do negócio
 		03 - Integrando Email na aplicação
 		04 - Para saber mais: a camada de Domínio
+		05 - Testando e-mails
+		06 - Validação de dados financeiros no SwiftBank (D)

@@ -28,7 +28,6 @@ public class AppDbContext : DbContext
                     .IsRequired();
             });
 
-
         modelBuilder.Entity<Cliente>()
             .Property(c => c.CPF).IsRequired();
     }

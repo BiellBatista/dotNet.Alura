@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace _02_03_Integrando_Email_aplicacao.WebApp.Controllers;
+
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
