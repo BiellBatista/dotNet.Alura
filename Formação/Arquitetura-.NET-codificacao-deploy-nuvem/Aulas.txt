@@ -23,3 +23,6 @@ Arquitetura .NET: descomplicando a Clean Architecture
 		09 - Faça como eu fiz: isolando o conceito de Email
 		10 - Protegendo dados de agendamentos no Gatito Petshop (A)
 		11 - O que aprendemos?
+	03 - Registrando clientes com um endpoint
+		01 - Projeto da aula anterior
+		02 - Nova forma de registrar clientes
