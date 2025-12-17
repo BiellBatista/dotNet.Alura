@@ -26,3 +26,4 @@ Arquitetura .NET: descomplicando a Clean Architecture
 	03 - Registrando clientes com um endpoint
 		01 - Projeto da aula anterior
 		02 - Nova forma de registrar clientes
+		03 - Criando a função RegistrarCliente
