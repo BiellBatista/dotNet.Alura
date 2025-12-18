@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Nullable>enable</Nullable>
+    <RootNamespace>_04_06_Interacoes_entre_componentes.Application</RootNamespace>
+    <SonarQubeExclude>false</SonarQubeExclude>
+    <SonarQubeTestProject>false</SonarQubeTestProject>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\04-06-Interacoes-entre-componentes.Domain\04-06-Interacoes-entre-componentes.Domain.csproj" />
+  </ItemGroup>
+</Project>

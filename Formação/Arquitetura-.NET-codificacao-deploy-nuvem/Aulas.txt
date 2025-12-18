@@ -40,3 +40,9 @@ Arquitetura .NET: descomplicando a Clean Architecture
 		03 - Movendo os casos de uso
 		04 - Abstraindo o acesso aos dados de cliente
 		05 - Implementando o padrão de repositório no ADOPET (B)
+		06 - Interações entre os componentes
+		07 - Para saber mais: princípios SOLID
+		08 - Para saber mais: o capítulo "perdido" do livro Arquitetura Limpa
+		09 - Adaptando a arquitetura para pacotes de viagem (C)
+		10 - Faça como eu fiz: organização da solução
+		11 - O que aprendemos?
