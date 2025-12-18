@@ -37,3 +37,4 @@ Arquitetura .NET: descomplicando a Clean Architecture
 	04 - Comunicação entre os componentes
 		01 - Projeto da aula anterior
 		02 - Separando o domínio
+		03 - Movendo os casos de uso
