@@ -1,11 +1,11 @@
 ﻿using _05_03_Consultando_clientes_estado.Application.Repositories;
-using _05_03_Consultando_clientes_estado.Domain.Models;
 
 namespace _05_03_Consultando_clientes_estado.Application.UseCases;
 
 public class ConsultarClientes
 {
     private readonly IClienteRepository repository;
+
     public ConsultarClientes(UnidadeFederativa? estado, IClienteRepository repository)
     {
         Estado = estado;
@@ -16,6 +16,5 @@ public class ConsultarClientes
 
     public Task<IEnumerable<Cliente>> ExecutarAsync()
     {
-
     }
 }

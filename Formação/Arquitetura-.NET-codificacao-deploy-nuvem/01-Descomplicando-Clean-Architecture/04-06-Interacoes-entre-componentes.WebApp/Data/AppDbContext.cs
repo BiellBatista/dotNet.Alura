@@ -1,8 +1,4 @@
-﻿using _04_06_Interacoes_entre_componentes.Application.Repositories;
-using _04_06_Interacoes_entre_componentes.Domain.Models;
-using Microsoft.EntityFrameworkCore;
-
-namespace _04_06_Interacoes_entre_componentes.WebApp.Data;
+﻿namespace _04_06_Interacoes_entre_componentes.WebApp.Data;
 
 public class AppDbContext : DbContext, IClienteRepository
 {
@@ -35,7 +31,6 @@ public class AppDbContext : DbContext, IClienteRepository
                     .HasColumnName("Email")
                     .IsRequired();
             });
-
 
         modelBuilder.Entity<Cliente>()
             .Property(c => c.CPF).IsRequired();

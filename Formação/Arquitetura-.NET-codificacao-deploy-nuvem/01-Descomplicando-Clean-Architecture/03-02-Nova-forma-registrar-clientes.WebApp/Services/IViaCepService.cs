@@ -1,6 +1,4 @@
-﻿using Refit;
-
-namespace _03_02_Nova_forma_registrar_clientes.WebApp.Services;
+﻿namespace _03_02_Nova_forma_registrar_clientes.WebApp.Services;
 
 public interface IViaCepService
 {

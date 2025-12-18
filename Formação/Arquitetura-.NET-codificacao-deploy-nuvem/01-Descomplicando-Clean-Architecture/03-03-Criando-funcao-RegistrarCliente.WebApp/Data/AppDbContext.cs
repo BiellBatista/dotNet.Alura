@@ -1,5 +1,4 @@
 ﻿using _03_03_Criando_funcao_RegistrarCliente.WebApp.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace _03_03_Criando_funcao_RegistrarCliente.WebApp.Data;
 
@@ -27,7 +26,6 @@ public class AppDbContext : DbContext
                     .HasColumnName("Email")
                     .IsRequired();
             });
-
 
         modelBuilder.Entity<Cliente>()
             .Property(c => c.CPF).IsRequired();

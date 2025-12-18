@@ -1,5 +1,4 @@
 ﻿using _02_07_Traduzindo_informacoes_externas.WebApp.Services;
-using Microsoft.AspNetCore.Mvc;
 
 namespace _02_07_Traduzindo_informacoes_externas.WebApp.Controllers;
 

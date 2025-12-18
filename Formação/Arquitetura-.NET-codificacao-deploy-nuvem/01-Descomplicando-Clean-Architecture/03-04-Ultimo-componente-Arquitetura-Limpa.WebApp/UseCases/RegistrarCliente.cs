@@ -6,6 +6,7 @@ namespace _03_04_Ultimo_componente_Arquitetura_Limpa.WebApp.UseCases;
 public class RegistrarCliente
 {
     private readonly AppDbContext context;
+
     public RegistrarCliente(AppDbContext context, string nome, Email email, string cPF, string? celular, string? cEP, string? rua, string? numero, string? complemento, string? bairro, string? municipio, string? estado)
     {
         this.context = context;

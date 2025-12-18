@@ -1,6 +1,4 @@
-﻿using System.Text.RegularExpressions;
-
-namespace _03_04_Ultimo_componente_Arquitetura_Limpa.WebApp.Models;
+﻿namespace _03_04_Ultimo_componente_Arquitetura_Limpa.WebApp.Models;
 
 public class Email
 {

@@ -1,7 +1,6 @@
 ﻿using _03_03_Criando_funcao_RegistrarCliente.WebApp.Data;
 using _03_03_Criando_funcao_RegistrarCliente.WebApp.Models;
 using _03_03_Criando_funcao_RegistrarCliente.WebApp.UseCases;
-using Microsoft.AspNetCore.Mvc;
 
 namespace _03_03_Criando_funcao_RegistrarCliente.WebApp.Controllers;
 

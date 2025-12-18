@@ -1,8 +1,5 @@
 ﻿using _04_06_Interacoes_entre_componentes.WebApp.Data;
 using _04_06_Interacoes_entre_componentes.WebApp.Models;
-using _04_06_Interacoes_entre_componentes.Domain.Models;
-using _04_06_Interacoes_entre_componentes.Application.UseCases;
-using Microsoft.AspNetCore.Mvc;
 
 namespace _04_06_Interacoes_entre_componentes.WebApp.Controllers;
 

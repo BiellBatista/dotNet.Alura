@@ -1,11 +1,11 @@
-﻿using _04_06_Interacoes_entre_componentes.Domain.Models;
-using _04_06_Interacoes_entre_componentes.Application.Repositories;
+﻿using _04_06_Interacoes_entre_componentes.Application.Repositories;
 
 namespace _04_06_Interacoes_entre_componentes.Application.UseCases;
 
 public class RegistrarCliente
 {
     private readonly IClienteRepository repository;
+
     public RegistrarCliente(IClienteRepository repository, string nome, Email email, string cPF, string? celular, string? cEP, string? rua, string? numero, string? complemento, string? bairro, string? municipio, string? estado)
     {
         this.repository = repository;

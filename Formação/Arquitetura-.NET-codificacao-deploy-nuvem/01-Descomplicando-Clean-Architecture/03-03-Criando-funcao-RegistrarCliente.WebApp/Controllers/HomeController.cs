@@ -1,8 +1,7 @@
 using _03_03_Criando_funcao_RegistrarCliente.WebApp.Models;
-using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace _03_03_Criando_funcao_RegistrarCliente.WebApp.Controllers;
+
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;

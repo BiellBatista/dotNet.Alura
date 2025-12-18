@@ -1,11 +1,11 @@
-﻿using ContainRs.WebApp.Data;
-using _04_03_Movendo_casos_uso.Domain.Models;
+﻿using _04_03_Movendo_casos_uso.Domain.Models;
 
 namespace _04_03_Movendo_casos_uso.Application.UseCases;
 
 public class RegistrarCliente
 {
     private readonly AppDbContext context;
+
     public RegistrarCliente(AppDbContext context, string nome, Email email, string cPF, string? celular, string? cEP, string? rua, string? numero, string? complemento, string? bairro, string? municipio, string? estado)
     {
         this.context = context;

@@ -1,6 +1,7 @@
 using _02_07_Traduzindo_informacoes_externas.WebApp.Models;
 
 namespace _02_07_Traduzindo_informacoes_externas.WebApp.Controllers;
+
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;

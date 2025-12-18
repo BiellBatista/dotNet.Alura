@@ -1,11 +1,12 @@
-﻿using _05_04_Implementando_caso_uso.Domain.Models;
-using _05_04_Implementando_caso_uso.Application.Repositories;
+﻿using _05_04_Implementando_caso_uso.Application.Repositories;
+using _05_04_Implementando_caso_uso.Domain.Models;
 
 namespace _05_04_Implementando_caso_uso.Application.UseCases;
 
 public class ConsultarClientes
 {
     private readonly IClienteRepository repository;
+
     public ConsultarClientes(UnidadeFederativa? estado, IClienteRepository repository)
     {
         Estado = estado;

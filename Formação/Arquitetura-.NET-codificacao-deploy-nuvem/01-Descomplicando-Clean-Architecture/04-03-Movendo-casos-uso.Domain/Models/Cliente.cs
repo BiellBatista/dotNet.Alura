@@ -2,7 +2,8 @@
 
 public class Cliente
 {
-    private Cliente() { } // EF Core
+    private Cliente()
+    { } // EF Core
 
     public Cliente(string nome, Email email, string cPF)
     {

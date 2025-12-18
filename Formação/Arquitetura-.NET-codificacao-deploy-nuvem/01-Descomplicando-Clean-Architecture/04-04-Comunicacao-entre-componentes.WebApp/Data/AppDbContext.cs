@@ -1,7 +1,4 @@
-﻿using _04_04_Comunicacao_entre_componentes.WebApp.Models;
-using Microsoft.EntityFrameworkCore;
-
-namespace _04_04_Comunicacao_entre_componentes.WebApp.Data;
+﻿namespace _04_04_Comunicacao_entre_componentes.WebApp.Data;
 
 public class AppDbContext : DbContext
 {
@@ -27,7 +24,6 @@ public class AppDbContext : DbContext
                     .HasColumnName("Email")
                     .IsRequired();
             });
-
 
         modelBuilder.Entity<Cliente>()
             .Property(c => c.CPF).IsRequired();

@@ -1,7 +1,7 @@
 ﻿using _04_04_Comunicacao_entre_componentes.WebApp.Services;
-using Microsoft.AspNetCore.Mvc;
 
 namespace _04_04_Comunicacao_entre_componentes.WebApp.Controllers;
+
 public class CepController : Controller
 {
     private readonly IViaCepService _cepService;
@@ -21,8 +21,8 @@ public class CepController : Controller
             return Json(new { Error = "CEP não encontrado" });
         }
 
-        return Json(new 
-        { 
+        return Json(new
+        {
             CEP = response.Content!.CEP,
             Rua = response.Content.Logradouro,
             Bairro = response.Content.Bairro,

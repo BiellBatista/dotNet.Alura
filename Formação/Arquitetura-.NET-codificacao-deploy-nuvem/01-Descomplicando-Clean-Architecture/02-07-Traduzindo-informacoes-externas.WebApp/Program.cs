@@ -1,7 +1,5 @@
 using _02_07_Traduzindo_informacoes_externas.WebApp.Data;
 using _02_07_Traduzindo_informacoes_externas.WebApp.Services;
-using Microsoft.EntityFrameworkCore;
-using Refit;
 
 var builder = WebApplication.CreateBuilder(args);
 

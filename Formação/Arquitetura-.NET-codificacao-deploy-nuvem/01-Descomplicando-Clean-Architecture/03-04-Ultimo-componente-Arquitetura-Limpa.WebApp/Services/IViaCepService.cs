@@ -1,6 +1,4 @@
-﻿using Refit;
-
-namespace _03_04_Ultimo_componente_Arquitetura_Limpa.WebApp.Services;
+﻿namespace _03_04_Ultimo_componente_Arquitetura_Limpa.WebApp.Services;
 
 public interface IViaCepService
 {

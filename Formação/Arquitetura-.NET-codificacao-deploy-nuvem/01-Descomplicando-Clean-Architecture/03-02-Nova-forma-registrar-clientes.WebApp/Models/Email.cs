@@ -1,6 +1,4 @@
-﻿using System.Text.RegularExpressions;
-
-namespace _03_02_Nova_forma_registrar_clientes.WebApp.Models;
+﻿namespace _03_02_Nova_forma_registrar_clientes.WebApp.Models;
 
 public class Email
 {

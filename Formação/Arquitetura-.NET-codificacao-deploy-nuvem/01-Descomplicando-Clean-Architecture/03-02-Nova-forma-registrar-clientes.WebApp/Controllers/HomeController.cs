@@ -1,8 +1,7 @@
 using _03_02_Nova_forma_registrar_clientes.WebApp.Models;
-using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace _03_02_Nova_forma_registrar_clientes.WebApp.Controllers;
+
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;

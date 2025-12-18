@@ -1,6 +1,4 @@
-﻿using System.Text.RegularExpressions;
-
-namespace _03_03_Criando_funcao_RegistrarCliente.WebApp.Models;
+﻿namespace _03_03_Criando_funcao_RegistrarCliente.WebApp.Models;
 
 public class Email
 {

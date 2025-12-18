@@ -1,11 +1,11 @@
 ﻿using _04_02_Separando_dominio.WebApp.Data;
-using _04_02_Separando_dominio.WebApp.Models;
 
 namespace _04_02_Separando_dominio.WebApp.UseCases;
 
 public class RegistrarCliente
 {
     private readonly AppDbContext context;
+
     public RegistrarCliente(AppDbContext context, string nome, Email email, string cPF, string? celular, string? cEP, string? rua, string? numero, string? complemento, string? bairro, string? municipio, string? estado)
     {
         this.context = context;

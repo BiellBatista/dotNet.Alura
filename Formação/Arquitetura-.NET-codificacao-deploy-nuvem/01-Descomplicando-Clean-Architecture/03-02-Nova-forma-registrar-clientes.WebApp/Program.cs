@@ -1,7 +1,5 @@
 using _03_02_Nova_forma_registrar_clientes.WebApp.Data;
 using _03_02_Nova_forma_registrar_clientes.WebApp.Services;
-using Microsoft.EntityFrameworkCore;
-using Refit;
 
 var builder = WebApplication.CreateBuilder(args);
 

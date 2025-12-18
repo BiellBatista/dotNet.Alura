@@ -1,6 +1,4 @@
-﻿using System.Text.RegularExpressions;
-
-namespace _04_06_Interacoes_entre_componentes.Domain.Models;
+﻿namespace _04_06_Interacoes_entre_componentes.Domain.Models;
 
 public class Email
 {

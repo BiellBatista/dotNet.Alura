@@ -1,7 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
-
-#nullable disable
+﻿#nullable disable
 
 namespace _04_06_Interacoes_entre_componentes.WebApp.Data.Migrations
 {

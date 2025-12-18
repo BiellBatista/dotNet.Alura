@@ -1,5 +1,4 @@
 ﻿using _03_04_Ultimo_componente_Arquitetura_Limpa.WebApp.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace _03_04_Ultimo_componente_Arquitetura_Limpa.WebApp.Data;
 
@@ -27,7 +26,6 @@ public class AppDbContext : DbContext
                     .HasColumnName("Email")
                     .IsRequired();
             });
-
 
         modelBuilder.Entity<Cliente>()
             .Property(c => c.CPF).IsRequired();

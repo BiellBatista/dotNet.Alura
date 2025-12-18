@@ -1,5 +1,4 @@
-﻿using _04_03_Movendo_casos_uso.WebApp.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace _04_03_Movendo_casos_uso.WebApp.Data;
 
@@ -27,7 +26,6 @@ public class AppDbContext : DbContext
                     .HasColumnName("Email")
                     .IsRequired();
             });
-
 
         modelBuilder.Entity<Cliente>()
             .Property(c => c.CPF).IsRequired();

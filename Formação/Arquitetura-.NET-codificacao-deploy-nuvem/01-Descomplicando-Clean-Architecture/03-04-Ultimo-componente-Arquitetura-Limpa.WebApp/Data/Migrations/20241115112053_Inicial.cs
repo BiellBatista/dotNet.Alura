@@ -1,7 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
-
-#nullable disable
+﻿#nullable disable
 
 namespace _03_04_Ultimo_componente_Arquitetura_Limpa.WebApp.Data.Migrations
 {

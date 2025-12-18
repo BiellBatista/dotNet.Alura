@@ -6,6 +6,7 @@ namespace _05_04_Implementando_caso_uso.Application.UseCases;
 public class RegistrarCliente
 {
     private readonly IClienteRepository repository;
+
     public RegistrarCliente(IClienteRepository repository, string nome, Email email, string cPF, string? celular, string? cEP, string? rua, string? numero, string? complemento, string? bairro, string? municipio, UnidadeFederativa? estado)
     {
         this.repository = repository;

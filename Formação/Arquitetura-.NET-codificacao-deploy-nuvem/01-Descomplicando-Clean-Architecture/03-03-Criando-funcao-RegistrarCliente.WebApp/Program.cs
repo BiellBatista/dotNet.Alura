@@ -1,7 +1,5 @@
 using _03_03_Criando_funcao_RegistrarCliente.WebApp.Data;
 using _03_03_Criando_funcao_RegistrarCliente.WebApp.Services;
-using Microsoft.EntityFrameworkCore;
-using Refit;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -51,3 +51,10 @@ Arquitetura .NET: descomplicando a Clean Architecture
 		02 - Preparando o ambiente
 		03 - Consultando clientes por estado
 		04 - Implementando o caso de uso
+		05 - Ajustando infra e interface
+		06 - Otimizando a busca de produtos na loja online Meteora (D)
+		07 - Monitoramento de preços em tempo real (C)
+		08 - Faça como eu fiz: consultando clientes por estado
+		09 - Para saber mais: outras visões sobre Clean Architecture
+		10 - O que aprendemos?
+		11 - Conclusão

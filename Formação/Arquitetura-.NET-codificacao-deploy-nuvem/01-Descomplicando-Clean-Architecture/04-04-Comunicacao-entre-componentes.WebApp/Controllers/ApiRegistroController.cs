@@ -1,7 +1,5 @@
 ﻿using _04_04_Comunicacao_entre_componentes.WebApp.Data;
 using _04_04_Comunicacao_entre_componentes.WebApp.Models;
-using _04_04_Comunicacao_entre_componentes.WebApp.UseCases;
-using Microsoft.AspNetCore.Mvc;
 
 namespace _04_04_Comunicacao_entre_componentes.WebApp.Controllers;
 

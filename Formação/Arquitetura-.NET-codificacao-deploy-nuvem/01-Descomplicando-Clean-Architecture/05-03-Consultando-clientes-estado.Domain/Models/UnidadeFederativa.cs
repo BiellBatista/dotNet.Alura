@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _05_03_Consultando_clientes_estado.Domain.Models;
+﻿namespace _05_03_Consultando_clientes_estado.Domain.Models;
 
 public static class UfStringConverter
 {

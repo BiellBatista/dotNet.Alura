@@ -1,7 +1,7 @@
-﻿using _05_04_Implementando_caso_uso.WebApp.Data;
-using _05_04_Implementando_caso_uso.WebApp.Models;
+﻿using _05_04_Implementando_caso_uso.Application.UseCases;
 using _05_04_Implementando_caso_uso.Domain.Models;
-using _05_04_Implementando_caso_uso.Application.UseCases;
+using _05_04_Implementando_caso_uso.WebApp.Data;
+using _05_04_Implementando_caso_uso.WebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace _05_04_Implementando_caso_uso.WebApp.Controllers;

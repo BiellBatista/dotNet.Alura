@@ -1,7 +1,5 @@
 using _03_04_Ultimo_componente_Arquitetura_Limpa.WebApp.Data;
 using _03_04_Ultimo_componente_Arquitetura_Limpa.WebApp.Services;
-using Microsoft.EntityFrameworkCore;
-using Refit;
 
 var builder = WebApplication.CreateBuilder(args);
 

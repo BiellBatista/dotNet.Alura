@@ -1,11 +1,11 @@
-﻿using _05_03_Consultando_clientes_estado.Domain.Models;
-using _05_03_Consultando_clientes_estado.Application.Repositories;
+﻿using _05_03_Consultando_clientes_estado.Application.Repositories;
 
 namespace _05_03_Consultando_clientes_estado.Application.UseCases;
 
 public class RegistrarCliente
 {
     private readonly IClienteRepository repository;
+
     public RegistrarCliente(IClienteRepository repository, string nome, Email email, string cPF, string? celular, string? cEP, string? rua, string? numero, string? complemento, string? bairro, string? municipio, string? estado)
     {
         this.repository = repository;

@@ -1,6 +1,4 @@
-﻿using _04_04_Comunicacao_entre_componentes.Domain.Models;
-
-namespace _04_04_Comunicacao_entre_componentes.Application.Repositories;
+﻿namespace _04_04_Comunicacao_entre_componentes.Application.Repositories;
 
 public interface IClienteRepository
 {

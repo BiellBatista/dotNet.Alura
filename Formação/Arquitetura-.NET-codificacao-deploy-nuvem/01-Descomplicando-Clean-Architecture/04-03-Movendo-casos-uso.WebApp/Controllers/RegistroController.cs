@@ -1,6 +1,5 @@
 ﻿using _04_03_Movendo_casos_uso.WebApp.Data;
 using _04_03_Movendo_casos_uso.WebApp.Models;
-using _04_03_Movendo_casos_uso.WebApp.UseCases;
 using Microsoft.AspNetCore.Mvc;
 
 namespace _04_03_Movendo_casos_uso.WebApp.Controllers;
@@ -27,7 +26,7 @@ public class RegistroController : Controller
     {
         if (!ModelState.IsValid) return View("Index", form);
 
-        var useCase = new RegistrarCliente(context,form.Nome, new Email(form.Email), form.CPF, form.Celular, form.CEP, form.Rua, form.Numero, form.Complemento, form.Bairro, form.Municipio, form.Estado);
+        var useCase = new RegistrarCliente(context, form.Nome, new Email(form.Email), form.CPF, form.Celular, form.CEP, form.Rua, form.Numero, form.Complemento, form.Bairro, form.Municipio, form.Estado);
 
         await useCase.ExecutarAsync();
 

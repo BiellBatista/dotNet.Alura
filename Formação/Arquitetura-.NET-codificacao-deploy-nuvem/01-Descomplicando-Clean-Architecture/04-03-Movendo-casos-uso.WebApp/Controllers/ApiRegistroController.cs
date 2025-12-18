@@ -1,6 +1,5 @@
 ﻿using _04_03_Movendo_casos_uso.WebApp.Data;
 using _04_03_Movendo_casos_uso.WebApp.Models;
-using _04_03_Movendo_casos_uso.WebApp.UseCases;
 using Microsoft.AspNetCore.Mvc;
 
 namespace _04_03_Movendo_casos_uso.WebApp.Controllers;

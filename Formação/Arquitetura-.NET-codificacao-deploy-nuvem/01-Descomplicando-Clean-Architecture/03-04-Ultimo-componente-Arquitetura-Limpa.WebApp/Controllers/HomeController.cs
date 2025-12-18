@@ -1,8 +1,7 @@
 using _03_04_Ultimo_componente_Arquitetura_Limpa.WebApp.Models;
-using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace _03_04_Ultimo_componente_Arquitetura_Limpa.WebApp.Controllers;
+
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;

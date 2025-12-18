@@ -1,7 +1,6 @@
 ﻿using _03_04_Ultimo_componente_Arquitetura_Limpa.WebApp.Data;
 using _03_04_Ultimo_componente_Arquitetura_Limpa.WebApp.Models;
 using _03_04_Ultimo_componente_Arquitetura_Limpa.WebApp.UseCases;
-using Microsoft.AspNetCore.Mvc;
 
 namespace _03_04_Ultimo_componente_Arquitetura_Limpa.WebApp.Controllers;
 

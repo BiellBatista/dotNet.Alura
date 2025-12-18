@@ -1,8 +1,7 @@
 using _04_06_Interacoes_entre_componentes.WebApp.Models;
-using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace _04_06_Interacoes_entre_componentes.WebApp.Controllers;
+
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;

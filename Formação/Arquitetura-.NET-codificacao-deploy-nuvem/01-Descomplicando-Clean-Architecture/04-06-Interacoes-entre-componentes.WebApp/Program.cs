@@ -1,7 +1,5 @@
 using _04_06_Interacoes_entre_componentes.WebApp.Data;
 using _04_06_Interacoes_entre_componentes.WebApp.Services;
-using Microsoft.EntityFrameworkCore;
-using Refit;
 
 var builder = WebApplication.CreateBuilder(args);
 

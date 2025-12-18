@@ -1,6 +1,5 @@
 ﻿using _03_02_Nova_forma_registrar_clientes.WebApp.Data;
 using _03_02_Nova_forma_registrar_clientes.WebApp.Models;
-using Microsoft.AspNetCore.Mvc;
 
 namespace _03_02_Nova_forma_registrar_clientes.WebApp.Controllers;
 

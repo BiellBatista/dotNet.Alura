@@ -1,7 +1,7 @@
 ﻿using _03_03_Criando_funcao_RegistrarCliente.WebApp.Services;
-using Microsoft.AspNetCore.Mvc;
 
 namespace _03_03_Criando_funcao_RegistrarCliente.WebApp.Controllers;
+
 public class CepController : Controller
 {
     private readonly IViaCepService _cepService;
@@ -21,8 +21,8 @@ public class CepController : Controller
             return Json(new { Error = "CEP não encontrado" });
         }
 
-        return Json(new 
-        { 
+        return Json(new
+        {
             CEP = response.Content!.CEP,
             Rua = response.Content.Logradouro,
             Bairro = response.Content.Bairro,

@@ -1,6 +1,4 @@
-﻿using Refit;
-
-namespace _03_03_Criando_funcao_RegistrarCliente.WebApp.Services;
+﻿namespace _03_03_Criando_funcao_RegistrarCliente.WebApp.Services;
 
 public interface IViaCepService
 {
