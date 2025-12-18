@@ -38,3 +38,5 @@ Arquitetura .NET: descomplicando a Clean Architecture
 		01 - Projeto da aula anterior
 		02 - Separando o domínio
 		03 - Movendo os casos de uso
+		04 - Abstraindo o acesso aos dados de cliente
+		05 - Implementando o padrão de repositório no ADOPET (B)

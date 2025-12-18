@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Nullable>enable</Nullable>
+    <RootNamespace>_04_04_Comunicacao_entre_componentes.Domain</RootNamespace>
+    <SonarQubeExclude>false</SonarQubeExclude>
+    <SonarQubeTestProject>false</SonarQubeTestProject>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+</Project>
