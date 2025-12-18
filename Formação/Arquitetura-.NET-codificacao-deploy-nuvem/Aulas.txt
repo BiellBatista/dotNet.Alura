@@ -34,3 +34,6 @@ Arquitetura .NET: descomplicando a Clean Architecture
 		08 - Implementando uma API para cadastro de clientes na Meteora (D)
 		09 - Faça como eu fiz: criando o caso de uso para registrar clientes
 		10 - O que aprendemos?
+	04 - Comunicação entre os componentes
+		01 - Projeto da aula anterior
+		02 - Separando o domínio
