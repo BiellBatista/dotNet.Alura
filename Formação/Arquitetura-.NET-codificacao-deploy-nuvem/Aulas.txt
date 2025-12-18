@@ -27,3 +27,10 @@ Arquitetura .NET: descomplicando a Clean Architecture
 		01 - Projeto da aula anterior
 		02 - Nova forma de registrar clientes
 		03 - Criando a função RegistrarCliente
+		04 - O último componente da Arquitetura Limpa
+		05 - Para saber mais: a camada de Aplicação
+		06 - Para saber mais: a camada de Infraestrutura
+		07 - Integrando novos serviços no aplicativo Fokus (B)
+		08 - Implementando uma API para cadastro de clientes na Meteora (D)
+		09 - Faça como eu fiz: criando o caso de uso para registrar clientes
+		10 - O que aprendemos?
