@@ -46,3 +46,7 @@ Arquitetura .NET: descomplicando a Clean Architecture
 		09 - Adaptando a arquitetura para pacotes de viagem (C)
 		10 - Faça como eu fiz: organização da solução
 		11 - O que aprendemos?
+	05 - Reforçando a arquitetura em novo caso de uso
+		01 - Projeto da aula anterior
+		02 - Preparando o ambiente
+		03 - Consultando clientes por estado
