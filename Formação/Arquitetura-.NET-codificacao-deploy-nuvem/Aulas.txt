@@ -50,3 +50,4 @@ Arquitetura .NET: descomplicando a Clean Architecture
 		01 - Projeto da aula anterior
 		02 - Preparando o ambiente
 		03 - Consultando clientes por estado
+		04 - Implementando o caso de uso

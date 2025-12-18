@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Nullable>enable</Nullable>
+    <RootNamespace>_05_04_Implementando_caso_uso.Application</RootNamespace>
+    <SonarQubeExclude>false</SonarQubeExclude>
+    <SonarQubeTestProject>false</SonarQubeTestProject>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\05-04-Implementando-caso-uso.Domain\05-04-Implementando-caso-uso.Domain.csproj" />
+  </ItemGroup>
+</Project>
