@@ -83,3 +83,6 @@ Arquitetura .NET: modelando aplicações com Domain-Driven Design Estratégico
 		11 - Mão na massa: movendo Requests/Responses para os subdomínios
 		12 - Estudo de caso: DDD no projeto Kavita
 		13 - O que aprendemos?
+	03 - Aprofundando subdomínios
+		01 - Projeto da aula anterior
+		02 - Refletindo a linguagem de negócio
