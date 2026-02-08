@@ -86,3 +86,4 @@ Arquitetura .NET: modelando aplicações com Domain-Driven Design Estratégico
 	03 - Aprofundando subdomínios
 		01 - Projeto da aula anterior
 		02 - Refletindo a linguagem de negócio
+		03 - Usando um glossário como fonte
