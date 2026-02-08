@@ -69,3 +69,7 @@ Arquitetura .NET: modelando aplicações com Domain-Driven Design Estratégico
 		07 - Identificando melhorias
 		08 - Priorizando demandas de negócio no Gatito Petshop (D)
 		09 - O que aprendemos?
+	02 - As áreas funcionais da empresa
+		01 - Projeto da aula anterior
+		02 - O propósito da ContainRs
+		03 - Mão na massa: falando sobre propósito...
