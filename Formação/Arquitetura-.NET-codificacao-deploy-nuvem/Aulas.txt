@@ -58,3 +58,14 @@ Arquitetura .NET: descomplicando a Clean Architecture
 		09 - Para saber mais: outras visões sobre Clean Architecture
 		10 - O que aprendemos?
 		11 - Conclusão
+Arquitetura .NET: modelando aplicações com Domain-Driven Design Estratégico
+	01 - Apresentando o projeto ContainRs
+		01 - Apresentação
+		02 - Preparando o ambiente
+		03 - Apresentando o projeto
+		04 - Conhecendo a arquitetura do projeto
+		05 - Desafios de integração no Fokus (A)
+		06 - Mão na massa: nosso projeto viola as regras da Arquitetura Limpa?
+		07 - Identificando melhorias
+		08 - Priorizando demandas de negócio no Gatito Petshop (D)
+		09 - O que aprendemos?
