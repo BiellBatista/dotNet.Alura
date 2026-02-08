@@ -87,3 +87,10 @@ Arquitetura .NET: modelando aplicações com Domain-Driven Design Estratégico
 		01 - Projeto da aula anterior
 		02 - Refletindo a linguagem de negócio
 		03 - Usando um glossário como fonte
+		04 - Representando valores do mundo real
+		05 - Alinhando a linguagem ubíqua na plataforma de podcasts (A)
+		06 - Integração de glossário online na plataforma de podcasts (B)
+		07 - Faça como eu fiz: aplicando linguagem ubíqua ao projeto
+		08 - Para saber mais: linguagem ubíqua
+		09 - Estudo de Caso: linguagem ubíqua no projeto Kavita
+		10 - O que aprendemos?
