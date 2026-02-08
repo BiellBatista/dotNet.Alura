@@ -73,3 +73,13 @@ Arquitetura .NET: modelando aplicações com Domain-Driven Design Estratégico
 		01 - Projeto da aula anterior
 		02 - O propósito da ContainRs
 		03 - Mão na massa: falando sobre propósito...
+		04 - Identificando as áreas funcionais
+		05 - Subdomínios em nosso código
+		06 - Faça como eu fiz: separando subdomínios em namespaces
+		07 - Tipos de subdomínios
+		08 - Refletindo a estratégia do Bytebank no design de APIs (C)
+		09 - Para saber mais: os subdomínios do DDD
+		10 - Analisando a audiência na WaveCast (C)
+		11 - Mão na massa: movendo Requests/Responses para os subdomínios
+		12 - Estudo de caso: DDD no projeto Kavita
+		13 - O que aprendemos?
