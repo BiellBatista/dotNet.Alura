@@ -97,3 +97,12 @@ Arquitetura .NET: modelando aplicações com Domain-Driven Design Estratégico
 	04 - Delimitando fronteiras
 		01 - Projeto da aula anterior
 		02 - Buscando linguagens consistentes
+		03 - Estruturando subdomínios no SwiftBank (C)
+		04 - Preparando o ambiente: mudanças na estrutura de pastas
+		05 - Estabelecendo os contextos
+		06 - Evitando ambiguidades
+		07 - Criando bounded contexts no Petpark (D)
+		08 - Faça como eu fiz: materialização dos contextos em nossa API
+		09 - Para saber mais: Bounded Contexts
+		10 - Estudo de caso: contextos no projeto Kavita
+		11 - O que aprendemos?
