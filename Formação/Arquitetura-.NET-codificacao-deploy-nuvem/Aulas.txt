@@ -94,3 +94,6 @@ Arquitetura .NET: modelando aplicações com Domain-Driven Design Estratégico
 		08 - Para saber mais: linguagem ubíqua
 		09 - Estudo de Caso: linguagem ubíqua no projeto Kavita
 		10 - O que aprendemos?
+	04 - Delimitando fronteiras
+		01 - Projeto da aula anterior
+		02 - Buscando linguagens consistentes

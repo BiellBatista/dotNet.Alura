@@ -127,6 +127,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-04-Representando-mundo-r
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-04-Representando-mundo-real.Tests", "02-Modelando-DDD-Estrategico\03-04-Representando-mundo-real.Tests\03-04-Representando-mundo-real.Tests.csproj", "{192E21FE-1405-319E-EB46-1C3A463BB853}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Delimitando-fronteiras", "04-Delimitando-fronteiras", "{E8008C9E-3E4F-4F44-B555-1D537A5AFE63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-02-Linguagens-consistentes.API", "02-Modelando-DDD-Estrategico\04-02-Linguagens-consistentes.API\04-02-Linguagens-consistentes.API.csproj", "{089AEC81-DF48-39C0-9ACD-5C5F39048E19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-02-Linguagens-consistentes.Vendas", "02-Modelando-DDD-Estrategico\04-02-Linguagens-consistentes.Vendas\04-02-Linguagens-consistentes.Vendas.csproj", "{292E429B-4DA7-8579-0AD6-577FCB70D5EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-02-Linguagens-consistentes.Tests", "02-Modelando-DDD-Estrategico\04-02-Linguagens-consistentes.Tests\04-02-Linguagens-consistentes.Tests.csproj", "{9F8722F6-657D-E95C-CB4C-6EA016891A64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -341,6 +349,18 @@ Global
 		{192E21FE-1405-319E-EB46-1C3A463BB853}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{192E21FE-1405-319E-EB46-1C3A463BB853}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{192E21FE-1405-319E-EB46-1C3A463BB853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{089AEC81-DF48-39C0-9ACD-5C5F39048E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089AEC81-DF48-39C0-9ACD-5C5F39048E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089AEC81-DF48-39C0-9ACD-5C5F39048E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089AEC81-DF48-39C0-9ACD-5C5F39048E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{292E429B-4DA7-8579-0AD6-577FCB70D5EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{292E429B-4DA7-8579-0AD6-577FCB70D5EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{292E429B-4DA7-8579-0AD6-577FCB70D5EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{292E429B-4DA7-8579-0AD6-577FCB70D5EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F8722F6-657D-E95C-CB4C-6EA016891A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F8722F6-657D-E95C-CB4C-6EA016891A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F8722F6-657D-E95C-CB4C-6EA016891A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F8722F6-657D-E95C-CB4C-6EA016891A64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -406,6 +426,10 @@ Global
 		{B6931961-9A3B-E3FF-1709-18F3E3ED09EA} = {2943FD45-77A5-48E3-94FF-D6D5C334203C}
 		{EF24257C-0816-80EA-3FBA-86563E21391D} = {2943FD45-77A5-48E3-94FF-D6D5C334203C}
 		{192E21FE-1405-319E-EB46-1C3A463BB853} = {2943FD45-77A5-48E3-94FF-D6D5C334203C}
+		{E8008C9E-3E4F-4F44-B555-1D537A5AFE63} = {6EBB4A5C-6DD8-4F68-B54B-1FAD624E365E}
+		{089AEC81-DF48-39C0-9ACD-5C5F39048E19} = {E8008C9E-3E4F-4F44-B555-1D537A5AFE63}
+		{292E429B-4DA7-8579-0AD6-577FCB70D5EF} = {E8008C9E-3E4F-4F44-B555-1D537A5AFE63}
+		{9F8722F6-657D-E95C-CB4C-6EA016891A64} = {E8008C9E-3E4F-4F44-B555-1D537A5AFE63}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B2A40A8-73BE-423F-B01D-A96E9A657E29}

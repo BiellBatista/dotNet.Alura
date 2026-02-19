@@ -1,0 +1,12 @@
+﻿using _04_02_Linguagens_consistentes.API.Domain;
+
+namespace _04_02_Linguagens_consistentes.API.Conteineres;
+
+public record ConteinerResponse(string Id, string Status, string? Observacoes)
+{
+    public static ConteinerResponse From(Conteiner conteiner) => new(
+        Id: conteiner.Id.ToString(),
+        Status: conteiner.Status.ToString(),
+        Observacoes: conteiner.Observacoes
+    );
+}
