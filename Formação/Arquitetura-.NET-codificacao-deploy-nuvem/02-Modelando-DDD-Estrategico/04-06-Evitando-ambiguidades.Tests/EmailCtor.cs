@@ -1,4 +1,4 @@
-using ContainRs.Domain.Models;
+using _04_06_Evitando_ambiguidades.API.Domain;
 
 namespace _04_06_Evitando_ambiguidades.Tests;
 

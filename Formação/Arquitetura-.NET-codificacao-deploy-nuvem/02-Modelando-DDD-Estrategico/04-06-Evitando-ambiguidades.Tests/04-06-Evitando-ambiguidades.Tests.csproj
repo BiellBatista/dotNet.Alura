@@ -4,7 +4,7 @@
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
     <LangVersion>latest</LangVersion>
-    <Nullable>true</Nullable>
+    <Nullable>enable</Nullable>
     <RootNamespace>_04_06_Evitando_ambiguidades.Tests</RootNamespace>
     <SonarQubeExclude>true</SonarQubeExclude>
     <SonarQubeTestProject>true</SonarQubeTestProject>
