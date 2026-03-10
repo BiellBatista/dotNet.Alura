@@ -1,5 +1,4 @@
 ﻿using _04_06_Evitando_ambiguidades.API.Contracts;
-using _04_06_Evitando_ambiguidades.Vendas;
 using _04_06_Evitando_ambiguidades.Vendas.Locacoes;
 using Microsoft.AspNetCore.Mvc;
 using System.Transactions;

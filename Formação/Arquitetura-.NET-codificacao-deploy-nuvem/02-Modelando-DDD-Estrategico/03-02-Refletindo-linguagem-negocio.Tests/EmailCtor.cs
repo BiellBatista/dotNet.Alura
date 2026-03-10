@@ -1,6 +1,6 @@
 using _03_02_Refletindo_linguagem_negocio.API.Domain;
 
-namespace ContainRs.Testes;
+namespace _03_02_Refletindo_linguagem_negocio.Tests;
 
 public class EmailCtor
 {

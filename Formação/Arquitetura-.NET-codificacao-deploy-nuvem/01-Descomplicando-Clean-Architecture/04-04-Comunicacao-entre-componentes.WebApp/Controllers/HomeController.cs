@@ -1,6 +1,4 @@
 using _04_04_Comunicacao_entre_componentes.WebApp.Models;
-using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace _04_04_Comunicacao_entre_componentes.WebApp.Controllers;
 

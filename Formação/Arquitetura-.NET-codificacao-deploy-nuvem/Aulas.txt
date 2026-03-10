@@ -106,3 +106,6 @@ Arquitetura .NET: modelando aplicações com Domain-Driven Design Estratégico
 		09 - Para saber mais: Bounded Contexts
 		10 - Estudo de caso: contextos no projeto Kavita
 		11 - O que aprendemos?
+	05 - Relacionando contextos
+		01 - Projeto da aula anterior
+		02 - Nem todo contexto é uma ilha

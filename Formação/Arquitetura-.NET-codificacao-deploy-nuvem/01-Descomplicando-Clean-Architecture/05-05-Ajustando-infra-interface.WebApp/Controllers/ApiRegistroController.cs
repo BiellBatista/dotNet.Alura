@@ -1,8 +1,8 @@
-﻿using _05_05_Ajustando_infra_interface.WebApp.Data;
-using _05_05_Ajustando_infra_interface.WebApp.Models;
-using _05_05_Ajustando_infra_interface.Application.UseCases;
-using Microsoft.AspNetCore.Mvc;
+﻿using _05_05_Ajustando_infra_interface.Application.UseCases;
 using _05_05_Ajustando_infra_interface.Domain.Models;
+using _05_05_Ajustando_infra_interface.WebApp.Data;
+using _05_05_Ajustando_infra_interface.WebApp.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace _05_05_Ajustando_infra_interface.WebApp.Controllers;
 

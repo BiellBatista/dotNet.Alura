@@ -141,6 +141,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-06-Evitando-ambiguidades
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-06-Evitando-ambiguidades.Vendas", "02-Modelando-DDD-Estrategico\04-06-Evitando-ambiguidades.Vendas\04-06-Evitando-ambiguidades.Vendas.csproj", "{A785602B-55AF-8174-B64B-8CC6D021C953}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-Relacionando-contextos", "05-Relacionando-contextos", "{AC850C6A-2E62-4619-B1E2-A77F1FBEA58E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-02-Nem-todo-contexto-ilha.API", "02-Modelando-DDD-Estrategico\05-02-Nem-todo-contexto-ilha.API\05-02-Nem-todo-contexto-ilha.API.csproj", "{7D3BBA0E-F8C8-6066-0093-8B2209BFE31F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-02-Nem-todo-contexto-ilha.Contracts", "02-Modelando-DDD-Estrategico\05-02-Nem-todo-contexto-ilha.Contracts\05-02-Nem-todo-contexto-ilha.Contracts.csproj", "{A8708942-EBCE-F277-E671-8AA7F900BDDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-02-Nem-todo-contexto-ilha.Tests", "02-Modelando-DDD-Estrategico\05-02-Nem-todo-contexto-ilha.Tests\05-02-Nem-todo-contexto-ilha.Tests.csproj", "{B64C02B0-7B86-DD46-2FBA-8F21CB5FF20A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-02-Nem-todo-contexto-ilha.Vendas", "02-Modelando-DDD-Estrategico\05-02-Nem-todo-contexto-ilha.Vendas\05-02-Nem-todo-contexto-ilha.Vendas.csproj", "{963E3910-1596-4D9A-4CF6-E77A43D1F5B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -379,6 +389,22 @@ Global
 		{A785602B-55AF-8174-B64B-8CC6D021C953}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A785602B-55AF-8174-B64B-8CC6D021C953}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A785602B-55AF-8174-B64B-8CC6D021C953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D3BBA0E-F8C8-6066-0093-8B2209BFE31F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D3BBA0E-F8C8-6066-0093-8B2209BFE31F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D3BBA0E-F8C8-6066-0093-8B2209BFE31F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D3BBA0E-F8C8-6066-0093-8B2209BFE31F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8708942-EBCE-F277-E671-8AA7F900BDDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8708942-EBCE-F277-E671-8AA7F900BDDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8708942-EBCE-F277-E671-8AA7F900BDDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8708942-EBCE-F277-E671-8AA7F900BDDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B64C02B0-7B86-DD46-2FBA-8F21CB5FF20A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64C02B0-7B86-DD46-2FBA-8F21CB5FF20A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64C02B0-7B86-DD46-2FBA-8F21CB5FF20A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64C02B0-7B86-DD46-2FBA-8F21CB5FF20A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{963E3910-1596-4D9A-4CF6-E77A43D1F5B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{963E3910-1596-4D9A-4CF6-E77A43D1F5B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{963E3910-1596-4D9A-4CF6-E77A43D1F5B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{963E3910-1596-4D9A-4CF6-E77A43D1F5B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -451,6 +477,11 @@ Global
 		{57CA12D2-4288-E019-131B-83C6C6E79735} = {E8008C9E-3E4F-4F44-B555-1D537A5AFE63}
 		{9C33CC2A-0505-474F-626A-964A928C2A06} = {E8008C9E-3E4F-4F44-B555-1D537A5AFE63}
 		{A785602B-55AF-8174-B64B-8CC6D021C953} = {E8008C9E-3E4F-4F44-B555-1D537A5AFE63}
+		{AC850C6A-2E62-4619-B1E2-A77F1FBEA58E} = {6EBB4A5C-6DD8-4F68-B54B-1FAD624E365E}
+		{7D3BBA0E-F8C8-6066-0093-8B2209BFE31F} = {AC850C6A-2E62-4619-B1E2-A77F1FBEA58E}
+		{A8708942-EBCE-F277-E671-8AA7F900BDDC} = {AC850C6A-2E62-4619-B1E2-A77F1FBEA58E}
+		{B64C02B0-7B86-DD46-2FBA-8F21CB5FF20A} = {AC850C6A-2E62-4619-B1E2-A77F1FBEA58E}
+		{963E3910-1596-4D9A-4CF6-E77A43D1F5B6} = {AC850C6A-2E62-4619-B1E2-A77F1FBEA58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B2A40A8-73BE-423F-B01D-A96E9A657E29}

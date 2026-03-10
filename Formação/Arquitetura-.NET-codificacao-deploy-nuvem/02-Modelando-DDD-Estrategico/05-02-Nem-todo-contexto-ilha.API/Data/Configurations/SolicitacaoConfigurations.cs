@@ -1,0 +1,18 @@
+﻿using _05_02_Nem_todo_contexto_ilha.Vendas.Propostas;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace _05_02_Nem_todo_contexto_ilha.API.Data.Configurations;
+
+public class SolicitacaoConfigurations : IEntityTypeConfiguration<PedidoLocacao>
+{
+    public void Configure(EntityTypeBuilder<PedidoLocacao> builder)
+    {
+        builder.OwnsOne(s => s.Status, status =>
+        {
+            status.Property(s => s.Status)
+                .HasColumnName("Status")
+                .HasConversion<string>();
+        });
+    }
+}

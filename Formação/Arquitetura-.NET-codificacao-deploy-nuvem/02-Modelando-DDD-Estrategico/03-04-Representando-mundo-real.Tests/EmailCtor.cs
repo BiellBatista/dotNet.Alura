@@ -1,6 +1,6 @@
 using _03_04_Representando_mundo_real.API.Domain;
 
-namespace ContainRs.Testes;
+namespace _03_04_Representando_mundo_real.Tests;
 
 public class EmailCtor
 {

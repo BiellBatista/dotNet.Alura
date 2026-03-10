@@ -1,6 +1,5 @@
 ﻿using _04_06_Evitando_ambiguidades.API.Contracts;
 using _04_06_Evitando_ambiguidades.API.Extensions;
-using _04_06_Evitando_ambiguidades.Vendas;
 using Microsoft.AspNetCore.Mvc;
 
 namespace _04_06_Evitando_ambiguidades.Vendas.Propostas;

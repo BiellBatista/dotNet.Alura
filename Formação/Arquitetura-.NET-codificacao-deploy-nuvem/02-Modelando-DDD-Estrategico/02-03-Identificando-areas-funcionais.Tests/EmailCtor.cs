@@ -1,6 +1,6 @@
 using _02_03_Identificando_areas_funcionais.API.Domain;
 
-namespace ContainRs.Testes;
+namespace _02_03_Identificando_areas_funcionais.Tests;
 
 public class EmailCtor
 {
