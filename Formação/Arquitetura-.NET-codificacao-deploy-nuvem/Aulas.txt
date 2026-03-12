@@ -111,3 +111,12 @@ Arquitetura .NET: modelando aplicações com Domain-Driven Design Estratégico
 		02 - Nem todo contexto é uma ilha
 		03 - Separando o contexto de clientes
 		04 - Protegendo subdomínios centrais
+		05 - Camada anticorrupção
+		06 - Gerenciamento de dependências no Fokus (A)
+		07 - Protegendo a comunicação entre subdomínios na Jornada Milhas (B)
+		08 - Faça como eu fiz: integrando contextos
+		09 - Para saber mais: padrões de integração de contextos no DDD
+		10 - Mão na massa: ajustes finais
+		11 - Estudo de caso: integração de contextos no projeto Kavita
+		12 - O que aprendemos?
+		13 - Conclusão
