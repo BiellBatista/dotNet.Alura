@@ -1,0 +1,5 @@
+﻿global using _05_04_Protegendo_subdominios_centrais.Vendas.Locacoes;
+global using _05_04_Protegendo_subdominios_centrais.Vendas.Propostas;
+global using _05_04_Protegendo_subdominios_centrais.Clientes.Cadastro;
+global using _05_04_Protegendo_subdominios_centrais.Contracts;
+global using EnderecoCli = _05_04_Protegendo_subdominios_centrais.Clientes.Cadastro.Endereco;
