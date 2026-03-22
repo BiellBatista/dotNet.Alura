@@ -142,3 +142,6 @@ Arquitetura .NET: modelando aplicações com Domain-Driven Design Tático
 		07 - Consistência em projetos de tarefas colaborativas (C)
 		08 - Faça como eu fiz: criando o agregado de propostas
 		09 - O que aprendemos?
+	03 - Blocos fundantes do Domain Model
+		01 - Projeto da aula anterior
+		02 - Tipos dependentes
