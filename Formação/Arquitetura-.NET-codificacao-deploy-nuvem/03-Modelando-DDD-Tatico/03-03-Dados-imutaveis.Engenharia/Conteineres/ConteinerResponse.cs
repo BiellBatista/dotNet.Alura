@@ -1,0 +1,10 @@
+﻿namespace _03_03_Dados_imutaveis.Engenharia.Conteineres;
+
+public record ConteinerResponse(string Id, string Status, string? Observacoes)
+{
+    public static ConteinerResponse From(Conteiner conteiner) => new(
+        Id: conteiner.Id.ToString(),
+        Status: conteiner.Status.ToString(),
+        Observacoes: conteiner.Observacoes
+    );
+}

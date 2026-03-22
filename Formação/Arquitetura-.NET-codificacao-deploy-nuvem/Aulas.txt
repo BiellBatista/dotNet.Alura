@@ -145,3 +145,4 @@ Arquitetura .NET: modelando aplicações com Domain-Driven Design Tático
 	03 - Blocos fundantes do Domain Model
 		01 - Projeto da aula anterior
 		02 - Tipos dependentes
+		03 - Dados imutáveis
