@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Nullable>enable</Nullable>
+    <RootNamespace>_02_04_Aprovacao_proposta.Vendas</RootNamespace>
+    <SonarQubeExclude>false</SonarQubeExclude>
+    <SonarQubeTestProject>false</SonarQubeTestProject>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="jlsuagha.w0u~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\02-04-Aprovacao-proposta.Contracts\02-04-Aprovacao-proposta.Contracts.csproj" />
+  </ItemGroup>
+</Project>

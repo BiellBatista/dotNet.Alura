@@ -135,3 +135,10 @@ Arquitetura .NET: modelando aplicações com Domain-Driven Design Tático
 	02 - Garantindo consistência de dados
 		01 - Projeto da aula anterior
 		02 - Comentando uma proposta
+		03 - Removendo endereços
+		04 - Aprovação de uma proposta
+		05 - Para saber mais: agregados
+		06 - Garantindo a consistência de estados em dispositivos inteligentes (A)
+		07 - Consistência em projetos de tarefas colaborativas (C)
+		08 - Faça como eu fiz: criando o agregado de propostas
+		09 - O que aprendemos?
