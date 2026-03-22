@@ -132,3 +132,6 @@ Arquitetura .NET: modelando aplicações com Domain-Driven Design Tático
 		08 - Implementando padrões no Dev.Spot (D)
 		09 - Faça como eu fiz: comando de aprovação de propostas
 		10 - O que aprendemos?
+	02 - Garantindo consistência de dados
+		01 - Projeto da aula anterior
+		02 - Comentando uma proposta

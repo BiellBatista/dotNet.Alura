@@ -215,6 +215,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-06-Aprovacao-propostas.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-06-Aprovacao-propostas.Vendas", "03-Modelando-DDD-Tatico\01-06-Aprovacao-propostas.Vendas\01-06-Aprovacao-propostas.Vendas.csproj", "{6A287C0D-D32A-5E7A-4351-E1A22BDCAA04}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Garantindo-consistencia-dados", "02-Garantindo-consistencia-dados", "{CE422078-4612-4D73-85E5-1A9D966380B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-Comentando-proposta.API", "03-Modelando-DDD-Tatico\02-02-Comentando-proposta.API\02-02-Comentando-proposta.API.csproj", "{042DC010-3937-030E-AC44-49F467688D5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-Comentando-proposta.Clientes", "03-Modelando-DDD-Tatico\02-02-Comentando-proposta.Clientes\02-02-Comentando-proposta.Clientes.csproj", "{0CF7E009-119A-4C6C-D780-0679CD7AFBFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-Comentando-proposta.Contracts", "03-Modelando-DDD-Tatico\02-02-Comentando-proposta.Contracts\02-02-Comentando-proposta.Contracts.csproj", "{0FB28A0B-8D14-183A-EF81-C00A3311196D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-Comentando-proposta.Engenharia", "03-Modelando-DDD-Tatico\02-02-Comentando-proposta.Engenharia\02-02-Comentando-proposta.Engenharia.csproj", "{AA5F73E4-803B-1345-BBA2-B39131B8BCBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-Comentando-proposta.Financeiro", "03-Modelando-DDD-Tatico\02-02-Comentando-proposta.Financeiro\02-02-Comentando-proposta.Financeiro.csproj", "{690D7387-C2AC-2242-FF9D-3AFB69917E10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-Comentando-proposta.Tests", "03-Modelando-DDD-Tatico\02-02-Comentando-proposta.Tests\02-02-Comentando-proposta.Tests.csproj", "{CAC5DCAF-22B5-3268-A9D3-339D6FCE34F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02-Comentando-proposta.Vendas", "03-Modelando-DDD-Tatico\02-02-Comentando-proposta.Vendas\02-02-Comentando-proposta.Vendas.csproj", "{867D8358-536F-1316-3AA2-541B1749F7D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -589,6 +605,34 @@ Global
 		{6A287C0D-D32A-5E7A-4351-E1A22BDCAA04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A287C0D-D32A-5E7A-4351-E1A22BDCAA04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A287C0D-D32A-5E7A-4351-E1A22BDCAA04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{042DC010-3937-030E-AC44-49F467688D5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{042DC010-3937-030E-AC44-49F467688D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{042DC010-3937-030E-AC44-49F467688D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{042DC010-3937-030E-AC44-49F467688D5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF7E009-119A-4C6C-D780-0679CD7AFBFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF7E009-119A-4C6C-D780-0679CD7AFBFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF7E009-119A-4C6C-D780-0679CD7AFBFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF7E009-119A-4C6C-D780-0679CD7AFBFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FB28A0B-8D14-183A-EF81-C00A3311196D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FB28A0B-8D14-183A-EF81-C00A3311196D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FB28A0B-8D14-183A-EF81-C00A3311196D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FB28A0B-8D14-183A-EF81-C00A3311196D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA5F73E4-803B-1345-BBA2-B39131B8BCBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA5F73E4-803B-1345-BBA2-B39131B8BCBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA5F73E4-803B-1345-BBA2-B39131B8BCBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA5F73E4-803B-1345-BBA2-B39131B8BCBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{690D7387-C2AC-2242-FF9D-3AFB69917E10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{690D7387-C2AC-2242-FF9D-3AFB69917E10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{690D7387-C2AC-2242-FF9D-3AFB69917E10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{690D7387-C2AC-2242-FF9D-3AFB69917E10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAC5DCAF-22B5-3268-A9D3-339D6FCE34F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC5DCAF-22B5-3268-A9D3-339D6FCE34F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC5DCAF-22B5-3268-A9D3-339D6FCE34F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAC5DCAF-22B5-3268-A9D3-339D6FCE34F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{867D8358-536F-1316-3AA2-541B1749F7D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{867D8358-536F-1316-3AA2-541B1749F7D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{867D8358-536F-1316-3AA2-541B1749F7D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{867D8358-536F-1316-3AA2-541B1749F7D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -697,6 +741,14 @@ Global
 		{77BD8F1D-5E72-C474-417B-36B515063FCE} = {CFB1DDD1-BF1E-4631-BF02-3F3FA0FBB964}
 		{813032BA-9348-BFEB-B5AE-B4A9F1DE1131} = {CFB1DDD1-BF1E-4631-BF02-3F3FA0FBB964}
 		{6A287C0D-D32A-5E7A-4351-E1A22BDCAA04} = {CFB1DDD1-BF1E-4631-BF02-3F3FA0FBB964}
+		{CE422078-4612-4D73-85E5-1A9D966380B7} = {E81D3347-B024-4123-A88E-75CCF1C51AA7}
+		{042DC010-3937-030E-AC44-49F467688D5E} = {CE422078-4612-4D73-85E5-1A9D966380B7}
+		{0CF7E009-119A-4C6C-D780-0679CD7AFBFC} = {CE422078-4612-4D73-85E5-1A9D966380B7}
+		{0FB28A0B-8D14-183A-EF81-C00A3311196D} = {CE422078-4612-4D73-85E5-1A9D966380B7}
+		{AA5F73E4-803B-1345-BBA2-B39131B8BCBD} = {CE422078-4612-4D73-85E5-1A9D966380B7}
+		{690D7387-C2AC-2242-FF9D-3AFB69917E10} = {CE422078-4612-4D73-85E5-1A9D966380B7}
+		{CAC5DCAF-22B5-3268-A9D3-339D6FCE34F3} = {CE422078-4612-4D73-85E5-1A9D966380B7}
+		{867D8358-536F-1316-3AA2-541B1749F7D8} = {CE422078-4612-4D73-85E5-1A9D966380B7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B2A40A8-73BE-423F-B01D-A96E9A657E29}
