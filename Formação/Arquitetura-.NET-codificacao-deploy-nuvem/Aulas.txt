@@ -146,3 +146,10 @@ Arquitetura .NET: modelando aplicações com Domain-Driven Design Tático
 		01 - Projeto da aula anterior
 		02 - Tipos dependentes
 		03 - Dados imutáveis
+		04 - Lógica que ultrapassa agregados
+		05 - Calculadora padrão de prazos
+		06 - Para saber mais: o Domain Model
+		07 - Faça como eu fiz: implementando o Domain Model
+		08 - Consistência em serviços de agendamento para pets (D)
+		09 - Otimizando a gestão de estoque na Zoop com serviços de domínio (B)
+		10 - O que aprendemos?
