@@ -120,3 +120,10 @@ Arquitetura .NET: modelando aplicações com Domain-Driven Design Estratégico
 		11 - Estudo de caso: integração de contextos no projeto Kavita
 		12 - O que aprendemos?
 		13 - Conclusão
+Arquitetura .NET: modelando aplicações com Domain-Driven Design Tático
+	01 - A camada de aplicação
+		01 - Apresentação
+		02 - Preparando o ambiente
+		03 - Explicitando os casos de uso
+		04 - Para saber mais: padrões de projeto e o Command
+		05 - Estruturando casos de uso no CodeChella (D)

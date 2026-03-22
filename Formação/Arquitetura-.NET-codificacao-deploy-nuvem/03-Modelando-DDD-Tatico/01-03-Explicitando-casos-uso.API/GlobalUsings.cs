@@ -1,0 +1,6 @@
+﻿global using _01_03_Explicitando_casos_uso.Vendas.Locacoes;
+global using _01_03_Explicitando_casos_uso.Vendas.Propostas;
+global using _01_03_Explicitando_casos_uso.Clientes.Cadastro;
+global using _01_03_Explicitando_casos_uso.Engenharia.Conteineres;
+global using _01_03_Explicitando_casos_uso.Contracts;
+global using EnderecoCli = _01_03_Explicitando_casos_uso.Clientes.Cadastro.Endereco;
