@@ -153,3 +153,6 @@ Arquitetura .NET: modelando aplicações com Domain-Driven Design Tático
 		08 - Consistência em serviços de agendamento para pets (D)
 		09 - Otimizando a gestão de estoque na Zoop com serviços de domínio (B)
 		10 - O que aprendemos?
+	04 - Integrando contextos assincronamente
+		01 - Projeto da aula anterior
+		02 - Gerar faturamento ao aprovar proposta
