@@ -1,0 +1,165 @@
+Formação - Segurança em aplicações .NET
+Segurança com ASP.NET Core: proteja aplicações Web
+	01 - ASP.NET Core Identity
+		01 - Apresentação
+		02 - Projeto inicial
+		03 - Preparando o ambiente: criando o banco de dados
+		04 - Preparando o ambiente: instalando ASP.NET Core Identity
+		05 - Instalando ASP.NET Core Identity
+		06 - Adicionando usuários de teste
+		07 - Faça como eu fiz: Adicionando Usuários de Teste
+		08 - Protegendo contra CSRF
+		09 - Faça como eu fiz: protegendo contra CSRF
+		10 - Implementando autenticação segura no Clickbonus (D)
+		11 - Proteção de dados em plataformas de segurança da Techsafe (C)
+		12 - Para saber mais: usando migrations com ASP.NET Core Identity
+		13 - O que aprendemos?
+	02 - Personalizando as Configurações de Segurança
+		01 - Projeto da aula anterior
+		02 - Configurando autorização simples
+		03 - Faça como eu fiz: configurando autorização simples
+		04 - Configurando bloqueios
+		05 - Limitando tentativas de login
+		06 - Faça como eu fiz: configurando bloqueios
+		07 - Configurando senha e cookies
+		08 - Faça como eu fiz: configurando senha e cookies
+		09 - Garantindo acesso seguro na plataforma Jornada Viagens (D)
+		10 - Expiração de sessão no Listin (A)
+		11 - Para saber mais: hash das Senhas no ASP.NET Core Identity
+		12 - O que aprendemos?
+	03 - Gerenciando Sessões
+		01 - Projeto da aula anterior
+		02 - Sessões e cookies
+		03 - Para saber mais: HTTP vs. HTTPS
+		04 - Faça como eu fiz: sessões e cookies
+		05 - Ataques de sessão
+		06 - Faça como eu fiz: ataques de sessão
+		07 - Gerenciando sessões no aplicativo Fokus (B)
+		08 - Proteção de sessão na loja Meu Pequeno Grimorio (C)
+		09 - Para saber mais: cookies de autenticação e cookies de sessão
+		10 - O que aprendemos?
+	04 - Proteção de Dados
+		01 - Projeto da aula anterior
+		02 - Validando dados
+		03 - Faça como eu fiz: validando dados
+		04 - Sanitizando dados
+		05 - Faça como eu fiz: sanitizando dados
+		06 - Mão na massa: validando dados de consulta
+		07 - Otimizando a coleta de dados na Hermex Log (D)
+		08 - Avaliação de segurança no Techsafe (B)
+		09 - Estudo de caso: atributos de validação no ASP.NET Core 9
+		10 - Estudo de caso - Permissões e papéis em um e-commerce: Orgânico Vida
+		11 - O que aprendemos?
+	05 - Proteção da Interface do Usuário
+		01 - Projeto da aula anterior
+		02 - Protegendo rotas e razor views
+		03 - Faça como eu fiz: protegendo rotas e razor views
+		04 - Dados de usuário com claims
+		05 - Faça como eu fiz: dados de usuário com claims
+		06 - Para saber mais: entendendo as diferenças e usos de roles e claims no ASP.NET Core Identity
+		07 - Gerenciamento de permissões no CodeConnect (D)
+		08 - Gerenciamento de permissões em eventos do festival (B)
+		09 - Projeto final
+		10 - O que aprendemos?
+		11 - Conclusão
+Segurança com ASP.NET Core: proteja suas Web APIs
+	01 - Registro e Login com ASP.NET Identity
+		01 - Introdução
+		02 - Preparando o ambiente
+		03 - Adicionando Autorização e Autenticação
+		04 - Adicionando Controlador de Autenticação
+		05 - Protegendo dados de clientes na loja online (C)
+		06 - Integração de autenticação em um e-commerce (A)
+		07 - O que aprendemos?
+	02 - Gerando e Validando Tokens JWT
+		01 - Projeto da aula anterior
+		02 - Definindo o TokenService
+		03 - Configurações Adicionais ao Swagger
+		04 - Retornando o Token
+		05 - Validando o Token Gerado
+		06 - Protegendo transações financeiras com tokens JWT (B)
+		07 - Integração segura de novos serviços (A)
+		08 - O que aprendemos?
+	03 - Gerenciando Tokens e Validade
+		01 - Projeto da aula anterior
+		02 - Definindo uma Estratégia
+		03 - Armazenando no Banco o Refresh Token
+		04 - Endpoint para Refresh Token
+		05 - Persistência de tokens no SwiftBank (B)
+		06 - Equilibrando segurança e usabilidade na Indexa (B)
+		07 - O que aprendemos?
+	04 - Controle de Acesso com JWT e Roles
+		01 - Projeto da aula anterior
+		02 - Criando Papéis
+		03 - Políticas para Acesso aos Endpoints
+		04 - Protegendo transações no SwiftBank (B)
+		05 - Segurança em transações bancárias digitais (C)
+		06 - O que aprendemos?
+	05 - HTTPS, CORS e Segurança na API
+		01 - Projeto da aula anterior
+		02 - Configurando HTTPS e HSTS
+		03 - Incluindo Roles no Token JWT
+		04 - Implementação de CORS
+		05 - Projeto final
+		06 - Conclusão
+		07 - Protegendo transmissões ao vivo no VideoFlowNow (A)
+		08 - Configurando CORS para integração de aplicativos de produtividade (B)
+		09 - O que aprendemos?
+Segurança com ASP.NET Core: coordene aplicações e centralize a segurança
+	01 - Integração do projeto MVC com a Web API
+		01 - Apresentação
+		02 - Preparando o ambiente
+		03 - Comunicação entre MVC e Web API
+		04 - Consumo de Web API com HttpClient
+		05 - Executando o fluxo entre MVC e Web API
+		06 - Faça como eu fiz: consumo de Web API no MVC com HttpClient
+		07 - Para saber mais: HttpClientFactory
+		08 - Faça como eu fiz: integrar MVC e API
+		09 - Otimização de inventário na loja online de roupas (C)
+		10 - Segurança na comunicação do Cookin'UP (C)
+		11 - O que aprendemos?
+	02 - Autenticação e autorização entre MVC e Web API
+		01 - Projeto da aula anterior
+		02 - Protegendo a Web API com autenticação e autorização
+		03 - Para saber mais: tipos de autenticação
+		04 - Executando e testando a Web API protegida
+		05 - Configurando projeto MVC com autenticação e autorização
+		06 - Executando projeto MVC com autenticação e autorização
+		07 - Faça como eu fiz: protegendo o projeto MVC com autenticação e autorização
+		08 - Para saber mais: Bearer token
+		09 - Faça como eu fiz: integrar segurança
+		10 - Autenticação segura na Clínica Médica Voll (A)
+		11 - Garantindo a segurança dos dados de adoção no ADOPET (C)
+		12 - O que aprendemos?
+	03 - Implementando Login Social
+		01 - Projeto da aula anterior
+		02 - Criando projeto no Google Cloud
+		03 - Configurando autenticação externa com Google
+		04 - Mão na massa: login social com GitHub
+		05 - Para saber mais: servidores de identidade
+		06 - Faça como eu fiz: login social Google
+		07 - Avaliando a segurança do sistema no Buscante (C)
+		08 - Implementando login social na plataforma TRATOTECH (A)
+		09 - O que aprendemos?
+	04 - Proteção de sessão e segurança avançada
+		01 - Projeto da aula anterior
+		02 - Implementando mecanismo de logout
+		03 - Demonstrando o mecanismo de logout
+		04 - Faça como eu fiz: implementando Logout seguro com OpenID Connect
+		05 - Para saber mais: Claims de usuário
+		06 - Faça como eu fiz: logout seguro
+		07 - Implementando logout seguro no aplicativo Fokus (B)
+		08 - Gerenciamento de sessões em transmissões ao vivo (B)
+		09 - O que aprendemos?
+	05 - Resiliência em aplicações seguras
+		01 - Projeto da aula anterior
+		02 - Resiliência com Retentativas
+		03 - Resiliência com Limite de Taxa
+		04 - Faça como eu fiz: protegendo a aplicação com Rate Limiting
+		05 - Para saber mais: explorando recursos de resiliência
+		06 - Faça como eu fiz: resiliência e taxa
+		07 - Prevenindo ataques de negação de serviço na Runner Circle (A)
+		08 - Garantindo a resiliência na plataforma de exibição de filmes (C)
+		09 - Projeto final
+		10 - O que aprendemos?
+		11 - Conclusão
