@@ -1,0 +1,29 @@
+Vídeo 3.2 - Incluindo a noticia com o JSON.
+
+- using MongoDB.Driver;
+
+- ======================
+var connectionString = "mongodb+srv://root:root@cluster0.reotbuj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+            var client = new MongoClient(connectionString);
+            var database = client.GetDatabase("NoticiasDB");
+            var collection = database.GetCollection<dynamic>("noticias");
+-- ========================
+
+- var noticiaJson = Noticia.ToJson();
+
+-- =========================
+ try
+            {
+               
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ocorreu um erro ao tentar inserir o JSON como string:");
+                Console.WriteLine(ex.Message);
+            }
+-- ==================
+
+- collection.InsertOne(noticiaJson);
+
+- Console.WriteLine("Notícia incluída com sucesso !");
+

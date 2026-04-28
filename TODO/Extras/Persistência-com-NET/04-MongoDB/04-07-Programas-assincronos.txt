@@ -1,0 +1,16 @@
+Vídeo 4.5 - Transformando nossos programas em assíncronos.
+
+- public static async Task ExecutarAsync()
+
+- await collection.InsertOneAsync(noticiaBson);
+
+- await Programa4_5A.ExecutarAsync();
+
+- static async Task Main(string[] args)
+
+- public static async Task ExecutarAsync()
+
+- await collection.InsertManyAsync(listaBson);
+
+- await Programa4_5B.ExecutarAsync();
+

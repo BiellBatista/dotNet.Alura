@@ -1,0 +1,62 @@
+Vídeo 7.1 - Modificando a Notícia
+
+-- =========================
+public async Task AtualizarTextoPorUrlAsync(string url, string novoTexto)
+{
+
+}
+-- ============================
+
+-- =========================================
+if (string.IsNullOrWhiteSpace(url))
+    throw new ArgumentException("A URL não pode ser vazia.");
+
+if (string.IsNullOrWhiteSpace(novoTexto))
+    throw new ArgumentException("O novo texto não pode ser vazio.");
+-- ========================================
+
+-- =============================
+var filtro = Builders<BsonDocument>.Filter.Eq("Url", url);
+-- ======================================
+
+-- ========================================
+var atualizacao = Builders<BsonDocument>.Update.Set("Texto", novoTexto);
+-- ==============================================
+
+-- ============================
+var resultado = await _colecao.UpdateOneAsync(filtro, atualizacao);
+-- ==============================
+
+-- ====================================
+if (resultado.MatchedCount == 0)
+{
+    Console.WriteLine($"Nenhum documento encontrado com URL: {url}");
+}
+else if (resultado.ModifiedCount > 0)
+{
+    Console.WriteLine($"Texto atualizado com sucesso para a URL: {url}");
+}
+else
+{
+    Console.WriteLine($"Documento encontrado, mas o texto já estava igual.");
+}
+-- ==========================================
+
+-- =====================================
+var Url = "feira_de_ciencia_apresenta_invencoes_de_estudantes";
+var NovoTexto = "Jovens inovadores voltam a surpreender com criatividade e talento.";
+-- ========================================
+
+-- ===============================================
+try
+{
+    await NoticiaService.AtualizarTextoPorUrlAsync(Url, NovoTexto);
+    Console.WriteLine("Texto da Notícia alterada com sucesso!");
+}
+catch (Exception ex)
+{
+    Console.WriteLine("Ocorreu um erro ao tentar alterar o texto da Notícia:");
+    Console.WriteLine(ex.Message);
+}
+-- ==================================================
+

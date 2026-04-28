@@ -1,0 +1,39 @@
+Vídeo 10.2 - Executando a criação dos índices
+
+-- ================
+public async Task CriarIndiceDataPublicacaoAsync()
+{
+
+}
+-- =================
+
+-- var indexKeys = Builders<BsonDocument>.IndexKeys.Ascending("DataPublicacao");
+
+-- var indexOptions = new CreateIndexOptions { Name = "IndiceDataPublicacao" };
+
+-- var indexModel = new CreateIndexModel<BsonDocument>(indexKeys, indexOptions);
+
+-- ===================
+try
+    {
+        await _colecao.Indexes.CreateOneAsync(indexModel);
+        Console.WriteLine("Índice 'IndiceDataPublicacao' criado com sucesso ou verificado como já existente.");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Ocorreu um erro ao tentar criar o índice: {ex.Message}");
+    }
+}
+-- ===========================
+
+-- ================
+try
+            {
+                await NoticiaService.CriarIndiceDataPublicacaoAsync();
+                Console.WriteLine("--- Operação de criação de índice finalizada ---");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ocorreu um erro ao criao o indice: {ex.Message}");
+            }
+-- ===============

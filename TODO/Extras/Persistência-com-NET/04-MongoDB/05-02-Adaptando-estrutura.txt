@@ -1,0 +1,47 @@
+Video 5.2 - Adaptando nossos programas a esta estrutura
+
+-- =============================
+using CursoMongoDB.Contexts;
+using CursoMongoDB.Services;
+-- =============================
+
+-- =================
+// var client = new MongoClient(connectionString);
+// var database = client.GetDatabase("NoticiasDB");
+-- =====================
+
+-- ======================
+var contexto = new MongoContext(connectionString, "NoticiasDB");
+var NoticiaService = new NoticiaService(contexto);
+-- ====================
+
+-- ==============
+try
+{
+    await NoticiaService.InserirNoticiaAsync(Noticia);
+    Console.WriteLine("Notícia incluída com sucesso!");
+}
+catch (Exception ex)
+{
+    Console.WriteLine("Ocorreu um erro ao tentar inserir o JSON como string:");
+    Console.WriteLine(ex.Message);
+}
+-- ========================
+
+-- ===================
+var caminhoArquivo = "C:\\temp\\CursoMongo\\4905 - Vídeo 5.2 - Lista.js";
+-- =====================
+
+-- ==========================
+try
+{
+    await NoticiaService.InserirNoticiasAsync(listaNoticias);
+    Console.WriteLine("Notícias incluída com sucesso!");
+}
+catch (Exception ex)
+{
+     Console.WriteLine("Ocorreu um erro ao tentar inserir a lista de notícias:");
+     Console.WriteLine(ex.Message);
+}
+-- ===========================
+

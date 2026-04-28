@@ -1,0 +1,38 @@
+Vídeo 10.5 - Usando a IA no aprendizado
+
+-- ==========================
+Estou trabalhando em um projeto C# com MongoDB. 
+Tenho as seguintes classes que representam meu modelo de dados e meu serviço. 
+A classe MongoContext faz a conexão direta com o MongoDB.
+A classe NoticiaClass representa o documento na coleção noticias, 
+e a NoticiaService contém os métodos de acesso aos dados.
+
+Tarefa:
+Com base nas classes que forneci, por favor, escreva um novo método assíncrono para a classe NoticiaService. 
+O método deve se chamar ListarNoticiasMaisLidasPorTag e deve receber uma string tag como parâmetro. 
+Ele deve encontrar as 5 notícias que contenham a tag fornecida e que tenham o maior número de Visualizacoes, 
+retornando uma List<BsonDocument>.
+
+-- ==============================
+
+-- =========================
+Agora, com base no Programa10_2.cs que usamos anteriormente, 
+escreva o código para um novo programa de teste, o Programa10_5.cs. 
+Este programa deve:
+Instanciar o NoticiaService.
+Chamar o novo método ListarNoticiasMaisLidasPorTag, passando a tag "brasil".
+Usar a função auxiliar ImprimirResultados (que você pode recriar se necessário) 
+para exibir o resultado no console, mostrando o título da notícia e o número de visualizações.
+-- =========================
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+Vídeo 4.4 - Diferença de programação síncrona e assíncrona.
+
+-- ====================
+Console.WriteLine("Processo iniciado (SÍNCRONO), esperando 5 segundos...");
+    System.Threading.Thread.Sleep(10000);
+    Console.WriteLine("Processo síncrono finalizado.");
+-- =======================
+
+-- ================================
+static async Task ExecutarAsync()
+{
+    Console.WriteLine("Processo iniciado (ASSÍNCRONO), esperando 10 segundos...");
+    await Task.Delay(10000);
+    Console.WriteLine("Processo assíncrono finalizado.");
+}
+-- ===========================================
+
+
+-- ===================================
+static async Task Main(string[] args)
+    {
+var tarefa = Program_4_4_b.ExecutarAsync(); // Inicia o processo assíncrono
+
+        // Enquanto o processo assíncrono roda, este loop continua executando normalmente
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine($"Contador: {i}");
+            Thread.Sleep(1000); // Espera 1 segundo
+        }
+
+        await tarefa; // Aguarda o fim do processo assíncrono
+        Console.WriteLine("Depois do processo");
+}
+-- =====================================
+
+E

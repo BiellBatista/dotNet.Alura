@@ -1,0 +1,23 @@
+Vídeo 3.1 - Criando base de dados no MongoDB.
+
+- dotnet add package MongoDB.Driver
+
+- using MongoDB.Driver;
+
+- var connectionString = "mongodb+srv://root:root@cluster0.reotbuj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";";
+
+- var client = new MongoClient(connectionString);
+
+- var database = client.GetDatabase("NoticiasDB")
+
+- var collection = database.GetCollection<dynamic>("noticias");
+
+- database.CreateCollection("noticias");
+
+- Console.WriteLine("Banco de dados 'NoticiasDB' e coleção 'noticias' criados com sucesso!");
+
+- client.DropDatabase("NoticiasDB");
+
+
+- Console.WriteLine("Banco de dados 'NoticiasDB' removido com sucesso!");
+

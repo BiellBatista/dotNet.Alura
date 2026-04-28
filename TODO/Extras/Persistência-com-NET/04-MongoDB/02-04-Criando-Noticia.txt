@@ -1,0 +1,140 @@
+Vídeo 2.3 - Criando a classe Notícia.
+
+- cd..
+
+- dotnet new console -n CursoMongoDB
+
+- cd CursoMongoDB
+
+-- ===================================
+{
+  "titulo": "Brasil bate Equador",
+  "texto": "No Maracanã, Brasil vence por 2 a 0...",
+  "data_publicacao": "2023-08-10T15:32:00Z",
+  "tags": ["esporte", "brasil"],
+  "jornalistas": [
+    { "nome": "Maria" }
+  ],
+  "comentarios": [
+    {
+      "comentario": "Grande jogo!",
+      "curtidas": 15,
+      "usuario": "Carlos",
+      "data": "2023-08-10T18:45:00Z"
+    }
+  ],
+  "anexos": [
+    {
+      "nome_arquivo": "foto-jogo.jpg",
+      "url": "https://meusite.com/fotos/foto-jogo.jpg",
+      "tamanho": 204800,
+      "tipo": "imagem/jpeg",
+      "cliques": 157
+    }
+  ],
+  "visualizacoes": 1200,
+  "total_comentarios": 2,
+  "gostei": 430,
+  "nao_gostei": 12,
+  "tempo_medio_leitura": 3.8
+}
+-- =========================================
+
+-- ======================================
+Tenho o seguinte exemplo de JSON:
+
+{
+  "titulo": "Brasil bate Equador",
+  "texto": "No Maracanã, Brasil vence por 2 a 0...",
+  "data_publicacao": "2023-08-10T15:32:00Z",
+  "tags": ["esporte", "brasil"],
+  "jornalistas": [
+    { "nome": "Maria" }
+  ],
+  "comentarios": [
+    {
+      "comentario": "Grande jogo!",
+      "curtidas": 15,
+      "usuario": "Carlos",
+      "data": "2023-08-10T18:45:00Z"
+    }
+  ],
+  "anexos": [
+    {
+      "nome_arquivo": "foto-jogo.jpg",
+      "url": "https://meusite.com/fotos/foto-jogo.jpg",
+      "tamanho": 204800,
+      "tipo": "imagem/jpeg",
+      "cliques": 157
+    }
+  ],
+  "visualizacoes": 1200,
+  "total_comentarios": 2,
+  "gostei": 430,
+  "nao_gostei": 12,
+  "tempo_medio_leitura": 3.8
+}
+
+Gere para mim o código de classes C# que represente esse JSON, usando:
+
+Os nomes das propriedades no padrão PascalCase do C#.
+
+Tipos adequados para cada campo (ex: string, int, double, DateTime, listas, etc).
+
+Crie classes separadas para cada objeto aninhado (Jornalista, Comentario, Anexo).
+
+Limite-se a apenas apresentrar a classe para mim sem nenhuma função extra.
+--  ==============================================
+
+- Classe a ser usada:
+
+using System;
+using System.Collections.Generic;
+
+public class NoticiaClass
+{
+    public string Titulo { get; set; }
+    public string Texto { get; set; }
+    public DateTime DataPublicacao { get; set; }
+    public List<string> Tags { get; set; }
+    public List<JornalistaClass> Jornalistas { get; set; }
+    public List<ComentarioClass> Comentarios { get; set; }
+    public List<AnexoClass> Anexos { get; set; }
+    public int Visualizacoes { get; set; }
+    public int TotalComentarios { get; set; }
+    public int Gostei { get; set; }
+    public int NaoGostei { get; set; }
+    public double TempoMedioLeitura { get; set; }
+}
+
+public class JornalistaClass
+{
+    public string Nome { get; set; }
+}
+
+public class ComentarioClass
+{
+    public string Comentario { get; set; }
+    public int Curtidas { get; set; }
+    public string Usuario { get; set; }
+    public DateTime Data { get; set; }
+}
+
+public class AnexoClass
+{
+    public string NomeArquivo { get; set; }
+    public string Url { get; set; }
+    public int Tamanho { get; set; }
+    public string Tipo { get; set; }
+    public int Cliques { get; set; }
+}
+
+
+
+
+
+
+
+
+
+

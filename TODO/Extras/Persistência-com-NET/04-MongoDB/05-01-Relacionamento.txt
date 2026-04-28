@@ -1,0 +1,88 @@
+Video 5.1 - Relacionamento entre as classes
+
+-- ================
+using MongoDB.Driver;
+using MongoDB.Bson;
+-- ================
+
+-- ==================
+namespace CursoMongoDB.Contexts
+{
+    public class MongoContext
+    {
+        // ...
+    }
+}
+-- ==================
+
+-- ===================
+private readonly IMongoDatabase _database;
+
+        public IMongoDatabase Database => _database;
+
+        // Construtor recebe a connection string e o nome do banco
+        public MongoContext(string connectionString, string dbName)
+        {
+            var client = new MongoClient(connectionString);
+            _database = client.GetDatabase(dbName);
+        }
+
+        // Expondo a coleção de notícias já pronta para uso
+        public IMongoCollection<BsonDocument> Noticias =>
+            _database.GetCollection<BsonDocument>("noticias");
+-- ======================
+
+-- ========================
+// Usings necessários
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using MongoDB.Bson;
+using MongoDB.Driver;
+using CursoMongoDB.Contexts;
+using CursoMongoDB.Models;
+
+namespace CursoMongoDB.Services
+{
+    public class NoticiaService
+    {
+        private readonly IMongoCollection<BsonDocument> _colecao;
+
+        // O construtor recebe o MongoContext (Injeção de Dependência)
+        public NoticiaService(MongoContext contexto)
+        {
+            _colecao = contexto.Noticias;
+        }
+
+        // Método para inserir UMA notícia
+        public async Task InserirNoticiaAsync(NoticiaClass noticia)
+        {
+            var bsonDoc = noticia.ToBsonDocument();
+            await _colecao.InsertOneAsync(bsonDoc);
+        }
+
+        // Método para inserir VÁRIAS notícias
+        public async Task InserirNoticiasAsync(IEnumerable<NoticiaClass> noticias)
+        {
+            var listaBson = new List<BsonDocument>();
+            foreach (var noticia in noticias)
+            {
+                listaBson.Add(noticia.ToBsonDocument());
+            }
+            await _colecao.InsertManyAsync(listaBson);
+        }
+    }
+}
+-- ==============================
+
+
+
+
+
+
+
+
+
+
+
+
+

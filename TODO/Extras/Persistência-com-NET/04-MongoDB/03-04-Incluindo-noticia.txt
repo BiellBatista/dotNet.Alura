@@ -1,0 +1,21 @@
+Vídeo 3.3 - Incluindo a noticia com o BSON.
+
+- using MongoDB.Bson;
+
+- =========================
+public BsonDocument ToBson()
+{
+    return this.ToBsonDocument();
+}
+- ================================
+
+- using MongoDB.Bson;
+
+-  var collection = database.GetCollection<BsonDocument>("noticias");
+
+-  BsonDocument bsonDoc = noticia.ToBson();
+
+- collection.InsertOne(bsonDoc);
+
+
+

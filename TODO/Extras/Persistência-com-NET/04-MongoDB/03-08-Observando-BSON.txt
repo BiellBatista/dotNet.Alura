@@ -1,0 +1,16 @@
+Vídeo 3.5 - Observando o BSON como um documento.
+
+- var noticiaJson = Noticia.ToJson();
+
+- var noticiaJsonBson = bsonDoc.ToJson();
+
+- ========================
+Console.WriteLine("\n== NOTÍCIA ==");
+
+            Console.WriteLine("\n--- JSON via ToJson() ---");
+            Console.WriteLine(noticiaJson);
+
+            Console.WriteLine("\n--- BSON via ToBsonDocument().ToJson() ---");
+            Console.WriteLine(noticiaJsonBson );
+- ================================
+

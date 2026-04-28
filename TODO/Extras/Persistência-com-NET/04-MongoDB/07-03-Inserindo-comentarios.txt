@@ -1,0 +1,84 @@
+Vídeo 7.2 - Inserindo novos comentários
+
+-- =============================
+public async Task AdicionarComentarioAsync(string url, ComentarioClass novoComentario)
+{
+
+}
+-- ===============================
+
+-- ============================
+if (string.IsNullOrWhiteSpace(url))
+    throw new ArgumentException("A URL não pode ser vazia.");
+if (novoComentario == null)
+    throw new ArgumentNullException(nameof(novoComentario));
+-- ======================================
+
+-- ===============================
+var filtro = Builders<BsonDocument>.Filter.Eq("Url", url);
+-- =================================
+
+-- =====================
+var updateComentario = Builders<BsonDocument>.Update.Push("Comentarios", novoComentario.ToBsonDocument());
+-- =====================
+
+-- ============================
+var resultado1 = await _colecao.UpdateOneAsync(filtro, updateComentario);
+
+if (resultado1.MatchedCount == 0)
+{
+    Console.WriteLine($"Nenhuma notícia encontrada com a URL: {url}");
+    return;
+}
+-- ===============================
+
+-- =======================
+var noticiaAtualizada = await _colecao.Find(filtro).FirstOrDefaultAsync();
+-- =========================
+
+-- ==========================
+var comentarios = noticiaAtualizada["Comentarios"].AsBsonArray;
+-- ==================================
+
+-- ================================
+int totalComentarios = comentarios.Count;
+-- ===================================
+
+-- ================================
+var updateTotal = Builders<BsonDocument>.Update.Set("TotalComentarios", totalComentarios);
+-- =========================================
+
+-- ==============================
+await _colecao.UpdateOneAsync(filtro, updateTotal);
+Console.WriteLine($"Comentário adicionado com sucesso. Total agora: {totalComentarios}");
+-- ==================================
+
+-- ========================
+var Url = "feira_de_ciencia_apresenta_invencoes_de_estudantes";
+var comentario = new ComentarioClass
+{
+    ComentarioTexto = "Incrível ver jovens tão engajados com ciência!",
+    Curtidas = 3,
+    Usuario = "MariaSilva",
+    Data = DateTime.UtcNow
+};
+-- =======================================
+
+-- ====================
+try
+{
+    await NoticiaService.AdicionarComentarioAsync(Url, comentario);
+    Console.WriteLine("Comentário adicionado com sucesso!");
+}
+catch (Exception ex)
+{
+    Console.WriteLine("Ocorreu um erro ao adicionar o comentário:");
+    Console.WriteLine(ex.Message);
+}
+-- ========================================
+
+-- ================================
+use('NoticiasDB');
+db.getCollection('noticias').find({ Url: "feira_de_ciencia_apresenta_invencoes_de_estudantes" });
+-- ===========================================
+

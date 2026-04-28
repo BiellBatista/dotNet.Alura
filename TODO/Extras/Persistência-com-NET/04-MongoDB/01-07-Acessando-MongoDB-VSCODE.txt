@@ -1,0 +1,6 @@
+Vídeo 1.5 - Acessando pelo VS Code.
+
+- mongodb+srv://root:root@cluster0.dxav3bh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+- db.runCommand({ ping: 1 })
+

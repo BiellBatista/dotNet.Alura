@@ -1,0 +1,285 @@
+Vídeo 8.3 - Limitando a lista de documentos
+
+-- =====================
+public async Task<(string? maisAprovada, string? maisRejeitada)> ObterNoticiasMaisRelevantesAsync(DateTime dataInicio, DateTime dataFim)
+{
+
+}
+-- =====================
+
+-- ========================
+var filtro = Builders<BsonDocument>.Filter.And(
+        Builders<BsonDocument>.Filter.Gte("DataPublicacao", dataInicio),
+        Builders<BsonDocument>.Filter.Lte("DataPublicacao", dataFim)
+    );
+-- =========================
+
+-- =========================
+var projecao = Builders<BsonDocument>.Projection
+        .Include("Titulo")
+        .Include("Gostei")
+        .Include("NaoGostei");
+-- =========================
+
+-- ==========================
+var ordenacaoGostei = Builders<BsonDocument>.Sort.Descending("Gostei");
+-- ==========================
+
+-- =========================
+var ordenacaoNaoGostei = Builders<BsonDocument>.Sort.Descending("NaoGostei");
+-- ==========================
+
+-- ==========================
+var maisGosteiDoc = await _colecao
+        .Find(filtro)
+        .Project(projecao)
+        .Sort(ordenacaoGostei)
+        .Limit(1)
+        .FirstOrDefaultAsync();
+-- ==============================
+
+-- ===============================
+var maisNaoGosteiDoc = await _colecao
+        .Find(filtro)
+        .Project(projecao)
+        .Sort(ordenacaoNaoGostei)
+        .Limit(1)
+        .FirstOrDefaultAsync();
+-- ===============================
+
+-- ====================
+string? tituloMaisAprovada = maisGosteiDoc?.GetValue("Titulo", null)?.AsString;
+    string? tituloMaisRejeitada = maisNaoGosteiDoc?.GetValue("Titulo", null)?.AsString;
+-- ======================
+
+--   return (tituloMaisAprovada, tituloMaisRejeitada);
+
+-- ==================
+ DateTime dataInicio = new DateTime(2025, 01, 01);
+            DateTime dataFim = new DateTime(2025, 12, 31);
+-- =================
+
+-- ================
+try
+            {
+                var (maisAprovada, maisRejeitada) = await NoticiaService.ObterNoticiasMaisRelevantesAsync(dataInicio, dataFim);
+
+                Console.WriteLine("Notícia com mais GOSTEI:");
+                Console.WriteLine(maisAprovada ?? "Nenhuma encontrada.");
+
+                Console.WriteLine("\nNotícia com mais NÃO GOSTEI:");
+                Console.WriteLine(maisRejeitada ?? "Nenhuma encontrada.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erro ao obter as notícias mais relevantes:");
+                Console.WriteLine(ex.Message);
+            }
+-- ===============
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## **1. Alterações na classe NoticiaService**
+
+Adicione estes métodos:
+
+```csharp
+using MongoDB.Bson;
+using MongoDB.Driver;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+public class NoticiaService
+{
+    // ... já existente ...
+
+    /// <summary>
+    /// Soma total de "gostei" e "não gostei" em todas as notícias no período.
+    /// </summary>
+    public async Task<(long Gostei, long NaoGostei)> SomaGosteiNaoGosteiNoPeriodoAsync(DateTime inicio, DateTime fim)
+    {
+        var filtro = Builders<BsonDocument>.Filter.And(
+            Builders<BsonDocument>.Filter.Gte("DataPublicacao", inicio),
+            Builders<BsonDocument>.Filter.Lt("DataPublicacao", fim)
+        );
+
+        var pipeline = new[]
+        {
+            new BsonDocument("$match", filtro.Render(_colecao.DocumentSerializer, _colecao.Settings.SerializerRegistry)),
+            new BsonDocument("$group", new BsonDocument
+            {
+                { "_id", BsonNull.Value },
+                { "TotalGostei", new BsonDocument("$sum", "$Gostei") },
+                { "TotalNaoGostei", new BsonDocument("$sum", "$NaoGostei") }
+            })
+        };
+
+        var resultado = await _colecao.AggregateAsync<BsonDocument>(pipeline);
+        var doc = await resultado.FirstOrDefaultAsync();
+
+        long gostei = doc?.GetValue("TotalGostei", 0).ToInt64() ?? 0;
+        long naoGostei = doc?.GetValue("TotalNaoGostei", 0).ToInt64() ?? 0;
+        return (gostei, naoGostei);
+    }
+
+    /// <summary>
+    /// Relação "gostei/não gostei" agrupada por assunto (tag).
+    /// </summary>
+    public async Task<List<(string Tag, long Gostei, long NaoGostei)>> RelacaoGosteiPorTagAsync(DateTime inicio, DateTime fim)
+    {
+        var filtro = Builders<BsonDocument>.Filter.And(
+            Builders<BsonDocument>.Filter.Gte("DataPublicacao", inicio),
+            Builders<BsonDocument>.Filter.Lt("DataPublicacao", fim)
+        );
+        var pipeline = new[]
+        {
+            new BsonDocument("$match", filtro.Render(_colecao.DocumentSerializer, _colecao.Settings.SerializerRegistry)),
+            new BsonDocument("$unwind", "$Tags"),
+            new BsonDocument("$group", new BsonDocument
+            {
+                { "_id", "$Tags" },
+                { "TotalGostei", new BsonDocument("$sum", "$Gostei") },
+                { "TotalNaoGostei", new BsonDocument("$sum", "$NaoGostei") }
+            }),
+            new BsonDocument("$sort", new BsonDocument("TotalGostei", -1))
+        };
+        var resultado = await _colecao.AggregateAsync<BsonDocument>(pipeline);
+
+        var lista = new List<(string, long, long)>();
+        await resultado.ForEachAsync(doc =>
+        {
+            string tag = doc["_id"].AsString;
+            long gostei = doc["TotalGostei"].ToInt64();
+            long naoGostei = doc["TotalNaoGostei"].ToInt64();
+            lista.Add((tag, gostei, naoGostei));
+        });
+        return lista;
+    }
+
+    /// <summary>
+    /// Notícias com maior aprovação (mais "gostei") ou rejeição (mais "não gostei") no período.
+    /// </summary>
+    public async Task<List<(string Titulo, string Url, int Gostei, int NaoGostei)>> NoticiasPorAprovacaoAsync(DateTime inicio, DateTime fim, bool maiorAprovacao = true, int limite = 5)
+    {
+        var filtro = Builders<BsonDocument>.Filter.And(
+            Builders<BsonDocument>.Filter.Gte("DataPublicacao", inicio),
+            Builders<BsonDocument>.Filter.Lt("DataPublicacao", fim)
+        );
+
+        var sort = maiorAprovacao
+            ? Builders<BsonDocument>.Sort.Descending("Gostei")
+            : Builders<BsonDocument>.Sort.Descending("NaoGostei");
+
+        var docs = await _colecao.Find(filtro).Sort(sort).Limit(limite).ToListAsync();
+
+        var lista = new List<(string, string, int, int)>();
+        foreach (var doc in docs)
+        {
+            var titulo = doc.GetValue("Titulo", "").AsString;
+            var url = doc.GetValue("Url", "").AsString;
+            var gostei = doc.GetValue("Gostei", 0).ToInt32();
+            var naoGostei = doc.GetValue("NaoGostei", 0).ToInt32();
+            lista.Add((titulo, url, gostei, naoGostei));
+        }
+        return lista;
+    }
+}
+```
+
+---
+
+## **2. Programa9\_1 – Reação dos Leitores**
+
+```csharp
+using System;
+using System.Threading.Tasks;
+using CursoMongoDB.Context;
+using CursoMongoDB.Services;
+
+namespace CursoMongoDB.Programas
+{
+    public static class Programa9_1
+    {
+        public static async Task ExecutarAsync()
+        {
+            var connectionString = "mongodb+srv://usuario:senha@cluster0.abcd.mongodb.net/";
+            var nomeBanco = "NoticiasDB";
+            var contexto = new MongoContext(connectionString, nomeBanco);
+            var noticiaService = new NoticiaService(contexto);
+
+            Console.WriteLine("Digite a data inicial (ex: 2024-01-01):");
+            DateTime inicio = DateTime.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite a data final (ex: 2024-12-31):");
+            DateTime fim = DateTime.Parse(Console.ReadLine());
+
+            // Soma de gostei/não gostei no período
+            var (gostei, naoGostei) = await noticiaService.SomaGosteiNaoGosteiNoPeriodoAsync(inicio, fim);
+            Console.WriteLine($"\nSoma total de 'gostei': {gostei}");
+            Console.WriteLine($"Soma total de 'não gostei': {naoGostei}");
+
+            // Relação gostei/não gostei por tag
+            var relPorTag = await noticiaService.RelacaoGosteiPorTagAsync(inicio, fim);
+            Console.WriteLine("\nRelação gostei/não gostei por assunto (tag):");
+            foreach (var item in relPorTag)
+                Console.WriteLine($"- {item.Tag}: Gostei = {item.Gostei}, Não Gostei = {item.NaoGostei}");
+
+            // Notícias com maior aprovação
+            var maisAprovadas = await noticiaService.NoticiasPorAprovacaoAsync(inicio, fim, true);
+            Console.WriteLine("\nNotícias com maior aprovação:");
+            foreach (var noticia in maisAprovadas)
+                Console.WriteLine($"- {noticia.Titulo} (Url: {noticia.Url}) — Gostei: {noticia.Gostei}, Não Gostei: {noticia.NaoGostei}");
+
+            // Notícias com maior rejeição
+            var maisRejeitadas = await noticiaService.NoticiasPorAprovacaoAsync(inicio, fim, false);
+            Console.WriteLine("\nNotícias com maior rejeição:");
+            foreach (var noticia in maisRejeitadas)
+                Console.WriteLine($"- {noticia.Titulo} (Url: {noticia.Url}) — Gostei: {noticia.Gostei}, Não Gostei: {noticia.NaoGostei}");
+        }
+    }
+}
+```
+
+---
+
+## **3. Chamada do Programa Principal**
+
+```csharp
+using System.Threading.Tasks;
+using CursoMongoDB.Programas;
+
+class Program
+{
+    static async Task Main(string[] args)
+    {
+        await Programa9_1.ExecutarAsync();
+    }
+}
+```
+
+---
+
+## **Resumo didático**
+
+> Com esses indicadores, sua equipe editorial pode compreender melhor o que agrada ou desagrada a audiência, ajustar estratégias de conteúdo e fortalecer o engajamento do público!

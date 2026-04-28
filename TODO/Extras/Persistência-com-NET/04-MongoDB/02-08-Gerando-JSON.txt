@@ -1,0 +1,28 @@
+Vídeo 2.5 - Gerando o Json da Classe.
+
+- dotnet add package Newtonsoft.Json
+
+- using Newtonsoft.Json;
+
+- ======================
+public string ToJson()
+        {
+            // Indenta o JSON para ficar legível
+            return JsonConvert.SerializeObject(this, Formatting.Indented);
+        }
+- ========================
+
+-- ================================
+            Console.WriteLine("Lista de notícias em formato JSON:\n");
+            Console.WriteLine(Noticia.ToJson());
+-- =====================================
+
+-- ================================
+ // Program_2_4.Executar();
+ Program_2_5.Executar();
+-- ==============================
+
+- dotnet build
+
+- dotnet run.
+

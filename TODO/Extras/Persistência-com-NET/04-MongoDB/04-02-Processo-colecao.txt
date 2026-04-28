@@ -1,0 +1,30 @@
+Vídeo 4.2 - Criando processo para incluir a partir de uma coleção.
+
+- var caminhoArquivo = "4905 - Vídeo 4.2 - Lista.js";
+
+- ========================
+ if (!File.Exists(caminhoArquivo))
+            {
+                Console.WriteLine("Arquivo noticias.json não encontrado!");
+                return;
+            }
+-- ===========================
+
+- string conteudoJson = File.ReadAllText(caminhoArquivo);
+
+- var listaNoticias = JsonConvert.DeserializeObject<List<NoticiaClass>>(conteudoJson);
+
+-- ================================
+int contador = 1;
+ foreach (var noticia in listaNoticias)
+            {
+
+                <PROCESSO DE INCLUSAO DO BSON>
+
+                contador++;
+                Console.WriteLine($"Notícia {contador} inserida no MongoDB: {noticia.Titulo}");
+            }
+
+            Console.WriteLine($"\nTotal de notícias inseridas: {contador}");
+-- ====================================
+

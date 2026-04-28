@@ -1,0 +1,24 @@
+Vídeo 4.3 - Inserindo em lote: InsertMany.
+
+-- =======================
+ var listaBson = new List<BsonDocument>();
+            foreach (var noticia in listaNoticias)
+            {
+                listaBson.Add(noticia.ToBsonDocument());
+            }
+-- =================================
+
+--  ======================================
+try
+            {
+                collection.InsertMany(listaBson);
+                Console.WriteLine("Notícias incluídas com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ocorreu um erro ao tentar inserir os elementos do BSON:");
+                Console.WriteLine(ex.Message);
+            }
+
+-- ==============================================
+

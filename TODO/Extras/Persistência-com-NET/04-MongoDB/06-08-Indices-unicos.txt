@@ -1,0 +1,24 @@
+Vídeo 6.6 - Chave primária no Mongo DB
+
+-- ===================================
+private void CriarIndiceUnicoParaUrl()
+{
+
+}
+-- ===========================================
+
+-- var indexKeys = Builders<BsonDocument>.IndexKeys.Ascending("Url");
+
+-- ======================
+var indexOptions = new CreateIndexOptions { Unique = true };
+-- ===========================
+
+-- =============================
+    var indexModel = new CreateIndexModel<BsonDocument>(indexKeys, indexOptions);
+    _colecao.Indexes.CreateOne(indexModel);
+-- ================================
+
+-- ================
+CriarIndiceUnicoParaUrl();
+-- ================
+

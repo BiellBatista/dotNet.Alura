@@ -1,0 +1,82 @@
+Video 5.3 - Adicionando a propriedade URL.
+
+-- ===================================================
+private static string GerarUrl(string titulo)
+{
+    if (string.IsNullOrWhiteSpace(titulo))
+        return string.Empty;
+
+    // Remove acentos
+    string url = titulo.Normalize(NormalizationForm.FormD);
+    var sb = new StringBuilder();
+    foreach (var c in url)
+    {
+        var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+        if (unicodeCategory != UnicodeCategory.NonSpacingMark)
+            sb.Append(c);
+    }
+    url = sb.ToString().Normalize(NormalizationForm.FormC);
+
+    // Substitui espaços por underline, deixa minúsculo e remove caracteres especiais
+    url = url.Replace(' ', '_').ToLowerInvariant();
+    url = Regex.Replace(url, @"[^a-z0-9_]", "");
+
+    return url;
+}
+-- ======================
+
+-- ===========================
+using System.Globalization;
+using System.Text;
+using System.Text.RegularExpressions;
+-- ===============================
+
+-- =================================
+private string _titulo;
+public string Titulo
+{
+    get => _titulo;
+    set
+    {
+        _titulo = value;
+        Url = GerarUrl(value);
+    }
+}
+
+-- ================================
+
+-- ===============================================
+string jsonRecebido = @"{
+    ""Titulo"": ""Festival de Música agita a cidade do Rio de Janeiro"",
+    ""Texto"": ""O festival reuniu artistas nacionais e internacionais..."",
+    ""DataPublicacao"": ""2024-11-22T20:30:00Z"",
+    ""Tags"": [""cultura"", ""musica"", ""brasil""],
+    ""Jornalistas"": [
+        { ""Nome"": ""João Almeida"" }
+    ],
+    ""Comentarios"": [
+        {
+            ""Comentario"": ""Evento sensacional!"",
+            ""Curtidas"": 19,
+            ""Usuario"": ""LarissaSantos"",
+            ""Data"": ""2024-11-22T22:10:00Z""
+        }
+    ],
+    ""Anexos"": [
+        {
+            ""NomeArquivo"": ""festival-musica.jpg"",
+            ""Url"": ""https://meusite.com/img/festival-musica.jpg"",
+            ""Tamanho"": 98000,
+            ""Tipo"": ""image/jpeg"",
+            ""Cliques"": 31
+        }
+    ],
+    ""Visualizacoes"": 950,
+    ""TotalComentarios"": 1,
+    ""Gostei"": 76,
+    ""NaoGostei"": 2,
+    ""TempoMedioLeitura"": 3.1
+}";
+-- ========================================================
+
+"

@@ -1,0 +1,10 @@
+Vídeo 1.4 - Ambiente de trabalho no MongoDB
+
+- https://www.mongodb.com/cloud/atlas
+
+- https://www.mongodb.com/try/download/shell
+
+- "C:\Users\Alura-Estudio\AppData\Local\Programs\mongosh\mongosh.exe" "<STRING CONNECTION>"
+
+- db.runCommand({ ping: 1 })
+

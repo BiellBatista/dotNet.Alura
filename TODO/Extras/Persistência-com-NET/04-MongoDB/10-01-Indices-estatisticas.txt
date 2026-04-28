@@ -1,0 +1,42 @@
+Vídeo 10.2 - Executando a criação dos índices
+
+-- ================
+use('NoticiasDB');
+
+const pipeline = [
+  // Estágio 1: $match (Filtro de Data)
+  {
+    $match: {
+      DataPublicacao: {
+        $gte: new ISODate("2024-01-01T00:00:00.000Z"),
+        $lte: new ISODate("2025-12-31T23:59:59.000Z")
+      }
+    }
+  },
+  // Estágio 2: $addFields (Cálculo seguro da Aprovação)
+  {
+    $addFields: {
+      AprovacaoRelativa: {
+        $cond: {
+          if: { $eq: ["$Visualizacoes", 0] },
+          then: 0,
+          else: { $divide: ["$Gostei", "$Visualizacoes"] }
+        }
+      }
+    }
+  },
+  // Estágio 3: $group (Sumário Estatístico Global)
+  {
+    $group: {
+      _id: null,
+      TotalVisualizacoes: { $sum: "$Visualizacoes" },
+      MediaGostei: { $avg: "$Gostei" },
+      MaxVisualizacoes: { $max: "$Visualizacoes" },
+      MinVisualizacoes: { $min: "$Visualizacoes" },
+      MediaAprovacaoRelativa: { $avg: "$AprovacaoRelativa" }
+    }
+  }
+];
+
+db.noticias.explain("executionStats").aggregate(pipeline);
+-- =================

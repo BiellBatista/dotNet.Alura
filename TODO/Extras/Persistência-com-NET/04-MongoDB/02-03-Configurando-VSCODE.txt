@@ -1,0 +1,19 @@
+Vídeo 2.2 - Configurando o C# no VS CODE.
+
+- dotnet --version
+
+- https://dotnet.microsoft.com/en-us/download/dotnet/8.0
+
+- dotnet new console -n HelloWorldApp
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,199 @@
+Vídeo 6.2 - Implementando a validação
+
+-- ======================================
+ public static BsonDocument GetMongoJsonSchema()
+        {
+            var schemaJson = @"
+    {
+      bsonType: 'object',
+      required: [
+        'Titulo', 'Url', 'Texto', 'DataPublicacao', 'Tags', 'Jornalistas',
+        'Comentarios', 'Anexos', 'Visualizacoes', 'TotalComentarios', 'Gostei',
+        'NaoGostei', 'TempoMedioLeitura'
+      ],
+      properties: {
+        Titulo: { bsonType: 'string' },
+        Url: { bsonType: 'string' },
+        Texto: { bsonType: 'string' },
+        DataPublicacao: { bsonType: 'date' },
+        Tags: {
+          bsonType: 'array',
+          items: { bsonType: 'string' }
+        },
+        Jornalistas: {
+          bsonType: 'array',
+          items: {
+            bsonType: 'object',
+            required: ['Nome'],
+            properties: {
+              Nome: { bsonType: 'string' }
+            }
+          }
+        },
+        Comentarios: {
+          bsonType: 'array',
+          items: {
+            bsonType: 'object',
+            required: ['Comentario', 'Curtidas', 'Usuario', 'Data'],
+            properties: {
+              Comentario: { bsonType: 'string' },
+              Curtidas: { bsonType: 'int' },
+              Usuario: { bsonType: 'string' },
+              Data: { bsonType: 'date' }
+            }
+          }
+        },
+        Anexos: {
+          bsonType: 'array',
+          items: {
+            bsonType: 'object',
+            required: ['NomeArquivo', 'Url', 'Tamanho', 'Tipo', 'Cliques'],
+            properties: {
+              NomeArquivo: { bsonType: 'string' },
+              Url: { bsonType: 'string' },
+              Tamanho: { bsonType: 'int' },
+              Tipo: { bsonType: 'string' },
+              Cliques: { bsonType: 'int' }
+            }
+          }
+        },
+        Visualizacoes: { bsonType: 'int' },
+        TotalComentarios: { bsonType: 'int' },
+        Gostei: { bsonType: 'int' },
+        NaoGostei: { bsonType: 'int' },
+        TempoMedioLeitura: { bsonType: 'double' }
+      }
+    }";
+
+            return BsonDocument.Parse(@"{ $jsonSchema: " + schemaJson + " }");
+        }
+-- ==============================================
+
+-- =================================
+
+private void CriarOuAtualizarSchemaDaColecao()
+{
+    var db = _contexto.Database;
+    var nomeColecao = "noticias";
+    var schema = GetMongoJsonSchema();
+
+    var colecoes = db.ListCollectionNames().ToList();
+
+    if (!colecoes.Contains(nomeColecao))
+    {
+        // Cria a coleção com o schema, se ainda não existir
+        var options = new CreateCollectionOptions<BsonDocument>
+        {
+            Validator = new BsonDocumentFilterDefinition<BsonDocument>(schema),
+            ValidationAction = DocumentValidationAction.Error,
+            ValidationLevel = DocumentValidationLevel.Strict
+        };
+        db.CreateCollection(nomeColecao, options);
+    }
+    else
+    {
+        // Atualiza a validação da coleção existente usando collMod
+        var command = new BsonDocument
+        {
+            { "collMod", nomeColecao },
+            { "validator", schema },
+            { "validationLevel", "strict" },
+            { "validationAction", "error" }
+        };
+
+        db.RunCommand<BsonDocument>(command);
+    }
+}
+-- ======================================
+
+-- ============================
+
+private readonly MongoContext _contexto;
+
+public NoticiaService(MongoContext contexto)
+{
+    _contexto = contexto; 
+    _colecao = contexto.Noticias;
+    CriarOuAtualizarSchemaDaColecao(); 
+}
+
+-- =================================
+
+-- =====================
+public IMongoDatabase Database => _database;
+-- ========================
+
+-- =====================
+string jsonRecebido = @"{
+    ""Titulo"": ""Arqueólogos Encontram Templo Perdido de Civilização Pré-Inca"",
+    ""Texto"": ""Durante escavações na região andina do Peru, pesquisadores encontraram vestígios de um templo cerimonial que antecede o Império Inca, com artefatos preservados e inscrições desconhecidas."",
+    ""DataPublicacao"": ""2025-07-10T14:20:00Z"",
+    ""Tags"": [""arqueologia"", ""américa do sul"", ""história antiga""],
+    ""Jornalistas"": [
+        { ""Nome"": ""Sofia Ramires"" }
+    ],
+    ""Comentarios"": [
+        {
+            ""Comentario"": ""Incrível avanço para o entendimento das culturas pré-colombianas!"",
+            ""Curtidas"": 31,
+            ""Usuario"": ""ExploradorAndino"",
+            ""Data"": ""2025-07-10T16:10:00Z""
+        }
+    ],
+    ""Anexos"": [
+        {
+            ""NomeArquivo"": ""templo-perdido.jpg"",
+            ""Url"": ""https://meusite.com/img/templo-perdido.jpg"",
+            ""Tamanho"": 102400,
+            ""Tipo"": ""image/jpeg"",
+            ""Cliques"": 48
+        }
+    ],
+    ""Visualizacoes"": 880,
+    ""TotalComentarios"": 1,
+    ""Gostei"": 289,
+    ""NaoGostei"": 1,
+    ""TempoMedioLeitura"": 3.8
+}";
+-- ======================
+
+-- ========================
+public static void TratarErroValidacaoMongo(MongoWriteException mwx)
+{
+    Console.WriteLine("Ocorreu um erro de validação ao tentar inserir a notícia.");
+
+    try
+    {
+        var detalhes = mwx.WriteError?.Details?.AsBsonDocument;
+
+        if (detalhes != null)
+        {
+            Console.WriteLine("Detalhes da violação de schema:");
+            Console.WriteLine(detalhes.ToJson(new MongoDB.Bson.IO.JsonWriterSettings
+            {
+                Indent = true,
+                OutputMode = MongoDB.Bson.IO.JsonOutputMode.RelaxedExtendedJson
+            }));
+        }
+        else
+        {
+            Console.WriteLine("Não foi possível acessar os detalhes da falha de validação.");
+        }
+    }
+    catch (Exception e2)
+    {
+        Console.WriteLine("Erro ao tentar extrair informações do erro de validação:");
+        Console.WriteLine(e2.Message);
+    }
+
+    Console.WriteLine("Dica: Verifique os tipos e campos exigidos pelo schema JSON definido no MongoDB.");
+}
+-- =========================
+
+-- ==========================
+catch (MongoWriteException mwx) when (mwx.WriteError?.Code == 121)
+{
+    NoticiaService.TratarErroValidacaoMongo(mwx);
+}
+-- ===========================
+

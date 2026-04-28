@@ -1,0 +1,319 @@
+NHibernate: Persistência de dados com C#
+	01 - Configurando e Entendendo o NHibernate
+		01 - Vídeo 1
+		02 - Configurando e Entendendo o NHibernate
+		03 - NHibernate (A)
+		04 - Hibernate no Nuget
+		05 - Arquivo de Mapeamento e Build Action (C)
+		06 - Mapeando a classe Usuario (A)
+		07 - hbm.xml do produto
+		08 - Arquivo de configuração (D)
+		09 - Hibernate.cfg.xml
+		10 - Testando a configuração
+	02 - Inserindo e Alterando Dados
+		01 - Vídeo 1
+		02 - Inserindo e Alterando Dados
+		03 - AbreSession no NHibernateHelper
+		04 - Inserindo um objeto
+		05 - Carregando por Id
+		06 - Estado dos objetos 1 (B)
+		07 - Estado dos objetos 2 (B)
+		08 - Estado dos objetos 3 (B)
+		09 - Estado dos objetos 4 (A)
+		10 - Projeto LojaWeb
+		11 - Cadastro de Entidades no Projeto Web
+		12 - Atualizando dados no projeto web
+		13 - Injeção de Dependências
+		14 - Controle de transações com filtros
+	03 - Relacionamento entre Entidades
+		01 - Vídeo 1
+		02 - Relacionamento entre Entidades
+		03 - Mapeamento Muitos-Para-Um
+		04 - Salvando produtos com categoria
+		05 - Transient Object Exception (C)
+		06 - Adicionando produto sem categoria
+		07 - Mapeamento Um-Para-Muitos
+		08 - Lazyness (D)
+		09 - Mostrando os produtos de uma categoria (A)
+		10 - Open Session in View
+		11 - Lado fraco do relacionamento
+	04 - Recuperando dados
+		01 - Vídeo 1
+		02 - Recuperando dados
+		03 - HQL para SQL (D)
+		04 - Ordenando os resultados da busca (A)
+		05 - Lista de entidades
+		06 - Busca de categorias por nome
+		07 - Busca de produtos com preço mínimo
+		08 - Busca de produtos por nome da categoria
+		09 - Múltiplas condições
+		10 - Número de produtos por categoria
+	05 - Resolvendo o Problema do N+1
+		01 - Vídeo 1
+		02 - Resolvendo o Problema do N+1
+		03 - Problema do N+1 (D)
+		04 - Reproduzindo o problema de N+1 queries em um relacionamento to many (A)
+		05 - Resolvendo o n + 1 de coleçoes utilizando o fetch join
+		06 - Batch Size
+		07 - Lista de Produtos Paginada
+		08 - Batch size e paginação (D)
+	06 - Buscas dinâmicas com criteria
+		01 - Vídeo 1
+		02 - Buscas dinâmicas com criteria
+		03 - Limitação do HQL (B)
+		04 - Criteria com condições (A)
+		05 - Busca em relacionamentos utilizando a criteria (A)
+		06 - Criteria com múltiplas condições (C)
+		07 - Busca dinâmica na aplicação.
+	07 - Cacheando dados
+		01 - Vídeo 1
+		02 - Cacheando dados
+		03 - O que é cache? (A)
+		04 - Habilitando Cache de Segundo Nível
+		05 - Configurando cache provider
+		06 - Cache de coleções
+		07 - Corrigindo o problema do cache de coleções
+		08 - Ativando cache de queries
+		09 - Cacheando uma query
+		10 - Corrigindo problema no cache de queries
+	08 - Herança e Polimorfismo
+		01 - Vídeo 1
+		02 - Herança e Polimorfismo
+		03 - Vendas
+		04 - Vendendo produtos na loja web
+		05 - Pessoas Física e Jurídica
+		06 - Mapeando em uma única tabela
+		07 - Uma Tabela por Sub-Classe
+.Net e MongoDB parte 1: Primeiros passos para usar esse famoso banco NoSQL
+	01 - Primeiros passos com MongoDB no .NET
+		01 - Introdução
+		02 - Vantagem da utilização do MongoDB (A)
+		03 - Desvantagem da utilização do MongoDB (B)
+		04 - Qual banco de dados utilizar? (B)
+		05 - Instalando e configurando o MongoDB
+		06 - Instalando o MongoDB como serviço
+		07 - Conectando ao MongoDB na linha de comando
+		08 - Conectando com Robo 3T (Robomongo)
+		09 - Instalação do driver
+		10 - Consolidando o seu conhecimento
+		11 - O que aprendemos?
+	02 - Inserindo um documento no MongoDB
+		01 - Referências para uso das conexões do .NET com o MongoDB
+		02 - Referências para uso das conexões do .NET com o MongoDB (B)
+		03 - (Opcional) Diferenças entre programação síncrona e assíncrona
+		04 - Programações síncrona e assíncrona (A)
+		05 - Execução de processos da biblioteca MongoDB.Drive (A)
+		06 - Manipulando documentos JSON no .NET
+		07 - Comando para inclusão de um objeto JSON (A)
+		08 - Qual o tipo de variável? (B)
+		09 - Acessando o MongoDB e incluindo um documento BSON
+		10 - String de conexão (C)
+		11 - Tipos de variáveis para trabalhar com o MongoDB (B)
+		12 - Método para inclusão de um documento de maneira assíncrona (A)
+		13 - Usando o modelo OO com MongoDB
+		14 - Quais referências devemos adicionar? (C)
+		15 - Associação à propriedade de ObjectID (A)
+		16 - Declarando uma coleção no MongoDB .NET (A)
+		17 - Consolidando o seu conhecimento
+		18 - O que aprendemos?
+	03 - Listando e incluindo vários documentos
+		01 - Encapsulando o acesso ao MongoDB
+		02 - Incluindo muitos livros
+		03 - Inclusão simultânea de vários documentos (A)
+		04 - Listando todos os livros
+		05 - Buscando todos os registros de uma coleção (C)
+		06 - Retorno do método Find (C)
+		07 - Download do arquivo do projeto
+		08 - O que aprendemos?
+	04 - Pesquisando documentos
+		01 - Listando livros usando como filtro um documento BSON
+		02 - Resultado de uma busca (D)
+		03 - Listando livros usando como filtro a classe
+		04 - Construtor de filtro (A)
+		05 - Busca de registros com filtros (B)
+		06 - Exibindo resultado da busca por um determinado critério
+		07 - Registros ordenados e limitados (C)
+		08 - Consolidando o seu conhecimento
+		09 - O que aprendemos?
+	05 - Alteração e exclusão de documentos
+		01 - Alterando um documento
+		02 - Alteração de um registro (B)
+		03 - Alterando muitos documentos
+		04 - Mudança em um registro (C)
+		05 - Excluindo documentos
+		06 - Exclusão de um registro (C)
+		07 - Conclusão
+		08 - Consolidando o seu conhecimento
+		09 - O que aprendemos?
+.Net e MongoDB parte 2: Integre uma webapp com o banco NoSQL
+	01 - Implementando as classes do Blog
+		01 - Introdução
+		02 - Análise de dados da aplicação Blog
+		03 - Configuração da base de dados na aplicação de Blog (C)
+		04 - Criando a classe de acesso ao MongoDB para a aplicação Blog
+		05 - Local da classe de acesso à base de dados (B)
+		06 - Criando as classes de dados para a aplicação Blog
+		07 - Classes da aplicação (C)
+		08 - Mão na massa: Alterando nossas classes
+		09 - O que aprendemos?
+	02 - Implementando o acesso ao Blog através de usuários
+		01 - Registro do usuário no Blog
+		02 - Localidade dos valores do usuário (A)
+		03 - Fazendo o acesso e testando a aplicação Blog
+		04 - Diferença entre ToListAsync e SingleOrDefaultAsync (B)
+		05 - Buscando um usuário (C)
+		06 - Mão na massa: Registrando usuários
+		07 - O que aprendemos?
+	03 - Interagindo com o Blog
+		01 - Incluindo uma nova publicação
+		02 - Listando as 10 publicações mais recentes
+		03 - Ordenando de forma decrescente (B)
+		04 - Exibindo detalhe de uma publicação
+		05 - Listando as 10 mais recentes publicações de um assunto
+		06 - Listagem das publicações (C)
+		07 - Incluindo um novo comentário na publicação
+		08 - Inclusão de um novo comentário (A)
+		09 - Testando novamente a aplicação Blog
+		10 - Mãos na massa: Incrementando o Blog
+		11 - O que aprendemos?
+	04 - Utilizando coordenadas geoespaciais no MongoDB com .NET
+		01 - Entendendo as coordenadas espaciais
+		02 - Representação de uma coordenada espacial no formato JSON (C)
+		03 - Carregando a base de dados com coordenadas geoespaciais
+		04 - Restore de um banco de dados (B)
+		05 - Índice especial para buscar pontos em mapas (B)
+		06 - Criando a classe Aeroporto
+		07 - Referência especial para representar pontos geoespaciais (A)
+		08 - Tipo de uma coordenada geoespacial em uma classe no .NET (B)
+		09 - Criando a classe de conexão com o MongoDB para base geo
+		10 - Buscando aeroportos próximos de um ponto geográfico
+		11 - Representação de um ponto geoespacial (C)
+		12 - Definindo a localização de um ponto no mapa (B)
+		13 - Método para buscar pontos geoespaciais dentro de um raio de busca (A)
+		14 - Mãos na massa: Implementando a busca de aeroportos
+		15 - O que aprendemos?
+	05 - Implementando a aplicação de busca de aeroportos
+		01 - Entendendo a aplicação de busca de aeroportos
+		02 - Criando as classes na aplicação de busca de aeroportos usando ASP .NET MVC
+		03 - Entendendo como os parâmetros de entrada e saída da aplicação de mapa funcionam
+		04 - Obtendo a latitude e longitude de um endereço (C)
+		05 - Programando a interação com o MongoDB na aplicação de mapa
+		06 - Buscando lojas a partir de uma posição de latitude e longitude (A)
+		07 - Testando a aplicação de mapas
+		08 - Lembrando das referências (B)
+		09 - Conclusão
+		10 - Mãos na massa: Aplicação de busca de aeroportos
+		11 - O que aprendemos?
+.NET: persistência de dados com MongoDB
+	01 - Primeiros passos no MongoDB
+		01 - Apresentação
+		02 - Preparando o ambiente
+		03 - Relação do MongoDB com o .NET
+		04 - Integração de dispositivos inteligentes com MongoDB (A)
+		05 - Complexidade no armazenamento do dado
+		06 - Ambiente de trabalho no MongoDB
+		07 - Acessando o MongoDB pelo VSCODE
+		08 - Para saber mais: desafios na migração de bancos relacionais
+		09 - Faça como eu fiz: conectar MongoDB Atlas
+		10 - O que aprendemos?
+	02 - Modelando e serializando dados
+		01 - Entendendo a classe notícia
+		02 - Estruturando dados de produtos no Gatito Petshop (A)
+		03 - Configurando o C# no VSCODE
+		04 - Criando a classe Notícia
+		05 - Para saber mais: criando classes com IA
+		06 - Estruturando dados de transações financeiras (C)
+		07 - Incluindo uma notícia na classe
+		08 - Gerando o JSON da Classe
+		09 - Serialização de dados para integração de organogramas (B)
+		10 - Faça como eu fiz: classe e JSON
+		11 - O que aprendemos?
+	03 - Inserindo documento com BSON
+		01 - Criando base de dados no MongoDB
+		02 - Criando um banco de dados para personalização de conteúdo (A)
+		03 - Incluindo a notícia com o JSON
+		04 - Incluindo a notícia com o BSON
+		05 - Diferenças entre o JSON e o BSON
+		06 - Otimizando o armazenamento de dados de clientes (C)
+		07 - Para saber mais: BSON e performance no MongoDB
+		08 - Observando o BSON como um documento
+		09 - Faça como eu fiz: conectar e usar MongoDB
+		10 - O que aprendemos?
+	04 - BSON como complemento do JSON
+		01 - Recebendo como entrada de dados o JSON
+		02 - Criando processo para incluir a partir de uma coleção
+		03 - Gerenciando inventário de livros (A)
+		04 - Inserindo em lote
+		05 - Diferença de programação síncrona e assíncrona
+		06 - Para saber mais: como funciona async/await
+		07 - Transformando nossos programas em assíncronos
+		08 - Implementando operações assíncronas no aplicativo Fokus (B)
+		09 - Faça como eu fiz: inserir dados no MongoDB
+		10 - O que aprendemos?
+	05 - Organizando o código para MongoDB
+		01 - Relacionamento entre as classes
+		02 - Adaptando nossos programas à nova estrutura
+		03 - Gerenciamento de contas no SwiftBank (C)
+		04 - Adicionando a propriedade URL
+		05 - Otimizando a inserção de vídeos na VideoFlowNow (C)
+		06 - Impacto no MongoDB com documentos de propriedades diferentes
+		07 - Para saber mais: atualização oportunista de documentos
+		08 - Faça como eu fiz: refatoração no MongoDB
+		09 - O que aprendemos?
+	06 - Validando dados
+		01 - Validando os campos
+		02 - Implementando a validação
+		03 - Atualizando dados antigos
+		04 - Garantindo a consistência de dados na plataforma Freelando (C)
+		05 - Implementando o método de atualização da URL
+		06 - Atualizando URLs de artistas no CodeChella (C)
+		07 - Garantindo a chave primária de Negócio
+		08 - Chave primária com índices únicos
+		09 - Para saber mais: flexibilidade do MongoDB
+		10 - Faça como eu fiz: validação e manutenção de dados
+		11 - O que aprendemos?
+	07 - Modificando dados
+		01 - Modificando a Notícia
+		02 - Atualizando descrições de produtos (C)
+		03 - Inserindo novos comentários
+		04 - Excluíndo comentários inadequados
+		05 - Incluindo novas estatísticas
+		06 - Entendendo o Builder
+		07 - Gerenciando comentários em projetos de programação (A)
+		08 - Para saber mais: análise dos retornos de atualização no MongoDB
+		09 - Faça como eu fiz: gerenciar notícias
+		10 - O que aprendemos?
+	08 - Análise de reações dos leitores e métricas
+		01 - Reação dos leitores
+		02 - Lista de filtros
+		03 - Avaliando a satisfação dos freelancers na Freelando (A)
+		04 - Limitando a lista de documentos
+		05 - Filtrando preferências de vídeos na Screen Match (B)
+		06 - Melhorando o KPI
+		07 - Usando Pipelines
+		08 - Para saber mais: conversão de filtros para BSON
+		09 - Faça como eu fiz: estatísticas MongoDB
+		10 - O que aprendemos?
+	09 - Análise de reações dos leitores e métricas
+		01 - Estatísticas associadas às notícias
+		02 - Distribuição temporal da notícia
+		03 - Otimizando a visualização de organogramas (A)
+		04 - Número de notícias por mês
+		05 - Múltiplos Pipelines
+		06 - Gerenciamento de tarefas em equipe (C)
+		07 - Entendendo os Pipelines
+		08 - Para saber mais: uso do $cond no MongoDB
+		09 - Faça como eu fiz: Pipeline MongoDB
+		10 - O que aprendemos?
+	10 - Consultas avançadas e listagens dinâmicas
+		01 - Criando índices para otimizar as estatísticas
+		02 - Executando a criação do índice
+		03 - Melhorando a eficiência na plataforma Freelando (B)
+		04 - Entendendo os índices
+		05 - Índices para listas ordenadas
+		06 - Otimizando a busca de passagens aéreas na Jornada Milhas (B)
+		07 - Usando a IA no aprendizado
+		08 - Faça como eu fiz: índices MongoDB
+		09 - Para saber mais: índice text no MongoDB
+		10 - O que aprendemos?
+		11 - Conclusão

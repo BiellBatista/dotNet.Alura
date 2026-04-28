@@ -1,0 +1,54 @@
+Vídeo 8.1 - Reação dos leitores
+
+-- ==================
+public async Task<(int totalGostei, int totalNaoGostei)> ObterReacoesNoPeriodoAsync(DateTime dataInicio, DateTime dataFim)
+{
+
+}
+-- ==================
+
+-- ==================
+var filtro = Builders<BsonDocument>.Filter.And(
+        Builders<BsonDocument>.Filter.Gte("DataPublicacao", dataInicio),
+        Builders<BsonDocument>.Filter.Lte("DataPublicacao", dataFim)
+    );
+-- =================
+
+-- =================
+var projeção = Builders<BsonDocument>.Projection.Include("Gostei").Include("NaoGostei");
+-- =================
+
+-- =================
+ var documentos = await _colecao.Find(filtro).Project(projeção).ToListAsync();
+-- ================
+
+-- ================
+foreach (var doc in documentos)
+    {
+        totalGostei += doc.GetValue("Gostei", 0).AsInt32;
+        totalNaoGostei += doc.GetValue("NaoGostei", 0).AsInt32;
+    }
+-- =================
+
+-  return (totalGostei, totalNaoGostei);
+
+-- ==================
+ DateTime dataInicio = new DateTime(2024, 02, 01);
+            DateTime dataFim = new DateTime(2024, 05, 30);
+-- =================
+
+-- ================
+try
+            {
+                var (totalGostei, totalNaoGostei) = await NoticiaService.ObterReacoesNoPeriodoAsync(dataInicio, dataFim);
+                Console.WriteLine($"Total de 'Gostei': {totalGostei}");
+                Console.WriteLine($"Total de 'Não Gostei': {totalNaoGostei}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ocorreu um erro obter os valores de Gostei e Não Gostei:");
+                Console.WriteLine(ex.Message);
+            }
+-- ===============
+
+

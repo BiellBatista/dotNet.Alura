@@ -1,0 +1,83 @@
+Vídeo 6.3 - Atualizando dados antigos
+
+-- ==================
+using MongoDB.Bson.Serialization.Attributes;
+-- ======================
+
+-- =================
+public class NoticiaClass 
+{
+    [BsonId]
+    [JsonIgnore] 
+    public ObjectId Id { get; set; }
+
+    // ... restante da classe
+}
+-- =========================
+
+-- ===============
+using MongoDB.Bson.Serialization;
+-- ==============================
+
+-- ===============================
+public async Task AtualizarUrlsFaltantesAsync()
+{
+}
+-- ==================================
+
+-- ====================================
+var documentos = await _colecao.Find(FilterDefinition<BsonDocument>.Empty).ToListAsync();
+-- ===========================================
+
+-- ====================================
+foreach (var doc in documentos)
+{
+}
+-- =====================================
+
+-- ====================================
+if (!doc.Contains("Url") || string.IsNullOrWhiteSpace(doc["Url"].AsString))
+{
+}
+-- ===============================================
+
+-- =======================
+var noticia = BsonSerializer.Deserialize<NoticiaClass>(doc);
+-- =======================
+
+-- =========================
+noticia.Titulo = noticia.Titulo;
+-- ===========================
+
+-- ===========================
+var filtro = Builders<BsonDocument>.Filter.Eq("_id", doc["_id"]);
+-- =================================
+
+-- =================================
+var bsonAtualizado = noticia.ToBsonDocument();
+
+await _colecao.ReplaceOneAsync(filtro, bsonAtualizado);
+Console.WriteLine($"URL atualizada para o documento com _id: {doc["_id"]}");
+-- ====================================
+
+-- =========================================
+try
+{
+    await NoticiaService.AtualizarUrlsFaltantesAsync();
+    Console.WriteLine("URLs atualizadas com sucesso!");
+}
+catch (Exception ex)
+{
+    Console.WriteLine("Ocorreu um erro ao tentar atualizar as URLs:");
+    Console.WriteLine(ex.Message);
+}
+-- =================================
+
+-- ==========================
+use('NoticiasDB');
+
+db.noticias.deleteOne({ _t: "System.String" });
+-- ====================
+
+
+
