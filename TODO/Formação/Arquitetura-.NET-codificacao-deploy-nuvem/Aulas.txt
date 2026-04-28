@@ -1,0 +1,234 @@
+Arquitetura .NET: descomplicando a Clean Architecture
+	01 - A arquitetura do projeto ContainRs
+		01 - Apresentação
+		02 - Preparando o ambiente
+		03 - Conhecendo o projeto
+		04 - Garantindo que clientes tenham mais de 18 anos
+		05 - Mão na massa: validando idades
+		06 - Expondo dados via API
+		07 - Estruturando a plataforma Clickbonus para recompensas personalizadas (C)
+		08 - Integração de novas funcionalidades na Clickbonus (D)
+		09 - Para saber mais: o padrão arquitetural MVC
+		10 - Para saber mais: o contexto histórico da Arquitetura Limpa
+		11 - O que aprendemos?
+	02 - Conceitos e Testes
+		01 - Projeto da aula anterior
+		02 - Identificando conceitos do negócio
+		03 - Integrando Email na aplicação
+		04 - Para saber mais: a camada de Domínio
+		05 - Testando e-mails
+		06 - Validação de dados financeiros no SwiftBank (D)
+		07 - Traduzindo informações externas
+		08 - Para saber mais: a camada de Interface
+		09 - Faça como eu fiz: isolando o conceito de Email
+		10 - Protegendo dados de agendamentos no Gatito Petshop (A)
+		11 - O que aprendemos?
+	03 - Registrando clientes com um endpoint
+		01 - Projeto da aula anterior
+		02 - Nova forma de registrar clientes
+		03 - Criando a função RegistrarCliente
+		04 - O último componente da Arquitetura Limpa
+		05 - Para saber mais: a camada de Aplicação
+		06 - Para saber mais: a camada de Infraestrutura
+		07 - Integrando novos serviços no aplicativo Fokus (B)
+		08 - Implementando uma API para cadastro de clientes na Meteora (D)
+		09 - Faça como eu fiz: criando o caso de uso para registrar clientes
+		10 - O que aprendemos?
+	04 - Comunicação entre os componentes
+		01 - Projeto da aula anterior
+		02 - Separando o domínio
+		03 - Movendo os casos de uso
+		04 - Abstraindo o acesso aos dados de cliente
+		05 - Implementando o padrão de repositório no ADOPET (B)
+		06 - Interações entre os componentes
+		07 - Para saber mais: princípios SOLID
+		08 - Para saber mais: o capítulo "perdido" do livro Arquitetura Limpa
+		09 - Adaptando a arquitetura para pacotes de viagem (C)
+		10 - Faça como eu fiz: organização da solução
+		11 - O que aprendemos?
+	05 - Reforçando a arquitetura em novo caso de uso
+		01 - Projeto da aula anterior
+		02 - Preparando o ambiente
+		03 - Consultando clientes por estado
+		04 - Implementando o caso de uso
+		05 - Ajustando infra e interface
+		06 - Otimizando a busca de produtos na loja online Meteora (D)
+		07 - Monitoramento de preços em tempo real (C)
+		08 - Faça como eu fiz: consultando clientes por estado
+		09 - Para saber mais: outras visões sobre Clean Architecture
+		10 - O que aprendemos?
+		11 - Conclusão
+Arquitetura .NET: modelando aplicações com Domain-Driven Design Estratégico
+	01 - Apresentando o projeto ContainRs
+		01 - Apresentação
+		02 - Preparando o ambiente
+		03 - Apresentando o projeto
+		04 - Conhecendo a arquitetura do projeto
+		05 - Desafios de integração no Fokus (A)
+		06 - Mão na massa: nosso projeto viola as regras da Arquitetura Limpa?
+		07 - Identificando melhorias
+		08 - Priorizando demandas de negócio no Gatito Petshop (D)
+		09 - O que aprendemos?
+	02 - As áreas funcionais da empresa
+		01 - Projeto da aula anterior
+		02 - O propósito da ContainRs
+		03 - Mão na massa: falando sobre propósito...
+		04 - Identificando as áreas funcionais
+		05 - Subdomínios em nosso código
+		06 - Faça como eu fiz: separando subdomínios em namespaces
+		07 - Tipos de subdomínios
+		08 - Refletindo a estratégia do Bytebank no design de APIs (C)
+		09 - Para saber mais: os subdomínios do DDD
+		10 - Analisando a audiência na WaveCast (C)
+		11 - Mão na massa: movendo Requests/Responses para os subdomínios
+		12 - Estudo de caso: DDD no projeto Kavita
+		13 - O que aprendemos?
+	03 - Aprofundando subdomínios
+		01 - Projeto da aula anterior
+		02 - Refletindo a linguagem de negócio
+		03 - Usando um glossário como fonte
+		04 - Representando valores do mundo real
+		05 - Alinhando a linguagem ubíqua na plataforma de podcasts (A)
+		06 - Integração de glossário online na plataforma de podcasts (B)
+		07 - Faça como eu fiz: aplicando linguagem ubíqua ao projeto
+		08 - Para saber mais: linguagem ubíqua
+		09 - Estudo de Caso: linguagem ubíqua no projeto Kavita
+		10 - O que aprendemos?
+	04 - Delimitando fronteiras
+		01 - Projeto da aula anterior
+		02 - Buscando linguagens consistentes
+		03 - Estruturando subdomínios no SwiftBank (C)
+		04 - Preparando o ambiente: mudanças na estrutura de pastas
+		05 - Estabelecendo os contextos
+		06 - Evitando ambiguidades
+		07 - Criando bounded contexts no Petpark (D)
+		08 - Faça como eu fiz: materialização dos contextos em nossa API
+		09 - Para saber mais: Bounded Contexts
+		10 - Estudo de caso: contextos no projeto Kavita
+		11 - O que aprendemos?
+	05 - Relacionando contextos
+		01 - Projeto da aula anterior
+		02 - Nem todo contexto é uma ilha
+		03 - Separando o contexto de clientes
+		04 - Protegendo subdomínios centrais
+		05 - Camada anticorrupção
+		06 - Gerenciamento de dependências no Fokus (A)
+		07 - Protegendo a comunicação entre subdomínios na Jornada Milhas (B)
+		08 - Faça como eu fiz: integrando contextos
+		09 - Para saber mais: padrões de integração de contextos no DDD
+		10 - Mão na massa: ajustes finais
+		11 - Estudo de caso: integração de contextos no projeto Kavita
+		12 - O que aprendemos?
+		13 - Conclusão
+Arquitetura .NET: modelando aplicações com Domain-Driven Design Tático
+	01 - A camada de aplicação
+		01 - Apresentação
+		02 - Preparando o ambiente
+		03 - Explicitando os casos de uso
+		04 - Para saber mais: padrões de projeto e o Command
+		05 - Estruturando casos de uso no CodeChella (D)
+		06 - Executando a aprovação de propostas
+		07 - Para saber mais: a camada de serviço
+		08 - Implementando padrões no Dev.Spot (D)
+		09 - Faça como eu fiz: comando de aprovação de propostas
+		10 - O que aprendemos?
+	02 - Garantindo consistência de dados
+		01 - Projeto da aula anterior
+		02 - Comentando uma proposta
+		03 - Removendo endereços
+		04 - Aprovação de uma proposta
+		05 - Para saber mais: agregados
+		06 - Garantindo a consistência de estados em dispositivos inteligentes (A)
+		07 - Consistência em projetos de tarefas colaborativas (C)
+		08 - Faça como eu fiz: criando o agregado de propostas
+		09 - O que aprendemos?
+	03 - Blocos fundantes do Domain Model
+		01 - Projeto da aula anterior
+		02 - Tipos dependentes
+		03 - Dados imutáveis
+		04 - Lógica que ultrapassa agregados
+		05 - Calculadora padrão de prazos
+		06 - Para saber mais: o Domain Model
+		07 - Faça como eu fiz: implementando o Domain Model
+		08 - Consistência em serviços de agendamento para pets (D)
+		09 - Otimizando a gestão de estoque na Zoop com serviços de domínio (B)
+		10 - O que aprendemos?
+	04 - Integrando contextos assincronamente
+		01 - Projeto da aula anterior
+		02 - Gerar faturamento ao aprovar proposta
+		03 - Eventos como mensagens
+		04 - Para saber mais: o padrão Outbox
+		05 - Persistindo as mensagens de saída
+		06 - Comunicação proativa no e-commerce geek (D)
+		07 - Garantindo a integridade dos pagamentos na Zoop (A)
+		08 - Faça como eu fiz: implementando eventos
+		09 - O que aprendemos?
+	05 - Concluindo o tratamento de eventos
+		01 - Projeto da aula anterior
+		02 - Preparando o ambiente: a caixa de entrada
+		03 - Mantendo o baixo acoplamento
+		04 - Lendo as mensagens
+		05 - Emitindo faturas a partir dos eventos
+		06 - Testando a integração assíncrona
+		07 - Para saber mais: aplicando DDD
+		08 - Faça como eu fiz: concluindo a integração
+		09 - Integração assíncrona para notificações de produtividade (D)
+		10 - Personalização de recomendações musicais no Playcatch (C)
+		11 - O que aprendemos?
+		12 - Conclusão
+Arquitetura em .NET: criando uma arquitetura de sistemas no Azure
+	01 - Infraestrutura local
+		01 - Apresentação
+		02 - Projeto inicial do curso
+		03 - Configurando o ambiente Docker
+		04 - Para saber mais: Docker no Visual Studio e personalização de containers
+		05 - Configurando o ambiente Docker
+		06 - Implementando portabilidade em sistemas de casas inteligentes (A)
+		07 - Explorando a flexibilidade do Docker
+		08 - Faça como eu fiz: adicionando mais containers na arquitetura
+		09 - Para saber mais: escalonamento horizontal e vertical
+		10 - Automatizando a exibição de filmes no Luz & Cena (B)
+		11 - O que aprendemos?
+	02 - Redis
+		01 - Projeto da aula anterior
+		02 - Preparando o ambiente
+		03 - Adicionando Redis ao projeto
+		04 - Para saber mais: conhecendo mais sobre o Redis
+		05 - Salvando informações no cache de Redis
+		06 - Faça como eu fiz: salvando informações no cache
+		07 - Desafio: invalidando um cache
+		08 - Estratégias de cache para SwiftBank (C)
+		09 - Otimização de consultas de dados no SwiftBank (B)
+		10 - O que aprendemos?
+	03 - Recursos no Azure
+		01 - Projeto da aula anterior
+		02 - Preparando o ambiente: criando uma conta no Azure
+		03 - Preparando o ambiente: Azure CLI
+		04 - Preparando o ambiente no Azure
+		05 - Faça como eu fiz: publicando o ambiente no Azure
+		06 - Criando recursos pelo portal
+		07 - Ajustes e novos recursos
+		08 - Otimizando a entrega de pacotes com containers na Hermex Log (B)
+		09 - Implementando técnicas Pomodoro com containers no Fokus (A)
+		10 - O que aprendemos?
+	04 - Resolvendo DNS
+		01 - Projeto da aula anterior
+		02 - DNS privado
+		03 - Flexibilidade na gestão de tarefas da checklist (A)
+		04 - Configurando e testando a aplicação
+		05 - Manutenção simplificada na plataforma checklist (B)
+		06 - Faça como eu fiz: atualizando a string de conexão com DNS privado
+		07 - Para saber mais: DNS privado no Azure
+		08 - O que aprendemos?
+	05 - Balanceador de carga
+		01 - Load Balancer
+		02 - Faça como eu fiz: configurando o balanceador de carga no Azure
+		03 - Otimizando o serviço de pedidos online do Serenatto (A)
+		04 - Executando nossa aplicação
+		05 - Para saber mais: Load Balancer
+		06 - Garantindo a disponibilidade do site de adoção de animais (A)
+		07 - Melhorando a resiliência do sistema de pedidos da loja online Meteora (C)
+		08 - Projeto final do curso
+		09 - Para ir mais fundo
+		10 - O que aprendemos?
+		11 - Conclusão
