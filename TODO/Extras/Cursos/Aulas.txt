@@ -1,0 +1,484 @@
+Curso de C#: Paralelismo no mundo real
+	01 - Usando Threads
+		01 - Introdução
+		02 - Conhecendo o problema do cliente
+		03 - Criando Threads
+		04 - Usando o Thread.Start() (D)
+		05 - Usando a propriedade IsAlive e a Thread
+		06 - Usando o Thread.Sleep() (B)
+		07 - Usando o Thread.IsAlive (A)
+		08 - Criando Threads
+	02 - Usando Tasks
+		01 - Abstraindo tarefas
+		02 - Criando e executando Tasks
+		03 - Tasks vs. Threads (A)
+		04 - Mantendo a interface gráfica ativa
+		05 - Encadeando tarefas (B)
+		06 - Problemas ao acessar a interface gráfica da forma errada (D)
+		07 - Usando o TaskScheduler
+	03 - Usando o AsyncAwait do C#
+		01 - Tasks com retorno
+		02 - Usando AsyncAwait
+		03 - SyncronizationContext (B)
+		04 - Entendendo melhor o Async
+		05 - Retorno de tarefas (C)
+		06 - O compilador e o Async/Await (A)
+		07 - Usando Async/Await
+	04 - Padrões de notificação de progresso de tarefas
+		01 - Criando uma barra de progresso
+		02 - Reportando progresso ao usuário
+		03 - Como reportar progresso (B)
+		04 - Reportando com Progress
+		05 - Contexto de sincronização de Progress<T> (C)
+		06 - Reportando progresso no ByteBank
+	05 - Criando tarefas canceláveis
+		01 - Conhecendo pattern .NET para cancelamento
+		02 - Dando a opção de cancelar ao usuário
+		03 - Usando o CancellationTokenSource e o CancellationToken
+		04 - Exceção de cancelamento (D)
+		05 - Quando lançar exceções de cancelamento (C)
+		06 - Passando o CancellationToken adiante
+		07 - Obtendo CancellationToken de um CancellationTokenSource (A)
+		08 - Conclusão
+		09 - Usando o CTS e o CT
+Curso de C#: Eventos, Delegates e Lambda
+	01 - Comportamentos e Eventos
+		01 - Introdução
+		02 - Nosso projeto inicial
+		03 - Comportamento em nossos elementos
+		04 - Comportamento de controles (A)
+		05 - Classes especializadas (A / B / C)
+		06 - Usando Eventos do dotNET
+		07 - O que aprendemos?
+		08 - Consolidando seu conhecimento
+	02 - Delegates
+		01 - Projeto da aula anterior
+		02 - Usando delegates
+		03 - Respeitando assinaturas de delegate
+		04 - Entre eventos e delegates (A / B)
+		05 - Criando a janela de edição
+		06 - Assinando eventos mais de uma vez
+		07 - Mais manipulações de métodos
+		08 - Combinando delegates (B)
+		09 - O que aprendemos?
+		10 - Consolidando seu conhecimento
+	03 - Manipulando Delegates
+		01 - Projeto da aula anterior
+		02 - Usando métodos anônimos para criar delegates
+		03 - Métodos anônimos (B)
+		04 - Contravariância em delegates
+		05 - Usando expressões lambdas
+		06 - Validando campo de texto
+		07 - Construindo delegates dinamicamente
+		08 - Usando o parâmetro sender
+		09 - Debugando métodos anônimos (B)
+		10 - O que aprendemos?
+		11 - Consolidando seu conhecimento
+	04 - Funções e nosso próprio evento
+		01 - Projeto da aula anterior
+		02 - Usando funções
+		03 - Criando funções (A)
+		04 - Simplificando a sintaxe de funções
+		05 - Criando um campo de validação customizado
+		06 - O Delegate e Evento de validação
+		07 - Criando Delegates (A / C / D)
+		08 - Executando nossos eventos
+		09 - O que aprendemos?
+		10 - Consolidando seu conhecimento
+	05 - Avançando em Eventos
+		01 - Projeto da aula anterior
+		02 - Usando os metodos Add e Remove
+		03 - Usando o GetExecutionList
+		04 - Lista de delegates (A)
+		05 - Usando boas praticas no OnValidacao
+		06 - Criando nossos argumentos de evento
+		07 - Convenções (A / C / D)
+		08 - Consolidando seu conhecimento
+		09 - O que aprendemos?
+		10 - Projeto final do curso
+		11 - Conclusão
+Curso de C# Brasil: Formate datas, cpf e números nacionais
+	01 - Validação e Formatação de CPF, CNPJ, Título de Eleitor
+		01 - Introdução
+		02 - Validando CPF
+		03 - Validando CPF (C)
+		04 - Validando CNPJ e Título Eleitoral
+		05 - Validação de CNPJ (C)
+		06 - Formatando Documentos
+		07 - Idempotência do Format (C)
+		08 - Validando CPF, CNPJ e Título de Eleitor
+		09 - Projeto da Aula Atual
+	02 - Trabalhando com Datas e Números por Extenso
+		01 - Trabalhando com Datas e Horas
+		02 - Formato de data no padrão brasileiro (B)
+		03 - Formatos Simplificados de Datas e Horas
+		04 - Exibição de Tempo (C)
+		05 - Formato de Ida-e-Volta (C)
+		06 - Números por Extenso
+		07 - Valores em reais por extenso
+		08 - Projeto da Aula Atual
+	03 - Trabalhando com Dinheiro
+		01 - Trabalhando com Dinheiro
+		02 - Exibindo dinheiro (A)
+		03 - Operações Com Decimal e Money (C)
+		04 - Formatando dólar
+		05 - Somando duas moedas diferentes (C)
+		06 - Projeto da Aula Atual
+	04 - Buscando CEP na internet
+		01 - Consultando o Webservice do ViaCEP
+		02 - Trabalhando com HttpClient para obter dados de serviço ViaCEP
+		03 - Consultando ViaCEP Com Caelum Stella CSharp
+		04 - A Classe ViaCEP (A)
+		05 - Métodos Assíncronos (B)
+		06 - Obtendo Partes do Endereço (A)
+		07 - Projeto da Aula Atual
+	05 - Aplicando o que aprendemos
+		01 - Preparando o ambiente
+		02 - Formatando Um Contrato de Trabalho
+		03 - Variável string multi-linhas (B)
+		04 - Interpolação de Strings (B)
+		05 - Adicionando Mais Campos Ao Contrato
+		06 - Data por extenso (A)
+		07 - Inserindo Campos de Endereço e Dinheiro
+		08 - Interpolando Campos do Endereço
+		09 - Projeto da Aula Atual
+		11 - Conclusão
+Build de uma aplicação .NET: construindo seus projetos com MSBuild
+	01 - O arquivo CSPROJ
+		01 - Introdução
+		02 - Objetivos do curso
+		03 - [Obrigatório] Download do projeto
+		04 - Sem Visual Studio
+		05 - Objetivos da aula
+		06 - Script
+		07 - Arquivos .csproj
+		08 - Faça como eu fiz na aula
+		09 - Projeto da Luli (B)
+		10 - Referências Utilizadas
+		11 - Projeto atual
+		12 - O que aprendemos?
+	02 - Os 4 blocos fundamentais do MSBuild
+		01 - Quatro blocos do MSBuild
+		02 - Objetivos da aula
+		03 - Tasks
+		04 - Targets
+		05 - Itens
+		06 - Properties
+		07 - Faça como eu fiz na aula
+		08 - Fixando os blocos (B)
+		09 - Referências Utilizadas
+		10 - Projeto atual
+		11 - O que aprendemos?
+	03 - Reaproveitando projetos de build
+		01 - Projeto inicial da aula
+		02 - Reaproveitando projetos de build
+		03 - Objetivos da aula
+		04 - Importando projetos comuns
+		05 - Convenções
+		06 - Visual Studio e SDK do NET
+		07 - Migrando para o SDK (A)
+		08 - Referências Utilizadas
+		09 - Faça como eu fiz na aula
+		10 - Projeto atual
+		11 - Antes de ir para a próxima aula...
+		12 - O que aprendemos?
+	04 - Compilando com diferentes objetivos
+		01 - Objetivos da aula
+		02 - Build incremental
+		03 - Compilando para objetivos diferentes
+		04 - Compilando para frameworks NET específicos
+		05 - Associe os conceitos (B)
+		06 - Faça como eu fiz na aula
+		07 - O que aprendemos?
+	05 - .NET Command Line Interface
+		01 - Projeto inicial da aula
+		02 - Objetivos da aula
+		03 - Projeto AspNetCore
+		04 - .NET CLI
+		05 - CLI além do build
+		06 - Relacionando pacotes e projetos (C)
+		07 - Referências Utilizadas
+		08 - Projeto atual
+		09 - Faça como eu fiz na aula
+		10 - O que aprendemos?
+	06 - Empacotando a aplicação com Docker
+		01 - [Pré-requisito] Conceitos de Docker
+		02 - Compilando em uma máquina zerada
+		03 - Componentes obrigatórios (A / C / D / E)
+		04 - Objetivos da aula
+		05 - Imagens .NET para Docker
+		06 - Dockerfile
+		07 - Faça como eu fiz na aula
+		08 - Projeto final
+		09 - O que aprendemos?
+		10 - Conclusão
+.NET: Soluções em nuvem com Azure na prática
+	01 - Conceitos de nuvem e Azure
+		01 - Apresentação
+		02 - Preparando ambiente: conta no Azure
+		03 - Projeto inicial
+		04 - O que é computação em nuvem?
+		05 - Escolhendo a infraestrutura ideal (D)
+		06 - Modelos de serviço: IaaS, PaaS e SaaS
+		07 - Implementando receitas no Cookin'UP com PaaS (D)
+		08 - Regiões e grupos de recursos
+		09 - Escolhendo a região ideal (D)
+		10 - Explorando o Azure Portal
+		11 - Automação com CLI e PowerShell
+		12 - Para saber mais: Conceitos de nuvem
+		13 - O que aprendemos?
+	02 - Armazenamento e banco de dados
+		01 - Projeto da aula anterior
+		02 - Criando banco SQL Server local
+		03 - Planejando serviço Azure SQL Database
+		04 - Gerenciamento de custos de infraestrutura (D)
+		05 - Criando Azure SQL Database no Portal
+		06 - Configurando a aplicação para usar Azure SQL Database
+		07 - Azure Cosmos DB
+		08 - Banco de dados Azure Cosmos DB for NoSQL
+		09 - Gerenciamento de dados com NoSQL (D)
+		10 - Para saber mais: Banco de dados no Azure
+		11 - O que aprendemos?
+	03 - Hospedagem de aplicações .NET
+		01 - Projeto da aula anterior
+		02 - Azure App Service
+		03 - Estratégias de hospedagem (D)
+		04 - Publicando Web API
+		05 - Faça como eu fiz: publicando Web API
+		06 - Configurando ConnectionString da WebAPI
+		07 - Publicando o App Web MVC
+		08 - Publicação de aplicações (D)
+		09 - Configurando URL do back-end para o Web MVC
+		10 - O que aprendemos?
+	04 - Autenticação e autorização
+		01 - Projeto da aula anterior
+		02 - Microsoft Entra ID
+		03 - Registrando o aplicativo backend WebAPI
+		04 - Implementando autenticação (D)
+		05 - Faça como eu fiz: registrando o aplicativo backend WebAPI
+		06 - Registrando o aplicativo front Web MVC
+		07 - Autorizar app MVC no app VollMed.WebAPI
+		08 - Configurando o MS Entra ID no projeto WebAPI
+		09 - Configurando o MS Entra ID no projeto Web
+		10 - Utilizando token nas requisições do projeto web
+		11 - Implementando autenticação segura (D)
+		12 - Testando o fluxo de autenticação
+		13 - Faça como eu fiz: autenticação e autorização no Azure App Service
+		14 - Para saber mais: OAuth2, OpenID Connect e JWT
+		15 - O que aprendemos?
+	05 - Monitoramento e diagnóstico
+		01 - Projeto da aula anterior
+		02 - Azure Application Insights
+		03 - Instalando Application Insights
+		04 - Monitoramento de desempenho (D)
+		05 - Azure Monitor e Log Analytics
+		06 - Criando um Log Analytics Workspace
+		07 - Associando o App Insights com o Workspace
+		08 - Configurando Log Analytics no App Service
+		09 - Configurando Log Analytics no Visual Studio
+		10 - Habilitando telemetria e republicando o app
+		11 - Identificação de gargalos (D)
+		12 - Faça como eu fiz: habilitar telemetria e republicar o app
+		13 - Gerando logs reais na aplicação
+		14 - Consultando logs no Log Analytics
+		15 - Monitoramento de transações (D)
+		16 - Para saber mais: Monitoramento e diagnósticos no Azure
+		17 - O que aprendemos?
+	06 - Arquitetura de mensageria e eventos
+		01 - Projeto da aula anterior
+		02 - Mensageria e escalabilidade
+		03 - Implementando mensageria para otimizar transações (D)
+		04 - Pré-requisito: banco de dados Cosmos DB
+		05 - Pré-requisito: Azure Service Bus
+		06 - Configurando Azure Service Bus
+		07 - Azure Functions
+		08 - Criando novo projeto Azure Function
+		09 - Implementando Azure Functions para otimizar buscas (D)
+		10 - Faça como eu fiz: criando novo projeto Azure Function
+		11 - Adaptando a função Azure
+		12 - Adaptando a assinatura método da função Azure
+		13 - Adicionando a lógica da função Azure
+		14 - Testando a mensageria
+		15 - Para saber mais: Mensageria e escalabilidade no Azure
+		16 - O que aprendemos?
+	07 - DevOps no Azure: CI/CD, IaC e Segurança
+		01 - Projeto da aula anterior
+		02 - Publicação via Visual Studio
+		03 - Publicando Azure Function pelo Visual Studio
+		04 - Publicação via GitHub Actions
+		05 - Automatizando resumos mensais (A)
+		06 - Publicando Azure Function App pelo GitHub Actions
+		07 - Faça como eu fiz: Workflow do GitHub Actions para Azure Function
+		08 - Adicionando nova função HTTP na Azure Function App
+		09 - Publicação de funções para otimizar listas (B)
+		10 - Arquivo de Workflow do GitHub Actions
+		11 - Automatizando fluxo de publicação de vídeos (A)
+		12 - Infraestrutura como Código (IaC) com Terraform
+		13 - Para saber mais: Diferenças entre Azure CLI e Terraform
+		14 - O que aprendemos?
+	08 - Arquitetura de microsserviços e alta disponibilidade
+		01 - Projeto da aula anterior
+		02 - Azure Cache for Redis
+		03 - Criando recurso Azure Cache for Redis
+		04 - Faça como eu fiz: recurso Azure Cache for Redis
+		05 - Configurando Redis no projeto Azure Function App
+		06 - Ajustando o código da Function App
+		07 - Entendendo o código da Function App
+		08 - Testando a aplicação com cache
+		09 - Para saber mais: Azure com Microservices usando Dapr, gRPC e Service Mesh
+		10 - O que aprendemos?
+		11 - Projeto final
+		12 - Conclusão
+Arquitetura distribuída e escalável com .NET: do monolito ao Kubernetes
+	01 - Arquitetura monolítica vs. distribuída
+		01 - Apresentação
+		02 - Projeto inicial
+		03 - Limitações de um monolito
+		04 - Gerenciamento de dispositivos em uma arquitetura monolítica (B)
+		05 - Microsserviços
+		06 - Database per service
+		07 - Denormalização de dados
+		08 - Para saber mais: linguagem ubíqua e subdomínios
+		09 - Faça como eu fiz: migrar para microsserviços
+		10 - O que aprendemos?
+	02 - Comunicação síncrona vs. assíncrona
+		01 - Projeto da aula anterior
+		02 - Comunicação síncrona com Refit
+		03 - Incluindo receitas
+		04 - Suporte a mensagens com RabbitMQ
+		05 - Integração de serviços (B)
+		06 - Consumindo mensagens
+		07 - Para saber mais: configurando endpoints no MassTransit
+		08 - Faça como eu fiz: integração de serviços
+		09 - O que aprendemos?
+	03 - Segurança e implementação de Gateway
+		01 - Projeto da aula anterior
+		02 - API Gateway
+		03 - Implementando um Gateway (B)
+		04 - Autenticação com o Keycloak
+		05 - Access tokens
+		06 - Testando o acesso
+		07 - Teste de nova consulta
+		08 - Para saber mais: configuração de clusters e rotas no YARP
+		09 - Faça como eu fiz: configurar API Gateway
+		10 - O que aprendemos?
+	04 - Orquestração e infraestrutura com .NET Aspire
+		01 - Projeto da aula anterior
+		02 - Orquestração via código
+		03 - Orquestrando serviços (A)
+		04 - Service discovery
+		05 - SQL Server como dependência
+		06 - Suporte do Aspire para o RabbitMQ
+		07 - Keycloak e Postgres no Aspire
+		08 - Para saber mais: configuração de retry on failure
+		09 - Faça como eu fiz: orquestração Aspire
+		10 - O que aprendemos?
+	05 - Containerização e orquestração com Docker e Kubernetes
+		01 - Projeto da aula anterior
+		02 - Containerizando as aplicações
+		03 - Docker Compose para a solução
+		04 - Suporte ao Kubernetes
+		05 - Gerenciamento de dependências (C)
+		06 - Preparando o ambiente
+		07 - Instalando a solução
+		08 - Testando o Vollmed no cluster k8s
+		09 - Para saber mais: templates no Helm
+		10 - Faça como eu fiz: orquestrando serviços
+		11 - O que aprendemos?
+	06 - Observabilidade
+		01 - Projeto da aula anterior
+		02 - Monitorando a solução
+		03 - Implementando monitoramento em tempo real (B)
+		04 - Testando o dashboard
+		05 - Para saber mais: ciclo de vida dos Pods
+		06 - Faça como eu fiz: dashboard com Helm
+		07 - Projeto final
+		08 - O que aprendemos?
+		09 - Conclusão
+C#: Boas práticas de código e projeto
+	01 - Clean Code
+		01 - Apresentação
+		02 - O que é Clean Code?
+		03 - Nomes significativos e funções pequenas
+		04 - Comentários e formatação
+		05 - Tratamento de erros e DRY
+		06 - Clean Code na Calmaria Spas (C)
+		07 - Preparando o ambiente: código legado
+		08 - Identificando problemas
+		09 - Refatorando métodos
+		10 - Limpando comentários e código duplicado
+		11 - Para saber mais: uso de border expressions no c#
+		12 - Faça como eu fiz: Clean Code
+		13 - O que aprendemos?
+	02 - Refatoração
+		01 - Projeto da aula anterior
+		02 - O que é refatoração?
+		03 - Técnicas de refatoração
+		04 - Métricas de código
+		05 - Refatoração de métodos em listas de supermercado (A)
+		06 - Refatoção na prática
+		07 - Quando refatorar?
+		08 - Para saber mais: substituir condicionais por polimorfismo
+		09 - Faça como eu fiz: refatorando código legado
+		10 - O que aprendemos?
+	03 - SOLID
+		01 - Princípios "S" e "O"
+		02 - Princípios "L", "I" e "D"
+		03 - Garantindo a integridade dos organogramas na Organo (C)
+		04 - Aplicando SOLID na Classe EcommerceMegaService
+		05 - Aplicando SOLID no serviço de notificação
+		06 - Aplicando o Princípio da Substituição de Liskov
+		07 - Para saber mais: circular dependency em injeção de dependência
+		08 - Faça como eu fiz: aplicar SOLID
+		09 - O que aprendemos?
+	04 - Design Patterns
+		01 - O que são padrões de projeto?
+		02 - Otimizando a criação de playlists de podcasts (B)
+		03 - Aplicando o Factory Method
+		04 - Para saber mais: legado do Gang of Four
+		05 - Desafio
+		06 - Para saber mais: Design Patterns em C#
+		07 - Faça como eu fiz: aplicar Design Patterns
+		08 - O que aprendemos?
+	05 - Pragmatismo e erros comuns
+		01 - Projeto da aula anterior
+		02 - Boas práticas vs. Pragmatismo
+		03 - Alinhamento de equipe no Serenatto Café & Bistrô (B)
+		04 - Erros comuns
+		05 - Para saber mais: trade-off entre flexibilidade e simplicidade
+		06 - Faça como eu fiz: boas práticas e trade-offs
+		07 - O que aprendemos?
+		08 - Conclusão
+C#: Manipulação de dados com coleções e LINQ
+	01 - Introdução às coleções
+		01 - Apresentação
+		02 - Representando coleções
+		03 - Organização de inventário em uma loja de livros (D)
+		04 - Percorrendo coleções
+		05 - Para saber mais: padrão iterator em C#
+		06 - A coleção DiasDaSemana
+		07 - O operador yield
+		08 - Otimizando a exibição de projetos na CodeConnect (D)
+		09 - Aprofundando o yield
+		10 - Para saber mais: casos de uso do yield
+		11 - Faça como eu fiz: Coleções e Yield
+		12 - O que aprendemos?
+	02 - Operações com coleções
+		01 - Projeto da aula anterior
+		02 - Playlist de músicas
+		03 - Músicas aleatórias
+		04 - Ordenando playlists
+		05 - Otimizando a ordem de entregas na Hermex Log (D)
+		06 - Evitando músicas repetidas
+		07 - Evitando transações duplicadas no Bytebank (D)
+		08 - Top 3 músicas
+		09 - Fila de reprodução
+		10 - Histórico de reprodução
+		11 - Para saber mais: conversão de dicionários para listas
+		12 - Faça como eu fiz: gerenciador musical
+		13 - O que aprendemos?
+	03 - Fluxo de manipulação de coleções
+	04 - Usando o LINQ
+	05 - Strings
+	06 - Expressões regulares
+	07 - Serialização
