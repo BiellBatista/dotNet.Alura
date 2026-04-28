@@ -1,0 +1,53 @@
+Testes em .NET: fundamentos, boas práticas e automação em pipelines CI/CD
+	01 - Testes de software: o que, por que e quando testar
+		01 - Apresentação
+		02 - O que é teste de software?
+		03 - Garantindo a segurança de dados em testes de software (D)
+		04 - Para saber mais: teste manual vs. automatizado
+		05 - Defeitos, falhas e erros
+		06 - Tipos de testes e abordagens
+		07 - Estratégias de teste para a plataforma Organo (D)
+		08 - Frameworks de teste: NUnit e xUnit
+		09 - Escolhendo o framework de teste ideal (D)
+		10 - Preprando o ambiente de testes no VS
+		11 - Testes unitários e boas práticas
+		12 - Asserções com xUnit e Fluent Assertions
+		13 - Projeto da aula
+		14 - Desafio #1
+		15 - O que aprendemos?
+	02 - Ampliando os testes: do código à aplicação
+		01 - Resolução - Desafio #1
+		02 - O que são testes de integração?
+		03 - Garantindo a integração perfeita na Meteora (D)
+		04 - Ambiente para testes de integração e testes de API
+		05 - Isolando dependências com mocks e stubs
+		06 - Gerenciando dependências externas na Jornada Viagens (D)
+		07 - Para saber mais: fakes em testes de integração
+		08 - Boas práticas em testes de integração
+		09 - Impacto dos testes de integração
+		10 - Projeto da aula
+		11 - Desafio #2
+		12 - O que aprendemos?
+	03 - Automação de testes e integração contínua
+		01 - Resolução - Desafio #2
+		02 - Automação de testes
+		03 - Executando testes com .NET CLI
+		04 - Integrando testes ao pipeline com GitHub Actions
+		05 - Para saber mais: yaml e organização de pipelines
+		06 - Relatórios, métricas e cobertura de testes
+		07 - Boas práticas de automação e manutenção contínua
+		08 - Projeto da aula
+		09 - Desafio #3
+		10 - O que aprendemos?
+	04 - Além do código: ampliando a qualidade de software
+		01 - Resolução - Desafio #3
+		02 - Qualidade de software: mais que passar por testes
+		03 - Testes de performance e carga
+		04 - Testes de segurança e confiabilidade
+		05 - Para saber mais: uso de ferramentas de segurança
+		06 - Manutenção e evolução da base de testes: cultura de qualidade
+		07 - Projeto da aula
+		08 - Desafio #4
+		09 - Resolução - Desafio #4
+		10 - O que aprendemos?
+		11 - Conclusão
