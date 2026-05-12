@@ -478,7 +478,115 @@ C#: Manipulação de dados com coleções e LINQ
 		12 - Faça como eu fiz: gerenciador musical
 		13 - O que aprendemos?
 	03 - Fluxo de manipulação de coleções
+		01 - Projeto da aula anterior
+		02 - Manipulando músicas vindas de um arquivo
+		03 - Gerenciamento de dados de clientes no Serenatto (D)
+		04 - Filtrando por artista
+		05 - Filtrando projetos por linguagem de programação na CodeConnect (D)
+		06 - Condições como argumento
+		07 - Dinamizando as condições
+		08 - Para saber mais: delegates e lambdas
+		09 - Otimizando a busca de passagens aéreas com milhas (D)
+		10 - Dos filtros específicos às operações genéricas
+		11 - Para saber mais: método group conversion em delegates
+		12 - Faça como eu fiz: manipule CSV com LINQ
+		13 - O que aprendemos?
 	04 - Usando o LINQ
+		01 - Projeto da aula anterior
+		02 - Operações de filtro e ordenação
+		03 - Operações de projeção
+		04 - Operações de agregação
+		05 - Otimizando a gestão de tarefas em equipe (D)
+		06 - Operações de agrupamento
+		07 - Obtenção de elementos específicos
+		08 - Para saber mais: métodos do LINQ
+		09 - Sincronizando contatos profissionais por setor (D)
+		10 - Operações para verificação de existência
+		11 - Para saber mais: ordenando coleções com LINQ
+		12 - Faça como eu fiz: LINQ e operações
+		13 - O que aprendemos?
 	05 - Strings
+		01 - Projeto da aula anterior
+		02 - Manipulando textos
+		03 - Alterando o título de uma música
+		04 - Duração e lançamento formatados
+		05 - Comparando strings
+		06 - Comparação de títulos de vídeos na plataforma Screen Match (D)
+		07 - Como o .NET trata strings
+		08 - Otimizando o uso de strings no Bytebank (D)
+		09 - Validando a obtenção do CSV
+		10 - Para saber mais: string como coleção de caracteres
+		11 - Faça como eu fiz: manipulação de strings
+		12 - O que aprendemos?
 	06 - Expressões regulares
+		01 - Projeto da aula anterior
+		02 - Duração com novo formato
+		03 - Sincronização de contatos com padrões de data (D)
+		04 - Capturando partes do valor encontrado
+		05 - Analisando padrões de duração de voos (D)
+		06 - Superpoderes nas operações de filtro
+		07 - Resolvendo os outros exercícios
+		08 - Para saber mais: Regex com back-references
+		09 - Faça como eu fiz: Regex em ação
+		10 - O que aprendemos?
 	07 - Serialização
+		01 - Projeto da aula anterior
+		02 - Gerando um arquivo a partir da coleção
+		03 - Para saber mais: persistência de dados, serialização e desserialização
+		04 - Faça como eu fiz: serializar e ordenar dados
+		05 - O que aprendemos?
+		06 - Conclusão
+		07 - Projeto final
+C#: desenvolvimento e gerenciamento de bibliotecas
+	01 - O que são bibliotecas
+		01 - Apresentação
+		02 - Introdução às bibliotecas no .NET
+		03 - Hierarquia de classes na plataforma Zoop (D)
+		04 - Buscando e utilizando bibliotecas
+		05 - Modularidade em sistemas de gestão da Clínica Médica Voll (D)
+		06 - Para saber mais: checklist para bibliotecas seguras
+		07 - Faça como eu fiz: usar bibliotecas
+		08 - O que aprendemos?
+	02 - Criando uma biblioteca
+		01 - Criando uma biblioteca
+		02 - Funcionalidades iniciais da biblioteca
+		03 - Otimizando a gestão de inventário com bibliotecas (D)
+		04 - Tornando a biblioteca flexível e expansível
+		05 - Flexibilizando a exportação de dados na Jornada Viagens (D)
+		06 - Controlando o acesso
+		07 - Documentando e preparando para uso externo
+		08 - Para saber mais: CSV - interoperabilidade e simplicidade
+		09 - Faça como eu fiz: Relatórios CSV
+		10 - O que aprendemos?
+	03 - Consumindo bibliotecas
+		01 - Projeto da aula anterior
+		02 - Adicionando referência à biblioteca
+		03 - Gerenciamento de dependências em sistemas de agendamento médico (D)
+		04 - Usando classes e métodos da biblioteca
+		05 - Escolha de métodos de integração para otimizar a experiência do usuário (D)
+		06 - Estendendo funcionalidades da biblioteca
+		07 - Para saber mais: template method pattern e extensão
+		08 - Faça como eu fiz: usar e ampliar biblioteca
+		09 - O que aprendemos?
+	04 - Publicando bibliotecas no NuGet
+		01 - Projeto da aula anterior
+		02 - O que é o NuGet? Por que publicar?
+		03 - Publicação de bibliotecas para otimizar a adoção de animais (D)
+		04 - Configurando e publicando pacote NuGet no feed público
+		05 - Publicando no feed privado
+		06 - Reutilização de funcionalidades no ADOPET (D)
+		07 - Para saber mais: Package ID único no NuGet
+		08 - Faça como eu fiz: publicar pacotes NuGet
+		09 - O que aprendemos?
+	05 - Organização, dependências e documentação
+		01 - Projeto da aula anterior
+		02 - Organizando a biblioteca
+		03 - Estruturando a plataforma Freelando para melhor organização (D)
+		04 - Dependências da biblioteca
+		05 - Integração de bibliotecas externas na Freelando (D)
+		06 - Documentando a biblioteca
+		07 - Para saber mais: template method para relatórios
+		08 - Faça como eu fiz: atualizar biblioteca
+		09 - Projeto final
+		10 - O que aprendemos?
+		11 - Conclusão
